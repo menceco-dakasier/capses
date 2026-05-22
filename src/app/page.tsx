@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/page.tsx << 'ENDOFFILE'
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -493,4 +492,3 @@ export default function Home() {
     </div>
   );
 }
-ENDOFFILE
