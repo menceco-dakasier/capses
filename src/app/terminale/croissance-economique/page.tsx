@@ -12,7 +12,8 @@ type StepId =
   | "quiz"
   | "sujets"
   | "methode"
-  | "memo";
+  | "memo"
+  | "ressources";
 
 interface Step {
   id: StepId;
@@ -114,6 +115,7 @@ const STEPS: Step[] = [
   { id: "sujets", num: 7, label: "Sujets probables", icon: "📋", color: "#D4A017" },
   { id: "methode", num: 8, label: "Méthode appliquée", icon: "✍️", color: "#7EB8FF" },
   { id: "memo", num: 9, label: "Fiche mémo PDF", icon: "📄", color: "#5DCAA5" },
+  { id: "ressources", num: 10, label: "Ressources", icon: "🎬", color: "#7EB8FF" },
 ];
 
 // ─── Sub-components ────────────────────────────────────────────────────────────
@@ -942,7 +944,7 @@ function StepMemo() {
         Fiche mémo PDF
       </div>
       <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "2rem", maxWidth: 380, margin: "0 auto 2rem" }}>
-        La synthèse condensée du chapitre en une page recto-verso, à imprimer avant le bac.
+        La synthèse condensée du chapitre en une page A4, à imprimer avant le bac.
       </div>
       <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "1.5rem", maxWidth: 400, margin: "0 auto 1.5rem", textAlign: "left" }}>
         <div style={{ fontSize: 12, color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", marginBottom: 12, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>
@@ -962,25 +964,84 @@ function StepMemo() {
           </div>
         ))}
       </div>
-      <button
+      <a
+        href="/memos/memo_croissance_economique.pdf"
+        download="CapSES_Memo_Croissance_Economique.pdf"
         style={{
+          display: "inline-block",
           background: "#D4A017",
           color: "#0d1b2a",
-          border: "none",
+          textDecoration: "none",
           borderRadius: 10,
           padding: "12px 28px",
           fontFamily: "Space Grotesk, sans-serif",
           fontWeight: 700,
           fontSize: 15,
           cursor: "pointer",
-          opacity: 0.5,
         }}
-        disabled
       >
-        📥 Télécharger la fiche PDF (bientôt)
-      </button>
+        📥 Télécharger la fiche mémo PDF
+      </a>
       <div style={{ fontSize: 12, color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", marginTop: 10 }}>
-        Disponible en phase finale de CapSES
+        Format A4 · Impression recto · Sources : Maddison, Solow, FMI
+      </div>
+    </div>
+  );
+}
+
+function StepRessources() {
+  return (
+    <div>
+      <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>
+        Ressources complémentaires pour approfondir et mémoriser le chapitre.
+      </div>
+
+      {/* VIDÉO */}
+      <div style={{ marginBottom: "2rem" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#7EB8FF", fontFamily: "Space Grotesk, sans-serif", textTransform: "uppercase", marginBottom: 8 }}>
+          🎬 Cours vidéo — Croissance économique
+        </div>
+        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(126,184,255,0.2)" }}>
+          <iframe
+            src="https://www.youtube.com/embed/Iddiy-BpFfg"
+            title="Cours vidéo — Croissance économique — CapSES"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+          />
+        </div>
+      </div>
+
+      {/* GRILLE 3 ressources bientôt */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
+        {[
+          { icon: "🗺️", label: "Carte mentale", desc: "Visualise toutes les connexions entre les notions du chapitre.", color: "#D4A017" },
+          { icon: "📊", label: "Infographie", desc: "Le schéma des gains de productivité et les 4 moteurs en un coup d'œil.", color: "#5DCAA5" },
+          { icon: "📝", label: "Synthèse NotebookLM", desc: "La synthèse magistrale générée par IA à partir du cours complet.", color: "#AFA9EC" },
+        ].map((r, i) => (
+          <div
+            key={i}
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: `1px solid ${r.color}33`,
+              borderRadius: 12,
+              padding: "1.25rem",
+              textAlign: "center",
+              opacity: 0.6,
+            }}
+          >
+            <div style={{ fontSize: 32, marginBottom: 10 }}>{r.icon}</div>
+            <div style={{ fontSize: 14, fontWeight: 700, color: r.color, fontFamily: "Space Grotesk, sans-serif", marginBottom: 6 }}>
+              {r.label}
+            </div>
+            <div style={{ fontSize: 12, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", lineHeight: 1.5, marginBottom: 10 }}>
+              {r.desc}
+            </div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", letterSpacing: "0.08em", textTransform: "uppercase", background: "rgba(255,255,255,0.04)", borderRadius: 6, padding: "3px 10px", display: "inline-block" }}>
+              Bientôt disponible
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -998,6 +1059,7 @@ function renderStep(id: StepId) {
     case "sujets":    return <StepSujets />;
     case "methode":   return <StepMethode />;
     case "memo":      return <StepMemo />;
+    case "ressources": return <StepRessources />;
   }
 }
 
