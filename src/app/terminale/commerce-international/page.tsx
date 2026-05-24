@@ -741,6 +741,13 @@ export default function CommerceInternationalPage() {
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+        @media (max-width: 767px) {
+          .capses-sidebar { display: none !important; }
+          .capses-layout { grid-template-columns: 1fr !important; }
+          .capses-main { padding: 1rem 1rem 3rem !important; }
+          .capses-stat-grid { grid-template-columns: 1fr 1fr !important; }
+          .capses-card-grid { grid-template-columns: 1fr !important; }
+        }
         strong { font-weight: 600; }
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
         .hide-sb { -ms-overflow-style:none; scrollbar-width:none; }
@@ -782,9 +789,9 @@ export default function CommerceInternationalPage() {
       </div>
 
       {/* LAYOUT */}
-      <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "240px 1fr", minHeight: "calc(100vh - 200px)" }}>
+      <div className="capses-layout" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "240px 1fr", minHeight: "calc(100vh - 200px)" }}>
         {/* SIDEBAR */}
-        <aside style={{ borderRight: "1px solid rgba(255,255,255,0.06)", padding: "1.5rem 1rem", position: "sticky", top: 56, height: "calc(100vh - 56px)", overflowY: "auto" }}>
+        <aside className="capses-sidebar" style={{ borderRight: "1px solid rgba(255,255,255,0.06)", padding: "1.5rem 1rem", position: "sticky", top: 56, height: "calc(100vh - 56px)", overflowY: "auto" }}>
           <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", textTransform: "uppercase" as const, marginBottom: 12 }}>Étapes du chapitre</div>
           {STEPS.map((s) => {
             const isActive = active === s.id;
@@ -807,7 +814,7 @@ export default function CommerceInternationalPage() {
         </aside>
 
         {/* CONTENT */}
-        <main style={{ padding: "2rem 2rem 4rem", minWidth: 0 }}>
+        <main className="capses-main" style={{ padding: "2rem 2rem 4rem", minWidth: 0 }}>
           <div style={{ marginBottom: "1.5rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 6 }}>
               <span style={{ fontSize: 24 }}>{currentStep.icon}</span>
