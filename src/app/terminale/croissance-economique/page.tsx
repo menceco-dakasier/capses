@@ -1,6 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+  return isMobile;
+}
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type StepId =
@@ -1067,6 +1078,7 @@ function renderStep(id: StepId) {
 export default function CroissanceEconomiquePage() {
   const [active, setActive] = useState<StepId>("savoir");
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const currentStep = STEPS.find((s) => s.id === active)!;
 
@@ -1085,13 +1097,7 @@ export default function CroissanceEconomiquePage() {
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
-        @media (max-width: 767px) {
-          .capses-sidebar { display: none !important; }
-          .capses-layout { grid-template-columns: 1fr !important; }
-          .capses-main { padding: 1rem 1rem 3rem !important; }
-          .capses-stat-grid { grid-template-columns: 1fr 1fr !important; }
-          .capses-card-grid { grid-template-columns: 1fr !important; }
-        }
+
         strong { font-weight: 600; }
         table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 1rem; }
         th { background: rgba(255,255,255,0.05); padding: 9px 12px; text-align: left; font-weight: 600; color: #8a8880; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: Space Grotesk, sans-serif; }
@@ -1218,7 +1224,7 @@ export default function CroissanceEconomiquePage() {
           maxWidth: 1100,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "240px 1fr",
+          gridTemplateColumns: isMobile ? "1fr" : "240px 1fr",
           gap: 0,
           minHeight: "calc(100vh - 200px)",
         }}
@@ -1226,6 +1232,7 @@ export default function CroissanceEconomiquePage() {
         {/* SIDEBAR */}
         <aside
           style={{
+            display: isMobile ? "none" : "block",
             borderRight: "1px solid rgba(255,255,255,0.06)",
             padding: "1.5rem 1rem",
             position: "sticky",
@@ -1307,7 +1314,7 @@ export default function CroissanceEconomiquePage() {
         </aside>
 
         {/* CONTENT */}
-        <main className="capses-main" style={{ padding: "2rem 2rem 4rem", minWidth: 0 }}>
+        <main style={{ padding: isMobile ? "1rem 1rem 3rem" : "2rem 2rem 4rem", minWidth: 0 }}>
           {/* Step header */}
           <div style={{ marginBottom: "1.5rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 6 }}>
