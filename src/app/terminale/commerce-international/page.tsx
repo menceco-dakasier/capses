@@ -275,10 +275,10 @@ function StepSavoir() {
 
       <SectionTitle>Points clés du programme</SectionTitle>
       <CardGrid cards={[
-        { badge: "Question 1", title: "Fondements du commerce", text: "Avantages absolus (Smith) vs comparatifs (Ricardo). Gains à l'échange. HOS : dotations factorielles. Paradoxe de Leontief.", badgeColor: "#D4A017" },
-        { badge: "Question 2", title: "Nouvelles théories", text: "Commerce intrabranche (Krugman) : économies d'échelle + différenciation. Firmes hétérogènes (Mélitz) : 'happy few'.", badgeColor: "#7EB8FF" },
-        { badge: "Question 3", title: "FMN & CVM", text: "IDE verticaux vs horizontaux. DIPP. Courbe du sourire (Shih). Mesure en valeur ajoutée. France 1re destination IDE en Europe.", badgeColor: "#5DCAA5" },
-        { badge: "Question 4", title: "Effets & débats", text: "Baisse des prix (4 canaux). Inégalités entre/dans les pays (Milanovic, courbe éléphant). Libre-échange vs protectionnisme (List, guerre commerciale 2025).", badgeColor: "#AFA9EC" },
+        { badge: "Objectif 1", title: "Fondements du commerce", text: "Avantages absolus (Smith) vs comparatifs (Ricardo). Gains à l'échange. HOS : dotations factorielles. Paradoxe de Leontief.", badgeColor: "#D4A017" },
+        { badge: "Objectif 2", title: "Nouvelles théories", text: "Commerce intrabranche (Krugman) : économies d'échelle + différenciation. Firmes hétérogènes (Mélitz) : 'happy few'.", badgeColor: "#7EB8FF" },
+        { badge: "Objectif 3", title: "FMN & CVM", text: "IDE verticaux vs horizontaux. DIPP. Courbe du sourire (Shih). Mesure en valeur ajoutée. France 1re destination IDE en Europe.", badgeColor: "#5DCAA5" },
+        { badge: "Objectif 4", title: "Effets & débats", text: "Baisse des prix (4 canaux). Inégalités entre/dans les pays (Milanovic, courbe éléphant). Libre-échange vs protectionnisme (List, guerre commerciale 2025).", badgeColor: "#AFA9EC" },
       ]} />
 
       <SectionTitle>Auteurs & notions à citer impérativement</SectionTitle>

@@ -395,10 +395,10 @@ function StepSavoir() {
 
       <SectionTitle>Points clés du programme</SectionTitle>
       <CardGrid cards={[
-        { badge: "Question 1", title: "Mesurer la croissance", text: "Distinguer expansion et croissance. Maîtriser le PIB en volume. Connaître les limites du PIB et les indicateurs alternatifs (IDH).", badgeColor: "#D4A017" },
-        { badge: "Question 2", title: "Les sources de la croissance", text: "Facteurs L et K, PGF (résidu de Solow), croissance endogène (Romer, Lucas, Barro, Arrow). Schéma des gains de productivité.", badgeColor: "#7EB8FF" },
-        { badge: "Question 3", title: "Progrès technique & innovation", text: "Distinction invention/innovation. Typologies Schumpeter. Destruction créatrice. Rôle des institutions, brevets, État.", badgeColor: "#5DCAA5" },
-        { badge: "Question 4", title: "Défis de la croissance", text: "Inégalités (SBTC, Superstar firms). Limites écologiques (externalités, biens communs). Développement durable, soutenabilité forte/faible.", badgeColor: "#AFA9EC" },
+        { badge: "Objectif 1", title: "Mesurer la croissance", text: "Distinguer expansion et croissance. Maîtriser le PIB en volume. Connaître les limites du PIB et les indicateurs alternatifs (IDH).", badgeColor: "#D4A017" },
+        { badge: "Objectif 2", title: "Les sources de la croissance", text: "Facteurs L et K, PGF (résidu de Solow), croissance endogène (Romer, Lucas, Barro, Arrow). Schéma des gains de productivité.", badgeColor: "#7EB8FF" },
+        { badge: "Objectif 3", title: "Progrès technique & innovation", text: "Distinction invention/innovation. Typologies Schumpeter. Destruction créatrice. Rôle des institutions, brevets, État.", badgeColor: "#5DCAA5" },
+        { badge: "Objectif 4", title: "Défis de la croissance", text: "Inégalités (SBTC, Superstar firms). Limites écologiques (externalités, biens communs). Développement durable, soutenabilité forte/faible.", badgeColor: "#AFA9EC" },
       ]} />
 
       <SectionTitle>Auteurs & notions à citer impérativement</SectionTitle>
