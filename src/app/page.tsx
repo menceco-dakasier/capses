@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const CHAPITRES = [
   // ECO
   {
-    slug: "croissance",
+    slug: "croissance-economique",
     titre: "La croissance économique",
     matiere: "ECO",
     num: "CH 01",
