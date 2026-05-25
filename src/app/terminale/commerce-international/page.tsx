@@ -1,6 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+  return isMobile;
+}
 
 type StepId =
   | "savoir"
@@ -262,7 +273,7 @@ function StepSavoir() {
     <div>
       <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1rem" }}>Ce que le jury attend sur ce chapitre au baccalauréat.</div>
 
-      <SectionTitle>Les 4 questions essentielles du programme</SectionTitle>
+      <SectionTitle>Points clés du programme</SectionTitle>
       <CardGrid cards={[
         { badge: "Question 1", title: "Fondements du commerce", text: "Avantages absolus (Smith) vs comparatifs (Ricardo). Gains à l'échange. HOS : dotations factorielles. Paradoxe de Leontief.", badgeColor: "#D4A017" },
         { badge: "Question 2", title: "Nouvelles théories", text: "Commerce intrabranche (Krugman) : économies d'échelle + différenciation. Firmes hétérogènes (Mélitz) : 'happy few'.", badgeColor: "#7EB8FF" },
@@ -694,9 +705,25 @@ function StepRessources() {
   return (
     <div>
       <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>Ressources complémentaires pour approfondir et mémoriser le chapitre.</div>
+      {/* VIDÉO */}
+      <div style={{ marginBottom: "2rem" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#7EB8FF", fontFamily: "Space Grotesk, sans-serif", textTransform: "uppercase" as const, marginBottom: 8 }}>
+          🎬 Cours vidéo — Commerce international
+        </div>
+        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(126,184,255,0.2)" }}>
+          <iframe
+            src="https://www.youtube.com/embed/d-ta5OFfNT0"
+            title="Cours vidéo — Commerce international — CapSES"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+          />
+        </div>
+      </div>
+
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
         {[
-          { icon: "🎬", label: "Cours vidéo", desc: "La vidéo de révision sur le commerce international sera disponible prochainement.", color: "#7EB8FF" },
+          { icon: "🗺️", label: "Carte mentale", desc: "La vidéo de révision sur le commerce international sera disponible prochainement.", color: "#7EB8FF" },
           { icon: "🗺️", label: "Carte mentale", desc: "Visualise toutes les connexions entre les théories du chapitre.", color: "#D4A017" },
           { icon: "📊", label: "Infographie", desc: "La courbe du sourire, la courbe de l'éléphant et les CVM en un coup d'œil.", color: "#5DCAA5" },
           { icon: "📝", label: "Synthèse NotebookLM", desc: "La synthèse magistrale générée par IA à partir du cours complet.", color: "#AFA9EC" },
@@ -731,6 +758,7 @@ function renderStep(id: StepId) {
 // ─── MAIN PAGE ────────────────────────────────────────────────────────────────
 export default function CommerceInternationalPage() {
   const [active, setActive] = useState<StepId>("savoir");
+  const isMobile = useIsMobile();
   const currentStep = STEPS.find((s) => s.id === active)!;
 
   return (
@@ -741,13 +769,7 @@ export default function CommerceInternationalPage() {
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
-        @media (max-width: 767px) {
-          .capses-sidebar { display: none !important; }
-          .capses-layout { grid-template-columns: 1fr !important; }
-          .capses-main { padding: 1rem 1rem 3rem !important; }
-          .capses-stat-grid { grid-template-columns: 1fr 1fr !important; }
-          .capses-card-grid { grid-template-columns: 1fr !important; }
-        }
+
         strong { font-weight: 600; }
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
         .hide-sb { -ms-overflow-style:none; scrollbar-width:none; }
@@ -789,9 +811,9 @@ export default function CommerceInternationalPage() {
       </div>
 
       {/* LAYOUT */}
-      <div className="capses-layout" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "240px 1fr", minHeight: "calc(100vh - 200px)" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "240px 1fr", minHeight: "calc(100vh - 200px)" }}>
         {/* SIDEBAR */}
-        <aside className="capses-sidebar" style={{ borderRight: "1px solid rgba(255,255,255,0.06)", padding: "1.5rem 1rem", position: "sticky", top: 56, height: "calc(100vh - 56px)", overflowY: "auto" }}>
+        <aside style={{ display: isMobile ? "none" : "block", borderRight: "1px solid rgba(255,255,255,0.06)", padding: "1.5rem 1rem", position: "sticky", top: 56, height: "calc(100vh - 56px)", overflowY: "auto" }}>
           <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", textTransform: "uppercase" as const, marginBottom: 12 }}>Étapes du chapitre</div>
           {STEPS.map((s) => {
             const isActive = active === s.id;
@@ -814,7 +836,7 @@ export default function CommerceInternationalPage() {
         </aside>
 
         {/* CONTENT */}
-        <main className="capses-main" style={{ padding: "2rem 2rem 4rem", minWidth: 0 }}>
+        <main style={{ padding: isMobile ? "1rem 1rem 3rem" : "2rem 2rem 4rem", minWidth: 0 }}>
           <div style={{ marginBottom: "1.5rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 6 }}>
               <span style={{ fontSize: 24 }}>{currentStep.icon}</span>

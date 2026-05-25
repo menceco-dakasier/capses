@@ -393,7 +393,7 @@ function StepSavoir() {
         </div>
       </div>
 
-      <SectionTitle>Les 4 questions essentielles du programme</SectionTitle>
+      <SectionTitle>Points clés du programme</SectionTitle>
       <CardGrid cards={[
         { badge: "Question 1", title: "Mesurer la croissance", text: "Distinguer expansion et croissance. Maîtriser le PIB en volume. Connaître les limites du PIB et les indicateurs alternatifs (IDH).", badgeColor: "#D4A017" },
         { badge: "Question 2", title: "Les sources de la croissance", text: "Facteurs L et K, PGF (résidu de Solow), croissance endogène (Romer, Lucas, Barro, Arrow). Schéma des gains de productivité.", badgeColor: "#7EB8FF" },
