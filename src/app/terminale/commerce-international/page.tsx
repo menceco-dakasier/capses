@@ -726,7 +726,8 @@ function StepRessources() {
           { icon: "🗺️", label: "Carte mentale", desc: "La vidéo de révision sur le commerce international sera disponible prochainement.", color: "#7EB8FF" },
           { icon: "🗺️", label: "Carte mentale", desc: "Visualise toutes les connexions entre les théories du chapitre.", color: "#D4A017" },
           { icon: "📊", label: "Infographie", desc: "La courbe du sourire, la courbe de l'éléphant et les CVM en un coup d'œil.", color: "#5DCAA5" },
-          { icon: "📝", label: "Synthèse NotebookLM", desc: "La synthèse magistrale générée par IA à partir du cours complet.", color: "#AFA9EC" },
+          { icon: "🗺️", label: "Carte mentale", desc: "Visualise toutes les connexions entre les théories du chapitre.", color: "#D4A017" },
+          { icon: "📊", label: "Infographie", desc: "La courbe du sourire, la courbe de l'éléphant et les CVM en un coup d'œil.", color: "#5DCAA5" },
         ].map((r, i) => (
           <div key={i} style={{ background: "rgba(255,255,255,0.03)", border: `1px solid ${r.color}33`, borderRadius: 12, padding: "1.25rem", textAlign: "center" as const, opacity: 0.6 }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>{r.icon}</div>
@@ -735,6 +736,47 @@ function StepRessources() {
             <div style={{ fontSize: 10, fontWeight: 700, color: "#5a5955", fontFamily: "Space Grotesk, sans-serif", letterSpacing: "0.08em", textTransform: "uppercase" as const, background: "rgba(255,255,255,0.04)", borderRadius: 6, padding: "3px 10px", display: "inline-block" }}>Bientôt disponible</div>
           </div>
         ))}
+      </div>
+
+      {/* SYNTHÈSE NOTEBOOKLM */}
+      <div style={{ marginTop: "2rem" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#AFA9EC", fontFamily: "Space Grotesk, sans-serif", textTransform: "uppercase" as const, marginBottom: 12 }}>
+          📝 Synthèse NotebookLM — Comprendre le Commerce International
+        </div>
+        <div style={{ background: "rgba(175,169,236,0.06)", border: "1px solid rgba(175,169,236,0.2)", borderRadius: 12, padding: "1.5rem" }}>
+
+          {[
+            { num: "1", titre: "Pourquoi les nations échangent-elles ?", color: "#7EB8FF", texte: "La mondialisation est une réalité statistique massive : entre 1980 et 2023, le PIB mondial a été multiplié par 4,3 mais les exportations mondiales par 8. Les échanges tirent la croissance. En 2017, les exports mondiaux de marchandises atteignaient 17 730 milliards de dollars, avec une croissance moyenne de 4,7 % — soit systématiquement supérieure à celle du PIB mondial (3 %)." },
+            { num: "2", titre: "Le socle classique : commerce inter-branches", color: "#5DCAA5", texte: "Smith (avantage absolu) : se spécialiser là où l'on est strictement le meilleur. Ricardo (avantage comparatif) : se spécialiser là où l'on est le moins mauvais — même les pays moins productifs dans tout gagnent à l'échange en économisant du travail. Le commerce inter-branches échange des produits différents (vin contre drap)." },
+            { num: "3", titre: "Dotations factorielles et technologiques (HOS)", color: "#AFA9EC", texte: "HOS explique les avantages comparatifs par les dotations en facteurs : ressources naturelles (Canada → bois), travail (démographie, capital humain), capital (IDE), technologie (R&D). La spécialisation n'est pas figée : la Corée du Sud est passée du textile dans les années 60 à la haute technologie grâce à des investissements massifs en R&D." },
+            { num: "4", titre: "La révolution Krugman : commerce intra-branche", color: "#EF9F27", texte: "Krugman explique pourquoi des pays similaires s'échangent les mêmes produits. Deux moteurs : les économies d'échelle (produire pour le monde entier réduit le coût unitaire) et la différenciation des produits (les consommateurs veulent de la variété). Différenciation horizontale : Airbus vs Boeing (même gamme, styles différents). Différenciation verticale : Peugeot 208 vs Ferrari (écart de qualité)." },
+            { num: "5", titre: "Fragmentation des chaînes de valeur (FMN)", color: "#97C459", texte: "~60 000 FMN gèrent 500 000 filiales. Deux stratégies : externalisation (confier à un sous-traitant externe, ex : Peugeot et ses pare-chocs) et délocalisation (filiale à l'étranger, ex : Coca-Cola). La courbe du sourire : la VA est maximale en amont (R&D, conception) et en aval (marketing, SAV), minimale au stade de l'assemblage. Commerce de superstars : en France, 1 % des exportateurs réalisent 2/3 des exports (les 'happy few')." },
+            { num: "6", titre: "Bilan : gagnants, perdants, libre-échange vs protectionnisme", color: "#F0997B", texte: "Pour le libre-échange : baisse des prix, économies d'échelle, réduction des inégalités entre pays. Pour le protectionnisme : protectionnisme éducateur (List), protectionnisme stratégique (IRA de Biden), défense de l'emploi et des normes. Milanovic (courbe de l'éléphant) : les classes moyennes des émergents et les ultra-riches gagnent ; les classes moyennes des pays développés stagnent. Le débat est désormais autant politique qu'économique." },
+          ].map((section, i) => (
+            <div key={i} style={{ marginBottom: "1.25rem", paddingBottom: "1.25rem", borderBottom: i < 5 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+                <div style={{ width: 24, height: 24, borderRadius: "50%", background: section.color, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 12, color: "#0d1b2a", flexShrink: 0, marginTop: 2 }}>{section.num}</div>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: section.color, fontFamily: "Space Grotesk, sans-serif", marginBottom: 5 }}>{section.titre}</div>
+                  <div style={{ fontSize: 13, color: "#d0cfc8", fontFamily: "Space Grotesk, sans-serif", lineHeight: 1.7 }}>{section.texte}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 8, padding: "12px 14px", marginTop: "0.5rem" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#AFA9EC", fontFamily: "Space Grotesk, sans-serif", marginBottom: 6, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>3 piliers à retenir pour le bac</div>
+            {[
+              "Spécialisation : on échange car on est différent (Ricardo, HOS) ou pour devenir plus efficace (économies d'échelle, Krugman)",
+              "Firmes superstars : le commerce est dominé par une minorité de firmes ultra-productives qui fragmentent leur production mondialement (Mélitz)",
+              "Inégalités : la mondialisation réduit l'écart entre nations mais l'accroît au sein des pays développés → retour du protectionnisme (Milanovic)",
+            ].map((p, i) => (
+              <div key={i} style={{ display: "flex", gap: 8, fontSize: 12, color: "#d0cfc8", fontFamily: "Space Grotesk, sans-serif", marginBottom: 5, lineHeight: 1.5 }}>
+                <span style={{ color: "#AFA9EC", flexShrink: 0, fontWeight: 700 }}>{i + 1}.</span>{p}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
