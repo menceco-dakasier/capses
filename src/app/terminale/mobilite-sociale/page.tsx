@@ -330,7 +330,7 @@ function StepMethode() {
     2. <strong>Calculer l'odds du groupe B</strong> : P(devenir cadre) / P(devenir ouvrier) pour fils d'ouvrier<br/>
     3. <strong>Diviser</strong> : odds A ÷ odds B = odds ratio<br/>
     4. <strong>Interpréter</strong> : « Un fils de cadre a X fois plus de chances qu'un fils d'ouvrier de devenir cadre plutôt qu'ouvrier »<br/>
-    5. <strong>Situer par rapport à 1</strong> : OR = 1 → égalité parfaite · OR > 1 → avantage du groupe A<br/><br/>
+    5. <strong>Situer par rapport à 1</strong> : OR = 1 → égalité parfaite · OR &gt; 1 → avantage du groupe A<br/><br/>
     ⚠️ Erreur fréquente : oublier de rapporter l'odds ratio à la valeur de référence (= 1) dans l'interprétation.</NoteBox>
     <STitle>Méthode — Dissertation mobilité sociale</STitle>
     <MecaBox color="#5DCAA5" steps={[
