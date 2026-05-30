@@ -66,7 +66,7 @@ const CHAPITRES = [
     temps: "20 min",
   },
   {
-    slug: "travail-emploi",
+    slug: "mutations-travail-emploi",
     titre: "Travail, emploi, chômage",
     matiere: "SOCIO",
     num: "CH 07",
