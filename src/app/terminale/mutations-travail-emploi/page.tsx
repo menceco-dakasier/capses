@@ -831,7 +831,7 @@ export default function MutationsTravailEmploiPage() {
         padding: "0 20px",
       }}>
         <div style={{ fontFamily: "Syne, sans-serif", fontSize: 13, color: "#4a6a8a" }}>
-          <span style={{ color: "#D4A017", fontWeight: 800 }}>CapSES</span>
+          <a href="/" style={{ color: "#D4A017", fontWeight: 800, textDecoration: "none" }}>CapSES</a>
           <span style={{ margin: "0 6px" }}>›</span>
           <span>Terminale</span>
           <span style={{ margin: "0 6px" }}>›</span>
