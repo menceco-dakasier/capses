@@ -376,9 +376,25 @@ function StepMemo() {
 function StepRessources() {
   return <div>
     <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>Ressources complémentaires pour approfondir et mémoriser le chapitre.</div>
+
+    {/* Vidéo YouTube */}
+    <div style={{ marginBottom: "1.5rem" }}>
+      <div style={{ fontSize: 13, fontWeight: 700, color: "#7EB8FF", fontFamily: "Space Grotesk, sans-serif", marginBottom: 10 }}>🎬 Cours vidéo — Le chômage</div>
+      <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(126,184,255,0.2)" }}>
+        <iframe
+          src="https://www.youtube.com/embed/8EJx_fJTQ2M"
+          title="Cours vidéo — Le chômage"
+          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+
+    {/* Autres ressources */}
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
       {[
-        { icon: "🎬", label: "Cours vidéo", desc: "La vidéo de révision sur le chômage sera disponible prochainement.", color: "#7EB8FF" },
         { icon: "🗺️", label: "Carte mentale", desc: "Visualise toutes les connexions entre les notions du chapitre.", color: "#D4A017" },
         { icon: "📊", label: "Infographie", desc: "Le triangle d'or danois et le mécanisme du salaire d'efficience en schémas.", color: "#5DCAA5" },
         { icon: "📝", label: "Synthèse NotebookLM", desc: "La synthèse magistrale générée par IA à partir du cours complet.", color: "#AFA9EC" },
