@@ -353,9 +353,23 @@ function StepMemo() {
 function StepRessources() {
   return <div>
     <div style={{fontSize:14,color:"#8a8880",fontFamily:"Space Grotesk, sans-serif",marginBottom:"1.5rem"}}>Ressources complémentaires pour approfondir et mémoriser le chapitre.</div>
+
+    <div style={{marginBottom:"1.5rem"}}>
+      <div style={{fontSize:13,fontWeight:700,color:"#7EB8FF",fontFamily:"Space Grotesk, sans-serif",marginBottom:10}}>🎬 Cours vidéo — La structure sociale</div>
+      <div style={{position:"relative",paddingBottom:"56.25%",height:0,borderRadius:12,overflow:"hidden",border:"1px solid rgba(126,184,255,0.2)"}}>
+        <iframe
+          src="https://www.youtube.com/embed/iSAUKy_TaVo"
+          title="Cours vidéo — La structure sociale"
+          style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+
     <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:12}}>
       {[
-        {icon:"🎬",label:"Cours vidéo",desc:"La vidéo de révision sur la structure sociale sera disponible prochainement.",color:"#7EB8FF"},
         {icon:"🗺️",label:"Carte mentale",desc:"Visualise toutes les connexions entre PCS, théories et débats sur les classes.",color:"#D4A017"},
         {icon:"📊",label:"Infographie",desc:"L'espace social de Bourdieu et les 4 évolutions depuis 1950 en schéma.",color:"#5DCAA5"},
         {icon:"📝",label:"Synthèse NotebookLM",desc:"La synthèse magistrale générée par IA à partir du cours complet.",color:"#AFA9EC"},
