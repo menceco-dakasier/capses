@@ -129,7 +129,7 @@ export default function Home() {
   // Compte à rebours
   useEffect(() => {
     const update = () => {
-      const target = new Date("2026-06-18T08:00:00");
+      const target = new Date("2026-06-16T08:00:00");
       const diff = target.getTime() - Date.now();
       if (diff <= 0) return;
       setCountdown({
@@ -355,11 +355,40 @@ export default function Home() {
               {/* 3 ENTRÉES ÉLÈVE */}
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 {([
-                  { key: "decouvrir", icon: "📖", label: "Je découvre le cours", desc: "Fiches claires, vidéos courtes, notions", color: "#D4A017" },
-                  { key: "reviser", icon: "🎯", label: "Je révise pour le bac", desc: "Quiz, sujets, plans, méthode EC/dissert", color: "#7EB8FF" },
-                  { key: "perdu", icon: "🧭", label: "Je suis perdu, je commence où ?", desc: "Parcours guidé + recommandations", color: "#c084fc" },
-                ] as { key: Mode; icon: string; label: string; desc: string; color: string }[]).map((m) => (
-                  <button key={m.key} className="btn-mode" onClick={() => setMode(mode === m.key ? null : m.key)}
+                  {
+                    key: "decouvrir",
+                    icon: "📖",
+                    label: "Je découvre le cours",
+                    desc: "Fiches claires, vidéos courtes, notions",
+                    color: "#D4A017",
+                    onClick: () => {
+                      setFilterMatiere(null);
+                      document.getElementById("chapitres")?.scrollIntoView({ behavior: "smooth" });
+                    },
+                  },
+                  {
+                    key: "reviser",
+                    icon: "🎯",
+                    label: "Je révise pour le bac",
+                    desc: "Quiz, sujets, plans, méthode EC/dissert",
+                    color: "#7EB8FF",
+                    onClick: () => {
+                      // Ouvre le premier chapitre directement à l'étape Quiz
+                      window.location.href = "/terminale/croissance-economique?step=5";
+                    },
+                  },
+                  {
+                    key: "perdu",
+                    icon: "🧭",
+                    label: "Je suis perdu, je commence où ?",
+                    desc: "Parcours guidé + recommandations",
+                    color: "#c084fc",
+                    onClick: () => {
+                      window.location.href = "/espace-eleves";
+                    },
+                  },
+                ] as { key: Mode; icon: string; label: string; desc: string; color: string; onClick: () => void }[]).map((m) => (
+                  <button key={m.key} className="btn-mode" onClick={() => { setMode(m.key); m.onClick(); }}
                     style={{
                       display: "flex", alignItems: "center", gap: 12,
                       background: mode === m.key ? `rgba(${m.color === "#D4A017" ? "212,160,23" : m.color === "#7EB8FF" ? "126,184,255" : "192,132,252"},0.12)` : "rgba(255,255,255,0.03)",
@@ -393,7 +422,7 @@ export default function Home() {
                     </>
                   ))}
                 </div>
-                <p style={{ fontSize: 11, color: "rgba(232,237,245,0.25)", marginTop: 8, letterSpacing: "0.04em" }}>Mercredi 18 juin 2026 · 8h00</p>
+                <p style={{ fontSize: 11, color: "rgba(232,237,245,0.25)", marginTop: 8, letterSpacing: "0.04em" }}>Mardi 16 juin 2026 · 8h00</p>
                 <div style={{ background: "rgba(255,255,255,0.07)", borderRadius: 2, height: 3, marginTop: "1rem" }}>
                   <div style={{ background: "linear-gradient(90deg,#D4A017,#7EB8FF)", height: 3, borderRadius: 2, width: "0%" }} />
                 </div>
@@ -411,7 +440,7 @@ export default function Home() {
           </section>
 
           {/* CHAPITRES */}
-          <section style={{ position: "relative", zIndex: 5, maxWidth: 1100, margin: "0 auto", padding: "1rem 2.5rem 4rem" }}>
+          <section id="chapitres" style={{ position: "relative", zIndex: 5, maxWidth: 1100, margin: "0 auto", padding: "1rem 2.5rem 4rem" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem", flexWrap: "wrap", gap: 12 }}>
               <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em" }}>Les 9 chapitres du programme</span>
               <div style={{ display: "flex", gap: 8 }}>
