@@ -755,19 +755,57 @@ function StepMemo() {
 
 function StepRessources() {
   const cards = [
-    { icon: "🎬", title: "Vidéo — Organisation du travail", label: "YouTube / SES Vidéos", desc: "Synthèse animée taylorisme / post-taylorisme, 12 min" },
     { icon: "🧠", title: "Carte mentale — Intégration sociale", label: "Mindmap CapSES", desc: "Tous les auteurs et notions du chapitre en un coup d'œil" },
     { icon: "📊", title: "Infographie — Mutations de l'emploi", label: "DARES / INSEE", desc: "Évolution des formes d'emploi 1982-2024" },
     { icon: "📰", title: "Article — Ubérisation", label: "Le Monde diplomatique", desc: "Dossier complet sur les plateformes et le droit du travail" },
   ];
   return (
     <div>
-      <NoteBox type="info">Ces ressources complémentaires seront disponibles prochainement. Elles enrichiront ta révision avec des supports visuels et audiovisuels.</NoteBox>
+      <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>
+        Ressources complémentaires pour approfondir et mémoriser le chapitre.
+      </div>
+
+      {/* Vidéo YouTube */}
+      <div style={{ marginBottom: "2rem" }}>
+        <div style={{
+          display: "flex", alignItems: "center", gap: 10,
+          marginBottom: "1rem",
+        }}>
+          <span style={{ fontSize: 20 }}>🎬</span>
+          <div>
+            <div style={{ fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 15, color: "#7EB8FF" }}>
+              Vidéo de révision — Mutations du travail et de l&apos;emploi
+            </div>
+            <div style={{ fontSize: 12, color: "#5a7a94", fontFamily: "Space Grotesk, sans-serif", marginTop: 2 }}>
+              Taylorisme, post-taylorisme, flexibilité, plateformes · CapSES
+            </div>
+          </div>
+        </div>
+        <div style={{
+          position: "relative", width: "100%", paddingBottom: "56.25%",
+          borderRadius: 12, overflow: "hidden",
+          border: "1px solid rgba(126,184,255,0.2)",
+          background: "#000",
+        }}>
+          <iframe
+            src="https://www.youtube.com/embed/Cpjp5GFXEMw"
+            title="Mutations du travail et de l'emploi — CapSES"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{
+              position: "absolute", top: 0, left: 0,
+              width: "100%", height: "100%", border: "none",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Autres ressources */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
         {cards.map((c, i) => (
           <div key={i} style={{
             background: "#0d2a3a", border: "1px dashed #2e4a6a", borderRadius: 12,
-            padding: 18, opacity: 0.6, textAlign: "center",
+            padding: 18, opacity: 0.6, textAlign: "center" as const,
           }}>
             <div style={{ fontSize: 28, marginBottom: 8 }}>{c.icon}</div>
             <div style={{ fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 13, color: "#e8f0f8", marginBottom: 4 }}>{c.title}</div>
