@@ -581,14 +581,45 @@ function StepMemo() {
 
 function StepRessources() {
   const cards = [
-    { icon: "🎬", title: "Vidéo — Paradoxe d'Olson", sub: "Explication animée du paradoxe de l'action collective et de ses solutions" },
-    { icon: "🎬", title: "Vidéo — NMS et conflits du travail", sub: "Comprendre la transition des conflits matérialistes aux NMS post-matérialistes" },
     { icon: "📊", title: "Data — Baromètre DJEPVA 2024", sub: "Les chiffres clés de l'engagement des jeunes en France" },
     { icon: "📄", title: "Article — Répertoire d'action collective", sub: "Retour sur le concept de Tilly et son application aux mouvements contemporains" },
   ];
   return (
     <div>
-      <NoteBox type="info">Ces ressources seront disponibles prochainement. En attendant, revois les étapes précédentes !</NoteBox>
+      <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>
+        Ressources complémentaires pour approfondir et mémoriser le chapitre.
+      </div>
+
+      {/* Vidéo YouTube */}
+      <div style={{ marginBottom: "2rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: "1rem" }}>
+          <span style={{ fontSize: 20 }}>🎬</span>
+          <div>
+            <div style={{ fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 15, color: "#7EB8FF" }}>
+              Vidéo de révision — Engagement politique
+            </div>
+            <div style={{ fontSize: 12, color: "#5a7a94", fontFamily: "Space Grotesk, sans-serif", marginTop: 2 }}>
+              Action collective, NMS, répertoires d&apos;action · CapSES
+            </div>
+          </div>
+        </div>
+        <div style={{
+          position: "relative", width: "100%", paddingBottom: "56.25%",
+          borderRadius: 12, overflow: "hidden",
+          border: "1px solid rgba(126,184,255,0.2)",
+          background: "#000",
+        }}>
+          <iframe
+            src="https://www.youtube.com/embed/nlC8P1NfsLk"
+            title="Engagement politique — CapSES"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+          />
+        </div>
+      </div>
+
+      {/* Autres ressources */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px,1fr))", gap: 10 }}>
         {cards.map((c, i) => (
           <div key={i} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 10, padding: 16, opacity: 0.6 }}>
