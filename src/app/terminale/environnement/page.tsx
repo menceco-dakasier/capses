@@ -764,15 +764,47 @@ export default function EnvironnementPage() {
       case 9:
         return (
           <div>
-            <NoteBox type="info">Les ressources vidéo et interactives sont en cours de préparation. Elles seront disponibles prochainement sur CapSES.</NoteBox>
+            <div style={{ fontSize: 14, color: "#8a8880", fontFamily: "Space Grotesk, sans-serif", marginBottom: "1.5rem" }}>
+              Ressources complémentaires pour approfondir et mémoriser le chapitre.
+            </div>
+
+            {/* Vidéo YouTube */}
+            <div style={{ marginBottom: "2rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: "1rem" }}>
+                <span style={{ fontSize: 20 }}>🎬</span>
+                <div>
+                  <div style={{ fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 15, color: "#5DCAA5" }}>
+                    Vidéo de révision — Action publique et environnement
+                  </div>
+                  <div style={{ fontSize: 12, color: "#5a7a94", fontFamily: "Space Grotesk, sans-serif", marginTop: 2 }}>
+                    Externalités, instruments, accords climatiques · CapSES
+                  </div>
+                </div>
+              </div>
+              <div style={{
+                position: "relative", width: "100%", paddingBottom: "56.25%",
+                borderRadius: 12, overflow: "hidden",
+                border: "1px solid rgba(93,202,165,0.2)",
+                background: "#000",
+              }}>
+                <iframe
+                  src="https://www.youtube.com/embed/vmcbtry1WE0"
+                  title="Action publique et environnement — CapSES"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+                />
+              </div>
+            </div>
+
+            {/* Autres ressources */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: 10 }}>
               {[
-                { icon: "🎬", title: "Vidéo cours — Externalités & instruments", text: "Cours animé sur les quatre instruments de politique environnementale." },
                 { icon: "📊", title: "Vidéo — EU ETS & marché carbone", text: "Fonctionnement et évolution du prix du carbone européen." },
                 { icon: "🌍", title: "Vidéo — Accords climatiques", text: "De Rio à Paris : chronologie et enjeux des négociations internationales." },
                 { icon: "✍️", title: "Corrigé dissertation guidé", text: "Correction détaillée d'un sujet type bac sur les politiques environnementales." },
               ].map((r, i) => (
-                <div key={i} style={{ background: "#111c29", border: "1px solid #1e3048", borderRadius: 10, padding: 20, opacity: 0.6, textAlign: "center" }}>
+                <div key={i} style={{ background: "#111c29", border: "1px solid #1e3048", borderRadius: 10, padding: 20, opacity: 0.6, textAlign: "center" as const }}>
                   <div style={{ fontSize: 28, marginBottom: 10 }}>{r.icon}</div>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "#dce8f5", marginBottom: 6 }}>{r.title}</div>
                   <div style={{ fontSize: 12, color: "#8899aa", lineHeight: 1.5, marginBottom: 12 }}>{r.text}</div>
