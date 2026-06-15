@@ -316,7 +316,7 @@ export default function Home() {
       {/* LEVEL SWITCHER */}
       <div style={{ position: "relative", zIndex: 10, display: "flex", justifyContent: "center", padding: "1.5rem 0 0" }}>
         {(["terminale", "premiere", "seconde"] as Level[]).map((l, i) => (
-          <button key={l} onClick={() => setLevel(l)} className="level-btn"
+          <button key={l} onClick={() => { if (l === "seconde") { window.location.href = "/seconde"; } else { setLevel(l); } }} className="level-btn"
             style={{
               fontFamily: "'Syne', sans-serif", fontSize: 12, fontWeight: 700,
               letterSpacing: "0.06em", textTransform: "uppercase",
@@ -326,10 +326,10 @@ export default function Home() {
               background: level === l ? "#D4A017" : "transparent",
               color: level === l ? "#0d1b2a" : "rgba(232,237,245,0.35)",
               cursor: "pointer", transition: "all 0.2s",
-              opacity: l !== "terminale" ? 0.7 : 1,
+              opacity: l === "premiere" ? 0.7 : 1,
             }}>
             {l.charAt(0).toUpperCase() + l.slice(1)}
-            {l !== "terminale" && <span style={{ fontSize: 9, display: "block", color: "rgba(232,237,245,0.4)", fontWeight: 400, fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "0.05em" }}>Bientôt</span>}
+            {l === "premiere" && <span style={{ fontSize: 9, display: "block", color: "rgba(232,237,245,0.4)", fontWeight: 400, fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "0.05em" }}>Bientôt</span>}
           </button>
         ))}
       </div>
