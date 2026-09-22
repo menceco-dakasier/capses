@@ -195,6 +195,21 @@ export default function Home() {
           box-shadow: 0 10px 24px rgba(15,71,170,.2);
         }
 
+        .primary-button:hover {
+          background: #0b3c93;
+          transform: translateY(-1px);
+        }
+
+        .primary-button:focus-visible,
+        .secondary-button:focus-visible,
+        .student-link:focus-visible,
+        .filter-button:focus-visible,
+        .chapter-card:focus-visible,
+        .nav a:focus-visible {
+          outline: 3px solid rgba(37,99,235,.28);
+          outline-offset: 3px;
+        }
+
         .secondary-button {
           background: white;
           color: #20417b;
@@ -233,19 +248,20 @@ export default function Home() {
           border-radius: 30px;
           overflow: hidden;
           border: 1px solid #dce6f4;
-          background:
-            linear-gradient(145deg, rgba(255,255,255,.92), rgba(236,244,255,.82)),
-            #f4f8ff;
-          box-shadow: 0 30px 70px rgba(46,73,120,.14);
+          background-image:
+            linear-gradient(90deg, rgba(8,26,72,.58) 0%, rgba(8,26,72,.18) 46%, rgba(8,26,72,.02) 72%),
+            url("https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=86");
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 30px 70px rgba(46,73,120,.16);
         }
 
         .hero-visual::before {
           content: "";
           position: absolute;
           inset: 0;
-          background:
-            radial-gradient(circle at 80% 25%, rgba(37,99,235,.18), transparent 25%),
-            radial-gradient(circle at 20% 74%, rgba(16,185,129,.12), transparent 23%);
+          background: linear-gradient(180deg, transparent 50%, rgba(8,26,72,.18));
+          pointer-events: none;
         }
 
         .visual-card {
@@ -257,10 +273,12 @@ export default function Home() {
         }
 
         .visual-main {
-          left: 9%;
-          top: 12%;
-          width: 70%;
-          padding: 24px;
+          left: 6%;
+          top: 8%;
+          width: 58%;
+          padding: 18px;
+          background: rgba(255,255,255,.91);
+          backdrop-filter: blur(10px);
         }
 
         .visual-main .mini-label {
@@ -285,29 +303,15 @@ export default function Home() {
           color: #6b7890;
         }
 
-        .chart-bars {
-          display: flex;
-          align-items: end;
-          gap: 8px;
-          height: 110px;
-          margin-top: 22px;
-          padding: 15px;
-          border-radius: 14px;
-          background: #f4f8ff;
-        }
-
-        .chart-bars i {
-          flex: 1;
-          border-radius: 6px 6px 3px 3px;
-          background: linear-gradient(#5b8ef2, #1d4ed8);
-        }
 
         .quote-card {
-          right: 6%;
-          bottom: 9%;
-          width: 50%;
-          padding: 18px;
-          transform: rotate(-2deg);
+          left: 6%;
+          bottom: 7%;
+          width: 54%;
+          padding: 16px 18px;
+          transform: rotate(-1deg);
+          background: rgba(255,255,255,.92);
+          backdrop-filter: blur(10px);
         }
 
         .quote-card strong {
@@ -319,13 +323,14 @@ export default function Home() {
 
         .guyane-card {
           right: 5%;
-          top: 10%;
-          padding: 11px 14px;
-          font-size: 12px;
+          top: 6%;
+          padding: 10px 13px;
+          font-size: 11px;
           font-weight: 800;
           color: #08765b;
-          background: #edfff9;
+          background: rgba(237,255,249,.92);
           border-color: #c7f3e4;
+          backdrop-filter: blur(8px);
         }
 
         .section {
@@ -552,7 +557,11 @@ export default function Home() {
         @media (max-width: 620px) {
           .home-shell { width: min(100% - 22px, 1180px); }
           .topbar-inner { min-height: 64px; gap: 12px; }
-          .student-link { display: none; }
+          .student-link {
+            display: inline-flex;
+            padding: 8px 10px;
+            font-size: 12px;
+          }
           .hero h1 { font-size: 44px; }
           .hero-copy { font-size: 15px; }
           .hero-stats { grid-template-columns: 1fr; }
@@ -577,9 +586,10 @@ export default function Home() {
           </Link>
 
           <nav className="nav" aria-label="Navigation principale">
-            <a href="#chapitres">Chapitres</a>
-            <Link href="/espace-eleves">Suivi</Link>
+            <a href="#chapitres">Terminale</a>
+            <Link href="/seconde">Seconde</Link>
             <a href="#methode">Méthode</a>
+            <Link href="/espace-eleves">Suivi</Link>
           </nav>
 
           <div className="top-actions">
@@ -630,23 +640,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-visual" aria-label="Aperçu du parcours de révision CAPSES">
+          <div
+            className="hero-visual"
+            role="img"
+            aria-label="Une lycéenne métisse étudie à son bureau avec ses livres et ses notes"
+          >
             <div className="visual-card visual-main">
-              <span className="mini-label">Ton parcours CAPSES</span>
-              <h3>Une progression visible, chapitre après chapitre.</h3>
+              <span className="mini-label">CAPSES · 2026-2027</span>
+              <h3>Des SES plus claires, plus simples, plus concrètes.</h3>
               <p>
-                Repère ce qui est acquis, ce qu’il faut revoir et passe
-                facilement du cours à l’entraînement.
+                Un parcours pensé pour comprendre le cours avant de passer
+                aux méthodes, aux quiz et aux exercices.
               </p>
-              <div className="chart-bars" aria-hidden="true">
-                <i style={{ height: "33%" }} />
-                <i style={{ height: "52%" }} />
-                <i style={{ height: "44%" }} />
-                <i style={{ height: "72%" }} />
-                <i style={{ height: "88%" }} />
-              </div>
             </div>
-            <div className="visual-card guyane-card">Pensé aussi pour les élèves de Guyane</div>
+            <div className="visual-card guyane-card">Guyane · France</div>
             <div className="visual-card quote-card">
               <strong>« Comprendre aujourd’hui, réussir demain. »</strong>
             </div>
