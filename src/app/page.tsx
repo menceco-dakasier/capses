@@ -1,761 +1,879 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
-  DOMAIN_LABELS,
   TERMINALE_CHAPTERS,
-  type TerminaleDomain,
+  type TerminaleChapter,
 } from "../data/terminale";
 
-type Filter = "all" | TerminaleDomain;
+type ProgressStatus = "non-commence" | "en-cours" | "valide";
+type Progress = Record<string, ProgressStatus>;
 
-const DOMAIN_COLORS: Record<TerminaleDomain, string> = {
-  eco: "#f59e0b",
-  socio: "#2563eb",
-  rc: "#8b5cf6",
+const domainStyle = {
+  eco: { accent: "#f59e0b", soft: "#fff3df" },
+  socio: { accent: "#2563eb", soft: "#eaf3ff" },
+  rc: { accent: "#8b5cf6", soft: "#f2ebff" },
 };
 
-const DOMAIN_BACKGROUNDS: Record<TerminaleDomain, string> = {
-  eco: "#fff7ed",
-  socio: "#eff6ff",
-  rc: "#f5f3ff",
-};
+function progressValue(status?: ProgressStatus) {
+  if (status === "valide") return 100;
+  if (status === "en-cours") return 50;
+  return 0;
+}
+
+function chapterIcon(chapter: TerminaleChapter) {
+  const icons: Record<string, string> = {
+    "croissance-economique": "▥",
+    "structure-sociale": "●●",
+    "commerce-international": "↗",
+    "politiques-europeennes": "▦",
+    environnement: "◒",
+    "engagement-politique": "✦",
+    "mobilite-sociale": "⇅",
+    chomage: "⌁",
+    "mutations-travail-emploi": "▣",
+  };
+  return icons[chapter.slug] ?? chapter.icon;
+}
 
 export default function Home() {
-  const [filter, setFilter] = useState<Filter>("all");
+  const [query, setQuery] = useState("");
+  const [progress, setProgress] = useState<Progress>({});
 
-  const chapters = useMemo(
-    () =>
-      filter === "all"
-        ? TERMINALE_CHAPTERS
-        : TERMINALE_CHAPTERS.filter((chapter) => chapter.domain === filter),
-    [filter]
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("capses_progress");
+      if (saved) setProgress(JSON.parse(saved));
+    } catch {}
+  }, []);
+
+  const visibleChapters = useMemo(() => {
+    const normalized = query.trim().toLocaleLowerCase("fr");
+    if (!normalized) return TERMINALE_CHAPTERS;
+
+    return TERMINALE_CHAPTERS.filter((chapter) =>
+      [
+        chapter.shortTitle,
+        chapter.question,
+        chapter.domainLabel,
+        ...chapter.notions,
+      ]
+        .join(" ")
+        .toLocaleLowerCase("fr")
+        .includes(normalized)
+    );
+  }, [query]);
+
+  const validated = TERMINALE_CHAPTERS.filter(
+    (chapter) => progress[chapter.slug] === "valide"
+  ).length;
+
+  const overall = Math.round(
+    TERMINALE_CHAPTERS.reduce(
+      (sum, chapter) => sum + progressValue(progress[chapter.slug]),
+      0
+    ) / TERMINALE_CHAPTERS.length
   );
 
   return (
-    <main className="capses-home">
+    <main className="home">
       <style>{`
-        .capses-home {
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        .home {
           min-height: 100vh;
-          background:
-            radial-gradient(circle at 82% 12%, rgba(37,99,235,.09), transparent 28%),
-            radial-gradient(circle at 18% 18%, rgba(139,92,246,.07), transparent 26%),
-            #f8fbff;
           color: #10214a;
+          background:
+            radial-gradient(circle at 15% 0%, rgba(96,165,250,.14), transparent 25%),
+            radial-gradient(circle at 88% 2%, rgba(139,92,246,.11), transparent 22%),
+            #f7faff;
           font-family: var(--font-geist-sans), Arial, sans-serif;
         }
 
-        .home-shell {
-          width: min(1180px, calc(100% - 32px));
+        .shell {
+          width: min(1240px, calc(100% - 34px));
           margin: 0 auto;
         }
 
-        .topbar {
+        .header {
           position: sticky;
           top: 0;
-          z-index: 30;
-          background: rgba(255,255,255,.92);
-          backdrop-filter: blur(18px);
-          border-bottom: 1px solid #e6ecf5;
+          z-index: 40;
+          background: rgba(255,255,255,.94);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e4ebf5;
         }
 
-        .topbar-inner {
+        .header-inner {
           min-height: 72px;
           display: flex;
           align-items: center;
-          gap: 28px;
+          gap: 22px;
         }
 
         .brand {
           display: flex;
           align-items: center;
-          gap: 11px;
+          gap: 10px;
           text-decoration: none;
-          color: #0b1d4d;
-          font-weight: 850;
-          font-size: 21px;
-          letter-spacing: -.03em;
+          color: #10255e;
+          min-width: max-content;
         }
 
-        .brand-mark {
+        .brand-logo {
           width: 36px;
           height: 36px;
-          border-radius: 11px;
+          border-radius: 10px;
           display: grid;
           place-items: center;
-          background: linear-gradient(145deg, #0f2d68, #2563eb);
           color: white;
-          box-shadow: 0 8px 18px rgba(37,99,235,.2);
+          font-weight: 900;
+          background: linear-gradient(145deg,#163e86,#4f7fd9);
+          box-shadow: 0 7px 18px rgba(32,77,158,.22);
+        }
+
+        .brand-name {
+          font-size: 20px;
+          line-height: 1;
+          font-weight: 900;
+          letter-spacing: -.035em;
+        }
+
+        .brand-sub {
+          margin-top: 3px;
+          color: #8090a7;
+          font-size: 9px;
+          font-weight: 650;
         }
 
         .nav {
           display: flex;
-          gap: 6px;
-          align-items: center;
+          align-self: stretch;
+          gap: 3px;
         }
 
         .nav a {
+          position: relative;
+          display: grid;
+          place-items: center;
           text-decoration: none;
-          color: #53627d;
-          font-size: 14px;
-          font-weight: 650;
-          padding: 9px 12px;
-          border-radius: 10px;
+          color: #52657f;
+          font-size: 12px;
+          font-weight: 700;
+          padding: 0 12px;
         }
 
-        .nav a:hover {
-          background: #eef4ff;
-          color: #174cb7;
+        .nav a.active {
+          color: #1851bd;
+          background: #f2f6ff;
         }
 
-        .top-actions {
+        .nav a.active::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 12px;
+          right: 12px;
+          height: 2px;
+          border-radius: 4px;
+          background: #2563eb;
+        }
+
+        .header-tools {
           margin-left: auto;
           display: flex;
           align-items: center;
           gap: 10px;
         }
 
-        .student-link {
-          text-decoration: none;
-          border: 1px solid #d8e2f0;
-          color: #20417b;
-          padding: 9px 14px;
-          border-radius: 11px;
-          font-size: 13px;
-          font-weight: 700;
-          background: white;
-        }
-
-        .hero {
-          padding: 58px 0 28px;
-          display: grid;
-          grid-template-columns: 1.1fr .9fr;
-          gap: 46px;
-          align-items: center;
-        }
-
-        .eyebrow {
-          display: inline-flex;
+        .search {
+          width: 238px;
+          display: flex;
           align-items: center;
           gap: 8px;
-          border: 1px solid #cfe0ff;
-          background: #eef5ff;
-          color: #2158c5;
-          border-radius: 999px;
-          padding: 7px 12px;
-          font-size: 12px;
-          font-weight: 800;
-          letter-spacing: .02em;
-          margin-bottom: 20px;
-        }
-
-        .hero h1 {
-          margin: 0;
-          font-size: clamp(42px, 6vw, 70px);
-          line-height: .98;
-          letter-spacing: -.055em;
-          max-width: 690px;
-          color: #081a48;
-        }
-
-        .hero h1 span {
-          color: #2563eb;
-        }
-
-        .hero-copy {
-          margin: 20px 0 26px;
-          font-size: 17px;
-          line-height: 1.65;
-          color: #5a6982;
-          max-width: 620px;
-        }
-
-        .hero-actions {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 12px;
-        }
-
-        .primary-button,
-        .secondary-button {
-          text-decoration: none;
+          background: #f2f6fb;
+          border: 1px solid #e2e9f3;
           border-radius: 12px;
-          padding: 12px 17px;
-          font-size: 14px;
-          font-weight: 800;
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
+          padding: 9px 12px;
         }
 
-        .primary-button {
-          background: #0f47aa;
-          color: white;
-          box-shadow: 0 10px 24px rgba(15,71,170,.2);
-        }
+        .search span { color: #8190a7; }
 
-        .primary-button:hover {
-          background: #0b3c93;
-          transform: translateY(-1px);
-        }
-
-        .primary-button:focus-visible,
-        .secondary-button:focus-visible,
-        .student-link:focus-visible,
-        .filter-button:focus-visible,
-        .chapter-card:focus-visible,
-        .nav a:focus-visible {
-          outline: 3px solid rgba(37,99,235,.28);
-          outline-offset: 3px;
-        }
-
-        .secondary-button {
-          background: white;
-          color: #20417b;
-          border: 1px solid #dbe5f2;
-        }
-
-        .hero-stats {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 12px;
-          margin-top: 32px;
-        }
-
-        .hero-stat {
-          background: rgba(255,255,255,.8);
-          border: 1px solid #e1e9f4;
-          border-radius: 14px;
-          padding: 14px;
-        }
-
-        .hero-stat strong {
-          display: block;
-          font-size: 14px;
-          color: #17366d;
-          margin-bottom: 4px;
-        }
-
-        .hero-stat span {
+        .search input {
+          width: 100%;
+          border: 0;
+          outline: 0;
+          background: transparent;
+          color: #344865;
           font-size: 12px;
-          color: #74829a;
+          font-family: inherit;
         }
 
-        .hero-visual {
-          position: relative;
-          min-height: 440px;
-          border-radius: 30px;
-          overflow: hidden;
-          border: 1px solid #dce6f4;
-          background-image:
-            linear-gradient(90deg, rgba(8,26,72,.58) 0%, rgba(8,26,72,.18) 46%, rgba(8,26,72,.02) 72%),
-            url("https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=86");
-          background-size: cover;
-          background-position: center;
-          box-shadow: 0 30px 70px rgba(46,73,120,.16);
-        }
-
-        .hero-visual::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(180deg, transparent 50%, rgba(8,26,72,.18));
-          pointer-events: none;
-        }
-
-        .visual-card {
-          position: absolute;
-          background: rgba(255,255,255,.92);
-          border: 1px solid #dce7f6;
-          box-shadow: 0 18px 36px rgba(66,92,134,.12);
-          border-radius: 18px;
-        }
-
-        .visual-main {
-          left: 6%;
-          top: 8%;
-          width: 58%;
-          padding: 18px;
-          background: rgba(255,255,255,.91);
-          backdrop-filter: blur(10px);
-        }
-
-        .visual-main .mini-label {
-          color: #2563eb;
-          font-size: 11px;
-          font-weight: 850;
-          text-transform: uppercase;
-          letter-spacing: .08em;
-        }
-
-        .visual-main h3 {
-          font-size: 28px;
-          line-height: 1.08;
-          margin: 10px 0 8px;
-          letter-spacing: -.035em;
-        }
-
-        .visual-main p {
-          margin: 0;
-          font-size: 13px;
-          line-height: 1.55;
-          color: #6b7890;
-        }
-
-
-        .quote-card {
-          left: 6%;
-          bottom: 7%;
-          width: 54%;
-          padding: 16px 18px;
-          transform: rotate(-1deg);
-          background: rgba(255,255,255,.92);
-          backdrop-filter: blur(10px);
-        }
-
-        .quote-card strong {
-          display: block;
-          color: #1b4db7;
-          font-size: 17px;
-          line-height: 1.35;
-        }
-
-        .guyane-card {
-          right: 5%;
-          top: 6%;
-          padding: 10px 13px;
-          font-size: 11px;
-          font-weight: 800;
-          color: #08765b;
-          background: rgba(237,255,249,.92);
-          border-color: #c7f3e4;
-          backdrop-filter: blur(8px);
-        }
-
-        .section {
-          padding: 40px 0 72px;
-        }
-
-        .section-head {
-          display: flex;
-          justify-content: space-between;
-          gap: 20px;
-          align-items: end;
-          margin-bottom: 22px;
-        }
-
-        .section-head h2 {
-          margin: 0 0 5px;
-          font-size: 28px;
-          letter-spacing: -.035em;
-          color: #0d2254;
-        }
-
-        .section-head p {
-          margin: 0;
-          color: #728099;
-          font-size: 14px;
-        }
-
-        .filters {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 7px;
-        }
-
-        .filter-button {
-          border: 1px solid #dce5f2;
-          background: white;
-          color: #5e6f89;
-          border-radius: 999px;
-          padding: 8px 13px;
-          font-size: 12px;
-          font-weight: 750;
-          cursor: pointer;
-        }
-
-        .filter-button.active {
-          border-color: #1f5cd5;
-          color: white;
-          background: #1f5cd5;
-        }
-
-        .chapter-grid {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 14px;
-        }
-
-        .chapter-card {
-          text-decoration: none;
-          display: flex;
-          flex-direction: column;
-          min-height: 258px;
-          border: 1px solid #e0e8f3;
-          background: white;
-          border-radius: 18px;
-          padding: 18px;
-          transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-        }
-
-        .chapter-card:hover {
-          transform: translateY(-3px);
-          border-color: #b9cdef;
-          box-shadow: 0 18px 38px rgba(49,78,127,.1);
-        }
-
-        .chapter-top {
-          display: flex;
-          justify-content: space-between;
-          gap: 10px;
-          align-items: center;
-          margin-bottom: 18px;
-        }
-
-        .chapter-number {
+        .avatar {
           width: 34px;
           height: 34px;
           display: grid;
           place-items: center;
-          border-radius: 11px;
-          font-size: 13px;
-          font-weight: 850;
+          border-radius: 50%;
+          background: #284878;
+          color: white;
+          font-size: 11px;
+          font-weight: 800;
+          text-decoration: none;
         }
 
-        .domain-pill {
+        .hero-wrap {
+          padding: 18px 0 0;
+        }
+
+        .hero {
+          min-height: 410px;
+          position: relative;
+          overflow: hidden;
+          display: grid;
+          grid-template-columns: 1.08fr .92fr;
+          border: 1px solid #dfe7f3;
+          border-radius: 20px 20px 0 0;
+          background:
+            linear-gradient(100deg,#ffffff 0%,#fbfdff 48%,rgba(242,248,255,.72) 65%,rgba(224,238,255,.6) 100%);
+          box-shadow: 0 15px 45px rgba(43,75,122,.08);
+        }
+
+        .hero-copy {
+          position: relative;
+          z-index: 3;
+          padding: 50px 28px 34px 52px;
+        }
+
+        .year {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          margin-bottom: 14px;
+          padding: 6px 10px;
+          border: 1px solid #d5e4ff;
+          border-radius: 999px;
+          background: #f1f6ff;
+          color: #2d5fbd;
           font-size: 10px;
-          font-weight: 850;
+          font-weight: 800;
+          letter-spacing: .04em;
           text-transform: uppercase;
-          letter-spacing: .06em;
         }
 
-        .chapter-card h3 {
-          margin: 0 0 8px;
+        .hero h1 {
+          margin: 0;
+          color: #081a4b;
+          font-size: clamp(40px, 4.7vw, 64px);
+          line-height: .98;
+          letter-spacing: -.052em;
+        }
+
+        .hero h1 span { color: #2563eb; }
+
+        .hero-lead {
+          margin: 8px 0 0;
+          color: #3e5270;
           font-size: 19px;
-          line-height: 1.15;
-          letter-spacing: -.025em;
-          color: #0e2354;
+          font-weight: 500;
+          letter-spacing: -.01em;
         }
 
-        .chapter-question {
-          margin: 0 0 16px;
-          font-size: 13px;
-          line-height: 1.5;
-          color: #697991;
-          min-height: 58px;
+        .hero-text {
+          margin: 17px 0 24px;
+          max-width: 610px;
+          color: #60728a;
+          font-size: 14px;
+          line-height: 1.65;
         }
 
-        .notions {
+        .actions {
           display: flex;
           flex-wrap: wrap;
-          gap: 5px;
-        }
-
-        .notion {
-          border: 1px solid #e4eaf3;
-          color: #64738a;
-          background: #f9fbfd;
-          border-radius: 7px;
-          padding: 4px 7px;
-          font-size: 10px;
-          font-weight: 650;
-        }
-
-        .chapter-footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 12px;
-          border-top: 1px solid #edf1f6;
-          margin-top: auto;
-          padding-top: 14px;
-          font-size: 12px;
-          color: #8290a4;
-        }
-
-        .chapter-footer strong {
-          color: #2159c5;
-        }
-
-        .approach {
-          margin-top: 28px;
-          border-radius: 22px;
-          border: 1px solid #dfe8f5;
-          background: linear-gradient(125deg, #f1f7ff, #ffffff 55%, #f5f3ff);
-          padding: 28px;
-          display: grid;
-          grid-template-columns: .8fr 1.2fr;
-          gap: 26px;
-          align-items: center;
-        }
-
-        .approach h3 {
-          margin: 0 0 8px;
-          font-size: 25px;
-          color: #102453;
-        }
-
-        .approach p {
-          margin: 0;
-          color: #6a7890;
-          line-height: 1.6;
-          font-size: 14px;
-        }
-
-        .steps {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
           gap: 10px;
         }
 
-        .step {
-          background: white;
-          border: 1px solid #e0e7f2;
-          border-radius: 14px;
-          padding: 15px;
-        }
-
-        .step b {
-          display: block;
-          color: #1b51b8;
+        .btn {
+          min-height: 44px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 9px;
+          border-radius: 10px;
+          padding: 0 17px;
+          text-decoration: none;
           font-size: 13px;
-          margin-bottom: 5px;
+          font-weight: 800;
+          transition: .18s ease;
         }
 
-        .step span {
-          color: #7a879b;
-          font-size: 11px;
-          line-height: 1.45;
+        .btn-primary {
+          background: #124ca9;
+          color: white;
+          box-shadow: 0 8px 22px rgba(18,76,169,.18);
         }
 
-        .footer {
-          border-top: 1px solid #e3e9f2;
-          background: white;
-          padding: 24px 0;
+        .btn-primary:hover { background:#0d408f; transform:translateY(-1px); }
+
+        .btn-secondary {
+          border: 1px solid #dce5f1;
+          background: rgba(255,255,255,.92);
+          color: #294a80;
         }
 
-        .footer-inner {
+        .benefits {
+          margin-top: 27px;
+          display: grid;
+          grid-template-columns: repeat(3,minmax(0,1fr));
+          gap: 14px;
+          max-width: 650px;
+        }
+
+        .benefit {
           display: flex;
+          gap: 10px;
+          align-items: center;
+          min-width: 0;
+        }
+
+        .benefit-icon {
+          width: 36px;
+          height: 36px;
+          flex: 0 0 36px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          font-size: 14px;
+          font-weight: 900;
+        }
+
+        .benefit strong {
+          display: block;
+          color: #173563;
+          font-size: 11px;
+          line-height: 1.25;
+        }
+
+        .benefit small {
+          display: block;
+          margin-top: 3px;
+          color: #8794a6;
+          font-size: 9px;
+          line-height: 1.25;
+        }
+
+        .hero-photo {
+          position: relative;
+          min-height: 410px;
+          background-image:
+            linear-gradient(90deg,rgba(255,255,255,.15),rgba(255,255,255,0) 35%),
+            url("https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=88");
+          background-size: cover;
+          background-position: center;
+        }
+
+        .hero-photo::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg,#fbfdff 0%,rgba(251,253,255,.15) 22%,transparent 48%);
+          pointer-events: none;
+        }
+
+        .scribble {
+          position: absolute;
+          z-index: 2;
+          top: 65px;
+          left: 2%;
+          color: #2363df;
+          font-size: 19px;
+          font-weight: 700;
+          font-style: italic;
+          line-height: 1.18;
+          transform: rotate(-8deg);
+          text-shadow: 0 1px 0 white;
+        }
+
+        .scribble::after {
+          content: "";
+          position: absolute;
+          width: 78px;
+          height: 2px;
+          background: #2363df;
+          left: 8px;
+          bottom: -8px;
+          transform: rotate(-8deg);
+        }
+
+        .photo-card {
+          position: absolute;
+          z-index: 3;
+          right: 22px;
+          width: 145px;
+          border: 1px solid rgba(255,255,255,.7);
+          border-radius: 13px;
+          background: rgba(245,250,255,.82);
+          backdrop-filter: blur(9px);
+          color: #315785;
+          padding: 15px;
+          box-shadow: 0 12px 28px rgba(48,75,112,.10);
+          font-size: 11px;
+          font-weight: 750;
+          line-height: 1.35;
+        }
+
+        .photo-card.top { top: 20px; }
+        .photo-card.bottom {
+          bottom: 35px;
+          color: #315785;
+          font-style: italic;
+          font-weight: 650;
+        }
+
+        .program {
+          border: 1px solid #dfe7f3;
+          border-top: 0;
+          border-radius: 0 0 20px 20px;
+          background: rgba(255,255,255,.96);
+          padding: 24px 28px 30px;
+          box-shadow: 0 20px 46px rgba(43,75,122,.07);
+        }
+
+        .program-head {
+          display: flex;
+          align-items: end;
           justify-content: space-between;
-          gap: 24px;
-          color: #7a879c;
+          gap: 16px;
+          margin-bottom: 18px;
+        }
+
+        .program-head h2 {
+          margin: 0 0 4px;
+          color: #102653;
+          font-size: 23px;
+          letter-spacing: -.035em;
+        }
+
+        .program-head p {
+          margin: 0;
+          color: #7a899f;
           font-size: 12px;
         }
 
-        @media (max-width: 900px) {
-          .nav { display: none; }
-          .hero {
-            grid-template-columns: 1fr;
-            padding-top: 38px;
-          }
-          .hero-visual { min-height: 350px; }
-          .chapter-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-          .approach { grid-template-columns: 1fr; }
+        .overall {
+          min-width: 170px;
+          text-align: right;
         }
 
-        @media (max-width: 620px) {
-          .home-shell { width: min(100% - 22px, 1180px); }
-          .topbar-inner { min-height: 64px; gap: 12px; }
-          .student-link {
-            display: inline-flex;
-            padding: 8px 10px;
-            font-size: 12px;
+        .overall-label {
+          display: flex;
+          justify-content: flex-end;
+          gap: 7px;
+          color: #687991;
+          font-size: 10px;
+          margin-bottom: 6px;
+        }
+
+        .overall-label strong { color:#1e5bc2; }
+
+        .overall-track {
+          height: 5px;
+          overflow: hidden;
+          border-radius: 999px;
+          background: #eaf0f7;
+        }
+
+        .overall-fill {
+          height: 100%;
+          border-radius: inherit;
+          background: linear-gradient(90deg,#29c58b,#377bea);
+          transition: width .35s ease;
+        }
+
+        .chapter-grid {
+          display: grid;
+          grid-template-columns: repeat(5,minmax(0,1fr));
+          gap: 12px;
+        }
+
+        .chapter-card {
+          min-width: 0;
+          min-height: 190px;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #e0e8f3;
+          border-radius: 12px;
+          background: #fff;
+          padding: 14px;
+          color: inherit;
+          text-decoration: none;
+          transition: .18s ease;
+        }
+
+        .chapter-card:hover {
+          transform: translateY(-2px);
+          border-color: #b8cae9;
+          box-shadow: 0 10px 24px rgba(43,75,122,.09);
+        }
+
+        .card-top {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          margin-bottom: 10px;
+        }
+
+        .number {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          font-size: 11px;
+          font-weight: 900;
+        }
+
+        .topic-icon {
+          margin-left: auto;
+          font-size: 18px;
+          font-weight: 900;
+        }
+
+        .chapter-card h3 {
+          margin: 0 0 6px;
+          color: #142d5b;
+          font-size: 14px;
+          line-height: 1.08;
+          letter-spacing: -.02em;
+        }
+
+        .chapter-card p {
+          margin: 0;
+          color: #6e7f96;
+          font-size: 10px;
+          line-height: 1.35;
+        }
+
+        .progress-row {
+          margin-top: auto;
+          padding-top: 12px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .progress-track {
+          flex: 1;
+          height: 6px;
+          overflow: hidden;
+          border-radius: 99px;
+          background: #e8eff6;
+        }
+
+        .progress-fill {
+          height: 100%;
+          border-radius: inherit;
+          transition: width .3s ease;
+        }
+
+        .progress-row span {
+          color: #627590;
+          font-size: 9px;
+          font-weight: 700;
+        }
+
+        .goal-card {
+          min-height: 190px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border: 1px solid #f2d997;
+          border-radius: 12px;
+          background: linear-gradient(145deg,#fff9eb,#fff3cf);
+          padding: 14px;
+        }
+
+        .goal-card .trophy {
+          font-size: 25px;
+          margin-bottom: 6px;
+        }
+
+        .goal-card strong {
+          color:#173563;
+          font-size:14px;
+        }
+
+        .goal-card p {
+          margin: 6px 0 11px;
+          color:#657792;
+          font-size:10px;
+          line-height:1.4;
+        }
+
+        .goal-card a {
+          width: 100%;
+          text-decoration:none;
+          color:white;
+          background:#103f85;
+          border-radius:8px;
+          padding:8px 9px;
+          font-size:10px;
+          font-weight:800;
+        }
+
+        .empty {
+          grid-column: 1 / -1;
+          padding: 28px;
+          text-align: center;
+          color: #718197;
+          border: 1px dashed #cdd9e8;
+          border-radius: 12px;
+          background: #f9fbfe;
+        }
+
+        .footer {
+          padding: 28px 0 38px;
+          color: #8090a5;
+          font-size: 11px;
+          display: flex;
+          justify-content: space-between;
+          gap: 16px;
+        }
+
+        .btn:focus-visible,
+        .nav a:focus-visible,
+        .avatar:focus-visible,
+        .chapter-card:focus-visible,
+        .goal-card a:focus-visible,
+        .search input:focus-visible {
+          outline: 3px solid rgba(37,99,235,.25);
+          outline-offset: 3px;
+        }
+
+        @media (max-width: 1080px) {
+          .nav a { padding: 0 8px; }
+          .search { width: 195px; }
+          .chapter-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+        }
+
+        @media (max-width: 820px) {
+          .nav { display:none; }
+          .header-inner { min-height:64px; }
+          .hero {
+            grid-template-columns: 1fr;
           }
-          .hero h1 { font-size: 44px; }
-          .hero-copy { font-size: 15px; }
-          .hero-stats { grid-template-columns: 1fr; }
-          .hero-visual { min-height: 310px; border-radius: 20px; }
-          .visual-main { width: 84%; left: 8%; top: 10%; padding: 18px; }
-          .visual-main h3 { font-size: 23px; }
-          .quote-card { width: 67%; right: 7%; bottom: 7%; }
-          .guyane-card { display: none; }
-          .section-head { align-items: start; flex-direction: column; }
-          .chapter-grid { grid-template-columns: 1fr; }
-          .chapter-card { min-height: 230px; }
-          .steps { grid-template-columns: 1fr; }
-          .footer-inner { flex-direction: column; }
+          .hero-copy { padding: 38px 28px 30px; }
+          .hero-photo { min-height: 350px; }
+          .hero-photo::before {
+            background: linear-gradient(180deg,#fbfdff 0%,rgba(251,253,255,.08) 25%,transparent 50%);
+          }
+          .search { width:min(38vw,220px); }
+          .chapter-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+        }
+
+        @media (max-width: 560px) {
+          .shell { width:min(100% - 18px,1240px); }
+          .brand-sub { display:none; }
+          .header-tools { gap:6px; }
+          .search { width:42px; padding:9px 11px; }
+          .search input { display:none; }
+          .avatar { width:32px; height:32px; }
+          .hero-wrap { padding-top:9px; }
+          .hero { border-radius:15px 15px 0 0; }
+          .hero-copy { padding:30px 18px 25px; }
+          .hero h1 { font-size:39px; }
+          .hero-lead { font-size:16px; }
+          .hero-text { font-size:13px; }
+          .benefits { grid-template-columns:1fr; }
+          .benefit small { font-size:10px; }
+          .hero-photo { min-height:310px; }
+          .scribble { top:38px; left:6%; font-size:16px; }
+          .photo-card { right:12px; width:126px; padding:11px; font-size:10px; }
+          .program { padding:20px 14px 22px; border-radius:0 0 15px 15px; }
+          .program-head { align-items:flex-start; flex-direction:column; }
+          .overall { width:100%; text-align:left; }
+          .overall-label { justify-content:flex-start; }
+          .chapter-grid { grid-template-columns:1fr; }
+          .chapter-card { min-height:165px; }
+          .footer { flex-direction:column; }
         }
       `}</style>
 
-      <header className="topbar">
-        <div className="home-shell topbar-inner">
-          <Link className="brand" href="/">
-            <span className="brand-mark">C</span>
-            <span>CAPSES</span>
+      <header className="header">
+        <div className="shell header-inner">
+          <Link href="/" className="brand">
+            <span className="brand-logo">C</span>
+            <span>
+              <span className="brand-name">CAPSES</span>
+              <span className="brand-sub">Réussir le bac de SES</span>
+            </span>
           </Link>
 
           <nav className="nav" aria-label="Navigation principale">
-            <a href="#chapitres">Terminale</a>
-            <Link href="/seconde">Seconde</Link>
-            <a href="#methode">Méthode</a>
+            <Link className="active" href="/">Accueil</Link>
+            <a href="#chapitres">Chapitres</a>
+            <a href="#chapitres">Méthodes</a>
+            <a href="#chapitres">Exercices</a>
+            <a href="#chapitres">Fiches</a>
+            <a href="#chapitres">Quiz</a>
             <Link href="/espace-eleves">Suivi</Link>
           </nav>
 
-          <div className="top-actions">
-            <Link className="student-link" href="/espace-eleves">
-              Mon espace
+          <div className="header-tools">
+            <label className="search">
+              <span aria-hidden="true">⌕</span>
+              <input
+                aria-label="Rechercher un chapitre ou une notion"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Rechercher une notion, un chapitre..."
+              />
+            </label>
+            <Link href="/espace-eleves" className="avatar" aria-label="Ouvrir mon espace">
+              EC
             </Link>
           </div>
         </div>
       </header>
 
-      <div className="home-shell">
+      <div className="shell hero-wrap">
         <section className="hero">
-          <div>
-            <div className="eyebrow">Terminale SES · Année 2026-2027</div>
+          <div className="hero-copy">
+            <div className="year">Terminale SES · 2026-2027</div>
             <h1>
-              Comprendre les SES.
-              <br />
-              <span>Progresser avec méthode.</span>
+              Bienvenue sur <span>CAPSES</span>
             </h1>
-            <p className="hero-copy">
-              CAPSES rassemble les cours, notions essentielles, mécanismes,
-              méthodes du bac, quiz et exercices dans un parcours clair, pensé
-              pour réviser efficacement tout au long de l’année.
+            <p className="hero-lead">
+              La plateforme de révision en SES pour progresser toute l’année
+            </p>
+            <p className="hero-text">
+              Des cours clairs, des schémas, des exemples, des méthodes et des
+              exercices pour comprendre, mémoriser et s’entraîner efficacement.
             </p>
 
-            <div className="hero-actions">
-              <a className="primary-button" href="#chapitres">
+            <div className="actions">
+              <a className="btn btn-primary" href="#chapitres">
                 Commencer à réviser <span>→</span>
               </a>
-              <Link className="secondary-button" href="/espace-eleves">
-                Voir ma progression
+              <Link className="btn btn-secondary" href="/espace-eleves">
+                ◉ Voir ma progression
               </Link>
             </div>
 
-            <div className="hero-stats">
-              <div className="hero-stat">
-                <strong>9 chapitres</strong>
-                <span>Tout le programme de Terminale</span>
+            <div className="benefits">
+              <div className="benefit">
+                <span className="benefit-icon" style={{background:"#e8f2ff",color:"#2563eb"}}>▣</span>
+                <span><strong>9 chapitres complets</strong><small>Tout le programme de Terminale</small></span>
               </div>
-              <div className="hero-stat">
-                <strong>Parcours guidés</strong>
-                <span>Cours, notions, quiz et méthode</span>
+              <div className="benefit">
+                <span className="benefit-icon" style={{background:"#fff1dc",color:"#ee8d18"}}>□</span>
+                <span><strong>Des contenus clairs</strong><small>Cours, schémas, exemples</small></span>
               </div>
-              <div className="hero-stat">
-                <strong>Objectif bac</strong>
-                <span>Apprendre, comprendre, s’entraîner</span>
+              <div className="benefit">
+                <span className="benefit-icon" style={{background:"#dff9f2",color:"#0ca67d"}}>◎</span>
+                <span><strong>Pour progresser vraiment</strong><small>Quiz, exercices et suivi</small></span>
               </div>
             </div>
           </div>
 
           <div
-            className="hero-visual"
+            className="hero-photo"
             role="img"
-            aria-label="Une lycéenne métisse étudie à son bureau avec ses livres et ses notes"
+            aria-label="Une lycéenne étudie avec ses livres et ses notes"
           >
-            <div className="visual-card visual-main">
-              <span className="mini-label">CAPSES · 2026-2027</span>
-              <h3>Des SES plus claires, plus simples, plus concrètes.</h3>
-              <p>
-                Un parcours pensé pour comprendre le cours avant de passer
-                aux méthodes, aux quiz et aux exercices.
-              </p>
+            <div className="scribble">
+              Comprendre<br/>aujourd’hui,<br/>réussir demain
             </div>
-            <div className="visual-card guyane-card">Guyane · France</div>
-            <div className="visual-card quote-card">
-              <strong>« Comprendre aujourd’hui, réussir demain. »</strong>
+            <div className="photo-card top">
+              Des SES<br/>plus claires,<br/>plus simples,<br/>plus concrètes.
+            </div>
+            <div className="photo-card bottom">
+              « Tout commence par une bonne méthode. »
             </div>
           </div>
         </section>
 
-        <section className="section" id="chapitres">
-          <div className="section-head">
+        <section className="program" id="chapitres">
+          <div className="program-head">
             <div>
               <h2>Les 9 chapitres de Terminale</h2>
-              <p>Ordre de progression 2026-2027.</p>
+              <p>Explore le programme et reprends là où tu en es.</p>
             </div>
-
-            <div className="filters" aria-label="Filtrer les chapitres">
-              {(Object.keys(DOMAIN_LABELS) as Filter[]).map((key) => (
-                <button
-                  key={key}
-                  className={`filter-button ${filter === key ? "active" : ""}`}
-                  onClick={() => setFilter(key)}
-                >
-                  {DOMAIN_LABELS[key]}
-                </button>
-              ))}
+            <div className="overall">
+              <div className="overall-label">
+                <span>{validated} chapitre{validated > 1 ? "s" : ""} validé{validated > 1 ? "s" : ""}</span>
+                <strong>{overall} %</strong>
+              </div>
+              <div className="overall-track">
+                <div className="overall-fill" style={{width:`${overall}%`}} />
+              </div>
             </div>
           </div>
 
           <div className="chapter-grid">
-            {chapters.map((chapter) => {
-              const color = DOMAIN_COLORS[chapter.domain];
-              const background = DOMAIN_BACKGROUNDS[chapter.domain];
+            {visibleChapters.map((chapter) => {
+              const palette = domainStyle[chapter.domain];
+              const value = progressValue(progress[chapter.slug]);
 
               return (
                 <Link
-                  className="chapter-card"
                   href={`/terminale/${chapter.slug}`}
+                  className="chapter-card"
                   key={chapter.slug}
                 >
-                  <div className="chapter-top">
+                  <div className="card-top">
                     <span
-                      className="chapter-number"
-                      style={{ background, color }}
+                      className="number"
+                      style={{background:palette.soft,color:palette.accent}}
                     >
                       {chapter.order}
                     </span>
-                    <span className="domain-pill" style={{ color }}>
-                      {chapter.domainLabel}
+                    <span className="topic-icon" style={{color:palette.accent}}>
+                      {chapterIcon(chapter)}
                     </span>
                   </div>
-
                   <h3>{chapter.shortTitle}</h3>
-                  <p className="chapter-question">{chapter.question}</p>
-
-                  <div className="notions">
-                    {chapter.notions.map((notion) => (
-                      <span className="notion" key={notion}>
-                        {notion}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="chapter-footer">
-                    <span>Révision rapide · {chapter.quickTime}</span>
-                    <strong>Ouvrir →</strong>
+                  <p>{chapter.question}</p>
+                  <div className="progress-row">
+                    <div className="progress-track">
+                      <div
+                        className="progress-fill"
+                        style={{width:`${value}%`,background:palette.accent}}
+                      />
+                    </div>
+                    <span>{value} %</span>
+                    <span style={{color:"#1f4f9f"}}>→</span>
                   </div>
                 </Link>
               );
             })}
-          </div>
 
-          <div className="approach" id="methode">
-            <div>
-              <h3>Une méthode simple pour travailler régulièrement</h3>
-              <p>
-                Chaque chapitre garde son contenu pédagogique actuel, mais le
-                parcours devient plus lisible : comprendre d’abord, mémoriser
-                les notions, puis s’entraîner au format du bac.
-              </p>
-            </div>
-            <div className="steps">
-              <div className="step">
-                <b>1 · Comprendre</b>
-                <span>Cours synthétique et mécanismes essentiels.</span>
+            {query.trim() === "" && (
+              <div className="goal-card">
+                <div className="trophy">🏆</div>
+                <strong>Ton bac, ton projet</strong>
+                <p>Avec méthode et régularité, tu peux avancer à ton rythme.</p>
+                <Link href="/espace-eleves">Voir mes progrès →</Link>
               </div>
-              <div className="step">
-                <b>2 · Mémoriser</b>
-                <span>Notions, repères et erreurs fréquentes.</span>
+            )}
+
+            {visibleChapters.length === 0 && (
+              <div className="empty">
+                Aucun chapitre ou notion ne correspond à « {query} ».
               </div>
-              <div className="step">
-                <b>3 · S’entraîner</b>
-                <span>Quiz, exercices et méthode du baccalauréat.</span>
-              </div>
-            </div>
+            )}
           </div>
         </section>
-      </div>
 
-      <footer className="footer">
-        <div className="home-shell footer-inner">
+        <footer className="footer">
           <strong>CAPSES · Sciences économiques et sociales</strong>
-          <span>Terminale · Seconde · Première à venir</span>
-        </div>
-      </footer>
+          <span>Terminale 2026-2027 · Seconde disponible · Première à venir</span>
+        </footer>
+      </div>
     </main>
   );
 }
