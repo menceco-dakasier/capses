@@ -715,10 +715,10 @@ export default function Home() {
 
           <nav className="nav" aria-label="Navigation principale">
             <Link className="active" href="/">Accueil</Link>
+            <Link href="/bts-cejm">BTS CEJM</Link>
             <a href="#chapitres">Terminale</a>
             <a href="#premiere" aria-label="Première, bientôt disponible">Première</a>
             <Link href="/seconde">Seconde</Link>
-            <Link href="/bts-cejm">BTS CEJM</Link>
             <a href="#methodes">Méthodes</a>
             <Link href="/espace-eleves">Suivi</Link>
           </nav>
