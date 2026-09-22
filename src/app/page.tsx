@@ -1,523 +1,754 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import {
+  DOMAIN_LABELS,
+  TERMINALE_CHAPTERS,
+  type TerminaleDomain,
+} from "../data/terminale";
 
-const CHAPITRES = [
-  // ECO
-  {
-    slug: "croissance-economique",
-    titre: "La croissance économique",
-    matiere: "ECO",
-    num: "CH 01",
-    difficulte: "Moyen",
-    poids: "★★★",
-    notions: ["PIB", "Facteurs de production", "Productivité globale des facteurs"],
-    temps: "20 min",
-  },
-  {
-    slug: "commerce-international",
-    titre: "Le commerce international",
-    matiere: "ECO",
-    num: "CH 02",
-    difficulte: "Exigeant",
-    poids: "★★★",
-    notions: ["Avantages comparatifs", "Libre-échange", "Protectionnisme"],
-    temps: "25 min",
-  },
-  {
-    slug: "chomage",
-    titre: "Le chômage",
-    matiere: "ECO",
-    num: "CH 03",
-    difficulte: "Moyen",
-    poids: "★★★★",
-    notions: ["Chômage classique", "Chômage keynésien", "Politiques de l'emploi"],
-    temps: "20 min",
-  },
-  {
-    slug: "politiques-europeennes",
-    titre: "Les politiques économiques européennes",
-    matiere: "ECO",
-    num: "CH 04",
-    difficulte: "Exigeant",
-    poids: "★★★",
-    notions: ["Politique monétaire", "BCE", "Politique budgétaire"],
-    temps: "25 min",
-  },
-  // SOCIO
-  {
-    slug: "structure-sociale",
-    titre: "La structure sociale",
-    matiere: "SOCIO",
-    num: "CH 05",
-    difficulte: "Facile",
-    poids: "★★",
-    notions: ["Classes sociales", "PCS", "Inégalités"],
-    temps: "15 min",
-  },
-  {
-    slug: "mobilite-sociale",
-    titre: "La mobilité sociale",
-    matiere: "SOCIO",
-    num: "CH 06",
-    difficulte: "Moyen",
-    poids: "★★★",
-    notions: ["Mobilité intergénérationnelle", "Fluidité sociale", "Table de mobilité"],
-    temps: "20 min",
-  },
-  {
-    slug: "mutations-travail-emploi",
-    titre: "Travail, emploi, chômage",
-    matiere: "SOCIO",
-    num: "CH 07",
-    difficulte: "Moyen",
-    poids: "★★★",
-    notions: ["Mutations du travail", "Précarité", "Désindustrialisation"],
-    temps: "20 min",
-  },
-  {
-    slug: "engagement-politique",
-    titre: "L'engagement politique",
-    matiere: "SOCIO",
-    num: "CH 08",
-    difficulte: "Facile",
-    poids: "★★",
-    notions: ["Vote", "Répertoires d'action", "Capital politique"],
-    temps: "15 min",
-  },
-  // REGARDS CROISÉS
-  {
-    slug: "environnement",
-    titre: "L'environnement, un enjeu mondial",
-    matiere: "RC",
-    num: "CH 09",
-    difficulte: "Exigeant",
-    poids: "★★★★",
-    notions: ["Externalités", "Biens communs", "Politiques environnementales"],
-    temps: "25 min",
-  },
-];
+type Filter = "all" | TerminaleDomain;
 
-const MATIERE_COLORS: Record<string, string> = {
-  ECO: "#D4A017",
-  SOCIO: "#7EB8FF",
-  RC: "#c084fc",
+const DOMAIN_COLORS: Record<TerminaleDomain, string> = {
+  eco: "#f59e0b",
+  socio: "#2563eb",
+  rc: "#8b5cf6",
 };
 
-const MATIERE_LABELS: Record<string, string> = {
-  ECO: "Économie",
-  SOCIO: "Sociologie",
-  RC: "Regards croisés",
+const DOMAIN_BACKGROUNDS: Record<TerminaleDomain, string> = {
+  eco: "#fff7ed",
+  socio: "#eff6ff",
+  rc: "#f5f3ff",
 };
-
-const DIFFICULTE_COLORS: Record<string, string> = {
-  Facile: "#4ade80",
-  Moyen: "#D4A017",
-  Exigeant: "#f87171",
-};
-
-type Level = "terminale" | "premiere" | "seconde";
-type Mode = "decouvrir" | "reviser" | "perdu";
 
 export default function Home() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [level, setLevel] = useState<Level>("terminale");
-  const [mode, setMode] = useState<Mode | null>(null);
-  const [countdown, setCountdown] = useState({ d: "--", h: "--", m: "--" });
-  const [filterMatiere, setFilterMatiere] = useState<string | null>(null);
+  const [filter, setFilter] = useState<Filter>("all");
 
-  // Compte à rebours
-  useEffect(() => {
-    const update = () => {
-      const target = new Date("2026-06-16T08:00:00");
-      const diff = target.getTime() - Date.now();
-      if (diff <= 0) return;
-      setCountdown({
-        d: String(Math.floor(diff / 86400000)).padStart(2, "0"),
-        h: String(Math.floor((diff % 86400000) / 3600000)).padStart(2, "0"),
-        m: String(Math.floor((diff % 3600000) / 60000)).padStart(2, "0"),
-      });
-    };
-    update();
-    const t = setInterval(update, 30000);
-    return () => clearInterval(t);
-  }, []);
-
-  // Animation canvas
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d")!;
-
-    const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    };
-    resize();
-    window.addEventListener("resize", resize);
-
-    const GOLD = "#D4A017";
-    const BLUE = "#7EB8FF";
-    const LGOLD = "#e8c84a";
-
-    const bills = Array.from({ length: 18 }, () => {
-      const w = 54 + Math.random() * 30;
-      return {
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        w, h: w * 0.47,
-        speedY: 0.5 + Math.random() * 0.7,
-        speedX: (Math.random() - 0.5) * 0.4,
-        rot: (Math.random() - 0.5) * 0.4,
-        rotSpeed: (Math.random() - 0.5) * 0.006,
-        alpha: 0.13 + Math.random() * 0.18,
-        color: Math.random() > 0.5 ? GOLD : LGOLD,
-        val: ["50", "20", "100", "200"][Math.floor(Math.random() * 4)],
-      };
-    });
-
-    const curves = Array.from({ length: 3 }, (_, c) => {
-      const pts: number[] = [];
-      let y = 0.3 + Math.random() * 0.4;
-      for (let i = 0; i <= 80; i++) {
-        y += (Math.random() - 0.48) * 0.025;
-        y = Math.max(0.05, Math.min(0.95, y));
-        pts.push(y);
-      }
-      return {
-        pts, offset: 0,
-        speed: 0.12 + Math.random() * 0.15,
-        color: c === 0 ? GOLD : c === 1 ? BLUE : "rgba(232,237,245,0.2)",
-        alpha: 0.15 + Math.random() * 0.12,
-        thick: 1 + Math.random(),
-      };
-    });
-
-    const symList = ["€", "$", "£", "%", "↑", "↗", "≈", "∑", "Δ"];
-    const syms = Array.from({ length: 14 }, () => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: 10 + Math.random() * 14,
-      speedY: -(0.2 + Math.random() * 0.3),
-      speedX: (Math.random() - 0.5) * 0.2,
-      alpha: 0.08 + Math.random() * 0.14,
-      sym: symList[Math.floor(Math.random() * symList.length)],
-      color: Math.random() > 0.5 ? GOLD : BLUE,
-    }));
-
-    let raf: number;
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Courbes
-      curves.forEach((c) => {
-        c.offset += c.speed;
-        if (c.offset > 10) c.offset = 0;
-        ctx.save();
-        ctx.globalAlpha = c.alpha;
-        ctx.strokeStyle = c.color;
-        ctx.lineWidth = c.thick;
-        ctx.beginPath();
-        c.pts.forEach((pt, i) => {
-          const xi = (i / (c.pts.length - 1)) * canvas.width;
-          const yi = pt * canvas.height * 0.45 + canvas.height * 0.1;
-          i === 0 ? ctx.moveTo(xi, yi) : ctx.lineTo(xi, yi);
-        });
-        ctx.stroke();
-        ctx.restore();
-      });
-
-      // Billets
-      bills.forEach((b) => {
-        b.y += b.speedY;
-        b.x += b.speedX;
-        b.rot += b.rotSpeed;
-        if (b.y > canvas.height + 60) { b.y = -60; b.x = Math.random() * canvas.width; }
-        if (b.x < -80) b.x = canvas.width + 80;
-        if (b.x > canvas.width + 80) b.x = -80;
-        ctx.save();
-        ctx.translate(b.x, b.y);
-        ctx.rotate(b.rot);
-        ctx.globalAlpha = b.alpha;
-        const hw = b.w / 2, hh = b.h / 2;
-        ctx.strokeStyle = b.color;
-        ctx.lineWidth = 0.8;
-        ctx.strokeRect(-hw, -hh, b.w, b.h);
-        ctx.strokeRect(-hw + 2.5, -hh + 2.5, b.w - 5, b.h - 5);
-        ctx.fillStyle = b.color;
-        ctx.font = `bold ${b.h * 0.55}px monospace`;
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText("€", 0, 0);
-        ctx.font = `${b.h * 0.28}px monospace`;
-        ctx.fillText(b.val, -hw + 8, -hh + 6);
-        ctx.fillText(b.val, hw - 8, hh - 6);
-        ctx.restore();
-      });
-
-      // Symboles
-      syms.forEach((s) => {
-        s.y += s.speedY;
-        s.x += s.speedX;
-        if (s.y < -30) { s.y = canvas.height + 30; s.x = Math.random() * canvas.width; }
-        ctx.save();
-        ctx.globalAlpha = s.alpha;
-        ctx.fillStyle = s.color;
-        ctx.font = `${s.size}px monospace`;
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText(s.sym, s.x, s.y);
-        ctx.restore();
-      });
-
-      raf = requestAnimationFrame(animate);
-    };
-    animate();
-    return () => { cancelAnimationFrame(raf); window.removeEventListener("resize", resize); };
-  }, []);
-
-  const chapitresFiltres = filterMatiere
-    ? CHAPITRES.filter((c) => c.matiere === filterMatiere)
-    : CHAPITRES;
+  const chapters = useMemo(
+    () =>
+      filter === "all"
+        ? TERMINALE_CHAPTERS
+        : TERMINALE_CHAPTERS.filter((chapter) => chapter.domain === filter),
+    [filter]
+  );
 
   return (
-    <div style={{ fontFamily: "'Space Grotesk', sans-serif", background: "#0d1b2a", color: "#e8edf5", minHeight: "100vh", position: "relative", overflow: "hidden" }}>
-      {/* Fonts */}
+    <main className="capses-home">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        a { text-decoration: none; }
-        .hover-gold:hover { color: #D4A017 !important; }
-        .card-chapitre:hover { border-color: rgba(212,160,23,0.4) !important; background: rgba(212,160,23,0.05) !important; }
-        .btn-mode:hover { opacity: 0.85; }
-        .level-btn:hover { opacity: 0.8; }
-        .nav-link:hover { color: #D4A017; }
-      `}</style>
+        .capses-home {
+          min-height: 100vh;
+          background:
+            radial-gradient(circle at 82% 12%, rgba(37,99,235,.09), transparent 28%),
+            radial-gradient(circle at 18% 18%, rgba(139,92,246,.07), transparent 26%),
+            #f8fbff;
+          color: #10214a;
+          font-family: var(--font-geist-sans), Arial, sans-serif;
+        }
 
-      {/* Canvas background */}
-      <canvas ref={canvasRef} style={{ position: "fixed", inset: 0, width: "100%", height: "100%", zIndex: 0, opacity: 0.5 }} />
-      <div style={{ position: "fixed", inset: 0, background: "radial-gradient(ellipse 90% 70% at 50% 40%, rgba(13,27,42,0.1) 0%, rgba(13,27,42,0.88) 65%, #0d1b2a 100%)", zIndex: 1, pointerEvents: "none" }} />
+        .home-shell {
+          width: min(1180px, calc(100% - 32px));
+          margin: 0 auto;
+        }
 
-      {/* NAV */}
-      <nav style={{ position: "relative", zIndex: 10, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 2.5rem", borderBottom: "0.5px solid rgba(255,255,255,0.07)", maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 800, letterSpacing: "-0.02em" }}>
-          Cap<span style={{ color: "#D4A017" }}>SES</span>
-        </div>
-        <div style={{ display: "flex", gap: "1.8rem", alignItems: "center" }}>
-          {["Chapitres", "Méthodo", "Glossaire"].map((l) => (
-            <a key={l} href="#" className="nav-link" style={{ fontSize: 13, color: "rgba(232,237,245,0.45)", letterSpacing: "0.02em", transition: "color 0.2s" }}>{l}</a>
-          ))}
-          <a href="/espace-eleves" style={{ background: "#D4A017", color: "#0d1b2a", padding: "0.45rem 1.1rem", borderRadius: 20, fontSize: 13, fontWeight: 600 }}>
-            Espace élèves
-          </a>
-        </div>
-      </nav>
+        .topbar {
+          position: sticky;
+          top: 0;
+          z-index: 30;
+          background: rgba(255,255,255,.92);
+          backdrop-filter: blur(18px);
+          border-bottom: 1px solid #e6ecf5;
+        }
 
-      {/* LEVEL SWITCHER */}
-      <div style={{ position: "relative", zIndex: 10, display: "flex", justifyContent: "center", padding: "1.5rem 0 0" }}>
-        {(["terminale", "premiere", "seconde"] as Level[]).map((l, i) => (
-          <button key={l} onClick={() => { if (l === "seconde") { window.location.href = "/seconde"; } else { setLevel(l); } }} className="level-btn"
-            style={{
-              fontFamily: "'Syne', sans-serif", fontSize: 12, fontWeight: 700,
-              letterSpacing: "0.06em", textTransform: "uppercase",
-              padding: "0.5rem 1.4rem",
-              border: "0.5px solid rgba(255,255,255,0.12)",
-              borderRadius: i === 0 ? "20px 0 0 20px" : i === 2 ? "0 20px 20px 0" : 0,
-              background: level === l ? "#D4A017" : "transparent",
-              color: level === l ? "#0d1b2a" : "rgba(232,237,245,0.35)",
-              cursor: "pointer", transition: "all 0.2s",
-              opacity: l === "premiere" ? 0.7 : 1,
-            }}>
-            {l.charAt(0).toUpperCase() + l.slice(1)}
-            {l === "premiere" && <span style={{ fontSize: 9, display: "block", color: "rgba(232,237,245,0.4)", fontWeight: 400, fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "0.05em" }}>Bientôt</span>}
-          </button>
-        ))}
-      </div>
+        .topbar-inner {
+          min-height: 72px;
+          display: flex;
+          align-items: center;
+          gap: 28px;
+        }
 
-      {/* CONTENU TERMINALE */}
-      {level === "terminale" && (
-        <>
-          {/* HERO */}
-          <section style={{ position: "relative", zIndex: 5, padding: "4rem 2.5rem 2rem", maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "center" }}>
-            <div>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(212,160,23,0.1)", border: "0.5px solid rgba(212,160,23,0.3)", color: "#D4A017", fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", padding: "5px 12px", borderRadius: 20, marginBottom: "1.5rem" }}>
-                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#D4A017", animation: "pulse 2s infinite", display: "inline-block" }} />
-                Terminale SES · BAC 2026
-              </div>
-              <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: 52, fontWeight: 800, lineHeight: 1.0, letterSpacing: "-0.03em", marginBottom: "1rem" }}>
-                Les SES<br />
-                <span style={{ color: "#D4A017" }}>sans</span>{" "}
-                <span style={{ color: "#7EB8FF" }}>stress.</span>
-              </h1>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: "rgba(232,237,245,0.5)", fontWeight: 300, marginBottom: "2rem", maxWidth: 380 }}>
-                Fiches interactives, QCM et méthodo bac — tout ce qu&apos;il faut pour cartonner en juin. Par ton prof de SES.
-              </p>
-              {/* 3 ENTRÉES ÉLÈVE */}
-              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                {([
-                  {
-                    key: "decouvrir",
-                    icon: "📖",
-                    label: "Je découvre le cours",
-                    desc: "Fiches claires, vidéos courtes, notions",
-                    color: "#D4A017",
-                    onClick: () => {
-                      setFilterMatiere(null);
-                      document.getElementById("chapitres")?.scrollIntoView({ behavior: "smooth" });
-                    },
-                  },
-                  {
-                    key: "reviser",
-                    icon: "🎯",
-                    label: "Je révise pour le bac",
-                    desc: "Quiz, sujets, plans, méthode EC/dissert",
-                    color: "#7EB8FF",
-                    onClick: () => {
-                      // Ouvre le premier chapitre directement à l'étape Quiz
-                      window.location.href = "/terminale/croissance-economique?step=5";
-                    },
-                  },
-                  {
-                    key: "perdu",
-                    icon: "🧭",
-                    label: "Je suis perdu, je commence où ?",
-                    desc: "Parcours guidé + recommandations",
-                    color: "#c084fc",
-                    onClick: () => {
-                      window.location.href = "/espace-eleves";
-                    },
-                  },
-                ] as { key: Mode; icon: string; label: string; desc: string; color: string; onClick: () => void }[]).map((m) => (
-                  <button key={m.key} className="btn-mode" onClick={() => { setMode(m.key); m.onClick(); }}
-                    style={{
-                      display: "flex", alignItems: "center", gap: 12,
-                      background: mode === m.key ? `rgba(${m.color === "#D4A017" ? "212,160,23" : m.color === "#7EB8FF" ? "126,184,255" : "192,132,252"},0.12)` : "rgba(255,255,255,0.03)",
-                      border: `0.5px solid ${mode === m.key ? m.color : "rgba(255,255,255,0.08)"}`,
-                      borderRadius: 12, padding: "0.85rem 1rem", cursor: "pointer",
-                      textAlign: "left", transition: "all 0.2s",
-                    }}>
-                    <span style={{ fontSize: 20 }}>{m.icon}</span>
-                    <div>
-                      <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 13, fontWeight: 700, color: mode === m.key ? m.color : "#e8edf5", letterSpacing: "-0.01em" }}>{m.label}</div>
-                      <div style={{ fontSize: 11, color: "rgba(232,237,245,0.35)", marginTop: 2 }}>{m.desc}</div>
-                    </div>
-                    <span style={{ marginLeft: "auto", color: m.color, fontSize: 16 }}>→</span>
-                  </button>
-                ))}
-              </div>
-            </div>
+        .brand {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          text-decoration: none;
+          color: #0b1d4d;
+          font-weight: 850;
+          font-size: 21px;
+          letter-spacing: -.03em;
+        }
 
-            {/* COUNTDOWN */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "0.5px solid rgba(255,255,255,0.09)", borderRadius: 14, padding: "1.25rem 1.5rem" }}>
-                <p style={{ fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,237,245,0.3)", marginBottom: "0.75rem" }}>Compte à rebours · Épreuve de SES</p>
-                <div style={{ display: "flex", gap: "0.75rem", alignItems: "baseline" }}>
-                  {[{ val: countdown.d, label: "Jours" }, { val: countdown.h, label: "Heures" }, { val: countdown.m, label: "Min" }].map((u, i) => (
-                    <>
-                      {i > 0 && <span key={`sep-${i}`} style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, fontWeight: 700, color: "#D4A017", alignSelf: "flex-start", paddingTop: 2 }}>:</span>}
-                      <div key={u.label} style={{ textAlign: "center" }}>
-                        <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 38, fontWeight: 700, color: "#e8edf5", display: "block", letterSpacing: "-0.04em", lineHeight: 1 }}>{u.val}</span>
-                        <span style={{ fontSize: 9, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(232,237,245,0.3)", marginTop: 4, display: "block" }}>{u.label}</span>
-                      </div>
-                    </>
-                  ))}
-                </div>
-                <p style={{ fontSize: 11, color: "rgba(232,237,245,0.25)", marginTop: 8, letterSpacing: "0.04em" }}>Mardi 16 juin 2026 · 8h00</p>
-                <div style={{ background: "rgba(255,255,255,0.07)", borderRadius: 2, height: 3, marginTop: "1rem" }}>
-                  <div style={{ background: "linear-gradient(90deg,#D4A017,#7EB8FF)", height: 3, borderRadius: 2, width: "0%" }} />
-                </div>
-                <p style={{ fontSize: 12, color: "rgba(232,237,245,0.3)", marginTop: 6 }}>0 / 9 chapitres révisés</p>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "0.75rem" }}>
-                {[{ n: "9", l: "Chapitres" }, { n: "ECO", l: "4 chapitres", c: "#D4A017" }, { n: "SOCIO", l: "4 chapitres", c: "#7EB8FF" }].map((s) => (
-                  <div key={s.l} style={{ background: "rgba(255,255,255,0.04)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 10, padding: "0.9rem 1rem", textAlign: "center" }}>
-                    <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: s.c || "#e8edf5", display: "block", letterSpacing: "-0.02em" }}>{s.n}</span>
-                    <span style={{ fontSize: 10, color: "rgba(232,237,245,0.3)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginTop: 4 }}>{s.l}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+        .brand-mark {
+          width: 36px;
+          height: 36px;
+          border-radius: 11px;
+          display: grid;
+          place-items: center;
+          background: linear-gradient(145deg, #0f2d68, #2563eb);
+          color: white;
+          box-shadow: 0 8px 18px rgba(37,99,235,.2);
+        }
 
-          {/* CHAPITRES */}
-          <section id="chapitres" style={{ position: "relative", zIndex: 5, maxWidth: 1100, margin: "0 auto", padding: "1rem 2.5rem 4rem" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem", flexWrap: "wrap", gap: 12 }}>
-              <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em" }}>Les 9 chapitres du programme</span>
-              <div style={{ display: "flex", gap: 8 }}>
-                {[{ k: null, l: "Tous" }, { k: "ECO", l: "Économie" }, { k: "SOCIO", l: "Sociologie" }, { k: "RC", l: "Regards croisés" }].map((f) => (
-                  <button key={String(f.k)} onClick={() => setFilterMatiere(f.k)}
-                    style={{
-                      fontSize: 11, fontWeight: 600, padding: "4px 12px", borderRadius: 20, cursor: "pointer", transition: "all 0.2s",
-                      background: filterMatiere === f.k ? "#D4A017" : "rgba(255,255,255,0.05)",
-                      color: filterMatiere === f.k ? "#0d1b2a" : "rgba(232,237,245,0.45)",
-                      border: `0.5px solid ${filterMatiere === f.k ? "#D4A017" : "rgba(255,255,255,0.1)"}`,
-                    }}>{f.l}</button>
-                ))}
-              </div>
-            </div>
+        .nav {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+        }
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10 }}>
-              {chapitresFiltres.map((ch) => (
-                <div key={ch.slug} className="card-chapitre"
-                  style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 14, padding: "1.25rem", cursor: "pointer", transition: "all 0.2s" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-                    <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: MATIERE_COLORS[ch.matiere], textTransform: "uppercase" }}>{ch.num} · {MATIERE_LABELS[ch.matiere]}</span>
-                    <span style={{ fontSize: 10, color: DIFFICULTE_COLORS[ch.difficulte], fontWeight: 600 }}>{ch.difficulte}</span>
-                  </div>
-                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 14, fontWeight: 700, color: "#e8edf5", marginBottom: 8, lineHeight: 1.25, letterSpacing: "-0.01em" }}>{ch.titre}</h3>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginBottom: 12 }}>
-                    {ch.notions.map((n) => (
-                      <span key={n} style={{ fontSize: 10, background: "rgba(255,255,255,0.05)", border: "0.5px solid rgba(255,255,255,0.1)", borderRadius: 4, padding: "2px 7px", color: "rgba(232,237,245,0.5)" }}>{n}</span>
-                    ))}
-                  </div>
-                  <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-                    <a href={`/terminale/${ch.slug}`} style={{ flex: 1, background: "#D4A017", color: "#0d1b2a", padding: "0.45rem 0", borderRadius: 8, fontSize: 12, fontWeight: 700, textAlign: "center", letterSpacing: "0.02em" }}>
-                      Commencer
-                    </a>
-                    <a href={`/terminale/${ch.slug}?mode=rapide`} style={{ flex: 1, background: "rgba(255,255,255,0.05)", color: "rgba(232,237,245,0.6)", padding: "0.45rem 0", borderRadius: 8, fontSize: 12, fontWeight: 600, textAlign: "center", border: "0.5px solid rgba(255,255,255,0.1)" }}>
-                      ⚡ {ch.temps}
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </>
-      )}
+        .nav a {
+          text-decoration: none;
+          color: #53627d;
+          font-size: 14px;
+          font-weight: 650;
+          padding: 9px 12px;
+          border-radius: 10px;
+        }
 
-      {/* BIENTÔT */}
-      {level !== "terminale" && (
-        <div style={{ position: "relative", zIndex: 5, maxWidth: 1100, margin: "0 auto", padding: "4rem 2.5rem", textAlign: "center" }}>
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(212,160,23,0.2)", borderRadius: 20, padding: "3rem", display: "inline-block", minWidth: 340 }}>
-            <div style={{ fontSize: 48, marginBottom: "1rem" }}>🚧</div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 26, fontWeight: 800, color: "#e8edf5", marginBottom: "0.5rem", letterSpacing: "-0.02em" }}>
-              {level.charAt(0).toUpperCase() + level.slice(1)} SES
-            </h2>
-            <p style={{ fontSize: 14, color: "rgba(232,237,245,0.4)", lineHeight: 1.6, marginBottom: "1.5rem" }}>
-              Le contenu {level} arrive très bientôt.<br />Fiches, QCM et méthodo adaptés au programme.
-            </p>
-            <span style={{ display: "inline-block", background: "rgba(212,160,23,0.1)", border: "0.5px solid rgba(212,160,23,0.3)", color: "#D4A017", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 20 }}>
-              Rentrée 2026
-            </span>
-          </div>
-        </div>
-      )}
+        .nav a:hover {
+          background: #eef4ff;
+          color: #174cb7;
+        }
 
-      {/* FOOTER */}
-      <footer style={{ position: "relative", zIndex: 5, borderTop: "0.5px solid rgba(255,255,255,0.07)", padding: "1.5rem 2.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 800 }}>
-          Cap<span style={{ color: "#D4A017" }}>SES</span>
-        </div>
-        <p style={{ fontSize: 11, color: "rgba(232,237,245,0.2)" }}>Terminale · Première · Seconde</p>
-        <p style={{ fontSize: 11, color: "rgba(232,237,245,0.2)" }}>Par un prof de SES pour ses élèves</p>
-      </footer>
+        .top-actions {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
 
-      <style>{`
-        @keyframes pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.4; transform: scale(0.8); }
+        .student-link {
+          text-decoration: none;
+          border: 1px solid #d8e2f0;
+          color: #20417b;
+          padding: 9px 14px;
+          border-radius: 11px;
+          font-size: 13px;
+          font-weight: 700;
+          background: white;
+        }
+
+        .hero {
+          padding: 58px 0 28px;
+          display: grid;
+          grid-template-columns: 1.1fr .9fr;
+          gap: 46px;
+          align-items: center;
+        }
+
+        .eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          border: 1px solid #cfe0ff;
+          background: #eef5ff;
+          color: #2158c5;
+          border-radius: 999px;
+          padding: 7px 12px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: .02em;
+          margin-bottom: 20px;
+        }
+
+        .hero h1 {
+          margin: 0;
+          font-size: clamp(42px, 6vw, 70px);
+          line-height: .98;
+          letter-spacing: -.055em;
+          max-width: 690px;
+          color: #081a48;
+        }
+
+        .hero h1 span {
+          color: #2563eb;
+        }
+
+        .hero-copy {
+          margin: 20px 0 26px;
+          font-size: 17px;
+          line-height: 1.65;
+          color: #5a6982;
+          max-width: 620px;
+        }
+
+        .hero-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+
+        .primary-button,
+        .secondary-button {
+          text-decoration: none;
+          border-radius: 12px;
+          padding: 12px 17px;
+          font-size: 14px;
+          font-weight: 800;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .primary-button {
+          background: #0f47aa;
+          color: white;
+          box-shadow: 0 10px 24px rgba(15,71,170,.2);
+        }
+
+        .secondary-button {
+          background: white;
+          color: #20417b;
+          border: 1px solid #dbe5f2;
+        }
+
+        .hero-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+          margin-top: 32px;
+        }
+
+        .hero-stat {
+          background: rgba(255,255,255,.8);
+          border: 1px solid #e1e9f4;
+          border-radius: 14px;
+          padding: 14px;
+        }
+
+        .hero-stat strong {
+          display: block;
+          font-size: 14px;
+          color: #17366d;
+          margin-bottom: 4px;
+        }
+
+        .hero-stat span {
+          font-size: 12px;
+          color: #74829a;
+        }
+
+        .hero-visual {
+          position: relative;
+          min-height: 440px;
+          border-radius: 30px;
+          overflow: hidden;
+          border: 1px solid #dce6f4;
+          background:
+            linear-gradient(145deg, rgba(255,255,255,.92), rgba(236,244,255,.82)),
+            #f4f8ff;
+          box-shadow: 0 30px 70px rgba(46,73,120,.14);
+        }
+
+        .hero-visual::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(circle at 80% 25%, rgba(37,99,235,.18), transparent 25%),
+            radial-gradient(circle at 20% 74%, rgba(16,185,129,.12), transparent 23%);
+        }
+
+        .visual-card {
+          position: absolute;
+          background: rgba(255,255,255,.92);
+          border: 1px solid #dce7f6;
+          box-shadow: 0 18px 36px rgba(66,92,134,.12);
+          border-radius: 18px;
+        }
+
+        .visual-main {
+          left: 9%;
+          top: 12%;
+          width: 70%;
+          padding: 24px;
+        }
+
+        .visual-main .mini-label {
+          color: #2563eb;
+          font-size: 11px;
+          font-weight: 850;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+        }
+
+        .visual-main h3 {
+          font-size: 28px;
+          line-height: 1.08;
+          margin: 10px 0 8px;
+          letter-spacing: -.035em;
+        }
+
+        .visual-main p {
+          margin: 0;
+          font-size: 13px;
+          line-height: 1.55;
+          color: #6b7890;
+        }
+
+        .chart-bars {
+          display: flex;
+          align-items: end;
+          gap: 8px;
+          height: 110px;
+          margin-top: 22px;
+          padding: 15px;
+          border-radius: 14px;
+          background: #f4f8ff;
+        }
+
+        .chart-bars i {
+          flex: 1;
+          border-radius: 6px 6px 3px 3px;
+          background: linear-gradient(#5b8ef2, #1d4ed8);
+        }
+
+        .quote-card {
+          right: 6%;
+          bottom: 9%;
+          width: 50%;
+          padding: 18px;
+          transform: rotate(-2deg);
+        }
+
+        .quote-card strong {
+          display: block;
+          color: #1b4db7;
+          font-size: 17px;
+          line-height: 1.35;
+        }
+
+        .guyane-card {
+          right: 5%;
+          top: 10%;
+          padding: 11px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          color: #08765b;
+          background: #edfff9;
+          border-color: #c7f3e4;
+        }
+
+        .section {
+          padding: 40px 0 72px;
+        }
+
+        .section-head {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          align-items: end;
+          margin-bottom: 22px;
+        }
+
+        .section-head h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+          letter-spacing: -.035em;
+          color: #0d2254;
+        }
+
+        .section-head p {
+          margin: 0;
+          color: #728099;
+          font-size: 14px;
+        }
+
+        .filters {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 7px;
+        }
+
+        .filter-button {
+          border: 1px solid #dce5f2;
+          background: white;
+          color: #5e6f89;
+          border-radius: 999px;
+          padding: 8px 13px;
+          font-size: 12px;
+          font-weight: 750;
+          cursor: pointer;
+        }
+
+        .filter-button.active {
+          border-color: #1f5cd5;
+          color: white;
+          background: #1f5cd5;
+        }
+
+        .chapter-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 14px;
+        }
+
+        .chapter-card {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          min-height: 258px;
+          border: 1px solid #e0e8f3;
+          background: white;
+          border-radius: 18px;
+          padding: 18px;
+          transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+        }
+
+        .chapter-card:hover {
+          transform: translateY(-3px);
+          border-color: #b9cdef;
+          box-shadow: 0 18px 38px rgba(49,78,127,.1);
+        }
+
+        .chapter-top {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 18px;
+        }
+
+        .chapter-number {
+          width: 34px;
+          height: 34px;
+          display: grid;
+          place-items: center;
+          border-radius: 11px;
+          font-size: 13px;
+          font-weight: 850;
+        }
+
+        .domain-pill {
+          font-size: 10px;
+          font-weight: 850;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+        }
+
+        .chapter-card h3 {
+          margin: 0 0 8px;
+          font-size: 19px;
+          line-height: 1.15;
+          letter-spacing: -.025em;
+          color: #0e2354;
+        }
+
+        .chapter-question {
+          margin: 0 0 16px;
+          font-size: 13px;
+          line-height: 1.5;
+          color: #697991;
+          min-height: 58px;
+        }
+
+        .notions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+
+        .notion {
+          border: 1px solid #e4eaf3;
+          color: #64738a;
+          background: #f9fbfd;
+          border-radius: 7px;
+          padding: 4px 7px;
+          font-size: 10px;
+          font-weight: 650;
+        }
+
+        .chapter-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+          border-top: 1px solid #edf1f6;
+          margin-top: auto;
+          padding-top: 14px;
+          font-size: 12px;
+          color: #8290a4;
+        }
+
+        .chapter-footer strong {
+          color: #2159c5;
+        }
+
+        .approach {
+          margin-top: 28px;
+          border-radius: 22px;
+          border: 1px solid #dfe8f5;
+          background: linear-gradient(125deg, #f1f7ff, #ffffff 55%, #f5f3ff);
+          padding: 28px;
+          display: grid;
+          grid-template-columns: .8fr 1.2fr;
+          gap: 26px;
+          align-items: center;
+        }
+
+        .approach h3 {
+          margin: 0 0 8px;
+          font-size: 25px;
+          color: #102453;
+        }
+
+        .approach p {
+          margin: 0;
+          color: #6a7890;
+          line-height: 1.6;
+          font-size: 14px;
+        }
+
+        .steps {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+
+        .step {
+          background: white;
+          border: 1px solid #e0e7f2;
+          border-radius: 14px;
+          padding: 15px;
+        }
+
+        .step b {
+          display: block;
+          color: #1b51b8;
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+
+        .step span {
+          color: #7a879b;
+          font-size: 11px;
+          line-height: 1.45;
+        }
+
+        .footer {
+          border-top: 1px solid #e3e9f2;
+          background: white;
+          padding: 24px 0;
+        }
+
+        .footer-inner {
+          display: flex;
+          justify-content: space-between;
+          gap: 24px;
+          color: #7a879c;
+          font-size: 12px;
+        }
+
+        @media (max-width: 900px) {
+          .nav { display: none; }
+          .hero {
+            grid-template-columns: 1fr;
+            padding-top: 38px;
+          }
+          .hero-visual { min-height: 350px; }
+          .chapter-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+          .approach { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 620px) {
+          .home-shell { width: min(100% - 22px, 1180px); }
+          .topbar-inner { min-height: 64px; gap: 12px; }
+          .student-link { display: none; }
+          .hero h1 { font-size: 44px; }
+          .hero-copy { font-size: 15px; }
+          .hero-stats { grid-template-columns: 1fr; }
+          .hero-visual { min-height: 310px; border-radius: 20px; }
+          .visual-main { width: 84%; left: 8%; top: 10%; padding: 18px; }
+          .visual-main h3 { font-size: 23px; }
+          .quote-card { width: 67%; right: 7%; bottom: 7%; }
+          .guyane-card { display: none; }
+          .section-head { align-items: start; flex-direction: column; }
+          .chapter-grid { grid-template-columns: 1fr; }
+          .chapter-card { min-height: 230px; }
+          .steps { grid-template-columns: 1fr; }
+          .footer-inner { flex-direction: column; }
         }
       `}</style>
-    </div>
+
+      <header className="topbar">
+        <div className="home-shell topbar-inner">
+          <Link className="brand" href="/">
+            <span className="brand-mark">C</span>
+            <span>CAPSES</span>
+          </Link>
+
+          <nav className="nav" aria-label="Navigation principale">
+            <a href="#chapitres">Chapitres</a>
+            <Link href="/espace-eleves">Suivi</Link>
+            <a href="#methode">Méthode</a>
+          </nav>
+
+          <div className="top-actions">
+            <Link className="student-link" href="/espace-eleves">
+              Mon espace
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      <div className="home-shell">
+        <section className="hero">
+          <div>
+            <div className="eyebrow">Terminale SES · Année 2026-2027</div>
+            <h1>
+              Comprendre les SES.
+              <br />
+              <span>Progresser avec méthode.</span>
+            </h1>
+            <p className="hero-copy">
+              CAPSES rassemble les cours, notions essentielles, mécanismes,
+              méthodes du bac, quiz et exercices dans un parcours clair, pensé
+              pour réviser efficacement tout au long de l’année.
+            </p>
+
+            <div className="hero-actions">
+              <a className="primary-button" href="#chapitres">
+                Commencer à réviser <span>→</span>
+              </a>
+              <Link className="secondary-button" href="/espace-eleves">
+                Voir ma progression
+              </Link>
+            </div>
+
+            <div className="hero-stats">
+              <div className="hero-stat">
+                <strong>9 chapitres</strong>
+                <span>Tout le programme de Terminale</span>
+              </div>
+              <div className="hero-stat">
+                <strong>Parcours guidés</strong>
+                <span>Cours, notions, quiz et méthode</span>
+              </div>
+              <div className="hero-stat">
+                <strong>Objectif bac</strong>
+                <span>Apprendre, comprendre, s’entraîner</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-visual" aria-label="Aperçu du parcours de révision CAPSES">
+            <div className="visual-card visual-main">
+              <span className="mini-label">Ton parcours CAPSES</span>
+              <h3>Une progression visible, chapitre après chapitre.</h3>
+              <p>
+                Repère ce qui est acquis, ce qu’il faut revoir et passe
+                facilement du cours à l’entraînement.
+              </p>
+              <div className="chart-bars" aria-hidden="true">
+                <i style={{ height: "33%" }} />
+                <i style={{ height: "52%" }} />
+                <i style={{ height: "44%" }} />
+                <i style={{ height: "72%" }} />
+                <i style={{ height: "88%" }} />
+              </div>
+            </div>
+            <div className="visual-card guyane-card">Pensé aussi pour les élèves de Guyane</div>
+            <div className="visual-card quote-card">
+              <strong>« Comprendre aujourd’hui, réussir demain. »</strong>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="chapitres">
+          <div className="section-head">
+            <div>
+              <h2>Les 9 chapitres de Terminale</h2>
+              <p>Ordre de progression 2026-2027.</p>
+            </div>
+
+            <div className="filters" aria-label="Filtrer les chapitres">
+              {(Object.keys(DOMAIN_LABELS) as Filter[]).map((key) => (
+                <button
+                  key={key}
+                  className={`filter-button ${filter === key ? "active" : ""}`}
+                  onClick={() => setFilter(key)}
+                >
+                  {DOMAIN_LABELS[key]}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="chapter-grid">
+            {chapters.map((chapter) => {
+              const color = DOMAIN_COLORS[chapter.domain];
+              const background = DOMAIN_BACKGROUNDS[chapter.domain];
+
+              return (
+                <Link
+                  className="chapter-card"
+                  href={`/terminale/${chapter.slug}`}
+                  key={chapter.slug}
+                >
+                  <div className="chapter-top">
+                    <span
+                      className="chapter-number"
+                      style={{ background, color }}
+                    >
+                      {chapter.order}
+                    </span>
+                    <span className="domain-pill" style={{ color }}>
+                      {chapter.domainLabel}
+                    </span>
+                  </div>
+
+                  <h3>{chapter.shortTitle}</h3>
+                  <p className="chapter-question">{chapter.question}</p>
+
+                  <div className="notions">
+                    {chapter.notions.map((notion) => (
+                      <span className="notion" key={notion}>
+                        {notion}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="chapter-footer">
+                    <span>Révision rapide · {chapter.quickTime}</span>
+                    <strong>Ouvrir →</strong>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="approach" id="methode">
+            <div>
+              <h3>Une méthode simple pour travailler régulièrement</h3>
+              <p>
+                Chaque chapitre garde son contenu pédagogique actuel, mais le
+                parcours devient plus lisible : comprendre d’abord, mémoriser
+                les notions, puis s’entraîner au format du bac.
+              </p>
+            </div>
+            <div className="steps">
+              <div className="step">
+                <b>1 · Comprendre</b>
+                <span>Cours synthétique et mécanismes essentiels.</span>
+              </div>
+              <div className="step">
+                <b>2 · Mémoriser</b>
+                <span>Notions, repères et erreurs fréquentes.</span>
+              </div>
+              <div className="step">
+                <b>3 · S’entraîner</b>
+                <span>Quiz, exercices et méthode du baccalauréat.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer className="footer">
+        <div className="home-shell footer-inner">
+          <strong>CAPSES · Sciences économiques et sociales</strong>
+          <span>Terminale · Seconde · Première à venir</span>
+        </div>
+      </footer>
+    </main>
   );
 }
