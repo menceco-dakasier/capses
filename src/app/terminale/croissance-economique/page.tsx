@@ -10,6 +10,7 @@ type StepId =
   | "bac"
   | "notions"
   | "cours"
+  | "video"
   | "mecanismes"
   | "donnees"
   | "erreurs"
@@ -19,98 +20,56 @@ type StepId =
   | "sources";
 
 const STEPS: { id: StepId; label: string; time: string }[] = [
-  { id: "bac", label: "À savoir pour le bac", time: "3 min" },
-  { id: "notions", label: "Notions indispensables", time: "6 min" },
-  { id: "cours", label: "Le cours essentiel", time: "10 min" },
-  { id: "mecanismes", label: "Mécanismes à maîtriser", time: "6 min" },
+  { id: "bac", label: "À savoir pour le bac", time: "4 min" },
+  { id: "notions", label: "Notions essentielles", time: "8 min" },
+  { id: "cours", label: "Le cours essentiel", time: "12 min" },
+  { id: "video", label: "Résumé vidéo", time: "Bientôt" },
+  { id: "mecanismes", label: "Mécanismes à maîtriser", time: "8 min" },
   { id: "donnees", label: "Données actualisées", time: "4 min" },
-  { id: "erreurs", label: "Erreurs fréquentes", time: "3 min" },
-  { id: "quiz", label: "Quiz", time: "6 min" },
+  { id: "erreurs", label: "Erreurs fréquentes", time: "5 min" },
+  { id: "quiz", label: "Quiz renouvelé", time: "8 min" },
   { id: "sujets", label: "Sujets bac", time: "5 min" },
   { id: "memo", label: "Fiche mémo", time: "2 min" },
   { id: "sources", label: "Sources", time: "2 min" },
 ];
 
-const QUIZ = [
-  {
-    q: "Comment mesure-t-on la croissance économique ?",
-    options: [
-      "Par le taux de variation du PIB en volume",
-      "Par le niveau du PIB en valeur uniquement",
-      "Par le taux de chômage",
-      "Par l’évolution des prix",
-    ],
-    correct: 0,
-    explain: "La croissance correspond à l’augmentation soutenue de la production. On la mesure par le taux de variation du PIB réel, donc du PIB en volume.",
-  },
-  {
-    q: "Que mesure principalement la PGF ?",
-    options: [
-      "Le nombre total de travailleurs",
-      "Le stock de machines",
-      "L’efficacité de la combinaison du travail et du capital",
-      "Le niveau général des prix",
-    ],
-    correct: 2,
-    explain: "La productivité globale des facteurs mesure l’efficacité avec laquelle travail et capital sont combinés. Elle reflète notamment le progrès technique.",
-  },
-  {
-    q: "Pourquoi dit-on que le progrès technique peut être endogène ?",
-    options: [
-      "Parce qu’il apparaît sans investissement",
-      "Parce qu’il peut résulter de décisions de R&D, de formation et d’investissement",
-      "Parce qu’il dépend uniquement de la démographie",
-      "Parce qu’il est toujours importé de l’étranger",
-    ],
-    correct: 1,
-    explain: "Les théories de la croissance endogène expliquent le progrès technique par des investissements internes au système économique : R&D, capital humain, infrastructures, etc.",
-  },
-  {
-    q: "Qu’est-ce que la destruction créatrice chez Schumpeter ?",
-    options: [
-      "La disparition définitive de toute croissance",
-      "Le remplacement d’activités anciennes par de nouvelles activités issues de l’innovation",
-      "La destruction volontaire du capital public",
-      "La baisse des prix causée par l’inflation",
-    ],
-    correct: 1,
-    explain: "L’innovation crée des produits, marchés et emplois nouveaux, tout en rendant certaines activités anciennes obsolètes.",
-  },
-  {
-    q: "Comment le progrès technique peut-il accroître les inégalités de revenus ?",
-    options: [
-      "En bénéficiant de façon identique à tous les travailleurs",
-      "En favorisant certaines qualifications et en remplaçant certaines tâches routinières",
-      "En supprimant automatiquement tous les profits",
-      "En interdisant l’innovation",
-    ],
-    correct: 1,
-    explain: "Certaines technologies complètent davantage le travail qualifié et substituent du capital à des tâches routinières, ce qui peut creuser les écarts de revenus.",
-  },
-  {
-    q: "Pourquoi l’innovation ne suffit-elle pas toujours à rendre la croissance soutenable ?",
-    options: [
-      "Parce qu’aucune innovation ne réduit les émissions",
-      "Parce que le PIB interdit l’innovation verte",
-      "À cause notamment de l’effet rebond et de limites écologiques difficilement substituables",
-      "Parce que toute innovation augmente automatiquement la pollution",
-    ],
-    correct: 2,
-    explain: "L’innovation peut reculer certaines limites, mais l’effet rebond et l’existence de seuils écologiques critiques empêchent d’en faire une solution automatique.",
-  },
+const QUIZ_BANK = [
+  { q: "Comment mesure-t-on la croissance économique ?", options: ["Par le taux de variation du PIB en volume","Par le niveau du PIB en valeur uniquement","Par le taux de chômage","Par l’évolution des prix"], correct: 0, explain: "La croissance se mesure par le taux de variation du PIB réel, c’est-à-dire du PIB en volume." },
+  { q: "Pourquoi utilise-t-on le PIB en volume ?", options: ["Pour neutraliser l’effet de la variation des prix","Pour mesurer uniquement les exportations","Pour supprimer les services non marchands","Pour calculer le chômage"], correct: 0, explain: "Le PIB en volume corrige l’effet des prix afin de mesurer l’évolution réelle des quantités produites." },
+  { q: "Quelle affirmation distingue correctement production et productivité ?", options: ["La production est une quantité produite ; la productivité rapporte cette production aux facteurs utilisés","Ce sont deux mots strictement synonymes","La productivité est toujours égale au PIB","La production mesure seulement le facteur travail"], correct: 0, explain: "La production est le résultat obtenu ; la productivité mesure l’efficacité des moyens utilisés pour produire." },
+  { q: "Que mesure la PGF ?", options: ["L’efficacité globale de la combinaison du travail et du capital","La seule productivité du travail","La quantité totale de machines","La production totale d’un pays"], correct: 0, explain: "La PGF mesure l’efficacité de la combinaison productive et capte notamment le progrès technique, l’organisation et la diffusion des connaissances." },
+  { q: "Une hausse du nombre de travailleurs, à productivité inchangée, correspond surtout à…", options: ["Une croissance extensive","Une croissance intensive","Une destruction créatrice","Une soutenabilité forte"], correct: 0, explain: "La croissance extensive vient de l’augmentation des quantités de facteurs de production." },
+  { q: "Une hausse de la production avec les mêmes quantités de travail et de capital traduit surtout…", options: ["Une hausse de la PGF","Une baisse automatique du PIB","Une croissance uniquement extensive","Une disparition du progrès technique"], correct: 0, explain: "Produire davantage avec les mêmes facteurs signifie que leur combinaison est devenue plus efficace : la PGF augmente." },
+  { q: "Dans le modèle de Solow, le progrès technique est initialement considéré comme…", options: ["Exogène au modèle","Endogène grâce à la R&D","Créé uniquement par l’État","Identique à l’investissement"], correct: 0, explain: "Chez Solow, le progrès technique explique la croissance de long terme mais n’est pas expliqué par le modèle : il est exogène." },
+  { q: "Quelle approche explique le progrès technique par la R&D, la formation et les infrastructures ?", options: ["La croissance endogène","Le modèle exogène de Solow seul","La soutenabilité forte","La comptabilité nationale"], correct: 0, explain: "Romer, Lucas et Barro montrent que des investissements internes au système économique peuvent produire du progrès technique." },
+  { q: "Quelle différence entre invention et innovation ?", options: ["L’innovation est l’application économique d’une invention ou d’une nouveauté","L’invention est toujours commercialisée","Il n’existe aucune différence","L’innovation est seulement une nouvelle machine"], correct: 0, explain: "Une invention est une idée ou découverte nouvelle ; elle devient innovation lorsqu’elle est mise en œuvre économiquement." },
+  { q: "Pourquoi un brevet peut-il favoriser l’innovation ?", options: ["Il donne temporairement à l’innovateur un droit d’exclusion qui peut permettre de rentabiliser la R&D","Il interdit toute concurrence pour toujours","Il supprime le coût de la recherche","Il oblige toutes les entreprises à innover"], correct: 0, explain: "La protection temporaire augmente le rendement attendu de l’innovation, même si une protection excessive peut freiner sa diffusion." },
+  { q: "Qu’est-ce que la destruction créatrice ?", options: ["Le renouvellement des activités par lequel l’innovation crée du nouveau et rend certaines activités anciennes obsolètes","La destruction de toutes les entreprises","Une baisse volontaire du PIB","La disparition permanente de l’emploi"], correct: 0, explain: "Chez Schumpeter, l’innovation transforme l’économie en créant de nouveaux produits et marchés tout en déclassant certaines activités anciennes." },
+  { q: "Comment le progrès technique peut-il accroître les inégalités de revenus ?", options: ["En augmentant la demande de certaines compétences tout en automatisant certaines tâches routinières","En augmentant tous les salaires de façon identique","En supprimant tous les profits","En empêchant l’accumulation du capital"], correct: 0, explain: "Le progrès technique peut être biaisé en faveur de certaines qualifications et répartir inégalement les gains de productivité." },
+  { q: "Une externalité négative est…", options: ["Un coût imposé à un tiers sans compensation par un prix de marché","Un impôt payé par une entreprise","Une hausse volontaire des salaires","Un brevet arrivé à expiration"], correct: 0, explain: "La pollution est l’exemple classique : une partie du coût social n’est pas supportée par celui qui la provoque." },
+  { q: "Que signifie soutenabilité faible ?", options: ["Les différentes formes de capital sont en partie substituables et le progrès technique peut compenser une partie de la dégradation du capital naturel","Le capital naturel est totalement irremplaçable","Il faut arrêter toute innovation","La croissance doit obligatoirement être négative"], correct: 0, explain: "La soutenabilité faible admet une certaine substitution entre capital naturel, physique, humain ou technologique." },
+  { q: "Que signifie soutenabilité forte ?", options: ["Certaines fonctions du capital naturel sont critiques et difficilement substituables","Toute ressource naturelle peut être remplacée","Seul le capital physique doit être préservé","La croissance suffit toujours à réparer les dommages"], correct: 0, explain: "La soutenabilité forte insiste sur des seuils écologiques et des éléments du capital naturel qu’il faut préserver." },
+  { q: "Qu’est-ce que l’effet rebond ?", options: ["Une amélioration d’efficacité qui réduit le coût d’usage et peut provoquer davantage d’usage, annulant une partie du gain écologique","Une baisse du PIB après une crise","Un retour automatique au plein emploi","Une hausse mécanique de la PGF après toute innovation"], correct: 0, explain: "Une technologie plus efficace ne réduit pas nécessairement autant qu’attendu la consommation totale si les usages augmentent." },
+  { q: "Pourquoi le PIB ne mesure-t-il pas directement le bien-être ?", options: ["Parce qu’il mesure la production sans intégrer correctement les inégalités, le travail domestique ou les dégradations environnementales","Parce qu’il exclut toutes les productions publiques","Parce qu’il mesure uniquement les revenus des ménages","Parce qu’il ne peut jamais augmenter"], correct: 0, explain: "Le PIB est un indicateur de production, pas un indicateur complet de bien-être." },
+  { q: "Quelle chaîne est la plus cohérente pour relier gains de productivité et croissance ?", options: ["Gains de productivité → coûts unitaires plus faibles → prix plus bas ou revenus plus élevés → demande et investissement → production","Gains de productivité → chômage automatique → production nulle","Gains de productivité → prix toujours plus élevés → demande toujours plus faible","Gains de productivité → disparition du capital"], correct: 0, explain: "Les gains de productivité peuvent être distribués sous forme de baisse des prix, hausse des salaires ou profits, ce qui soutient la demande et l’investissement." },
+  { q: "Les institutions favorables à la croissance agissent notamment en…", options: ["Réduisant l’incertitude et en sécurisant les droits de propriété et les contrats","Supprimant toute règle","Interdisant les brevets","Remplaçant toutes les entreprises privées"], correct: 0, explain: "Des institutions stables peuvent sécuriser les transactions, l’investissement et l’innovation." },
+  { q: "L’innovation suffit-elle nécessairement à rendre la croissance soutenable ?", options: ["Non, car subsistent notamment l’effet rebond, les externalités et des seuils écologiques","Oui, dans tous les cas","Oui, dès qu’une entreprise dépose un brevet","Non, parce qu’aucune innovation ne peut réduire une pollution"], correct: 0, explain: "L’innovation peut repousser certaines limites mais ne remplace pas automatiquement les politiques publiques, la sobriété ni la préservation de seuils écologiques." },
 ];
 
+const QUIZ_SIZE = 10;
+
 const TITLES: Record<StepId, { kicker: string; title: string }> = {
-  bac: { kicker: "Étape 1", title: "Ce qu’il faut savoir pour le bac" },
-  notions: { kicker: "Étape 2", title: "Les notions indispensables" },
-  cours: { kicker: "Étape 3", title: "Le cours essentiel en 10 minutes" },
-  mecanismes: { kicker: "Étape 4", title: "Les mécanismes à savoir expliquer" },
-  donnees: { kicker: "Étape 5", title: "Les données actualisées à retenir" },
-  erreurs: { kicker: "Étape 6", title: "Les erreurs fréquentes à éviter" },
-  quiz: { kicker: "Étape 7", title: "Teste tes connaissances" },
-  sujets: { kicker: "Étape 8", title: "Sujets possibles et plans rapides" },
-  memo: { kicker: "Étape 9", title: "Ta fiche mémo du chapitre" },
-  sources: { kicker: "Étape 10", title: "Sources et mise à jour" },
+  bac: { kicker: "Étape 1", title: "Objectifs d’apprentissage : officiel + en clair" },
+  notions: { kicker: "Étape 2", title: "Les notions essentielles expliquées" },
+  cours: { kicker: "Étape 3", title: "Le cours essentiel" },
+  video: { kicker: "Étape 4", title: "Résumé vidéo du chapitre" },
+  mecanismes: { kicker: "Étape 5", title: "Les mécanismes à savoir expliquer" },
+  donnees: { kicker: "Étape 6", title: "Les données actualisées à retenir" },
+  erreurs: { kicker: "Étape 7", title: "Les confusions et erreurs fréquentes" },
+  quiz: { kicker: "Étape 8", title: "Quiz renouvelé : 10 questions" },
+  sujets: { kicker: "Étape 9", title: "Sujets possibles et plans rapides" },
+  memo: { kicker: "Étape 10", title: "Ta fiche mémo du chapitre" },
+  sources: { kicker: "Étape 11", title: "Sources et mise à jour" },
 };
 
 function Flow({ items }: { items: string[] }) {
