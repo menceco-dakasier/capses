@@ -720,7 +720,7 @@ export default function Home() {
             <a href="#premiere" aria-label="Première, bientôt disponible">Première</a>
             <Link href="/seconde">Seconde</Link>
             <a href="#methodes">Méthodes</a>
-            <Link href="/espace-eleves">Suivi</Link>
+            <Link href="/espace-eleves">Mon espace</Link>
           </nav>
 
           <div className="header-tools">
