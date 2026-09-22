@@ -425,23 +425,41 @@ export default function CroissanceEconomiquePage() {
             {active === "mecanismes" && (
               <>
                 <p className={styles.intro}>
-                  Au bac, un bon raisonnement montre les étapes intermédiaires. Apprends ces chaînes causales,
-                  puis entraîne-toi à les reformuler avec tes propres mots.
+                  Au bac, un mécanisme doit montrer les étapes intermédiaires. L’objectif n’est pas d’apprendre
+                  une flèche par cœur, mais de savoir expliquer pourquoi chaque étape conduit à la suivante.
                 </p>
-                <h3 className={styles.subTitle}>Gains de productivité → croissance</h3>
-                <Flow items={["Innovation","PGF ↑","Coût unitaire ↓","Prix ↓ / salaires ou profits ↑","C + I + X ↑","Production ↑"]} />
 
-                <h3 className={styles.subTitle}>Croissance endogène</h3>
-                <Flow items={["Croissance","Revenus / profits / recettes publiques ↑","R&D + formation + infrastructures ↑","Externalités positives","PGF ↑","Croissance future"]} />
+                <h3 className={styles.subTitle}>1. Gains de productivité → croissance</h3>
+                <Flow items={["Innovation / meilleure organisation","PGF ↑","Coût unitaire ↓","Prix ↓ ou salaires / profits ↑","Consommation + investissement + exportations ↑","Production ↑"]} />
 
-                <h3 className={styles.subTitle}>Institutions → innovation</h3>
-                <Flow items={["Droits de propriété","Risque de copie ↓","Rendement attendu de l’innovation ↑","R&D / investissement ↑","Innovation ↑","Croissance ↑"]} />
+                <h3 className={styles.subTitle}>2. Croissance endogène</h3>
+                <Flow items={["Croissance","Revenus + profits + recettes publiques ↑","R&D + formation + capital + infrastructures ↑","Externalités positives","PGF et innovation ↑","Croissance future"]} />
 
-                <h3 className={styles.subTitle}>Progrès technique → inégalités possibles</h3>
-                <Flow items={["Nouvelles technologies","Complémentarité avec certaines compétences","Productivité des qualifiés ↑","Demande et rémunération ↑","Écarts de revenus possibles"]} />
+                <h3 className={styles.subTitle}>3. Institutions → investissement et innovation</h3>
+                <Flow items={["Droits de propriété / contrats sécurisés","Incertitude ↓","Rendement attendu de l’investissement ↑","Investissement et R&D ↑","Innovation ↑","Croissance ↑"]} />
 
-                <h3 className={styles.subTitle}>Innovation verte : une réponse partielle</h3>
-                <Flow items={["Innovation","Efficacité énergétique ↑","Consommation par unité ↓","Coût d’usage parfois ↓","Usages peuvent ↑","Effet rebond possible"]} />
+                <h3 className={styles.subTitle}>4. Destruction créatrice</h3>
+                <Flow items={["Innovation","Nouveaux produits / procédés","Nouveaux marchés et activités","Anciennes techniques deviennent obsolètes","Réallocation du capital et du travail","Transformation de l’économie"]} />
+
+                <h3 className={styles.subTitle}>5. Progrès technique → inégalités possibles</h3>
+                <Flow items={["Nouvelles technologies","Complémentarité avec certaines qualifications","Productivité de certains travailleurs ↑","Demande de ces compétences ↑","Rémunérations ↑","Écarts de revenus possibles"]} />
+
+                <h3 className={styles.subTitle}>6. Soutenabilité faible : la logique de substitution</h3>
+                <Flow items={["Dégradation d’une partie du capital naturel","Innovation et investissement","Capital technique / humain / technologique ↑","Substitution entre formes de capital","Stock global de capital maintenu","Croissance jugée soutenable"]} />
+                <div className={styles.callout}>
+                  <strong>Idée centrale :</strong> une partie du capital naturel peut être remplacée par d’autres formes
+                  de capital. Cette approche accorde donc une place importante au progrès technique et à l’innovation.
+                </div>
+
+                <h3 className={styles.subTitle}>7. Soutenabilité forte : la logique des seuils écologiques</h3>
+                <Flow items={["Capital naturel critique","Faible substituabilité","Risque de franchir des seuils irréversibles","Préservation du stock naturel","Normes + sobriété + réduction des émissions","Soutenabilité"]} />
+                <div className={styles.callout + " " + styles.warning}>
+                  <strong>Idée centrale :</strong> certaines fonctions de la nature — climat stable, biodiversité,
+                  sols fertiles, cycles de l’eau — ne peuvent pas être remplacées simplement par davantage de capital technique.
+                </div>
+
+                <h3 className={styles.subTitle}>8. Innovation verte → effet rebond possible</h3>
+                <Flow items={["Innovation","Efficacité énergétique ↑","Consommation par unité ↓","Coût d’usage ↓","Usages peuvent ↑","Gain environnemental partiellement annulé"]} />
               </>
             )}
 
@@ -493,15 +511,30 @@ export default function CroissanceEconomiquePage() {
 
             {active === "erreurs" && (
               <>
-                <p className={styles.intro}>Six erreurs coûtent régulièrement des points parce qu’elles rendent le raisonnement imprécis.</p>
+                <p className={styles.intro}>
+                  Cette partie devient volontairement plus complète : beaucoup d’erreurs viennent de notions
+                  proches que les élèves utilisent comme des synonymes alors qu’elles ne le sont pas.
+                </p>
                 <div className={styles.grid2}>
                   {[
-                    ["« Le PIB mesure le bonheur »","Faux. Le PIB mesure une production. Il ne mesure pas directement le bien-être."],
-                    ["« Croissance = développement »","Faux. La croissance peut favoriser le développement, mais le développement recouvre des transformations beaucoup plus larges."],
-                    ["« Progrès technique = machines »","Trop réducteur. Il inclut aussi les produits, procédés, organisations, connaissances et modes de commercialisation."],
-                    ["« L’innovation détruit l’emploi »","Trop catégorique. Elle détruit certains emplois et en crée d’autres : c’est la destruction créatrice."],
-                    ["« L’innovation verte règle le problème écologique »","Faux. Elle peut reculer certaines limites mais l’effet rebond et des seuils écologiques persistent."],
-                    ["« La technologie profite à tout le monde pareil »","Faux. Les gains peuvent être distribués de façon inégale selon les compétences, les emplois et la position des entreprises."],
+                    ["Production ≠ productivité","La production est ce qui est produit. La productivité mesure l’efficacité avec laquelle on utilise les facteurs pour produire."],
+                    ["Productivité du travail ≠ PGF","La productivité du travail rapporte la production au travail utilisé. La PGF mesure l’efficacité de la combinaison du travail et du capital."],
+                    ["PGF ≠ production","Une économie peut produire beaucoup avec une PGF faible si elle mobilise énormément de travail et de capital. La PGF ne mesure pas le niveau de production."],
+                    ["Exogène ≠ endogène","Exogène signifie expliqué de l’extérieur du modèle ; endogène signifie expliqué par des mécanismes internes au modèle."],
+                    ["Solow ≠ croissance endogène","Dans le modèle de Solow, le progrès technique est exogène. Romer, Lucas et Barro sont associés aux théories de la croissance endogène."],
+                    ["Invention ≠ innovation","Une invention est une découverte ou une idée nouvelle ; elle devient innovation lorsqu’elle est appliquée économiquement."],
+                    ["Innovation ≠ progrès technique au sens strict d’une seule machine","Le progrès technique regroupe de multiples innovations de produit, procédé, organisation ou commercialisation."],
+                    ["Capital ≠ argent","Dans ce chapitre, le facteur capital désigne surtout les biens de production durables : machines, bâtiments, logiciels, équipements."],
+                    ["Croissance extensive ≠ croissance intensive","L’extensive repose surtout sur davantage de facteurs ; l’intensive sur une meilleure efficacité et des gains de productivité."],
+                    ["Hausse du PIB ≠ hausse automatique du bien-être","Le PIB mesure la production. Il ne dit pas directement comment les revenus sont répartis ni quel est l’état de l’environnement ou de la qualité de vie."],
+                    ["Taux de croissance ≠ niveau du PIB","Un pays peut avoir un PIB très élevé mais une faible croissance, ou un PIB plus faible mais une croissance rapide."],
+                    ["Destruction créatrice ≠ destruction nette de l’emploi","Le mécanisme décrit une recomposition : certaines activités et certains emplois disparaissent tandis que d’autres apparaissent."],
+                    ["Brevet ≠ monopole définitif","Le brevet protège temporairement une innovation. Son but est d’encourager la R&D tout en permettant à terme la diffusion des connaissances."],
+                    ["Institutions ≠ seulement organisations publiques","Une institution est une règle formelle ou informelle : droits de propriété, contrats, normes, règles de concurrence, système éducatif, etc."],
+                    ["Soutenabilité faible ≠ absence de protection de l’environnement","Elle reconnaît le problème écologique mais suppose davantage de possibilités de substitution entre capital naturel et autres formes de capital."],
+                    ["Soutenabilité forte ≠ interdiction de toute croissance","Elle affirme surtout que certaines composantes du capital naturel sont critiques et doivent être préservées au-delà de seuils."],
+                    ["Innovation verte ≠ solution automatique","Elle peut réduire certaines pressions écologiques, mais l’effet rebond, les externalités et les seuils écologiques demeurent."],
+                    ["Progrès technique ≠ bénéfice identique pour tous","Il peut accroître la productivité globale tout en créant des gagnants et des perdants et en augmentant certaines inégalités de revenus."],
                   ].map(([title,text]) => (
                     <div className={styles.card + " " + styles.cardCoral} key={title}>
                       <h3>{title}</h3><p>{text}</p>
@@ -514,9 +547,18 @@ export default function CroissanceEconomiquePage() {
             {active === "quiz" && (
               <>
                 <p className={styles.intro}>
-                  Réponds aux six questions. À partir de 70 %, le chapitre est enregistré comme validé dans « Mon espace ».
+                  La banque contient 20 questions. À chaque chargement de la page, CAPSES en tire
+                  <strong> 10 au hasard</strong> : le quiz n’est donc pas toujours identique. À partir de 70 %,
+                  le chapitre est enregistré comme validé dans « Mon espace ».
                 </p>
-                {QUIZ.map((item, qIndex) => {
+                <div className={styles.callout + " " + styles.good}>
+                  <strong>Pourquoi ce système ?</strong> Il oblige à réellement maîtriser le chapitre plutôt qu’à mémoriser
+                  l’ordre des réponses. Les questions couvrent définitions, mécanismes et confusions classiques.
+                </div>
+                {quizQuestions.length === 0 && (
+                  <div className={styles.callout}>Préparation d’un nouveau quiz…</div>
+                )}
+                {quizQuestions.map((item, qIndex) => {
                   const selected = answers[qIndex];
                   return (
                     <div className={styles.quizQuestion} key={item.q}>
@@ -552,9 +594,9 @@ export default function CroissanceEconomiquePage() {
                     <span>
                       {score >= 70
                         ? "Chapitre validé. Ton score est enregistré dans Mon espace."
-                        : "Le chapitre reste en cours. Revois les mécanismes puis retente le quiz."}
+                        : "Le chapitre reste en cours. Revois les notions et mécanismes puis retente une nouvelle série."}
                     </span>
-                    <button type="button" className={styles.reset} onClick={resetQuiz}>Recommencer le quiz</button>
+                    <button type="button" className={styles.reset} onClick={resetQuiz}>Tirer 10 nouvelles questions</button>
                   </div>
                 )}
               </>
