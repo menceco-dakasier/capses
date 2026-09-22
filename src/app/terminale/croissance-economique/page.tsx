@@ -293,7 +293,7 @@ export default function CroissanceEconomiquePage() {
                       <span className={styles.badge}>{item.n} · version officielle</span>
                       <h3>{item.official}</h3>
                       <div className={styles.callout + " " + styles.good}>
-                        <strong>En clair pour l’élève :</strong> {item.clear}
+                        <strong>En clair :</strong> {item.clear}
                       </div>
                     </div>
                   ))}
