@@ -258,28 +258,49 @@ export default function CroissanceEconomiquePage() {
             {active === "bac" && (
               <>
                 <p className={styles.intro}>
-                  Le programme ne demande pas de réciter une liste d’auteurs : il faut surtout maîtriser
-                  des mécanismes. Voici les six attentes à pouvoir expliquer avec précision.
+                  Pour chaque objectif, CAPSES affiche d’abord la formulation officielle du programme,
+                  puis une version « en clair » qui dit exactement ce que tu dois savoir faire au bac.
                 </p>
                 <div className={styles.grid2}>
                   {[
-                    ["1. Sources de la croissance","Expliquer comment l’accumulation du travail et du capital augmente la production, et distinguer cette croissance extensive des gains de productivité."],
-                    ["2. PGF et progrès technique","Comprendre que la PGF mesure l’efficacité de la combinaison productive et qu’elle est étroitement liée au progrès technique."],
-                    ["3. Progrès technique endogène","Montrer que l’innovation dépend notamment de la R&D, du capital humain, du capital physique et des infrastructures publiques."],
-                    ["4. Institutions","Expliquer comment les droits de propriété, les brevets et des institutions stables peuvent encourager l’investissement et l’innovation."],
-                    ["5. Destruction créatrice et inégalités","Comprendre que l’innovation crée des activités nouvelles, en détruit d’anciennes et peut accroître certaines inégalités de revenus."],
-                    ["6. Limites écologiques","Montrer que la croissance se heurte à l’épuisement des ressources, aux pollutions et au réchauffement climatique, et que l’innovation peut aider sans constituer une solution automatique."],
-                  ].map(([title,text]) => (
-                    <div className={styles.card + " " + styles.cardBlue} key={title}>
-                      <span className={styles.badge}>Objectif d’apprentissage</span>
-                      <h3>{title}</h3>
-                      <p>{text}</p>
+                    {
+                      n:"OA 1",
+                      official:"Comprendre le processus de croissance économique et les sources de la croissance : accumulation des facteurs et accroissement de la productivité globale des facteurs ; comprendre le lien entre le progrès technique et l’accroissement de la productivité globale des facteurs.",
+                      clear:"Tu dois savoir expliquer que la production augmente soit parce qu’on utilise davantage de travail et de capital, soit parce qu’on les combine plus efficacement grâce notamment au progrès technique."
+                    },
+                    {
+                      n:"OA 2",
+                      official:"Comprendre que le progrès technique est endogène et qu’il résulte en particulier de l’innovation.",
+                      clear:"Le progrès technique ne tombe pas du ciel : les entreprises, l’État et les individus investissent en R&D, formation, équipements et infrastructures, ce qui produit des innovations."
+                    },
+                    {
+                      n:"OA 3",
+                      official:"Comprendre comment les institutions (notamment les droits de propriété) influent sur la croissance en affectant l’incitation à investir et innover ; savoir que l’innovation s’accompagne d’un processus de destruction créatrice.",
+                      clear:"Des règles stables, des droits de propriété et des brevets peuvent encourager l’investissement. Mais l’innovation crée aussi de nouvelles activités tout en rendant certaines anciennes activités obsolètes."
+                    },
+                    {
+                      n:"OA 4",
+                      official:"Comprendre comment le progrès technique peut engendrer des inégalités de revenus.",
+                      clear:"Les nouvelles technologies ne profitent pas de la même manière à tous : certaines compétences sont davantage valorisées, certaines tâches sont automatisées et les gains peuvent être concentrés."
+                    },
+                    {
+                      n:"OA 5",
+                      official:"Comprendre qu’une croissance économique soutenable se heurte à des limites écologiques (notamment l’épuisement des ressources, la pollution et le réchauffement climatique) et que l’innovation peut aider à reculer ces limites.",
+                      clear:"La croissance utilise des ressources et produit des dommages environnementaux. L’innovation peut réduire certaines pressions, mais elle ne supprime pas automatiquement les limites écologiques."
+                    },
+                  ].map((item) => (
+                    <div className={styles.card + " " + styles.cardBlue} key={item.n}>
+                      <span className={styles.badge}>{item.n} · version officielle</span>
+                      <h3>{item.official}</h3>
+                      <div className={styles.callout + " " + styles.good}>
+                        <strong>En clair pour l’élève :</strong> {item.clear}
+                      </div>
                     </div>
                   ))}
                 </div>
                 <div className={styles.callout + " " + styles.good}>
-                  <strong>Réflexe bac :</strong> pour chaque objectif, sois capable de donner une définition,
-                  un mécanisme en plusieurs étapes et un exemple concret.
+                  <strong>Réflexe bac :</strong> pour chacun des 5 objectifs, maîtrise une définition,
+                  un mécanisme en plusieurs étapes, un exemple et au moins une confusion à éviter.
                 </div>
               </>
             )}
@@ -287,28 +308,41 @@ export default function CroissanceEconomiquePage() {
             {active === "notions" && (
               <>
                 <p className={styles.intro}>
-                  Ces définitions doivent être suffisamment précises pour être utilisées dans une EC1,
-                  une EC3 ou une dissertation.
+                  Ici, une notion ne se limite pas à une phrase à apprendre. Chaque définition précise
+                  aussi ce qu’elle signifie concrètement et ce qu’il ne faut pas confondre.
                 </p>
                 {[
-                  ["Croissance économique","Augmentation soutenue, sur une période longue, de la production de biens et de services d’une économie. Elle se mesure par le taux de variation du PIB en volume."],
-                  ["PIB en volume","PIB corrigé de l’évolution des prix. Il permet de mesurer l’évolution réelle des quantités produites."],
-                  ["Productivité","Rapport entre une production et les moyens mobilisés pour la réaliser."],
-                  ["Productivité globale des facteurs (PGF)","Mesure de l’efficacité de la combinaison du travail et du capital. Elle reflète notamment le progrès technique, l’organisation, les compétences et la diffusion des connaissances."],
-                  ["Progrès technique","Ensemble des innovations qui transforment les produits, procédés, organisations ou marchés et améliorent généralement l’efficacité productive."],
-                  ["Innovation","Application économique d’une invention ou d’une nouveauté."],
-                  ["Croissance endogène","Croissance entretenue par des investissements réalisés au sein de l’économie — R&D, capital humain, capital physique, infrastructures — et par leurs externalités positives."],
-                  ["Institution","Règle formelle ou informelle qui encadre les comportements économiques et sociaux : droits de propriété, contrats, système éducatif, normes, etc."],
-                  ["Destruction créatrice","Processus par lequel l’innovation crée de nouvelles activités tout en rendant certaines activités anciennes obsolètes."],
-                  ["Soutenabilité","Capacité à satisfaire les besoins présents sans compromettre la capacité des générations futures à satisfaire les leurs."],
-                ].map(([name,def]) => (
+                  ["Croissance économique","Augmentation soutenue, sur une période longue, de la production de biens et de services d’une économie, mesurée par le taux de variation du PIB en volume.","Une hausse du PIB de 2 % signifie que la production réelle a augmenté de 2 % ; cela ne signifie pas que le bien-être a augmenté de 2 %."],
+                  ["PIB en volume","PIB corrigé de l’évolution des prix afin d’isoler la variation réelle des quantités produites.","À distinguer du PIB en valeur : si les prix augmentent fortement, le PIB nominal peut progresser sans hausse équivalente de la production."],
+                  ["Facteurs de production","Ressources durables utilisées pour produire, principalement le travail et le capital.","Le travail renvoie à la main-d’œuvre mobilisée ; le capital productif aux machines, bâtiments, logiciels et équipements utilisés durablement."],
+                  ["Production","Quantité ou valeur des biens et services créés pendant une période.","La production est un résultat ; elle ne doit pas être confondue avec la productivité, qui mesure l’efficacité des moyens utilisés."],
+                  ["Productivité","Rapport entre une production obtenue et la quantité d’un ou plusieurs facteurs mobilisés.","La productivité du travail rapporte la production au travail utilisé ; elle n’est pas la même chose que la PGF."],
+                  ["Productivité globale des facteurs (PGF)","Mesure de l’efficacité globale de la combinaison du travail et du capital ; elle correspond à la part de la croissance non expliquée par la seule hausse des quantités de facteurs.","Elle reflète notamment le progrès technique, l’organisation, les compétences, les infrastructures et la diffusion des connaissances."],
+                  ["Croissance extensive","Croissance qui provient surtout de l’augmentation des quantités de travail et de capital.","Exemple : davantage de travailleurs, davantage d’heures travaillées ou davantage de machines."],
+                  ["Croissance intensive","Croissance qui provient surtout d’une meilleure efficacité productive, donc de gains de productivité.","Elle joue un rôle central à long terme car les quantités de facteurs ne peuvent pas augmenter indéfiniment."],
+                  ["Invention","Découverte, idée ou procédé nouveau qui n’est pas nécessairement utilisé économiquement.","Une invention peut rester au stade du laboratoire sans devenir une innovation."],
+                  ["Innovation","Mise en application économique d’une invention ou d’une nouveauté : produit, procédé, organisation ou commercialisation.","L’innovation diffuse la nouveauté dans la production ou sur un marché et peut accroître la productivité."],
+                  ["Progrès technique","Ensemble des innovations qui transforment les produits, procédés, organisations et marchés et améliorent généralement l’efficacité productive.","Il est plus large que la seule robotisation ou que l’achat de machines."],
+                  ["Croissance endogène","Croissance auto-entretenue par des investissements internes au système économique : R&D, capital humain, capital physique et capital public, avec des externalités positives.","Romer insiste sur les connaissances et la R&D, Lucas sur le capital humain, Barro sur le capital public."],
+                  ["Institution","Ensemble de règles formelles et informelles qui encadrent les comportements économiques et sociaux.","Les droits de propriété, les contrats, les tribunaux, la monnaie, les règles de concurrence ou le système éducatif peuvent influencer l’investissement et l’innovation."],
+                  ["Droits de propriété","Droits reconnus à un agent d’utiliser un actif, d’en tirer un revenu et, sous certaines conditions, de le céder.","Ils sécurisent les investissements en permettant à l’agent d’espérer bénéficier des revenus liés à son actif."],
+                  ["Brevet","Droit de propriété intellectuelle qui protège temporairement une innovation et permet à son détenteur d’en contrôler l’exploitation.","Il crée une incitation à innover, mais une protection trop forte peut aussi ralentir la diffusion des connaissances."],
+                  ["Destruction créatrice","Processus schumpétérien par lequel l’innovation fait apparaître de nouvelles activités tout en rendant certaines activités, entreprises ou compétences anciennes obsolètes.","Ce n’est pas uniquement une destruction : il y a simultanément création et recomposition."],
+                  ["Inégalités de revenus","Écarts de revenus entre individus ou groupes sociaux.","Le progrès technique peut accroître ces écarts s’il valorise davantage certaines qualifications ou si les gains sont concentrés chez certains salariés, entrepreneurs ou actionnaires."],
+                  ["Externalité négative","Effet défavorable d’une activité sur un tiers sans compensation monétaire.","La pollution illustre un coût social qui n’est pas intégralement supporté par celui qui la provoque."],
+                  ["Bien commun","Ressource difficilement excluable mais rivale ou menacée par la surexploitation.","Le climat ou certaines ressources naturelles posent un problème de coordination et de passager clandestin."],
+                  ["Soutenabilité faible","Approche selon laquelle différentes formes de capital sont en partie substituables : du capital technique, humain ou technologique peut compenser une partie de la dégradation du capital naturel.","Elle accorde un rôle important à l’innovation et à la croissance verte."],
+                  ["Soutenabilité forte","Approche selon laquelle une partie du capital naturel est critique, difficilement substituable et doit être préservée au-delà de certains seuils.","Elle insiste davantage sur les limites écologiques, les normes, la sobriété et la protection des écosystèmes."],
+                  ["Effet rebond","Phénomène par lequel un gain d’efficacité réduit le coût d’usage et peut conduire à une hausse des usages qui annule une partie du gain environnemental attendu.","Une voiture moins consommatrice au kilomètre peut entraîner davantage de kilomètres parcourus."],
+                ].map(([name,def,understand]) => (
                   <div className={styles.definition} key={name}>
-                    <strong>{name}</strong><span>{def}</span>
+                    <strong>{name}</strong>
+                    <span>{def}<br/><b>À comprendre :</b> {understand}</span>
                   </div>
                 ))}
                 <div className={styles.formula}>
                   PIB = somme des valeurs ajoutées + impôts sur les produits − subventions sur les produits
-                  <small>La croissance se calcule ensuite avec le taux de variation du PIB en volume.</small>
+                  <small>La croissance correspond ensuite au taux de variation du PIB en volume.</small>
                 </div>
               </>
             )}
@@ -316,73 +350,74 @@ export default function CroissanceEconomiquePage() {
             {active === "cours" && (
               <>
                 <p className={styles.intro}>
-                  Le chapitre peut se comprendre comme une histoire en six temps : mesurer la croissance,
-                  identifier ses sources, expliquer le progrès technique, comprendre le rôle des institutions,
-                  analyser ses effets sociaux puis ses limites écologiques.
+                  Le chapitre suit sept idées : mesurer la croissance, identifier ses sources, expliquer le progrès
+                  technique, comprendre les institutions, analyser la destruction créatrice, étudier les inégalités
+                  puis les limites écologiques.
                 </p>
 
                 <h3 className={styles.subTitle}>1. Comprendre et mesurer la croissance</h3>
                 <div className={styles.grid2}>
-                  <div className={styles.card + " " + styles.cardBlue}>
-                    <h3>PIB en valeur ou en volume ?</h3>
-                    <p>Le PIB en valeur utilise les prix courants. Pour mesurer la croissance réelle, on retire l’effet de la hausse des prix : on raisonne en PIB en volume.</p>
-                  </div>
-                  <div className={styles.card + " " + styles.cardAmber}>
-                    <h3>Le PIB n’est pas le bien-être</h3>
-                    <p>Il comptabilise une production monétaire mais mesure mal le travail domestique, les inégalités, la qualité de vie et les dégradations du capital naturel.</p>
-                  </div>
+                  <div className={styles.card + " " + styles.cardBlue}><h3>PIB en valeur / PIB en volume</h3><p>Le PIB en valeur utilise les prix courants. Le PIB en volume corrige l’effet de la variation des prix : c’est lui qui permet de mesurer la croissance réelle.</p></div>
+                  <div className={styles.card + " " + styles.cardAmber}><h3>Le PIB a des limites</h3><p>Il mesure une production monétaire mais pas directement le bien-être, la répartition des revenus, le travail domestique ou la dégradation du capital naturel.</p></div>
                 </div>
 
-                <h3 className={styles.subTitle}>2. Travail, capital et PGF</h3>
+                <h3 className={styles.subTitle}>2. Accumulation des facteurs et PGF</h3>
                 <div className={styles.grid3}>
-                  <div className={styles.card}><span className={styles.badge}>Travail</span><h3>Facteur L</h3><p>Nombre d’actifs occupés, durée du travail, participation à l’emploi et qualifications.</p></div>
-                  <div className={styles.card}><span className={styles.badge}>Capital</span><h3>Facteur K</h3><p>Machines, bâtiments, logiciels, robots et autres biens de production durables financés par l’investissement.</p></div>
-                  <div className={styles.card}><span className={styles.badge}>Efficacité</span><h3>PGF</h3><p>Part de la croissance qui ne s’explique pas par la seule hausse des quantités de travail et de capital.</p></div>
+                  <div className={styles.card}><span className={styles.badge}>Travail</span><h3>Facteur L</h3><p>La production peut augmenter avec davantage d’actifs occupés, davantage d’heures travaillées ou une mobilisation plus importante de la main-d’œuvre.</p></div>
+                  <div className={styles.card}><span className={styles.badge}>Capital</span><h3>Facteur K</h3><p>L’investissement augmente le stock de machines, bâtiments, robots, logiciels et autres équipements productifs.</p></div>
+                  <div className={styles.card}><span className={styles.badge}>Efficacité</span><h3>PGF</h3><p>Si la production augmente plus vite que les quantités de travail et de capital, leur combinaison devient plus efficace : la PGF progresse.</p></div>
                 </div>
-                <div className={styles.callout}>
-                  <strong>Croissance extensive :</strong> elle vient surtout de l’augmentation des quantités de facteurs.
-                  <br/><strong>Croissance intensive :</strong> elle repose davantage sur les gains de productivité.
-                </div>
+                <div className={styles.callout}><strong>Croissance extensive :</strong> davantage de facteurs. <br/><strong>Croissance intensive :</strong> davantage d’efficacité grâce aux gains de productivité.</div>
 
-                <h3 className={styles.subTitle}>3. L’innovation rend le progrès technique endogène</h3>
-                <p className={styles.intro}>
-                  Une invention devient une innovation lorsqu’elle trouve une application économique.
-                  Les investissements en recherche, formation, équipements et infrastructures produisent
-                  des connaissances et des externalités positives. La croissance peut alors devenir cumulative.
-                </p>
+                <h3 className={styles.subTitle}>3. Innovation et progrès technique endogène</h3>
+                <p className={styles.intro}>Une invention devient innovation lorsqu’elle est appliquée économiquement. Les investissements en R&D, formation, capital physique et infrastructures peuvent produire des connaissances et des externalités positives : le progrès technique devient alors endogène.</p>
                 <div className={styles.grid2}>
-                  <div className={styles.card + " " + styles.cardGreen}><h3>Romer / Lucas / Barro</h3><p>R&D, capital humain et capital public expliquent pourquoi le progrès technique peut être produit par l’économie elle-même.</p></div>
-                  <div className={styles.card + " " + styles.cardPurple}><h3>Quatre formes d’innovation</h3><p>Produit, procédé, organisation et commercialisation. Toutes peuvent modifier la productivité et les marchés.</p></div>
+                  <div className={styles.card + " " + styles.cardGreen}><h3>Solow : le point de départ</h3><p>Dans le modèle de Solow, le progrès technique explique une partie de la croissance de long terme mais reste extérieur au modèle : il est exogène.</p></div>
+                  <div className={styles.card + " " + styles.cardPurple}><h3>Romer, Lucas, Barro</h3><p>Les théories de la croissance endogène expliquent au contraire comment R&D, capital humain et infrastructures publiques peuvent produire du progrès technique.</p></div>
                 </div>
 
-                <h3 className={styles.subTitle}>4. Les institutions créent des incitations</h3>
-                <p className={styles.intro}>
-                  Des droits de propriété sécurisés, des contrats fiables, un système de brevets équilibré,
-                  une concurrence organisée et des services publics efficaces réduisent l’incertitude et
-                  peuvent encourager l’investissement. Un brevet protège temporairement l’innovateur,
-                  mais une protection excessive peut aussi ralentir la diffusion des connaissances.
-                </p>
+                <h3 className={styles.subTitle}>4. Les institutions influencent la croissance</h3>
+                <p className={styles.intro}>Des droits de propriété sécurisés, des contrats fiables, une justice efficace, des brevets équilibrés, des règles de concurrence et des services publics de qualité réduisent l’incertitude et peuvent encourager l’investissement et l’innovation.</p>
 
-                <h3 className={styles.subTitle}>5. Destruction créatrice et inégalités</h3>
+                <h3 className={styles.subTitle}>5. La destruction créatrice : créer du nouveau en rendant l’ancien obsolète</h3>
+                <p className={styles.intro}>Pour Schumpeter, l’innovation transforme en permanence l’économie. Un nouveau produit, une nouvelle technologie ou une nouvelle organisation ouvre des marchés, crée des entreprises et des emplois, mais peut simultanément faire disparaître des entreprises, des métiers ou des compétences devenus moins utiles.</p>
                 <div className={styles.grid2}>
-                  <div className={styles.card + " " + styles.cardGreen}><h3>Création</h3><p>Les innovations créent de nouveaux produits, marchés, entreprises, qualifications et emplois.</p></div>
-                  <div className={styles.card + " " + styles.cardCoral}><h3>Destruction</h3><p>Elles rendent certaines technologies, entreprises ou tâches obsolètes. Les transitions peuvent être coûteuses pour les travailleurs concernés.</p></div>
+                  <div className={styles.card + " " + styles.cardGreen}><h3>Le versant créateur</h3><p>Nouveaux produits, nouveaux marchés, nouveaux investissements, nouvelles qualifications et nouvelles activités. Exemple : le numérique a créé des métiers de développement, cybersécurité ou analyse de données.</p></div>
+                  <div className={styles.card + " " + styles.cardCoral}><h3>Le versant destructeur</h3><p>Des technologies et entreprises anciennes deviennent moins rentables ou disparaissent. Exemple : la photographie numérique a fortement réduit l’activité liée à la pellicule.</p></div>
                 </div>
-                <p className={styles.intro}>
-                  Le progrès technique peut favoriser les travailleurs dont les compétences sont complémentaires
-                  aux nouvelles technologies, remplacer certaines tâches routinières et concentrer une partie
-                  des gains dans les entreprises innovantes. Il peut donc accroître les écarts de revenus.
-                </p>
+                <div className={styles.callout}><strong>À retenir :</strong> destruction créatrice ne signifie pas « destruction nette de l’emploi ». Elle décrit une recomposition permanente des activités sous l’effet de l’innovation.</div>
 
-                <h3 className={styles.subTitle}>6. Une croissance confrontée aux limites écologiques</h3>
+                <h3 className={styles.subTitle}>6. Le progrès technique peut engendrer des inégalités de revenus</h3>
+                <p className={styles.intro}>Les gains du progrès technique ne sont pas répartis uniformément. Une technologie peut compléter le travail de certains salariés très qualifiés et accroître leur productivité, tout en automatisant des tâches routinières. Les entrepreneurs, actionnaires ou salariés des entreprises innovantes peuvent aussi capter une part importante des gains.</p>
                 <div className={styles.grid3}>
-                  <div className={styles.card}><h3>Ressources</h3><p>Extraction d’énergies fossiles, minerais, terres rares, eau et autres ressources naturelles.</p></div>
-                  <div className={styles.card}><h3>Pollutions</h3><p>Externalités négatives sur l’air, l’eau, les sols et les écosystèmes.</p></div>
-                  <div className={styles.card}><h3>Climat</h3><p>Les émissions de gaz à effet de serre contribuent au réchauffement climatique.</p></div>
+                  <div className={styles.card}><h3>Biais de qualification</h3><p>Les compétences complémentaires aux nouvelles technologies peuvent devenir plus demandées et mieux rémunérées.</p></div>
+                  <div className={styles.card}><h3>Automatisation</h3><p>Certaines tâches répétitives ou routinières peuvent être remplacées par du capital, ce qui fragilise certains emplois ou salaires.</p></div>
+                  <div className={styles.card}><h3>Rentes d’innovation</h3><p>Les entreprises innovantes et leurs détenteurs de capital peuvent capter une part élevée des profits générés par l’innovation.</p></div>
                 </div>
-                <div className={styles.callout}>
-                  <strong>Soutenabilité faible :</strong> confiance plus forte dans la substitution entre capitaux et le progrès technique.
-                  <br/><strong>Soutenabilité forte :</strong> certaines fonctions du capital naturel sont considérées comme difficilement remplaçables et doivent être préservées.
+
+                <h3 className={styles.subTitle}>7. Les limites écologiques de la croissance</h3>
+                <div className={styles.grid3}>
+                  <div className={styles.card}><h3>Épuisement</h3><p>La production mobilise des ressources renouvelables et non renouvelables dont certaines sont limitées.</p></div>
+                  <div className={styles.card}><h3>Pollutions</h3><p>Les activités productives génèrent des externalités négatives sur l’air, l’eau, les sols et les écosystèmes.</p></div>
+                  <div className={styles.card}><h3>Climat</h3><p>Les émissions de gaz à effet de serre liées aux activités humaines contribuent au réchauffement climatique.</p></div>
+                </div>
+                <div className={styles.callout}>L’innovation peut améliorer l’efficacité énergétique, développer les renouvelables, l’économie circulaire ou des procédés moins polluants. Mais l’effet rebond et l’existence de seuils écologiques expliquent pourquoi elle ne garantit pas à elle seule la soutenabilité.</div>
+              </>
+            )}
+
+            {active === "video" && (
+              <>
+                <p className={styles.intro}>
+                  Cette étape est réservée au futur résumé vidéo du chapitre. Elle restera dans le parcours afin
+                  que chaque chapitre CAPSES puisse proposer à terme une révision rapide en vidéo.
+                </p>
+                <div className={styles.card + " " + styles.cardBlue}>
+                  <span className={styles.badge}>À venir</span>
+                  <h3>Résumé vidéo — Croissance économique</h3>
+                  <p>Format prévu : une vidéo courte et structurée reprenant les 5 objectifs d’apprentissage, les mécanismes essentiels, les schémas à retenir et les principales erreurs à éviter.</p>
+                </div>
+                <div className={styles.callout + " " + styles.good}>
+                  Le contenu vidéo sera réalisé ensuite ; pour l’instant, cette étape sert de place réservée dans l’architecture définitive du chapitre.
                 </div>
               </>
             )}
