@@ -89,8 +89,16 @@ export default function CroissanceEconomiquePage() {
   const [active, setActive] = useState<StepId>("bac");
   const [visited, setVisited] = useState<StepId[]>(["bac"]);
   const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [quizQuestions, setQuizQuestions] = useState<typeof QUIZ_BANK>([]);
+
+  const drawQuiz = () => {
+    const shuffled = [...QUIZ_BANK].sort(() => Math.random() - 0.5);
+    setQuizQuestions(shuffled.slice(0, QUIZ_SIZE));
+    setAnswers({});
+  };
 
   useEffect(() => {
+    drawQuiz();
     try {
       const savedSteps = localStorage.getItem("capses_croissance_steps");
       if (savedSteps) {
@@ -120,14 +128,17 @@ export default function CroissanceEconomiquePage() {
   const answeredCount = Object.keys(answers).length;
   const correctCount = useMemo(
     () =>
-      QUIZ.reduce(
+      quizQuestions.reduce(
         (total, item, index) => total + (answers[index] === item.correct ? 1 : 0),
         0
       ),
-    [answers]
+    [answers, quizQuestions]
   );
-  const score = Math.round((correctCount / QUIZ.length) * 100);
-  const quizFinished = answeredCount === QUIZ.length;
+  const score = quizQuestions.length
+    ? Math.round((correctCount / quizQuestions.length) * 100)
+    : 0;
+  const quizFinished =
+    quizQuestions.length === QUIZ_SIZE && answeredCount === quizQuestions.length;
   const progressPercent = Math.round((visited.length / STEPS.length) * 100);
 
   useEffect(() => {
@@ -143,7 +154,7 @@ export default function CroissanceEconomiquePage() {
     } catch {}
   }, [quizFinished, score]);
 
-  const resetQuiz = () => setAnswers({});
+  const resetQuiz = () => drawQuiz();
 
   return (
     <main className={styles.page}>
@@ -182,8 +193,8 @@ export default function CroissanceEconomiquePage() {
               des défis sociaux et écologiques.
             </p>
             <div className={styles.heroMeta}>
-              <span className={styles.pill}>10 étapes</span>
-              <span className={styles.pill}>≈ 45 min au total</span>
+              <span className={styles.pill}>11 étapes</span>
+              <span className={styles.pill}>≈ 55 min au total</span>
               <span className={styles.pill}>Cours actualisé 2026</span>
               <span className={styles.pill}>Quiz + sujets bac</span>
             </div>
