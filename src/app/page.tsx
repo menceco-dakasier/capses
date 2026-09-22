@@ -715,11 +715,11 @@ export default function Home() {
 
           <nav className="nav" aria-label="Navigation principale">
             <Link className="active" href="/">Accueil</Link>
-            <a href="#chapitres">Chapitres</a>
-            <a href="#chapitres">Méthodes</a>
-            <a href="#chapitres">Exercices</a>
-            <a href="#chapitres">Fiches</a>
-            <a href="#chapitres">Quiz</a>
+            <a href="#chapitres">Terminale</a>
+            <a href="#premiere" aria-label="Première, bientôt disponible">Première</a>
+            <Link href="/seconde">Seconde</Link>
+            <Link href="/bts-cejm">BTS CEJM</Link>
+            <a href="#methodes">Méthodes</a>
             <Link href="/espace-eleves">Suivi</Link>
           </nav>
 
