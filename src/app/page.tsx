@@ -144,7 +144,7 @@ export default function Home() {
 
         .brand-sub {
           margin-top: 3px;
-          color: #8090a7;
+          color: #64748b;
           font-size: 9px;
           font-weight: 650;
         }
@@ -360,7 +360,7 @@ export default function Home() {
         .benefit small {
           display: block;
           margin-top: 3px;
-          color: #8794a6;
+          color: #64748b;
           font-size: 9px;
           line-height: 1.25;
         }
@@ -460,7 +460,7 @@ export default function Home() {
 
         .program-head p {
           margin: 0;
-          color: #7a899f;
+          color: #64748b;
           font-size: 12px;
         }
 
@@ -553,7 +553,7 @@ export default function Home() {
 
         .chapter-card p {
           margin: 0;
-          color: #6e7f96;
+          color: #64748b;
           font-size: 10px;
           line-height: 1.35;
         }
@@ -631,7 +631,7 @@ export default function Home() {
           grid-column: 1 / -1;
           padding: 28px;
           text-align: center;
-          color: #718197;
+          color: #64748b;
           border: 1px dashed #cdd9e8;
           border-radius: 12px;
           background: #f9fbfe;
@@ -639,7 +639,7 @@ export default function Home() {
 
         .footer {
           padding: 28px 0 38px;
-          color: #8090a5;
+          color: #64748b;
           font-size: 11px;
           display: flex;
           justify-content: space-between;
