@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     title: "CAPSES — Réussir en Sciences économiques et sociales",
     description:
       "Cours, notions, méthodes, quiz et exercices de SES pour progresser au lycée et préparer le baccalauréat.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=82",
+        width: 1200,
+        height: 630,
+        alt: "CAPSES — Réviser les Sciences économiques et sociales",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
