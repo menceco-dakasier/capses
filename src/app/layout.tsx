@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://capses.vercel.app"),
   title: {
     default: "CAPSES — Réussir en Sciences économiques et sociales",
     template: "%s | CAPSES",
@@ -20,6 +21,24 @@ export const metadata: Metadata = {
   description:
     "Cours, notions, méthodes, quiz et exercices de Sciences économiques et sociales pour progresser au lycée et préparer le baccalauréat.",
   applicationName: "CAPSES",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "/",
+    siteName: "CAPSES",
+    title: "CAPSES — Réussir en Sciences économiques et sociales",
+    description:
+      "Cours, notions, méthodes, quiz et exercices de SES pour progresser au lycée et préparer le baccalauréat.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CAPSES — Réussir en SES",
+    description:
+      "Cours, notions, méthodes, quiz et exercices de Sciences économiques et sociales.",
+  },
 };
 
 export default function RootLayout({
