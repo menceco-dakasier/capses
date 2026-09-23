@@ -173,6 +173,18 @@ export default function CroissanceEconomiquePage() {
             <Link href="/methodes">Méthodes</Link>
           </nav>
           <Link className={styles.spaceLink} href="/espace-eleves">Mon espace</Link>
+          <details className={styles.mobileMenu}>
+            <summary aria-label="Ouvrir le menu">☰</summary>
+            <nav className={styles.mobileMenuPanel} aria-label="Navigation mobile">
+              <Link href="/">Accueil</Link>
+              <Link href="/bts-cejm">BTS CEJM</Link>
+              <Link href="/#chapitres">Terminale</Link>
+              <Link href="/premiere">Première</Link>
+              <Link href="/seconde">Seconde</Link>
+              <Link href="/methodes">Méthodes</Link>
+              <Link href="/espace-eleves">Mon espace</Link>
+            </nav>
+          </details>
         </div>
       </header>
 
