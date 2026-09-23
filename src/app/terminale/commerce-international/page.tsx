@@ -374,9 +374,9 @@ export default function CommerceInternationalPage() {
             <Link href="/">Accueil</Link>
             <Link href="/bts-cejm">BTS CEJM</Link>
             <Link href="/#chapitres" className={styles.active}>Terminale</Link>
-            <Link href="/#premiere">Première</Link>
+            <Link href="/premiere">Première</Link>
             <Link href="/seconde">Seconde</Link>
-            <Link href="/#methodes">Méthodes</Link>
+            <Link href="/methodes">Méthodes</Link>
           </nav>
           <Link className={styles.spaceLink} href="/espace-eleves">Mon espace</Link>
         </div>
