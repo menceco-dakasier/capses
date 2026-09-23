@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -367,11 +368,12 @@ export default function Home() {
         .hero-photo {
           position: relative;
           min-height: 410px;
-          background-image:
-            linear-gradient(90deg,rgba(255,255,255,.15),rgba(255,255,255,0) 35%),
-            url("https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=88");
-          background-size: cover;
-          background-position: center;
+          overflow: hidden;
+        }
+
+        .hero-photo-image {
+          object-fit: cover;
+          object-position: center;
         }
 
         .hero-photo::before {
@@ -644,6 +646,71 @@ export default function Home() {
           gap: 16px;
         }
 
+        .footer-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+
+        .footer a {
+          color: #5e7391;
+          text-decoration: none;
+          font-weight: 700;
+        }
+
+        .footer a:hover { color: #245cbd; }
+
+        .mobile-menu {
+          display: none;
+          position: relative;
+        }
+
+        .mobile-menu summary {
+          list-style: none;
+          width: 36px;
+          height: 36px;
+          display: grid;
+          place-items: center;
+          border: 1px solid #dfe7f3;
+          border-radius: 10px;
+          background: white;
+          color: #294a80;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 800;
+        }
+
+        .mobile-menu summary::-webkit-details-marker { display: none; }
+
+        .mobile-menu-panel {
+          position: absolute;
+          z-index: 60;
+          right: 0;
+          top: 44px;
+          width: min(280px, calc(100vw - 28px));
+          display: grid;
+          gap: 4px;
+          padding: 8px;
+          border: 1px solid #dfe7f3;
+          border-radius: 14px;
+          background: white;
+          box-shadow: 0 18px 44px rgba(43,75,122,.16);
+        }
+
+        .mobile-menu-panel a {
+          min-height: 42px;
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+          border-radius: 9px;
+          color: #3f5575;
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 750;
+        }
+
+        .mobile-menu-panel a:hover { background: #f2f6ff; color: #1e56ba; }
+
         .btn:focus-visible,
         .nav a:focus-visible,
         .avatar:focus-visible,
@@ -662,6 +729,7 @@ export default function Home() {
 
         @media (max-width: 820px) {
           .nav { display:none; }
+          .mobile-menu { display:block; }
           .header-inner { min-height:64px; }
           .hero {
             grid-template-columns: 1fr;
@@ -717,9 +785,9 @@ export default function Home() {
             <Link className="active" href="/">Accueil</Link>
             <Link href="/bts-cejm">BTS CEJM</Link>
             <a href="#chapitres">Terminale</a>
-            <a href="#premiere" aria-label="Première, bientôt disponible">Première</a>
+            <Link href="/premiere">Première</Link>
             <Link href="/seconde">Seconde</Link>
-            <a href="#methodes">Méthodes</a>
+            <Link href="/methodes">Méthodes</Link>
             <Link href="/espace-eleves">Mon espace</Link>
           </nav>
 
@@ -736,6 +804,19 @@ export default function Home() {
             <Link href="/espace-eleves" className="avatar" aria-label="Ouvrir mon espace">
               EC
             </Link>
+
+            <details className="mobile-menu">
+              <summary aria-label="Ouvrir le menu">☰</summary>
+              <nav className="mobile-menu-panel" aria-label="Navigation mobile">
+                <Link href="/">Accueil</Link>
+                <Link href="/bts-cejm">BTS CEJM</Link>
+                <a href="#chapitres">Terminale</a>
+                <Link href="/premiere">Première</Link>
+                <Link href="/seconde">Seconde</Link>
+                <Link href="/methodes">Méthodes</Link>
+                <Link href="/espace-eleves">Mon espace</Link>
+              </nav>
+            </details>
           </div>
         </div>
       </header>
@@ -780,11 +861,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className="hero-photo"
-            role="img"
-            aria-label="Une lycéenne étudie avec ses livres et ses notes"
-          >
+          <div className="hero-photo">
+            <Image
+              className="hero-photo-image"
+              src="https://images.unsplash.com/photo-1758525861622-f4e7ac86a2d7?auto=format&fit=crop&w=1200&q=82"
+              alt="Une lycéenne étudie avec ses livres et ses notes"
+              fill
+              sizes="(max-width: 820px) 100vw, 46vw"
+              priority
+            />
             <div className="scribble">
               Comprendre<br/>aujourd’hui,<br/>réussir demain
             </div>
@@ -870,8 +955,15 @@ export default function Home() {
         </section>
 
         <footer className="footer">
-          <strong>CAPSES · Sciences économiques et sociales</strong>
-          <span>Terminale 2026-2027 · Seconde disponible · Première à venir</span>
+          <div>
+            <strong>CAPSES · Sciences économiques et sociales</strong>
+            <div style={{marginTop:4}}>Terminale 2026-2027 · Seconde disponible · Première à venir</div>
+          </div>
+          <div className="footer-links">
+            <Link href="/methodes">Méthodes</Link>
+            <Link href="/confidentialite">Confidentialité</Link>
+            <Link href="/cgu">CGU</Link>
+          </div>
         </footer>
       </div>
     </main>
