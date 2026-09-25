@@ -497,7 +497,7 @@ export default function CroissanceEconomiquePage() {
                   <div className={styles.stat}>
                     <strong>+0,8 %</strong>
                     <span>Croissance du PIB français en volume en 2025.</span>
-                    <small>Insee, comptes nationaux 2025, publication 2026.</small>
+                    <small>Insee, comptes de la Nation 2025 (mai 2026), données brutes sans correction des jours ouvrés (+0,9 % en données corrigées).</small>
                   </div>
                   <div className={styles.stat}>
                     <strong>2 991,1 Md€</strong>
@@ -521,7 +521,7 @@ export default function CroissanceEconomiquePage() {
                   </div>
                   <div className={styles.stat}>
                     <strong>1,1 °C</strong>
-                    <span>Réchauffement global attribué aux activités humaines sur 2011-2020 par rapport à 1850-1900.</span>
+                    <span>Réchauffement global observé sur 2011-2020 par rapport à 1850-1900, dû pour l’essentiel aux activités humaines.</span>
                     <small>GIEC, rapport de synthèse AR6.</small>
                   </div>
                 </div>
@@ -642,8 +642,10 @@ export default function CroissanceEconomiquePage() {
                   </div>
                 ))}
                 <div className={styles.callout}>
-                  <strong>EC1 :</strong> définition + mécanisme précis + exemple.
-                  <br/><strong>EC3 / dissertation :</strong> construis plusieurs mécanismes et articule-les avec des données ou exemples adaptés.
+                  <strong>Bac 2027 — épreuve composée :</strong> partie 1 « mobilisation des connaissances » (3,5 pts) : définition + mécanisme précis + exemple ;
+                  partie 2 « étude d’un document » (5,5 pts) : lecture rigoureuse des données puis explication ;
+                  partie 3 « raisonnement s’appuyant sur un dossier documentaire » (9 pts) : introduction, plusieurs mécanismes articulés aux documents, conclusion.
+                  <br/><strong>Dissertation :</strong> problématique, plan structuré, documents exploités sans paraphrase. 2 points sur 20 évaluent l’orthographe et la syntaxe.
                 </div>
               </>
             )}
@@ -685,7 +687,7 @@ export default function CroissanceEconomiquePage() {
                   pour les données récentes. Les chiffres sont toujours accompagnés de leur année.
                 </p>
                 <div className={styles.sourceList}>
-                  <a className={styles.sourceItem} href="https://www.education.gouv.fr/" target="_blank" rel="noreferrer">
+                  <a className={styles.sourceItem} href="https://eduscol.education.gouv.fr/sites/default/files/document/spe253annexe1158821pdf-82755.pdf" target="_blank" rel="noreferrer">
                     <strong>Programme officiel de Terminale SES / Eduscol</strong>
                     Objectifs d’apprentissage et ressource d’accompagnement du chapitre.
                   </a>
