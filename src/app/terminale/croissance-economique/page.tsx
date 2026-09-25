@@ -658,9 +658,8 @@ export default function CroissanceEconomiquePage() {
                 <div className={styles.download}>
                   <div>
                     <h3>Fiche mémo — Croissance économique</h3>
-                    <p>Définitions, mécanismes, auteurs, limites écologiques et erreurs à éviter.</p>
+                    <p>La fiche mémo est en cours de mise à jour pour être parfaitement alignée sur le programme officiel et les données 2026.</p>
                   </div>
-                  <a href="/memos/memo_croissance_economique.pdf" target="_blank" rel="noreferrer">Ouvrir le PDF</a>
                 </div>
                 <h3 className={styles.subTitle}>Checklist avant le bac</h3>
                 <div className={styles.grid2}>
