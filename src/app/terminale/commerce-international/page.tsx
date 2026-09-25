@@ -291,7 +291,18 @@ function drawQuestions() {
     const j = Math.floor(Math.random() * (i + 1));
     [items[i], items[j]] = [items[j], items[i]];
   }
-  return items.slice(0, QUIZ_SIZE);
+
+  return items.slice(0, QUIZ_SIZE).map((question) => {
+    const shuffledOptions = question.options
+      .map((option, index) => ({ option, isCorrect: index === question.correct }))
+      .sort(() => Math.random() - 0.5);
+
+    return {
+      ...question,
+      options: shuffledOptions.map(({ option }) => option),
+      correct: shuffledOptions.findIndex(({ isCorrect }) => isCorrect),
+    };
+  });
 }
 
 export default function CommerceInternationalPage() {
@@ -837,6 +848,12 @@ export default function CommerceInternationalPage() {
                     <strong>{subject}</strong><p>{plan}</p>
                   </div>
                 ))}
+                <div className={styles.callout}>
+                  <strong>Bac 2027 — épreuve composée :</strong> partie 1 « mobilisation des connaissances » (3,5 pts) ;
+                  partie 2 « étude d’un document » (5,5 pts) ; partie 3 « raisonnement s’appuyant sur un dossier documentaire » (9 pts).
+                  <br/><strong>Dissertation :</strong> problématique, plan structuré et mobilisation précise des mécanismes du chapitre.
+                  <br/><strong>Maîtrise de la langue :</strong> 2 points sur 20 portent sur l’orthographe et la syntaxe.
+                </div>
               </>
             )}
 
@@ -881,7 +898,7 @@ export default function CommerceInternationalPage() {
                   ont été remplacées par les dernières publications disponibles en 2026.
                 </p>
                 <div className={styles.sourceList}>
-                  <a className={styles.sourceItem} href="https://eduscol.education.gouv.fr/" target="_blank" rel="noreferrer">
+                  <a className={styles.sourceItem} href="https://eduscol.education.fr/document/23155/download" target="_blank" rel="noreferrer">
                     <strong>Programme officiel / Eduscol</strong>
                     Objectifs d’apprentissage du chapitre de Terminale SES.
                   </a>
