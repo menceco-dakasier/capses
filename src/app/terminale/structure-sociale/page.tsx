@@ -291,7 +291,18 @@ function drawQuestions() {
     const j = Math.floor(Math.random() * (i + 1));
     [items[i], items[j]] = [items[j], items[i]];
   }
-  return items.slice(0, QUIZ_SIZE);
+
+  return items.slice(0, QUIZ_SIZE).map((question) => {
+    const shuffledOptions = question.options
+      .map((option, index) => ({ option, isCorrect: index === question.correct }))
+      .sort(() => Math.random() - 0.5);
+
+    return {
+      ...question,
+      options: shuffledOptions.map(({ option }) => option),
+      correct: shuffledOptions.findIndex(({ isCorrect }) => isCorrect),
+    };
+  });
 }
 
 export default function StructureSocialePage() {
@@ -857,8 +868,10 @@ export default function StructureSocialePage() {
                 ))}
 
                 <div className={styles.callout}>
-                  <strong>EC1 :</strong> une définition précise + le mécanisme demandé + un exemple.
-                  <br/><strong>EC3 / dissertation :</strong> articule les dimensions objectives et subjectives et évite les réponses binaires sur la « fin » ou le « retour » des classes.
+                  <strong>Bac 2027 — épreuve composée :</strong> partie 1 « mobilisation des connaissances » (3,5 pts) ;
+                  partie 2 « étude d’un document » (5,5 pts) ; partie 3 « raisonnement s’appuyant sur un dossier documentaire » (9 pts).
+                  <br/><strong>Dissertation :</strong> construis une problématique, un raisonnement structuré et mobilise les documents sans les paraphraser.
+                  <br/><strong>Maîtrise de la langue :</strong> 2 points sur 20 portent sur l’orthographe et la syntaxe.
                 </div>
               </>
             )}
