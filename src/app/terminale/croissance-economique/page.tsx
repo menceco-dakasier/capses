@@ -92,8 +92,20 @@ export default function CroissanceEconomiquePage() {
   const [quizQuestions, setQuizQuestions] = useState<typeof QUIZ_BANK>([]);
 
   const drawQuiz = () => {
-    const shuffled = [...QUIZ_BANK].sort(() => Math.random() - 0.5);
-    setQuizQuestions(shuffled.slice(0, QUIZ_SIZE));
+    const shuffledQuestions = [...QUIZ_BANK].sort(() => Math.random() - 0.5);
+    const preparedQuestions = shuffledQuestions.slice(0, QUIZ_SIZE).map((question) => {
+      const shuffledOptions = question.options
+        .map((option, index) => ({ option, isCorrect: index === question.correct }))
+        .sort(() => Math.random() - 0.5);
+
+      return {
+        ...question,
+        options: shuffledOptions.map(({ option }) => option),
+        correct: shuffledOptions.findIndex(({ isCorrect }) => isCorrect),
+      };
+    });
+
+    setQuizQuestions(preparedQuestions);
     setAnswers({});
   };
 
