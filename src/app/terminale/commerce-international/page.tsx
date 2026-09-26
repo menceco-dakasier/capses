@@ -285,17 +285,21 @@ function Flow({ items }: { items: string[] }) {
   );
 }
 
-function drawQuestions() {
-  const items = [...QUIZ_BANK];
+function shuffleInPlace<T>(items: T[]) {
   for (let i = items.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [items[i], items[j]] = [items[j], items[i]];
   }
+  return items;
+}
+
+function drawQuestions() {
+  const items = shuffleInPlace([...QUIZ_BANK]);
 
   return items.slice(0, QUIZ_SIZE).map((question) => {
-    const shuffledOptions = question.options
-      .map((option, index) => ({ option, isCorrect: index === question.correct }))
-      .sort(() => Math.random() - 0.5);
+    const shuffledOptions = shuffleInPlace(
+      question.options.map((option, index) => ({ option, isCorrect: index === question.correct }))
+    );
 
     return {
       ...question,
@@ -485,7 +489,7 @@ export default function CommerceInternationalPage() {
             {active === "bac" && (
               <>
                 <p className={styles.intro}>
-                  Le chapitre comporte six objectifs officiels. Pour chacun, tu retrouves la formulation du programme
+                  Le programme officiel comporte cinq objectifs d’apprentissage. Pour chacun, tu retrouves la formulation exacte du programme
                   puis une traduction « En clair ».
                 </p>
                 {[
@@ -498,7 +502,7 @@ export default function CommerceInternationalPage() {
                   {
                     n:"Objectif officiel 2",
                     title:"Commerce entre pays comparables",
-                    official:"Comprendre le commerce international entre pays comparables (différenciation des produits, qualité des produits, et fragmentation de la chaîne de valeur).",
+                    official:"Comprendre le commerce entre pays comparables (différenciation des produits, qualité des produits, et fragmentation de la chaîne de valeur).",
                     clear:"Tu dois montrer pourquoi la France et l’Allemagne peuvent s’échanger des produits similaires : variété, gamme, qualité et spécialisation des étapes de production."
                   },
                   {
@@ -515,15 +519,9 @@ export default function CommerceInternationalPage() {
                   },
                   {
                     n:"Objectif officiel 5",
-                    title:"Les effets du commerce international",
-                    official:"Comprendre les effets induits par le commerce international : gains moyens en termes de baisse de prix, réduction des inégalités entre pays, accroissement des inégalités de revenus au sein de chaque pays.",
-                    clear:"Tu dois distinguer le gain moyen pour l’économie de sa répartition : des consommateurs et secteurs gagnent, tandis que certains travailleurs ou territoires peuvent perdre."
-                  },
-                  {
-                    n:"Objectif officiel 6",
-                    title:"Libre-échange et protectionnisme",
-                    official:"Comprendre les termes du débat entre libre-échange et protectionnisme.",
-                    clear:"Tu dois savoir expliquer les avantages de l’ouverture, les arguments qui peuvent justifier certaines protections et les coûts ou risques du protectionnisme."
+                    title:"Effets du commerce international et débat libre-échange / protectionnisme",
+                    official:"Comprendre les effets induits par le commerce international : gains moyens en termes de baisse de prix, réduction des inégalités entre pays, accroissement des inégalités de revenus au sein de chaque pays ; comprendre les termes du débat entre libre-échange et protectionnisme.",
+                    clear:"Tu dois expliquer à la fois les gains moyens de l’ouverture, le rattrapage possible de certains pays insérés dans les échanges, les effets distributifs à l’intérieur des pays, puis comparer les arguments du libre-échange et du protectionnisme."
                   },
                 ].map((oa) => (
                   <div className={styles.card + " " + styles.cardBlue} key={oa.n}>
@@ -641,6 +639,19 @@ export default function CommerceInternationalPage() {
                   <strong>Attention :</strong> une protection peut aussi augmenter les prix, renchérir les intrants importés,
                   provoquer des représailles et maintenir artificiellement des secteurs peu efficaces.
                 </div>
+                <h3 className={styles.subTitle}>Exemple à savoir illustrer : la chaîne de valeur d’un smartphone</h3>
+                <div className={styles.card + " " + styles.cardBlue}>
+                  <p>
+                    Un smartphone permet de suivre une chaîne de valeur internationalisée : conception et logiciel dans un pays,
+                    semi-conducteurs et écrans produits par des fournisseurs spécialisés dans plusieurs pays d’Asie,
+                    assemblage dans un autre territoire, puis transport, marketing et distribution sur les marchés de vente.
+                    La valeur du produit final résulte donc d’étapes dispersées géographiquement et coordonnées par la firme.
+                  </p>
+                  <div className={styles.callout + " " + styles.good}>
+                    <strong>Ce qu’il faut montrer au bac :</strong> fragmentation des tâches → spécialisation de chaque territoire selon coûts,
+                    compétences et technologies → échanges de composants → assemblage → produit final vendu mondialement.
+                  </div>
+                </div>
               </>
             )}
 
@@ -683,13 +694,19 @@ export default function CommerceInternationalPage() {
                 <h3 className={styles.subTitle}>6. Ouverture commerciale → gains pour les consommateurs</h3>
                 <Flow items={["Ouverture","Concurrence + économies d’échelle","Prix possibles ↓","Variété ↑","Pouvoir d’achat réel ↑","Gain moyen du consommateur"]} />
 
-                <h3 className={styles.subTitle}>7. Ouverture commerciale → inégalités internes possibles</h3>
+                <h3 className={styles.subTitle}>7. Insertion dans les échanges → rattrapage possible entre pays</h3>
+                <Flow items={["Accès aux marchés mondiaux","Spécialisation + exportations","Investissements / transferts de technologies","Productivité et revenus ↑","Rattrapage de certains pays émergents","Inégalités entre pays possibles ↓"]} />
+                <div className={styles.callout}>
+                  <strong>À nuancer :</strong> le commerce peut contribuer au rattrapage lorsqu’il s’accompagne d’investissements, d’institutions, de formation et de politiques publiques adaptées. Il n’assure pas automatiquement la convergence de tous les pays.
+                </div>
+
+                <h3 className={styles.subTitle}>8. Ouverture commerciale → inégalités internes possibles</h3>
                 <Flow items={["Concurrence des importations","Secteurs exposés se contractent","Demande de certains emplois ↓","Revenus / emploi de certains groupes ↓","Gains concentrés ailleurs","Inégalités internes possibles ↑"]} />
 
-                <h3 className={styles.subTitle}>8. Droit de douane → effets contradictoires</h3>
+                <h3 className={styles.subTitle}>9. Droit de douane → effets contradictoires</h3>
                 <Flow items={["Droit de douane","Prix importé ↑","Producteurs nationaux protégés","Consommateurs / firmes utilisatrices paient plus","Risque de représailles","Gain global incertain"]} />
 
-                <h3 className={styles.subTitle}>9. Protectionnisme éducateur</h3>
+                <h3 className={styles.subTitle}>10. Protectionnisme éducateur</h3>
                 <Flow items={["Industrie naissante","Productivité initiale faible","Protection temporaire","Apprentissage + investissement","Productivité ↑","Ouverture lorsque compétitive"]} />
               </>
             )}
@@ -898,9 +915,9 @@ export default function CommerceInternationalPage() {
                   ont été remplacées par les dernières publications disponibles en 2026.
                 </p>
                 <div className={styles.sourceList}>
-                  <a className={styles.sourceItem} href="https://eduscol.education.fr/document/23155/download" target="_blank" rel="noreferrer">
-                    <strong>Programme officiel / Eduscol</strong>
-                    Objectifs d’apprentissage du chapitre de Terminale SES.
+                  <a className={styles.sourceItem} href="https://www.education.gouv.fr/media/26477/download" target="_blank" rel="noreferrer">
+                    <strong>Programme officiel de Terminale SES — BO 2019</strong>
+                    Formulation officielle des cinq objectifs d’apprentissage du chapitre.
                   </a>
                   <a className={styles.sourceItem} href="https://www.wto.org/english/res_e/booksp_e/gtos0326_e.pdf" target="_blank" rel="noreferrer">
                     <strong>OMC — Global Trade Outlook and Statistics, mars 2026</strong>
