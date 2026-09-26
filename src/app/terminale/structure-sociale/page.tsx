@@ -285,17 +285,21 @@ function Flow({ items }: { items: string[] }) {
   );
 }
 
-function drawQuestions() {
-  const items = [...QUIZ_BANK];
+function shuffleInPlace<T>(items: T[]) {
   for (let i = items.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [items[i], items[j]] = [items[j], items[i]];
   }
+  return items;
+}
+
+function drawQuestions() {
+  const items = shuffleInPlace([...QUIZ_BANK]);
 
   return items.slice(0, QUIZ_SIZE).map((question) => {
-    const shuffledOptions = question.options
-      .map((option, index) => ({ option, isCorrect: index === question.correct }))
-      .sort(() => Math.random() - 0.5);
+    const shuffledOptions = shuffleInPlace(
+      question.options.map((option, index) => ({ option, isCorrect: index === question.correct }))
+    );
 
     return {
       ...question,
@@ -424,7 +428,7 @@ export default function StructureSocialePage() {
             <div className={styles.heroMeta}>
               <span className={styles.pill}>11 étapes</span>
               <span className={styles.pill}>≈ 65 min au total</span>
-              <span className={styles.pill}>Programme Eduscol 2025</span>
+              <span className={styles.pill}>Programme officiel 2019</span>
               <span className={styles.pill}>Quiz renouvelé</span>
             </div>
           </div>
@@ -525,10 +529,11 @@ export default function StructureSocialePage() {
                   <span className={styles.badge}>Objectif officiel 3</span>
                   <h3>Connaître Marx et Weber et comprendre le débat sur les classes sociales</h3>
                   <p>
-                    Connaître les théories des classes et de la stratification sociale dans la tradition
-                    sociologique chez Marx et Weber ; comprendre que la pertinence d’une approche en termes
-                    de classes sociales fait débat à partir des distances inter- et intra-classes, des rapports
-                    sociaux de genre, des identifications subjectives et de l’individualisation.
+                    Connaître les théories des classes et de la stratification sociale dans la tradition sociologique
+                    (Marx, Weber) ; comprendre que la pertinence d’une approche en termes de classes sociales pour rendre
+                    compte de la société française fait l’objet de débats théoriques et statistiques : évolution des distances
+                    inter- et intra-classes, articulation avec les rapports sociaux de genre, identifications subjectives à un
+                    groupe social, multiplication des facteurs d’individualisation.
                   </p>
                   <div className={styles.callout + " " + styles.good}>
                     <strong>En clair :</strong> tu dois comparer Marx et Weber puis être capable d’expliquer
@@ -697,8 +702,11 @@ export default function StructureSocialePage() {
                 <h3 className={styles.subTitle}>6. Marx : de la classe en soi à la classe pour soi</h3>
                 <Flow items={["Même position dans les rapports de production","Intérêts objectifs communs","Interactions / conflits","Conscience de classe","Mobilisation collective","Classe pour soi"]} />
 
-                <h3 className={styles.subTitle}>7. Réduction de la distance inter-classes</h3>
-                <Flow items={["Hausse du niveau de vie","Massification scolaire","Consommation et pratiques se rapprochent","Distance inter-classes ↓","Frontières de classe moins visibles"]} />
+                <h3 className={styles.subTitle}>7. Évolution des distances inter-classes : moyennisation puis persistance / repolarisation</h3>
+                <Flow items={["Trente Glorieuses : niveau de vie + consommation + scolarisation ↑","Certaines pratiques se rapprochent","Distance inter-classes peut ↓","Depuis les années 1980-2000 : chômage, précarité, patrimoine et hauts revenus se différencient","Contours de classes peuvent redevenir plus visibles"]} />
+                <div className={styles.callout}>
+                  <strong>Débat :</strong> Henri Mendras met l’accent sur la moyennisation, tandis que Louis Chauvel souligne un renouveau des clivages de classe. Les travaux sur les hauts revenus et patrimoines, notamment ceux de Thomas Piketty, alimentent aussi l’analyse d’une persistance ou d’une repolarisation de certaines inégalités.
+                </div>
 
                 <h3 className={styles.subTitle}>8. Hausse de la distance intra-classe</h3>
                 <Flow items={["Trajectoires plus diversifiées","Conditions d’emploi hétérogènes","Modes de vie et diplômes différenciés","Distance intra-classe ↑","Cohérence du groupe ↓"]} />
@@ -714,9 +722,22 @@ export default function StructureSocialePage() {
             {active === "donnees" && (
               <>
                 <p className={styles.intro}>
-                  Les données servent à illustrer une transformation ou une hiérarchie. Elles ne remplacent jamais
-                  le mécanisme sociologique.
+                  Les données servent à illustrer une transformation ou une hiérarchie. Pour l’objectif 2, il faut aussi raisonner
+                  sur le temps long depuis la seconde moitié du XXe siècle.
                 </p>
+                <h3 className={styles.subTitle}>Repères historiques</h3>
+                <div className={styles.grid2}>
+                  <div className={styles.stat}><strong>27 % → 13,3 %</strong><span>part approximative des indépendants : début des années 1960 puis 2024 (par complément au salariat).</span><small>Éduscol 2025 ; Insee, enquête Emploi 2024.</small></div>
+                  <div className={styles.stat}><strong>≈ 40 % → 76,6 %</strong><span>part du tertiaire dans l’emploi : 1962 puis 2024.</span><small>Éduscol 2025 ; Insee 2025.</small></div>
+                  <div className={styles.stat}><strong>4,7 % → 23,0 %</strong><span>part des cadres et professions intellectuelles supérieures : 1962 puis personnes en emploi cadres en 2024.</span><small>Éduscol 2025 ; Insee, enquête Emploi 2024.</small></div>
+                  <div className={styles.stat}><strong>54,4 % → 71,5 %</strong><span>taux d’activité des femmes de 15 à 64 ans : 1975 puis 2024.</span><small>Insee, France portrait social 2025.</small></div>
+                </div>
+                <h3 className={styles.subTitle}>Un repère territorial : la Guyane</h3>
+                <div className={styles.stat}>
+                  <strong>17 % contre 8 %</strong>
+                  <span>taux de chômage en 2025 en Guyane contre la France métropolitaine : un exemple concret de l’effet du territoire sur les opportunités sociales.</span>
+                  <small>Insee Analyses Guyane n°81, mai 2026.</small>
+                </div>
                 <div className={styles.grid2}>
                   <div className={styles.stat}>
                     <strong>86,7 %</strong>
@@ -920,6 +941,10 @@ export default function StructureSocialePage() {
                   <a className={styles.sourceItem} href="https://eduscol.education.gouv.fr/sites/default/files/document/ra25lyceegtsesstructuresocietefrancaiseactuellepdf-82818.pdf" target="_blank" rel="noreferrer">
                     <strong>Eduscol — Comment est structurée la société française actuelle ?</strong>
                     Objectifs d’apprentissage et savoirs scientifiques de référence, octobre 2025.
+                  </a>
+                  <a className={styles.sourceItem} href="https://eduscol.education.gouv.fr/sites/default/files/document/ra25lyceegtsesstructuresocietefrancaiseactuellepdf-82818.pdf" target="_blank" rel="noreferrer">
+                    <strong>Ressource d’accompagnement Éduscol — octobre 2025</strong>
+                    Repères historiques, débats sur les classes sociales et bibliographie actualisée.
                   </a>
                   <a className={styles.sourceItem} href="https://eduscol.education.gouv.fr/6822/la-pcs-2020-une-nomenclature-renovee" target="_blank" rel="noreferrer">
                     <strong>Eduscol — PCS 2020</strong>
