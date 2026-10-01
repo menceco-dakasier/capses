@@ -69,7 +69,7 @@ export function LevelEntries() {
   );
 }
 
-// Une banque éditoriale datée : le chiffre sélectionné change chaque jour.
+// Une banque éditoriale datée : le chiffre sélectionné change chaque semaine.
 // Les données ne sont pas présentées comme des mesures en temps réel.
 export const ECONOMY_FACTS = [
   {
@@ -110,33 +110,34 @@ export const ECONOMY_FACTS = [
   },
 ];
 
-function dayIndex(date: Date) {
-  const localMidnight = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
-  return Math.floor(localMidnight / 86_400_000) % ECONOMY_FACTS.length;
+function weekNumber(date: Date) {
+  const localDay = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+  // Le 5 janvier 1970 est un lundi : changement chaque lundi à minuit local.
+  return Math.floor((localDay - Date.UTC(1970, 0, 5)) / (7 * 86_400_000));
 }
 
 export function EconomyDaily() {
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const [daily, setDaily] = useState(true);
+  const [weekly, setWeekly] = useState(true);
   useEffect(() => {
-    const refresh = () => { setIndex(dayIndex(new Date())); setRevealed(false); setDaily(true); };
+    const refresh = () => { setIndex(weekNumber(new Date()) % ECONOMY_FACTS.length); setRevealed(false); setWeekly(true); };
     refresh();
-    let lastDay = new Date().toDateString();
-    const timer = setInterval(() => { const next = new Date().toDateString(); if (next !== lastDay) { lastDay = next; refresh(); } }, 60_000);
+    let lastWeek = weekNumber(new Date());
+    const timer = setInterval(() => { const next = weekNumber(new Date()); if (next !== lastWeek) { lastWeek = next; refresh(); } }, 60_000);
     return () => clearInterval(timer);
   }, []);
   const fact = ECONOMY_FACTS[index];
-  const nextFact = () => { setIndex((old) => (old + 1) % ECONOMY_FACTS.length); setRevealed(false); setDaily(false); };
+  const nextFact = () => { setIndex((old) => (old + 1) % ECONOMY_FACTS.length); setRevealed(false); setWeekly(false); };
   return (
     <section id="economie-en-vrai" className={styles.section} aria-labelledby="economy-title">
       <div className={styles.heading}>
         <div><p className={styles.eyebrow}>OBSERVER, SE QUESTIONNER, COMPRENDRE</p><h2 id="economy-title">L’économie en vrai</h2></div>
-        <p>Un chiffre différent chaque jour, un lien avec le cours.</p>
+        <p>Un chiffre différent chaque semaine, un lien avec le cours.</p>
       </div>
       <div className={styles.factGrid}>
         <article className={styles.factMain} aria-labelledby="fact-title">
-          <div className={styles.factTop}><span>{fact.category}</span><span className={styles.dailyLabel}>{daily ? "Le chiffre du jour" : `À découvrir · ${index + 1}/${ECONOMY_FACTS.length}`}</span></div>
+          <div className={styles.factTop}><span>{fact.category}</span><span className={styles.dailyLabel}>{weekly ? "Le chiffre de la semaine" : `À découvrir · ${index + 1}/${ECONOMY_FACTS.length}`}</span></div>
           <div className={styles.bigNumber}>{fact.number}</div><p className={styles.factUnit}>{fact.unit}</p>
           <h3 id="fact-title">{fact.title}</h3><p className={styles.factDescription}>{fact.description}</p>
           <details className={styles.calculation}><summary>Comment lire ce chiffre ?</summary><p>{fact.calculation}</p></details>
