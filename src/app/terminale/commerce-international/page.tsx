@@ -611,11 +611,58 @@ export default function CommerceInternationalPage() {
                 </p>
 
                 <h3 className={styles.subTitle}>5. La production est fragmentée à l’échelle mondiale</h3>
+                <div className={styles.card + " " + styles.cardBlue}>
+                  <h3>Comprendre la chaîne de valeur</h3>
+                  <p>
+                    La chaîne de valeur désigne l’ensemble des étapes qui contribuent à créer la valeur d’un bien ou d’un service,
+                    de sa conception jusqu’à son utilisation : recherche et développement, conception, approvisionnement,
+                    fabrication des composants, assemblage, transport, commercialisation et service après-vente.
+                    Elle comprend donc des activités réalisées avant, pendant et après la fabrication.
+                  </p>
+                  <p>
+                    Chaque étape apporte une contribution au produit final : une innovation améliore ses fonctionnalités,
+                    un composant permet son fonctionnement, la distribution le rend accessible au consommateur.
+                    La valeur ne provient donc pas seulement de l’assemblage. Les différentes activités ne contribuent pas
+                    toutes de la même manière à la valeur ajoutée et ne procurent pas nécessairement les mêmes revenus.
+                  </p>
+                </div>
+                <h4 className={styles.subTitle}>De la chaîne de valeur à son internationalisation</h4>
+                <p className={styles.intro}>
+                  La chaîne de valeur est internationalisée lorsque les activités qui la composent sont réparties entre plusieurs pays.
+                  Sa fragmentation correspond au découpage du processus en tâches ou étapes distinctes. Une firme multinationale
+                  peut coordonner ces activités au sein de ses filiales ou avec des fournisseurs et sous-traitants indépendants.
+                  Il faut donc distinguer le découpage des activités de leur répartition géographique : une chaîne peut aussi être
+                  fragmentée entre plusieurs entreprises à l’intérieur d’un même pays.
+                </p>
                 <p className={styles.intro}>
                   Une même firme peut concevoir dans un pays, acheter ses composants dans plusieurs autres, assembler ailleurs,
                   puis commercialiser partout. Les étapes sont localisées selon les coûts, compétences, infrastructures, marchés,
                   ressources et risques. Cette organisation multiplie les échanges de biens intermédiaires.
                 </p>
+                <div className={styles.grid2}>
+                  <div className={styles.card + " " + styles.cardGreen}>
+                    <h3>Pourquoi répartir les étapes entre pays ?</h3>
+                    <p>
+                      Les firmes recherchent les avantages propres à chaque territoire : compétences pour la conception,
+                      technologie pour certains composants, coûts de production, infrastructures et proximité des clients.
+                      Elles peuvent ainsi réduire leurs coûts ou améliorer la qualité. Elles tiennent aussi compte des délais,
+                      de la fiabilité des fournisseurs et des risques de rupture d’approvisionnement.
+                    </p>
+                  </div>
+                  <div className={styles.card + " " + styles.cardPurple}>
+                    <h3>Quels effets sur le commerce international ?</h3>
+                    <p>
+                      Les échanges portent sur des produits finis, mais aussi sur des pièces, composants et services nécessaires
+                      aux différentes étapes. Un composant peut franchir plusieurs frontières avant la vente du produit final.
+                      Les économies deviennent plus interdépendantes : une rupture dans un pays peut perturber la production ailleurs.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.callout}>
+                  <strong>À ne pas confondre :</strong> la chaîne logistique concerne l’approvisionnement et la circulation des biens
+                  et des informations associées. La chaîne de valeur inclut aussi la conception, l’innovation, la commercialisation
+                  et les services : elle ne se limite pas au transport du produit.
+                </div>
                 <div className={styles.grid3}>
                   <div className={styles.card}><h3>IDE</h3><p>Créer ou acquérir une filiale étrangère pour contrôler durablement une activité.</p></div>
                   <div className={styles.card}><h3>Délocalisation</h3><p>Déplacer une activité vers un autre pays.</p></div>
