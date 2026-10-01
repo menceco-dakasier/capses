@@ -44,7 +44,7 @@ export function SESVisual() {
 const LEVELS = [
   { name: "Seconde", line: "Découvrir les SES", description: "Comprendre la production, les prix et la vie en société. Partir d’exemples concrets pour construire les premières notions.", status: "2 chapitres accessibles", href: "/seconde", accent: "#0f766e", kind: "globe" as const },
   { name: "Première", line: "Construire des bases solides", description: "Approfondir l’économie, la sociologie et la science politique. Apprendre à expliquer un mécanisme et à lire un document.", status: "Contenus en préparation", href: "/premiere", accent: "#875717", kind: "book" as const },
-  { name: "Terminale", line: "Se préparer au bac", description: "Réviser les neuf chapitres proposés, maîtriser les mécanismes et s’entraîner avec des quiz, des sujets et des fiches mémo.", status: "9 entrées de chapitres", href: "#chapitres", accent: "#1d4ed8", kind: "chart" as const },
+  { name: "Terminale", line: "Se préparer au bac", description: "Réviser les neuf chapitres proposés, maîtriser les mécanismes et s’entraîner avec des quiz, des sujets et des fiches mémo.", status: "9 entrées de chapitres", href: "/terminale", accent: "#1d4ed8", kind: "chart" as const },
   { name: "BTS CEJM", line: "Relier le cours à l’entreprise", description: "Mobiliser l’économie, le droit et le management pour comprendre les décisions des entreprises et analyser leurs situations.", status: "Espace en construction", href: "/bts-cejm", accent: "#62408b", kind: "book" as const },
 ];
 
