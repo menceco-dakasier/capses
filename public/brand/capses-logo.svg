@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <title>CAPSES : un cap pour comprendre</title>
+  <rect x="1" y="1" width="78" height="78" rx="20" fill="#eff5fc" stroke="#d8e5f3"/>
+  <path d="M40 14v42" stroke="#173b73" stroke-width="3" stroke-linecap="round"/>
+  <path d="M35 20v32H14L35 20Z" fill="#d9e7fa"/>
+  <path d="M45 17v35h21L45 17Z" fill="#2563eb"/>
+  <path d="M19 48c5-1 8-4 12-8" stroke="#173b73" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 46v-5m6 5V35m6 11V30" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M13 58h56l-9 11H24L13 58Z" fill="#173b73"/>
+  <path d="M25 75c5-3 9-3 14 0 5-3 9-3 14 0" stroke="#6096c5" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="66" cy="16" r="4" fill="#d0a64a"/>
+</svg>

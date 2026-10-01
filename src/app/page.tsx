@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { EconomyDaily, LearningIcon, LearningPath, LevelEntries, SESVisual } from "./home-sections";
 
 type Matiere = "ECO" | "SOCIO" | "RC";
 
@@ -44,7 +46,7 @@ const CHAPITRES: Chapitre[] = [
     duree: "20 min",
   },
   {
-    slug: "politiques-economiques-europeennes",
+    slug: "politiques-europeennes",
     titre: "Les politiques économiques européennes",
     matiere: "ECO",
     label: "Économie",
@@ -71,7 +73,7 @@ const CHAPITRES: Chapitre[] = [
     duree: "20 min",
   },
   {
-    slug: "travail-emploi",
+    slug: "mutations-travail-emploi",
     titre: "Travail, emploi, chômage",
     matiere: "SOCIO",
     label: "Sociologie",
@@ -109,10 +111,28 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [filtre, setFiltre] = useState<Matiere | "ALL">("ALL");
   const [progression, setProgression] = useState(0);
+  const [progress, setProgress] = useState<Record<string, string>>({});
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("capses_progression");
-    if (saved) setProgression(Number(saved));
+    const refreshProgress = () => {
+      try {
+        const saved = localStorage.getItem("capses_progress");
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+            setProgress(parsed);
+            setProgression(Math.round(CHAPITRES.filter((chapter) => parsed[chapter.slug] === "valide").length / CHAPITRES.length * 100));
+          }
+        } else {
+          const old = Number(localStorage.getItem("capses_progression") || 0);
+          if (Number.isFinite(old)) setProgression(Math.min(100, Math.max(0, old)));
+        }
+      } catch { /* La page reste utilisable sans stockage local. */ }
+    };
+    refreshProgress();
+    window.addEventListener("storage", refreshProgress);
+    return () => window.removeEventListener("storage", refreshProgress);
   }, []);
 
   const chapitresFiltres = useMemo(() => {
@@ -126,6 +146,7 @@ export default function Home() {
 
   return (
     <main className="page">
+      <a className="skip-link" href="#niveaux">Aller aux espaces de révision</a>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
@@ -752,14 +773,60 @@ export default function Home() {
           }
         }
       `}</style>
+      <style>{`
+        .page { font-family: var(--font-geist-sans), Inter, system-ui, sans-serif; }
+        .header { height:76px; backdrop-filter:none; }
+        .nav { width:min(1360px,calc(100% - 48px)); gap:16px; }
+        .brand { gap:8px; flex-shrink:0; }
+        .brand-title { font-size:22px; }
+        .brand-subtitle { font-size:11px; }
+        .logo-boat { flex:0 0 48px; display:block; }
+        .nav-link { font-size:13px; padding:27px 10px 23px; white-space:nowrap; }
+        .links { gap:2px; }
+        .search-wrap { gap:8px; }
+        .search { max-width:220px; }
+        .container { max-width:1360px; }
+        .hero-card { grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); min-height:540px; }
+        .hero-left { padding:46px 42px 38px; }
+        .hero-title { font-size:clamp(48px,5vw,70px); }
+        .hero-subtitle { font-size:22px; }
+        .hero-text { font-size:16px; line-height:1.7; }
+        .badge { font-size:11px; margin-bottom:23px; padding:9px 12px; }
+        .proofs { gap:14px; margin-top:30px; }
+        .proof { gap:9px; align-items:flex-start; }
+        .proof-icon { flex:0 0 35px; width:35px; height:35px; border-radius:10px; }
+        .proof strong { font-size:13px; line-height:1.45; }
+        .proof div>span { font-size:12px; line-height:1.45; }
+        .hero-right { min-height:540px; }
+        .hero-actions { margin-top:25px; gap:10px; }
+        .btn-primary,.btn-secondary { font-size:14px; min-height:44px; padding:13px 17px; }
+        .section { scroll-margin-top:100px; }
+        .menu-toggle { display:none; align-items:center;gap:8px;min-height:44px;padding:9px 12px;border:1px solid #d7e3f0;background:#fff;border-radius:10px;color:#173b73;font:inherit;font-size:13px;font-weight:800;cursor:pointer; }
+        .mobile-links { display:none; }
+        .section-search { width:100%; max-width:380px; min-height:44px; padding:11px 13px;border:1px solid #c8d7ea;border-radius:10px;background:#fff;font:inherit;font-size:14px;color:#10234d; }
+        .chapter-status { font-size:12px;font-weight:750;color:#31567d;margin:0 0 14px; }
+        .empty-results { padding:28px;background:white;border:1px solid #d7e3f0;border-radius:15px;grid-column:1/-1;color:#53657e; }
+        .empty-results button { min-height:44px;padding:10px 14px;border:1px solid #c8d7ea;border-radius:9px;background:#f1f6ff;color:#164d92;cursor:pointer;font:inherit;margin-top:12px; }
+        .search-label { display:block; font-size:12px;font-weight:750;color:#53657e;margin-bottom:7px; }
+        .page :is(a,button,input,summary):focus-visible { outline:3px solid #2563eb;outline-offset:4px; }
+        .skip-link { position:absolute;left:16px;top:-80px;z-index:100;background:#fff;color:#163b78;padding:12px 18px;border:2px solid #2563eb;border-radius:9px; }
+        .skip-link:focus { top:12px; }
+        .home-footer { display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:25px 0;border-top:1px solid #d7e3f0;color:#53657e;font-size:12px;line-height:1.7; }
+        .home-footer a { color:#164d92;display:inline-flex;align-items:center;min-height:44px;font-weight:750; }
+        .progress-box a { display:inline-flex;align-items:center;min-height:44px;color:#164d92;font-size:13px;font-weight:800;margin-top:6px; }
+        @media(max-width:1200px){.search-wrap{display:none}.links{display:flex}.hero-card{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.hero-left{padding:38px 30px}.nav-link{padding-left:8px;padding-right:8px}}
+        @media(max-width:980px){.links{display:none}.menu-toggle{display:flex}.mobile-links{position:absolute;top:75px;left:0;right:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:16px 24px;background:white;border-bottom:1px solid #d7e3f0;box-shadow:0 15px 25px #173b730a}.mobile-links a{min-height:44px;display:flex;align-items:center;color:#173b73;font-size:14px;font-weight:750;padding:8px 12px;border-radius:8px}.mobile-links a:hover{background:#edf4ff}.hero-card{grid-template-columns:minmax(0,1fr)}.hero-right{min-height:0}.proofs{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-left{padding:38px}.section-title{flex-wrap:wrap}}
+        @media(max-width:720px){.nav{width:calc(100% - 28px)}.container{width:calc(100% - 28px);padding-top:20px}.hero-card{border-radius:21px}.hero-left{padding:30px 25px}.hero-title{font-size:clamp(42px,12vw,60px)}.hero-subtitle{font-size:21px}.hero-text{font-size:15px}.proofs{grid-template-columns:1fr;gap:16px;margin-top:25px}.proof strong{font-size:14px}.section-title h2{font-size:24px}.section-title{display:block}.section-title>div{margin-bottom:18px}.section-search{max-width:none}.brand-subtitle{font-size:10px}.brand-title{font-size:20px}.logo-boat{width:42px;height:42px;flex-basis:42px}.mobile-links{padding:12px 14px}.home-footer{align-items:flex-start}.badge{font-size:10px;line-height:1.5}.chapters-grid{grid-template-columns:minmax(0,1fr)}}
+        @media(prefers-reduced-motion:reduce){.page *{scroll-behavior:auto!important;transition:none!important}.btn-primary:hover,.btn-secondary:hover{transform:none}}
+      `}</style>
 
       <header className="header">
-        <nav className="nav">
+        <nav className="nav" aria-label="Navigation principale">
           <Link href="/" className="brand">
-            <span className="logo">C</span>
+            <Image className="logo-boat" src="/brand/capses-logo.svg" alt="" width={48} height={48} />
             <span>
               <span className="brand-title">CAPSES</span>
-              <span className="brand-subtitle">Réussir le bac de SES</span>
+              <span className="brand-subtitle">Comprendre · apprendre · progresser</span>
             </span>
           </Link>
 
@@ -769,7 +836,7 @@ export default function Home() {
             <Link href="#chapitres" className="nav-link">Terminale</Link>
             <Link href="/premiere" className="nav-link">Première</Link>
             <Link href="/seconde" className="nav-link">Seconde</Link>
-            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
 
@@ -779,16 +846,18 @@ export default function Home() {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Rechercher une notion, un chapitre..."
+              aria-label="Rechercher dans les chapitres de Terminale"
             />
-            <div className="avatar">EC</div>
           </div>
+          <button className="menu-toggle" aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "Fermer" : "Menu"}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+          {menuOpen && <div className="mobile-links" id="mobile-navigation">{[["Accueil","/"],["BTS CEJM","/bts-cejm"],["Terminale","#chapitres"],["Première","/premiere"],["Seconde","/seconde"],["Méthodes","/methodes"],["Mon espace","/espace-eleves"]].map(([label,href]) => <Link key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</Link>)}</div>}
         </nav>
       </header>
 
       <div className="container">
         <section className="hero-card">
           <div className="hero-left">
-            <div className="badge">TERMINALE SES · 2026-2027</div>
+            <div className="badge">SECONDE · PREMIÈRE · TERMINALE · BTS CEJM · 2026-2027</div>
 
             <h1 className="hero-title">
               Bienvenue sur
@@ -796,7 +865,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-subtitle">
-              La plateforme de révision en SES pour progresser toute l’année
+              La plateforme de révision en SES et en CEJM pour progresser toute l’année
             </p>
 
             <p className="hero-text">
@@ -805,25 +874,26 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="#chapitres" className="btn-primary">
+              <a href="#niveaux" className="btn-primary">
                 Commencer à réviser <span>→</span>
               </a>
               <Link href="/espace-eleves" className="btn-secondary">
-                ◎ Voir ma progression
+                Voir ma progression
               </Link>
+              <Link href="/methodes" className="btn-secondary">Voir la méthode</Link>
             </div>
 
             <div className="proofs">
               <div className="proof">
-                <span className="proof-icon" style={{ background: "#eaf2ff", color: "#2563eb" }}>□</span>
+                <span className="proof-icon" style={{ background: "#eaf2ff", color: "#2563eb" }}><LearningIcon kind="book" /></span>
                 <div>
-                  <strong>9 chapitres complets</strong>
-                  <span>Tout le programme de Terminale</span>
+                  <strong>Un espace pour chaque niveau</strong>
+                  <span>Du lycée au BTS CEJM</span>
                 </div>
               </div>
 
               <div className="proof">
-                <span className="proof-icon" style={{ background: "#fff1d8", color: "#f59e0b" }}>□</span>
+                <span className="proof-icon" style={{ background: "#fff1d8", color: "#875717" }}><LearningIcon kind="globe" /></span>
                 <div>
                   <strong>Des contenus clairs</strong>
                   <span>Cours, schémas, exemples</span>
@@ -831,7 +901,7 @@ export default function Home() {
               </div>
 
               <div className="proof">
-                <span className="proof-icon" style={{ background: "#dcfce7", color: "#059669" }}>◎</span>
+                <span className="proof-icon" style={{ background: "#dcfce7", color: "#0f766e" }}><LearningIcon kind="chart" /></span>
                 <div>
                   <strong>Pour progresser vraiment</strong>
                   <span>Quiz, exercices et suivi</span>
@@ -841,30 +911,13 @@ export default function Home() {
           </div>
 
           <div className="hero-right">
-            <div className="handwriting">
-              Comprendre<br />
-              aujourd’hui,<br />
-              réussir demain
-            </div>
-
-            <div className="floating top">
-              Des SES<br />
-              plus claires,<br />
-              plus simples,<br />
-              plus concrètes.
-            </div>
-
-            <div className="floating bottom">
-              « Tout commence<br />
-              par une bonne<br />
-              méthode. »
-            </div>
-
-            <div className="student-scene">
-              <div className="student-card" />
-            </div>
+            <SESVisual />
           </div>
         </section>
+
+        <LevelEntries />
+        <EconomyDaily />
+        <LearningPath />
 
         <section id="chapitres" className="section">
           <aside className="sidebar">
@@ -899,16 +952,17 @@ export default function Home() {
             </button>
 
             <div className="progress-box">
-              <strong>Progression</strong>
+              <strong>Progression en Terminale</strong>
               <div className="progress-bar">
                 <div
                   className="progress-fill"
                   style={{ "--progress": `${progression}%` } as CSSProperties}
                 />
               </div>
-              <p style={{ margin: "8px 0 0", color: "#64748b", fontSize: 13 }}>
+              <p style={{ margin: "8px 0 0", color: "#53657e", fontSize: 13 }}>
                 {progression}% du parcours terminé
               </p>
+              <Link href="/espace-eleves">Ouvrir Mon espace →</Link>
             </div>
           </aside>
 
@@ -918,7 +972,7 @@ export default function Home() {
                 <h2>Les chapitres de Terminale</h2>
                 <p>Choisis un chapitre pour commencer ou reprendre ta révision.</p>
               </div>
-              <p>{chapitresFiltres.length} résultat(s)</p>
+              <div><label className="search-label" htmlFor="chapter-search">Rechercher en Terminale</label><input id="chapter-search" className="section-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Un chapitre, une notion…" /><p aria-live="polite">{chapitresFiltres.length} résultat(s)</p></div>
             </div>
 
             <div className="chapters-grid">
@@ -947,15 +1001,18 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
+                  <div className="chapter-status">{progress[chapitre.slug] === "valide" ? "Chapitre validé ✓" : progress[chapitre.slug] === "en-cours" ? "Révision en cours" : "À découvrir"}</div>
 
                   <Link href={`/terminale/${chapitre.slug}`} className="chapter-link">
                     Ouvrir le chapitre
                   </Link>
                 </article>
               ))}
+              {chapitresFiltres.length === 0 && <div className="empty-results"><p>Aucun chapitre ne correspond à cette recherche. Essaie une notion plus générale ou un autre filtre.</p><button onClick={() => {setQuery("");setFiltre("ALL");}}>Afficher tous les chapitres</button></div>}
             </div>
           </section>
         </section>
+        <footer className="home-footer"><p><strong>CAPSES · 2026-2027</strong><br />Des cours clairs, des schémas, des exemples, des méthodes et des exercices, du lycée au BTS.</p><Link href="/espace-eleves">Retrouver mes révisions →</Link></footer>
       </div>
     </main>
   );
