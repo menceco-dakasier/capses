@@ -438,6 +438,27 @@ export default function CroissanceEconomiquePage() {
                   <div className={styles.card}><h3>Climat</h3><p>Les émissions de gaz à effet de serre liées aux activités humaines contribuent au réchauffement climatique.</p></div>
                 </div>
                 <div className={styles.callout}>L’innovation peut améliorer l’efficacité énergétique, développer les renouvelables, l’économie circulaire ou des procédés moins polluants. Mais l’effet rebond et l’existence de seuils écologiques expliquent pourquoi elle ne garantit pas à elle seule la soutenabilité.</div>
+
+                <h3 className={styles.subTitle}>8. Soutenabilité faible et forte : peut-on remplacer le capital naturel ?</h3>
+                <p className={styles.intro}>Un développement soutenable répond aux besoins présents sans compromettre la capacité des générations futures à satisfaire les leurs. Le capital naturel comprend les ressources et les écosystèmes qui rendent la vie et la production possibles. Les deux approches se distinguent par les possibilités de le remplacer par d’autres formes de capital.</p>
+                <div className={styles.grid2}>
+                  <div className={styles.card + " " + styles.cardBlue}>
+                    <h3>La soutenabilité faible</h3>
+                    <p><strong>Principe :</strong> le capital naturel peut, dans une certaine mesure, être remplacé par du capital physique, humain ou technologique. Il faut transmettre aux générations futures un stock global de capital qui ne diminue pas, même si sa composition change.</p>
+                    <p><strong>Rôle de l’innovation :</strong> des techniques plus efficaces et des investissements peuvent compenser une partie de la raréfaction des ressources ou de la dégradation de l’environnement.</p>
+                    <p><strong>Exemple de raisonnement :</strong> les revenus tirés de l’exploitation d’une ressource non renouvelable peuvent financer la formation et des infrastructures durables. Cette approche suppose que ces investissements compensent suffisamment la perte de capital naturel.</p>
+                  </div>
+                  <div className={styles.card + " " + styles.cardGreen}>
+                    <h3>La soutenabilité forte</h3>
+                    <p><strong>Principe :</strong> certaines fonctions du capital naturel sont critiques et difficilement, voire pas du tout, remplaçables. Préserver le seul stock global de capital ne suffit donc pas : il faut aussi conserver ces éléments du capital naturel et respecter des seuils écologiques.</p>
+                    <p><strong>Rôle de l’innovation :</strong> elle peut réduire les pressions sur l’environnement, mais ne permet pas de compenser toutes les pertes, notamment les dommages irréversibles.</p>
+                    <p><strong>Exemple :</strong> construire davantage de machines ou former davantage de travailleurs ne recrée pas une espèce disparue et ne remplace pas nécessairement les fonctions d’un écosystème détruit. Sa préservation impose des limites aux activités qui le menacent.</p>
+                  </div>
+                </div>
+                <div className={styles.callout + " " + styles.good}><strong>La différence essentielle :</strong> la soutenabilité faible admet une substitution entre les formes de capital ; la soutenabilité forte insiste sur les limites de cette substitution et sur la préservation du capital naturel critique.</div>
+                <div className={styles.callout + " " + styles.warning}><strong>Confusion à éviter :</strong> « faible » ne signifie pas absence de protection de l’environnement et « forte » ne signifie pas rejet de toute innovation. Le débat porte surtout sur ce que l’on peut réellement remplacer, les seuils à respecter et ce que l’on transmet aux générations futures.</div>
+                <a className={styles.sourceItem} href="https://www.oecd.org/fr/publications/analyse-couts-avantages-et-environnement_9789264300453-fr/full-report/component-19.html" target="_blank" rel="noreferrer">Source : OCDE, Analyse coûts-avantages et environnement, chapitre « Capital naturel et durabilité » (2018).</a>
+
               </>
             )}
 
