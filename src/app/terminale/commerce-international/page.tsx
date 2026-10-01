@@ -877,15 +877,17 @@ export default function CommerceInternationalPage() {
             {active === "memo" && (
               <>
                 <p className={styles.intro}>
-                  La fiche mémo sera générée à partir de cette version mise à jour afin qu’elle corresponde exactement
-                  au cours et aux mécanismes proposés sur CAPSES.
+                  Télécharge la fiche mémo en deux pages : elle reprend les notions, les mécanismes et les
+                  principales confusions à éviter dans ce chapitre.
                 </p>
                 <div className={styles.download}>
                   <div>
                     <h3>Fiche mémo — Mondialisation / Commerce international</h3>
                     <p>Avantages comparatifs, commerce intrabranche, chaînes de valeur, compétitivité, effets de l’ouverture et protectionnisme.</p>
                   </div>
-                  <span className={styles.pill}>À générer</span>
+                  <a href="/memos/memo_commerce_international.pdf" download>
+                    Télécharger le PDF · 2 pages
+                  </a>
                 </div>
 
                 <h3 className={styles.subTitle}>Checklist avant le bac</h3>
