@@ -1,11 +1,10 @@
 import Link from "next/link";
-import type { CSSProperties } from "react";
 
 const parcours = [
   {
     numero: "01",
     titre: "À savoir",
-    texte: "Les objectifs du chapitre et les attendus essentiels.",
+    texte: "Les objectifs du chapitre et les attendus essentiels expliqués simplement.",
     href: "#savoir",
   },
   {
@@ -107,17 +106,20 @@ const exemples = [
   {
     situation: "Un cours de SES dans un lycée public",
     classement: "Production non marchande de service",
-    justification: "Le service est organisé, légal, financé collectivement et gratuit ou quasi gratuit pour l’usager.",
+    justification:
+      "Le service est organisé, légal, financé collectivement et gratuit ou quasi gratuit pour l’usager.",
   },
   {
     situation: "Un cours de mathématiques donné à son petit frère",
     classement: "Pas une production économique au sens strict",
-    justification: "Il s’agit d’une activité domestique ou familiale, non déclarée et non organisée sur un marché.",
+    justification:
+      "Il s’agit d’une activité domestique ou familiale, non déclarée et non organisée sur un marché.",
   },
   {
     situation: "Du pain vendu dans une boulangerie",
     classement: "Production marchande de bien",
-    justification: "Le pain est un bien matériel vendu sur un marché à un prix significatif.",
+    justification:
+      "Le pain est un bien matériel vendu sur un marché à un prix significatif.",
   },
   {
     situation: "Un transport en taxi",
@@ -127,12 +129,14 @@ const exemples = [
   {
     situation: "Un gâteau réalisé à la maison",
     classement: "Pas une production économique au sens strict",
-    justification: "La production domestique n’est pas comptabilisée comme production économique marchande ou non marchande.",
+    justification:
+      "La production domestique n’est pas comptabilisée comme production économique marchande ou non marchande.",
   },
   {
     situation: "Un dîner au restaurant",
     classement: "Production marchande de service",
-    justification: "Le restaurant vend un service de restauration, même si des biens alimentaires sont utilisés.",
+    justification:
+      "Le restaurant vend un service de restauration, même si des biens alimentaires sont utilisés.",
   },
   {
     situation: "Un médicament vendu en pharmacie",
@@ -142,7 +146,8 @@ const exemples = [
   {
     situation: "Une action des Restos du Cœur",
     classement: "Production de service par l’économie sociale et solidaire",
-    justification: "L’objectif principal est l’utilité sociale, pas la recherche du profit maximal.",
+    justification:
+      "L’objectif principal est l’utilité sociale, pas la recherche du profit maximal.",
   },
 ];
 
@@ -677,6 +682,33 @@ export default function CreationRichessesPage() {
           margin-bottom: 0;
         }
 
+        .clear-box {
+          margin-top: 22px;
+          background: #ecfdf5;
+          border: 1px solid #bdece2;
+          border-radius: 22px;
+          padding: 22px;
+        }
+
+        .clear-label {
+          display: inline-flex;
+          margin-bottom: 10px;
+          background: white;
+          color: #0f766e;
+          border: 1px solid #bdece2;
+          border-radius: 999px;
+          padding: 7px 11px;
+          font-size: 13px;
+          font-weight: 900;
+        }
+
+        .clear-box p {
+          margin: 0;
+          color: #24496f;
+          font-weight: 700;
+          line-height: 1.7;
+        }
+
         .intro-grid,
         .notions-grid,
         .examples-grid,
@@ -991,40 +1023,136 @@ export default function CreationRichessesPage() {
               <h2>1. À savoir pour le chapitre</h2>
 
               <p>
-                La question centrale est : <strong>comment crée-t-on des richesses et comment les mesure-t-on ?</strong>
-                Le chapitre part d’une idée simple : produire ne veut pas seulement dire fabriquer un objet.
-                On peut aussi produire un service, marchand ou non marchand.
+                La question centrale est :{" "}
+                <strong>comment crée-t-on des richesses et comment les mesure-t-on ?</strong>
+                Le chapitre part d’une idée simple : produire ne veut pas seulement dire
+                fabriquer un objet. On peut aussi produire un service, marchand ou non marchand.
               </p>
+
+              <div className="clear-box">
+                <span className="clear-label">En clair</span>
+                <p>
+                  Dans ce chapitre, tu dois comprendre que la richesse n’est pas seulement
+                  produite par les entreprises. Un lycée, un hôpital, une association, une
+                  boulangerie ou un taxi peuvent tous participer à la production de richesses,
+                  mais pas de la même manière. Tu dois aussi comprendre comment on mesure cette
+                  richesse avec la valeur ajoutée, le PIB et la croissance, tout en sachant que
+                  ces indicateurs ont des limites.
+                </p>
+              </div>
 
               <div className="intro-grid">
                 <div className="intro-item">
-                  <strong>Objectif 1</strong>
-                  <span>Comprendre la diversité des producteurs : entreprises, administrations publiques et économie sociale et solidaire.</span>
+                  <strong>Objectif d’apprentissage 1</strong>
+                  <span>
+                    Savoir que les producteurs sont variés : entreprises, administrations publiques
+                    et organisations de l’économie sociale et solidaire.
+                  </span>
                 </div>
 
                 <div className="intro-item">
-                  <strong>Objectif 2</strong>
-                  <span>Distinguer production marchande et production non marchande.</span>
+                  <strong>En clair</strong>
+                  <span>
+                    Une entreprise produit, mais elle n’est pas seule. Un lycée public, une mairie,
+                    un hôpital ou une association produisent aussi des services utiles.
+                  </span>
                 </div>
 
                 <div className="intro-item">
-                  <strong>Objectif 3</strong>
-                  <span>Comprendre que produire suppose de combiner travail, capital, technologie et ressources naturelles.</span>
+                  <strong>Objectif d’apprentissage 2</strong>
+                  <span>
+                    Savoir distinguer production marchande et production non marchande.
+                  </span>
                 </div>
 
                 <div className="intro-item">
-                  <strong>Objectif 4</strong>
-                  <span>Mesurer les richesses avec le chiffre d’affaires, la valeur ajoutée, le bénéfice, le PIB et la croissance.</span>
+                  <strong>En clair</strong>
+                  <span>
+                    Quand tu payes directement un prix important, c’est souvent marchand. Quand
+                    c’est gratuit ou presque gratuit pour l’usager, mais financé collectivement,
+                    c’est souvent non marchand.
+                  </span>
                 </div>
 
                 <div className="intro-item">
-                  <strong>Objectif 5</strong>
-                  <span>Comprendre que le PIB ne dit pas tout, notamment sur les inégalités et les limites écologiques.</span>
+                  <strong>Objectif d’apprentissage 3</strong>
+                  <span>
+                    Comprendre que produire suppose de combiner du travail, du capital, de la
+                    technologie et des ressources naturelles.
+                  </span>
                 </div>
 
                 <div className="intro-item">
-                  <strong>Objectif 6</strong>
-                  <span>Savoir répondre avec la méthode AEI : affirmer, expliquer, illustrer.</span>
+                  <strong>En clair</strong>
+                  <span>
+                    Pour produire du pain, il faut un boulanger, un four, des recettes, de
+                    l’énergie, de la farine et de l’eau. Produire, c’est donc combiner plusieurs
+                    éléments.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>Objectif d’apprentissage 4</strong>
+                  <span>
+                    Savoir distinguer chiffre d’affaires, valeur ajoutée et bénéfice.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>En clair</strong>
+                  <span>
+                    Les ventes ne disent pas tout. Une entreprise peut vendre beaucoup, mais avoir
+                    aussi beaucoup de coûts. Il faut donc distinguer ce qu’elle vend, ce qu’elle
+                    crée vraiment et ce qu’elle gagne à la fin.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>Objectif d’apprentissage 5</strong>
+                  <span>
+                    Comprendre que le PIB correspond à la somme des valeurs ajoutées.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>En clair</strong>
+                  <span>
+                    Le PIB sert à mesurer la production d’un territoire. Pour éviter de compter
+                    plusieurs fois la même chose, on additionne les valeurs ajoutées, pas les
+                    chiffres d’affaires.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>Objectif d’apprentissage 6</strong>
+                  <span>
+                    Comprendre que la croissance correspond à l’augmentation du PIB.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>En clair</strong>
+                  <span>
+                    Quand le PIB augmente, on dit que l’économie produit davantage. C’est ce qu’on
+                    appelle la croissance économique.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>Objectif d’apprentissage 7</strong>
+                  <span>
+                    Connaître les limites du PIB, notamment pour mesurer les inégalités et les
+                    effets écologiques.
+                  </span>
+                </div>
+
+                <div className="intro-item">
+                  <strong>En clair</strong>
+                  <span>
+                    Le PIB peut augmenter même si les richesses sont mal réparties ou si la
+                    production abîme l’environnement. Il faut donc savoir utiliser cet indicateur
+                    avec prudence.
+                  </span>
                 </div>
               </div>
 
@@ -1060,29 +1188,31 @@ export default function CreationRichessesPage() {
               <div className="course-box">
                 <h3>A. Produire, ce n’est pas seulement fabriquer</h3>
                 <p>
-                  Dans le langage courant, on pense souvent que produire signifie fabriquer un objet.
-                  En SES, la notion est plus large. Produire, c’est créer un bien ou un service dans un cadre organisé.
-                  Une boulangerie produit du pain, une pharmacie vend des médicaments, un taxi produit un service
-                  de transport, et un lycée public produit un service d’éducation.
+                  Dans le langage courant, on pense souvent que produire signifie fabriquer un
+                  objet. En SES, la notion est plus large. Produire, c’est créer un bien ou un
+                  service dans un cadre organisé. Une boulangerie produit du pain, une pharmacie
+                  vend des médicaments, un taxi produit un service de transport, et un lycée
+                  public produit un service d’éducation.
                 </p>
               </div>
 
               <div className="course-box">
                 <h3>B. Bien ou service : deux formes de production</h3>
                 <p>
-                  Un bien est matériel : on peut le stocker, le transporter et le toucher.
-                  Un service est immatériel : il est souvent produit et consommé en même temps.
-                  Une coupe de cheveux, un cours, une consultation médicale ou un trajet en bus sont des services.
+                  Un bien est matériel : on peut le stocker, le transporter et le toucher. Un
+                  service est immatériel : il est souvent produit et consommé en même temps. Une
+                  coupe de cheveux, un cours, une consultation médicale ou un trajet en bus sont
+                  des services.
                 </p>
               </div>
 
               <div className="course-box">
                 <h3>C. Production marchande et non marchande</h3>
                 <p>
-                  Une production marchande est vendue sur un marché à un prix significatif.
-                  Une production non marchande est fournie gratuitement ou presque gratuitement à l’usager.
-                  Cela ne veut pas dire qu’elle ne coûte rien : elle peut être financée par les impôts, les cotisations
-                  ou d’autres ressources collectives.
+                  Une production marchande est vendue sur un marché à un prix significatif. Une
+                  production non marchande est fournie gratuitement ou presque gratuitement à
+                  l’usager. Cela ne veut pas dire qu’elle ne coûte rien : elle peut être financée
+                  par les impôts, les cotisations ou d’autres ressources collectives.
                 </p>
               </div>
 
@@ -1090,18 +1220,20 @@ export default function CreationRichessesPage() {
                 <h3>D. Tous les producteurs ne sont pas des entreprises</h3>
                 <p>
                   Les entreprises produisent des biens et services, le plus souvent pour les vendre.
-                  Les administrations publiques produisent surtout des services non marchands, comme l’éducation
-                  ou la sécurité. Les organisations de l’économie sociale et solidaire produisent aussi, mais leur objectif
-                  principal n’est pas toujours le profit maximal : elles peuvent rechercher une utilité sociale.
+                  Les administrations publiques produisent surtout des services non marchands, comme
+                  l’éducation ou la sécurité. Les organisations de l’économie sociale et solidaire
+                  produisent aussi, mais leur objectif principal n’est pas toujours le profit maximal :
+                  elles peuvent rechercher une utilité sociale.
                 </p>
               </div>
 
               <div className="course-box">
                 <h3>E. Produire suppose de combiner plusieurs ressources</h3>
                 <p>
-                  Pour produire, une organisation combine du travail, du capital, de la technologie et des ressources naturelles.
-                  Le travail correspond à l’activité humaine. Le capital correspond aux machines, bâtiments, outils ou logiciels.
-                  La technologie désigne les connaissances et procédés utilisés. Les ressources naturelles sont les matières ou
+                  Pour produire, une organisation combine du travail, du capital, de la technologie
+                  et des ressources naturelles. Le travail correspond à l’activité humaine. Le capital
+                  correspond aux machines, bâtiments, outils ou logiciels. La technologie désigne les
+                  connaissances et procédés utilisés. Les ressources naturelles sont les matières ou
                   éléments issus de la nature.
                 </p>
               </div>
@@ -1109,9 +1241,10 @@ export default function CreationRichessesPage() {
               <div className="course-box">
                 <h3>F. Mesurer la richesse créée</h3>
                 <p>
-                  Le chiffre d’affaires indique le montant total des ventes. Mais il ne mesure pas directement la richesse créée,
-                  car une entreprise doit acheter des matières premières, de l’énergie ou des services à d’autres entreprises.
-                  Pour mesurer la richesse réellement créée, on utilise la valeur ajoutée.
+                  Le chiffre d’affaires indique le montant total des ventes. Mais il ne mesure pas
+                  directement la richesse créée, car une entreprise doit acheter des matières premières,
+                  de l’énergie ou des services à d’autres entreprises. Pour mesurer la richesse réellement
+                  créée, on utilise la valeur ajoutée.
                 </p>
 
                 <div className="formula">
@@ -1126,19 +1259,21 @@ export default function CreationRichessesPage() {
               <div className="course-box">
                 <h3>G. Du PIB à la croissance</h3>
                 <p>
-                  Le PIB correspond à la somme des valeurs ajoutées produites sur un territoire pendant une période donnée.
-                  Lorsque le PIB augmente, on parle de croissance économique. La croissance mesure donc une augmentation
-                  de la production, mais elle ne signifie pas automatiquement que tous les habitants s’enrichissent.
+                  Le PIB correspond à la somme des valeurs ajoutées produites sur un territoire pendant
+                  une période donnée. Lorsque le PIB augmente, on parle de croissance économique. La
+                  croissance mesure donc une augmentation de la production, mais elle ne signifie pas
+                  automatiquement que tous les habitants s’enrichissent.
                 </p>
               </div>
 
               <div className="course-box">
                 <h3>H. Les limites du PIB</h3>
                 <p>
-                  Le PIB est un indicateur très utilisé, mais il ne dit pas tout. Il ne montre pas directement la répartition
-                  des revenus : un pays peut produire davantage sans que tout le monde en profite de la même manière.
-                  Il ne mesure pas non plus correctement les effets écologiques de la production, comme la pollution,
-                  l’épuisement des ressources ou la dégradation des milieux naturels.
+                  Le PIB est un indicateur très utilisé, mais il ne dit pas tout. Il ne montre pas
+                  directement la répartition des revenus : un pays peut produire davantage sans que tout
+                  le monde en profite de la même manière. Il ne mesure pas non plus correctement les effets
+                  écologiques de la production, comme la pollution, l’épuisement des ressources ou la
+                  dégradation des milieux naturels.
                 </p>
               </div>
             </section>
@@ -1153,9 +1288,10 @@ export default function CreationRichessesPage() {
                   une évaluation ou une révision rapide.
                 </p>
                 <p>
-                  Fil conducteur possible : partir d’un sandwich acheté à la cafétéria.
-                  Qui le produit ? Quels biens et services sont mobilisés ? Quelle différence entre chiffre d’affaires,
-                  valeur ajoutée et bénéfice ? Comment cette production contribue-t-elle au PIB ? Quelles sont ses limites écologiques ?
+                  Fil conducteur possible : partir d’un sandwich acheté à la cafétéria. Qui le produit ?
+                  Quels biens et services sont mobilisés ? Quelle différence entre chiffre d’affaires,
+                  valeur ajoutée et bénéfice ? Comment cette production contribue-t-elle au PIB ? Quelles
+                  sont ses limites écologiques ?
                 </p>
               </div>
             </section>
@@ -1192,10 +1328,10 @@ export default function CreationRichessesPage() {
               <h2>6. Exercices / entraînements</h2>
 
               <p>
-                Pour chaque situation, il faut identifier s’il s’agit d’une production marchande de bien,
-                d’une production marchande de service, d’une production non marchande de service,
-                d’une production relevant de l’économie sociale et solidaire, ou si ce n’est pas une production économique
-                au sens strict.
+                Pour chaque situation, il faut identifier s’il s’agit d’une production marchande de
+                bien, d’une production marchande de service, d’une production non marchande de service,
+                d’une production relevant de l’économie sociale et solidaire, ou si ce n’est pas une
+                production économique au sens strict.
               </p>
 
               <div className="examples-grid">
@@ -1237,7 +1373,9 @@ export default function CreationRichessesPage() {
               <div className="quiz-grid">
                 {quiz.map((item, index) => (
                   <div key={item.question} className="quiz-card">
-                    <strong>{index + 1}. {item.question}</strong>
+                    <strong>
+                      {index + 1}. {item.question}
+                    </strong>
                     <span>{item.reponse}</span>
                   </div>
                 ))}
@@ -1259,13 +1397,15 @@ export default function CreationRichessesPage() {
                 <h3>Réponse AEI</h3>
                 <ul>
                   <li>
-                    <strong>Affirmer :</strong> un service gratuit pour l’usager peut être une production économique.
+                    <strong>Affirmer :</strong> un service gratuit pour l’usager peut être une production
+                    économique.
                   </li>
                   <li>
                     <strong>Expliquer :</strong> il peut être organisé, légal, déclaré et financé collectivement.
                   </li>
                   <li>
-                    <strong>Illustrer :</strong> un cours dans un lycée public est un service non marchand financé par la collectivité.
+                    <strong>Illustrer :</strong> un cours dans un lycée public est un service non marchand
+                    financé par la collectivité.
                   </li>
                 </ul>
               </div>
