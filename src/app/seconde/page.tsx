@@ -1,685 +1,678 @@
-"use client";
-
 import Link from "next/link";
-import { Fragment, useEffect, useRef, useState } from "react";
 
-type Matiere = "ECO" | "SOCIO" | "RC";
-type Difficulte = "Accessible" | "Intermédiaire" | "Exigeant";
-
-type Questionnement = {
-  slug: string;
-  num: string;
-  titre: string;
-  questionCle: string;
-  matiere: Matiere;
-  difficulte: Difficulte;
-  notions: string[];
-  temps: string;
-  disciplines: string[];
-};
-
-const QUESTIONNEMENTS: Questionnement[] = [
+const CHAPITRES = [
   {
-    slug: "creation-richesses",
-    num: "Q 01",
-    titre: "Comment crée-t-on des richesses ?",
-    questionCle: "Comment mesurer et comprendre la production de richesses ?",
-    matiere: "ECO",
-    difficulte: "Accessible",
-    notions: ["PIB", "Valeur ajoutée", "Croissance économique", "Limites écologiques"],
-    temps: "20 min",
-    disciplines: ["Économie"],
+    numero: "Chapitre 1",
+    titre: "Découvrir les SES",
+    type: "Vidéo courte",
+    description:
+      "Pourquoi ton smartphone intéresse les SES ? Une vidéo légère pour comprendre les regards de l’économiste, du sociologue et du politiste.",
+    duree: "3 min",
+    statut: "Vidéo à intégrer",
+    href: "/seconde/decouvrir-les-ses",
+    accent: "#2563eb",
+    emoji: "🎬",
   },
   {
-    slug: "formation-prix",
-    num: "Q 02",
-    titre: "Comment se forment les prix ?",
-    questionCle: "Comment l'offre et la demande déterminent-elles les prix sur un marché ?",
-    matiere: "ECO",
-    difficulte: "Intermédiaire",
-    notions: ["Marché", "Offre", "Demande", "Prix d'équilibre", "Taxe / Subvention"],
-    temps: "25 min",
-    disciplines: ["Économie"],
+    numero: "Chapitre 2",
+    titre: "Comment crée-t-on des richesses et comment les mesure-t-on ?",
+    type: "Chapitre complet",
+    description:
+      "Production, producteurs, valeur ajoutée, PIB, croissance, inégalités et limites écologiques.",
+    duree: "9 h",
+    statut: "À mettre à jour",
+    href: "/seconde/creation-richesses",
+    accent: "#0f766e",
+    emoji: "🏭",
   },
   {
-    slug: "acteurs-sociaux",
-    num: "Q 03",
-    titre: "Comment devenons-nous des acteurs sociaux ?",
-    questionCle: "Par quels processus intégrons-nous les normes et valeurs de la société ?",
-    matiere: "SOCIO",
-    difficulte: "Accessible",
-    notions: ["Socialisation", "Instances de socialisation", "Genre", "Milieu social"],
-    temps: "20 min",
-    disciplines: ["Sociologie"],
-  },
-  {
-    slug: "vie-politique",
-    num: "Q 04",
-    titre: "Comment s'organise la vie politique ?",
-    questionCle: "Comment se conquiert et s'exerce le pouvoir politique en démocratie ?",
-    matiere: "SOCIO",
-    difficulte: "Intermédiaire",
-    notions: ["Institutions", "Séparation des pouvoirs", "Scrutin", "Acteurs politiques"],
-    temps: "20 min",
-    disciplines: ["Science politique"],
-  },
-  {
-    slug: "diplome-emploi-salaire",
-    num: "Q 05",
-    titre: "Diplôme, emploi et salaire",
-    questionCle: "Quelles relations entre le diplôme, l'emploi et le niveau de salaire ?",
-    matiere: "RC",
-    difficulte: "Exigeant",
-    notions: ["Capital humain", "Chômage", "Inégalités salariales", "Capabilités"],
-    temps: "25 min",
-    disciplines: ["Économie", "Sociologie"],
+    numero: "Chapitre 3",
+    titre: "Comment se forment les prix sur un marché ?",
+    type: "Chapitre complet",
+    description:
+      "Marché, offre, demande, prix d’équilibre, chocs, taxe et subvention.",
+    duree: "8 séances",
+    statut: "À mettre à jour",
+    href: "/seconde/formation-prix",
+    accent: "#7c3aed",
+    emoji: "📈",
   },
 ];
-
-const MATIERE_COLORS: Record<Matiere, string> = {
-  ECO:   "#7EEEFF",
-  SOCIO: "#C4B8FF",
-  RC:    "#FFD580",
-};
-
-const MATIERE_BG: Record<Matiere, string> = {
-  ECO:   "rgba(30,80,100,0.45)",
-  SOCIO: "rgba(60,50,130,0.45)",
-  RC:    "rgba(100,80,20,0.45)",
-};
-
-const MATIERE_LABELS: Record<Matiere, string> = {
-  ECO:   "Science économique",
-  SOCIO: "Sociologie & Science politique",
-  RC:    "Regards croisés",
-};
-
-const DIFFICULTE_COLORS: Record<Difficulte, string> = {
-  Accessible:    "#90EE90",
-  Intermédiaire: "#FFD580",
-  Exigeant:      "#FFB3C6",
-};
-
-const FILTERS: { k: Matiere | null; l: string }[] = [
-  { k: null,    l: "Tous" },
-  { k: "ECO",   l: "Économie" },
-  { k: "SOCIO", l: "Sociologie" },
-  { k: "RC",    l: "Regards croisés" },
-];
-
-// Néon Soft palette
-const N = {
-  bg:        "#12112A",
-  bgCard:    "rgba(255,255,255,0.04)",
-  border:    "rgba(255,255,255,0.09)",
-  text:      "#E0D9FF",
-  textMuted: "rgba(224,217,255,0.45)",
-  violet:    "#C4B8FF",
-  cyan:      "#7EEEFF",
-  ambre:     "#FFD580",
-  rose:      "#FFB3C6",
-  vert:      "#90EE90",
-  accent:    "#6A5ACD",
-};
 
 export default function SecondePage() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [filterMatiere, setFilterMatiere] = useState<Matiere | null>(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 850);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  // Canvas animation — symboles sociaux néon
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const resize = () => {
-      const ratio = window.devicePixelRatio || 1;
-      canvas.width  = canvas.offsetWidth  * ratio;
-      canvas.height = canvas.offsetHeight * ratio;
-      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-    };
-    resize();
-    window.addEventListener("resize", resize);
-
-    const W = () => canvas.offsetWidth;
-    const H = () => canvas.offsetHeight;
-
-    const symList = ["€", "%", "↑", "≈", "∑", "Δ", "σ", "π", "≠", "∝", "⊕", "★"];
-    const colorList = [N.violet, N.cyan, N.ambre, N.rose, N.vert];
-
-    const dots = Array.from({ length: 22 }, () => ({
-      x: Math.random() * 1000,
-      y: Math.random() * 800,
-      r: 1 + Math.random() * 2,
-      speedY: -(0.15 + Math.random() * 0.25),
-      speedX: (Math.random() - 0.5) * 0.15,
-      alpha: 0.07 + Math.random() * 0.12,
-      color: colorList[Math.floor(Math.random() * colorList.length)],
-    }));
-
-    const syms = Array.from({ length: 16 }, () => ({
-      x: Math.random() * 1000,
-      y: Math.random() * 800,
-      size: 11 + Math.random() * 13,
-      speedY: -(0.18 + Math.random() * 0.22),
-      speedX: (Math.random() - 0.5) * 0.12,
-      alpha: 0.06 + Math.random() * 0.1,
-      sym: symList[Math.floor(Math.random() * symList.length)],
-      color: colorList[Math.floor(Math.random() * colorList.length)],
-    }));
-
-    // Soft wave lines
-    const waves = Array.from({ length: 3 }, (_, i) => {
-      const pts: number[] = [];
-      let y = 0.2 + Math.random() * 0.6;
-      for (let j = 0; j <= 80; j++) {
-        y += (Math.random() - 0.48) * 0.02;
-        y = Math.max(0.05, Math.min(0.95, y));
-        pts.push(y);
-      }
-      return {
-        pts,
-        speed: 0.1 + Math.random() * 0.12,
-        offset: Math.random() * 10,
-        color: [N.violet, N.cyan, N.ambre][i],
-        alpha: 0.08 + Math.random() * 0.07,
-        thick: 0.8 + Math.random() * 0.8,
-      };
-    });
-
-    let raf = 0;
-    const animate = () => {
-      ctx.clearRect(0, 0, W(), H());
-
-      // Waves
-      waves.forEach((w) => {
-        w.offset += w.speed;
-        if (w.offset > 10) w.offset = 0;
-        ctx.save();
-        ctx.globalAlpha = w.alpha;
-        ctx.strokeStyle = w.color;
-        ctx.lineWidth = w.thick;
-        ctx.beginPath();
-        w.pts.forEach((pt, i) => {
-          const xi = (i / (w.pts.length - 1)) * W();
-          const yi = pt * H() * 0.5 + H() * 0.1;
-          i === 0 ? ctx.moveTo(xi, yi) : ctx.lineTo(xi, yi);
-        });
-        ctx.stroke();
-        ctx.restore();
-      });
-
-      // Dots
-      dots.forEach((d) => {
-        d.y += d.speedY;
-        d.x += d.speedX;
-        if (d.y < -10) { d.y = H() + 10; d.x = Math.random() * W(); }
-        ctx.save();
-        ctx.globalAlpha = d.alpha;
-        ctx.fillStyle = d.color;
-        ctx.beginPath();
-        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      });
-
-      // Symbols
-      syms.forEach((s) => {
-        s.y += s.speedY;
-        s.x += s.speedX;
-        if (s.y < -20) { s.y = H() + 20; s.x = Math.random() * W(); }
-        ctx.save();
-        ctx.globalAlpha = s.alpha;
-        ctx.fillStyle = s.color;
-        ctx.font = `${s.size}px monospace`;
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText(s.sym, s.x, s.y);
-        ctx.restore();
-      });
-
-      raf = requestAnimationFrame(animate);
-    };
-    animate();
-
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("resize", resize);
-    };
-  }, []);
-
-  const filtered = filterMatiere
-    ? QUESTIONNEMENTS.filter((q) => q.matiere === filterMatiere)
-    : QUESTIONNEMENTS;
-
   return (
-    <main
-      style={{
-        fontFamily: "'Space Grotesk', sans-serif",
-        background: N.bg,
-        color: N.text,
-        minHeight: "100vh",
-        position: "relative",
-        overflowX: "hidden",
-      }}
-    >
+    <main className="page">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { margin: 0; }
-        a { text-decoration: none; }
-        button { font: inherit; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-        .card-q:hover {
-          border-color: rgba(196,184,255,0.4) !important;
-          background: rgba(106,90,205,0.08) !important;
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          font-family: Inter, system-ui, sans-serif;
+          background: #f4f7fb;
+          color: #10234d;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .page {
+          min-height: 100vh;
+          background:
+            radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 34%),
+            linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+          padding-bottom: 70px;
+        }
+
+        .header {
+          height: 86px;
+          background: rgba(255, 255, 255, 0.92);
+          backdrop-filter: blur(18px);
+          border-bottom: 1px solid #dbe7f5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          top: 0;
+          z-index: 50;
+        }
+
+        .nav {
+          width: min(1400px, calc(100% - 48px));
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 28px;
+        }
+
+        .brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: #10234d;
+        }
+
+        .logo {
+          width: 46px;
+          height: 46px;
+          border-radius: 14px;
+          background: linear-gradient(135deg, #1d4ed8, #3767d6);
+          color: white;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          box-shadow: 0 14px 28px rgba(29, 78, 216, 0.25);
+        }
+
+        .brand-title {
+          font-size: 24px;
+          font-weight: 900;
+          letter-spacing: -0.04em;
+          line-height: 1;
+        }
+
+        .brand-subtitle {
+          display: block;
+          font-size: 11px;
+          font-weight: 700;
+          color: #64748b;
+          letter-spacing: -0.02em;
+          margin-top: 2px;
+        }
+
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          height: 100%;
+        }
+
+        .nav-link {
+          color: #50617f;
+          font-size: 15px;
+          font-weight: 800;
+          padding: 33px 18px 29px;
+          border-bottom: 3px solid transparent;
+          transition: 0.2s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+          color: #2563eb;
+          background: #eef4ff;
+          border-bottom-color: #2563eb;
+        }
+
+        .container {
+          width: min(1200px, calc(100% - 48px));
+          margin: 0 auto;
+        }
+
+        .hero {
+          margin-top: 30px;
+          background: white;
+          border: 1px solid #dbe7f5;
+          border-radius: 32px;
+          box-shadow: 0 24px 80px rgba(15, 35, 77, 0.10);
+          padding: 54px;
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 38px;
+          align-items: center;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .badge {
+          display: inline-flex;
+          align-items: center;
+          border: 1px solid #c7dcff;
+          background: #eef5ff;
+          color: #2563eb;
+          font-weight: 900;
+          font-size: 13px;
+          letter-spacing: 0.03em;
+          padding: 12px 16px;
+          border-radius: 999px;
+          margin-bottom: 24px;
+        }
+
+        h1 {
+          margin: 0;
+          font-size: clamp(48px, 6vw, 76px);
+          letter-spacing: -0.07em;
+          line-height: 0.95;
+          color: #07194f;
+          font-weight: 900;
+        }
+
+        h1 span {
+          display: block;
+          color: #2563eb;
+        }
+
+        .hero-text {
+          margin: 24px 0 0;
+          max-width: 690px;
+          color: #60708e;
+          font-size: 18px;
+          line-height: 1.75;
+        }
+
+        .hero-actions {
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+          margin-top: 32px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          border-radius: 15px;
+          padding: 16px 22px;
+          font-weight: 900;
+          font-size: 16px;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          transition: 0.2s ease;
+        }
+
+        .btn-primary {
+          background: #1d4ed8;
+          color: white;
+          box-shadow: 0 18px 34px rgba(29, 78, 216, 0.24);
+        }
+
+        .btn-secondary {
+          background: white;
+          color: #173b73;
+          border: 1px solid #d6e2f0;
+        }
+
+        .btn-primary:hover,
+        .btn-secondary:hover {
           transform: translateY(-2px);
         }
-        .card-q { transition: all 0.22s ease; }
-        .btn-filter:hover { opacity: 0.82; }
-        .nav-link:hover { color: ${N.violet} !important; }
 
-        @keyframes pulse-neon {
-          0%, 100% { opacity: 1; box-shadow: 0 0 6px ${N.violet}; }
-          50%       { opacity: 0.4; box-shadow: 0 0 2px ${N.violet}; }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(-6px); }
+        .visual {
+          min-height: 360px;
+          background:
+            radial-gradient(circle at 30% 25%, rgba(37,99,235,0.20), transparent 28%),
+            linear-gradient(135deg, #dcecff 0%, #f4f8ff 48%, #e6f0fb 100%);
+          border-radius: 28px;
+          position: relative;
+          overflow: hidden;
+          border: 1px solid #dbe7f5;
         }
 
-        @media (max-width: 850px) {
-          .hero-seconde  { flex-direction: column !important; gap: 2rem !important; padding: 2rem 1.25rem 1.5rem !important; }
-          .grid-questions { grid-template-columns: 1fr !important; }
-          .nav-inner { flex-direction: column; gap: 0.75rem; }
-          .footer-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
-          .section-questions { padding: 1rem 1.25rem 3rem !important; }
-          .filters-row { gap: 6px !important; }
+        .phone {
+          position: absolute;
+          width: 155px;
+          height: 275px;
+          border-radius: 34px;
+          background: #07194f;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-8deg);
+          box-shadow: 0 24px 50px rgba(15,35,77,0.25);
+          padding: 13px;
+        }
+
+        .phone-screen {
+          height: 100%;
+          border-radius: 24px;
+          background: linear-gradient(180deg, #eaf2ff, #ffffff);
+          padding: 18px 12px;
+        }
+
+        .phone-line {
+          height: 10px;
+          border-radius: 999px;
+          background: #bfdbfe;
+          margin-bottom: 12px;
+        }
+
+        .phone-line.small {
+          width: 70%;
+          background: #dbeafe;
+        }
+
+        .float-card {
+          position: absolute;
+          background: rgba(255,255,255,0.88);
+          border: 1px solid rgba(195, 211, 232, 0.8);
+          backdrop-filter: blur(12px);
+          border-radius: 18px;
+          padding: 16px 18px;
+          box-shadow: 0 18px 38px rgba(15, 35, 77, 0.12);
+          color: #24496f;
+          font-weight: 900;
+          line-height: 1.3;
+          font-size: 14px;
+        }
+
+        .float-card.one {
+          left: 28px;
+          top: 34px;
+        }
+
+        .float-card.two {
+          right: 30px;
+          top: 78px;
+        }
+
+        .float-card.three {
+          right: 48px;
+          bottom: 42px;
+        }
+
+        .section {
+          margin-top: 34px;
+          display: grid;
+          grid-template-columns: 300px 1fr;
+          gap: 24px;
+          align-items: start;
+        }
+
+        .sidebar {
+          background: white;
+          border: 1px solid #dbe7f5;
+          border-radius: 24px;
+          padding: 24px;
+          box-shadow: 0 18px 45px rgba(15, 35, 77, 0.06);
+          position: sticky;
+          top: 110px;
+        }
+
+        .sidebar h2 {
+          margin: 0 0 12px;
+          color: #07194f;
+          font-size: 20px;
+          letter-spacing: -0.04em;
+        }
+
+        .sidebar p {
+          margin: 0;
+          color: #64748b;
+          line-height: 1.65;
+          font-size: 14px;
+        }
+
+        .method-card {
+          margin-top: 18px;
+          background: #f1f6ff;
+          border-radius: 18px;
+          padding: 18px;
+        }
+
+        .method-card strong {
+          display: block;
+          color: #173b73;
+          margin-bottom: 8px;
+        }
+
+        .method-card ul {
+          margin: 0;
+          padding-left: 18px;
+          color: #64748b;
+          line-height: 1.7;
+          font-size: 14px;
+        }
+
+        .chapters {
+          background: white;
+          border: 1px solid #dbe7f5;
+          border-radius: 24px;
+          padding: 28px;
+          box-shadow: 0 18px 45px rgba(15, 35, 77, 0.06);
+        }
+
+        .section-title {
+          margin-bottom: 24px;
+        }
+
+        .section-title h2 {
+          margin: 0;
+          font-size: 32px;
+          letter-spacing: -0.06em;
+          color: #07194f;
+        }
+
+        .section-title p {
+          margin: 8px 0 0;
+          color: #64748b;
+          line-height: 1.6;
+        }
+
+        .chapters-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+        }
+
+        .chapter-card {
+          border: 1px solid #dbe7f5;
+          border-radius: 24px;
+          padding: 22px;
+          background: #ffffff;
+          min-height: 330px;
+          display: flex;
+          flex-direction: column;
+          transition: 0.2s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .chapter-card::before {
+          content: "";
+          position: absolute;
+          inset: 0 0 auto 0;
+          height: 5px;
+          background: var(--accent);
+        }
+
+        .chapter-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 22px 42px rgba(15, 35, 77, 0.10);
+          border-color: #b8cff4;
+        }
+
+        .chapter-emoji {
+          width: 54px;
+          height: 54px;
+          border-radius: 18px;
+          display: grid;
+          place-items: center;
+          font-size: 28px;
+          background: #f1f6ff;
+          margin-bottom: 18px;
+        }
+
+        .chapter-meta {
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 12px;
+          align-items: center;
+        }
+
+        .chapter-number {
+          color: var(--accent);
+          font-weight: 900;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+
+        .chapter-duration {
+          color: #64748b;
+          font-size: 12px;
+          font-weight: 800;
+        }
+
+        .chapter-card h3 {
+          margin: 0;
+          color: #07194f;
+          font-size: 21px;
+          letter-spacing: -0.05em;
+          line-height: 1.18;
+        }
+
+        .chapter-type {
+          display: inline-flex;
+          width: fit-content;
+          margin-top: 14px;
+          border-radius: 999px;
+          padding: 7px 10px;
+          font-size: 12px;
+          font-weight: 900;
+          color: var(--accent);
+          background: color-mix(in srgb, var(--accent) 12%, white);
+        }
+
+        .chapter-card p {
+          color: #64748b;
+          line-height: 1.62;
+          font-size: 14px;
+          margin: 14px 0 18px;
+        }
+
+        .status {
+          color: #50617f;
+          background: #f1f5f9;
+          padding: 9px 11px;
+          border-radius: 12px;
+          font-size: 12px;
+          font-weight: 800;
+          margin-bottom: 14px;
+        }
+
+        .chapter-link {
+          margin-top: auto;
+          color: white;
+          background: #173b73;
+          border-radius: 13px;
+          padding: 13px 14px;
+          font-weight: 900;
+          text-align: center;
+          transition: 0.2s ease;
+        }
+
+        .chapter-link:hover {
+          background: #2563eb;
+        }
+
+        @media (max-width: 1100px) {
+          .links {
+            display: none;
+          }
+
+          .hero {
+            grid-template-columns: 1fr;
+          }
+
+          .section {
+            grid-template-columns: 1fr;
+          }
+
+          .sidebar {
+            position: static;
+          }
+
+          .chapters-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .container,
+          .nav {
+            width: calc(100% - 24px);
+          }
+
+          .hero {
+            padding: 30px 24px;
+          }
+
+          .visual {
+            min-height: 300px;
+          }
+
+          .float-card {
+            display: none;
+          }
         }
       `}</style>
 
-      {/* Canvas background */}
-      <canvas
-        ref={canvasRef}
-        aria-hidden="true"
-        style={{ position: "fixed", inset: 0, width: "100%", height: "100%", zIndex: 0, opacity: 0.55, pointerEvents: "none" }}
-      />
-
-      {/* Gradient overlay */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "fixed", inset: 0, zIndex: 1, pointerEvents: "none",
-          background: "radial-gradient(ellipse 90% 70% at 50% 40%, rgba(18,17,42,0.05) 0%, rgba(18,17,42,0.85) 65%, #12112A 100%)",
-        }}
-      />
-
-      {/* ── NAV ── */}
-      <nav
-        className="nav-inner"
-        style={{
-          position: "relative", zIndex: 10,
-          display: "flex", justifyContent: "space-between", alignItems: "center",
-          padding: "1.4rem 2.5rem",
-          borderBottom: `0.5px solid ${N.border}`,
-          maxWidth: 1100, margin: "0 auto",
-        }}
-      >
-        <Link href="/" style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 800, letterSpacing: "-0.02em", color: N.text }}>
-          Cap<span style={{ color: N.ambre }}>SES</span>
-        </Link>
-
-        <div style={{ display: "flex", gap: "1.8rem", alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>
-          <a className="nav-link" href="#questionnements" style={{ fontSize: 13, color: N.textMuted, letterSpacing: "0.02em", transition: "color 0.2s" }}>
-            Chapitres
-          </a>
-          <Link className="nav-link" href="/methodo" style={{ fontSize: 13, color: N.textMuted, letterSpacing: "0.02em", transition: "color 0.2s" }}>
-            Méthodo
+      <header className="header">
+        <nav className="nav">
+          <Link href="/" className="brand">
+            <span className="logo">C</span>
+            <span>
+              <span className="brand-title">CAPSES</span>
+              <span className="brand-subtitle">Comprendre les SES</span>
+            </span>
           </Link>
-          <Link className="nav-link" href="/glossaire" style={{ fontSize: 13, color: N.textMuted, letterSpacing: "0.02em", transition: "color 0.2s" }}>
-            Glossaire
-          </Link>
-          <Link href="/espace-eleves" style={{ background: N.accent, color: "#fff", padding: "0.45rem 1.1rem", borderRadius: 20, fontSize: 13, fontWeight: 600 }}>
-            Espace élèves
-          </Link>
-        </div>
-      </nav>
 
-      {/* ── LEVEL SWITCHER ── */}
-      <div style={{ position: "relative", zIndex: 10, display: "flex", justifyContent: "center", padding: "1.5rem 0 0" }}>
-        {(["terminale", "premiere", "seconde"] as const).map((lvl, i) => (
-          <Link
-            key={lvl}
-            href={lvl === "terminale" ? "/" : lvl === "seconde" ? "/seconde" : "#"}
-            style={{
-              fontFamily: "'Syne', sans-serif",
-              fontSize: 12, fontWeight: 700,
-              letterSpacing: "0.06em", textTransform: "uppercase" as const,
-              padding: "0.5rem 1.4rem",
-              border: `0.5px solid ${N.border}`,
-              borderRadius: i === 0 ? "20px 0 0 20px" : i === 2 ? "0 20px 20px 0" : "0",
-              background: lvl === "seconde" ? N.accent : "transparent",
-              color: lvl === "seconde" ? "#fff" : N.textMuted,
-              cursor: "pointer",
-              transition: "all 0.2s",
-              display: "inline-block",
-            }}
-          >
-            {lvl.charAt(0).toUpperCase() + lvl.slice(1)}
-            {lvl !== "seconde" && (
-              <span style={{ fontSize: 9, display: "block", color: N.textMuted, fontWeight: 400 }}>
-                {lvl === "terminale" ? "Bac 2026" : "Bientôt"}
-              </span>
-            )}
-          </Link>
-        ))}
-      </div>
-
-      {/* ── HERO ── */}
-      <section
-        className="hero-seconde"
-        style={{
-          position: "relative", zIndex: 5,
-          maxWidth: 1100, margin: "0 auto",
-          padding: "4rem 2.5rem 2rem",
-          display: "flex", gap: "3rem", alignItems: "flex-start",
-        }}
-      >
-        {/* Left — pitch */}
-        <div style={{ flex: "1 1 0", minWidth: 0 }}>
-          {/* Badge */}
-          <div style={{
-            display: "inline-flex", alignItems: "center", gap: 6,
-            background: "rgba(106,90,205,0.15)",
-            border: `0.5px solid rgba(106,90,205,0.45)`,
-            color: N.violet,
-            fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase" as const,
-            padding: "5px 12px", borderRadius: 20, marginBottom: "1.5rem",
-          }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: N.violet, animation: "pulse-neon 2.2s infinite", display: "inline-block" }} />
-            Seconde SES · Programme 2025-2026
+          <div className="links">
+            <Link href="/" className="nav-link">Accueil</Link>
+            <Link href="/bts-cejm" className="nav-link">BTS CEJM</Link>
+            <Link href="/terminale" className="nav-link">Terminale</Link>
+            <Link href="/premiere" className="nav-link">Première</Link>
+            <Link href="/seconde" className="nav-link active">Seconde</Link>
+            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
+        </nav>
+      </header>
 
-          <h1 style={{
-            fontFamily: "'Syne', sans-serif",
-            fontSize: "clamp(36px, 5.5vw, 50px)",
-            fontWeight: 800, lineHeight: 1.05,
-            letterSpacing: "-0.03em", margin: "0 0 1rem",
-          }}>
-            Découvrir les<br />
-            <span style={{ color: N.cyan }}>sciences</span>{" "}
-            <span style={{ color: N.violet }}>sociales.</span>
-          </h1>
+      <div className="container">
+        <section className="hero">
+          <div>
+            <div className="badge">SECONDE SES · PARCOURS D’ENTRÉE</div>
 
-          <p style={{ fontSize: 15, lineHeight: 1.7, color: N.textMuted, fontWeight: 300, marginBottom: "2rem", maxWidth: 400 }}>
-            5 grands questionnements — économie, sociologie, science politique. Des fiches claires, des quiz et des données pour vraiment comprendre.
-          </p>
+            <h1>
+              Découvrir
+              <span>les SES</span>
+            </h1>
 
-          {/* Disciplines intro pill cards */}
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" as const }}>
-            {[
-              { label: "Science économique", color: N.cyan,   bg: "rgba(30,80,100,0.3)",   icon: "📈" },
-              { label: "Sociologie",          color: N.violet, bg: "rgba(60,50,130,0.3)",   icon: "🧑‍🤝‍🧑" },
-              { label: "Science politique",   color: N.ambre,  bg: "rgba(100,80,20,0.3)",   icon: "🏛️" },
-            ].map((d) => (
-              <span key={d.label} style={{
-                fontSize: 12, fontWeight: 600,
-                background: d.bg, border: `0.5px solid ${d.color}33`,
-                color: d.color, padding: "5px 12px", borderRadius: 20,
-                display: "inline-flex", alignItems: "center", gap: 5,
-              }}>
-                <span aria-hidden="true">{d.icon}</span> {d.label}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Right — stats + intro disciplines */}
-        <div style={{ flex: "0 0 320px", minWidth: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
-          {/* Stats mini grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "0.75rem" }}>
-            {[
-              { n: "5",  l: "Questionnements", c: N.violet },
-              { n: "8",  l: "Étapes / fiche",  c: N.cyan   },
-              { n: "3",  l: "Disciplines",      c: N.ambre  },
-            ].map((item) => (
-              <div key={item.l} style={{
-                background: N.bgCard, border: `0.5px solid ${N.border}`,
-                borderRadius: 10, padding: "0.9rem 0.75rem", textAlign: "center",
-              }}>
-                <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: item.c, display: "block", letterSpacing: "-0.02em" }}>
-                  {item.n}
-                </span>
-                <span style={{ fontSize: 10, color: N.textMuted, textTransform: "uppercase" as const, letterSpacing: "0.08em", display: "block", marginTop: 4 }}>
-                  {item.l}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Intro disciplinaire card */}
-          <div style={{
-            background: "rgba(106,90,205,0.1)",
-            border: `0.5px solid rgba(106,90,205,0.3)`,
-            borderRadius: 14, padding: "1.25rem 1.5rem",
-          }}>
-            <p style={{ fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase" as const, color: N.textMuted, margin: "0 0 0.75rem" }}>
-              Prologue · Comment raisonnent-ils ?
+            <p className="hero-text">
+              En Seconde, les SES servent à comprendre le monde réel : les entreprises,
+              les prix, les richesses, les règles, les comportements et les choix collectifs.
+              On part du quotidien pour construire les notions.
             </p>
-            <p style={{ fontSize: 13, lineHeight: 1.65, color: N.textMuted, margin: 0 }}>
-              Chaque fiche commence par rappeler <span style={{ color: N.violet, fontWeight: 600 }}>la question centrale</span> de la discipline concernée — économie, sociologie ou science politique — et comment les chercheurs la traitent.
-            </p>
-            <div style={{ marginTop: "0.9rem", display: "flex", flexDirection: "column", gap: 5 }}>
-              {[
-                { d: "Économie",         q: "Comment allouer des ressources rares ?", c: N.cyan   },
-                { d: "Sociologie",       q: "Comment fait-on société ?",               c: N.violet },
-                { d: "Science politique",q: "Comment s'exerce le pouvoir ?",           c: N.ambre  },
-              ].map((row) => (
-                <div key={row.d} style={{ display: "flex", gap: 8, alignItems: "flex-start" }}>
-                  <span style={{ width: 3, height: 3, borderRadius: "50%", background: row.c, marginTop: 6, flexShrink: 0 }} />
-                  <span style={{ fontSize: 12, color: N.textMuted }}>
-                    <span style={{ color: row.c, fontWeight: 600 }}>{row.d} — </span>{row.q}
-                  </span>
-                </div>
-              ))}
+
+            <div className="hero-actions">
+              <a href="#chapitres" className="btn-primary">
+                Voir les chapitres <span>→</span>
+              </a>
+              <Link href="/methodologie" className="btn-secondary">
+                Découvrir la méthode
+              </Link>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── QUESTIONNEMENTS ── */}
-      <section
-        id="questionnements"
-        className="section-questions"
-        style={{ position: "relative", zIndex: 5, maxWidth: 1100, margin: "0 auto", padding: "1rem 2.5rem 4rem" }}
-      >
-        {/* Header + filtres */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem", flexWrap: "wrap" as const, gap: 12 }}>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em", margin: 0, color: N.text }}>
-            Les 5 questionnements du programme
-          </h2>
-          <div className="filters-row" style={{ display: "flex", gap: 8, flexWrap: "wrap" as const }}>
-            {FILTERS.map((f) => {
-              const active = filterMatiere === f.k;
-              return (
-                <button
-                  key={f.k ?? "all"}
-                  type="button"
-                  className="btn-filter"
-                  onClick={() => setFilterMatiere(f.k)}
-                  aria-pressed={active}
-                  style={{
-                    fontSize: 11, fontWeight: 600,
-                    padding: "4px 12px", borderRadius: 20, cursor: "pointer",
-                    transition: "all 0.2s",
-                    background: active ? N.accent : N.bgCard,
-                    color:      active ? "#fff"   : N.textMuted,
-                    border:     `0.5px solid ${active ? N.accent : N.border}`,
-                  }}
-                >
-                  {f.l}
-                </button>
-              );
-            })}
-          </div>
-        </div>
+          <div className="visual">
+            <div className="float-card one">Économiste<br />Prix · production</div>
+            <div className="float-card two">Sociologue<br />Groupes · normes</div>
+            <div className="float-card three">Politiste<br />Règles · pouvoir</div>
 
-        {/* Cards grid */}
-        <div
-          className="grid-questions"
-          style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}
-        >
-          {filtered.map((q) => (
-            <article
-              key={q.slug}
-              className="card-q"
-              style={{
-                background: N.bgCard,
-                border: `0.5px solid ${N.border}`,
-                borderRadius: 16, padding: "1.4rem",
-              }}
-            >
-              {/* Top row */}
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10, gap: 8 }}>
-                <span style={{
-                  fontSize: 10, fontWeight: 700, letterSpacing: "0.1em",
-                  color: MATIERE_COLORS[q.matiere], textTransform: "uppercase" as const,
-                }}>
-                  {q.num} · {MATIERE_LABELS[q.matiere]}
-                </span>
-                <span style={{ fontSize: 10, color: DIFFICULTE_COLORS[q.difficulte], fontWeight: 600 }}>
-                  {q.difficulte}
-                </span>
+            <div className="phone">
+              <div className="phone-screen">
+                <div className="phone-line" />
+                <div className="phone-line small" />
+                <div className="phone-line" />
+                <div className="phone-line small" />
               </div>
+            </div>
+          </div>
+        </section>
 
-              {/* Titre */}
-              <h3 style={{
-                fontFamily: "'Syne', sans-serif",
-                fontSize: 15, fontWeight: 700,
-                color: N.text, margin: "0 0 5px",
-                lineHeight: 1.25, letterSpacing: "-0.01em",
-              }}>
-                {q.titre}
-              </h3>
+        <section id="chapitres" className="section">
+          <aside className="sidebar">
+            <h2>Organisation</h2>
+            <p>
+              Le chapitre 1 est une vidéo d’introduction légère. Les chapitres 2 et 3 sont
+              des chapitres complets, alignés sur le format CapSES.
+            </p>
 
-              {/* Question clé */}
-              <p style={{ fontSize: 12, color: N.textMuted, margin: "0 0 12px", lineHeight: 1.55, fontStyle: "italic" as const }}>
-                {q.questionCle}
+            <div className="method-card">
+              <strong>Format CapSES</strong>
+              <ul>
+                <li>cours clair ;</li>
+                <li>vidéo courte ;</li>
+                <li>notions essentielles ;</li>
+                <li>quiz et entraînements ;</li>
+                <li>fiche mémo.</li>
+              </ul>
+            </div>
+          </aside>
+
+          <section className="chapters">
+            <div className="section-title">
+              <h2>Les premiers chapitres de Seconde</h2>
+              <p>
+                Une entrée progressive : comprendre les SES, puis travailler sur la création
+                de richesses et la formation des prix.
               </p>
+            </div>
 
-              {/* Disciplines badges */}
-              <div style={{ display: "flex", gap: 5, marginBottom: 10, flexWrap: "wrap" as const }}>
-                {q.disciplines.map((disc) => (
-                  <span key={disc} style={{
-                    fontSize: 10, padding: "2px 8px", borderRadius: 20,
-                    background: MATIERE_BG[q.matiere],
-                    color: MATIERE_COLORS[q.matiere],
-                    border: `0.5px solid ${MATIERE_COLORS[q.matiere]}33`,
-                    fontWeight: 600,
-                  }}>
-                    {disc}
-                  </span>
-                ))}
-              </div>
-
-              {/* Notions */}
-              <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 4, marginBottom: 14 }}>
-                {q.notions.map((n) => (
-                  <span key={n} style={{
-                    fontSize: 10, background: N.bgCard,
-                    border: `0.5px solid ${N.border}`,
-                    borderRadius: 4, padding: "2px 7px",
-                    color: N.textMuted,
-                  }}>
-                    {n}
-                  </span>
-                ))}
-              </div>
-
-              {/* CTA */}
-              <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                <Link
-                  href={`/seconde/${q.slug}`}
-                  style={{
-                    flex: 1, background: N.accent, color: "#fff",
-                    padding: "0.5rem 0", borderRadius: 10,
-                    fontSize: 12, fontWeight: 700, textAlign: "center" as const,
-                    letterSpacing: "0.02em",
-                  }}
+            <div className="chapters-grid">
+              {CHAPITRES.map((chapitre) => (
+                <article
+                  key={chapitre.titre}
+                  className="chapter-card"
+                  style={{ "--accent": chapitre.accent } as React.CSSProperties}
                 >
-                  Commencer
-                </Link>
-                <span style={{
-                  flex: 1, background: N.bgCard,
-                  color: N.textMuted, padding: "0.5rem 0", borderRadius: 10,
-                  fontSize: 12, fontWeight: 500, textAlign: "center" as const,
-                  border: `0.5px solid ${N.border}`,
-                }}>
-                  ⏱ {q.temps}
-                </span>
-              </div>
-            </article>
-          ))}
-        </div>
+                  <div className="chapter-emoji">{chapitre.emoji}</div>
 
-        {/* Savoir-faire quantitatifs banner */}
-        <div style={{
-          marginTop: "2rem",
-          background: "rgba(126,238,255,0.06)",
-          border: `0.5px solid rgba(126,238,255,0.25)`,
-          borderRadius: 14, padding: "1.25rem 1.5rem",
-          display: "flex", gap: "1.5rem", alignItems: "flex-start", flexWrap: "wrap" as const,
-        }}>
-          <div style={{ flexShrink: 0 }}>
-            <p style={{ fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase" as const, color: N.cyan, margin: "0 0 4px" }}>
-              Savoir-faire quantitatifs
-            </p>
-            <p style={{ fontSize: 13, fontWeight: 700, color: N.text, margin: 0, fontFamily: "'Syne', sans-serif" }}>
-              Intégrés dans chaque fiche
-            </p>
-          </div>
-          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" as const, alignItems: "center" }}>
-            {["Proportion & %", "Taux de variation", "Coefficient multiplicateur", "Indice simple", "Moyenne", "Médiane", "Tableau double-entrée", "Séries chronologiques"].map((sf) => (
-              <span key={sf} style={{
-                fontSize: 11, padding: "3px 10px", borderRadius: 20,
-                background: "rgba(126,238,255,0.08)",
-                border: `0.5px solid rgba(126,238,255,0.2)`,
-                color: N.cyan, fontWeight: 500,
-              }}>
-                {sf}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+                  <div className="chapter-meta">
+                    <span className="chapter-number">{chapitre.numero}</span>
+                    <span className="chapter-duration">{chapitre.duree}</span>
+                  </div>
 
-      {/* ── FOOTER ── */}
-      <footer
-        className="footer-inner"
-        style={{
-          position: "relative", zIndex: 5,
-          borderTop: `0.5px solid ${N.border}`,
-          padding: "1.5rem 2.5rem",
-          display: "flex", justifyContent: "space-between", alignItems: "center",
-          maxWidth: 1100, margin: "0 auto",
-        }}
-      >
-        <Link href="/" style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 800, color: N.text }}>
-          Cap<span style={{ color: N.ambre }}>SES</span>
-        </Link>
-        <p style={{ fontSize: 11, color: N.textMuted, margin: 0 }}>Terminale · Première · Seconde</p>
-        <p style={{ fontSize: 11, color: N.textMuted, margin: 0 }}>Par un prof de SES pour ses élèves</p>
-      </footer>
+                  <h3>{chapitre.titre}</h3>
+
+                  <span className="chapter-type">{chapitre.type}</span>
+
+                  <p>{chapitre.description}</p>
+
+                  <div className="status">{chapitre.statut}</div>
+
+                  <Link href={chapitre.href} className="chapter-link">
+                    Ouvrir
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </section>
+        </section>
+      </div>
     </main>
   );
 }
