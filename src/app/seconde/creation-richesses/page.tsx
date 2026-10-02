@@ -344,17 +344,52 @@ export default function CreationRichessesPage() {
           box-shadow: 0 18px 40px rgba(15, 35, 77, 0.10);
         }
 
-        .chapter-stat {
-          font-size: 64px;
+        .progress-block {
+          margin-top: 34px;
+          background: rgba(255,255,255,0.86);
+          border: 1px solid #dbe7f5;
+          border-radius: 20px;
+          padding: 18px;
+          box-shadow: 0 14px 30px rgba(15, 35, 77, 0.08);
+        }
+
+        .progress-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 12px;
+        }
+
+        .progress-top span {
+          color: #42526d;
+          font-size: 14px;
           font-weight: 900;
-          letter-spacing: -0.08em;
+        }
+
+        .progress-top strong {
           color: #0f766e;
-          line-height: 0.9;
-          margin-top: 30px;
+          font-size: 22px;
+          font-weight: 900;
+        }
+
+        .progress-bar {
+          width: 100%;
+          height: 12px;
+          border-radius: 999px;
+          background: #dbeafe;
+          overflow: hidden;
+        }
+
+        .progress-fill {
+          width: 0%;
+          height: 100%;
+          border-radius: 999px;
+          background: linear-gradient(90deg, #0f766e, #22c55e);
         }
 
         .chapter-card p {
-          margin: 12px 0 0;
+          margin: 18px 0 0;
           color: #42526d;
           font-weight: 800;
           font-size: 17px;
@@ -620,10 +655,6 @@ export default function CreationRichessesPage() {
           .section-card {
             padding: 26px;
           }
-
-          .chapter-stat {
-            font-size: 52px;
-          }
         }
       `}</style>
 
@@ -684,8 +715,20 @@ export default function CreationRichessesPage() {
           <div className="chapter-card">
             <div>
               <div className="chapter-icon">🏭</div>
-              <div className="chapter-stat">9h</div>
-              <p>Un parcours pour comprendre production, valeur ajoutée, PIB et croissance.</p>
+
+              <div className="progress-block">
+                <div className="progress-top">
+                  <span>Progression du chapitre</span>
+                  <strong>0%</strong>
+                </div>
+                <div className="progress-bar">
+                  <div className="progress-fill" />
+                </div>
+              </div>
+
+              <p>
+                Un parcours pour comprendre production, valeur ajoutée, PIB et croissance.
+              </p>
             </div>
 
             <div className="mini-grid">
