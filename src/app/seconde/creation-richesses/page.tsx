@@ -4,228 +4,72 @@ const parcours = [
   {
     numero: "01",
     titre: "À savoir",
-    texte: "Les objectifs du chapitre et les attendus essentiels expliqués simplement.",
-    href: "#savoir",
+    texte: "Objectifs d’apprentissage expliqués simplement avec les blocs “En clair”.",
+    href: "/seconde/creation-richesses/a-savoir",
+    emoji: "🎯",
   },
   {
     numero: "02",
-    titre: "Notions",
+    titre: "Notions indispensables",
     texte: "Production, bien, service, valeur ajoutée, PIB, croissance.",
-    href: "#notions",
+    href: "/seconde/creation-richesses/notions",
+    emoji: "📚",
   },
   {
     numero: "03",
     titre: "Cours",
-    texte: "Un cours clair et progressif pour comprendre le chapitre.",
-    href: "#cours",
+    texte: "Le cours complet, organisé progressivement pour comprendre le chapitre.",
+    href: "/seconde/creation-richesses/cours",
+    emoji: "🧠",
   },
   {
     numero: "04",
-    titre: "Mécanismes",
-    texte: "Les chaînes logiques à maîtriser pour raisonner en SES.",
-    href: "#mecanismes",
+    titre: "Vidéo courte",
+    texte: "Un récapitulatif rapide pour revoir l’essentiel avant un quiz.",
+    href: "/seconde/creation-richesses/video",
+    emoji: "🎬",
   },
   {
     numero: "05",
-    titre: "Exercices",
-    texte: "Des situations du quotidien à classer et à justifier.",
-    href: "#exercices",
+    titre: "Mécanismes",
+    texte: "Les chaînes logiques à maîtriser : production, valeur ajoutée, PIB, croissance.",
+    href: "/seconde/creation-richesses/mecanismes",
+    emoji: "🔗",
   },
   {
     numero: "06",
+    titre: "Exercices",
+    texte: "Des situations du quotidien à classer et à justifier.",
+    href: "/seconde/creation-richesses/exercices",
+    emoji: "✍️",
+  },
+  {
+    numero: "07",
+    titre: "Erreurs fréquentes",
+    texte: "Les confusions classiques à éviter dans ce chapitre.",
+    href: "/seconde/creation-richesses/erreurs",
+    emoji: "⚠️",
+  },
+  {
+    numero: "08",
     titre: "Quiz",
     texte: "Des questions pour vérifier que l’essentiel est compris.",
-    href: "#quiz",
-  },
-];
-
-const notions = [
-  {
-    titre: "Production",
-    texte: "Activité économique organisée qui crée des biens ou des services.",
+    href: "/seconde/creation-richesses/quiz",
+    emoji: "✅",
   },
   {
-    titre: "Bien",
-    texte: "Produit matériel que l’on peut toucher : pain, médicament, cahier, ordinateur.",
+    numero: "09",
+    titre: "Méthode AEI",
+    texte: "Apprendre à répondre en affirmant, expliquant et illustrant.",
+    href: "/seconde/creation-richesses/methode",
+    emoji: "🧩",
   },
   {
-    titre: "Service",
-    texte: "Production immatérielle : cours, transport, soin, coiffure, sécurité.",
-  },
-  {
-    titre: "Production marchande",
-    texte: "Production vendue sur un marché à un prix significatif.",
-  },
-  {
-    titre: "Production non marchande",
-    texte: "Production gratuite ou quasi gratuite pour l’usager, souvent financée collectivement.",
-  },
-  {
-    titre: "Entreprise",
-    texte: "Organisation productive qui produit des biens ou des services, le plus souvent marchands.",
-  },
-  {
-    titre: "Administration publique",
-    texte: "Organisation qui produit surtout des services non marchands : éducation, sécurité, santé publique.",
-  },
-  {
-    titre: "Économie sociale et solidaire",
-    texte: "Organisations qui produisent des biens ou services en recherchant une utilité sociale.",
-  },
-  {
-    titre: "Facteurs de production",
-    texte: "Éléments nécessaires pour produire : travail, capital, technologie et ressources naturelles.",
-  },
-  {
-    titre: "Chiffre d’affaires",
-    texte: "Montant total des ventes réalisées par une organisation productive.",
-  },
-  {
-    titre: "Valeur ajoutée",
-    texte: "Richesse réellement créée par une organisation productive.",
-  },
-  {
-    titre: "Bénéfice",
-    texte: "Résultat positif obtenu lorsque les recettes sont supérieures aux coûts.",
-  },
-  {
-    titre: "PIB",
-    texte: "Somme des valeurs ajoutées produites sur un territoire pendant une période.",
-  },
-  {
-    titre: "Croissance économique",
-    texte: "Augmentation du PIB sur une période.",
-  },
-  {
-    titre: "Limites du PIB",
-    texte: "Le PIB ne montre pas directement les inégalités ni les dégradations écologiques.",
-  },
-];
-
-const exemples = [
-  {
-    situation: "Un cours de SES dans un lycée public",
-    classement: "Production non marchande de service",
-    justification:
-      "Le service est organisé, légal, financé collectivement et gratuit ou quasi gratuit pour l’usager.",
-  },
-  {
-    situation: "Un cours de mathématiques donné à son petit frère",
-    classement: "Pas une production économique au sens strict",
-    justification:
-      "Il s’agit d’une activité domestique ou familiale, non déclarée et non organisée sur un marché.",
-  },
-  {
-    situation: "Du pain vendu dans une boulangerie",
-    classement: "Production marchande de bien",
-    justification:
-      "Le pain est un bien matériel vendu sur un marché à un prix significatif.",
-  },
-  {
-    situation: "Un transport en taxi",
-    classement: "Production marchande de service",
-    justification: "Le transport est un service vendu au client.",
-  },
-  {
-    situation: "Un gâteau réalisé à la maison",
-    classement: "Pas une production économique au sens strict",
-    justification:
-      "La production domestique n’est pas comptabilisée comme production économique marchande ou non marchande.",
-  },
-  {
-    situation: "Un dîner au restaurant",
-    classement: "Production marchande de service",
-    justification:
-      "Le restaurant vend un service de restauration, même si des biens alimentaires sont utilisés.",
-  },
-  {
-    situation: "Un médicament vendu en pharmacie",
-    classement: "Production marchande de bien",
-    justification: "Le médicament est un bien vendu sur un marché.",
-  },
-  {
-    situation: "Une action des Restos du Cœur",
-    classement: "Production de service par l’économie sociale et solidaire",
-    justification:
-      "L’objectif principal est l’utilité sociale, pas la recherche du profit maximal.",
-  },
-];
-
-const erreurs = [
-  {
-    erreur: "Seules les entreprises produisent des richesses.",
-    correction:
-      "Faux. Les administrations publiques et les organisations de l’économie sociale et solidaire produisent aussi.",
-  },
-  {
-    erreur: "Un service gratuit n’est pas une production.",
-    correction:
-      "Faux. Un service non marchand peut être une production économique s’il est organisé et financé collectivement.",
-  },
-  {
-    erreur: "Tout travail est une production économique.",
-    correction:
-      "À nuancer. Une activité domestique, comme aider son petit frère, n’est pas comptabilisée comme production économique.",
-  },
-  {
-    erreur: "Le chiffre d’affaires est la même chose que le bénéfice.",
-    correction:
-      "Faux. Le chiffre d’affaires correspond aux ventes. Le bénéfice tient compte des coûts.",
-  },
-  {
-    erreur: "Le PIB est la somme des chiffres d’affaires.",
-    correction:
-      "Faux. Le PIB correspond à la somme des valeurs ajoutées.",
-  },
-  {
-    erreur: "Si le PIB augmente, tout le monde s’enrichit forcément.",
-    correction:
-      "Faux. La croissance peut s’accompagner d’inégalités de revenus.",
-  },
-  {
-    erreur: "Le PIB mesure parfaitement le bien-être.",
-    correction:
-      "Faux. Le PIB mesure la production, mais pas directement la qualité de vie, les inégalités ou l’environnement.",
-  },
-  {
-    erreur: "La croissance est toujours positive pour la société.",
-    correction:
-      "À nuancer. Elle peut améliorer le niveau de vie moyen, mais aussi poser des limites écologiques.",
-  },
-];
-
-const quiz = [
-  {
-    question: "Une production économique peut-elle être un service ?",
-    reponse: "Oui. Un cours, un transport ou une consultation médicale sont des services.",
-  },
-  {
-    question: "Une administration publique peut-elle produire ?",
-    reponse: "Oui. Elle produit surtout des services non marchands.",
-  },
-  {
-    question: "Une production non marchande est-elle forcément inutile ?",
-    reponse: "Non. Elle peut être essentielle, comme l’éducation ou la sécurité.",
-  },
-  {
-    question: "Le chiffre d’affaires mesure-t-il la richesse réellement créée ?",
-    reponse: "Non. La richesse réellement créée est mesurée par la valeur ajoutée.",
-  },
-  {
-    question: "Quelle est la formule de la valeur ajoutée ?",
-    reponse: "Valeur ajoutée = chiffre d’affaires − consommations intermédiaires.",
-  },
-  {
-    question: "Le PIB est-il la somme des valeurs ajoutées ?",
-    reponse: "Oui. Le PIB additionne les valeurs ajoutées produites sur un territoire.",
-  },
-  {
-    question: "La croissance correspond-elle à l’augmentation du PIB ?",
-    reponse: "Oui. La croissance économique désigne l’augmentation du PIB sur une période.",
-  },
-  {
-    question: "Le PIB permet-il de connaître directement les inégalités ?",
-    reponse: "Non. Il ne montre pas comment les richesses sont réparties.",
+    numero: "10",
+    titre: "Fiche mémo",
+    texte: "L’essentiel à retenir avant une évaluation.",
+    href: "/seconde/creation-richesses/fiche-memo",
+    emoji: "📝",
   },
 ];
 
@@ -440,7 +284,7 @@ export default function CreationRichessesPage() {
           transform: translateY(-2px);
         }
 
-        .chapter-card {
+        .chapter-panel {
           background:
             radial-gradient(circle at 30% 20%, rgba(15,118,110,0.18), transparent 30%),
             linear-gradient(135deg, #e9fbf7, #f8fbff);
@@ -508,7 +352,7 @@ export default function CreationRichessesPage() {
           background: linear-gradient(90deg, #0f766e, #22c55e);
         }
 
-        .chapter-card p {
+        .chapter-panel p {
           margin: 18px 0 0;
           color: #42526d;
           font-weight: 800;
@@ -533,12 +377,36 @@ export default function CreationRichessesPage() {
           font-size: 14px;
         }
 
-        .section {
-          margin-top: 34px;
+        .summary {
+          margin-top: 28px;
+          background: #ecfdf5;
+          border: 1px solid #bdece2;
+          border-radius: 24px;
+          padding: 26px;
+        }
+
+        .summary strong {
+          display: inline-flex;
+          background: white;
+          color: #0f766e;
+          border: 1px solid #bdece2;
+          border-radius: 999px;
+          padding: 7px 11px;
+          font-size: 13px;
+          font-weight: 900;
+          margin-bottom: 12px;
+        }
+
+        .summary p {
+          margin: 0;
+          color: #24496f;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.7;
         }
 
         .section-heading {
-          margin-bottom: 18px;
+          margin: 38px 0 18px;
         }
 
         .section-heading h2 {
@@ -557,7 +425,7 @@ export default function CreationRichessesPage() {
 
         .parcours-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 16px;
         }
 
@@ -568,13 +436,36 @@ export default function CreationRichessesPage() {
           padding: 24px;
           box-shadow: 0 18px 45px rgba(15, 35, 77, 0.06);
           transition: 0.2s ease;
-          min-height: 190px;
+          min-height: 210px;
+          display: flex;
+          flex-direction: column;
+          color: inherit;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .parcours-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 5px;
+          background: #0f766e;
         }
 
         .parcours-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 22px 50px rgba(15, 35, 77, 0.10);
           border-color: #bdece2;
+        }
+
+        .card-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 14px;
+          margin-bottom: 18px;
         }
 
         .parcours-number {
@@ -587,273 +478,37 @@ export default function CreationRichessesPage() {
           background: #ecfdf5;
           color: #0f766e;
           font-weight: 900;
-          margin-bottom: 18px;
+        }
+
+        .emoji {
+          width: 48px;
+          height: 48px;
+          border-radius: 16px;
+          background: #f1f6ff;
+          display: grid;
+          place-items: center;
+          font-size: 25px;
         }
 
         .parcours-card h3 {
           margin: 0;
           color: #07194f;
-          font-size: 22px;
+          font-size: 23px;
           letter-spacing: -0.05em;
         }
 
         .parcours-card p {
           color: #64748b;
           line-height: 1.6;
-          margin: 10px 0 0;
-          font-size: 14px;
-        }
-
-        .layout {
-          margin-top: 34px;
-          display: grid;
-          grid-template-columns: 300px 1fr;
-          gap: 24px;
-          align-items: start;
-        }
-
-        .sidebar {
-          background: white;
-          border: 1px solid #dbe7f5;
-          border-radius: 24px;
-          padding: 24px;
-          box-shadow: 0 18px 45px rgba(15, 35, 77, 0.06);
-          position: sticky;
-          top: 110px;
-        }
-
-        .sidebar h2 {
-          margin: 0 0 12px;
-          color: #07194f;
-          font-size: 20px;
-          letter-spacing: -0.04em;
-        }
-
-        .sidebar a {
-          display: block;
-          color: #50617f;
-          font-weight: 800;
-          padding: 11px 0;
-          border-bottom: 1px solid #edf2f7;
-          transition: 0.2s ease;
-        }
-
-        .sidebar a:hover {
-          color: #0f766e;
-          padding-left: 4px;
-        }
-
-        .content {
-          display: grid;
-          gap: 18px;
-        }
-
-        .section-card {
-          background: white;
-          border: 1px solid #dbe7f5;
-          border-radius: 24px;
-          padding: 30px;
-          box-shadow: 0 18px 45px rgba(15, 35, 77, 0.06);
-        }
-
-        .section-card h2 {
-          margin: 0 0 16px;
-          color: #07194f;
-          font-size: 30px;
-          letter-spacing: -0.06em;
-        }
-
-        .section-card h3 {
-          margin: 24px 0 8px;
-          color: #173b73;
-          font-size: 20px;
-          letter-spacing: -0.04em;
-        }
-
-        .section-card p,
-        .section-card li {
-          color: #50617f;
-          font-size: 16px;
-          line-height: 1.75;
-        }
-
-        .section-card ul,
-        .section-card ol {
-          margin-bottom: 0;
-        }
-
-        .clear-box {
-          margin-top: 22px;
-          background: #ecfdf5;
-          border: 1px solid #bdece2;
-          border-radius: 22px;
-          padding: 22px;
-        }
-
-        .clear-label {
-          display: inline-flex;
-          margin-bottom: 10px;
-          background: white;
-          color: #0f766e;
-          border: 1px solid #bdece2;
-          border-radius: 999px;
-          padding: 7px 11px;
-          font-size: 13px;
-          font-weight: 900;
-        }
-
-        .clear-box p {
-          margin: 0;
-          color: #24496f;
-          font-weight: 700;
-          line-height: 1.7;
-        }
-
-        .intro-grid,
-        .notions-grid,
-        .examples-grid,
-        .errors-grid,
-        .quiz-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 12px;
-          margin-top: 22px;
-        }
-
-        .intro-item,
-        .notion-card,
-        .example-card,
-        .error-card,
-        .quiz-card {
-          border: 1px solid #dbe7f5;
-          border-radius: 18px;
-          padding: 18px;
-          background: #f8fbff;
-        }
-
-        .intro-item strong,
-        .notion-card strong,
-        .example-card strong,
-        .error-card strong,
-        .quiz-card strong {
-          display: block;
-          color: #07194f;
-          margin-bottom: 8px;
+          margin: 10px 0 22px;
           font-size: 15px;
         }
 
-        .intro-item span,
-        .notion-card span,
-        .example-card span,
-        .error-card span,
-        .quiz-card span {
-          color: #64748b;
+        .open-link {
+          margin-top: auto;
+          color: #0f766e;
+          font-weight: 900;
           font-size: 14px;
-          line-height: 1.6;
-        }
-
-        .example-card em {
-          display: inline-flex;
-          color: #0f766e;
-          background: #ecfdf5;
-          border: 1px solid #c7f0e8;
-          border-radius: 999px;
-          padding: 6px 10px;
-          font-style: normal;
-          font-weight: 900;
-          font-size: 12px;
-          margin-bottom: 10px;
-        }
-
-        .tag-list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-top: 18px;
-        }
-
-        .tag {
-          background: #ecfdf5;
-          color: #0f766e;
-          border: 1px solid #c7f0e8;
-          border-radius: 999px;
-          padding: 8px 11px;
-          font-size: 13px;
-          font-weight: 900;
-        }
-
-        .course-box {
-          background: #f8fbff;
-          border: 1px solid #dbe7f5;
-          border-radius: 20px;
-          padding: 22px;
-          margin-top: 16px;
-        }
-
-        .formula {
-          background: #f1f5f9;
-          border: 1px solid #dbe7f5;
-          border-radius: 18px;
-          padding: 18px;
-          margin-top: 14px;
-          color: #173b73;
-          font-weight: 900;
-          line-height: 1.8;
-        }
-
-        .video-box {
-          margin-top: 20px;
-          background:
-            linear-gradient(135deg, rgba(15,118,110,0.12), rgba(37,99,235,0.10)),
-            #f8fbff;
-          border: 1px solid #dbe7f5;
-          border-radius: 22px;
-          padding: 24px;
-        }
-
-        .video-box strong {
-          display: block;
-          color: #07194f;
-          font-size: 20px;
-          margin-bottom: 8px;
-        }
-
-        .chain {
-          background: #0f172a;
-          color: #e2e8f0;
-          border-radius: 18px;
-          padding: 22px;
-          line-height: 1.8;
-          font-weight: 800;
-          margin-top: 16px;
-        }
-
-        .exercise {
-          background: #f8fbff;
-          border: 1px solid #dbe7f5;
-          border-radius: 18px;
-          padding: 18px;
-          margin-top: 16px;
-        }
-
-        .method-box {
-          background: #fff7ed;
-          border: 1px solid #fed7aa;
-          border-radius: 20px;
-          padding: 22px;
-          margin-top: 16px;
-        }
-
-        .method-box strong {
-          color: #9a3412;
-        }
-
-        .memo {
-          background: #ecfdf5;
-          border: 1px solid #c7f0e8;
-          border-radius: 22px;
-          padding: 24px;
-          margin-top: 20px;
         }
 
         @media (max-width: 1050px) {
@@ -861,37 +516,19 @@ export default function CreationRichessesPage() {
             display: none;
           }
 
-          .hero,
-          .layout {
-            grid-template-columns: 1fr;
-          }
-
-          .sidebar {
-            position: static;
-          }
-
-          .parcours-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-
-          .intro-grid,
-          .notions-grid,
-          .examples-grid,
-          .errors-grid,
-          .quiz-grid {
+          .hero {
             grid-template-columns: 1fr;
           }
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 760px) {
           .container,
           .nav {
             width: calc(100% - 24px);
           }
 
-          .hero,
-          .section-card {
-            padding: 26px;
+          .hero {
+            padding: 28px;
           }
 
           .parcours-grid {
@@ -939,14 +576,14 @@ export default function CreationRichessesPage() {
             </h1>
 
             <p className="hero-text">
-              Ce chapitre explique ce que les économistes appellent une production,
-              qui produit dans l’économie, comment on mesure la richesse créée et
-              pourquoi le PIB ne dit pas tout.
+              Ce chapitre permet de comprendre qui produit dans l’économie,
+              comment on mesure la richesse créée et pourquoi le PIB ne suffit pas
+              à tout expliquer.
             </p>
 
             <div className="hero-actions">
               <a href="#parcours" className="btn-primary">
-                Voir le parcours <span>→</span>
+                Voir les activités <span>→</span>
               </a>
               <Link href="/seconde" className="btn-secondary">
                 ← Retour à Seconde
@@ -954,7 +591,7 @@ export default function CreationRichessesPage() {
             </div>
           </div>
 
-          <div className="chapter-card">
+          <div className="chapter-panel">
             <div>
               <div className="chapter-icon">🏭</div>
 
@@ -969,8 +606,7 @@ export default function CreationRichessesPage() {
               </div>
 
               <p>
-                Un parcours pour comprendre production, valeur ajoutée, PIB,
-                croissance et limites du PIB.
+                Une entrée progressive : produire, mesurer, comprendre les limites.
               </p>
             </div>
 
@@ -983,454 +619,37 @@ export default function CreationRichessesPage() {
           </div>
         </section>
 
-        <section id="parcours" className="section">
+        <section className="summary">
+          <strong>En clair</strong>
+          <p>
+            Ici, tu ne lis pas tout le chapitre d’un seul coup. Tu choisis une activité :
+            objectifs, notions, cours, exercices, quiz ou fiche mémo. Chaque carte ouvre une page dédiée.
+          </p>
+        </section>
+
+        <section id="parcours">
           <div className="section-heading">
             <h2>Parcours du chapitre</h2>
             <p>
-              Au lieu d’un simple bloc de texte, le chapitre est organisé comme une plateforme :
-              tu peux réviser les notions, lire le cours, t’entraîner, puis vérifier tes acquis.
+              Chaque bloc correspond à une partie du chapitre. Clique sur une carte pour ouvrir
+              la page correspondante.
             </p>
           </div>
 
           <div className="parcours-grid">
             {parcours.map((item) => (
-              <a key={item.numero} href={item.href} className="parcours-card">
-                <span className="parcours-number">{item.numero}</span>
+              <Link key={item.numero} href={item.href} className="parcours-card">
+                <div className="card-top">
+                  <span className="parcours-number">{item.numero}</span>
+                  <span className="emoji">{item.emoji}</span>
+                </div>
+
                 <h3>{item.titre}</h3>
                 <p>{item.texte}</p>
-              </a>
+
+                <span className="open-link">Ouvrir →</span>
+              </Link>
             ))}
-          </div>
-        </section>
-
-        <section className="layout">
-          <aside className="sidebar">
-            <h2>Plan CapSES</h2>
-            <a href="#savoir">1. À savoir</a>
-            <a href="#notions">2. Notions</a>
-            <a href="#cours">3. Cours</a>
-            <a href="#video">4. Vidéo courte</a>
-            <a href="#mecanismes">5. Mécanismes</a>
-            <a href="#exercices">6. Exercices</a>
-            <a href="#erreurs">7. Erreurs fréquentes</a>
-            <a href="#quiz">8. Quiz</a>
-            <a href="#methode">9. Méthode AEI</a>
-            <a href="#memo">10. Fiche mémo</a>
-          </aside>
-
-          <div className="content">
-            <section id="savoir" className="section-card">
-              <h2>1. À savoir pour le chapitre</h2>
-
-              <p>
-                La question centrale est :{" "}
-                <strong>comment crée-t-on des richesses et comment les mesure-t-on ?</strong>
-                Le chapitre part d’une idée simple : produire ne veut pas seulement dire
-                fabriquer un objet. On peut aussi produire un service, marchand ou non marchand.
-              </p>
-
-              <div className="clear-box">
-                <span className="clear-label">En clair</span>
-                <p>
-                  Dans ce chapitre, tu dois comprendre que la richesse n’est pas seulement
-                  produite par les entreprises. Un lycée, un hôpital, une association, une
-                  boulangerie ou un taxi peuvent tous participer à la production de richesses,
-                  mais pas de la même manière. Tu dois aussi comprendre comment on mesure cette
-                  richesse avec la valeur ajoutée, le PIB et la croissance, tout en sachant que
-                  ces indicateurs ont des limites.
-                </p>
-              </div>
-
-              <div className="intro-grid">
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 1</strong>
-                  <span>
-                    Savoir que les producteurs sont variés : entreprises, administrations publiques
-                    et organisations de l’économie sociale et solidaire.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Une entreprise produit, mais elle n’est pas seule. Un lycée public, une mairie,
-                    un hôpital ou une association produisent aussi des services utiles.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 2</strong>
-                  <span>
-                    Savoir distinguer production marchande et production non marchande.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Quand tu payes directement un prix important, c’est souvent marchand. Quand
-                    c’est gratuit ou presque gratuit pour l’usager, mais financé collectivement,
-                    c’est souvent non marchand.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 3</strong>
-                  <span>
-                    Comprendre que produire suppose de combiner du travail, du capital, de la
-                    technologie et des ressources naturelles.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Pour produire du pain, il faut un boulanger, un four, des recettes, de
-                    l’énergie, de la farine et de l’eau. Produire, c’est donc combiner plusieurs
-                    éléments.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 4</strong>
-                  <span>
-                    Savoir distinguer chiffre d’affaires, valeur ajoutée et bénéfice.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Les ventes ne disent pas tout. Une entreprise peut vendre beaucoup, mais avoir
-                    aussi beaucoup de coûts. Il faut donc distinguer ce qu’elle vend, ce qu’elle
-                    crée vraiment et ce qu’elle gagne à la fin.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 5</strong>
-                  <span>
-                    Comprendre que le PIB correspond à la somme des valeurs ajoutées.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Le PIB sert à mesurer la production d’un territoire. Pour éviter de compter
-                    plusieurs fois la même chose, on additionne les valeurs ajoutées, pas les
-                    chiffres d’affaires.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 6</strong>
-                  <span>
-                    Comprendre que la croissance correspond à l’augmentation du PIB.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Quand le PIB augmente, on dit que l’économie produit davantage. C’est ce qu’on
-                    appelle la croissance économique.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>Objectif d’apprentissage 7</strong>
-                  <span>
-                    Connaître les limites du PIB, notamment pour mesurer les inégalités et les
-                    effets écologiques.
-                  </span>
-                </div>
-
-                <div className="intro-item">
-                  <strong>En clair</strong>
-                  <span>
-                    Le PIB peut augmenter même si les richesses sont mal réparties ou si la
-                    production abîme l’environnement. Il faut donc savoir utiliser cet indicateur
-                    avec prudence.
-                  </span>
-                </div>
-              </div>
-
-              <div className="tag-list">
-                <span className="tag">Production</span>
-                <span className="tag">Bien</span>
-                <span className="tag">Service</span>
-                <span className="tag">Entreprise</span>
-                <span className="tag">Administration publique</span>
-                <span className="tag">ESS</span>
-                <span className="tag">Valeur ajoutée</span>
-                <span className="tag">PIB</span>
-                <span className="tag">Croissance</span>
-              </div>
-            </section>
-
-            <section id="notions" className="section-card">
-              <h2>2. Les notions indispensables</h2>
-
-              <div className="notions-grid">
-                {notions.map((notion) => (
-                  <div key={notion.titre} className="notion-card">
-                    <strong>{notion.titre}</strong>
-                    <span>{notion.texte}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section id="cours" className="section-card">
-              <h2>3. Le cours</h2>
-
-              <div className="course-box">
-                <h3>A. Produire, ce n’est pas seulement fabriquer</h3>
-                <p>
-                  Dans le langage courant, on pense souvent que produire signifie fabriquer un
-                  objet. En SES, la notion est plus large. Produire, c’est créer un bien ou un
-                  service dans un cadre organisé. Une boulangerie produit du pain, une pharmacie
-                  vend des médicaments, un taxi produit un service de transport, et un lycée
-                  public produit un service d’éducation.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>B. Bien ou service : deux formes de production</h3>
-                <p>
-                  Un bien est matériel : on peut le stocker, le transporter et le toucher. Un
-                  service est immatériel : il est souvent produit et consommé en même temps. Une
-                  coupe de cheveux, un cours, une consultation médicale ou un trajet en bus sont
-                  des services.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>C. Production marchande et non marchande</h3>
-                <p>
-                  Une production marchande est vendue sur un marché à un prix significatif. Une
-                  production non marchande est fournie gratuitement ou presque gratuitement à
-                  l’usager. Cela ne veut pas dire qu’elle ne coûte rien : elle peut être financée
-                  par les impôts, les cotisations ou d’autres ressources collectives.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>D. Tous les producteurs ne sont pas des entreprises</h3>
-                <p>
-                  Les entreprises produisent des biens et services, le plus souvent pour les vendre.
-                  Les administrations publiques produisent surtout des services non marchands, comme
-                  l’éducation ou la sécurité. Les organisations de l’économie sociale et solidaire
-                  produisent aussi, mais leur objectif principal n’est pas toujours le profit maximal :
-                  elles peuvent rechercher une utilité sociale.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>E. Produire suppose de combiner plusieurs ressources</h3>
-                <p>
-                  Pour produire, une organisation combine du travail, du capital, de la technologie
-                  et des ressources naturelles. Le travail correspond à l’activité humaine. Le capital
-                  correspond aux machines, bâtiments, outils ou logiciels. La technologie désigne les
-                  connaissances et procédés utilisés. Les ressources naturelles sont les matières ou
-                  éléments issus de la nature.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>F. Mesurer la richesse créée</h3>
-                <p>
-                  Le chiffre d’affaires indique le montant total des ventes. Mais il ne mesure pas
-                  directement la richesse créée, car une entreprise doit acheter des matières premières,
-                  de l’énergie ou des services à d’autres entreprises. Pour mesurer la richesse réellement
-                  créée, on utilise la valeur ajoutée.
-                </p>
-
-                <div className="formula">
-                  Chiffre d’affaires = prix de vente × quantité vendue
-                  <br />
-                  Valeur ajoutée = chiffre d’affaires − consommations intermédiaires
-                  <br />
-                  Bénéfice = chiffre d’affaires − coûts de production
-                </div>
-              </div>
-
-              <div className="course-box">
-                <h3>G. Du PIB à la croissance</h3>
-                <p>
-                  Le PIB correspond à la somme des valeurs ajoutées produites sur un territoire pendant
-                  une période donnée. Lorsque le PIB augmente, on parle de croissance économique. La
-                  croissance mesure donc une augmentation de la production, mais elle ne signifie pas
-                  automatiquement que tous les habitants s’enrichissent.
-                </p>
-              </div>
-
-              <div className="course-box">
-                <h3>H. Les limites du PIB</h3>
-                <p>
-                  Le PIB est un indicateur très utilisé, mais il ne dit pas tout. Il ne montre pas
-                  directement la répartition des revenus : un pays peut produire davantage sans que tout
-                  le monde en profite de la même manière. Il ne mesure pas non plus correctement les effets
-                  écologiques de la production, comme la pollution, l’épuisement des ressources ou la
-                  dégradation des milieux naturels.
-                </p>
-              </div>
-            </section>
-
-            <section id="video" className="section-card">
-              <h2>4. Vidéo courte / Récapitulatif</h2>
-
-              <div className="video-box">
-                <strong>🎬 Vidéo courte à intégrer</strong>
-                <p>
-                  Objectif : revoir l’essentiel du chapitre en 2 à 3 minutes avant un quiz,
-                  une évaluation ou une révision rapide.
-                </p>
-                <p>
-                  Fil conducteur possible : partir d’un sandwich acheté à la cafétéria. Qui le produit ?
-                  Quels biens et services sont mobilisés ? Quelle différence entre chiffre d’affaires,
-                  valeur ajoutée et bénéfice ? Comment cette production contribue-t-elle au PIB ? Quelles
-                  sont ses limites écologiques ?
-                </p>
-              </div>
-            </section>
-
-            <section id="mecanismes" className="section-card">
-              <h2>5. Les mécanismes à maîtriser</h2>
-
-              <h3>De la production au PIB</h3>
-              <div className="chain">
-                Travail + capital + technologie + ressources naturelles
-                <br />→ production de biens ou de services
-                <br />→ création de valeur ajoutée
-                <br />→ somme des valeurs ajoutées
-                <br />→ PIB
-              </div>
-
-              <h3>Du PIB à la croissance</h3>
-              <div className="chain">
-                PIB d’une période plus élevé que le PIB de la période précédente
-                <br />→ augmentation de la production mesurée
-                <br />→ croissance économique
-              </div>
-
-              <h3>Les limites de la croissance</h3>
-              <div className="chain">
-                Hausse du PIB
-                <br />→ plus de richesses produites en moyenne
-                <br />→ mais pas forcément moins d’inégalités
-                <br />→ et pas forcément moins de dégradations écologiques
-              </div>
-            </section>
-
-            <section id="exercices" className="section-card">
-              <h2>6. Exercices / entraînements</h2>
-
-              <p>
-                Pour chaque situation, il faut identifier s’il s’agit d’une production marchande de
-                bien, d’une production marchande de service, d’une production non marchande de service,
-                d’une production relevant de l’économie sociale et solidaire, ou si ce n’est pas une
-                production économique au sens strict.
-              </p>
-
-              <div className="examples-grid">
-                {exemples.map((item) => (
-                  <div key={item.situation} className="example-card">
-                    <em>{item.classement}</em>
-                    <strong>{item.situation}</strong>
-                    <span>{item.justification}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="exercise">
-                <h3>À faire seul</h3>
-                <ul>
-                  <li>Choisis trois situations du tableau.</li>
-                  <li>Explique à chaque fois pourquoi il s’agit, ou non, d’une production économique.</li>
-                  <li>Utilise au moins une fois les mots : marchand, non marchand, bien, service.</li>
-                </ul>
-              </div>
-            </section>
-
-            <section id="erreurs" className="section-card">
-              <h2>7. Les erreurs fréquentes</h2>
-
-              <div className="errors-grid">
-                {erreurs.map((item) => (
-                  <div key={item.erreur} className="error-card">
-                    <strong>Erreur : {item.erreur}</strong>
-                    <span>Correction : {item.correction}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section id="quiz" className="section-card">
-              <h2>8. Quiz</h2>
-
-              <div className="quiz-grid">
-                {quiz.map((item, index) => (
-                  <div key={item.question} className="quiz-card">
-                    <strong>
-                      {index + 1}. {item.question}
-                    </strong>
-                    <span>{item.reponse}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section id="methode" className="section-card">
-              <h2>9. Méthode appliquée : AEI</h2>
-
-              <p>
-                Pour répondre correctement en SES, on peut utiliser la méthode AEI :
-                <strong> Affirmer, Expliquer, Illustrer.</strong>
-              </p>
-
-              <div className="method-box">
-                <h3>Question</h3>
-                <p>Pourquoi un service gratuit pour l’usager peut-il être une production économique ?</p>
-
-                <h3>Réponse AEI</h3>
-                <ul>
-                  <li>
-                    <strong>Affirmer :</strong> un service gratuit pour l’usager peut être une production
-                    économique.
-                  </li>
-                  <li>
-                    <strong>Expliquer :</strong> il peut être organisé, légal, déclaré et financé collectivement.
-                  </li>
-                  <li>
-                    <strong>Illustrer :</strong> un cours dans un lycée public est un service non marchand
-                    financé par la collectivité.
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <section id="memo" className="section-card">
-              <h2>10. Fiche mémo</h2>
-
-              <div className="memo">
-                <ol>
-                  <li>Produire, c’est créer des biens ou des services dans un cadre économique organisé.</li>
-                  <li>Un bien est matériel ; un service est immatériel.</li>
-                  <li>Une production marchande est vendue à un prix significatif.</li>
-                  <li>Une production non marchande est gratuite ou quasi gratuite pour l’usager.</li>
-                  <li>Les entreprises, les administrations publiques et l’économie sociale et solidaire produisent.</li>
-                  <li>Produire nécessite de combiner travail, capital, technologie et ressources naturelles.</li>
-                  <li>Le chiffre d’affaires mesure les ventes.</li>
-                  <li>La valeur ajoutée mesure la richesse réellement créée.</li>
-                  <li>Le PIB est la somme des valeurs ajoutées.</li>
-                  <li>La croissance est l’augmentation du PIB.</li>
-                  <li>Le PIB ne montre pas directement les inégalités.</li>
-                  <li>La croissance peut poser des limites écologiques.</li>
-                </ol>
-              </div>
-            </section>
           </div>
         </section>
       </div>
