@@ -107,47 +107,91 @@ const exemples = [
     situation: "Un cours de SES dans un lycée public",
     classement: "Production non marchande de service",
     justification:
-      "Le service est organisé, légal, financé collectivement et gratuit ou quasi gratuit pour l’usager.",
+      "Le cours est un service d’éducation. Il est organisé, légal, déclaré et financé collectivement. Il est gratuit ou quasi gratuit pour l’usager.",
   },
   {
     situation: "Un cours de mathématiques donné à son petit frère",
     classement: "Pas une production économique au sens strict",
     justification:
-      "Il s’agit d’une activité domestique ou familiale, non déclarée et non organisée sur un marché.",
+      "Il s’agit d’une activité domestique ou familiale. Elle n’est pas vendue sur un marché et n’est pas comptabilisée comme production économique.",
+  },
+  {
+    situation: "Une formation payante proposée par une entreprise",
+    classement: "Production marchande de service",
+    justification:
+      "L’entreprise vend un service de formation à un prix significatif. C’est donc une production marchande.",
+  },
+  {
+    situation: "Un service de police",
+    classement: "Production non marchande de service",
+    justification:
+      "La police produit un service de sécurité. Ce service n’est pas vendu directement à l’usager : il est financé collectivement.",
+  },
+  {
+    situation: "Des médicaments fabriqués par un laboratoire",
+    classement: "Production marchande de bien",
+    justification:
+      "Les médicaments sont des biens matériels produits pour être vendus sur un marché.",
+  },
+  {
+    situation: "Un médicament vendu en pharmacie",
+    classement: "Production marchande de bien",
+    justification:
+      "Le médicament est un bien vendu à un prix significatif. La pharmacie participe à sa distribution.",
+  },
+  {
+    situation: "Un concert payant",
+    classement: "Production marchande de service",
+    justification:
+      "Le spectateur paie pour assister au concert. Il s’agit d’un service culturel vendu sur un marché.",
   },
   {
     situation: "Du pain vendu dans une boulangerie",
     classement: "Production marchande de bien",
     justification:
-      "Le pain est un bien matériel vendu sur un marché à un prix significatif.",
-  },
-  {
-    situation: "Un transport en taxi",
-    classement: "Production marchande de service",
-    justification: "Le transport est un service vendu au client.",
+      "Le pain est un bien matériel vendu à un prix significatif.",
   },
   {
     situation: "Un gâteau réalisé à la maison",
     classement: "Pas une production économique au sens strict",
     justification:
-      "La production domestique n’est pas comptabilisée comme production économique marchande ou non marchande.",
+      "La production domestique n’est pas comptabilisée comme production économique, même si elle peut être utile.",
+  },
+  {
+    situation: "Une personne qui jardine dans son propre jardin",
+    classement: "Pas une production économique au sens strict",
+    justification:
+      "Il s’agit d’une activité domestique. Elle n’est pas vendue sur un marché et n’est pas déclarée comme production économique.",
   },
   {
     situation: "Un dîner au restaurant",
     classement: "Production marchande de service",
     justification:
-      "Le restaurant vend un service de restauration, même si des biens alimentaires sont utilisés.",
+      "Le restaurant vend un service de restauration. Même s’il utilise des biens alimentaires, le client paie aussi le service.",
   },
   {
-    situation: "Un médicament vendu en pharmacie",
-    classement: "Production marchande de bien",
-    justification: "Le médicament est un bien vendu sur un marché.",
+    situation: "Un repas dans une cantine scolaire publique",
+    classement: "Production non marchande ou quasi marchande de service",
+    justification:
+      "Le repas est proposé dans un cadre organisé et souvent financé en partie par la collectivité. Le prix payé par l’usager peut être inférieur au coût réel.",
   },
   {
     situation: "Une action des Restos du Cœur",
     classement: "Production de service par l’économie sociale et solidaire",
     justification:
-      "L’objectif principal est l’utilité sociale, pas la recherche du profit maximal.",
+      "L’objectif principal est l’utilité sociale. L’organisation produit un service d’aide alimentaire sans rechercher le profit maximal.",
+  },
+  {
+    situation: "Un transport en taxi",
+    classement: "Production marchande de service",
+    justification:
+      "Le taxi vend un service de transport à un client.",
+  },
+  {
+    situation: "Un transport en bus scolaire",
+    classement: "Production non marchande ou quasi marchande de service",
+    justification:
+      "Le transport scolaire est un service organisé et souvent financé en partie par les collectivités.",
   },
 ];
 
@@ -987,8 +1031,8 @@ export default function CreationRichessesPage() {
           <div className="section-heading">
             <h2>Parcours du chapitre</h2>
             <p>
-              Au lieu d’un simple bloc de texte, le chapitre est organisé comme une plateforme :
-              tu peux réviser les notions, lire le cours, t’entraîner, puis vérifier tes acquis.
+              Le chapitre est organisé comme une plateforme : tu peux aller directement
+              vers les objectifs, les notions, le cours, les exercices ou le quiz.
             </p>
           </div>
 
