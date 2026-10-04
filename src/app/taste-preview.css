@@ -101,3 +101,5 @@
 .page[data-taste]{background:var(--capses-background)}
 .page[data-taste="home"] .hero-right{border-radius:20px;max-height:none;background:transparent}
 .page[data-taste="level"] .hero{background:transparent}
+
+.page[data-taste="home"] .hero-card{background:transparent}
