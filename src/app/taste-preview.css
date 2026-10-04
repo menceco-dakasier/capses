@@ -80,3 +80,4 @@
 .taste-menu nav a:hover{background:#f1f5ff}
 @media(max-width:1150px){.page[data-taste="level"] .links,.page[data-taste="chapter"] .links{display:none}.taste-menu{display:block}}
 @media(max-width:720px){.page[data-taste="level"] .hero h1{font-size:38px}.page[data-taste="level"] .hero{margin-top:16px}.page[data-taste="level"] .hero-text{font-size:16px}}
+@media(max-width:720px){.page[data-taste] .nav{gap:10px}.page[data-taste] .brand{min-width:0}.page[data-taste] .brand-subtitle{font-size:10px}.page[data-taste] .menu-toggle{flex-shrink:0}}
