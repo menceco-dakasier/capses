@@ -17,27 +17,16 @@ export function LearningIcon({ kind = "book" }: { kind?: "book" | "chart" | "glo
 
 export function SESVisual() {
   return (
-    <div className={styles.sesVisual}>
-      <p className={styles.visualKicker}>UN CAP POUR COMPRENDRE LE MONDE</p>
-      <h2>Comprendre aujourd’hui,<br /><span>réussir demain.</span></h2>
-      <div className={styles.visualChart}>
-        <div className={styles.chartCaption}><LearningIcon kind="chart" /><span>Lire une courbe. Expliquer un mécanisme.</span></div>
-        <svg viewBox="0 0 380 200" fill="none" role="img" aria-label="Illustration des outils des SES : courbe, histogramme et repères. Sans données statistiques.">
-          <path d="M30 25v145h325" stroke="#adbed5" strokeWidth="1.5" />
-          <path d="M30 65h325M30 105h325M30 145h325" stroke="#e2eaf5" strokeDasharray="4 5" />
-          <path d="M52 170V135h30v35m34 0V110h30v60m34 0V90h30v80m34 0V70h30v100m34 0V42h30v128" fill="#d9e7fa" />
-          <path d="M53 140C90 134 103 145 125 116S168 138 191 93 233 112 256 66 295 83 325 30" stroke="#2563eb" strokeWidth="4" strokeLinecap="round" />
-          <circle cx="191" cy="93" r="5" fill="#fff" stroke="#2563eb" strokeWidth="3" /><circle cx="325" cy="30" r="5" fill="#fff" stroke="#2563eb" strokeWidth="3" />
-        </svg>
-        <span className={styles.illustrative}>Graphique illustratif</span>
-      </div>
-      <div className={styles.visualBottom}>
-        <div className={styles.moneyTile} aria-hidden="true"><svg viewBox="0 0 90 56" fill="none"><rect x="4" y="5" width="82" height="46" rx="7" fill="#eef7f1" stroke="#82b49b" strokeWidth="1.5" /><path d="M14 13h62v30H14z" stroke="#b3d3bf" /><circle cx="45" cy="28" r="14" fill="#fff" /><text x="45" y="35" textAnchor="middle" fill="#36765a" fontSize="23" fontWeight="700">€</text></svg><span>Production & échanges</span></div>
-        <div className={styles.notionsTile}><strong>PIB · PCS · VA</strong><span>Des notions pour lire le quotidien</span></div>
-      </div>
-      <p className={styles.visualPromise}>Des SES plus claires, plus simples, plus concrètes.</p>
-      <p className={styles.visualQuote}>« Tout commence par une bonne méthode. »</p>
-    </div>
+    <aside className={styles.revisionVisual} aria-labelledby="revision-visual-title">
+      <p className={styles.revisionKicker}>UN PARCOURS POUR PROGRESSER</p>
+      <h2 id="revision-visual-title">Avance, une étape<br />à la fois.</h2>
+      <ol className={styles.revisionSteps}>
+        <li><span className={styles.revisionNumber}>01</span><div><span className={styles.revisionType}>LE COURS</span><h3>Comprendre</h3><p>Des notions claires et des exemples concrets.</p></div><LearningIcon kind="book" /></li>
+        <li><span className={styles.revisionNumber}>02</span><div><span className={styles.revisionType}>LE QUIZ</span><h3>S’entraîner</h3><p>Teste ce que tu as compris, puis lis la correction.</p></div><LearningIcon kind="chart" /></li>
+        <li><span className={styles.revisionNumber}>03</span><div><span className={styles.revisionType}>LA FICHE MÉMO</span><h3>Retenir</h3><p>Reviens aux idées essentielles, à ton rythme.</p></div><LearningIcon kind="book" /></li>
+      </ol>
+      <p className={styles.revisionFooter}>Un chapitre, des repères, un prochain pas.</p>
+    </aside>
   );
 }
 

@@ -43,3 +43,17 @@
 .option{padding:13px 16px;border-radius:10px;min-height:48px}
 .subject strong{font-size:18px}.download p,.download a,.footer{font-size:14px}
 @media(max-width:650px){.heroCopy{padding:26px 20px}.contentCard{padding:24px 18px}.quizQuestion{padding:18px}.contentCard h2{font-size:25px}}
+
+/* DESIGN.md: shared reading surfaces and geometry. */
+.page{background:var(--capses-canvas);color:var(--capses-ink);color-scheme:light}
+.hero,.sidebar .progressCard{background:var(--capses-surface)}
+.progressCard,.stepNav,.contentCard{border-color:var(--capses-line);box-shadow:none}
+.quizQuestion{background:var(--capses-surface);padding:24px}
+.option{color:var(--capses-ink);border-color:var(--capses-line)}
+.option.correct{color:var(--capses-success)}.option.wrong{color:var(--capses-error)}
+.feedback{background:#fff;color:var(--capses-muted)}
+.page :is(a,button,summary){touch-action:manipulation;-webkit-tap-highlight-color:#1d4ed826}
+.page :is(h1,h2,h3){text-wrap:balance}
+@media(max-width:650px){.quizQuestion{padding:16px}.contentCard{padding:22px 16px}}
+
+.page{background:var(--capses-background)}

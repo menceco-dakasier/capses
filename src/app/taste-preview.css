@@ -1,7 +1,9 @@
+/* CAPSES tokens, aligned with DESIGN.md. */
+:root{--capses-canvas:#fff;--capses-background:#fcfbf8;--capses-surface:#f7f7f5;--capses-ink:#142343;--capses-muted:#52617a;--capses-line:#dce3ee;--capses-accent:#1d4ed8;--capses-accent-hover:#1e40af;--capses-sage:#f0f7f2;--capses-peach:#fff4ed;--capses-lavender:#f4f1fc;--capses-success:#16634b;--capses-error:#9a3e32}
 /* Taste Skill, preserve-mode. Variance 4, motion 2, density 4.
    Existing brand, routes and teaching content take precedence. */
 .page[data-taste] {
-  --taste-ink:#142343; --taste-accent:#1d4ed8; --taste-line:#dce3ee;
+  --taste-ink:var(--capses-ink); --taste-accent:var(--capses-accent); --taste-line:var(--capses-line);
   background:#fff; color:var(--taste-ink);font-family:var(--font-geist-sans),Arial,sans-serif;
 }
 .page[data-taste] .header{height:72px;background:#fff;backdrop-filter:none;box-shadow:none;border-bottom:1px solid var(--taste-line)}
@@ -90,3 +92,12 @@
 .page[data-taste] :is(h1,h2,h3){text-wrap:balance;scroll-margin-top:90px}
 #main-content{scroll-margin-top:90px}
 .page[data-taste] .progress-fill{transition:none}
+
+/* DESIGN.md: consistent light reading surfaces. */
+.page[data-taste] .btn-primary:hover{background:var(--capses-accent-hover)}
+.page[data-taste="chapter"] .hero,.page[data-taste="chapter"] .sidebar{background:var(--capses-surface)}
+.page[data-taste="level"] .chapter-card{background:var(--capses-canvas)}
+
+.page[data-taste]{background:var(--capses-background)}
+.page[data-taste="home"] .hero-right{border-radius:20px;max-height:none;background:transparent}
+.page[data-taste="level"] .hero{background:transparent}
