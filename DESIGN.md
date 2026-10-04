@@ -19,13 +19,10 @@ Structure inspirée d’Awesome DESIGN.md de VoltAgent, en particulier de sa ré
 | --capses-line | #dce3ee | Bordures et séparateurs |
 | --capses-accent | #1d4ed8 | Action principale, liens et focus |
 | --capses-accent-hover | #1e40af | Survol de l’action principale |
-| --capses-sage | #f0f7f2 | Repère Seconde |
-| --capses-peach | #fff4ed | Repère Première |
-| --capses-lavender | #f4f1fc | Repère Terminale |
 | --capses-success | #16634b | Réponse correcte, avec texte explicite |
 | --capses-error | #9a3e32 | Réponse incorrecte, avec texte explicite |
 
-Le bleu reste un accent. Fond général ivoire léger (#fcfbf8), surfaces de lecture blanches. Aucun grand fond bleu nuit ou bleu ciel. Les touches pastel sont réservées aux repères de navigation ; le cours se lit sur blanc. Une couleur seule ne transmet jamais un état.
+Le bleu reste un accent. Fond général ivoire léger (#fcfbf8), surfaces de lecture blanches. Aucun grand fond bleu nuit ou bleu ciel. Les cartes de niveau sont blanches, avec des bordures fines et des icônes neutres ; aucun fond pastel par niveau. Une couleur seule ne transmet jamais un état.
 
 ## Typographie
 Geist Sans, chargé par Next/font, puis Arial et sans-serif. Aucun chargement de police externe supplémentaire.
@@ -40,7 +37,7 @@ Geist Sans, chargé par Next/font, puis Arial et sans-serif. Aucun chargement de
 Échelle : 4, 8, 12, 16, 24, 32, 48, 64 px. Contenu d’accueil centré, largeur maximale 1200 px. Trois cartes lycée au même niveau, puis une ligne BTS complémentaire. Accueil : titre et action principale à gauche, visuel du parcours Comprendre / S’entraîner / Retenir à droite ; une colonne sur mobile. Chapitre : plan à gauche, contenu à droite ; plan au-dessus du cours sur téléphone. Les contenus existants restent accessibles.
 
 ## Visuel d’accueil
-Un panneau ivoire chaud (#f2efe8) accueille trois cartes de révision : cours, quiz et fiche mémo. Les cartes sont légèrement décalées sur grand écran et alignées sur téléphone. Elles décrivent le parcours réel, sans scores fictifs ni données inventées. Les icônes SVG sont décoratives, le sens est entièrement lisible en texte. Le graphique illustratif est remplacé à la demande de l’enseignante.
+Le parcours de révision est un repère secondaire, avec un titre discret de 18 px : « Tes étapes de révision ». Trois lignes Comprendre / S’entraîner / Retenir, séparées par de fins traits, sans bulles colorées ni décalage. Le titre d’accueil et l’action principale dominent. Fond transparent sur l’ivoire général. Les cartes Seconde, Première et Terminale restent blanches, sans distinction par couleur.
 
 ## Composants et états
 Boutons rectangulaires, rayon 10 px, hauteur minimale 44 px, texte explicite. Une action principale bleue par groupe ; actions secondaires blanches bordées. Survol : contraste renforcé ; focus clavier : contour bleu de 3 px décalé de 4 px. Étape active : fond léger, numéro et aria-pressed. Menus : vrais boutons ou details/summary natifs. Cartes : rayon 14–16 px, bordure de 1 px, sans ombre pour le cours ; ombre légère réservée aux menus. Quiz : réponse sélectionnée accessible, correction textuelle dans une zone aria-live déjà montée ; ne pas modifier la banque de questions pour une refonte visuelle.

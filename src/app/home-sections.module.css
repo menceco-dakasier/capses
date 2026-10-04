@@ -75,7 +75,7 @@
 .heading h2,.method h2{font-size:clamp(25px,3vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.2}
 .levels{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .level{border:1px solid #dce3ee;border-top:1px solid #dce3ee;border-radius:14px;padding:24px;box-shadow:none;position:relative;background:#fff}
-.level:nth-child(2){background:#f7f9fd}.level:nth-child(3){background:#f1f5ff}
+
 .levelIcon{background:transparent;color:#1d4ed8;margin-bottom:14px;width:28px;height:28px;border-radius:0}
 .level h3{font-weight:700;font-size:28px}.levelLine{color:#334563;font-size:15px;font-weight:600}
 .level p{font-size:15px;line-height:1.65;margin:14px 0 20px}
@@ -108,9 +108,7 @@
 @media(max-width:720px){.visualChart>svg{height:95px}.sesVisual{height:auto}.visualQuote{line-height:1.5}}
 
 /* DESIGN.md: light editorial surfaces and distinct lycée landmarks. */
-.level:nth-child(1){background:var(--capses-sage)}
-.level:nth-child(2){background:var(--capses-peach)}
-.level:nth-child(3){background:var(--capses-lavender)}
+.level:nth-child(n){background:#fff}
 .sesVisual{background:var(--capses-surface);border:1px solid var(--capses-line)}
 .factLesson{background:var(--capses-surface)}
 .level,.factGrid{border-color:var(--capses-line)}
@@ -132,3 +130,18 @@
 .revisionFooter{font-size:13px;line-height:1.5;color:#52617a;margin:20px 0 0}
 @media(max-width:980px){.revisionVisual{padding:22px}.revisionVisual h2{font-size:26px}.revisionSteps li:nth-child(n){margin-left:0}.revisionSteps li{padding:16px 12px}.revisionSteps li>svg{display:none}}
 @media(max-width:720px){.revisionVisual{padding:24px 20px}.revisionVisual h2{font-size:28px}.revisionSteps li>svg{display:block}.revisionSteps li{padding:16px}}
+
+/* Teacher feedback: restrained secondary panel and neutral level cards. */
+.revisionVisual{padding:24px;background:transparent;border:0;border-left:1px solid var(--capses-line);border-radius:0}
+.revisionVisual h2{font-size:18px;font-weight:600;line-height:1.4;letter-spacing:0;margin:0 0 8px;color:var(--capses-muted)}
+.revisionSteps{gap:0}
+.revisionSteps li:nth-child(n){margin-left:0;background:transparent;border:0;border-bottom:1px solid var(--capses-line);border-radius:0;padding:16px 0}
+.revisionSteps li:last-child{border-bottom:0}
+.revisionSteps h3{font-size:17px;font-weight:600;margin:4px 0}
+.revisionSteps li>svg{display:none}
+.revisionType{font-size:11px;letter-spacing:0}
+.revisionFooter{margin:12px 0 0;font-size:12px}
+.levelIcon{color:var(--capses-muted);background:transparent}
+.level:last-child{background:#fff}
+.level:hover{transform:none;border-color:#94a3b8}
+@media(max-width:720px){.revisionVisual{padding:18px 0;border-left:0;border-top:1px solid var(--capses-line)}.revisionVisual h2{font-size:18px}.revisionSteps li:nth-child(n){padding:12px 0}}

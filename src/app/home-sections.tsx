@@ -18,8 +18,8 @@ export function LearningIcon({ kind = "book" }: { kind?: "book" | "chart" | "glo
 export function SESVisual() {
   return (
     <aside className={styles.revisionVisual} aria-labelledby="revision-visual-title">
-      <p className={styles.revisionKicker}>UN PARCOURS POUR PROGRESSER</p>
-      <h2 id="revision-visual-title">Avance, une étape<br />à la fois.</h2>
+      
+      <h2 id="revision-visual-title">Tes étapes de révision</h2>
       <ol className={styles.revisionSteps}>
         <li><span className={styles.revisionNumber}>01</span><div><span className={styles.revisionType}>LE COURS</span><h3>Comprendre</h3><p>Des notions claires et des exemples concrets.</p></div><LearningIcon kind="book" /></li>
         <li><span className={styles.revisionNumber}>02</span><div><span className={styles.revisionType}>LE QUIZ</span><h3>S’entraîner</h3><p>Teste ce que tu as compris, puis lis la correction.</p></div><LearningIcon kind="chart" /></li>
