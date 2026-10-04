@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TasteMobileMenu } from "../taste-mobile-menu";
 
 const CHAPITRES = [
   {
@@ -565,9 +566,10 @@ export default function SecondePage() {
             <Link href="/terminale" className="nav-link">Terminale</Link>
             <Link href="/premiere" className="nav-link">Première</Link>
             <Link href="/seconde" className="nav-link active">Seconde</Link>
-            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
+          <TasteMobileMenu />
         </nav>
       </header>
 
@@ -591,7 +593,7 @@ export default function SecondePage() {
               <a href="#chapitres" className="btn-primary">
                 Voir les chapitres <span>→</span>
               </a>
-              <Link href="/methodologie" className="btn-secondary">
+              <Link href="/methodes" className="btn-secondary">
                 Découvrir la méthode
               </Link>
             </div>
@@ -664,9 +666,7 @@ export default function SecondePage() {
 
                   <div className="status">{chapitre.statut}</div>
 
-                  <Link href={chapitre.href} className="chapter-link">
-                    Ouvrir
-                  </Link>
+                  {chapitre.statut === "Vidéo à intégrer" ? <span className="chapter-link" aria-disabled="true">Vidéo à venir</span> : <Link href={chapitre.href} className="chapter-link">Ouvrir</Link>}
                 </article>
               ))}
             </div>

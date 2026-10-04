@@ -66,3 +66,17 @@
  .page[data-taste="chapter"] .side-button{font-size:14px;flex-basis:125px}
 }
 @media(prefers-reduced-motion:reduce){.page[data-taste] *{transition:none!important;scroll-behavior:auto!important}}
+.page[data-taste="home"] .hero-right{align-self:start}
+.page[data-taste="level"] .hero h1{font-size:clamp(36px,4vw,54px);line-height:1.12;letter-spacing:-.04em;font-weight:750}
+.page[data-taste="level"] .hero-text{font-size:17px;line-height:1.75}
+.page[data-taste="level"] .hero{margin-top:30px;padding-top:24px;padding-bottom:30px}
+.page[data-taste="level"] .badge{font-size:14px;font-weight:600;letter-spacing:0;padding:8px 12px}
+.page[data-taste="level"] .chapter-link[aria-disabled]{background:#eef2f7;color:#52617a;cursor:default;box-shadow:none}
+.taste-menu{display:none;position:relative;font-size:15px;flex-shrink:0}
+.taste-menu summary{cursor:pointer;border:1px solid #dce3ee;border-radius:10px;padding:12px 16px;min-height:46px;background:#fff;color:#142343;font-weight:650;list-style:none}
+.taste-menu summary::-webkit-details-marker{display:none}
+.taste-menu nav{position:absolute;top:54px;right:0;min-width:220px;display:grid;background:#fff;border:1px solid #dce3ee;border-radius:12px;padding:8px;box-shadow:0 12px 30px #173b7314}
+.taste-menu nav a{padding:12px;min-height:46px;border-radius:8px;color:#142343}
+.taste-menu nav a:hover{background:#f1f5ff}
+@media(max-width:1150px){.page[data-taste="level"] .links,.page[data-taste="chapter"] .links{display:none}.taste-menu{display:block}}
+@media(max-width:720px){.page[data-taste="level"] .hero h1{font-size:38px}.page[data-taste="level"] .hero{margin-top:16px}.page[data-taste="level"] .hero-text{font-size:16px}}

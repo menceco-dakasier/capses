@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { TasteMobileMenu } from "../../taste-mobile-menu";
 import { useState } from "react";
 
 const sections = [
@@ -784,6 +785,7 @@ export default function FormationPrixPage() {
             <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
+          <TasteMobileMenu />
         </nav>
       </header>
 
