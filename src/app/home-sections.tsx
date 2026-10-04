@@ -128,42 +128,22 @@ export function EconomyHeadline({ economy }: { economy: ReturnType<typeof useEco
     <div className={styles.headlineNumber} aria-live="polite">{fact.number}</div>
     <p className={styles.headlineUnit}>{fact.unit}</p>
     <p className={styles.headlineTitle}>{fact.title}</p>
-    <a className={styles.headlineLink} href="#economie-en-vrai">Comprendre ce chiffre <LearningIcon kind="arrow" /></a>
+    <details className={styles.headlineDetails} key={fact.id}>
+      <summary>Comprendre ce chiffre</summary>
+      <div className={styles.headlineExplanation}>
+        <p>{fact.description}</p>
+        <details><summary>Comment lire ce chiffre ?</summary><p>{fact.calculation}</p></details>
+        <h3>Le chiffre qui fait réfléchir</h3><p>{fact.question}</p>
+        <div className={styles.tags}>{fact.notions.map(notion => <span key={notion}>{notion}</span>)}</div>
+        <details><summary>Voir une piste d’explication</summary><p>{fact.answer}</p></details>
+        <Link className={styles.lessonLink} href={fact.lesson}>{fact.lessonLabel} <LearningIcon kind="arrow" /></Link>
+        <p className={styles.smallNote}>Ces exemples se lisent à tous les niveaux. Les liens conduisent aux cours déjà accessibles.</p>
+        <p className={styles.headlinePeriod}>{fact.period}</p>
+      </div>
+    </details>
+    <button className={styles.nextFact} onClick={economy.nextFact}>Voir un autre chiffre <LearningIcon kind="arrow" /></button>
     <a className={styles.headlineSource} href={fact.url} target="_blank" rel="noreferrer">Source : {fact.source} ↗</a>
   </aside>;
-}
-
-export function EconomyDaily({ economy }: { economy: ReturnType<typeof useEconomyFact> }) {
-  const { fact, index, weekly } = economy;
-  const [revealed, setRevealed] = useState(false);
-  const nextFact = () => { economy.nextFact(); setRevealed(false); };
-  return (
-    <section id="economie-en-vrai" className={styles.section} aria-labelledby="economy-title">
-      <div className={styles.heading}>
-        <div><h2 id="economy-title">L’économie en vrai</h2></div>
-        <p>Un chiffre différent chaque semaine, un lien avec le cours.</p>
-      </div>
-      <div className={styles.factGrid}>
-        <article className={styles.factMain} aria-labelledby="fact-title">
-          <div className={styles.factTop}><span>{fact.category}</span><span className={styles.dailyLabel}>{weekly ? "Le chiffre de la semaine" : `À découvrir · ${index + 1}/${ECONOMY_FACTS.length}`}</span></div>
-          <div className={styles.bigNumber}>{fact.number}</div><p className={styles.factUnit}>{fact.unit}</p>
-          <h3 id="fact-title">{fact.title}</h3><p className={styles.factDescription}>{fact.description}</p>
-          <details className={styles.calculation}><summary>Comment lire ce chiffre ?</summary><p>{fact.calculation}</p></details>
-          <div className={styles.factSource}><p>{fact.period}</p><a href={fact.url} target="_blank" rel="noreferrer">Source : {fact.source} ↗</a></div>
-          <button className={styles.nextFact} onClick={nextFact}>Voir un autre chiffre <LearningIcon kind="arrow" /></button>
-        </article>
-        <aside className={styles.factLesson}>
-          <span className={styles.lessonIcon}><LearningIcon kind="globe" /></span><p className={styles.eyebrow}>DU QUOTIDIEN AUX NOTIONS</p>
-          <h3>Le chiffre qui fait réfléchir</h3><p className={styles.question}>{fact.question}</p>
-          <div className={styles.tags}>{fact.notions.map((notion) => <span key={notion}>{notion}</span>)}</div>
-          <button className={styles.explainButton} aria-expanded={revealed} aria-controls="fact-explanation" onClick={() => setRevealed(!revealed)}>{revealed ? "Masquer l’explication" : "Voir une piste d’explication"}</button>
-          <div id="fact-explanation" hidden={!revealed}><p className={styles.answer}>{fact.answer}</p></div>
-          <Link className={styles.lessonLink} href={fact.lesson}>{fact.lessonLabel} <LearningIcon kind="arrow" /></Link>
-          <p className={styles.smallNote}>Ces exemples se lisent à tous les niveaux. Les liens conduisent aux cours déjà accessibles.</p>
-        </aside>
-      </div>
-    </section>
-  );
 }
 
 export function LearningPath() {
