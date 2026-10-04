@@ -105,19 +105,38 @@ function weekNumber(date: Date) {
   return Math.floor((localDay - Date.UTC(1970, 0, 5)) / (7 * 86_400_000));
 }
 
-export function EconomyDaily() {
+export function useEconomyFact() {
   const [index, setIndex] = useState(0);
-  const [revealed, setRevealed] = useState(false);
   const [weekly, setWeekly] = useState(true);
   useEffect(() => {
-    const refresh = () => { setIndex(weekNumber(new Date()) % ECONOMY_FACTS.length); setRevealed(false); setWeekly(true); };
+    const refresh = () => { setIndex(weekNumber(new Date()) % ECONOMY_FACTS.length); setWeekly(true); };
     refresh();
     let lastWeek = weekNumber(new Date());
     const timer = setInterval(() => { const next = weekNumber(new Date()); if (next !== lastWeek) { lastWeek = next; refresh(); } }, 60_000);
     return () => clearInterval(timer);
   }, []);
   const fact = ECONOMY_FACTS[index];
-  const nextFact = () => { setIndex((old) => (old + 1) % ECONOMY_FACTS.length); setRevealed(false); setWeekly(false); };
+  const nextFact = () => { setIndex((old) => (old + 1) % ECONOMY_FACTS.length); setWeekly(false); };
+  return { fact, index, weekly, nextFact };
+}
+
+export function EconomyHeadline({ economy }: { economy: ReturnType<typeof useEconomyFact> }) {
+  const { fact, weekly } = economy;
+  return <aside className={styles.economyHeadline} aria-labelledby="economy-headline-title">
+    <h2 id="economy-headline-title">L’économie en vrai</h2>
+    <span className={styles.headlineKicker}>{weekly ? "Le chiffre de la semaine" : "Un chiffre à découvrir"}</span>
+    <div className={styles.headlineNumber} aria-live="polite">{fact.number}</div>
+    <p className={styles.headlineUnit}>{fact.unit}</p>
+    <p className={styles.headlineTitle}>{fact.title}</p>
+    <a className={styles.headlineLink} href="#economie-en-vrai">Comprendre ce chiffre <LearningIcon kind="arrow" /></a>
+    <a className={styles.headlineSource} href={fact.url} target="_blank" rel="noreferrer">Source : {fact.source} ↗</a>
+  </aside>;
+}
+
+export function EconomyDaily({ economy }: { economy: ReturnType<typeof useEconomyFact> }) {
+  const { fact, index, weekly } = economy;
+  const [revealed, setRevealed] = useState(false);
+  const nextFact = () => { economy.nextFact(); setRevealed(false); };
   return (
     <section id="economie-en-vrai" className={styles.section} aria-labelledby="economy-title">
       <div className={styles.heading}>

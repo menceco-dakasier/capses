@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
-import { EconomyDaily, LearningIcon, LearningPath, LevelEntries, SESVisual } from "./home-sections";
+import { EconomyDaily, EconomyHeadline, useEconomyFact, LearningIcon, LearningPath, LevelEntries, SESVisual } from "./home-sections";
 
 type Matiere = "ECO" | "SOCIO" | "RC";
 
@@ -135,6 +135,8 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
     window.addEventListener("storage", refreshProgress);
     return () => window.removeEventListener("storage", refreshProgress);
   }, [terminale]);
+
+  const economy = useEconomyFact();
 
   const chapitresFiltres = useMemo(() => {
     return CHAPITRES.filter((chapitre) => {
@@ -912,12 +914,12 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
             </div>
           </div>
 
-
+          <div className="hero-right"><EconomyHeadline economy={economy} /></div>
         </section>
 
         <LevelEntries />
         <SESVisual />
-        <EconomyDaily />
+        <EconomyDaily economy={economy} />
         <LearningPath /></>}
         {terminale && <div style={{paddingTop: 24}}><p>TON ESPACE DE RÉVISION</p><h1>Terminale SES</h1><p>Retrouve tes chapitres, tes notions et ta progression.</p><Link href="/">← Tous les niveaux</Link></div>}
 

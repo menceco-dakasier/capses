@@ -161,3 +161,14 @@
 .revisionSteps li:nth-child(n){border:0;padding:0;align-items:flex-start}
 .revisionFooter{margin-top:18px}
 @media(max-width:720px){.revisionVisual{margin-bottom:32px}.revisionSteps{grid-template-columns:1fr;gap:18px}}
+
+.economyHeadline{width:100%;padding:28px;border:1px solid var(--capses-line);border-radius:14px;background:#fff;color:var(--capses-ink)}
+.economyHeadline h2{font-size:18px;line-height:1.4;font-weight:650;margin:0 0 20px}
+.headlineKicker{font-size:13px;color:var(--capses-muted)}
+.headlineNumber{font-size:clamp(44px,5vw,64px);font-weight:750;letter-spacing:-.05em;line-height:1.1;color:var(--capses-accent);margin:12px 0;font-variant-numeric:tabular-nums}
+.headlineUnit{font-size:17px;line-height:1.5;font-weight:600;margin:0 0 14px}
+.headlineTitle{font-size:14px;color:var(--capses-muted);line-height:1.6;margin:0 0 18px}
+.headlineLink{display:flex;align-items:center;gap:12px;min-height:44px;font-size:14px;font-weight:600;color:var(--capses-accent)}
+.headlineLink:hover{text-decoration:underline;text-underline-offset:3px}
+.headlineSource{display:block;font-size:12px;line-height:1.6;color:var(--capses-muted);padding-top:16px;margin-top:10px;border-top:1px solid var(--capses-line);overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){.economyHeadline{padding:22px}.headlineNumber{font-size:48px}}

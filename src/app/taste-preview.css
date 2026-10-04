@@ -116,3 +116,7 @@
 
 .page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1fr)}
 .page[data-taste="home"] .hero-left{max-width:860px}
+
+.page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);align-items:center}
+.page[data-taste="home"] .hero-right{padding:0;margin:0;max-height:none;align-self:center}
+@media(max-width:720px){.page[data-taste="home"] .hero-card{grid-template-columns:1fr}.page[data-taste="home"] .hero-right{margin-top:12px}}
