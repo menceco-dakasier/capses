@@ -18,7 +18,7 @@ export default function TastePreview() {
       .preview-frame.phone{width:min(390px,100%);height:780px;max-height:calc(100dvh - 120px);min-height:500px;border:6px solid #26334a;border-radius:24px}
       @media(max-width:640px){.preview-shell{padding:0 10px 16px}.preview-controls{gap:12px}.preview-actions{width:100%}.preview-frame{height:calc(100dvh - 180px)}.preview-frame.phone{max-height:calc(100dvh - 180px)}}
     `}</style>
-    <header className="preview-controls"><div><h1>CAPSES · Prévisualisation design</h1><p>Ivoire · Vert pétrole · Courbe végétale discrète</p></div><div className="preview-actions"><label htmlFor="preview-page">Page</label><select id="preview-page" name="preview-page" value={page} onChange={e => setPage(e.target.value)}>{pages.map(([label, path]) => <option key={path} value={path}>{label}</option>)}</select><button aria-pressed={!phone} onClick={() => setPhone(false)}>Ordinateur</button><button aria-pressed={phone} onClick={() => setPhone(true)}>Téléphone</button></div></header>
+    <header className="preview-controls"><div><h1>CAPSES · Prévisualisation design</h1><p>Ivoire · Vert pétrole · Lecture et navigation sobres</p></div><div className="preview-actions"><label htmlFor="preview-page">Page</label><select id="preview-page" name="preview-page" value={page} onChange={e => setPage(e.target.value)}>{pages.map(([label, path]) => <option key={path} value={path}>{label}</option>)}</select><button aria-pressed={!phone} onClick={() => setPhone(false)}>Ordinateur</button><button aria-pressed={phone} onClick={() => setPhone(true)}>Téléphone</button></div></header>
     <iframe key={page} className={`preview-frame${phone ? " phone" : ""}`} src={page} title="CAPSES : aperçu interactif" />
   </main>;
 }

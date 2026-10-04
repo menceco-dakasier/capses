@@ -912,12 +912,11 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
             </div>
           </div>
 
-          <div className="hero-right">
-            <SESVisual />
-          </div>
+
         </section>
 
         <LevelEntries />
+        <SESVisual />
         <EconomyDaily />
         <LearningPath /></>}
         {terminale && <div style={{paddingTop: 24}}><p>TON ESPACE DE RÉVISION</p><h1>Terminale SES</h1><p>Retrouve tes chapitres, tes notions et ta progression.</p><Link href="/">← Tous les niveaux</Link></div>}

@@ -110,3 +110,9 @@
 .page[data-taste] .proof-icon{color:var(--capses-accent)!important}
 .page[data-taste] .side-button.active{background:var(--capses-accent);border-color:var(--capses-accent)}
 .page[data-taste] :is(a,button,summary,input):focus-visible{outline-color:var(--capses-accent)}
+
+.page[data-taste="home"] .hero-right{display:grid;place-items:center;padding-top:64px}
+@media(max-width:720px){.page[data-taste="home"] .hero-right{padding-top:0;justify-items:start}}
+
+.page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1fr)}
+.page[data-taste="home"] .hero-left{max-width:860px}
