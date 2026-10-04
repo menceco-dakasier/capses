@@ -1,0 +1,68 @@
+/* Taste Skill, preserve-mode. Variance 4, motion 2, density 4.
+   Existing brand, routes and teaching content take precedence. */
+.page[data-taste] {
+  --taste-ink:#142343; --taste-accent:#1d4ed8; --taste-line:#dce3ee;
+  background:#fff; color:var(--taste-ink);font-family:var(--font-geist-sans),Arial,sans-serif;
+}
+.page[data-taste] .header{height:72px;background:#fff;backdrop-filter:none;box-shadow:none;border-bottom:1px solid var(--taste-line)}
+.page[data-taste] .container,.page[data-taste] .nav{width:min(1200px,calc(100% - 48px))}
+.page[data-taste] .brand-subtitle{font-size:12px;font-weight:500;letter-spacing:0}
+.page[data-taste] .nav-link{font-size:14px;font-weight:600;padding:24px 10px 20px}
+.page[data-taste] .nav-link.active{background:transparent}
+.page[data-taste] .btn-primary,.page[data-taste] .btn-secondary{border-radius:10px;box-shadow:none;font-size:15px;font-weight:650;min-height:46px;transition:background .18s,transform .18s}
+.page[data-taste] .btn-primary{background:var(--taste-accent);color:#fff}
+.page[data-taste] .btn-secondary{border-color:var(--taste-line);color:var(--taste-ink)}
+.page[data-taste] :is(a,button,summary,input):focus-visible{outline:3px solid var(--taste-accent);outline-offset:4px}
+.page[data-taste] :is(button,.btn-primary,.btn-secondary):active{transform:translateY(1px)}
+.page[data-taste="home"] .hero-card{margin-top:30px;border:0;border-radius:0;box-shadow:none;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);min-height:0;overflow:visible;gap:48px}
+.page[data-taste="home"] .hero-left{padding:24px 0 20px}
+.page[data-taste="home"] .badge{background:transparent;border:0;border-radius:0;padding:0;margin-bottom:16px;font-size:14px;letter-spacing:0;font-weight:600;color:#52617a}
+.page[data-taste="home"] .hero-title{font-size:clamp(36px,4.4vw,54px);font-weight:750;line-height:1.1;letter-spacing:-.045em}
+.page[data-taste="home"] .hero-title span{display:inline;margin-left:.2em}
+.page[data-taste="home"] .hero-subtitle{margin-top:18px;font-size:20px;line-height:1.45;font-weight:600;letter-spacing:-.015em;max-width:540px}
+.page[data-taste="home"] .hero-text{margin-top:12px;font-size:16px;line-height:1.65;color:#52617a;max-width:560px}
+.page[data-taste="home"] .hero-actions{margin-top:24px;gap:10px}
+.page[data-taste="home"] .proofs{margin-top:24px;gap:14px}
+.page[data-taste="home"] .proof-icon{background:transparent!important;color:#1d4ed8!important;width:24px;flex-basis:24px;height:28px;border-radius:0}
+.page[data-taste="home"] .proof strong{font-size:13px;font-weight:650}
+.page[data-taste="home"] .proof div>span{font-size:12px}
+.page[data-taste="home"] .hero-right{min-height:0;border-radius:16px;overflow:hidden;margin:14px 0;align-self:stretch}
+.page[data-taste="home"] .home-footer{font-size:14px;padding:28px 0}
+.page[data-taste="level"] .hero{background:#fff;border-radius:0;border:0;box-shadow:none;padding-left:0;padding-right:0}
+.page[data-taste="level"] :is(.chapter-card,.card){box-shadow:none;border-radius:14px;border-color:var(--taste-line)}
+.page[data-taste="chapter"] .hero{border-radius:16px;box-shadow:none;background:#f5f8ff;border-color:var(--taste-line)}
+.page[data-taste="chapter"] .hero h1{font-size:clamp(32px,4vw,48px);line-height:1.15;letter-spacing:-.035em}
+.page[data-taste="chapter"] .section-card{border-radius:16px;box-shadow:none;padding:32px;background:#fff}
+.page[data-taste="chapter"] .section-card p,.page[data-taste="chapter"] .section-card article{font-size:16px;line-height:1.75}
+.page[data-taste="chapter"] .sidebar{background:#f8faff;border:1px solid var(--taste-line);box-shadow:none;border-radius:14px;padding:16px}
+.page[data-taste="chapter"] .side-button{font-size:15px;min-height:46px;border-radius:10px}
+.page[data-taste="chapter"] .side-button.active{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+.page[data-taste="chapter"] .layout{gap:28px}
+.page[data-taste="chapter"] :is(.objective-card,.course-box,.notion-card){box-shadow:none;border-radius:12px}
+@media(max-width:980px){
+ .page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px}
+ .page[data-taste="home"] .hero-title span{display:block;margin-left:0}
+ .page[data-taste="home"] .proofs{grid-template-columns:1fr;gap:10px}
+ .page[data-taste="home"] .proof{align-items:center}
+ .page[data-taste="home"] .proof div>span{display:none}
+ .page[data-taste="chapter"] .sidebar{position:static;display:flex;flex-wrap:wrap;gap:6px}
+ .page[data-taste="chapter"] .sidebar h2{width:100%}
+ .page[data-taste="chapter"] .side-button{width:auto;flex:1 1 145px;margin:0}
+}
+@media(max-width:720px){
+ .page[data-taste] .container,.page[data-taste] .nav{width:calc(100% - 32px)}
+ .page[data-taste="home"] .container{padding-top:0}
+ .page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1fr);gap:0;margin-top:20px}
+ .page[data-taste="home"] .hero-left{padding:12px 0 20px}
+ .page[data-taste="home"] .hero-title{font-size:38px}
+ .page[data-taste="home"] .hero-title span{display:inline;margin-left:.2em}
+ .page[data-taste="home"] .hero-subtitle{font-size:18px}
+ .page[data-taste="home"] .hero-right{margin:0;max-height:300px}
+ .page[data-taste="home"] .hero-actions{gap:8px}
+ .page[data-taste="home"] .hero-actions a{font-size:14px;padding:12px}
+ .page[data-taste="home"] .proofs{grid-template-columns:1fr}
+ .page[data-taste="chapter"] .section-card{padding:22px 18px}
+ .page[data-taste="chapter"] .sidebar{gap:5px}
+ .page[data-taste="chapter"] .side-button{font-size:14px;flex-basis:125px}
+}
+@media(prefers-reduced-motion:reduce){.page[data-taste] *{transition:none!important;scroll-behavior:auto!important}}

@@ -52,7 +52,7 @@ export function LevelEntries() {
   return (
     <section id="niveaux" className={styles.section} aria-labelledby="levels-title">
       <div className={styles.heading}>
-        <div><p className={styles.eyebrow}>À CHAQUE NIVEAU, SON PARCOURS</p><h2 id="levels-title">Choisis ton espace de révision</h2></div>
+        <div><h2 id="levels-title">Choisis ton espace de révision</h2></div>
         <p>Des repères clairs pour apprendre à ton rythme.</p>
       </div>
       <div className={styles.levels}>
@@ -132,7 +132,7 @@ export function EconomyDaily() {
   return (
     <section id="economie-en-vrai" className={styles.section} aria-labelledby="economy-title">
       <div className={styles.heading}>
-        <div><p className={styles.eyebrow}>OBSERVER, SE QUESTIONNER, COMPRENDRE</p><h2 id="economy-title">L’économie en vrai</h2></div>
+        <div><h2 id="economy-title">L’économie en vrai</h2></div>
         <p>Un chiffre différent chaque semaine, un lien avec le cours.</p>
       </div>
       <div className={styles.factGrid}>
@@ -161,7 +161,7 @@ export function EconomyDaily() {
 export function LearningPath() {
   return (
     <section className={styles.method} aria-labelledby="method-title">
-      <div><p className={styles.eyebrow}>UNE MÉTHODE, À CHAQUE SÉANCE</p><h2 id="method-title">Comprendre. S’entraîner. Vérifier.</h2><p>Un cours ne se révise pas seulement en le relisant. Avance par étapes et repère ce qui demande encore du travail.</p><Link href="/methodes" className={styles.lessonLink}>Voir les méthodes <LearningIcon kind="arrow" /></Link></div>
+      <div><h2 id="method-title">Comprendre. S’entraîner. Vérifier.</h2><p>Un cours ne se révise pas seulement en le relisant. Avance par étapes et repère ce qui demande encore du travail.</p><Link href="/methodes" className={styles.lessonLink}>Voir les méthodes <LearningIcon kind="arrow" /></Link></div>
       <ol className={styles.methodSteps}>
         <li><span>01</span><div><strong>Construire les repères</strong><p>Lire le cours, définir les notions et expliquer les mécanismes.</p></div></li>
         <li><span>02</span><div><strong>Mettre les savoirs à l’épreuve</strong><p>Répondre à un quiz, lire un document ou rédiger un paragraphe.</p></div></li>

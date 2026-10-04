@@ -163,7 +163,7 @@ export default function FormationPrixPage() {
   const progress = Math.max(0, Math.round(((activeIndex + 1) / sections.length) * 100));
 
   return (
-    <main className="page">
+    <main className="page" data-taste="chapter">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
@@ -781,7 +781,7 @@ export default function FormationPrixPage() {
             <Link href="/terminale" className="nav-link">Terminale</Link>
             <Link href="/premiere" className="nav-link">Première</Link>
             <Link href="/seconde" className="nav-link active">Seconde</Link>
-            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
         </nav>

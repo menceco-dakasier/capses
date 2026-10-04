@@ -146,7 +146,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
   }, [query, filtre]);
 
   return (
-    <main className="page">
+    <main className="page" data-taste="home">
       <a className="skip-link" href={terminale ? "#chapitres" : "#niveaux"}>Aller aux espaces de révision</a>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -858,7 +858,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
       <div className="container">
         {!terminale && <><section className="hero-card">
           <div className="hero-left">
-            <div className="badge">SECONDE · PREMIÈRE · TERMINALE · BTS CEJM · 2026-2027</div>
+            <div className="badge">SES du lycée au BTS CEJM</div>
 
             <h1 className="hero-title">
               Bienvenue sur
@@ -876,7 +876,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
 
             <div className="hero-actions">
               <a href="#niveaux" className="btn-primary">
-                Commencer à réviser <span>→</span>
+                Commencer à réviser
               </a>
               <Link href="/espace-eleves" className="btn-secondary">
                 Voir ma progression

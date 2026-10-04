@@ -27,3 +27,19 @@
 @media(max-width:650px){.headerInner,.shell{width:min(100% - 18px,1280px)}.headerInner{min-height:60px}.spaceLink{padding:9px 10px}.heroCopy{padding:28px 20px}.heroVisual{min-height:250px}.chartCard{inset:24px 16px 26px}.grid2,.grid3{grid-template-columns:1fr}.contentCard{padding:20px 15px;border-radius:15px}.sectionHeader{flex-direction:column}.download{flex-direction:column;align-items:flex-start}.flowItem{min-width:125px}}
 
 .complementsLink{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;color:#164b9c;text-decoration:none;font-size:13px;font-weight:750}.complementsLink:hover{text-decoration:underline}.contentCard{scroll-margin-top:90px}.page :is(a,button,summary):focus-visible{outline:3px solid #2563eb;outline-offset:4px}.page button{min-height:44px}.page table{display:block;max-width:100%;overflow-x:auto}.page iframe{max-width:100%}@media(prefers-reduced-motion:reduce){.page *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Taste preview: improve reading comfort without changing teaching content. */
+.page{background:#fff;font-size:16px}
+.header{background:#fff;backdrop-filter:none}.nav a{font-size:14px}.spaceLink{font-size:14px}
+.breadcrumb{font-size:14px}.hero{box-shadow:none;border-radius:16px}.heroCopy{padding:34px}
+.heroCopy h1{font-size:clamp(30px,3.5vw,45px);line-height:1.15}.heroLead{font-size:17px;line-height:1.7}
+.eyebrow,.pill,.progressTop,.progressHint,.done,.sideTitle{font-size:14px}
+.contentCard{box-shadow:none;border-radius:16px;padding:32px}
+.contentCard p,.contentCard li{font-size:16px;line-height:1.75}
+.contentCard h2{font-size:28px;line-height:1.25}.contentCard h3{font-size:20px;line-height:1.35}
+.definition,.clearBox,.callout,.sourceItem,.option,.feedback{font-size:16px;line-height:1.65}
+.stepButton{font-size:15px;min-height:48px}.stepNumber{font-size:14px}
+.quizQuestion{padding:22px;border-radius:12px;background:#f8faff}.quizQuestion h3{font-size:18px}
+.option{padding:13px 16px;border-radius:10px;min-height:48px}
+.subject strong{font-size:18px}.download p,.download a,.footer{font-size:14px}
+@media(max-width:650px){.heroCopy{padding:26px 20px}.contentCard{padding:24px 18px}.quizQuestion{padding:18px}.contentCard h2{font-size:25px}}

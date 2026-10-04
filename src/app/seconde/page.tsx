@@ -41,7 +41,7 @@ const CHAPITRES = [
 
 export default function SecondePage() {
   return (
-    <main className="page">
+    <main className="page" data-taste="level">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 

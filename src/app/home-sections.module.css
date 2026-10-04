@@ -67,3 +67,40 @@
 @media(max-width:430px){.levels{grid-template-columns:minmax(0,1fr)}.level p{font-size:14px}.level h3{font-size:25px}.levelIcon{margin-bottom:14px}}
 @media(max-width:720px){.sesVisual{padding:26px}.sesVisual h2{font-size:28px}.visualChart{padding:16px}.chartCaption{font-size:11px}.sesVisual{min-height:480px}}
 @media(prefers-reduced-motion:reduce){.level,.nextFact,.explainButton{transition:none}.level:hover{transform:none}}
+
+/* White educational interface: three lycée entries, BTS as a complementary row. */
+.section{margin:38px 0 54px;color:#142343}
+.heading{display:block;margin-bottom:22px}
+.heading>p{max-width:none;margin-top:10px;font-size:16px}
+.heading h2,.method h2{font-size:clamp(25px,3vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.2}
+.levels{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.level{border:1px solid #dce3ee;border-top:1px solid #dce3ee;border-radius:14px;padding:24px;box-shadow:none;position:relative;background:#fff}
+.level:nth-child(2){background:#f7f9fd}.level:nth-child(3){background:#f1f5ff}
+.levelIcon{background:transparent;color:#1d4ed8;margin-bottom:14px;width:28px;height:28px;border-radius:0}
+.level h3{font-weight:700;font-size:28px}.levelLine{color:#334563;font-size:15px;font-weight:600}
+.level p{font-size:15px;line-height:1.65;margin:14px 0 20px}
+.levelStatus{font-size:13px}.levelAction{color:#1d4ed8;font-size:15px;font-weight:650}
+.level:hover{box-shadow:none;transform:translateY(-2px);border-color:#1d4ed8}
+.level:last-child{grid-column:1/-1;display:grid;grid-template-columns:34px 140px 1fr 170px;align-items:center;column-gap:18px;padding:22px 24px;background:#fff}
+.level:last-child .levelIcon{margin:0;grid-row:1/3}.level:last-child h3{font-size:22px;margin:0;grid-column:2;grid-row:1}
+.level:last-child .levelLine{grid-column:2;grid-row:2;font-size:13px}
+.level:last-child p{grid-column:3;grid-row:1/3;margin:0;font-size:14px}
+.level:last-child .levelStatus{grid-column:4;grid-row:2;margin:6px 0 0;font-size:12px}
+.level:last-child .levelAction{grid-column:4;grid-row:1;border:0;padding:0;font-size:14px}
+.sesVisual{padding:26px;background:#f2f6ff;min-height:0;border-radius:16px;justify-content:center}
+.visualKicker{font-size:12px;letter-spacing:.04em;margin-bottom:10px;font-weight:650}
+.sesVisual h2{font-size:25px;font-weight:700;margin-bottom:16px;line-height:1.25}
+.visualChart{border:0;padding:14px;border-radius:12px;box-shadow:none;background:#fff}
+.chartCaption{font-size:12px;font-weight:550}.illustrative{font-size:12px}
+.visualBottom{margin-top:10px;gap:10px}.moneyTile,.notionsTile{border:0;border-radius:10px;padding:10px;gap:6px}
+.moneyTile svg{width:54px;height:34px}.moneyTile span,.notionsTile span{font-size:12px}
+.notionsTile strong{font-size:20px}.visualPromise{font-size:13px;margin-top:14px}.visualQuote{font-size:12px}
+.factGrid{border-radius:16px;box-shadow:none}.factLesson{background:#f4f7ff}.factDescription{font-size:16px}
+.factTop,.dailyLabel,.factSource{font-size:13px;letter-spacing:0}.factTop>span:first-child{font-weight:600}
+.dailyLabel{background:#fff;color:#3f5577;border-color:#dce3ee}
+.calculation{font-size:14px}.nextFact,.explainButton{font-size:14px;font-weight:650;border-radius:10px}
+.question{font-size:18px}.answer{font-size:16px}.tags span,.smallNote{font-size:14px}
+.method{border:0;border-top:1px solid #dce3ee;border-radius:0;padding:34px 0;gap:52px}
+.method>div>p:not(.eyebrow){font-size:16px}.methodSteps strong{font-size:16px}.methodSteps p{font-size:15px}
+@media(max-width:980px){.level:last-child{grid-template-columns:32px 150px 1fr}.level:last-child p{grid-column:3;grid-row:1/3}.level:last-child .levelAction{grid-column:2/4;grid-row:3;margin-top:18px}.level:last-child .levelStatus{grid-column:2/4;grid-row:4}.sesVisual{padding:20px}.sesVisual h2{font-size:23px}.visualBottom{grid-template-columns:1fr}.moneyTile{display:none}}
+@media(max-width:720px){.levels{grid-template-columns:1fr}.level{padding:22px}.level:last-child{display:flex;align-items:flex-start;gap:0}.level:last-child .levelIcon{margin-bottom:10px}.level:last-child .levelLine{font-size:14px}.level:last-child p{margin:12px 0}.level:last-child .levelStatus{order:5;margin-top:10px}.level:last-child .levelAction{margin-top:8px;width:100%}.sesVisual{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;padding:20px;min-height:0}.visualKicker{grid-column:1/-1;margin:0}.sesVisual h2{font-size:20px;margin:0;grid-column:1;grid-row:2}.visualChart{grid-column:2;grid-row:2;padding:8px}.visualBottom{grid-column:1/-1;display:none}.visualPromise{grid-column:1/-1;margin:0}.visualQuote{grid-column:1/-1;margin:0}.chartCaption{display:none}.illustrative{font-size:12px}.method{grid-template-columns:1fr;gap:24px}.factMain,.factLesson{padding:24px}.section{margin:30px 0 40px}}
