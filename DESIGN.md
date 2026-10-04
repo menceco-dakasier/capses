@@ -17,12 +17,12 @@ Structure inspirée d’Awesome DESIGN.md de VoltAgent, en particulier de sa ré
 | --capses-ink | #142343 | Titres et texte principal |
 | --capses-muted | #52617a | Texte secondaire lisible |
 | --capses-line | #dce3ee | Bordures et séparateurs |
-| --capses-accent | #1d4ed8 | Action principale, liens et focus |
-| --capses-accent-hover | #1e40af | Survol de l’action principale |
+| --capses-accent | #176b64 | Action principale, liens et focus |
+| --capses-accent-hover | #10564f | Survol de l’action principale |
 | --capses-success | #16634b | Réponse correcte, avec texte explicite |
 | --capses-error | #9a3e32 | Réponse incorrecte, avec texte explicite |
 
-Le bleu reste un accent. Fond général ivoire léger (#fcfbf8), surfaces de lecture blanches. Aucun grand fond bleu nuit ou bleu ciel. Les cartes de niveau sont blanches, avec des bordures fines et des icônes neutres ; aucun fond pastel par niveau. Une couleur seule ne transmet jamais un état.
+Le vert pétrole est la couleur signature, utilisée avec parcimonie. Fond général ivoire léger (#fcfbf8), surfaces de lecture blanches. Aucun grand fond bleu nuit ou bleu ciel. Les cartes de niveau sont blanches, avec des bordures fines et des icônes neutres ; aucun fond pastel par niveau. Une couleur seule ne transmet jamais un état.
 
 ## Typographie
 Geist Sans, chargé par Next/font, puis Arial et sans-serif. Aucun chargement de police externe supplémentaire.
@@ -37,10 +37,10 @@ Geist Sans, chargé par Next/font, puis Arial et sans-serif. Aucun chargement de
 Échelle : 4, 8, 12, 16, 24, 32, 48, 64 px. Contenu d’accueil centré, largeur maximale 1200 px. Trois cartes lycée au même niveau, puis une ligne BTS complémentaire. Accueil : titre et action principale à gauche, visuel du parcours Comprendre / S’entraîner / Retenir à droite ; une colonne sur mobile. Chapitre : plan à gauche, contenu à droite ; plan au-dessus du cours sur téléphone. Les contenus existants restent accessibles.
 
 ## Visuel d’accueil
-Le parcours de révision est un repère secondaire, avec un titre discret de 18 px : « Tes étapes de révision ». Trois lignes Comprendre / S’entraîner / Retenir, séparées par de fins traits, sans bulles colorées ni décalage. Le titre d’accueil et l’action principale dominent. Fond transparent sur l’ivoire général. Les cartes Seconde, Première et Terminale restent blanches, sans distinction par couleur.
+Le parcours de révision est un repère secondaire, avec un titre discret de 18 px : « Tes étapes de révision ». Une fine courbe ascendante se termine par deux feuilles, en vert pétrole. Ce dessin est décoratif, sans axes, chiffres ou valeur statistique ; SVG aria-hidden, sans animation. Trois lignes Comprendre / S’entraîner / Retenir, séparées par de fins traits, sans bulles colorées ni décalage. Le titre d’accueil et l’action principale dominent. Fond transparent sur l’ivoire général. Les cartes Seconde, Première et Terminale restent blanches, sans distinction par couleur.
 
 ## Composants et états
-Boutons rectangulaires, rayon 10 px, hauteur minimale 44 px, texte explicite. Une action principale bleue par groupe ; actions secondaires blanches bordées. Survol : contraste renforcé ; focus clavier : contour bleu de 3 px décalé de 4 px. Étape active : fond léger, numéro et aria-pressed. Menus : vrais boutons ou details/summary natifs. Cartes : rayon 14–16 px, bordure de 1 px, sans ombre pour le cours ; ombre légère réservée aux menus. Quiz : réponse sélectionnée accessible, correction textuelle dans une zone aria-live déjà montée ; ne pas modifier la banque de questions pour une refonte visuelle.
+Boutons rectangulaires, rayon 10 px, hauteur minimale 44 px, texte explicite. Une action principale vert pétrole par groupe ; actions secondaires blanches bordées. Survol : contraste renforcé ; focus clavier : contour vert pétrole de 3 px décalé de 4 px. Étape active : fond léger, numéro et aria-pressed. Menus : vrais boutons ou details/summary natifs. Cartes : rayon 14–16 px, bordure de 1 px, sans ombre pour le cours ; ombre légère réservée aux menus. Quiz : réponse sélectionnée accessible, correction textuelle dans une zone aria-live déjà montée ; ne pas modifier la banque de questions pour une refonte visuelle.
 
 ## Responsive et mouvement
 Sous 720 px : une colonne, marges 16 px, cartes à hauteur naturelle. Navigation repliée avant de manquer de place ; cibles séparées d’au moins 8 px lorsque possible. Aucun débordement horizontal de page ; les tableaux et le plan peuvent défiler dans leur propre zone. Transitions de couleur ou transform limitées à 150–200 ms. Respecter prefers-reduced-motion. Pas d’animation décorative permanente.

@@ -18,7 +18,11 @@ export function LearningIcon({ kind = "book" }: { kind?: "book" | "chart" | "glo
 export function SESVisual() {
   return (
     <aside className={styles.revisionVisual} aria-labelledby="revision-visual-title">
-      
+      <svg className={styles.signatureCurve} viewBox="0 0 360 90" fill="none" aria-hidden="true">
+        <path d="M8 73C66 73 80 29 126 38S184 83 221 49 273 31 322 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M293 26C282 9 271 8 261 11c5 13 15 20 32 15ZM306 20c3-15 13-21 26-18-4 12-12 18-26 18Z" fill="currentColor" fillOpacity=".12" stroke="currentColor" strokeWidth="1.2" />
+        <path d="M10 84h325" stroke="currentColor" strokeOpacity=".12" strokeWidth="1" />
+      </svg>
       <h2 id="revision-visual-title">Tes étapes de révision</h2>
       <ol className={styles.revisionSteps}>
         <li><span className={styles.revisionNumber}>01</span><div><span className={styles.revisionType}>LE COURS</span><h3>Comprendre</h3><p>Des notions claires et des exemples concrets.</p></div><LearningIcon kind="book" /></li>

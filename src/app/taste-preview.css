@@ -1,5 +1,5 @@
 /* CAPSES tokens, aligned with DESIGN.md. */
-:root{--capses-canvas:#fff;--capses-background:#fcfbf8;--capses-surface:#f7f7f5;--capses-ink:#142343;--capses-muted:#52617a;--capses-line:#dce3ee;--capses-accent:#1d4ed8;--capses-accent-hover:#1e40af;--capses-sage:#f0f7f2;--capses-peach:#fff4ed;--capses-lavender:#f4f1fc;--capses-success:#16634b;--capses-error:#9a3e32}
+:root{--capses-canvas:#fff;--capses-background:#fcfbf8;--capses-surface:#f7f7f5;--capses-ink:#142343;--capses-muted:#52617a;--capses-line:#dce3ee;--capses-accent:#176b64;--capses-accent-hover:#10564f;--capses-sage:#f0f7f2;--capses-peach:#fff4ed;--capses-lavender:#f4f1fc;--capses-success:#16634b;--capses-error:#9a3e32}
 /* Taste Skill, preserve-mode. Variance 4, motion 2, density 4.
    Existing brand, routes and teaching content take precedence. */
 .page[data-taste] {
@@ -103,3 +103,10 @@
 .page[data-taste="level"] .hero{background:transparent}
 
 .page[data-taste="home"] .hero-card{background:transparent}
+
+/* Signature proposal: petrol green used sparingly, neutral level cards. */
+.page[data-taste] .hero-title span,.page[data-taste] .nav-link.active{color:var(--capses-accent)}
+.page[data-taste] .nav-link.active{border-color:var(--capses-accent)}
+.page[data-taste] .proof-icon{color:var(--capses-accent)!important}
+.page[data-taste] .side-button.active{background:var(--capses-accent);border-color:var(--capses-accent)}
+.page[data-taste] :is(a,button,summary,input):focus-visible{outline-color:var(--capses-accent)}
