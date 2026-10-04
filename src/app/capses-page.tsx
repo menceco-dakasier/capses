@@ -149,7 +149,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
     <main className="page" data-taste="home">
       <a className="skip-link" href={terminale ? "#chapitres" : "#niveaux"}>Aller aux espaces de révision</a>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 
         * {
           box-sizing: border-box;
@@ -247,7 +247,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
           font-weight: 800;
           padding: 33px 18px 29px;
           border-bottom: 3px solid transparent;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .nav-link:hover,
@@ -369,7 +369,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
           padding: 16px 22px;
           font-weight: 900;
           font-size: 16px;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
           display: inline-flex;
           align-items: center;
           gap: 10px;
@@ -644,7 +644,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
           min-height: 245px;
           display: flex;
           flex-direction: column;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .chapter-card:hover {
@@ -714,7 +714,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
           padding: 12px 14px;
           font-weight: 900;
           text-align: center;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .chapter-link:hover {
@@ -821,6 +821,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
         @media(prefers-reduced-motion:reduce){.page *{scroll-behavior:auto!important;transition:none!important}.btn-primary:hover,.btn-secondary:hover{transform:none}}
       `}</style>
 
+      <a className="taste-skip" href="#main-content">Aller au contenu</a>
       <header className="header">
         <nav className="nav" aria-label="Navigation principale">
           <Link href="/" className="brand">
@@ -843,10 +844,10 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
 
           {terminale && <div className="search-wrap">
             <input
-              className="search"
+              className="search" name="chapter" autoComplete="off"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Rechercher une notion, un chapitre..."
+              placeholder="Rechercher une notion, un chapitre…"
               aria-label="Rechercher dans les chapitres de Terminale"
             />
           </div>}
@@ -855,7 +856,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
         </nav>
       </header>
 
-      <div className="container">
+      <div className="container" id="main-content" tabIndex={-1}>
         {!terminale && <><section className="hero-card">
           <div className="hero-left">
             <div className="badge">SES du lycée au BTS CEJM</div>
@@ -974,7 +975,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
                 <h2>Les chapitres de Terminale</h2>
                 <p>Choisis un chapitre pour commencer ou reprendre ta révision.</p>
               </div>
-              <div><label className="search-label" htmlFor="chapter-search">Rechercher en Terminale</label><input id="chapter-search" className="section-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Un chapitre, une notion…" /><p aria-live="polite">{chapitresFiltres.length} résultat(s)</p></div>
+              <div><label className="search-label" htmlFor="chapter-search">Rechercher en Terminale</label><input id="chapter-search" name="chapter" autoComplete="off" className="section-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Un chapitre, une notion…" /><p aria-live="polite">{chapitresFiltres.length} résultat(s)</p></div>
             </div>
 
             <div className="chapters-grid">

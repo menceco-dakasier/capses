@@ -81,3 +81,12 @@
 @media(max-width:1150px){.page[data-taste="level"] .links,.page[data-taste="chapter"] .links{display:none}.taste-menu{display:block}}
 @media(max-width:720px){.page[data-taste="level"] .hero h1{font-size:38px}.page[data-taste="level"] .hero{margin-top:16px}.page[data-taste="level"] .hero-text{font-size:16px}}
 @media(max-width:720px){.page[data-taste] .nav{gap:10px}.page[data-taste] .brand{min-width:0}.page[data-taste] .brand-subtitle{font-size:10px}.page[data-taste] .menu-toggle{flex-shrink:0}}
+
+/* Vercel Web Interface Guidelines: keyboard navigation and touch feedback. */
+.taste-skip{position:fixed;top:8px;left:8px;z-index:1000;padding:12px 16px;background:#fff;color:#142343;border:2px solid #1d4ed8;border-radius:8px;transform:translateY(-160%)}
+.taste-skip:focus{transform:translateY(0);outline:3px solid #1d4ed8;outline-offset:2px}
+.page[data-taste]{color-scheme:light}
+.page[data-taste] :is(a,button,summary){touch-action:manipulation;-webkit-tap-highlight-color:#1d4ed826}
+.page[data-taste] :is(h1,h2,h3){text-wrap:balance;scroll-margin-top:90px}
+#main-content{scroll-margin-top:90px}
+.page[data-taste] .progress-fill{transition:none}

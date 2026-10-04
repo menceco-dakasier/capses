@@ -44,7 +44,7 @@ export default function SecondePage() {
   return (
     <main className="page" data-taste="level">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 
         * {
           box-sizing: border-box;
@@ -138,7 +138,7 @@ export default function SecondePage() {
           font-weight: 800;
           padding: 33px 18px 29px;
           border-bottom: 3px solid transparent;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .nav-link:hover,
@@ -220,7 +220,7 @@ export default function SecondePage() {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .btn-primary {
@@ -404,7 +404,7 @@ export default function SecondePage() {
           min-height: 330px;
           display: flex;
           flex-direction: column;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
           position: relative;
           overflow: hidden;
         }
@@ -501,7 +501,7 @@ export default function SecondePage() {
           padding: 13px 14px;
           font-weight: 900;
           text-align: center;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .chapter-link:hover {
@@ -550,6 +550,7 @@ export default function SecondePage() {
         }
       `}</style>
 
+      <a className="taste-skip" href="#main-content">Aller au contenu</a>
       <header className="header">
         <nav className="nav">
           <Link href="/" className="brand">
@@ -573,7 +574,7 @@ export default function SecondePage() {
         </nav>
       </header>
 
-      <div className="container">
+      <div className="container" id="main-content" tabIndex={-1}>
         <section className="hero">
           <div>
             <div className="badge">SECONDE SES · PARCOURS D’ENTRÉE</div>

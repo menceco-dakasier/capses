@@ -181,6 +181,7 @@ export default function CroissanceEconomiquePage() {
 
   return (
     <main className={styles.page}>
+      <a className="taste-skip" href="#growth-content">Aller au contenu</a>
       <header className={styles.header}>
         <div className={styles.headerInner}>
           <Link href="/" className={styles.brand}>
@@ -269,6 +270,7 @@ export default function CroissanceEconomiquePage() {
                 <button
                   key={step.id}
                   type="button"
+                  aria-pressed={active === step.id}
                   onClick={() => goTo(step.id)}
                   className={styles.stepButton + (active === step.id ? " " + styles.active : "")}
                 >
@@ -280,7 +282,7 @@ export default function CroissanceEconomiquePage() {
             </div>
           </aside>
 
-          <article className={styles.contentCard} id="growth-content">
+          <article className={styles.contentCard} id="growth-content" tabIndex={-1}>
             <div className={styles.sectionHeader}>
               <div>
                 <div className={styles.sectionKicker}>{TITLES[active].kicker}</div>
@@ -634,6 +636,7 @@ export default function CroissanceEconomiquePage() {
                               key={option}
                               type="button"
                               className={className}
+                              aria-pressed={isSelected}
                               onClick={() => setAnswers((old) => ({ ...old, [qIndex]: optionIndex }))}
                             >
                               {option}
@@ -641,7 +644,7 @@ export default function CroissanceEconomiquePage() {
                           );
                         })}
                       </div>
-                      {selected !== undefined && <div className={styles.feedback}>{item.explain}</div>}
+                      <div className={selected !== undefined ? styles.feedback : undefined} aria-live="polite" aria-atomic="true">{selected !== undefined ? `${selected === item.correct ? "Bonne réponse." : "Réponse incorrecte."} ${item.explain}` : ""}</div>
                     </div>
                   );
                 })}

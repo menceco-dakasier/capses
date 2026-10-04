@@ -166,7 +166,7 @@ export default function FormationPrixPage() {
   return (
     <main className="page" data-taste="chapter">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 
         * { box-sizing: border-box; }
 
@@ -257,7 +257,7 @@ export default function FormationPrixPage() {
           font-weight: 800;
           padding: 33px 18px 29px;
           border-bottom: 3px solid transparent;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .nav-link:hover,
@@ -348,7 +348,7 @@ export default function FormationPrixPage() {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .btn-primary {
@@ -502,7 +502,7 @@ export default function FormationPrixPage() {
           font-weight: 850;
           padding: 12px;
           border-radius: 14px;
-          transition: 0.2s ease;
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
           margin-bottom: 5px;
         }
 
@@ -766,6 +766,7 @@ export default function FormationPrixPage() {
         }
       `}</style>
 
+      <a className="taste-skip" href="#main-content">Aller au contenu</a>
       <header className="header">
         <nav className="nav">
           <Link href="/" className="brand">
@@ -789,7 +790,7 @@ export default function FormationPrixPage() {
         </nav>
       </header>
 
-      <div className="container">
+      <div className="container" id="main-content" tabIndex={-1}>
         <div className="breadcrumb">
           <Link href="/seconde">Seconde</Link>
           <span>›</span>
@@ -862,6 +863,7 @@ export default function FormationPrixPage() {
               <button
                 key={section.id}
                 type="button"
+                aria-pressed={activeSection === section.id}
                 className={activeSection === section.id ? "side-button active" : "side-button"}
                 onClick={() => setActiveSection(section.id)}
               >
