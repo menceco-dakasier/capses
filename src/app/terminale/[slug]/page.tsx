@@ -17,7 +17,7 @@ type Chapitre = {
 
 const CHAPITRES: Chapitre[] = [
   {
-    slug: "croissance",
+    slug: "croissance-economique",
     titre: "La croissance économique",
     matiere: "ECO",
     label: "Économie",
@@ -71,7 +71,7 @@ const CHAPITRES: Chapitre[] = [
     duree: "20 min",
   },
   {
-    slug: "travail-emploi",
+    slug: "mutations-travail-emploi",
     titre: "Travail, emploi, chômage",
     matiere: "SOCIO",
     label: "Sociologie",
@@ -768,7 +768,7 @@ export default function Home() {
             <Link href="#chapitres" className="nav-link">Terminale</Link>
             <Link href="/premiere" className="nav-link">Première</Link>
             <Link href="/seconde" className="nav-link">Seconde</Link>
-            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
 

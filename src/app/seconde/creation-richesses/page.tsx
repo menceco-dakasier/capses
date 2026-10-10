@@ -841,7 +841,7 @@ export default function CreationRichessesPage() {
             <Link href="/terminale" className="nav-link">Terminale</Link>
             <Link href="/premiere" className="nav-link">Première</Link>
             <Link href="/seconde" className="nav-link active">Seconde</Link>
-            <Link href="/methodologie" className="nav-link">Méthodes</Link>
+            <Link href="/methodes" className="nav-link">Méthodes</Link>
             <Link href="/espace-eleves" className="nav-link">Mon espace</Link>
           </div>
         </nav>
