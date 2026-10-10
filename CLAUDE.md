@@ -35,7 +35,7 @@ Pour un nouveau chapitre, copier ces composants depuis un chapitre existant
 (par exemple `src/app/terminale/chomage/page.tsx`).
 
 ### Fichiers hors application
-`page.tsx` à la racine, `capses-correctifs-croissance.patch` et `Claude outputs/` ne sont pas servis par Next.js.
+`capses-correctifs-croissance.patch` et `Claude outputs/` ne sont pas servis par Next.js.
 
 ## Conventions
 - En début de séance, toujours lancer git pull avant de modifier quoi que ce soit.
