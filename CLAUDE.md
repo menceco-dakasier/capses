@@ -38,6 +38,7 @@ Pour un nouveau chapitre, copier ces composants depuis un chapitre existant
 `page.tsx` à la racine, `capses-correctifs-croissance.patch` et `Claude outputs/` ne sont pas servis par Next.js.
 
 ## Conventions
+- En début de séance, toujours lancer git pull avant de modifier quoi que ce soit.
 - Environnement Windows + PowerShell : jamais de && ; une commande par ligne ; New-Item avant tout Copy-Item vers un dossier inexistant.
 - Messages de commit sans accents.
 - Styles inline et hook useIsMobile() pour le responsive ; chaque page doit fonctionner en largeur téléphone.
