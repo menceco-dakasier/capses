@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { LevelFilters } from "../level-filters";
 import { TasteMobileMenu } from "../taste-mobile-menu";
 
 const CHAPITRES = [
   {
     numero: "Chapitre 1",
+    domaine: "Introduction",
     titre: "Comment les économistes, les sociologues et les politistes raisonnent-ils et travaillent-ils ?",
     type: "Vidéo courte",
     description:
@@ -16,6 +21,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 2",
+    domaine: "Science économique",
     titre: "Comment crée-t-on des richesses et comment les mesure-t-on ?",
     type: "Chapitre complet",
     description:
@@ -28,6 +34,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 3",
+    domaine: "Science économique",
     titre: "Comment se forment les prix sur un marché ?",
     type: "Chapitre complet",
     description:
@@ -40,6 +47,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 4",
+    domaine: "Sociologie et science politique",
     titre: "Comment devenons-nous des acteurs sociaux ?",
     type: "Sociologie",
     description: "Socialisation, famille, école, médias et groupes de pairs ; différences selon le milieu social et le genre.",
@@ -51,6 +59,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 5",
+    domaine: "Sociologie et science politique",
     titre: "Comment s’organise la vie politique ?",
     type: "Science politique",
     description: "Pouvoir politique, institutions de la Ve République, séparation des pouvoirs, modes de scrutin et acteurs de la vie politique.",
@@ -62,6 +71,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 6",
+    domaine: "Regards croisés",
     titre: "Quelles relations entre le diplôme, l’emploi et le salaire ?",
     type: "Regards croisés",
     description: "Poursuite d’études, qualification, accès à l’emploi, différences de salaires et inégalités d’accès aux formations.",
@@ -74,6 +84,8 @@ const CHAPITRES = [
 ];
 
 export default function SecondePage() {
+  const [selected, setSelected] = useState("ALL");
+  const chapters = CHAPITRES.filter(chapter => selected === "ALL" || chapter.domaine === selected);
   return (
     <main className="page" data-taste="level">
       <style>{`
@@ -651,6 +663,8 @@ export default function SecondePage() {
 
         <section id="chapitres" className="section">
           <aside className="sidebar">
+            <LevelFilters level="Seconde" selected={selected} onSelect={setSelected} options={["Introduction", "Science économique", "Sociologie et science politique", "Regards croisés"].map(label => ({id:label,label}))} />
+            <details style={{marginTop:18}}><summary style={{cursor:"pointer",minHeight:44,fontWeight:700,lineHeight:1.5}}>Organisation et format CAPSES</summary>
             <h2>Organisation</h2>
             <p>
               Les six questionnements du programme sont affichés. Deux cours sont
@@ -668,6 +682,7 @@ export default function SecondePage() {
                 <li>fiche mémo.</li>
               </ul>
             </div>
+            </details>
           </aside>
 
           <section className="chapters">
@@ -679,8 +694,9 @@ export default function SecondePage() {
               </p>
             </div>
 
+            <p aria-live="polite" style={{margin:"0 0 18px",fontSize:14,color:"#52617a"}}>{chapters.length} {chapters.length === 1 ? "chapitre affiché" : "chapitres affichés"}</p>
             <div className="chapters-grid">
-              {CHAPITRES.map((chapitre) => (
+              {chapters.map((chapitre) => (
                 <article
                   key={chapitre.titre}
                   className="chapter-card"
