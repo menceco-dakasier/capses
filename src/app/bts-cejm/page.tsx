@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LevelIllustration } from "../level-illustration";
 
 export default function BTSCEJMPage() {
   return (
@@ -19,6 +20,8 @@ export default function BTSCEJMPage() {
           background:"#fff",border:"1px solid #dfe8f4",borderRadius:24,
           padding:"42px",boxShadow:"0 22px 55px rgba(48,77,124,.08)"
         }}>
+          <div style={{display:"flex",flexWrap:"wrap",gap:20,alignItems:"center"}}>
+          <div style={{flex:"1 1 360px",minWidth:0}}>
           <div style={{
             display:"inline-block",padding:"6px 11px",borderRadius:999,
             background:"#eef4ff",color:"#2457ad",fontSize:11,fontWeight:850,
@@ -42,6 +45,9 @@ export default function BTSCEJMPage() {
             méthodes, entraînements et ressources pour les étudiants de BTS.
           </p>
 
+          </div>
+          <LevelIllustration level="bts" />
+          </div>
           <div style={{
             marginTop:28,display:"grid",
             gridTemplateColumns:"repeat(auto-fit,minmax(190px,1fr))",gap:12
