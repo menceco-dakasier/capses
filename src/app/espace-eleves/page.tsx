@@ -7,6 +7,7 @@ interface ChapterData {
   label: string;
   color: string;
   emoji: string;
+  href?: string;
 }
 
 interface Progress {
@@ -19,6 +20,7 @@ interface Scores {
 
 // ── Données chapitres ──────────────────────────────────────────────────────
 const CHAPTERS: ChapterData[] = [
+  { slug: "premiere-marche-concurrentiel", label: "Première · Marché concurrentiel", color: "#176b64", emoji: "", href: "/premiere/marche-concurrentiel" },
   { slug: "croissance-economique",    label: "Croissance économique",               color: "#5DCAA5", emoji: "📈" },
   { slug: "commerce-international",   label: "Commerce international",              color: "#7EB8FF", emoji: "🌍" },
   { slug: "chomage",                  label: "Chômage",                             color: "#F0997B", emoji: "📊" },
@@ -283,7 +285,7 @@ export default function EspaceEleves() {
                 <span style={{ fontSize: 20, flexShrink: 0 }}>{ch.emoji}</span>
 
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <a href={`/terminale/${ch.slug}`} style={{
+                  <a href={ch.href || `/terminale/${ch.slug}`} style={{
                     fontWeight: 600, fontSize: isMobile ? 13 : 15,
                     color: "#e8edf2", textDecoration: "none",
                     display: "block",
