@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LevelNavigation } from "../../level-navigation";
 import { useEffect, useRef, useState } from "react";
 import data from "./content.json";
 import resume from "./resume.json";
@@ -79,10 +80,7 @@ export default function MarcheConcurrentielPage() {
   function startQuiz() { setQuiz(draw()); setAnswers({}); setNotice(""); }
   return <main className={styles.page}>
     <a className={styles.skip} href="#chapter-content">Aller au contenu</a>
-    <header className={styles.header}><div className={styles.headerInner}>
-      <Link className={styles.brand} href="/">CAPSES</Link>
-      <nav className={styles.topLinks} aria-label="Navigation principale"><Link href="/premiere">Première</Link><Link href="/methodes">Méthodes</Link><Link href="/espace-eleves">Mon espace</Link></nav>
-    </div></header>
+    <LevelNavigation current="/premiere" />
     <div className={styles.shell}>
       <div className={styles.breadcrumb}><Link href="/">Accueil</Link> / <Link href="/premiere">Première</Link> / Marché concurrentiel</div>
       <section className={styles.chapterHero}><span className={styles.eyebrow}>Première SES · Science économique</span>
