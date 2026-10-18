@@ -1,0 +1,485 @@
+{
+  "objectifs": [
+    [
+      "Savoir que le marché est une institution et savoir distinguer les marchés selon leur degré de concurrence (de la concurrence parfaite au monopole).",
+      "Comprendre les règles qui rendent les échanges possibles et comparer les structures de marché.",
+      "La vente d’un téléphone sur une plateforme suppose un droit de propriété, un contrat et une information sur le produit."
+    ],
+    [
+      "Savoir interpréter des courbes d’offre et de demande ainsi que leurs pentes, et comprendre comment leur confrontation détermine l’équilibre sur un marché de type concurrentiel où les agents sont preneurs de prix.",
+      "Lire les axes, comparer les réactions au prix et repérer le point où les quantités offertes et demandées sont égales.",
+      "À 4 €, les vendeurs proposent 60 unités et les acheteurs en demandent 60 : le marché est à l’équilibre."
+    ],
+    [
+      "Savoir illustrer et interpréter les déplacements des courbes et sur les courbes, par différents exemples chiffrés, notamment celui de la mise en œuvre d’une taxe forfaitaire.",
+      "Distinguer une variation du prix du bien d’un changement des autres déterminants ; comprendre les deux prix créés par une taxe.",
+      "Une taxe de 3 € peut augmenter le prix payé de 2 € et diminuer le prix net reçu de 1 €."
+    ],
+    [
+      "Savoir déduire la courbe d’offre de la maximisation du profit par le producteur et comprendre qu’en situation de coût marginal croissant, le producteur produit la quantité qui permet d’égaliser le coût marginal et le prix ; savoir l’illustrer par des exemples.",
+      "Comparer le coût d’une unité supplémentaire à ce qu’elle rapporte, puis retrouver la quantité offerte à chaque prix.",
+      "Au prix de 25 €, une unité supplémentaire coûtant 22 € accroît le profit ; la suivante, coûtant 28 €, le réduit."
+    ],
+    [
+      "Comprendre les notions de surplus du producteur et du consommateur.",
+      "Calculer ce que chacun gagne par rapport au prix maximal ou minimal qu’il était prêt à accepter.",
+      "Acheter 50 € un bien pour lequel on était prêt à payer 80 € procure un surplus de 30 €."
+    ],
+    [
+      "Comprendre la notion de gains à l’échange et savoir que la somme des surplus est maximisée à l’équilibre.",
+      "Comprendre pourquoi les échanges dont le bénéfice est supérieur au coût augmentent le surplus total.",
+      "Un acheteur prêt à payer 80 € et un vendeur prêt à accepter 20 € créent ensemble un gain de 60 €, quel que soit le partage entre eux."
+    ]
+  ],
+  "notions": [
+    [
+      "Marché",
+      "Dispositif de rencontre entre une offre et une demande, permettant des échanges et la formation de prix.",
+      "Ce dispositif peut être physique ou numérique ; un prix d’équilibre n’apparaît pas automatiquement sur tout marché réel."
+    ],
+    [
+      "Institution",
+      "Ensemble de règles formelles et informelles qui organisent les interactions.",
+      "Droits de propriété, contrats, normes de sécurité et confiance encadrent les transactions ; le marché est lui-même une institution."
+    ],
+    [
+      "Droits de propriété",
+      "Droits reconnus et protégés permettant d’utiliser un bien, d’en tirer un revenu et de le céder.",
+      "La protection des droits réduit l’incertitude sur ce qui peut être vendu et par qui."
+    ],
+    [
+      "Preneur de prix",
+      "Agent dont les décisions individuelles ne modifient pas le prix du marché.",
+      "Il choisit une quantité en considérant le prix comme une donnée."
+    ],
+    [
+      "Monopole / oligopole",
+      "Un seul offreur / un petit nombre d’offreurs sur un marché défini.",
+      "Le pouvoir de marché reste contraint par la demande, les substituts et éventuellement la réglementation."
+    ],
+    [
+      "Offre / demande",
+      "Quantités que les vendeurs souhaitent vendre / les acheteurs souhaitent acheter à chaque prix.",
+      "Une courbe décrit cette relation pour des autres déterminants donnés."
+    ],
+    [
+      "Équilibre concurrentiel",
+      "Situation dans laquelle la quantité offerte égale la quantité demandée.",
+      "Son prix n’est ni nécessairement juste, ni accessible à tous."
+    ],
+    [
+      "Coût total / coût moyen",
+      "Ensemble des coûts / coût total divisé par la quantité produite.",
+      "Le coût moyen concerne l’ensemble des unités ; il se distingue du coût marginal."
+    ],
+    [
+      "Coût marginal",
+      "Accroissement du coût total entraîné par une unité supplémentaire.",
+      "Pour une unité : Cm = CT(q) − CT(q − 1). Avec plusieurs unités : ΔCT / Δq."
+    ],
+    [
+      "Profit",
+      "Recette totale moins coût total.",
+      "À prix donné : π(q) = P × q − CT(q). Maximiser le chiffre d’affaires ne suffit pas."
+    ],
+    [
+      "Taxe unitaire",
+      "Prélèvement d’un montant fixé par unité échangée, nommé taxe forfaitaire dans ce chapitre du programme.",
+      "Elle crée un écart entre prix payé et prix net reçu ; elle se distingue d’une taxe en pourcentage."
+    ],
+    [
+      "Surplus du consommateur",
+      "Différence entre disposition maximale à payer et prix payé, additionnée pour les unités achetées.",
+      "Sur le graphique : sous la demande et au-dessus du prix."
+    ],
+    [
+      "Surplus du producteur",
+      "Différence entre prix reçu et prix minimal accepté, additionnée pour les unités vendues.",
+      "Dans le modèle usuel, il couvre les coûts fixes et le profit : ce n’est pas toujours le profit."
+    ],
+    [
+      "Gains à l’échange",
+      "Somme des surplus des consommateurs et des producteurs.",
+      "Le modèle concurrentiel maximise ce total sous ses hypothèses, sans garantir une répartition égalitaire."
+    ],
+    [
+      "Élasticité-prix — complément",
+      "Rapport entre taux de variation de la quantité demandée et taux de variation du prix.",
+      "Une pente et une élasticité ne sont pas identiques : la pente dépend des unités ; l’élasticité compare des pourcentages."
+    ]
+  ],
+  "cours": [
+    [
+      "1. Pourquoi le marché est-il une institution ?",
+      [
+        "Une transaction suppose davantage que la présence d’un acheteur et d’un vendeur. Il faut pouvoir identifier le bien, garantir le droit de le vendre et préciser les engagements des parties. Les contrats, les normes, les moyens de paiement et les usages rendent les échanges plus sûrs. Les règles peuvent aussi interdire certaines transactions. Le marché est donc une construction sociale et juridique.",
+        "On peut distinguer les marchés par ce qui est échangé : biens et services, travail, capitaux. Les entreprises demandent du travail ; les travailleurs en offrent. Sur les marchés de financement, prêteurs et emprunteurs échangent des ressources financières contre une rémunération et selon des conditions variables. Ces exemples ne signifient pas que ces marchés réalisent la concurrence parfaite."
+      ]
+    ],
+    [
+      "2. Du modèle concurrentiel au monopole",
+      [
+        "Le modèle concurrentiel isole un mécanisme : chaque agent est trop petit pour influencer seul le prix. La concurrence pure et parfaite repose traditionnellement sur cinq hypothèses : atomicité, homogénéité des produits, libre entrée et sortie, transparence de l’information et mobilité des facteurs. Ce sont des hypothèses de travail, pas une description de tous les marchés ni un idéal de justice.",
+        "En monopole, un offreur unique dispose d’un pouvoir de marché ; en oligopole, un petit nombre d’offreurs tiennent compte des réactions des autres. Un faiseur de prix ne peut pas imposer n’importe quel prix et conserver n’importe quelle quantité vendue : la demande le contraint. Le détail des stratégies relève du chapitre suivant."
+      ]
+    ],
+    [
+      "3. Lire les courbes et trouver l’équilibre",
+      [
+        "Le prix figure en ordonnée et la quantité en abscisse. Toutes choses égales par ailleurs, une hausse du prix conduit généralement à réduire la quantité demandée et à accroître la quantité offerte. À échelles et unités identiques, une courbe de demande plus plate traduit une plus forte variation des quantités pour une même variation de prix. Cette comparaison ne constitue pas à elle seule un calcul d’élasticité.",
+        "Le point d’intersection donne le prix et la quantité d’équilibre. Dans l’exemple construit Qd = 100 − 10P et Qo = 20P − 20, l’égalité conduit à P = 4 et Q = 60. À 3 €, Qd = 70 et Qo = 40 : l’excès de demande vaut 30. À 5 €, Qd = 50 et Qo = 80 : l’excès d’offre vaut 30. Dans le modèle, ces déséquilibres exercent respectivement une pression à la hausse et à la baisse sur le prix."
+      ]
+    ],
+    [
+      "4. Sur une courbe ou déplacement de la courbe ?",
+      [
+        "Une variation du prix du bien modifie la quantité demandée ou offerte : on se déplace sur la courbe existante. Une variation d’un autre déterminant change les quantités souhaitées à chaque prix : c’est la courbe qui se déplace. Des goûts nouveaux ou une variation de revenu peuvent déplacer la demande ; des coûts de production ou des capacités modifiés déplacent l’offre.",
+        "À offre inchangée, une hausse de la demande augmente le prix et la quantité d’équilibre ; une baisse produit les effets inverses. À demande inchangée, une hausse de l’offre réduit le prix et augmente la quantité ; une baisse de l’offre augmente le prix et réduit la quantité. Ces conclusions supposent les courbes usuelles. Quand les deux courbes se déplacent, certains effets deviennent indéterminés sans information supplémentaire.",
+        "Deux biens sont substituables lorsqu’ils peuvent satisfaire un même besoin : une hausse du prix du riz peut accroître la demande de pâtes. Deux biens sont complémentaires lorsqu’ils sont utilisés ensemble : une hausse du prix d’un équipement peut réduire la demande de ses consommables. Le sens précis d’un effet de revenu dépend du bien ; un bien normal se définit par sa réaction au revenu, et non par sa seule réaction au prix."
+      ]
+    ],
+    [
+      "5. Du coût marginal à la courbe d’offre",
+      [
+        "Une entreprise preneuse de prix augmente son profit si la vente d’une unité supplémentaire rapporte plus qu’elle ne coûte : la recette marginale est égale au prix du marché. Quand le coût marginal croît, elle poursuit jusqu’à l’égalité Cm = P dans le modèle continu. Avec des unités indivisibles, elle retient les unités dont le coût marginal ne dépasse pas le prix et s’arrête avant la suivante plus coûteuse. Une unité pour laquelle Cm = P ne modifie pas le profit : deux quantités voisines peuvent alors être équivalentes.",
+        "Exemple construit : les coûts marginaux de huit unités sont 6, 10, 12, 15, 18, 22, 28 et 36 €. Au prix de 20 €, cinq unités sont avantageuses ; au prix de 25 €, six le sont. En répétant cette comparaison pour chaque prix, on obtient la quantité offerte. Dans le modèle usuel à court terme, l’offre correspond à la partie croissante du coût marginal située au-dessus du seuil de fermeture ; le chapitre privilégie les situations où produire est pertinent. L’offre du marché additionne les quantités des entreprises à chaque prix."
+      ]
+    ],
+    [
+      "6. Comprendre les effets d’une taxe",
+      [
+        "Une taxe unitaire de t euros crée l’écart Pc − Pp = t entre le prix payé par le consommateur et le prix net reçu par le producteur. Si le vendeur reverse la taxe, son offre exprimée en prix consommateur se déplace vers le haut de t. La demande ne change pas de courbe pour ce seul motif : on se déplace le long de celle-ci. Les quantités échangées diminuent dans le modèle usuel.",
+        "Avec Qd = 100 − 10Pc et Qo = 20Pp − 20, une taxe de 3 € implique Pp = Pc − 3. Ainsi Qo = 20Pc − 80. Le nouvel équilibre est Pc = 6 €, Pp = 3 € et Q = 40. Par rapport à 4 € avant taxe, les acheteurs supportent 2 € et les vendeurs 1 € par unité encore échangée. Les recettes publiques valent 3 × 40 = 120 €. Le partage dépend des réactions de l’offre et de la demande ; le redevable légal ne supporte pas nécessairement toute la charge."
+      ]
+    ],
+    [
+      "7. Pourquoi les deux parties gagnent-elles à échanger ?",
+      [
+        "Un acheteur prêt à payer 80 € qui achète 50 € obtient 30 € de surplus. Un vendeur prêt à accepter 20 € qui reçoit 50 € obtient aussi 30 €. Le gain total est 60 €. Un surplus mesure un avantage économique, pas nécessairement une somme encaissée. Sur des courbes continues, on additionne ces avantages sous forme d’aires ; les aires sont triangulaires seulement lorsque les courbes sont des droites adaptées.",
+        "Dans le modèle concurrentiel sans externalités ni autres défaillances, les échanges dont la disposition à payer dépasse le coût marginal augmentent le surplus total. Au-delà de l’équilibre, produire une unité supplémentaire coûterait plus qu’elle ne rapporte en satisfaction à l’acheteur. Le surplus total est donc maximal à l’équilibre. Cette efficacité ne signifie ni égalité des gains, ni satisfaction de tous les besoins.",
+        "Une taxe réduit les surplus privés. Les recettes fiscales constituent un transfert vers les administrations et doivent être comptées pour évaluer l’effet total dans ce modèle. Les échanges avantageux abandonnés créent une perte sèche. Une taxe peut toutefois améliorer le bien-être si elle corrige une externalité : ce prolongement appartient au chapitre sur les défaillances du marché."
+      ]
+    ]
+  ],
+  "erreurs": [
+    [
+      "« Le marché existe sans règles. »",
+      "Les droits, contrats et normes rendent les transactions possibles et en organisent les limites."
+    ],
+    [
+      "« Un monopole choisit librement prix et quantité. »",
+      "Il tient compte de la demande : augmenter le prix peut réduire les ventes."
+    ],
+    [
+      "« Une hausse du prix déplace la demande. »",
+      "Elle provoque un déplacement sur la courbe ; goûts ou revenu peuvent déplacer la courbe."
+    ],
+    [
+      "« Pente et élasticité sont identiques. »",
+      "La pente compare des variations en unités ; l’élasticité compare des taux de variation."
+    ],
+    [
+      "« Le producteur maximise le chiffre d’affaires. »",
+      "Il maximise le profit : recette totale moins coût total."
+    ],
+    [
+      "« Cm = P garantit un profit positif. »",
+      "Cette règle détermine une quantité optimale dans le cadre retenu ; il faut aussi considérer l’ensemble des coûts."
+    ],
+    [
+      "« Le surplus du producteur est toujours son profit. »",
+      "Avec des coûts fixes, le surplus du producteur couvre coûts fixes et profit."
+    ],
+    [
+      "« Taxe de 3 € : le consommateur paie forcément 3 € de plus. »",
+      "Les réactions de l’offre et de la demande déterminent le partage ; ici +2 € pour l’acheteur et −1 € net pour le vendeur."
+    ],
+    [
+      "« Une inflation plus faible signifie des prix plus bas. »",
+      "Si les prix augmentent encore, même moins vite, leur niveau continue de monter."
+    ],
+    [
+      "« L’équilibre garantit une répartition juste. »",
+      "La maximisation du surplus total est une propriété d’efficacité sous hypothèses ; elle ne garantit pas une égalité de gains."
+    ]
+  ],
+  "quiz": [
+    [
+      "Pourquoi le marché est-il une institution ?",
+      [
+        "Il repose sur des règles qui organisent les échanges.",
+        "Il existe toujours dans un bâtiment.",
+        "Il fonctionne sans droit."
+      ],
+      0,
+      "Les règles formelles et informelles sécurisent et organisent les transactions."
+    ],
+    [
+      "Être preneur de prix signifie…",
+      [
+        "Choisir seul le prix du marché.",
+        "Prendre le prix comme une donnée et choisir sa quantité.",
+        "Ne supporter aucun coût."
+      ],
+      1,
+      "L’agent individuel n’a pas d’influence sur le prix."
+    ],
+    [
+      "Un monopole comporte…",
+      [
+        "Un seul acheteur.",
+        "Un petit nombre de vendeurs.",
+        "Un seul offreur sur le marché défini."
+      ],
+      2,
+      "Le nombre d’offreurs distingue notamment monopole et oligopole."
+    ],
+    [
+      "L’atomicité désigne…",
+      [
+        "Des agents assez petits pour ne pas influencer seuls le prix.",
+        "Des produits tous différents.",
+        "Un seul vendeur dominant."
+      ],
+      0,
+      "L’atomicité concerne la taille relative et le nombre des agents."
+    ],
+    [
+      "Avec le prix en ordonnée, la demande usuelle est…",
+      [
+        "Croissante.",
+        "Décroissante.",
+        "Nécessairement verticale."
+      ],
+      1,
+      "Toutes choses égales par ailleurs, un prix plus élevé réduit généralement la quantité demandée."
+    ],
+    [
+      "À échelles identiques, une demande plus plate traduit…",
+      [
+        "Une réaction plus faible des quantités au prix.",
+        "Aucune réaction.",
+        "Une réaction plus forte des quantités pour un même écart de prix."
+      ],
+      2,
+      "La comparaison suppose les mêmes unités et échelles."
+    ],
+    [
+      "Qd = 100 − 10P et Qo = 20P − 20 : quel équilibre ?",
+      [
+        "P = 4 ; Q = 60.",
+        "P = 6 ; Q = 40.",
+        "P = 3 ; Q = 70."
+      ],
+      0,
+      "100 − 10P = 20P − 20 donne 120 = 30P, donc P = 4 et Q = 60."
+    ],
+    [
+      "À P = 3 dans cet exemple, Qd = 70 et Qo = 40. Il y a…",
+      [
+        "Un excès d’offre de 30.",
+        "Un excès de demande de 30.",
+        "Un équilibre."
+      ],
+      1,
+      "Les acheteurs demandent 30 unités de plus que ce que les vendeurs offrent."
+    ],
+    [
+      "Le prix du bien augmente, les autres déterminants restent constants :",
+      [
+        "Toute la demande se déplace.",
+        "Toute l’offre se déplace.",
+        "On se déplace sur les courbes."
+      ],
+      2,
+      "Une courbe est définie pour des autres déterminants donnés."
+    ],
+    [
+      "Une hausse des coûts de production entraîne usuellement…",
+      [
+        "Une baisse de l’offre à chaque prix.",
+        "Une hausse de l’offre à chaque prix.",
+        "Un déplacement nécessaire de la demande."
+      ],
+      0,
+      "La courbe d’offre se déplace vers la gauche ou vers le haut."
+    ],
+    [
+      "À offre inchangée, une hausse de la demande conduit à…",
+      [
+        "Prix en baisse, quantité en hausse.",
+        "Prix et quantité d’équilibre en hausse.",
+        "Prix et quantité en baisse."
+      ],
+      1,
+      "La demande se déplace vers la droite dans le modèle usuel."
+    ],
+    [
+      "À demande inchangée, une hausse de l’offre conduit à…",
+      [
+        "Prix et quantité en hausse.",
+        "Prix et quantité en baisse.",
+        "Prix en baisse et quantité en hausse."
+      ],
+      2,
+      "Le nouvel équilibre est plus bas et plus à droite."
+    ],
+    [
+      "Si CT passe de 100 à 122 € pour une unité de plus, Cm vaut…",
+      [
+        "22 €.",
+        "122 €.",
+        "100 €."
+      ],
+      0,
+      "Le coût marginal est la variation du coût total : 122 − 100."
+    ],
+    [
+      "À P = 25 €, la 6e unité coûte 22 € et la 7e 28 €. Que faire ?",
+      [
+        "Produire la 7e pour augmenter le profit.",
+        "Produire la 6e et renoncer à la 7e.",
+        "Renoncer à la 6e."
+      ],
+      1,
+      "La 6e ajoute 3 € au profit ; la 7e en retrancherait 3."
+    ],
+    [
+      "Dans le modèle continu à coût marginal croissant, la quantité optimale vérifie…",
+      [
+        "Prix = coût total.",
+        "Prix = chiffre d’affaires.",
+        "Prix = coût marginal."
+      ],
+      2,
+      "La recette marginale égale le prix pour une entreprise preneuse de prix."
+    ],
+    [
+      "Une taxe unitaire de 3 € implique…",
+      [
+        "Prix payé − prix net reçu = 3 €.",
+        "Le prix consommateur augmente forcément de 3 €.",
+        "Les vendeurs ne supportent jamais de charge."
+      ],
+      0,
+      "La taxe crée un écart entre les deux prix, pas nécessairement une hausse intégrale du prix payé."
+    ],
+    [
+      "Après la taxe de l’exemple, Pc = 6 € et Pp = 3 €. Avant, P = 4 €. La charge est…",
+      [
+        "3 € pour chaque côté.",
+        "2 € pour l’acheteur et 1 € pour le vendeur.",
+        "1 € pour l’acheteur et 2 € pour le vendeur."
+      ],
+      1,
+      "Comparer chacun des deux nouveaux prix au prix initial de 4 €."
+    ],
+    [
+      "Une taxe de 3 € sur 40 unités rapporte…",
+      [
+        "43 €.",
+        "13,33 €.",
+        "120 €."
+      ],
+      2,
+      "Recettes fiscales = taxe par unité × quantité échangée après taxe."
+    ],
+    [
+      "Prêt à payer 80 €, j’achète à 50 €. Mon surplus vaut…",
+      [
+        "30 €.",
+        "50 €.",
+        "80 €."
+      ],
+      0,
+      "Disposition à payer moins prix payé : 80 − 50."
+    ],
+    [
+      "Un vendeur prêt à accepter 20 € reçoit 50 €. Son surplus unitaire vaut…",
+      [
+        "70 €.",
+        "30 €.",
+        "20 €."
+      ],
+      1,
+      "Prix reçu moins prix minimal accepté : 50 − 20."
+    ],
+    [
+      "Dans l’échange précédent avec un acheteur prêt à payer 80 €, le gain total vaut…",
+      [
+        "100 €.",
+        "30 €.",
+        "60 €."
+      ],
+      2,
+      "30 € de surplus de chaque côté ; ou directement 80 − 20."
+    ],
+    [
+      "Le surplus total concurrentiel est maximal…",
+      [
+        "À l’équilibre, sous les hypothèses du modèle.",
+        "Lorsque tous les consommateurs paient zéro.",
+        "Uniquement si les gains sont égaux."
+      ],
+      0,
+      "Efficacité du total et égalité du partage sont deux questions différentes."
+    ],
+    [
+      "Le surplus du producteur…",
+      [
+        "Est toujours égal au profit.",
+        "Peut inclure les coûts fixes en plus du profit.",
+        "Est son chiffre d’affaires."
+      ],
+      1,
+      "Dans le modèle usuel, surplus du producteur = recette − coûts variables."
+    ],
+    [
+      "Passer de +12,2 % à +1,3 % de hausse des prix signifie…",
+      [
+        "Que les prix ont baissé de 10,9 %.",
+        "Que les quantités ont forcément augmenté.",
+        "Que les prix augmentent encore, mais moins vite."
+      ],
+      2,
+      "La désinflation est un ralentissement de la hausse des prix, pas une baisse de leur niveau."
+    ]
+  ],
+  "sources": [
+    [
+      "Éduscol — Fiche d’accompagnement Première",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/ra19lyceegspeses1eremarcheconcurrentiel1166055pdf-82776.pdf",
+      "Juin 2019. Objectifs et savoirs scientifiques ; document également fourni par ton enseignante."
+    ],
+    [
+      "Campus de l’innovation — Collège de France",
+      "https://campus-innovation-lycees.fr/comment-un-marche-concurrentiel-fonctionne-t-il/",
+      "Objectifs, cours, synthèse et ressources complémentaires du chapitre."
+    ],
+    [
+      "Melchior — Le marché comme institution",
+      "https://www.melchior.fr/cours/question-1-comment-un-marche-concurrentiel-fonctionne-t-il",
+      "Judith Leverbe : règles, institutions et diversité des marchés."
+    ],
+    [
+      "Melchior — Fonctionnement du marché",
+      "https://www.melchior.fr/cours/question-2-le-fonctionnement-d-un-marche-concurrentiel",
+      "Hypothèses de concurrence, demande, offre et équilibre."
+    ],
+    [
+      "Melchior — Déplacements et taxe",
+      "https://www.melchior.fr/cours/question-3-la-dynamique-de-l-equilibre-concurrentiel",
+      "Appui pédagogique sur les chocs d’offre et de demande."
+    ],
+    [
+      "Melchior — Gains à l’échange",
+      "https://www.melchior.fr/cours/question-4-coordination-par-le-marche-et-gains-l-echange",
+      "Coût marginal, décision du producteur et surplus."
+    ],
+    [
+      "Insee — La consommation des ménages en 2024",
+      "https://www.insee.fr/fr/statistiques/8582021",
+      "Paul-Antoine Beretti et Julia Cuvilliez, Insee Première n° 2056, 11 juin 2025. Comptes nationaux, base 2020. France."
+    ]
+  ]
+}
