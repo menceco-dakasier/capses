@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LevelIllustration } from "../level-illustration";
 
 const programme = [
   {
@@ -43,10 +44,15 @@ export default function Page() {
         </div>
       </header>
       <div style={{width:"min(1040px, calc(100% - 32px))",margin:"0 auto",padding:"44px 0 70px"}}>
+        <div style={{display:"flex",flexWrap:"wrap",gap:24,alignItems:"center",marginBottom:24}}>
+        <div style={{flex:"1 1 400px",minWidth:0}}>
         <div style={{display:"inline-flex",padding:"6px 10px",borderRadius:999,background:"#eef5ff",color:"#245cbd",fontSize:13,fontWeight:800}}>CAPSES · 2026-2027</div>
         <h1 style={{margin:"14px 0 10px",fontSize:"clamp(34px,6vw,52px)",letterSpacing:"-.04em"}}>Première SES</h1>
         <p style={{margin:"0 0 16px",color:"#52617a",fontSize:17,lineHeight:1.7,maxWidth:760}}>Retrouve les objectifs officiels, le cours, les mécanismes et des entraînements progressifs pour comprendre et réviser les SES.</p>
         <p style={{margin:"0 0 32px",color:"#52617a",fontSize:14,lineHeight:1.7}}><strong>12 chapitres au programme · 1 disponible</strong><br/>Les autres chapitres seront ouverts progressivement. Les numéros ci-dessous suivent l’ordre du programme ; ton professeur peut choisir une autre progression.</p>
+        </div>
+        <LevelIllustration level="premiere" />
+        </div>
         {programme.map(({domaine,chapitres}) => (
           <section key={domaine} aria-labelledby={`domaine-${chapitres[0].numero}`} style={{marginBottom:40}}>
             <h2 id={`domaine-${chapitres[0].numero}`} style={{margin:"0 0 18px",fontSize:"clamp(23px,4vw,28px)",lineHeight:1.3}}>{domaine}</h2>
