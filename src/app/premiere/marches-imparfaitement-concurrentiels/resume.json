@@ -1,0 +1,52 @@
+[
+  {
+    "title": "1. Comprendre les sources du pouvoir de marché",
+    "paragraphs": [
+      "Le modèle concurrentiel du chapitre précédent supposait des entreprises preneuses de prix. Dans la concurrence imparfaite, certains offreurs peuvent influencer les prix ou les conditions de vente : ils disposent d’un pouvoir de marché. Cette capacité dépend des solutions de remplacement disponibles pour leurs clients. Une entreprise ne peut pas maintenir facilement un prix élevé si les acheteurs peuvent se tourner vers de nombreux concurrents proposant des produits substituables.",
+      "Le programme distingue trois sources principales. Un nombre limité d’offreurs réduit les alternatives. Une entente coordonne des entreprises qui devraient décider indépendamment de leurs prix, quantités ou clients. Des barrières à l’entrée rendent difficile l’arrivée de nouveaux concurrents, même lorsque les entreprises en place réalisent des profits. Ces barrières peuvent provenir d’un coût d’installation élevé, d’un droit exclusif ou d’une stratégie de fermeture du marché.",
+      "Il faut relier ces sources sans les confondre. Un oligopole peut favoriser les contacts entre entreprises, mais il ne prouve pas qu’elles s’entendent. Une barrière peut protéger un pouvoir de marché sans accord entre producteurs. Enfin, un prix élevé peut aussi venir de coûts élevés : il ne suffit pas à établir une pratique anticoncurrentielle."
+    ]
+  },
+  {
+    "title": "2. Distinguer les monopoles et leurs contraintes",
+    "paragraphs": [
+      "Un monopole est l’unique offreur d’un bien sans substitut proche sur le marché considéré. Ce marché se définit par le produit et la zone géographique. Le monopole naturel s’explique par les coûts : avec des installations fixes importantes et des économies d’échelle, une seule entreprise peut servir toute la demande à un coût moyen inférieur à celui de plusieurs entreprises. Le réseau local de distribution d’eau illustre cette logique. Il faut toutefois distinguer la gestion du réseau et les autres activités du secteur.",
+      "Le monopole institutionnel repose sur un droit exclusif organisé par les pouvoirs publics. Il n’est pas défini par le caractère public de son propriétaire. Le monopole d’innovation résulte d’une avance technique, que peut protéger temporairement un brevet. Cette exclusivité vise notamment à rendre l’investissement innovant rémunérateur ; elle peut disparaître avec l’imitation, une invention concurrente ou la fin de la protection. Les trois origines ne sont pas toujours séparées : une même activité peut cumuler contraintes de réseau et exclusivité juridique.",
+      "Le monopole est faiseur de prix, mais sa demande reste décroissante. Augmenter le prix fait renoncer certains clients ; vendre davantage suppose de baisser le prix. Il choisit donc une combinaison prix-quantité compatible avec la demande, et non un prix et une quantité indépendants. Son objectif est le profit maximal, pas nécessairement le prix le plus haut ni le plus grand chiffre d’affaires."
+    ]
+  },
+  {
+    "title": "3. Expliquer la décision du monopole",
+    "paragraphs": [
+      "Le cas construit du pâtissier permet de suivre le raisonnement. La demande est P = 32 − 2Q, le coût marginal est constant à 8 € et il n’y a pas de coûts fixes. À cinq gâteaux, le prix est 22 € et la recette totale 110 €. À six gâteaux, le prix est 20 € et la recette 120 €. Le sixième ne rapporte donc que 10 € de recette supplémentaire : il est vendu 20 €, mais la baisse de 2 € sur les cinq précédents retire 10 € de recette.",
+      "C’est pourquoi, à prix unique, la recette marginale du monopole est inférieure au prix. Le producteur compare cette recette marginale au coût marginal. La sixième unité ajoute 10 € de recette pour 8 € de coût : elle augmente le profit de 2 €. La septième n’ajoute que 6 € de recette pour 8 € de coût : elle réduit le profit de 2 €. Le choix optimal est donc six gâteaux, au prix de 20 €, pour un profit de 120 − 48 = 72 €.",
+      "La représentation continue exprime le même choix avec Rm = 32 − 4Q. L’intersection Rm = Cm donne Q = 6 ; le prix se lit ensuite sur la demande et vaut 20 €. Les 8 € à l’intersection des courbes marginales ne sont pas le prix de vente. Le calcul discret de la sixième recette marginale et la lecture de la courbe continue ne se confondent pas, même s’ils donnent ici la même quantité optimale."
+    ]
+  },
+  {
+    "title": "4. Montrer pourquoi l’équilibre du monopole est inefficace",
+    "paragraphs": [
+      "Pour comparer les situations, il faut conserver la même demande et les mêmes coûts. Dans la référence concurrentielle de cet exemple, P = Cm = 8 € conduit à Q = 12. Le surplus des consommateurs est l’aire sous la demande et au-dessus du prix : (32 − 8) × 12 / 2 = 144 €. En monopole, le prix de 20 € et la quantité de 6 donnent un surplus de (32 − 20) × 6 / 2 = 36 €.",
+      "La perte des consommateurs est donc de 108 €. Mais toute cette perte ne disparaît pas pour la société : 72 € deviennent un surplus pour le producteur, ici égal au profit car aucun coût fixe n’est retenu. Il s’agit d’un transfert entre agents. Les 36 € restants ne sont reçus par personne. Le surplus total tombe de 144 € en concurrence à 108 € en monopole : la différence est la perte sèche.",
+      "Elle correspond aux échanges situés entre 6 et 12 unités. Leur valeur pour les acheteurs dépasse leur coût de production, donc ils procureraient des gains à l’échange. Ils ne sont pourtant pas réalisés, car vendre davantage imposerait au monopole une baisse de prix qui réduirait son profit. La perte sèche forme le triangle de base 12 − 6 et de hauteur 20 − 8, soit 36 €. L’inefficacité désigne cette perte de surplus total ; elle ne signifie pas que le monopole est incapable de produire ou qu’il ne réalise jamais de gains d’efficacité.",
+      "Le résultat repose sur les hypothèses du modèle. Dans un monopole naturel, plusieurs réseaux peuvent entraîner des coûts supplémentaires ; dans un monopole d’innovation, l’exclusivité peut soutenir la recherche. L’enjeu public peut donc être de réguler un monopole plutôt que de le supprimer mécaniquement."
+    ]
+  },
+  {
+    "title": "5. Comprendre l’intérêt et la fragilité des ententes",
+    "paragraphs": [
+      "Un oligopole rassemble un petit nombre d’offreurs dont les décisions sont interdépendantes. Chaque entreprise doit anticiper la réaction des autres. Une baisse de prix peut attirer des clients si les concurrents maintiennent leur prix ; si tous baissent le leur, la guerre des prix réduit les gains de chacun. Cette interdépendance stratégique explique pourquoi les entreprises peuvent souhaiter limiter la concurrence entre elles.",
+      "Le dilemme du prisonnier du chapitre donne 15 à chacune lorsque les deux prix sont élevés, 3 à chacune lorsque les deux prix sont faibles, et 20 à celle qui baisse seule son prix contre 0 pour l’autre. Pour A, le prix faible rapporte plus aussi bien lorsque B garde un prix élevé (20 au lieu de 15) que lorsque B adopte un prix faible (3 au lieu de 0). B fait le même calcul. Les deux choisissent alors le prix faible, alors que le prix élevé commun serait plus rémunérateur pour elles.",
+      "Une entente cherche à obtenir cette situation commune plus profitable, par les prix, les quotas ou le partage des marchés. Mais chacun reste tenté de dévier pour gagner davantage. La politique de clémence, sous conditions, ajoute la possibilité de révéler l’accord en échange d’une exonération de sanction. Elle fragilise la confiance entre participants. Le cartel des compotes sanctionné en 2019 illustre cette logique : Coroos, qui l’a révélé et a coopéré, a bénéficié d’une exonération totale. Tous les oligopoles ne forment cependant pas des cartels, et des prix semblables ne prouvent pas à eux seuls un accord."
+    ]
+  },
+  {
+    "title": "6. Relier la politique de la concurrence au surplus des consommateurs",
+    "paragraphs": [
+      "La politique de la concurrence vise à préserver la pression concurrentielle. Trois instruments sont centraux dans le chapitre : lutter contre les ententes illicites, sanctionner les abus de position dominante et contrôler les fusions-acquisitions concernées par le droit des concentrations. Les autorités peuvent enquêter, sanctionner, imposer des changements de pratiques ou conditionner une opération à des engagements. Une concentration peut aussi être autorisée sans conditions ou interdite selon son analyse.",
+      "Il faut distinguer les situations. La position dominante n’est pas interdite en elle-même : elle peut résulter d’une innovation ou d’une plus grande efficacité. C’est son exploitation abusive qui est visée. De même, une fusion n’est pas nécessairement une pratique anticoncurrentielle ; elle peut réduire des coûts tout en supprimant un concurrent, d’où l’examen de ses effets. L’autorisation conditionnelle du rachat de Cora et Match par Carrefour en 2025 illustre ce contrôle ; ce n’est pas une sanction pour entente.",
+      "Le mécanisme final doit être explicité. Préserver des concurrents ou permettre l’entrée maintient des alternatives pour les clients. Les entreprises doivent davantage tenir compte du risque de perdre des ventes si elles augmentent leurs prix. À demande inchangée, des prix plus faibles augmentent le surplus des consommateurs et peuvent rendre possibles de nouveaux échanges. Préserver le choix et l’innovation compte aussi. Une amende sert à sanctionner et dissuader : elle ne se confond pas avec une indemnisation automatique des clients.",
+      "Enfin, les écarts de prix observés ne sont pas une preuve suffisante de pratiques illicites. Les données Insee sur la Guyane en 2022 montrent des niveaux de prix différents de ceux de la France métropolitaine, pas leur cause unique. Pour expliquer ces écarts, il faut examiner la concurrence mais aussi les coûts, le transport, la fiscalité et les caractéristiques du marché. Le modèle aide à formuler un mécanisme ; les observations permettent de l’examiner sans remplacer la preuve par une simple affirmation."
+    ]
+  }
+]

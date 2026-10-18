@@ -12,7 +12,7 @@ const programme = [
     domaine: "Science économique",
     chapitres: [
       { numero: 1, titre: "Comment un marché concurrentiel fonctionne-t-il ?", href: "/premiere/marche-concurrentiel", resume: "Institutions, offre et demande, équilibre, coût marginal, taxe et gains à l’échange." },
-      { numero: 2, titre: "Comment les marchés imparfaitement concurrentiels fonctionnent-ils ?" },
+      { numero: 2, titre: "Comment les marchés imparfaitement concurrentiels fonctionnent-ils ?", href: "/premiere/marches-imparfaitement-concurrentiels", resume: "Pouvoir de marché, monopoles, oligopoles, ententes et politique de la concurrence." },
       { numero: 3, titre: "Quelles sont les principales défaillances du marché ?" },
       { numero: 4, titre: "Comment les agents économiques se financent-ils ?" },
       { numero: 5, titre: "Qu’est-ce que la monnaie et comment est-elle créée ?" },
@@ -52,7 +52,7 @@ export default function Page() {
         <div style={{display:"inline-flex",padding:"6px 10px",borderRadius:999,background:"#eef5ff",color:"#245cbd",fontSize:13,fontWeight:800}}>CAPSES · 2026-2027</div>
         <h1 style={{margin:"14px 0 10px",fontSize:"clamp(34px,6vw,52px)",letterSpacing:"-.04em"}}>Première SES</h1>
         <p style={{margin:"0 0 16px",color:"#52617a",fontSize:17,lineHeight:1.7,maxWidth:760}}>Retrouve les objectifs officiels, le cours, les mécanismes et des entraînements progressifs pour comprendre et réviser les SES.</p>
-        <p style={{margin:"0 0 32px",color:"#52617a",fontSize:14,lineHeight:1.7}}><strong>12 chapitres au programme · 1 disponible</strong><br/>Les autres chapitres seront ouverts progressivement. Les numéros ci-dessous suivent l’ordre du programme ; ton professeur peut choisir une autre progression.</p>
+        <p style={{margin:"0 0 32px",color:"#52617a",fontSize:14,lineHeight:1.7}}><strong>12 chapitres au programme · 2 disponibles</strong><br/>Les autres chapitres seront ouverts progressivement. Les numéros ci-dessous suivent l’ordre du programme ; ton professeur peut choisir une autre progression.</p>
         </div>
         <LevelIllustration level="premiere" />
         </div>

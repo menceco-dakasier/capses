@@ -20,6 +20,7 @@ interface Scores {
 
 // ── Données chapitres ──────────────────────────────────────────────────────
 const CHAPTERS: ChapterData[] = [
+  { slug: "premiere-marches-imparfaits", label: "Première · Marchés imparfaitement concurrentiels", color: "#176b64", emoji: "", href: "/premiere/marches-imparfaitement-concurrentiels" },
   { slug: "premiere-marche-concurrentiel", label: "Première · Marché concurrentiel", color: "#176b64", emoji: "", href: "/premiere/marche-concurrentiel" },
   { slug: "croissance-economique",    label: "Croissance économique",               color: "#5DCAA5", emoji: "📈" },
   { slug: "commerce-international",   label: "Commerce international",              color: "#7EB8FF", emoji: "🌍" },

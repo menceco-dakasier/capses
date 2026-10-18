@@ -1,0 +1,618 @@
+{
+  "objectifs": [
+    [
+      "Comprendre, à l’aide d’exemples, les principales sources du pouvoir de marché (nombre limité d’offreurs, ententes et barrières à l’entrée).",
+      "Expliquer pourquoi une entreprise peut influencer le prix quand la pression de ses concurrents est limitée.",
+      "Un réseau coûteux à construire peut décourager l’arrivée d’un concurrent."
+    ],
+    [
+      "Comprendre que le monopole est faiseur de prix et être capable de donner des exemples de monopoles (monopole naturel, institutionnel et d’innovation).",
+      "Distinguer les origines du monopole et comprendre que son prix reste contraint par la demande.",
+      "Le réseau local d’eau illustre les économies d’échelle ; un brevet protège temporairement une invention."
+    ],
+    [
+      "Comprendre, à l’aide de représentations graphiques et/ou d’un exemple chiffré, que l’équilibre du monopole n’est pas efficace.",
+      "Comparer prix, quantité et surplus dans un même marché avec et sans monopole.",
+      "Dans notre exemple construit, le monopole vend 6 gâteaux à 20 €, contre 12 à 8 € en concurrence."
+    ],
+    [
+      "Comprendre ce qu’est un oligopole et, à l’aide du dilemme du prisonnier, pourquoi les firmes en oligopole ont intérêt à former des ententes.",
+      "Comparer les gains des entreprises selon leurs décisions et celles de leurs concurrentes.",
+      "Deux entreprises gagneraient chacune 15 en maintenant un prix élevé, mais chacune peut gagner 20 en baissant seule son prix."
+    ],
+    [
+      "Comprendre que la politique de la concurrence, en régulant les fusions-acquisitions et en luttant contre les ententes illicites et les abus de position dominante, augmente le surplus du consommateur.",
+      "Relier chaque intervention à la pratique visée et au gain attendu pour les acheteurs.",
+      "Une cession de magasins peut préserver des concurrents locaux après une acquisition."
+    ]
+  ],
+  "notions": [
+    [
+      "Pouvoir de marché",
+      "Capacité d’un agent à influencer le prix ou les conditions de l’échange.",
+      "Il dépend notamment des alternatives disponibles pour les clients. Il n’autorise pas à fixer n’importe quel prix."
+    ],
+    [
+      "Barrière à l’entrée",
+      "Obstacle qui rend l’arrivée de nouveaux concurrents difficile ou coûteuse.",
+      "Elle peut être économique, juridique ou stratégique : réseau coûteux, droit exclusif, verrouillage de l’accès à un équipement."
+    ],
+    [
+      "Monopole",
+      "Marché sur lequel un seul offreur propose un bien sans substitut proche.",
+      "Il faut préciser le produit et la zone géographique. Une marque connue n’est pas automatiquement un monopole."
+    ],
+    [
+      "Monopole naturel",
+      "Situation où une seule entreprise peut servir la demande à moindre coût que plusieurs entreprises.",
+      "Des coûts fixes importants et des économies d’échelle peuvent rendre la duplication d’un réseau inefficace."
+    ],
+    [
+      "Monopole institutionnel",
+      "Monopole reposant sur un droit exclusif accordé ou protégé par une autorité publique.",
+      "Son origine est une règle ; il ne se confond pas avec toute entreprise publique."
+    ],
+    [
+      "Monopole d’innovation",
+      "Exclusivité liée à une innovation que les concurrents ne maîtrisent pas encore.",
+      "Le brevet peut la protéger temporairement ; des innovations concurrentes peuvent la remettre en cause."
+    ],
+    [
+      "Économies d’échelle",
+      "Baisse du coût moyen lorsque le volume produit augmente.",
+      "Un coût fixe de réseau se répartit entre davantage d’unités. Ce n’est pas la même chose que le coût marginal."
+    ],
+    [
+      "Recette marginale",
+      "Variation de la recette totale provoquée par la vente d’une unité supplémentaire.",
+      "En monopole à prix unique, baisser le prix pour vendre plus réduit aussi la recette tirée des unités déjà vendues."
+    ],
+    [
+      "Perte sèche",
+      "Diminution du surplus total liée à des échanges avantageux qui ne se réalisent plus.",
+      "Un transfert des consommateurs au producteur n’est pas à lui seul une perte sèche."
+    ],
+    [
+      "Oligopole",
+      "Marché dominé par un petit nombre d’offreurs.",
+      "Leurs décisions sont interdépendantes : une baisse de prix peut susciter une réaction des autres."
+    ],
+    [
+      "Entente et cartel",
+      "Coordination entre entreprises ; un cartel coordonne notamment prix, quantités ou partage des marchés entre concurrents.",
+      "Les ententes anticoncurrentielles sont interdites. Des prix identiques ne suffisent pas à prouver un accord."
+    ],
+    [
+      "Dilemme du prisonnier",
+      "Jeu où les choix individuellement avantageux conduisent à un résultat moins favorable aux deux joueurs qu’une coopération.",
+      "Il explique à la fois l’intérêt commun d’un accord et la tentation individuelle de le rompre."
+    ],
+    [
+      "Position dominante et abus",
+      "Une position dominante donne une puissance économique importante sur un marché ; l’abus est l’usage anticoncurrentiel de cette puissance.",
+      "La réussite ou une forte part de marché ne sont pas interdites en elles-mêmes."
+    ],
+    [
+      "Fusion-acquisition",
+      "Opération regroupant des entreprises ou donnant à une entreprise le contrôle d’une autre.",
+      "Elle peut générer des gains d’efficacité tout en réduisant la pression concurrentielle."
+    ],
+    [
+      "Politique de la concurrence",
+      "Interventions publiques destinées à préserver un fonctionnement concurrentiel des marchés.",
+      "Contrôle des concentrations, lutte contre les ententes illicites et les abus ; en France, rôle de l’Autorité de la concurrence."
+    ],
+    [
+      "Clémence",
+      "Possibilité d’exonération totale ou partielle de sanction pour une entreprise qui révèle une entente et coopère dans les conditions requises.",
+      "Elle rend la confiance entre membres d’un cartel plus fragile. Ce n’est pas une amnistie automatique."
+    ]
+  ],
+  "cours": [
+    {
+      "title": "I. Des concurrents moins nombreux, un pouvoir de marché plus grand",
+      "paragraphs": [
+        "Le chapitre 1 étudiait des entreprises preneuses de prix. Ici, certaines entreprises peuvent influencer le prix : elles disposent d’un pouvoir de marché. Quand les clients ont peu d’alternatives, une hausse de prix ne fait pas disparaître toute la demande. Cependant, le pouvoir de marché reste limité par le budget des clients, les substituts et l’arrivée possible de nouveaux concurrents.",
+        "Trois sources doivent être reliées. Un nombre limité d’offreurs réduit les possibilités de changer de fournisseur. Une entente remplace une partie des décisions indépendantes par une coordination. Enfin, des barrières à l’entrée empêchent que les profits attirent rapidement de nouveaux concurrents. La concentration seule ne prouve pourtant pas une entente : des entreprises peu nombreuses peuvent se concurrencer fortement.",
+        "Les barrières peuvent venir de coûts fixes très élevés, de l’accès à une ressource, d’un droit exclusif ou de stratégies visant à fermer le marché. Pour un réseau local de distribution d’eau, construire une deuxième infrastructure peut être très coûteux. Le mécanisme tient aux coûts et à la taille du marché ; le nombre de canalisations n’est pas, à lui seul, une preuve suffisante de monopole naturel."
+      ]
+    },
+    {
+      "title": "II. Trois origines de monopole, un choix sous contrainte",
+      "paragraphs": [
+        "Le monopole naturel repose sur les économies d’échelle : répartir les coûts fixes sur une plus grande production réduit le coût moyen. Une seule entreprise peut alors desservir le marché à moindre coût que plusieurs réseaux concurrents. Le monopole institutionnel résulte d’un droit exclusif organisé par les pouvoirs publics, par exemple une concession exclusive. Le monopole d’innovation provient d’une avance technique, éventuellement protégée par un brevet. Ces origines peuvent se combiner : un même réseau peut être naturel par ses coûts et institutionnel par son contrat.",
+        "Faiseur de prix ne signifie pas libre de tout choisir. Le monopole fait face à une demande décroissante : un prix plus élevé réduit la quantité vendue. Il choisit donc une combinaison prix-quantité compatible avec cette demande, et cherche le profit maximal. Le prix le plus élevé possible ne procure pas nécessairement le plus grand profit : si personne n’achète, la recette est nulle.",
+        "Pour augmenter ses ventes à prix unique, il doit diminuer le prix sur toutes les unités. La recette de l’unité supplémentaire est ainsi inférieure à son prix. Le monopole compare cette recette marginale au coût marginal. Il accroît sa production tant que l’unité supplémentaire ajoute davantage à sa recette qu’à son coût."
+      ]
+    },
+    {
+      "title": "III. Le monopole réduit les échanges avantageux",
+      "paragraphs": [
+        "Reprenons le cas construit du pâtissier : P = 32 − 2Q, coût marginal constant de 8 € et aucun coût fixe. En concurrence, le prix égal au coût marginal donne 8 € et 12 gâteaux. Le surplus des consommateurs vaut (32 − 8) × 12 / 2 = 144 €. Dans la représentation continue, le monopole maximise son profit à Q = 6, puis lit sur la demande P = 20 €. Son profit atteint (20 − 8) × 6 = 72 €.",
+        "Le surplus des consommateurs tombe à (32 − 20) × 6 / 2 = 36 €. Leur perte de 108 € comprend 72 € transférés au producteur et 36 € perdus pour l’ensemble des agents. Ces derniers correspondent aux échanges entre 6 et 12 unités, dont la disposition à payer dépasse le coût marginal mais qui ne se réalisent plus. Le surplus total passe de 144 à 108 €.",
+        "L’inefficacité signifie ici une perte de gains à l’échange, dans un modèle à demande et coûts inchangés, sans externalité. Ce résultat ne signifie ni que tout monopole fait toujours un bénéfice, ni qu’il faut multiplier des réseaux identiques. L’innovation et les économies d’échelle peuvent justifier d’autres formes d’encadrement."
+      ]
+    },
+    {
+      "title": "IV. L’oligopole incite à l’entente, mais l’accord est fragile",
+      "paragraphs": [
+        "Dans un oligopole, chaque entreprise tient compte des réactions des autres. Si elle baisse seule son prix, elle peut attirer des clients ; si toutes l’imitent, chacune retrouve une clientèle à un prix moins rémunérateur. La comparaison des gains du dilemme du prisonnier permet de comprendre ce conflit entre intérêt individuel et intérêt collectif des entreprises.",
+        "Dans le jeu du chapitre, deux prix élevés rapportent 15 à chaque entreprise ; deux prix faibles rapportent 3 à chacune. Mais une entreprise qui baisse seule son prix gagne 20, tandis que l’autre obtient 0. Pour chacune, le prix faible est donc la meilleure réponse, quelle que soit la décision adverse. Sans coordination, le résultat est (3 ; 3). Les entreprises voudraient atteindre (15 ; 15), tout en ayant chacune intérêt à dévier de cet accord.",
+        "Une entente peut porter sur les prix, les volumes ou la répartition des clients. Elle tend à réduire la pression concurrentielle et les gains des consommateurs. Le cartel des compotes, sanctionné par l’Autorité de la concurrence en 2019, constitue un exemple réel. La possibilité qu’un participant dénonce l’accord et bénéficie de la clémence en accroît la fragilité."
+      ]
+    },
+    {
+      "title": "V. Préserver la concurrence pour protéger les acheteurs",
+      "paragraphs": [
+        "La politique de la concurrence agit par trois voies centrales. Elle lutte contre les ententes illicites, sanctionne les abus de position dominante et contrôle les fusions-acquisitions qui relèvent de ses compétences. Une concentration peut être autorisée, subordonnée à des engagements ou interdite. Le contrôle tient compte des risques concurrentiels et des gains d’efficacité, sur les marchés concernés.",
+        "La distinction entre position dominante et abus est essentielle. Une entreprise peut devenir dominante grâce à une innovation ou à son efficacité. L’interdiction porte sur des pratiques abusives, par exemple certaines stratégies d’éviction, et non sur la réussite en elle-même. De même, une acquisition n’est pas automatiquement une infraction : son contrôle vise à prévenir les risques.",
+        "Le raisonnement économique attendu relie l’instrument au surplus : préserver des alternatives rend plus difficile une hausse de prix sans perte de clients ; les consommateurs peuvent payer moins, disposer d’un choix plus large et réaliser davantage d’échanges avantageux. Ce mécanisme est un objectif de l’intervention, pas une garantie que toute décision entraîne immédiatement une baisse observable de tous les prix."
+      ]
+    }
+  ],
+  "mechanismes": [
+    {
+      "title": "1. Des barrières à l’entrée au pouvoir de marché",
+      "paragraphs": [
+        "Départ : une entreprise réalise un profit sur un marché. Si l’entrée est facile, ce profit peut attirer des concurrents : davantage d’alternatives limitent sa capacité à maintenir un prix élevé. Avec une barrière, cette réaction est freinée. Il faut donc expliquer non seulement le prix, mais aussi pourquoi de nouveaux offreurs ne viennent pas le concurrencer.",
+        "Cas du réseau : le coût d’installation existe avant la première vente. En répartissant ce coût sur plus de clients, l’entreprise réduit son coût moyen. Un entrant devrait supporter un investissement comparable pour une clientèle initialement plus petite. Son coût moyen pourrait être plus élevé : la menace d’entrée devient moins forte. Cela explique un monopole naturel quand un seul réseau dessert tout le marché à moindre coût.",
+        "Limite : le coût moyen décroissant ne signifie pas que le coût marginal est nul, ni que toute grande entreprise est un monopole naturel. Il faut vérifier la demande, la technologie et la possibilité de substituts. Une régulation des tarifs ou de la qualité peut encadrer la puissance du gestionnaire."
+      ]
+    },
+    {
+      "title": "2. Lire la demande : pourquoi la recette marginale est-elle plus basse ?",
+      "paragraphs": [
+        "Sur le graphique, la quantité de gâteaux est en abscisse et le prix en ordonnée. La demande D représente P = 32 − 2Q. Chaque point indique le prix maximal auquel le monopole peut vendre la quantité correspondante. Elle descend : vendre davantage exige de réduire le prix, à caractéristiques et revenus inchangés. Il s’agit d’un déplacement sur la demande, pas d’un déplacement de celle-ci.",
+        "À Q = 5, le prix est 22 € et la recette totale 110 €. À Q = 6, le prix devient 20 € et la recette totale 120 €. Le sixième gâteau n’ajoute donc que 10 € de recette, bien qu’il se vende 20 €. Pourquoi ? Les cinq premiers sont maintenant vendus 2 € moins cher, ce qui fait perdre 10 € sur ces ventes. Le gain net de recette est 20 − 10 = 10 €.",
+        "Dans le modèle continu, RT = 32Q − 2Q² et Rm = 32 − 4Q. La recette marginale descend plus vite que la demande, car elle tient compte de la baisse du prix sur les ventes précédentes. La formule sert à tracer la courbe ; le calcul de recette totale suffit pour comprendre le mécanisme sans dériver une fonction."
+      ]
+    },
+    {
+      "title": "3. Trouver la quantité, puis seulement le prix du monopole",
+      "paragraphs": [
+        "Commence par la courbe de coût marginal Cm, horizontale à 8 € dans cet exemple : chaque gâteau supplémentaire coûte 8 €. Cherche son intersection avec Rm, et non avec la demande. On résout 32 − 4Q = 8, soit Qm = 6. Avant ce point, Rm dépasse Cm : produire un peu plus accroît le profit. Après, le coût de l’unité supplémentaire dépasse ce qu’elle ajoute à la recette : le profit diminue.",
+        "Depuis Qm = 6 sur l’axe horizontal, remonte jusqu’à la demande D. Le prix lu est Pm = 32 − 2 × 6 = 20 €. Les 8 € à l’intersection Rm-Cm sont un coût et une recette marginaux, pas le prix facturé. Le monopole ne choisit pas séparément un prix de 20 € et n’importe quelle quantité : le couple (6 ; 20) doit appartenir à la demande.",
+        "Avec des gâteaux indivisibles, compare plutôt deux lignes du tableau. La sixième unité ajoute 10 € de recette et 8 € de coût : le profit augmente de 2 €. La septième ajoute 6 € de recette et 8 € de coût : le profit baisse de 2 €. Six est donc aussi la quantité optimale dans ce tableau. Il ne faut pas confondre le calcul discret de la sixième recette marginale (10 €) et la courbe continue à Q = 6 (8 €)."
+      ]
+    },
+    {
+      "title": "4. Comparer les équilibres sans changer de marché",
+      "paragraphs": [
+        "Pour la référence concurrentielle, conserve exactement la même demande et le même coût marginal. Le prix concurrentiel égale ici Cm = 8 €. L’intersection entre D et Cm donne Qc = 12. Le monopole retient Qm = 6 et Pm = 20 € : il restreint les ventes pour éviter la baisse de prix qui accompagnerait un volume plus élevé.",
+        "Le point concurrentiel à 12 unités n’est pas la décision optimale du monopole. S’il vendait 12 gâteaux à 8 €, sa recette serait 96 € et son coût total également 96 €, soit un profit nul. À 6 gâteaux et 20 €, il reçoit 120 € et supporte 48 € de coût : son profit est 72 €. Cet arbitrage explique pourquoi la simple capacité de produire davantage ne suffit pas à le convaincre.",
+        "La comparaison porte sur l’efficacité des échanges à coûts donnés. Elle ne démontre pas que la concurrence aurait les mêmes coûts dans un véritable monopole naturel : dupliquer les installations modifierait alors la comparaison."
+      ]
+    },
+    {
+      "title": "5. Les aires de surplus : transfert ou perte sèche ?",
+      "paragraphs": [
+        "Sous la demande et au-dessus du prix de 20 €, le triangle représente le surplus des consommateurs en monopole : (32 − 20) × 6 / 2 = 36 €. Le rectangle entre 8 et 20 € pour les six unités vendues mesure le surplus du producteur : (20 − 8) × 6 = 72 €. Ici, sans coûts fixes, il égale le profit. Avec des coûts fixes, il faudrait les retrancher pour obtenir le profit.",
+        "En concurrence, le triangle compris entre la demande et le prix de 8 € jusqu’à 12 unités vaut 144 €. Les consommateurs perdent donc 108 € dans le passage au monopole. Le rectangle de 72 € est reçu par le producteur : c’est un transfert. Le triangle entre 6 et 12 unités, la demande et Cm vaut (12 − 6) × (20 − 8) / 2 = 36 € : personne ne le reçoit.",
+        "Pour expliquer ce dernier triangle, prends une unité entre 6 et 12. Sa disposition à payer dépasse 8 €, donc elle pourrait procurer un gain total positif. Pourtant, le monopole ne la vend pas, car la baisse du prix nécessaire réduirait son profit. La perte sèche mesure ces échanges abandonnés ; elle ne correspond ni à toute la baisse du surplus des consommateurs, ni au profit de l’entreprise."
+      ]
+    },
+    {
+      "title": "6. Lire le dilemme du prisonnier case par case",
+      "paragraphs": [
+        "La ligne est le choix de A, la colonne celui de B. Dans chaque case, le premier nombre est le gain de A, le second celui de B. Ce sont des gains construits en millions d’euros ; ils ne décrivent pas une affaire réelle. Ne compare pas les deux nombres d’une case pour déterminer la meilleure décision d’un joueur : compare son propre gain entre les choix qui lui sont ouverts.",
+        "Si B maintient un prix élevé, A compare 15 (prix élevé) et 20 (prix faible) : A préfère le prix faible. Si B choisit un prix faible, A compare 0 et 3 : A préfère encore le prix faible. Pour B, le même raisonnement s’effectue dans chaque ligne : 20 dépasse 15 si A garde un prix élevé, et 3 dépasse 0 si A choisit un prix faible.",
+        "Le résultat des meilleures réponses est donc (3 ; 3), alors que (15 ; 15) serait meilleur pour les deux entreprises. L’entente vise ce résultat plus rémunérateur en limitant la concurrence. Mais, quand les deux prix sont élevés, chaque participant voudrait baisser seul le sien pour gagner 20 : l’accord reste fragile. Les contrôles, les sanctions et la clémence modifient les incitations ; le jeu simplifié n’impose pas le même résultat à tous les oligopoles réels."
+      ]
+    },
+    {
+      "title": "7. Relier une intervention publique au surplus",
+      "paragraphs": [
+        "Identifie d’abord la situation. Pour une entente, l’accord remplace des décisions indépendantes : le démanteler rétablit une pression concurrentielle. Pour un abus, l’intervention empêche qu’une entreprise dominante ferme artificiellement l’accès au marché. Pour une fusion-acquisition, il s’agit de prévoir l’effet du regroupement sur les possibilités de concurrence.",
+        "Ensuite, précise l’instrument : enquête et sanction, injonction de modifier des pratiques, ou engagements tels qu’une cession d’actifs dans une concentration. Enfin, décris le lien attendu : davantage d’alternatives rend les acheteurs moins captifs ; une hausse de prix devient plus risquée pour l’entreprise ; à demande inchangée, une baisse de prix accroît le surplus des consommateurs et peut permettre plus d’échanges.",
+        "Une amende ne devient pas automatiquement un remboursement aux clients : elle sanctionne et dissuade. De même, contrôler une concentration ne revient pas à punir une entreprise pour sa taille. L’analyse doit porter sur le mécanisme concurrentiel et sur le marché pertinent."
+      ]
+    }
+  ],
+  "erreurs": [
+    [
+      "« Faiseur de prix signifie qu’il peut tout imposer. »",
+      "La demande contraint les ventes. Un prix plus élevé fait renoncer des acheteurs ; le profit dépend aussi du volume et des coûts."
+    ],
+    [
+      "« Le monopole choisit P = Cm. »",
+      "Dans le modèle étudié, il choisit la quantité à partir de Rm = Cm, puis lit le prix sur la demande. P = Cm fournit la référence concurrentielle."
+    ],
+    [
+      "« Recette marginale et prix sont identiques. »",
+      "À prix unique, vendre davantage suppose de réduire le prix des unités précédentes : la recette marginale est inférieure au prix."
+    ],
+    [
+      "« Toute la perte des consommateurs est une perte sèche. »",
+      "Dans l’exemple, sur 108 € perdus, 72 € sont transférés au producteur et 36 € constituent la perte sèche."
+    ],
+    [
+      "« Le surplus du producteur est toujours son profit. »",
+      "Il faut retrancher les coûts fixes pour obtenir le profit. L’égalité n’est vraie ici que parce qu’ils sont supposés nuls."
+    ],
+    [
+      "« Oligopole signifie entente. »",
+      "Un petit nombre d’entreprises peut se concurrencer vivement. Le dilemme explique une incitation à l’entente, pas une certitude."
+    ],
+    [
+      "« Des prix identiques prouvent un cartel. »",
+      "Ils peuvent résulter de coûts et de réactions semblables. Établir une entente exige des éléments de coordination."
+    ],
+    [
+      "« Une position dominante est illégale. »",
+      "C’est l’abus qui est interdit, pas la puissance économique en elle-même."
+    ],
+    [
+      "« Toutes les fusions sont interdites. »",
+      "Une opération contrôlée peut être autorisée, autorisée sous conditions ou interdite."
+    ],
+    [
+      "« Un écart de prix de 39 % est une inflation de 39 %. »",
+      "L’Insee compare ici des territoires en 2022. L’inflation compare des prix dans le temps."
+    ],
+    [
+      "« Le monopole naturel est une entreprise publique. »",
+      "Il est défini par une structure de coûts. La propriété publique ou privée est une autre question."
+    ],
+    [
+      "« Tous les accords entre entreprises sont illicites. »",
+      "Le chapitre vise les ententes anticoncurrentielles. Une coopération n’est pas automatiquement interdite."
+    ]
+  ],
+  "quiz": [
+    [
+      "Qu’est-ce que le pouvoir de marché ?",
+      [
+        "Influencer le prix ou les conditions de vente",
+        "Fixer le revenu des ménages",
+        "Produire sans coût"
+      ],
+      0,
+      "Il dépend notamment de la pression concurrentielle et des alternatives des clients."
+    ],
+    [
+      "Quelle situation constitue une barrière à l’entrée ?",
+      [
+        "Des clients parfaitement informés",
+        "Un réseau très coûteux à construire",
+        "Une absence de coûts fixes"
+      ],
+      1,
+      "Le coût initial peut rendre l’entrée difficile et protéger les entreprises installées."
+    ],
+    [
+      "Un monopole naturel s’explique d’abord par…",
+      [
+        "La nationalité de l’entreprise",
+        "Une entente secrète",
+        "Les coûts et les économies d’échelle"
+      ],
+      2,
+      "Un seul producteur peut servir la demande à moindre coût que plusieurs."
+    ],
+    [
+      "Une concession exclusive illustre principalement…",
+      [
+        "Un monopole institutionnel",
+        "Une concurrence pure et parfaite",
+        "Une inflation"
+      ],
+      0,
+      "L’exclusivité repose sur une règle ou une décision publique."
+    ],
+    [
+      "Pourquoi un monopole d’innovation peut-il être temporaire ?",
+      [
+        "Les coûts deviennent forcément nuls",
+        "L’imitation ou une innovation concurrente peut réduire son avance",
+        "Toute innovation est interdite après un an"
+      ],
+      1,
+      "La protection et l’avance technique ne sont pas nécessairement durables."
+    ],
+    [
+      "Le monopole faiseur de prix…",
+      [
+        "Choisit prix et quantité sans contrainte",
+        "Est obligé de produire le maximum",
+        "Reste contraint par la demande"
+      ],
+      2,
+      "À demande décroissante, un prix plus haut réduit la quantité vendue."
+    ],
+    [
+      "À Q = 5, P = 22 ; à Q = 6, P = 20. La recette marginale discrète de la sixième unité vaut…",
+      [
+        "10 €",
+        "20 €",
+        "120 €"
+      ],
+      0,
+      "La recette totale passe de 110 à 120 € : elle augmente de 10 €."
+    ],
+    [
+      "Pourquoi Rm est-elle inférieure au prix en monopole à prix unique ?",
+      [
+        "Les clients paient des prix tous différents",
+        "La baisse du prix touche aussi les unités précédentes",
+        "Le coût marginal est forcément nul"
+      ],
+      1,
+      "La recette gagnée sur la nouvelle unité est réduite par la baisse de recette sur les autres ventes."
+    ],
+    [
+      "Dans le modèle continu, le monopole cherche la quantité où…",
+      [
+        "P = 0",
+        "La demande est maximale",
+        "Rm = Cm"
+      ],
+      2,
+      "Le profit cesse d’augmenter lorsque recette et coût marginaux s’égalisent, sous les conditions de l’exemple."
+    ],
+    [
+      "Après avoir trouvé Qm = 6, où lit-on le prix ?",
+      [
+        "Sur la demande",
+        "Sur l’axe des quantités seulement",
+        "À l’intersection Rm-Cm uniquement"
+      ],
+      0,
+      "La demande donne le prix auquel les six unités peuvent être vendues : 20 €."
+    ],
+    [
+      "Avec P = 32 − 2Q et Cm = 8, la quantité concurrentielle vaut…",
+      [
+        "6",
+        "12",
+        "20"
+      ],
+      1,
+      "32 − 2Q = 8 donne Q = 12."
+    ],
+    [
+      "Le profit de 6 gâteaux à 20 €, coût unitaire 8 € sans coûts fixes, vaut…",
+      [
+        "120 €",
+        "48 €",
+        "72 €"
+      ],
+      2,
+      "Recette 120 € moins coût total 48 € : 72 €."
+    ],
+    [
+      "Le surplus des consommateurs en monopole vaut…",
+      [
+        "36 €",
+        "72 €",
+        "144 €"
+      ],
+      0,
+      "Le triangle a pour base 6 et hauteur 32 − 20 = 12 : 6 × 12 / 2 = 36 €."
+    ],
+    [
+      "La perte sèche du monopole dans le modèle vaut…",
+      [
+        "108 €",
+        "36 €",
+        "72 €"
+      ],
+      1,
+      "Le total passe de 144 € à 108 €, soit 36 € d’échanges avantageux abandonnés."
+    ],
+    [
+      "Les 72 € reçus par le producteur sont…",
+      [
+        "Toute la perte sèche",
+        "Une recette fiscale",
+        "Un transfert dans le partage des surplus"
+      ],
+      2,
+      "Ils font partie de la baisse du surplus des consommateurs mais restent un gain pour un autre agent."
+    ],
+    [
+      "Un oligopole rassemble…",
+      [
+        "Un petit nombre d’offreurs interdépendants",
+        "Un seul acheteur dans tous les cas",
+        "Une multitude de preneurs de prix sans interaction"
+      ],
+      0,
+      "Chaque entreprise doit tenir compte des décisions et réactions de ses concurrentes."
+    ],
+    [
+      "Dans le jeu du cours, si B garde un prix élevé, A préfère…",
+      [
+        "Le prix élevé : 15 plutôt que 20",
+        "Le prix faible : 20 plutôt que 15",
+        "Arrêter de produire nécessairement"
+      ],
+      1,
+      "A compare son propre gain entre ses deux choix possibles, en gardant le choix de B constant."
+    ],
+    [
+      "Si B garde un prix faible, A préfère…",
+      [
+        "Le prix élevé : 0 plutôt que 3",
+        "Le prix élevé pour aider B",
+        "Le prix faible : 3 plutôt que 0"
+      ],
+      2,
+      "Le prix faible reste la meilleure réponse de A dans cette autre colonne."
+    ],
+    [
+      "Le résultat sans coordination dans ce jeu est…",
+      [
+        "(3 ; 3)",
+        "(15 ; 15)",
+        "(20 ; 20)"
+      ],
+      0,
+      "Les deux meilleures réponses conduisent aux prix faibles ; (20 ; 20) n’est pas une case du jeu."
+    ],
+    [
+      "Pourquoi les entreprises du jeu voudraient-elles une entente ?",
+      [
+        "Pour diminuer ensemble leur profit",
+        "Pour obtenir 15 chacune plutôt que 3",
+        "Pour rendre les coûts fixes nuls"
+      ],
+      1,
+      "L’accord leur permettrait de limiter la concurrence ; chacune reste tentée de dévier pour obtenir 20."
+    ],
+    [
+      "Une preuve suffisante d’entente serait-elle le seul constat de prix identiques ?",
+      [
+        "Oui, toujours",
+        "Oui, si les prix sont élevés",
+        "Non"
+      ],
+      2,
+      "Des comportements parallèles peuvent exister sans coordination ; une enquête doit établir les éléments de l’entente."
+    ],
+    [
+      "Que vise la clémence ?",
+      [
+        "Inciter un participant à révéler une entente et coopérer",
+        "Garantir un remboursement aux clients",
+        "Autoriser tous les cartels"
+      ],
+      0,
+      "Une exonération de sanction peut être accordée sous conditions et fragilise la confiance entre participants."
+    ],
+    [
+      "La position dominante…",
+      [
+        "Est automatiquement interdite",
+        "Doit être distinguée de son exploitation abusive",
+        "Suppose toujours une propriété publique"
+      ],
+      1,
+      "Une entreprise efficace peut être dominante ; le droit vise l’abus."
+    ],
+    [
+      "Une concentration soumise au contrôle peut…",
+      [
+        "Seulement être interdite",
+        "Seulement être autorisée",
+        "Être autorisée, conditionnée ou interdite"
+      ],
+      2,
+      "L’analyse tient compte du marché concerné, des risques concurrentiels et des gains d’efficacité."
+    ],
+    [
+      "Pourquoi préserver des concurrents peut-il accroître le surplus des consommateurs ?",
+      [
+        "Les alternatives limitent les hausses de prix",
+        "La demande disparaît",
+        "Les amendes deviennent toujours des remises"
+      ],
+      0,
+      "La pression concurrentielle peut réduire les prix et préserver le choix, à conditions comparables."
+    ],
+    [
+      "Le +39 % alimentaire en Guyane en 2022 mesure…",
+      [
+        "Une croissance annuelle du PIB",
+        "Un écart de niveau de prix avec la France métropolitaine",
+        "Une preuve directe d’entente"
+      ],
+      1,
+      "Il s’agit d’une comparaison spatiale de prix, selon l’indicateur de Fisher de l’Insee."
+    ],
+    [
+      "Un panier à 100 € servant d’illustration pour un écart de +39 % correspondrait à…",
+      [
+        "61 €",
+        "139 € de hausse",
+        "139 €"
+      ],
+      2,
+      "100 × 1,39 = 139 €. C’est une illustration, pas le prix observé de chaque panier réel."
+    ],
+    [
+      "Une amende de concurrence…",
+      [
+        "Sanctionne et dissuade sans rembourser automatiquement chaque client",
+        "Est toujours versée aux consommateurs",
+        "Supprime nécessairement l’entreprise"
+      ],
+      0,
+      "La sanction et l’indemnisation des dommages sont deux mécanismes distincts."
+    ]
+  ],
+  "exercices": [
+    [
+      "EC1 guidée · Sources du pouvoir de marché",
+      "À l’aide d’un exemple, montrez comment une barrière à l’entrée favorise le pouvoir de marché.",
+      "Définis les deux notions. Explique pourquoi l’entrée est freinée, puis pourquoi les clients disposent de moins d’alternatives.",
+      "Une barrière à l’entrée rend l’arrivée de concurrents difficile ou coûteuse. Pour un réseau local d’eau, un entrant devrait supporter un investissement élevé pour une clientèle limitée. L’entreprise installée subit alors moins la menace d’entrée et dispose d’un pouvoir de marché plus important. La structure des coûts peut ainsi expliquer un monopole naturel."
+    ],
+    [
+      "EC1 guidée · Monopole et inefficacité",
+      "Expliquez pourquoi l’équilibre du monopole n’est pas efficace dans l’exemple du pâtissier.",
+      "Compare d’abord les deux quantités et les deux prix ; calcule les surplus ; distingue transfert et perte sèche.",
+      "À coûts et demande identiques, le monopole vend 6 unités à 20 € contre 12 à 8 € en concurrence. Le surplus des consommateurs tombe de 144 à 36 € et le producteur reçoit 72 €. Le total devient 108 €, inférieur de 36 € à la concurrence. Les unités entre 6 et 12 auraient une valeur supérieure à leur coût marginal : leur absence constitue la perte sèche."
+    ],
+    [
+      "Savoir-faire · Recette et profit",
+      "Complétez le calcul pour 5, 6 et 7 gâteaux. Pourquoi six est-il le meilleur choix ?",
+      "Calcule P avec 32 − 2Q, puis RT = P × Q, CT = 8Q et le profit RT − CT.",
+      "Pour Q = 5 : P = 22, RT = 110, CT = 40, profit = 70 €. Pour Q = 6 : P = 20, RT = 120, CT = 48, profit = 72 €. Pour Q = 7 : P = 18, RT = 126, CT = 56, profit = 70 €. Passer de 5 à 6 ajoute 2 € de profit ; passer de 6 à 7 en retire 2 €."
+    ],
+    [
+      "Raisonnement · Dilemme du prisonnier",
+      "Montrez que les entreprises du jeu ont intérêt à s’entendre mais que l’accord est fragile.",
+      "Fixe un choix de B ; compare les deux gains possibles de A. Recommence dans l’autre colonne, puis raisonne pour B.",
+      "A préfère le prix faible si B garde un prix élevé (20 > 15) et si B garde un prix faible (3 > 0). B fait le même calcul. Le résultat (3 ; 3) est inférieur pour les deux à (15 ; 15), ce qui crée un intérêt à l’entente. Pourtant, chaque entreprise voudrait dévier seule pour obtenir 20 au lieu de 15."
+    ],
+    [
+      "Étude de document · Deux questions",
+      "1. Comparez les écarts de prix de l’alimentation et de l’ensemble de la consommation. 2. Expliquez pourquoi ces données ne suffisent pas à établir l’existence d’une entente.",
+      "Utilise le tableau Insee de la rubrique Données ; précise territoire, année, unité et différence en points.",
+      "1. En 2022, l’écart Guyane-France métropolitaine est de 39 % pour l’alimentation contre 14 % pour l’ensemble, soit 25 points de plus. Ce n’est pas une inflation annuelle. 2. Un prix peut refléter des coûts, le transport ou la fiscalité et pas uniquement le pouvoir de marché. Une entente exige des preuves de coordination ; le tableau seul ne les apporte pas."
+    ],
+    [
+      "Application · Politique de la concurrence",
+      "Associez chaque cas à l’instrument adapté : accord secret sur les prix ; éviction par un opérateur dominant ; rachat d’un concurrent. Expliquez le gain attendu pour les consommateurs.",
+      "Nomme précisément la pratique. Évite « interdire les grandes entreprises ». Déroule la chaîne jusqu’au prix, au choix et au surplus.",
+      "L’accord secret relève de la lutte contre les ententes illicites. Une éviction abusive relève de la lutte contre l’abus de position dominante. Le rachat peut relever du contrôle des concentrations. Maintenir ou restaurer des alternatives renforce la pression concurrentielle, peut limiter les prix et préserver le choix ; le surplus des consommateurs peut augmenter."
+    ]
+  ],
+  "sources": [
+    [
+      "Programme officiel de Première",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/spe639annexe1063544pdf-82752.pdf",
+      "BO spécial du 22 janvier 2019, cinq objectifs du chapitre ; programme signalé en vigueur sur Éduscol."
+    ],
+    [
+      "Éduscol · Ressource d’accompagnement",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/ra19lyceegspeses1ereimperfectionsmarche1173047pdf-82779.pdf",
+      "Juin 2019. Repères pour les notions et les mécanismes ; les développements graphiques restent guidés."
+    ],
+    [
+      "Insee · Analyses Guyane n° 63",
+      "https://www.insee.fr/fr/statistiques/7649076",
+      "11 juillet 2023 ; enquête de comparaison spatiale des prix 2022."
+    ],
+    [
+      "Autorité de la concurrence · Compotes",
+      "https://www.autoritedelaconcurrence.fr/fr/decision/relative-des-pratiques-mises-en-oeuvre-dans-le-secteur-des-fruits-vendus-en-coupelles-et",
+      "Décision 19-D-24 du 17 décembre 2019 : prix, répartition des clients et des volumes ; clémence de Coroos."
+    ],
+    [
+      "Autorité de la concurrence · Carrefour / Cora et Match",
+      "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/lautorite-de-la-concurrence-autorise-sous-condition-le-rachat-des-activites",
+      "13 mars 2025 ; exemple de contrôle et d’autorisation sous conditions."
+    ],
+    [
+      "Autorité de la concurrence · Apple et le dispositif ATT",
+      "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/ciblage-publicitaire-lautorite-de-la-concurrence-prononce-une-sanction-de-150",
+      "31 mars 2025, décision 25-D-02 : 150 M€ de sanction ; modalités du dispositif ATT jugées disproportionnées."
+    ],
+    [
+      "Autorité de la concurrence · Câbles électriques dans les DROM",
+      "https://www.autoritedelaconcurrence.fr/fr/decision/relative-des-pratiques-mises-en-oeuvre-dans-le-secteur-des-cables-electriques-dans-les",
+      "Décision 26-D-04 du 2 avril 2026 ; accord vertical de droits exclusifs d’importation, distinct d’un cartel horizontal."
+    ]
+  ]
+}
