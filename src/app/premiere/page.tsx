@@ -1,4 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { LevelFilters } from "../level-filters";
+import browserStyles from "../level-browser.module.css";
 import { LevelIllustration } from "../level-illustration";
 import { LevelNavigation } from "../level-navigation";
 
@@ -36,10 +41,12 @@ type Chapitre = { numero: number; titre: string; href?: string; resume?: string 
 const sourceProgramme = "https://eduscol.education.gouv.fr/5838/programmes-et-ressources-en-sciences-economiques-et-sociales-voie-gt";
 
 export default function Page() {
+  const [selected, setSelected] = useState("ALL");
+  const groups = programme.filter(group => selected === "ALL" || group.domaine === selected);
   return (
     <main style={{minHeight:"100vh",background:"#f7faff",color:"#10255e",fontFamily:"var(--font-geist-sans), Arial, sans-serif",colorScheme:"light"}}>
       <LevelNavigation current="/premiere" />
-      <div style={{width:"min(1040px, calc(100% - 32px))",margin:"0 auto",padding:"44px 0 70px"}}>
+      <div style={{width:"min(1200px, calc(100% - 32px))",margin:"0 auto",padding:"44px 0 70px"}}>
         <div style={{display:"flex",flexWrap:"wrap",gap:24,alignItems:"center",marginBottom:24}}>
         <div style={{flex:"1 1 400px",minWidth:0}}>
         <div style={{display:"inline-flex",padding:"6px 10px",borderRadius:999,background:"#eef5ff",color:"#245cbd",fontSize:13,fontWeight:800}}>CAPSES · 2026-2027</div>
@@ -49,7 +56,11 @@ export default function Page() {
         </div>
         <LevelIllustration level="premiere" />
         </div>
-        {programme.map(({domaine,chapitres}) => (
+        <div className={browserStyles.layout}>
+          <aside className={browserStyles.sidebar}><LevelFilters level="Première" selected={selected} onSelect={setSelected} options={programme.map(group => ({id:group.domaine,label:group.domaine}))} /></aside>
+          <div className={browserStyles.content}>
+          <p className={browserStyles.result} aria-live="polite">{groups.reduce((total,group) => total + group.chapitres.length,0)} chapitres affichés</p>
+        {groups.map(({domaine,chapitres}) => (
           <section key={domaine} aria-labelledby={`domaine-${chapitres[0].numero}`} style={{marginBottom:40}}>
             <h2 id={`domaine-${chapitres[0].numero}`} style={{margin:"0 0 18px",fontSize:"clamp(23px,4vw,28px)",lineHeight:1.3}}>{domaine}</h2>
             <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit, minmax(min(100%, 300px), 1fr))",gap:16}}>
@@ -67,6 +78,8 @@ export default function Page() {
             </div>
           </section>
         ))}
+          </div>
+        </div>
         <footer style={{borderTop:"1px solid #dfe7f3",paddingTop:20,color:"#52617a",fontSize:14,lineHeight:1.7}}>
           Intitulés du programme officiel de spécialité SES de Première générale (BO spécial du 22 janvier 2019), présenté parmi les programmes en vigueur sur <a href={sourceProgramme} style={{color:"#245cbd",textDecoration:"underline"}}>Éduscol</a>.
         </footer>
