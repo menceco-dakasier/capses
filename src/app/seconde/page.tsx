@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { LevelFilters } from "../level-filters";
 import { TasteMobileMenu } from "../taste-mobile-menu";
 
 const CHAPITRES = [
   {
     numero: "Chapitre 1",
-    titre: "Découvrir les SES",
+    domaine: "Introduction",
+    titre: "Comment les économistes, les sociologues et les politistes raisonnent-ils et travaillent-ils ?",
     type: "Vidéo courte",
     description:
       "Pourquoi ton smartphone intéresse les SES ? Une vidéo légère pour comprendre les regards de l’économiste, du sociologue et du politiste.",
@@ -16,6 +21,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 2",
+    domaine: "Science économique",
     titre: "Comment crée-t-on des richesses et comment les mesure-t-on ?",
     type: "Chapitre complet",
     description:
@@ -28,6 +34,7 @@ const CHAPITRES = [
   },
   {
     numero: "Chapitre 3",
+    domaine: "Science économique",
     titre: "Comment se forment les prix sur un marché ?",
     type: "Chapitre complet",
     description:
@@ -38,9 +45,47 @@ const CHAPITRES = [
     accent: "#7c3aed",
     emoji: "📈",
   },
+  {
+    numero: "Chapitre 4",
+    domaine: "Sociologie et science politique",
+    titre: "Comment devenons-nous des acteurs sociaux ?",
+    type: "Sociologie",
+    description: "Socialisation, famille, école, médias et groupes de pairs ; différences selon le milieu social et le genre.",
+    duree: "",
+    statut: "À venir",
+    href: "",
+    accent: "#0f766e",
+    emoji: "👥",
+  },
+  {
+    numero: "Chapitre 5",
+    domaine: "Sociologie et science politique",
+    titre: "Comment s’organise la vie politique ?",
+    type: "Science politique",
+    description: "Pouvoir politique, institutions de la Ve République, séparation des pouvoirs, modes de scrutin et acteurs de la vie politique.",
+    duree: "",
+    statut: "À venir",
+    href: "",
+    accent: "#2563eb",
+    emoji: "🏛️",
+  },
+  {
+    numero: "Chapitre 6",
+    domaine: "Regards croisés",
+    titre: "Quelles relations entre le diplôme, l’emploi et le salaire ?",
+    type: "Regards croisés",
+    description: "Poursuite d’études, qualification, accès à l’emploi, différences de salaires et inégalités d’accès aux formations.",
+    duree: "",
+    statut: "À venir",
+    href: "",
+    accent: "#875717",
+    emoji: "🎓",
+  },
 ];
 
 export default function SecondePage() {
+  const [selected, setSelected] = useState("ALL");
+  const chapters = CHAPITRES.filter(chapter => selected === "ALL" || chapter.domaine === selected);
   return (
     <main className="page" data-taste="level">
       <style>{`
@@ -618,10 +663,13 @@ export default function SecondePage() {
 
         <section id="chapitres" className="section">
           <aside className="sidebar">
+            <LevelFilters level="Seconde" selected={selected} onSelect={setSelected} options={["Introduction", "Science économique", "Sociologie et science politique", "Regards croisés"].map(label => ({id:label,label}))} />
+            <details style={{marginTop:18}}><summary style={{cursor:"pointer",minHeight:44,fontWeight:700,lineHeight:1.5}}>Organisation et format CAPSES</summary>
             <h2>Organisation</h2>
             <p>
-              Le chapitre 1 est une vidéo d’introduction légère. Les chapitres 2 et 3 sont
-              des chapitres complets, alignés sur le format CapSES.
+              Les six questionnements du programme sont affichés. Deux cours sont
+              accessibles : création de richesses et formation des prix. La vidéo
+              d’introduction et les trois autres cours seront ajoutés progressivement.
             </p>
 
             <div className="method-card">
@@ -634,19 +682,21 @@ export default function SecondePage() {
                 <li>fiche mémo.</li>
               </ul>
             </div>
+            </details>
           </aside>
 
           <section className="chapters">
             <div className="section-title">
-              <h2>Les premiers chapitres de Seconde</h2>
+              <h2>Tous les chapitres de Seconde</h2>
               <p>
-                Une entrée progressive : comprendre les SES, puis travailler sur la création
-                de richesses et la formation des prix.
+                Le programme complet : découvrir les démarches des SES, puis explorer
+                l’économie, la sociologie, la science politique et les regards croisés.
               </p>
             </div>
 
+            <p aria-live="polite" style={{margin:"0 0 18px",fontSize:14,color:"#52617a"}}>{chapters.length} {chapters.length === 1 ? "chapitre affiché" : "chapitres affichés"}</p>
             <div className="chapters-grid">
-              {CHAPITRES.map((chapitre) => (
+              {chapters.map((chapitre) => (
                 <article
                   key={chapitre.titre}
                   className="chapter-card"
@@ -667,12 +717,13 @@ export default function SecondePage() {
 
                   <div className="status">{chapitre.statut}</div>
 
-                  {chapitre.statut === "Vidéo à intégrer" ? <span className="chapter-link" aria-disabled="true">Vidéo à venir</span> : <Link href={chapitre.href} className="chapter-link">Ouvrir</Link>}
+                  {chapitre.statut === "Vidéo à intégrer" ? <span className="chapter-link" aria-disabled="true">Vidéo à venir</span> : chapitre.href ? <Link href={chapitre.href} className="chapter-link">Ouvrir</Link> : <span className="chapter-link" aria-disabled="true" style={{background:"#f1f5f9",color:"#50617f"}}>Cours à venir</span>}
                 </article>
               ))}
             </div>
           </section>
         </section>
+        <p style={{marginTop:24,color:"#52617a",fontSize:14,lineHeight:1.7}}>Intitulés officiels : <a href="https://eduscol.education.gouv.fr/5838/programmes-et-ressources-en-sciences-economiques-et-sociales-voie-gt" style={{color:"#176b64",textDecoration:"underline"}}>programme de Seconde sur Éduscol</a>. La numérotation est un repère ; ton professeur peut choisir un autre ordre.</p>
       </div>
     </main>
   );
