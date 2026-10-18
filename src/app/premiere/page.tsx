@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LevelIllustration } from "../level-illustration";
+import { LevelNavigation } from "../level-navigation";
 
 const programme = [
   {
@@ -37,12 +38,7 @@ const sourceProgramme = "https://eduscol.education.gouv.fr/5838/programmes-et-re
 export default function Page() {
   return (
     <main style={{minHeight:"100vh",background:"#f7faff",color:"#10255e",fontFamily:"var(--font-geist-sans), Arial, sans-serif",colorScheme:"light"}}>
-      <header style={{borderBottom:"1px solid #e3eaf4",background:"white"}}>
-        <div style={{width:"min(1040px, calc(100% - 32px))",minHeight:68,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between",gap:16}}>
-          <Link href="/" style={{color:"#10255e",fontWeight:900,textDecoration:"none",fontSize:20}}>CAPSES</Link>
-          <Link href="/" style={{color:"#245cbd",textDecoration:"none",fontWeight:700,fontSize:14,minHeight:44,display:"inline-flex",alignItems:"center"}}>← Retour à l’accueil</Link>
-        </div>
-      </header>
+      <LevelNavigation current="/premiere" />
       <div style={{width:"min(1040px, calc(100% - 32px))",margin:"0 auto",padding:"44px 0 70px"}}>
         <div style={{display:"flex",flexWrap:"wrap",gap:24,alignItems:"center",marginBottom:24}}>
         <div style={{flex:"1 1 400px",minWidth:0}}>
