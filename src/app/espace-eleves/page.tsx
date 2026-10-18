@@ -7,6 +7,7 @@ interface ChapterData {
   label: string;
   color: string;
   emoji: string;
+  href?: string;
 }
 
 interface Progress {
@@ -19,6 +20,7 @@ interface Scores {
 
 // ── Données chapitres ──────────────────────────────────────────────────────
 const CHAPTERS: ChapterData[] = [
+  { slug: "premiere-marche-concurrentiel", label: "Première · Marché concurrentiel", color: "#176b64", emoji: "", href: "/premiere/marche-concurrentiel" },
   { slug: "croissance-economique",    label: "Croissance économique",               color: "#5DCAA5", emoji: "📈" },
   { slug: "commerce-international",   label: "Commerce international",              color: "#7EB8FF", emoji: "🌍" },
   { slug: "chomage",                  label: "Chômage",                             color: "#F0997B", emoji: "📊" },
@@ -181,14 +183,14 @@ export default function EspaceEleves() {
         {/* En-tête */}
         <div style={{ marginBottom: 40 }}>
           <p style={{ color: "#5DCAA5", fontWeight: 600, fontSize: 13, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>
-            Terminale SES · Bac 2026
+            SES · Première et Terminale
           </p>
           <h1 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: isMobile ? 28 : 38, lineHeight: 1.1, marginBottom: 20 }}>
             Mon espace de révision
           </h1>
 
-          {/* Countdown */}
-          <div style={{
+          {/* Countdown shown only before its target date. */}
+          {!bacPasse && <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
             background: bacPasse ? "#5DCAA5" : "#1a2f44",
             border: `1px solid ${bacPasse ? "#5DCAA5" : "#2a4a64"}`,
@@ -217,7 +219,7 @@ export default function EspaceEleves() {
                 ))}
               </>
             )}
-          </div>
+          </div>}
         </div>
 
         {/* Stats globales */}
@@ -227,7 +229,7 @@ export default function EspaceEleves() {
           gap: 12, marginBottom: 40,
         }}>
           {[
-            { label: "Chapitres validés",  value: `${valides} / 9`, color: "#5DCAA5" },
+            { label: "Chapitres validés",  value: `${valides} / ${CHAPTERS.length}`, color: "#5DCAA5" },
             { label: "En cours",           value: enCours,          color: "#EF9F27" },
             { label: "Progression",        value: `${pct} %`,       color: "#7EB8FF" },
             { label: "Score moyen quiz",   value: avgScore != null ? `${avgScore.toFixed(1)} / 10` : "—", color: "#AFA9EC" },
@@ -283,7 +285,7 @@ export default function EspaceEleves() {
                 <span style={{ fontSize: 20, flexShrink: 0 }}>{ch.emoji}</span>
 
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <a href={`/terminale/${ch.slug}`} style={{
+                  <a href={ch.href || `/terminale/${ch.slug}`} style={{
                     fontWeight: 600, fontSize: isMobile ? 13 : 15,
                     color: "#e8edf2", textDecoration: "none",
                     display: "block",
