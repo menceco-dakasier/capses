@@ -1,0 +1,1315 @@
+{
+  "title": "Quelles relations entre le diplôme, l’emploi et le salaire ?",
+  "duration": "8 séances de 50 minutes + 1 heure d’évaluation",
+  "objectifs": [
+    [
+      "Comprendre que la poursuite d’études est un investissement en capital humain et que sa rentabilité peut s’apprécier en termes de salaire escompté, d’accès à l’emploi et de réalisation de ses capabilités.",
+      "Comparer des coûts présents avec des avantages futurs, monétaires et non monétaires.",
+      "Une formation peut ouvrir des choix professionnels, sans garantir un revenu précis."
+    ],
+    [
+      "Savoir que le manque de qualification est une cause du chômage.",
+      "Expliquer pourquoi certaines compétences facilitent l’embauche, sans réduire tout le chômage au diplôme.",
+      "Une certification peut être nécessaire pour occuper un poste."
+    ],
+    [
+      "Comprendre que le salaire est déterminé par le niveau de formation.",
+      "Relier formation, compétences, emplois accessibles et rémunération.",
+      "Dans les données 2021–2023, le salaire médian de début de carrière du supérieur long dépasse celui du seul bac."
+    ],
+    [
+      "Savoir qu’à niveau de diplôme égal, le salaire peut varier selon différents facteurs notamment l’expérience acquise, le type d’entreprise, le genre.",
+      "Expliquer pourquoi un même niveau de diplôme ne donne pas le même salaire à chacun.",
+      "Expérience, secteur, taille de l’entreprise et trajectoires différenciées comptent."
+    ],
+    [
+      "Comprendre que les chances d’accès aux formations diplômantes sont socialement différenciées.",
+      "Relier les parcours aux ressources, aux apprentissages familiaux et aux choix sous contraintes.",
+      "Parmi les sortants d’origine cadres ou professions intermédiaires, 60 % dépassent bac + 2, contre 27 % parmi ceux d’origine employés ou ouvriers."
+    ]
+  ],
+  "notions": [
+    [
+      "Diplôme",
+      "Titre qui certifie une formation et des acquis ; il n’épuise pas les compétences d’une personne."
+    ],
+    [
+      "Qualification personnelle",
+      "Savoirs et compétences acquis par la formation et l’expérience."
+    ],
+    [
+      "Qualification de l’emploi",
+      "Compétences et responsabilités requises pour un poste."
+    ],
+    [
+      "Capital humain",
+      "Connaissances, compétences et savoir-faire incorporés aux personnes."
+    ],
+    [
+      "Investissement en capital humain",
+      "Dépense présente et temps consacré à développer ses capacités pour des avantages futurs."
+    ],
+    [
+      "Coût d’opportunité",
+      "Avantage de la meilleure possibilité abandonnée ; ici, par exemple, un salaire auquel on renonce."
+    ],
+    [
+      "Salaire escompté",
+      "Rémunération future attendue, qui reste incertaine."
+    ],
+    [
+      "Capabilités",
+      "Possibilités réelles de choisir et de mener une vie à laquelle on accorde de la valeur."
+    ],
+    [
+      "Emploi",
+      "Activité de production exercée contre rémunération ou profit ; un salarié perçoit un salaire."
+    ],
+    [
+      "Population active",
+      "Personnes en emploi et personnes au chômage."
+    ],
+    [
+      "Chômage BIT",
+      "Situation combinant absence d’emploi, disponibilité et recherche active ou emploi prochain selon les critères statistiques."
+    ],
+    [
+      "Taux de chômage",
+      "Nombre de chômeurs divisé par le nombre d’actifs, multiplié par 100."
+    ],
+    [
+      "Salaire médian",
+      "Niveau qui partage les salariés en deux groupes de même effectif."
+    ],
+    [
+      "Salaire en EQTP",
+      "Salaire ramené à un volume de travail à temps plein pour rendre les comparaisons plus homogènes."
+    ],
+    [
+      "Origine sociale",
+      "Position sociale de la famille, repérée ici par une catégorie socioprofessionnelle parentale."
+    ],
+    [
+      "Capital culturel",
+      "Ressources culturelles telles que savoirs, pratiques et familiarité avec des usages valorisés à l’école."
+    ]
+  ],
+  "cours": [
+    {
+      "title": "I 1.1 La formation développe le capital humain",
+      "paragraphs": [
+        "La poursuite d’études mobilise du temps et des ressources pour développer des connaissances et des compétences. La théorie du capital humain, associée notamment à Gary Becker, interprète cette démarche comme un investissement : un coût est supporté aujourd’hui dans l’espoir d’avantages futurs. Ce capital est incorporé à la personne. Il peut se développer à l’école, en formation continue et dans l’expérience professionnelle. Il peut aussi perdre de sa pertinence lorsque les techniques changent. Il ne désigne ni le nombre de salariés ni un équipement matériel.",
+        "Le diplôme certifie des acquis dans un parcours. La qualification personnelle comprend plus largement les savoirs et savoir-faire obtenus par la formation et l’expérience ; la qualification de l’emploi renvoie aux exigences du poste. Un stage peut enrichir les compétences sans délivrer à lui seul un nouveau diplôme. Les employeurs peuvent utiliser le titre comme un signal lors du recrutement. Pour comprendre un parcours, il faut donc distinguer la certification obtenue, les capacités réelles et les caractéristiques de l’emploi accessible."
+      ]
+    },
+    {
+      "title": "I 1.2 Comparer les coûts et les avantages attendus",
+      "paragraphs": [
+        "Le coût d’une formation comprend les dépenses qu’elle occasionne : inscription, matériel, transport ou logement supplémentaire. Il comprend aussi un coût d’opportunité : la valeur de la meilleure possibilité abandonnée, par exemple le salaire qui aurait pu être obtenu en travaillant plutôt qu’en étudiant. Un budget familial global ne mesure pas automatiquement ce seul coût supplémentaire. Des aides peuvent réduire la dépense directement supportée par l’étudiant ou sa famille. Les contraintes financières diffèrent donc selon les personnes et les parcours.",
+        "Les avantages peuvent être un salaire escompté plus élevé, un accès facilité à l’emploi, une plus grande stabilité ou des perspectives de mobilité. Ils restent incertains. Dans l’exercice fourni, 40 495 − 26 554 = 13 941 € de gain annuel théorique pour bac + 5 ; sur vingt ans, 278 820 €, auxquels on retranche 79 662 € de salaire abandonné pendant trois ans, soit 199 158 € avant les autres coûts. Ce calcul dépend d’hypothèses fortes : revenus constants, emploi continu et horizon retenu. Il n’est ni une promesse individuelle ni un rendement financier observé."
+      ]
+    },
+    {
+      "title": "I 1.3 Les études élargissent les possibilités réelles",
+      "paragraphs": [
+        "La rentabilité de la formation ne se réduit pas à un supplément de salaire. Les capabilités, notion proposée par Amartya Sen, désignent les possibilités réelles de choisir et de mener une vie à laquelle on attribue de la valeur. Savoir lire, comprendre une information, argumenter ou communiquer peut accroître l’autonomie même si le revenu n’augmente pas immédiatement. Dans l’extrait de Jacques Poirot, deux personnes également instruites ne bénéficient pas nécessairement du même gain monétaire, mais toutes deux peuvent tirer d’autres avantages de l’éducation.",
+        "Banerjee et Duflo évoquent des résultats de recherches dans plusieurs pays : les effets étudiés concernent les revenus, les perspectives professionnelles et des dimensions de santé. Leur texte montre pourquoi plusieurs critères doivent être considérés. Il ne permet pas de promettre à chaque élève français le supplément de revenu estimé pour une année de primaire en Indonésie. Un résultat d’enquête doit garder son territoire, son époque et son objet. La formation peut ouvrir des choix ; les ressources, la santé, l’environnement et les institutions influencent aussi la possibilité d’en faire effectivement usage."
+      ]
+    },
+    {
+      "title": "II 2.1 La qualification facilite l’accès à l’emploi",
+      "paragraphs": [
+        "La population active réunit les personnes en emploi et les chômeurs. Au sens du BIT, être sans emploi ne suffit pas : il faut aussi être disponible et avoir recherché activement un emploi, ou en avoir trouvé un commençant prochainement, selon les délais statistiques. Un étudiant sans emploi qui ne recherche pas de travail est inactif ; un étudiant qui travaille est en emploi. Le taux de chômage a pour dénominateur les actifs, et non tous les habitants ou tous les jeunes.",
+        "Un manque de qualification peut empêcher de répondre aux exigences d’un poste et compliquer l’adaptation aux transformations des emplois. En France en 2024, le taux de chômage est de 13,8 % pour les actifs ayant au plus le brevet, contre 5,0 % pour les titulaires de bac + 2 ou davantage, soit un écart de 8,8 points. Le diplôme protège statistiquement sans supprimer tout risque. Le CAP-BEP présente un taux de 7,3 %, inférieur aux 8,9 % du seul bac : la spécialité et les débouchés comptent. L’activité économique, les emplois disponibles et les recrutements interviennent aussi."
+      ]
+    },
+    {
+      "title": "III 3.1 Le niveau de formation compte dans les salaires",
+      "paragraphs": [
+        "La formation peut accroître les capacités productives et donner accès à des postes plus qualifiés, mieux rémunérés. Dans la théorie du capital humain, le lien passe par la productivité ; le diplôme peut également informer l’employeur sur les compétences présumées. Le niveau de formation est donc un déterminant du salaire, sans constituer une formule qui fixe à elle seule la rémunération. Les emplois occupés, la spécialité suivie et le temps de travail participent aussi aux différences constatées.",
+        "En moyenne sur 2021–2023, parmi les salariés sortis de formation depuis un à quatre ans, le salaire mensuel net médian est de 2 000 € pour le supérieur long, contre 1 370 € pour le seul baccalauréat. L’écart vaut 630 €, soit environ 46,0 % du salaire médian du groupe baccalauréat. La médiane n’est pas la moyenne : une moitié des salariés se situe de chaque côté du seuil. Les chiffres incluent différents temps de travail. Ce constat entre groupes ne mesure donc pas le supplément causal obtenu par une même personne si elle avait fait d’autres études."
+      ]
+    },
+    {
+      "title": "III 3.2 À diplôme égal les trajectoires et les emplois diffèrent",
+      "paragraphs": [
+        "L’expérience peut enrichir le capital humain par la pratique, l’apprentissage des procédures et la connaissance d’un métier. Elle peut soutenir la progression et la négociation salariales. Le texte historique de Maïna Fauliot présente ce mécanisme ; le tableau Insee rapproche ancienneté depuis la sortie de formation et niveau de salaire. Il ne suit pas la même personne au cours du temps : âge, génération, interruptions de carrière et expérience ne se confondent pas. Une augmentation automatique chaque année ne peut pas en être déduite.",
+        "Le type d’entreprise compte également : taille, activité, organisation, conventions et possibilités de carrière peuvent varier. Crouzel compare les hautes rémunérations publiques et privées en 2016, mais les groupes du sommet ne regroupent pas exactement les mêmes personnes à diplôme et poste égaux. Le genre intervient par des parcours de spécialisation, des professions, des temps de travail et des responsabilités différenciés, ainsi que par des discriminations possibles. Un écart à niveau de diplôme égal ne mesure pas à lui seul la discrimination pure. Comparer des salaires demande de vérifier brut ou net, moyenne ou médiane, période et temps de travail."
+      ]
+    },
+    {
+      "title": "IV 4.1 Des chances de formation socialement différenciées",
+      "paragraphs": [
+        "Les possibilités de formation ne sont pas identiques selon l’origine sociale. Parmi les personnes sorties d’études en 2022–2024, 60 % de celles d’origine cadres ou professions intermédiaires possèdent un diplôme supérieur à bac + 2, contre 27 % de celles d’origine employés ou ouvriers. L’écart est de 33 points. Il s’agit des diplômes obtenus parmi chaque groupe d’origine, non de la part d’enfants de cadres parmi tous les étudiants. La statistique décrit une régularité collective, pas le destin certain d’une personne.",
+        "Les ressources économiques peuvent faciliter un logement étudiant, un déplacement ou le financement d’années supplémentaires. Les ressources culturelles et la familiarité avec les usages valorisés à l’école peuvent aider à comprendre les attentes, à lire et à argumenter. Lahire souligne que les langues et les usages langagiers ont des positions sociales inégales : une difficulté scolaire ne révèle pas une infériorité intrinsèque d’une langue. Les formes d’accompagnement et les informations sur les parcours comptent aussi. Il faut expliquer les mécanismes sans juger les familles ni demander aux élèves de dévoiler leur situation personnelle."
+      ]
+    },
+    {
+      "title": "IV 4.2 Les choix d’études se font sous contraintes",
+      "paragraphs": [
+        "Choisir une formation dépend de la réussite, des informations disponibles, du coût perçu, des bénéfices attendus et des risques anticipés. À résultats comparables, le poids d’une dépense ou d’un échec possible peut différer selon les ressources de la famille. La comparaison coûts-avantages ne s’effectue donc pas dans un contexte identique pour tous. Les choix ne doivent pas être présentés comme une simple différence de motivation ; des contraintes économiques et des apprentissages sociaux interviennent.",
+        "Les explications se complètent : des ressources familiales influencent les conditions de réussite, puis les choix peuvent accentuer ou réduire les écarts. Les aides et l’accompagnement peuvent élargir les possibilités effectives. L’infographie de financement de 2018 suggère des combinaisons de ressources différentes selon le revenu du foyer ; ses réponses multiples ne constituent pas une répartition en parts exclusives. Des trajectoires s’écartent des tendances moyennes. Le croisement des regards économique et sociologique permet ainsi de comprendre à la fois l’intérêt de se former, les différences de rémunération et les inégalités de possibilités."
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "title": "Former des compétences pour demain",
+      "text": "s’est développée à partir de la fin des années 1950 avec les travaux de Theodore Schultz (Prix Nobel 1979), Gary Becker (Prix Nobel 1992) et Jacob Mincer qui ont fondé la théorie du capital humain. Selon cette théorie, les compétences acquises dans le système d’enseignement et de formation augmentent la productivité des individus et accroissent les revenus qu’ils tirent de leur travail. En d’autres termes, elles constituent une forme de capital dont la particularité est d’être « incorporée » dans les personnes qui la détiennent, d’où son nom de capital humain. Gary Becker définit ainsi le capital humain comme « l’ensemble des capacités productives qu’un individu acquiert par accumulation de connaissances générales ou spécifiques, de savoir-faire, etc. ». Ce capital, qui est un stock, est propre à l’individu. Comme tout stock, il peut être accumulé et peut se déprécier. L’éducation et la formation font partie des flux qui alimentent ce stock. L’éducation est en effet un investissement en capital humain : l’agent rationnel procède à une comparaison entre les bénéfices qu’il retire d’une année de formation supplémentaire (plus grande productivité donnant accès un salaire escompté supérieur, estimé sur toute la durée de vie active à venir) et les coûts qui y sont associés (ensemble des frais et coûts d’opportunité liés à la formation) ; il opère par là même un arbitrage entre travail et formation (et donc entre présent et futur).",
+      "source": "Éduscol, fiche fournie, janvier 2020, p. 2 ; présentation de Schultz, Becker et Mincer, avec citation attribuée à Becker.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 2,
+      "note": "Présentation ministérielle, non extrait original de Human Capital. Qualification personnelle : savoirs et compétences acquis par la formation et l’expérience ; qualification de l’emploi : exigences du poste. Le diplôme certifie des acquis sans épuiser toutes les compétences.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "title": "Un budget pour poursuivre ses études",
+      "text": "Infographie historique : budget moyen annuel par enfant de 7 118 € ; logement 2 107 €, frais de scolarité 1 897 €, alimentation 1 182 €, argent de poche 704 €, trajets en train 274 €. Budget moyen selon les études : école de commerce 10 735 €, école d’ingénieurs 9 733 €, BTS 6 870 €, université 6 473 €.",
+      "source": "Cofidis et CSA Research, Études supérieures : budget financement et bons plans, mai 2018 ; reproduit dans le fichier fourni.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": 2,
+      "note": "Enquête de 2018 sur le budget des parents, pas un tarif officiel ni le coût actuel de toutes les études. Les postes visibles ne couvrent pas nécessairement tout le total. Le document fourni ne détaille pas le protocole. Ne pas confondre budget global et seuls droits d’inscription.",
+      "table": null,
+      "image": "/cours/seconde-diplome/budget.png",
+      "url": ""
+    },
+    {
+      "id": 3,
+      "title": "Calculer un gain sous des hypothèses",
+      "text": "Exercice fourni : comparer chaque parcours au bac + 2, supposé obtenu deux ans après le bac. Retenir un gain salarial annuel constant pendant 20 ans après l’obtention du diplôme supérieur, sans inflation, actualisation ni chômage. Coût d’opportunité : salaire bac + 2 renoncé pendant les années supplémentaires. Pour l’école de commerce, retenir ici explicitement bac + 5, soit trois ans supplémentaires ; tester ensuite 45 000 € de frais directs. Les revenus après l’horizon de 20 ans ne sont pas modélisés.",
+      "source": "Diplôme exercices.pdf et cours P. Savoye fourni ; date et source statistique absentes. Hypothèses de calcul précisées par CAPSES.",
+      "origin": "Exercice fourni",
+      "page": 1,
+      "note": "Les montants sont conservés pour apprendre à calculer, sans les présenter comme des salaires actuels. Le résultat est un gain net simulé, pas un taux de rentabilité mesuré. L’intitulé ambigu bac + 4 ou + 5 impose de préciser la durée.",
+      "table": {
+        "headers": [
+          "Parcours",
+          "Salaire annuel moyen indiqué",
+          "Années supplémentaires après bac + 2"
+        ],
+        "rows": [
+          [
+            "Bac + 2",
+            "26 554 €",
+            "0"
+          ],
+          [
+            "Bac + 4",
+            "37 638 €",
+            "2"
+          ],
+          [
+            "Bac + 5 tous diplômes",
+            "40 495 €",
+            "3"
+          ],
+          [
+            "École de commerce hypothèse bac + 5",
+            "41 925 €",
+            "3"
+          ],
+          [
+            "École d’ingénieurs bac + 5",
+            "46 404 €",
+            "3"
+          ],
+          [
+            "IEP bac + 5",
+            "43 072 €",
+            "3"
+          ]
+        ]
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "title": "L’éducation produit plusieurs effets",
+      "text": "Attirer les enfants à l’école[…] C’est par là que tout commence en Indonésie, […] chaque année de scolarité primaire supplémentaire […] induit une augmentation d’environ 8 % des revenus. Cette estimation des rendements de l’éducation est très proche des résultats généralement obtenus aux États-Unis […]. En 1968, Taïwan a institué une loi obligeant tous les enfants aller au moins neuf ans à l’école. […] Cette loi a eu des effets positifs significatifs sur la scolarisation des enfants tant filles que garçons, ainsi que sur leurs perspectives professionnelles particulièrement pour les filles. Les bénéfices de l’école ne sont pas uniquement financiers : Le programme de Taiwan a également eu des effets sur la mortalité infantile. Au Malawi les filles qui avait continué d’aller à l’école […] étaient également moins susceptible de tomber enceintes. […] Il existe aujourd’hui un corpus significatif d’études rigoureuses qui témoigne de l’ampleur des effets de l’éducation",
+      "source": "Abhijit V. Banerjee et Esther Duflo, Repenser la pauvreté, Seuil, 2012 ; extrait fourni avec ses coupes signalées.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": "2–3",
+      "note": "Passage conservé intégralement tel que fourni. Les exemples indonésien, taïwanais et malawite ne constituent pas un rendement universel des études françaises ; 8 % se rapporte à l’estimation citée pour la scolarité primaire en Indonésie.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 5,
+      "title": "Les capabilités dépassent le revenu",
+      "text": "Le libre accès à l'éducationest présenté par A. Sen, comme une des libertés politiques et sociales, qui, avec la liberté de participation ou d'expression et le droit à la santé, sont des « éléments constitutifs du développement ». Pour illustrer ce rôle constitutif de l'éducation, A. Sen imagine deux individus qui ont reçu la même éducation, l'un sera devenu plus productif et ses revenus se seront accrus ; l'autre qui n'a pas bénéficié d'une augmentation de ses revenus « tirera tout de même parti de cet avantage sous d'autres formes, par la lecture, la faculté de communiquer, d'argumenter, de s'informer, d'être pris au sérieux.... Le libre accès à l'éducation apparaît aussi comme une liberté instrumentale, permettant d'accroître les capacités et les autres libertés, indispensables au développement humain. [...] L'éducation, pour A. Sen, permet à l'individu de devenir plus autonome et d'élargir le champ de ses libertés ; cet auteur déplore qu'un « enfant qui n'a d'accès à aucune forme de scolarisation subit une privation qui perdure tout au long de son existence (les activités, même les plus élémentaires qui supposent que l'on sache lire, écrire et compter, lui seront interdites).",
+      "source": "Jacques Poirot, Le rôle de l’éducation dans le développement chez J. Rawls et A. Sen entre équité et efficacité, Mondes en développement, n° 132, 2005 ; extrait fourni.",
+      "origin": "Cours P. Savoye fourni",
+      "page": 2,
+      "note": "Poirot présente l’approche de Sen et le cite : il ne s’agit pas d’un extrait entièrement écrit par Sen. Les capabilités sont des possibilités réelles de choisir et d’agir, non la seule possession d’un revenu ou d’un diplôme.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 6,
+      "title": "Qui est au chômage",
+      "text": "Repère : au sens du BIT, le chômage concerne une personne de 15 ans ou plus, sans emploi pendant la semaine de référence, disponible dans les deux semaines et ayant activement recherché un emploi au cours des quatre semaines précédentes, ou en ayant trouvé un débutant dans moins de trois mois. La population active réunit personnes en emploi et chômeurs. Le taux de chômage rapporte les chômeurs aux actifs, et non à toute la population.\n\nSituations construites : A travaille dans un magasin tout en étudiant. B, 20 ans, n’a pas d’emploi, a envoyé des candidatures cette semaine et peut commencer demain. C prépare un examen à plein temps sans emploi ni recherche de travail. Une petite population construite compte 800 personnes en emploi, 100 chômeurs et 300 inactifs.",
+      "source": "Repères rédigés d’après Insee, définition du chômage BIT ; situations et effectifs construits CAPSES, 2026.",
+      "origin": "Complément méthodologique",
+      "page": "définition et cas construits",
+      "note": "Être étudiant n’implique pas toujours l’inactivité : l’emploi prime dans le classement. Inscription à France Travail et chômage BIT ne sont pas équivalents. Les effectifs inventés sont réservés au calcul.",
+      "table": null,
+      "image": "",
+      "url": "https://www.insee.fr/fr/metadonnees/definition/c1129"
+    },
+    {
+      "id": 7,
+      "title": "Diplôme et risque de chômage en 2024",
+      "text": "Un taux de chômage se lit parmi les actifs du groupe. Les taux ci-dessous ne sont pas des proportions de chômeurs parmi toute la population ni les probabilités certaines d’un destin individuel.",
+      "source": "Insee, Inégalités face au chômage, Emploi chômage revenus du travail, 26 juin 2025, figure 1 ; enquête Emploi 2024.",
+      "origin": "Complément statistique actualisé",
+      "page": "figure 1",
+      "note": "Champ : France, personnes vivant en logement ordinaire, actives. Taux au sens du BIT. Le CAP-BEP affiche ici un taux inférieur au seul baccalauréat : la relation ne se résume pas à un classement mécanique de toutes les filières.",
+      "table": {
+        "headers": [
+          "Diplôme",
+          "Taux de chômage en 2024 en %"
+        ],
+        "rows": [
+          [
+            "Bac + 2 ou plus",
+            "5,0"
+          ],
+          [
+            "Baccalauréat",
+            "8,9"
+          ],
+          [
+            "CAP BEP ou équivalent",
+            "7,3"
+          ],
+          [
+            "Aucun diplôme ou brevet",
+            "13,8"
+          ],
+          [
+            "Ensemble des actifs",
+            "7,4"
+          ]
+        ]
+      },
+      "image": "",
+      "url": "https://www.insee.fr/fr/statistiques/8376838?sommaire=8376908"
+    },
+    {
+      "id": 8,
+      "title": "Pourquoi les qualifications comptent",
+      "text": "Une qualification insuffisante peut limiter l’accès aux postes qui demandent des savoirs techniques, des compétences générales ou un titre requis. Une transformation des emplois peut aussi rendre certaines compétences moins adaptées. Se former permet d’acquérir ou de renouveler ces compétences ; le diplôme sert également d’indice aux employeurs.\n\nCette explication ne suffit pas à rendre compte de tout le chômage. Les embauches dépendent aussi de l’activité des entreprises, des postes disponibles, de la localisation des emplois et des pratiques de recrutement. Une personne qualifiée peut donc rester au chômage ; une personne peu diplômée peut occuper un emploi grâce à son expérience. La comparaison des taux du document 7 montre une association statistique, sans isoler à elle seule l’effet causal du diplôme.",
+      "source": "Présentation pédagogique CAPSES à partir de la fiche Éduscol fournie, janvier 2020, p. 3, et des notions du chapitre.",
+      "origin": "Complément explicatif",
+      "page": 3,
+      "note": "Ne pas attribuer la totalité du chômage au manque d’effort individuel. Le programme dit une cause, pas la cause unique. Distinguer diplôme, qualification et compétences effectivement recherchées.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 9,
+      "title": "Formation ancienneté et salaire médian",
+      "text": "Salaire mensuel net médian, tous temps de travail confondus, en euros. La médiane partage les salariés en deux groupes de même effectif : une moitié perçoit moins, l’autre davantage.",
+      "source": "Insee, Formations et emploi, Salaires, 12 février 2025, figure 1 ; enquêtes Emploi 2021 2022 et 2023, moyenne des trois années.",
+      "origin": "Complément statistique actualisé",
+      "page": "figure 1",
+      "note": "Champ : France hors Mayotte, personnes en logement ordinaire, salariées, sorties de formation initiale depuis au moins un an. Ce tableau compare des groupes, pas la trajectoire du même individu ; temps de travail, spécialités et postes diffèrent.",
+      "table": {
+        "headers": [
+          "Diplôme",
+          "Sortie depuis 1 à 4 ans",
+          "Sortie depuis 11 ans ou plus"
+        ],
+        "rows": [
+          [
+            "Supérieur long",
+            "2 000",
+            "2 650"
+          ],
+          [
+            "Supérieur court",
+            "1 500",
+            "2 100"
+          ],
+          [
+            "Baccalauréat",
+            "1 370",
+            "1 800"
+          ],
+          [
+            "CAP BEP",
+            "1 380",
+            "1 700"
+          ],
+          [
+            "Aucun diplôme ou brevet",
+            "1 200",
+            "1 500"
+          ]
+        ]
+      },
+      "image": "",
+      "url": "https://www.insee.fr/fr/statistiques/8305524"
+    },
+    {
+      "id": 10,
+      "title": "L’expérience peut enrichir les compétences",
+      "text": "La richesse attend bien le nombre des années.En France, les jeunes gagnent moins bien leur vie que les salariés plus âgés. A titre d'exemple, les 21-25 ans gagnaient, en moyenne, 16 399 euros par an en 2010, tandis que la rémunération des 51-60 ans s'élevait, dans le même temps, à 29 054 euros. Si le salaire moyen augmente, en général, à un rythme plus soutenu chez les plus jeunes, on observe ensuite un ralentissement à partir de la quarantaine. […] L'âge est lié à l'expérience professionnelle. Elle permet d'acquérir de nouvelles compétences et d'améliorer, ainsi, sa productivité. Selon une étude de l'Insee de 2003, \"la productivité croît avec l'âge jusqu'à 40 ans, puis se stabilise\". Un salarié plus âgé, fort de son expérience, de ses compétences et de sa productivité est également en mesure de mieux \"se vendre\" face à ses employeurs, et donc de négocier son salaire à la hausse.",
+      "source": "Maïna Fauliot, Salaires pourquoi les vieux sont mieux lotis que les jeunes, France TV info, 17 septembre 2014 ; extrait fourni.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": 9,
+      "note": "Texte historique conservé avec les chiffres de 2010 et l’étude de 2003 qu’il cite. L’âge n’est pas une mesure exacte de l’expérience et une comparaison entre groupes d’âge ne prouve pas une hausse automatique du salaire de chacun.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 11,
+      "title": "Secteurs et rémunérations au sommet",
+      "text": "[…] Les hauts fonctionnairessont certes des privilégiés sur l'échelle des salaires en France ; mais ils sont moins bien lotis que dans le privé. C'est ce qui ressort d'une étude de l'Insee publiée jeudi. Les données portent sur 2016, mais les ordres de grandeur varient peu en ce domaine. Les 1% des agents les mieux rémunérés de la fonction publique - soit 48500 emplois - gagnent au moins 6410 euros nets par mois. Et leur salaire moyen est de 7850 euros. C'est 4 fois le salaire médian1 des 5,5 millions d'agents du public. Dans les entreprises, les 1% de salariés les mieux payés perçoivent, eux, au moins 8280 euros nets par mois. Soit 30% de plus que dans le public. Ces dirigeants, cadres, ingénieurs travaillent surtout dans la finance, l'assurance et le conseil, selon l'Insee. L'écart est encore plus net avec les indépendants : les 1% les plus favorisés gagnent plus de 23700 euros par mois (auxquels il faut toutefois enlever 2300 euros de CSG et CRDS pour une vraie comparaison). « Ils sont souvent médecins, dentistes, pharmaciens ou exercent des activités juridiques et comptables », précise l'étude*. […]",
+      "source": "Cécile Crouzel, Le Figaro, 21 février 2019, d’après une étude Insee sur 2016 ; passage fourni, coupes conservées.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": "8–9",
+      "note": "Le texte compare des seuils et cite une moyenne : ne pas les confondre. Les deux groupes du 1 % ne sont pas strictement identiques à diplôme et poste égaux ; leurs niveaux ne prouvent pas un effet causal pur du secteur. Revenu des indépendants et salaire sont distincts.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 12,
+      "title": "À diplôme égal des écarts entre femmes et hommes",
+      "text": "Transcription du graphique fourni. Salaire net mensuel en euros, en 2013 en France selon le titre du support. Les montants sont historiques.",
+      "source": "Nicole et Jean Gadrey, Femmes hommes à diplômes égaux salaires inégaux, Observatoire des inégalités, 2018, d’après le ministère du Travail ; source indiquée sur le graphique fourni.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": "9–10",
+      "note": "Le champ détaillé et le traitement du temps partiel ne sont pas fournis : ne pas transformer ce graphique en mesure du salaire horaire ou de la discrimination pure. Un même niveau de diplôme ne signifie pas même spécialité, expérience, poste ou temps de travail.",
+      "table": {
+        "headers": [
+          "Diplôme",
+          "Hommes",
+          "Femmes"
+        ],
+        "rows": [
+          [
+            "Brevet et moins",
+            "1 598",
+            "1 130"
+          ],
+          [
+            "CAP BEP",
+            "1 718",
+            "1 260"
+          ],
+          [
+            "Bac",
+            "1 870",
+            "1 403"
+          ],
+          [
+            "Bac + 2",
+            "2 369",
+            "1 677"
+          ],
+          [
+            "Bac + 3 et plus",
+            "3 148",
+            "2 153"
+          ],
+          [
+            "Ensemble",
+            "2 112",
+            "1 573"
+          ]
+        ]
+      },
+      "image": "/cours/seconde-diplome/genre-2013.png",
+      "url": ""
+    },
+    {
+      "id": 13,
+      "title": "Origine sociale et diplôme obtenu",
+      "text": "Répartition des sortants d’études initiales en 2022, 2023 et 2024 selon leur origine sociale, en moyenne annuelle. Chaque colonne sociale totalise 100 %.",
+      "source": "Insee, Diplôme des sortants d’études initiales selon le sexe et l’origine sociale, 31 août 2026 ; enquêtes Emploi 2023 2024 et 2025.",
+      "origin": "Complément statistique actualisé",
+      "page": "tableau 2022–2024",
+      "note": "Champ : France hors Mayotte. Origine sociale : catégorie du père si renseignée, sinon de la mère, à la fin des études ou dernier emploi. On lit les diplômes parmi chaque origine ; ce n’est pas l’origine sociale parmi les étudiants d’une filière.",
+      "table": {
+        "headers": [
+          "Diplôme atteint",
+          "Cadres et professions intermédiaires",
+          "Employés et ouvriers"
+        ],
+        "rows": [
+          [
+            "Sans diplôme CEP ou brevet",
+            "4 %",
+            "16 %"
+          ],
+          [
+            "CAP BEP",
+            "5 %",
+            "11 %"
+          ],
+          [
+            "Baccalauréat",
+            "22 %",
+            "37 %"
+          ],
+          [
+            "Bac + 2",
+            "9 %",
+            "9 %"
+          ],
+          [
+            "Supérieur à bac + 2",
+            "60 %",
+            "27 %"
+          ],
+          [
+            "Ensemble",
+            "100 %",
+            "100 %"
+          ]
+        ]
+      },
+      "image": "",
+      "url": "https://www.insee.fr/fr/statistiques/2850737"
+    },
+    {
+      "id": 14,
+      "title": "Lahire et les usages de la langue",
+      "text": "Les problèmes de langue sont cruciauxdans l’expérience des immigrés. Ils parlent une langue que leurs enfants maîtrisent tout juste (ils la comprennent un peu, mais ils ne la parlent pas bien et ne la lisent ni ne l’écrivent) et eux-mêmes maîtrisent difficilement la langue du pays dans lequel ils vivent. Il faut ajouter que si la langue était l’anglais, cela ne poserait pas le même problème que l’arabe. Le stigmate est présent quand la langue est dominée. Les langues ont un statut inégal en fonction des rapports de domination entre les différentes nations en jeu. [...] On pense souvent que les familles issues de l’immigration sont très spécifiques mais elles se combinent souvent le fait de venir de milieux populaires de leur pays et de ne pas connaître la langue du pays où elles immigrent. Elles se cumulent les obstacles ou les « handicaps ». Mais les enfants issus de milieux populaires français rencontrent aussi des problèmes dans l’usage de la langue. La langue parlée par leur famille n’est pas celle qu’on pratique à l’école.",
+      "source": "Bernard Lahire, entretien au site Zéro de conduite à propos du film Fatima de Philippe Faucon, 2015 ; extrait fourni avec sa coupe signalée.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": 8,
+      "note": "L’auteur analyse des rapports sociaux entre langues et normes scolaires ; il ne mesure pas une valeur intrinsèque des langues ou des familles. La formulation générale du passage ne décrit pas tous les enfants d’immigrés. Ne demander aucun témoignage familial personnel.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 15,
+      "title": "Des ressources familiales aux choix de formation",
+      "text": "Si les choix de formationpeuvent être perçus comme la résultante de goûts, d’appétences individuelles ou de mimétismes, ils révèlent aussi les liens entre les déterminants individuels et collectifs (le questionnement « Comment devenons-nous des acteurs sociaux ? » a permis de mettre en évidence une différenciation de la socialisation selon le genre et le milieu social). Si le revenu joue un rôle avéré sur les conditions de la scolarité, le lieu de résidence ou la perception du futur, d’autres facteurs peuvent être mis en avant. Le rôle du capital culturel transmis par la famille peut ainsi être questionné, ainsi que la proximité entre les normes familiales et les normes scolaires.",
+      "source": "Éduscol, fiche fournie, janvier 2020, p. 5, premier paragraphe de la présentation sur l’origine sociale.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 5,
+      "note": "Texte explicatif du ministère, non une citation de Bourdieu ou de Boudon. Le capital culturel et la proximité avec les attentes scolaires peuvent éclairer la réussite ; les choix sont aussi contraints par le coût, l’information, les bénéfices et les risques anticipés. Une régularité n’interdit pas les trajectoires différentes.",
+      "table": null,
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": 16,
+      "title": "Les ressources de financement sont inégales",
+      "text": "Transcription de l’infographie fournie : foyers à plus de 4 500 € nets mensuels, épargne 97 %, emploi étudiant 12 %, crédit consommation 7 % ; foyers à moins de 4 500 €, respectivement 75 %, 30 % et 14 %.",
+      "source": "Cofidis et CSA Research, Études supérieures budget financement et bons plans, mai 2018 ; graphique fourni.",
+      "origin": "le diplome cours et objectifs.pdf",
+      "page": 2,
+      "note": "Données historiques, protocole non détaillé dans le support. Plusieurs sources peuvent se cumuler : les pourcentages ne totalisent pas 100 %. Le seuil est celui des revenus du foyer, non du salaire étudiant ; le cas exactement égal à 4 500 € n’est pas précisé.",
+      "table": {
+        "headers": [
+          "Financement",
+          "Foyers > 4 500 €",
+          "Foyers < 4 500 €"
+        ],
+        "rows": [
+          [
+            "Épargne",
+            "97 %",
+            "75 %"
+          ],
+          [
+            "Emploi étudiant",
+            "12 %",
+            "30 %"
+          ],
+          [
+            "Crédit consommation",
+            "7 %",
+            "14 %"
+          ]
+        ]
+      },
+      "image": "/cours/seconde-diplome/financement.png",
+      "url": ""
+    }
+  ],
+  "sessions": [
+    {
+      "hour": 1,
+      "title": "I 1.1 Pourquoi investir dans sa formation ?",
+      "oa": 1,
+      "rappel": "",
+      "board": "Pourquoi investir dans sa formation ?",
+      "docs": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "doc": 1,
+          "q": "Explique pourquoi une formation peut être un investissement alors qu’elle ne produit pas immédiatement un salaire.",
+          "a": "Elle mobilise du temps et des ressources présents pour développer des capacités et obtenir des avantages futurs espérés. Le gain n’est pas garanti."
+        },
+        {
+          "id": 2,
+          "doc": 1,
+          "q": "Distingue le diplôme de la qualification personnelle à partir d’un stage.",
+          "a": "Le diplôme certifie des acquis ; un stage peut développer une compétence pratique et enrichir la qualification personnelle sans délivrer un nouveau titre."
+        },
+        {
+          "id": 3,
+          "doc": 1,
+          "q": "Reconstruis le lien entre formation et salaire dans la théorie présentée.",
+          "a": "La formation développe des connaissances et compétences, qui peuvent accroître la productivité et ouvrir des emplois mieux rémunérés. Il s’agit d’un mécanisme théorique, non d’une égalité automatique."
+        },
+        {
+          "id": 4,
+          "doc": 2,
+          "q": "Lis les 7 118 € avec leur date et leur population de référence.",
+          "a": "Dans l’enquête Cofidis-CSA de mai 2018 reproduite, le budget annuel moyen déclaré par les parents pour un enfant étudiant est de 7 118 €. Le protocole détaillé n’est pas donné."
+        },
+        {
+          "id": 5,
+          "doc": 2,
+          "q": "Calcule le rapport du budget école de commerce au budget université.",
+          "a": "10 735 / 6 473 ≈ 1,66. Le premier budget est environ 1,66 fois le second dans cette enquête de 2018 ; il ne s’agit pas seulement des frais d’inscription."
+        },
+        {
+          "id": 6,
+          "doc": 2,
+          "q": "Explique quel coût manque si l’on ne compte que les dépenses payées.",
+          "a": "Le coût d’opportunité : le revenu ou l’avantage de la meilleure possibilité abandonnée pendant les études. Le budget de l’enquête ne chiffre pas ce salaire renoncé."
+        }
+      ]
+    },
+    {
+      "hour": 2,
+      "title": "I 1.2 Que rapporte la poursuite d’études ?",
+      "oa": 1,
+      "rappel": "Explique le coût d’opportunité avec un exemple.",
+      "board": "Que rapporte la poursuite d’études ?",
+      "docs": [
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "id": 7,
+          "doc": 3,
+          "q": "Pour bac + 5, calcule le gain annuel par rapport à bac + 2, puis le gain sur vingt ans.",
+          "a": "40 495 − 26 554 = 13 941 € par an ; 13 941 × 20 = 278 820 € selon les hypothèses de l’exercice."
+        },
+        {
+          "id": 8,
+          "doc": 3,
+          "q": "Calcule le gain net simulé de l’école de commerce bac + 5 après le salaire renoncé et les 45 000 € de frais.",
+          "a": "Gain annuel : 41 925 − 26 554 = 15 371 € ; sur vingt ans 307 420 €. Salaire renoncé : 3 × 26 554 = 79 662 €. Gain net simulé : 307 420 − 79 662 − 45 000 = 182 758 €. Ce montant exclut d’autres coûts."
+        },
+        {
+          "id": 9,
+          "doc": 3,
+          "q": "Explique pourquoi ce résultat ne prouve pas la rentabilité certaine de toutes les études.",
+          "a": "La source et la date des salaires manquent ; emploi continu et salaires constants sont supposés. La durée, les coûts, le chômage et l’horizon changeraient le résultat. Les avantages non monétaires ne sont pas tous chiffrés."
+        },
+        {
+          "id": 10,
+          "doc": 4,
+          "q": "Situe l’estimation d’environ 8 % dans son contexte.",
+          "a": "Elle concerne le supplément de revenu associé à une année supplémentaire de scolarité primaire dans le cas indonésien présenté ; ce n’est pas un rendement universel français."
+        },
+        {
+          "id": 11,
+          "doc": 4,
+          "q": "Relève un effet autre que le revenu et explique son intérêt.",
+          "a": "Le texte évoque notamment la mortalité infantile à Taïwan ou les grossesses au Malawi. Il montre que les effets de l’éducation peuvent concerner la santé et les possibilités de vie."
+        },
+        {
+          "id": 12,
+          "doc": 4,
+          "q": "Compare ce texte au calcul du document 3.",
+          "a": "Le document 3 simule un gain monétaire selon des hypothèses. Banerjee et Duflo présentent des résultats de recherches contextualisés et plusieurs dimensions des effets de l’éducation. Ni l’un ni l’autre ne garantit le même gain à chaque élève."
+        }
+      ]
+    },
+    {
+      "hour": 3,
+      "title": "I 1.3 Qu’apportent les études au-delà du salaire ?",
+      "oa": 1,
+      "rappel": "Distingue un gain simulé d’un résultat garanti.",
+      "board": "Qu’apportent les études au-delà du salaire ?",
+      "docs": [
+        5,
+        6
+      ],
+      "questions": [
+        {
+          "id": 13,
+          "doc": 5,
+          "q": "Explique pourquoi deux personnes instruites peuvent bénéficier de l’éducation même si une seule gagne davantage.",
+          "a": "L’éducation peut accroître la capacité de lire, communiquer, argumenter et s’informer. Ces possibilités comptent indépendamment de l’augmentation immédiate du revenu."
+        },
+        {
+          "id": 14,
+          "doc": 5,
+          "q": "Relie la notion de capabilités à la possibilité de choisir une activité.",
+          "a": "Des connaissances peuvent rendre un choix réalisable, par exemple comprendre une formation et y accéder. La possibilité doit être effective et non seulement autorisée en principe."
+        },
+        {
+          "id": 15,
+          "doc": 5,
+          "q": "Distingue l’auteur du document de l’auteur de la notion.",
+          "a": "Jacques Poirot signe l’article de 2005 ; il présente Amartya Sen et le cite. La notion de capabilités est associée à Sen."
+        },
+        {
+          "id": 16,
+          "doc": 6,
+          "q": "Classe A, B et C face à l’emploi et justifie.",
+          "a": "A est en emploi même s’il étudie ; B est au chômage BIT puisqu’il est sans emploi, disponible et en recherche active ; C est inactif car il ne travaille ni ne recherche un emploi."
+        },
+        {
+          "id": 17,
+          "doc": 6,
+          "q": "Calcule le taux de chômage de la population construite.",
+          "a": "Actifs : 800 + 100 = 900. Taux : 100 / 900 × 100 ≈ 11,1 %. Les 300 inactifs ne figurent pas au dénominateur."
+        },
+        {
+          "id": 18,
+          "doc": 6,
+          "q": "Explique pourquoi une personne sans emploi n’est pas nécessairement au chômage BIT.",
+          "a": "Elle peut ne pas être disponible ou ne pas rechercher activement. Il faut vérifier simultanément les critères ; l’inscription administrative ne suffit pas."
+        }
+      ]
+    },
+    {
+      "hour": 4,
+      "title": "II 2.1 Le diplôme protège-t-il du chômage ?",
+      "oa": 2,
+      "rappel": "Une personne sans emploi est-elle toujours au chômage ?",
+      "board": "Le diplôme protège-t-il du chômage ?",
+      "docs": [
+        7,
+        8
+      ],
+      "questions": [
+        {
+          "id": 19,
+          "doc": 7,
+          "q": "Lis 13,8 % sans confondre actifs et ensemble de la population.",
+          "a": "En France en 2024, parmi les actifs en logement ordinaire ayant au plus le brevet, 13,8 % sont au chômage au sens du BIT."
+        },
+        {
+          "id": 20,
+          "doc": 7,
+          "q": "Calcule l’écart avec bac + 2 ou plus et repère une limite au classement des diplômes.",
+          "a": "13,8 − 5,0 = 8,8 points. Le CAP-BEP a un taux de 7,3 %, inférieur aux 8,9 % du seul bac ; les filières ne se classent pas mécaniquement par durée."
+        },
+        {
+          "id": 21,
+          "doc": 7,
+          "q": "Le diplôme supprime-t-il le risque de chômage ? Appuie ta réponse.",
+          "a": "Non : le taux est de 5,0 % parmi les actifs titulaires de bac + 2 ou plus. La protection est statistique, non absolue."
+        },
+        {
+          "id": 22,
+          "doc": 8,
+          "q": "Explique comment un manque de qualification peut limiter l’embauche.",
+          "a": "Des compétences ou un titre requis peuvent manquer pour un poste. Des changements techniques peuvent aussi rendre nécessaire une adaptation ; une formation peut réduire ce décalage."
+        },
+        {
+          "id": 23,
+          "doc": 8,
+          "q": "Donne une autre cause possible du chômage présente dans le document.",
+          "a": "Une activité insuffisante des entreprises peut réduire les postes proposés ; la localisation ou les pratiques de recrutement peuvent aussi limiter l’accès."
+        },
+        {
+          "id": 24,
+          "doc": 8,
+          "q": "Distingue le constat du document 7 du mécanisme du document 8.",
+          "a": "Le tableau compare des taux observés entre groupes ; le texte explique un mécanisme possible. La comparaison seule n’isole pas un effet causal pur de la formation."
+        }
+      ]
+    },
+    {
+      "hour": 5,
+      "title": "III 3.1 Quel lien entre formation et salaire ?",
+      "oa": 3,
+      "rappel": "Explique pourquoi le diplôme ne supprime pas tout risque de chômage.",
+      "board": "Quel lien entre formation et salaire ?",
+      "docs": [
+        9,
+        10
+      ],
+      "questions": [
+        {
+          "id": 25,
+          "doc": 9,
+          "q": "Lis les 2 000 € du supérieur long sorti depuis un à quatre ans.",
+          "a": "En moyenne sur 2021–2023, la moitié de ces salariés perçoit un salaire mensuel net inférieur à 2 000 €, l’autre moitié supérieur, tous temps de travail confondus, sur le champ indiqué."
+        },
+        {
+          "id": 26,
+          "doc": 9,
+          "q": "Calcule l’écart avec le baccalauréat en début de carrière, en euros puis en pourcentage du montant du bac.",
+          "a": "2 000 − 1 370 = 630 €. 630 / 1 370 × 100 ≈ 46,0 %. La base est le salaire médian du groupe baccalauréat."
+        },
+        {
+          "id": 27,
+          "doc": 9,
+          "q": "Compare le supérieur long selon l’ancienneté et précise la limite.",
+          "a": "2 650 − 2 000 = 650 €. Les groupes sortis depuis onze ans ou plus et depuis un à quatre ans sont différents ; on ne suit pas le même salarié."
+        },
+        {
+          "id": 28,
+          "doc": 10,
+          "q": "Explique le mécanisme reliant expérience et salaire selon Fauliot.",
+          "a": "La pratique apporte compétences et productivité, et peut renforcer la négociation. Elle peut soutenir une hausse de rémunération sans garantir une progression automatique."
+        },
+        {
+          "id": 29,
+          "doc": 10,
+          "q": "Pourquoi l’âge ne suffit-il pas à mesurer l’expérience ?",
+          "a": "Les personnes n’ont pas commencé au même âge et peuvent avoir connu chômage, interruptions ou emplois différents. Âge et durée d’expérience se distinguent."
+        },
+        {
+          "id": 30,
+          "doc": 10,
+          "q": "Peut-on additionner directement les chiffres de 2010 du texte à ceux du tableau récent ?",
+          "a": "Non. Dates, populations et indicateurs diffèrent. On peut confronter les mécanismes, pas construire une évolution chiffrée homogène à partir de ces seules valeurs."
+        }
+      ]
+    },
+    {
+      "hour": 6,
+      "title": "III 3.2 Pourquoi des salaires différents à diplôme égal ?",
+      "oa": 4,
+      "rappel": "Distingue salaire médian et salaire moyen.",
+      "board": "Pourquoi des salaires différents à diplôme égal ?",
+      "docs": [
+        11,
+        12
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "doc": 11,
+          "q": "Distingue les 6 410 € des 7 850 € dans le texte.",
+          "a": "6 410 € est le seuil d’entrée dans le 1 % des agents publics les mieux rémunérés ; 7 850 € est la moyenne de ce groupe. Seuil et moyenne ne sont pas interchangeables."
+        },
+        {
+          "id": 32,
+          "doc": 11,
+          "q": "Compare les seuils de 8 280 € et 6 410 € en euros et par un rapport.",
+          "a": "Écart 1 870 € ; rapport 8 280 / 6 410 ≈ 1,29. Le seuil privé est environ 29,2 % supérieur au seuil public dans les données de 2016 citées."
+        },
+        {
+          "id": 33,
+          "doc": 11,
+          "q": "Ce texte compare-t-il des salariés strictement identiques à diplôme et poste égaux ?",
+          "a": "Non : il compare des sommets de distributions de secteurs différents. Il ne prouve pas que le seul changement de secteur augmenterait de 29,2 % le salaire d’une même personne."
+        },
+        {
+          "id": 34,
+          "doc": 12,
+          "q": "Lis les deux salaires de bac + 3 et plus en conservant l’année.",
+          "a": "Dans le graphique fourni sur 2013 en France, le salaire net mensuel indiqué est de 3 148 € pour les hommes et de 2 153 € pour les femmes de niveau bac + 3 et plus. Le champ détaillé n’est pas précisé."
+        },
+        {
+          "id": 35,
+          "doc": 12,
+          "q": "Calcule l’écart en euros pour bac + 3 et plus puis pour CAP-BEP.",
+          "a": "3 148 − 2 153 = 995 € ; 1 718 − 1 260 = 458 €. Un écart en euros n’est pas un écart en points de pourcentage."
+        },
+        {
+          "id": 36,
+          "doc": 12,
+          "q": "Pourquoi cet écart à diplôme égal ne mesure-t-il pas à lui seul la discrimination ?",
+          "a": "Le niveau de diplôme ne rend pas identiques spécialités, professions, temps de travail et expérience. Des discriminations sont possibles, mais leur mesure exige d’autres contrôles."
+        }
+      ]
+    },
+    {
+      "hour": 7,
+      "title": "IV 4.1 Quelles inégalités dans les parcours ?",
+      "oa": 5,
+      "rappel": "Explique une limite d’une comparaison à niveau de diplôme égal.",
+      "board": "Quelles inégalités dans les parcours ?",
+      "docs": [
+        13,
+        14
+      ],
+      "questions": [
+        {
+          "id": 37,
+          "doc": 13,
+          "q": "Lis les 60 % en nommant le dénominateur.",
+          "a": "Parmi les personnes d’origine cadres ou professions intermédiaires sorties d’études en 2022–2024, 60 % ont un diplôme supérieur à bac + 2, en moyenne annuelle, en France hors Mayotte."
+        },
+        {
+          "id": 38,
+          "doc": 13,
+          "q": "Compare aux employés et ouvriers en points et par un rapport.",
+          "a": "60 − 27 = 33 points ; 60 / 27 ≈ 2,22. La proportion est environ 2,22 fois plus élevée parmi les premiers."
+        },
+        {
+          "id": 39,
+          "doc": 13,
+          "q": "Ces données fixent-elles le diplôme futur de chaque élève ?",
+          "a": "Non : elles décrivent une régularité de groupes et laissent place à des trajectoires différentes. Elles ne rendent pas tous les parcours individuels identiques."
+        },
+        {
+          "id": 40,
+          "doc": 14,
+          "q": "Quel mécanisme Lahire met-il en avant dans les rapports à la langue scolaire ?",
+          "a": "Les usages familiaux peuvent être plus ou moins proches des usages valorisés à l’école. Les positions sociales des langues et des pratiques influencent leur reconnaissance."
+        },
+        {
+          "id": 41,
+          "doc": 14,
+          "q": "Pourquoi faut-il distinguer distance à l’école et infériorité d’une langue ?",
+          "a": "La distance concerne des attentes institutionnelles et des rapports sociaux. Elle ne prouve aucune infériorité intrinsèque des langues ni de leurs locuteurs."
+        },
+        {
+          "id": 42,
+          "doc": 14,
+          "q": "Relie le texte à l’inégalité statistique sans en faire une explication unique.",
+          "a": "Une familiarité inégale avec les usages scolaires peut contribuer à des écarts de réussite puis de parcours. Ressources économiques, information et choix comptent aussi ; le tableau ne permet pas de mesurer séparément chaque facteur."
+        }
+      ]
+    },
+    {
+      "hour": 8,
+      "title": "IV 4.2 Comment les ressources orientent-elles les choix ?",
+      "oa": 5,
+      "rappel": "Distingue une régularité collective et un destin individuel.",
+      "board": "Comment les ressources orientent-elles les choix ?",
+      "docs": [
+        15,
+        16
+      ],
+      "questions": [
+        {
+          "id": 43,
+          "doc": 15,
+          "q": "Explique comment des ressources économiques peuvent modifier un parcours.",
+          "a": "Elles peuvent faciliter un logement, un transport ou des années supplémentaires ; à ressources faibles, les coûts peuvent restreindre les possibilités effectives."
+        },
+        {
+          "id": 44,
+          "doc": 15,
+          "q": "Relie ressources culturelles et attentes scolaires à l’aide du texte.",
+          "a": "Des savoirs, pratiques et usages familiaux proches des normes scolaires peuvent faciliter la compréhension des attentes et la réussite, sans la garantir."
+        },
+        {
+          "id": 45,
+          "doc": 15,
+          "q": "Explique pourquoi un choix d’études n’est pas seulement une préférence personnelle.",
+          "a": "Coûts, risques, information, résultats scolaires et perspectives perçues diffèrent selon le contexte familial. La préférence se forme et s’exerce sous contraintes."
+        },
+        {
+          "id": 46,
+          "doc": 16,
+          "q": "Compare le recours à un emploi étudiant dans les deux groupes de foyers.",
+          "a": "En 2018 dans l’enquête reproduite, 30 % pour les foyers sous 4 500 €, contre 12 % au-dessus ; écart de 18 points et rapport 2,5."
+        },
+        {
+          "id": 47,
+          "doc": 16,
+          "q": "Pourquoi les pourcentages de financement ne totalisent-ils pas 100 % ?",
+          "a": "Les modes peuvent être combinés : un foyer peut mobiliser épargne et emploi étudiant. Ce ne sont pas des catégories exclusives."
+        },
+        {
+          "id": 48,
+          "doc": 16,
+          "q": "Construis une explication reliant coût, ressources et capabilités sans promettre un résultat certain.",
+          "a": "Des ressources ou des aides peuvent rendre une formation accessible, développer des compétences et élargir les choix réels. Elles ne garantissent ni la réussite ni un salaire donné ; les parcours restent divers."
+        }
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "hours": "H1–H2",
+      "title": "I La formation comme investissement",
+      "question": "Pourquoi supporter un coût présent pour poursuivre des études ?",
+      "words": [
+        "capital humain",
+        "coût direct",
+        "coût d’opportunité",
+        "salaire escompté"
+      ],
+      "docs": "Documents 1 à 4 et Q1 à Q12",
+      "text": "La formation développe des savoirs et des compétences incorporés à la personne : le capital humain. Elle implique des dépenses et un coût d’opportunité, par exemple un salaire renoncé. L’étudiant espère des avantages futurs, dont une rémunération supérieure et de meilleures possibilités d’emploi. Le calcul du document 3 dépend d’hypothèses ; les recherches présentées par Banerjee et Duflo rappellent que les effets sont contextualisés et dépassent aussi le revenu."
+    },
+    {
+      "hours": "H3–H4",
+      "title": "II Capabilités qualification et emploi",
+      "question": "Pourquoi la formation peut-elle élargir les choix sans garantir un emploi ?",
+      "words": [
+        "capabilités",
+        "qualification",
+        "population active",
+        "taux de chômage"
+      ],
+      "docs": "Documents 5 à 8 et Q13 à Q24",
+      "text": "La formation peut accroître les possibilités réelles de lire, d’argumenter et de choisir : les capabilités chez Sen, présenté par Poirot. Des qualifications adaptées facilitent l’accès aux postes. En 2024, le taux de chômage est de 13,8 % parmi les actifs ayant au plus le brevet, contre 5,0 % pour bac + 2 ou plus. Le diplôme protège donc statistiquement, sans garantir un emploi ; le manque de qualification est une cause parmi d’autres. Le taux de chômage se calcule parmi les actifs."
+    },
+    {
+      "hours": "H5–H6",
+      "title": "III Les déterminants des salaires",
+      "question": "Pourquoi un diplôme ne fixe-t-il pas à lui seul le salaire ?",
+      "words": [
+        "formation",
+        "expérience",
+        "type d’entreprise",
+        "genre",
+        "médiane"
+      ],
+      "docs": "Documents 9 à 12 et Q25 à Q36",
+      "text": "Le niveau de formation favorise l’accès à des compétences et à des emplois plus qualifiés. Le salaire médian de début de carrière est de 2 000 € pour le supérieur long contre 1 370 € pour le seul bac en moyenne sur 2021–2023. L’expérience, les entreprises et les trajectoires liées au genre contribuent aussi aux écarts. Un même niveau de diplôme ne signifie pas même spécialité, poste ou temps de travail. Les comparaisons descriptives ne mesurent pas un effet causal pur ou la seule discrimination."
+    },
+    {
+      "hours": "H7–H8",
+      "title": "IV Des parcours socialement différenciés",
+      "question": "Comment le milieu social influence-t-il les possibilités de formation ?",
+      "words": [
+        "origine sociale",
+        "ressources économiques",
+        "capital culturel",
+        "choix sous contraintes",
+        "capabilités"
+      ],
+      "docs": "Documents 13 à 16 et Q37 à Q48",
+      "text": "Les ressources économiques, culturelles et les informations disponibles influencent les conditions de réussite et les choix d’études. Lahire analyse la distance entre certains usages familiaux et les attentes langagières de l’école. Les coûts et risques anticipés ne pèsent pas pareil selon les familles. Parmi les sortants de 2022–2024, 60 % d’origine cadres ou professions intermédiaires dépassent bac + 2 contre 27 % d’origine employés ou ouvriers. Cette régularité sociale ne détermine pas chaque destin individuel ; des aides et un accompagnement peuvent élargir les capabilités."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Le capital humain correspond…",
+      "options": [
+        "aux compétences incorporées aux personnes",
+        "au nombre de machines",
+        "au seul nombre de travailleurs"
+      ],
+      "correct": 0,
+      "explanation": "La formation et l’expérience peuvent le développer."
+    },
+    {
+      "q": "Le diplôme…",
+      "options": [
+        "mesure toutes les qualités d’une personne",
+        "certifie une formation et des acquis",
+        "est identique au salaire"
+      ],
+      "correct": 1,
+      "explanation": "La qualification dépasse la seule certification."
+    },
+    {
+      "q": "Un coût d’opportunité est…",
+      "options": [
+        "toute dépense de loisir",
+        "le seul montant d’une bourse",
+        "la valeur de la meilleure possibilité abandonnée"
+      ],
+      "correct": 2,
+      "explanation": "Étudier peut conduire à renoncer à un salaire."
+    },
+    {
+      "q": "Le salaire escompté est…",
+      "options": [
+        "un salaire futur attendu et incertain",
+        "un salaire déjà payé",
+        "un salaire garanti à vie"
+      ],
+      "correct": 0,
+      "explanation": "Une attente n’est pas une certitude."
+    },
+    {
+      "q": "Les capabilités désignent…",
+      "options": [
+        "le seul niveau de revenu",
+        "des possibilités réelles de choisir et d’agir",
+        "la quantité de machines"
+      ],
+      "correct": 1,
+      "explanation": "Sen met l’accent sur la liberté effective."
+    },
+    {
+      "q": "Qui signe le texte sur Sen fourni au livret ?",
+      "options": [
+        "Gary Becker",
+        "Bernard Lahire",
+        "Jacques Poirot"
+      ],
+      "correct": 2,
+      "explanation": "Poirot présente la pensée de Sen."
+    },
+    {
+      "q": "Les 8 % évoqués par Banerjee et Duflo concernent…",
+      "options": [
+        "une estimation sur la scolarité primaire en Indonésie",
+        "chaque année d’études française",
+        "tous les diplômes au monde"
+      ],
+      "correct": 0,
+      "explanation": "Les résultats doivent garder leur contexte."
+    },
+    {
+      "q": "Le calcul sur vingt ans…",
+      "options": [
+        "prouve un rendement certain",
+        "dépend d’hypothèses de revenu et d’emploi",
+        "est une prévision personnelle"
+      ],
+      "correct": 1,
+      "explanation": "Il ne prend pas en compte tous les risques et coûts."
+    },
+    {
+      "q": "Une expérience professionnelle…",
+      "options": [
+        "délivre toujours un master",
+        "ne développe aucune compétence",
+        "peut enrichir la qualification"
+      ],
+      "correct": 2,
+      "explanation": "On peut apprendre hors formation initiale."
+    },
+    {
+      "q": "La population active comprend…",
+      "options": [
+        "les personnes en emploi et les chômeurs",
+        "tous les adultes seulement",
+        "les seuls salariés"
+      ],
+      "correct": 0,
+      "explanation": "Les inactifs sont hors de ce dénominateur."
+    },
+    {
+      "q": "Un étudiant qui travaille est…",
+      "options": [
+        "toujours inactif",
+        "en emploi",
+        "toujours au chômage"
+      ],
+      "correct": 1,
+      "explanation": "Le statut étudiant n’empêche pas l’emploi."
+    },
+    {
+      "q": "Être sans emploi…",
+      "options": [
+        "suffit toujours à être chômeur BIT",
+        "implique d’être retraité",
+        "ne suffit pas à être chômeur BIT"
+      ],
+      "correct": 2,
+      "explanation": "Il faut vérifier disponibilité et recherche ou emploi prochain."
+    },
+    {
+      "q": "100 chômeurs et 900 actifs donnent…",
+      "options": [
+        "environ 11,1 % de chômage",
+        "9 %",
+        "100 %"
+      ],
+      "correct": 0,
+      "explanation": "100 / 900 × 100 ≈ 11,1."
+    },
+    {
+      "q": "13,8 % contre 5,0 % représentent…",
+      "options": [
+        "8,8 euros",
+        "8,8 points d’écart",
+        "18,8 points"
+      ],
+      "correct": 1,
+      "explanation": "On soustrait deux taux."
+    },
+    {
+      "q": "Le manque de qualification est…",
+      "options": [
+        "la cause unique du chômage",
+        "sans lien possible avec l’emploi",
+        "une cause possible du chômage"
+      ],
+      "correct": 2,
+      "explanation": "L’activité et les recrutements comptent aussi."
+    },
+    {
+      "q": "Le diplôme protège…",
+      "options": [
+        "statistiquement sans garantir un emploi",
+        "contre tout chômage",
+        "uniquement à vie"
+      ],
+      "correct": 0,
+      "explanation": "Les diplômés peuvent aussi être au chômage."
+    },
+    {
+      "q": "Le salaire médian…",
+      "options": [
+        "est toujours le salaire moyen",
+        "partage les salariés en deux groupes de même effectif",
+        "est le salaire minimum"
+      ],
+      "correct": 1,
+      "explanation": "Il distingue les deux moitiés de la distribution."
+    },
+    {
+      "q": "2 000 € contre 1 370 € donnent…",
+      "options": [
+        "630 points de pourcentage",
+        "3 370 %",
+        "630 € d’écart"
+      ],
+      "correct": 2,
+      "explanation": "La différence de niveaux se mesure en euros."
+    },
+    {
+      "q": "630 / 1 370 × 100 vaut environ…",
+      "options": [
+        "46,0 %",
+        "46 points de salaire",
+        "0,46 euro"
+      ],
+      "correct": 0,
+      "explanation": "Le salaire du bac est ici la base de comparaison."
+    },
+    {
+      "q": "Un tableau par ancienneté…",
+      "options": [
+        "suit nécessairement la même personne",
+        "compare des groupes différents",
+        "prouve une hausse garantie chaque année"
+      ],
+      "correct": 1,
+      "explanation": "Il ne s’agit pas automatiquement de données longitudinales."
+    },
+    {
+      "q": "À niveau de diplôme égal…",
+      "options": [
+        "tous les salaires sont identiques",
+        "le genre ne peut jamais jouer",
+        "l’expérience et l’entreprise peuvent compter"
+      ],
+      "correct": 2,
+      "explanation": "Spécialité et parcours peuvent aussi différer."
+    },
+    {
+      "q": "Un écart femmes-hommes à diplôme égal…",
+      "options": [
+        "ne mesure pas seul la discrimination pure",
+        "est forcément entièrement discriminatoire",
+        "prouve une différence naturelle de compétence"
+      ],
+      "correct": 0,
+      "explanation": "Postes, temps de travail et parcours doivent être examinés."
+    },
+    {
+      "q": "Le seuil du 1 % est…",
+      "options": [
+        "la moyenne de tous les salaires",
+        "un niveau d’entrée dans ce groupe",
+        "le salaire de chaque personne du groupe"
+      ],
+      "correct": 1,
+      "explanation": "Seuil et moyenne sont différents."
+    },
+    {
+      "q": "60 % contre 27 % donnent…",
+      "options": [
+        "33 euros",
+        "87 points",
+        "33 points d’écart"
+      ],
+      "correct": 2,
+      "explanation": "Les parts se comparent en points."
+    },
+    {
+      "q": "Les 60 % du document 13 se lisent…",
+      "options": [
+        "parmi les sortants d’origine cadres ou professions intermédiaires",
+        "parmi tous les étudiants uniquement",
+        "parmi tous les Français"
+      ],
+      "correct": 0,
+      "explanation": "Le dénominateur doit être nommé."
+    },
+    {
+      "q": "Lahire met en avant…",
+      "options": [
+        "une infériorité naturelle de certaines langues",
+        "des rapports sociaux entre usages langagiers et école",
+        "le seul rôle de la génétique"
+      ],
+      "correct": 1,
+      "explanation": "Il faut éviter les jugements sur les langues et les familles."
+    },
+    {
+      "q": "Les choix d’études…",
+      "options": [
+        "dépendent de la seule volonté",
+        "sont identiques dans toutes les familles",
+        "s’exercent sous des contraintes inégales"
+      ],
+      "correct": 2,
+      "explanation": "Coûts, ressources, informations et risques comptent."
+    },
+    {
+      "q": "Les financements peuvent totaliser plus de 100 % car…",
+      "options": [
+        "plusieurs modes peuvent se cumuler",
+        "toute enquête est nécessairement fausse",
+        "ce sont des euros"
+      ],
+      "correct": 0,
+      "explanation": "Ce sont des réponses multiples et non des parts exclusives."
+    }
+  ],
+  "sources": [
+    [
+      "Programme officiel",
+      "https://www.education.gouv.fr/bo/19/Special1/MENE1901638A.htm",
+      "Cinq objectifs officiels, programme en vigueur vérifié sur Éduscol le 31 octobre 2026."
+    ],
+    [
+      "Fiche Éduscol",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/ra20lyceegt2sesdiplomeemploisalaireregardscroises1242022pdf-82773.pdf",
+      "Janvier 2020, fiche également fournie."
+    ],
+    [
+      "Melchior Hélène Delhommeau",
+      "https://www.melchior.fr/cours/question-1-la-poursuite-d-etudes-est-un-investissement-en-capital-humain",
+      "Cours demandé ; complété par les deux parties salaires et inégalités."
+    ],
+    [
+      "Insee chômage 2024",
+      "https://www.insee.fr/fr/statistiques/8376838?sommaire=8376908",
+      "Enquête Emploi 2024, publication 2025."
+    ],
+    [
+      "Insee salaires",
+      "https://www.insee.fr/fr/statistiques/8305524",
+      "Moyenne des enquêtes 2021–2023, publication 2025."
+    ],
+    [
+      "Insee origine sociale",
+      "https://www.insee.fr/fr/statistiques/2850737",
+      "Sorties 2022–2024, publication août 2026."
+    ],
+    [
+      "Insee chômage BIT",
+      "https://www.insee.fr/fr/metadonnees/definition/c1129",
+      "Repères de classement et dénominateurs."
+    ]
+  ]
+}
