@@ -1,0 +1,1181 @@
+{
+  "title": "Comment s’organise la vie politique ?",
+  "duration": "8 séances de travail + 1 h d’évaluation",
+  "objectifs": [
+    [
+      "Connaître les principales spécificités du pouvoir politique.",
+      "Distinguer un pouvoir exercé dans une relation et les décisions qui engagent une collectivité politique.",
+      "Une consigne parentale relève d’un pouvoir ; une loi encadre l’ensemble d’un territoire."
+    ],
+    [
+      "Connaître les principales institutions politiques (rôle et composition) de la cinquième République et le principe de la séparation des pouvoirs (exécutif, législatif, judiciaire).",
+      "Identifier qui fait quoi, comment les responsables sont désignés et comment les pouvoirs sont limités.",
+      "Le Parlement vote les lois ; l’Assemblée peut censurer le Gouvernement ; le Président peut dissoudre l’Assemblée."
+    ],
+    [
+      "Comprendre comment les modes de scrutin (proportionnel, majoritaire) déterminent la représentation politique et structurent la vie politique.",
+      "Expliquer comment la règle qui transforme les voix en sièges modifie la représentation et les stratégies.",
+      "Avec les mêmes votes, deux règles de répartition peuvent produire des assemblées différentes."
+    ],
+    [
+      "Comprendre que la vie politique repose sur la contribution de différents acteurs (partis politiques, société civile organisée, médias).",
+      "Distinguer conquête du pouvoir, mobilisation collective, information et contrôle.",
+      "Un parti présente des candidats ; une association défend une cause ; un média enquête et organise le débat."
+    ]
+  ],
+  "notions": [
+    [
+      "Pouvoir",
+      "Relation permettant d’obtenir une conduite d’autrui.",
+      "Toutes les relations de pouvoir ne sont pas politiques."
+    ],
+    [
+      "Pouvoir politique",
+      "Pouvoir qui organise la vie collective et prend des décisions engageant la collectivité.",
+      "Son champ dépasse une relation privée."
+    ],
+    [
+      "État",
+      "Organisation institutionnelle du pouvoir politique sur un territoire.",
+      "Chez Weber, il revendique le monopole de la violence physique légitime."
+    ],
+    [
+      "Légitimité",
+      "Reconnaissance du droit de gouverner ou d’exercer une autorité.",
+      "Elle ne signifie pas l’accord avec chaque décision."
+    ],
+    [
+      "Constitution",
+      "Texte qui organise les pouvoirs publics et garantit des droits.",
+      "Les lois doivent respecter les normes constitutionnelles."
+    ],
+    [
+      "Séparation des pouvoirs",
+      "Principe limitant la concentration des fonctions législative, exécutive et juridictionnelle.",
+      "La séparation peut comporter des coopérations et des contrôles."
+    ],
+    [
+      "Parlement",
+      "Institution composée de l’Assemblée nationale et du Sénat.",
+      "Il vote la loi, contrôle le Gouvernement et évalue les politiques publiques."
+    ],
+    [
+      "Gouvernement",
+      "Premier ministre et ministres qui déterminent et conduisent la politique de la Nation.",
+      "Le Gouvernement est responsable devant l’Assemblée dans les conditions constitutionnelles."
+    ],
+    [
+      "Dissolution",
+      "Décision présidentielle mettant fin au mandat de l’Assemblée nationale et entraînant des élections.",
+      "Elle ne dissout pas le Sénat."
+    ],
+    [
+      "Motion de censure",
+      "Procédure par laquelle l’Assemblée nationale peut mettre en cause le Gouvernement.",
+      "Son adoption impose sa démission."
+    ],
+    [
+      "Mode de scrutin",
+      "Règle de transformation des votes en désignation d’élus.",
+      "Voix et sièges ne sont pas identiques."
+    ],
+    [
+      "Scrutin majoritaire",
+      "Règle attribuant le siège ou les sièges aux candidats ou listes répondant aux conditions de majorité prévues.",
+      "Préciser un ou deux tours et la circonscription."
+    ],
+    [
+      "Représentation proportionnelle",
+      "Répartition des sièges selon la part des voix, avec des règles précises.",
+      "Seuils et arrondis peuvent jouer."
+    ],
+    [
+      "Parti politique",
+      "Organisation cherchant à participer à la conquête et à l’exercice du pouvoir.",
+      "Un parti n’est pas un groupe parlementaire."
+    ],
+    [
+      "Société civile organisée",
+      "Organisations collectives défendant des intérêts ou des causes.",
+      "Associations et syndicats peuvent contribuer à la vie politique."
+    ],
+    [
+      "Média",
+      "Support ou organisation diffusant de l’information à un public.",
+      "Informer, enquêter et mettre en débat peut exercer un contre-pouvoir."
+    ]
+  ],
+  "cours": [
+    {
+      "title": "I 1.1 Le pouvoir politique engage la collectivité",
+      "paragraphs": [
+        "Le pouvoir est une relation : une personne ou un groupe peut obtenir d’autrui une conduite qu’il n’aurait pas adoptée spontanément. Il peut s’appuyer sur une position, une compétence, des ressources ou la reconnaissance d’une autorité. Le chef d’entreprise, un parent et un responsable politique n’exercent donc pas tous le même type de pouvoir.",
+        "Le pouvoir politique concerne l’organisation de la vie collective : il fixe des règles, arbitre des conflits et prend des décisions pour l’ensemble d’une collectivité sur un territoire. Dans l’État moderne, des institutions spécialisées exercent ce pouvoir et disposent de moyens de contrainte. Cela ne signifie pas que toute décision prise par une personne exerçant une profession soit politique."
+      ]
+    },
+    {
+      "title": "I 1.2 Contrainte légitimité et limites",
+      "paragraphs": [
+        "Weber caractérise l’État par sa revendication du monopole de la violence physique légitime sur un territoire. Les forces de l’ordre ne constituent pas un pouvoir sans limites : dans un État de droit, leurs interventions sont encadrées par des règles et peuvent être contrôlées. La légitimité renvoie à la reconnaissance du droit de gouverner, et non à une approbation automatique de chaque décision.",
+        "La Constitution organise les institutions et les relations entre elles. Les droits fondamentaux et les procédures limitent l’exercice du pouvoir. La Déclaration de 1789 appartient au bloc de constitutionnalité auquel renvoie le préambule de la Constitution ; elle n’est pas, à elle seule, le préambule de 1958."
+      ]
+    },
+    {
+      "title": "II 2.1 Séparer les fonctions pour protéger les libertés",
+      "paragraphs": [
+        "Montesquieu explique qu’une concentration des fonctions de législation, d’exécution et de jugement expose les citoyens à l’arbitraire. La fonction législative consiste à établir la loi ; l’exécutif conduit la politique publique et assure l’exécution des lois ; les juridictions rendent la justice. La fonction de juger ne se réduit pas aux seules sanctions pénales.",
+        "Sous la Ve République, la séparation est souple : les organes sont distincts mais disposent de moyens de coopération et de contrôle. Le Gouvernement participe ainsi à l’initiative des lois. La Constitution garantit l’indépendance de l’autorité judiciaire ; le contrôle de constitutionnalité des lois relève du Conseil constitutionnel, qu’il faut distinguer des tribunaux judiciaires."
+      ]
+    },
+    {
+      "title": "II 2.2 Identifier les institutions et les contrôles",
+      "paragraphs": [
+        "L’exécutif associe le Président de la République et le Gouvernement dirigé par le Premier ministre. Le Président est élu directement pour cinq ans, nomme le Premier ministre, promulgue les lois et peut dissoudre l’Assemblée nationale dans les conditions constitutionnelles. Le Gouvernement détermine et conduit la politique de la Nation ; le Premier ministre dirige son action. L’article 8 rattache la fin des fonctions du Premier ministre à la présentation de la démission du Gouvernement.",
+        "Le Parlement comprend l’Assemblée nationale et le Sénat. Les 577 sièges de députés sont pourvus par suffrage direct, normalement pour cinq ans, sauf dissolution ; les 348 sièges de sénateurs relèvent du suffrage indirect, pour six ans avec renouvellement par moitié tous les trois ans. Le Parlement vote la loi, contrôle le Gouvernement et évalue les politiques publiques. L’initiative des lois est partagée entre le Premier ministre et les parlementaires.",
+        "La motion de censure met en jeu la responsabilité du Gouvernement devant l’Assemblée nationale, et non devant le Sénat. Son adoption impose la démission du Gouvernement. En 2024, 331 voix ont permis l’adoption de la motion du 4 décembre ; le seuil requis était alors de 288. Le nombre dépend des membres composant l’Assemblée, pas des seuls votants. Le 49.3 n’annule pas ce contrôle : il engage la responsabilité sur un texte qui est considéré comme adopté sauf censure dans les conditions prévues."
+      ]
+    },
+    {
+      "title": "III 3.1 Transformer les voix en sièges",
+      "paragraphs": [
+        "Un mode de scrutin est une règle de désignation des élus à partir des suffrages. Dans un scrutin uninominal majoritaire à un tour, le candidat arrivé en tête dans une circonscription remporte son siège. Une formation peut ainsi obtenir une forte part de sièges sans obtenir la majorité absolue des voix à l’échelle du territoire. La représentation proportionnelle répartit les sièges en fonction des voix, avec des règles de seuil et d’arrondi qui peuvent limiter la proportionnalité réelle.",
+        "Les députés français sont élus au scrutin uninominal majoritaire à deux tours. Au premier tour, il faut la majorité absolue des suffrages exprimés et un nombre de voix au moins égal au quart des inscrits. Le maintien au second tour suppose normalement 12,5 % des inscrits ; si moins de deux candidats atteignent ce seuil, les règles permettent la présence des deux premiers. Au second tour, le candidat ayant le plus de voix est élu. La simulation à un tour du livret isole un mécanisme ; elle ne décrit pas ces élections françaises."
+      ]
+    },
+    {
+      "title": "III 3.2 Des effets sur les alliances et la représentation",
+      "paragraphs": [
+        "Les règles de scrutin modifient les chances d’obtenir des sièges et peuvent encourager des alliances, des retraits ou des candidatures communes. Un mode majoritaire tend à favoriser les groupes capables d’arriver en tête ; la proportionnelle permet généralement une représentation plus fidèle des sensibilités électorales mais peut rendre nécessaires des coalitions.",
+        "Il s’agit de tendances conditionnelles. Un scrutin majoritaire ne garantit pas une majorité absolue, et une coalition peut gouverner durablement dans un système proportionnel. Le nombre de partis, leur implantation, les comportements des électeurs, les seuils et les règles institutionnelles jouent aussi un rôle. Un projet de réforme relaté en 2019 n’est pas une règle en vigueur."
+      ]
+    },
+    {
+      "title": "IV 4.1 Partis et société civile organisée",
+      "paragraphs": [
+        "Les partis politiques cherchent à participer à la conquête et à l’exercice du pouvoir. Ils élaborent des programmes, sélectionnent des candidats, mobilisent les électeurs et contribuent au débat. Un groupe parlementaire rassemble des élus dans une assemblée ; il ne se confond pas nécessairement avec un seul parti. Connaître les fonctions importe davantage que mémoriser une liste ancienne de dirigeants.",
+        "La société civile organisée regroupe notamment associations, syndicats et organisations défendant des intérêts ou des causes. Elle peut coopérer avec les institutions, exercer une influence, protester ou saisir la justice. Le dossier oppose ainsi l’action de Greenpeace contre BP et l’appel de l’Affaire du siècle à un recours juridictionnel. Ces organisations n’ont pas pour objectif principal de présenter des candidats pour gouverner. Une revendication doit être distinguée d’un résultat effectivement obtenu."
+      ]
+    },
+    {
+      "title": "IV 4.2 Médias information et action collective",
+      "paragraphs": [
+        "Les médias rendent visibles des informations, enquêtent et organisent des débats ; ils peuvent jouer un rôle de contre-pouvoir. Les sujets qu’ils sélectionnent et la manière de les présenter contribuent à orienter l’attention publique. Les acteurs politiques tentent aussi d’influencer cette visibilité et disposent parfois de leurs propres canaux.",
+        "Tocqueville montrait déjà au XIXe siècle comment un journal pouvait rapprocher des personnes dispersées et rendre possible une action commune. Ce mécanisme éclaire le lien entre information et mobilisation sans suffire à analyser tous les usages numériques actuels. Les citoyens interprètent les messages dans leurs relations et à partir de leurs expériences : les médias ne déterminent pas mécaniquement les votes."
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "title": "Le pouvoir est une relation",
+      "text": "Selon Robert Dahl (politologue américain) le pouvoir n’est pas tant une propriété de quelqu’un ou de quelque chose que la capacité pour A (un individu ou un groupe) d’obtenir de B (un individu ou un groupe) ce que B n’aurait pas fait spontanément. Le pouvoir est ainsi une forme spécifique d’interaction sociale dont on peut observer des manifestations très diverses (pouvoir domestique, pouvoir économique, pouvoir religieux, etc.). Le pouvoir politique, quant à lui, ne se limite pas à un domaine particulier mais embrasse, par définition, l’ensemble de la société. Il vise à fixer des règles et à prendre des décisions qui engagent l’ensemble d’un groupe et englobent l’ensemble des domaines de la vie collective, notamment dans un but de limitation des conflits. Si le pouvoir économique ou le pouvoir religieux, par exemple, renvoient à certains aspects de la vie sociale, le pouvoir politique a bien vocation à s’exercer sur l’ensemble de la société. Par ailleurs, dans la hiérarchie des pouvoirs, le pouvoir politique est censé être souverain et s’imposer aux autres pouvoirs, dont il fixe les limites (par exemple, c’est au pouvoir politique de fixer les limites du pouvoir économique ou du pouvoir religieux).",
+      "source": "Éduscol, Comment s’organise la vie politique ?, juin 2019, p. 2 ; présentation de l’approche de Robert Dahl.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 2,
+      "note": "Il s’agit du texte explicatif d’Éduscol, non d’un extrait original de Dahl. Le pouvoir n’est pas nécessairement exercé par la seule menace.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 2,
+      "title": "L’État la contrainte et la légitimité",
+      "text": "Le pouvoir politique ne peut pas reposer uniquement sur la coercition et suppose un consentement. Pour Max Weber, si les individus consentent à obéir au pouvoir politique c’est qu’ils lui accordent une forme de légitimité. Dans Économie et société, il distingue trois types de domination, selon que la légitimité accordée au pouvoir politique s’appuie sur l’histoire et la tradition (domination traditionnelle), sur les vertus personnelles du chef (domination charismatique) ou sur la croyance en la valeur des règles de droit (domination légale-rationnelle). Évidemment, cette distinction renvoie à des « idéaux types » des différentes formes de pouvoir politique : dans la réalité ces types de domination tendent à se combiner. Néanmoins, on retient que, dans cette typologie, c’est la domination légale-rationnelle qui correspond le mieux au pouvoir politique tel qu’il s’exerce dans les démocraties modernes. Historiquement, le pouvoir politique tend à se fixer sur un territoire et à se cristalliser dans une institution qui est l’État. Dans Le savant et le politique, Max Weber définit l’État comme « cette communauté humaine qui, à l’intérieur d’un territoire déterminé (le « territoire » appartient à sa caractérisation), revendique pour elle-même et parvient à imposer le monopole de la violence physique légitime. ». Norbert Elias, dans La dynamique de l’Occident, montre comment, à partir de la période féodale, les États se sont justement constitués autour de ce processus de centralisation et de monopolisation des pouvoirs (militaire, fiscal, administratif…) et ont réussi à imposer, sur un territoire donné, leur monopole de la violence légitime.",
+      "source": "Éduscol, fiche fournie, juin 2019, p. 2, présentant Weber et Elias ; citation de Max Weber, Le Savant et le Politique.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 2,
+      "note": "La légitimité désigne ici la reconnaissance du droit de gouverner. « Violence légitime » ne signifie ni violence illimitée ni approbation morale de chaque intervention. Les trois types de domination constituent un approfondissement, pas une liste à réciter en Seconde.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 3,
+      "title": "Pourquoi séparer les pouvoirs",
+      "text": "Lorsque, dans la même personne ou dans le même corps de magistrature, la puissance législative est réunie à la puissance exécutrice, il n’y a point de liberté ; parce qu’on peut craindre que le même monarque ou le même sénat ne fasse des lois tyranniques, pour les exécuter tyranniquement. Il n’y a point encore de liberté, si la puissance de juger n’est pas séparée de la puissance législative, et de l’exécutrice. Si elle était jointe à la puissance législative, le pouvoir sur la vie et la liberté des citoyens serait arbitraire ; car le juge serait législateur. Si elle était jointe à la puissance exécutrice, le juge pourrait avoir la force d’un oppresseur.",
+      "source": "Montesquieu, De l’esprit des lois, 1748, livre XI, chapitre VI ; passage continu fourni.",
+      "origin": "séparation des pouvoirs.pdf",
+      "page": 2,
+      "note": "Un texte fondateur : lire les deux paragraphes ensemble. Expliquer le lien entre concentration des fonctions, arbitraire et liberté.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 4,
+      "title": "Des garanties contre l’arbitraire",
+      "text": "Déclaration des droits de l’homme et du citoyen de 1789, article 16 : « Toute Société dans laquelle la garantie des Droits n’est pas assurée, ni la séparation des Pouvoirs déterminée, n’a point de Constitution. »\n\nConstitution, article 64 : « Le Président de la République est garant de l’indépendance de l’autorité judiciaire. Il est assisté par le Conseil supérieur de la magistrature. Une loi organique porte statut des magistrats. Les magistrats du siège sont inamovibles. »\n\nRepère : les juridictions judiciaires règlent notamment les litiges entre personnes et jugent les infractions ; les juridictions administratives contrôlent l’administration. Le Conseil constitutionnel contrôle notamment la conformité des lois à la Constitution. Il ne se confond pas avec une juridiction pénale.",
+      "source": "DDHC, art. 16 ; Constitution, art. 64, version en vigueur vérifiée le 31 octobre 2026 ; repère pédagogique CAPSES.",
+      "origin": "Complément institutionnel",
+      "page": "art. 16 et 64",
+      "note": "L’indépendance de la justice ne signifie pas l’absence de toute relation institutionnelle. La Constitution parle d’« autorité judiciaire ». Le contrôle constitutionnel doit être distingué du jugement des infractions.",
+      "image": "",
+      "url": "https://www.legifrance.gouv.fr/loda/texte_lc/LEGITEXT000006071194/",
+      "table": null
+    },
+    {
+      "id": 5,
+      "title": "Un exécutif à deux têtes",
+      "text": "ARTICLE 5. Le président de la République veille au respect de la Constitution. Il assure, par son arbitrage, le fonctionnement régulier des pouvoirs publics ainsi que la continuité de l'État. Il est le garant de l'indépendance nationale, de l'intégrité du territoire et du respect des traités. ARTICLE 6. Le président de la République est élu pour cinq ans au suffrage universel direct. Nul ne peut exercer plus de deux mandats consécutifs. (…) ARTICLE 8. Le président de la République nomme le Premier ministre. Il met fin à ses fonctions sur la présentation par celui-ci de la démission du Gouvernement. Sur la proposition du Premier ministre, il nomme les autres membres du Gouvernement et met fin à leurs fonctions. ARTICLE 10. Le président de la République promulgue les lois dans les quinze jours qui suivent la transmission au Gouvernement de la loi définitivement adoptée. ARTICLE 12. Le président de la République peut, après consultation du Premier ministre et des présidents des assemblées, prononcer la dissolution de l'Assemblée nationale. ARTICLE 15. Le président de la République est le chef des armées. Il préside les conseils et les comités supérieurs de la défense nationale. ARTICLE 20. Le Gouvernement détermine et conduit la politique de la Nation. Il dispose de l'administration et de la force armée. (…) ARTICLE 21. Le Premier ministre dirige l'action du Gouvernement. Il est responsable de la défense nationale. Il assure l'exécution des lois. (…) Il peut déléguer certains de ses pouvoirs aux ministres. (…)",
+      "source": "Constitution du 4 octobre 1958, extraits des articles 5, 6, 8, 10, 12, 15, 20 et 21 ; vérifiés dans la version en vigueur au 31 octobre 2026.",
+      "origin": "Cours P. Savoye fourni",
+      "page": 2,
+      "note": "Les coupes de l’extrait fourni sont conservées. L’article 8 ne donne pas au Président un pouvoir général de révocation discrétionnaire du Premier ministre : il met fin à ses fonctions sur présentation de la démission du Gouvernement.",
+      "image": "",
+      "url": "https://www.legifrance.gouv.fr/loda/texte_lc/LEGITEXT000006071194/",
+      "table": null
+    },
+    {
+      "id": 6,
+      "title": "Le Parlement et la fabrication de la loi",
+      "text": "ARTICLE 24. Le Parlement vote la loi. Il contrôle l'action du Gouvernement. Il évalue les politiques publiques. Il comprend l'Assemblée nationale et le Sénat. Les députés à l'Assemblée nationale, dont le nombre ne peut excéder cinq cent soixante-dix-sept, sont élus au suffrage direct. Le Sénat, dont le nombre de membres ne peut excéder trois cent quarante-huit, est élu au suffrage indirect. Il assure la représentation des collectivités territoriales de la République. […] ARTICLE 39. L'initiative des lois appartient concurremment au Premier ministre et aux membres du Parlement.\n\nRepères institutionnels vérifiés : l’Assemblée nationale compte 577 sièges de députés élus directement, normalement pour cinq ans, sauf dissolution. Le Sénat compte 348 sièges ; les sénateurs sont élus au suffrage indirect pour six ans et renouvelés par moitié tous les trois ans. Les grands électeurs sont principalement des élus locaux. La navette désigne les lectures successives d’un texte dans les deux chambres. Pour les lois ordinaires, l’Assemblée peut avoir le dernier mot dans les conditions de l’article 45 ; il ne s’agit pas d’un pouvoir général sur tous les textes.",
+      "source": "Constitution, articles 24 et 39 ; repères tirés des sites de l’Assemblée nationale, du Sénat et de l’article 45. Vérification : 31 octobre 2026.",
+      "origin": "Cours P. Savoye fourni et compléments institutionnels",
+      "page": 2,
+      "note": "Distinguer sièges prévus et effectif présent lors d’un vote. Le Sénat participe à la législation et au contrôle, mais ne peut pas renverser le Gouvernement par une motion de censure.",
+      "image": "",
+      "url": "https://www.legifrance.gouv.fr/loda/texte_lc/LEGITEXT000006071194/",
+      "table": null
+    },
+    {
+      "id": 7,
+      "title": "Une présentation historique de la motion de censure",
+      "text": "Le dépôt d'une motion de censure peut intervenir en réaction à l'engagement de la responsabilité du Gouvernement sur un texte - le fameux article 49.3 -, comme cela avait été (…) [le cas lorsque les opposants à la réforme des retraites ont réagi, samedi 29 février 2020, à la suite de l’annonce par le premier ministre, Edouard Philippe, de l’utilisation de cet article de la Constitution pour faire passer sans vote le projet de loi à l’Assemblée nationale]. Mais elle peut aussi être initiée de manière spontanée, pour censurer la politique d'un gouvernement (…). Pour pouvoir être déposée, une motion de censure doit réunir 58 signatures (…) Pour être adoptée, une motion de censure doit (…) recueillir la majorité absolue des voix, en l'occurrence 289 députés. [Les députés ont rejeté, mardi 3 mars 2020, la motion de censure déposée par les Républicains. Dans le détail, 148 députés ont voté pour la motion de censure des Républicains or 289 voix étaient nécessaires pour l'adopter.]  Le nombre a été approché mais pas atteint, comme ce fut quasi systématiquement le cas au fil de l'Histoire : sur les quelque 100 motions de censures déposées depuis 1958, une seule a été adoptée, dans la nuit du 4 au 5 octobre 1962, contre l'élection du Président de la République au suffrage universel. Elle avait à l'époque fait chuter le gouvernement Pompidou.",
+      "source": "Margaux Lannuzel, « Motion de censure contre le Gouvernement : comment ça marche ? », Europe1.fr, 24 juillet 2018 ; passage adapté à 2020 dans le support fourni.",
+      "origin": "Cours P. Savoye fourni",
+      "page": "3–4",
+      "note": "Document historique conservé sans actualiser les mots de l’auteure. Les nombres 58 et 289 renvoient au contexte présenté ; la règle constitutionnelle porte sur les membres composant l’Assemblée. L’affirmation « une seule motion adoptée » était datée et ne vaut plus après le 4 décembre 2024. Les 148 voix ne sont pas proches du seuil de 289 au sens d’un vote serré.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 8,
+      "title": "Le contrôle parlementaire en pratique",
+      "text": "Le 4 décembre 2024, une motion de censure déposée après l’engagement de la responsabilité du Gouvernement sur le financement de la sécurité sociale est adoptée. Le scrutin n° 519 de l’Assemblée nationale recense 331 voix pour ; la majorité requise était alors de 288. En application de l’article 50, le Premier ministre Michel Barnier a présenté la démission du Gouvernement.\n\nRègle : l’article 49, alinéa 2, prévoit que seuls les votes favorables à la censure sont recensés ; la motion doit réunir la majorité des membres composant l’Assemblée. Le seuil ne se calcule donc pas sur les seuls votants. Le 49.3 engage la responsabilité du Gouvernement sur un texte : ce texte est considéré comme adopté sauf si une motion de censure est adoptée dans les conditions constitutionnelles. Il ne supprime pas la possibilité du contrôle parlementaire.\n\nAutre contrôle : le 4 avril 2019, le Conseil constitutionnel déclare contraire à la Constitution l’article 3 de la loi relative au maintien de l’ordre lors des manifestations. Censurer une disposition législative et censurer un Gouvernement sont deux opérations différentes.",
+      "source": "Présentation CAPSES d’après Assemblée nationale, scrutin n° 519 et séance du 4 décembre 2024 ; Constitution, art. 49 et 50 ; Conseil constitutionnel, décision n° 2019-780 DC, 4 avril 2019.",
+      "origin": "Complément actualisé",
+      "page": "scrutin 519 et décision 2019-780 DC",
+      "note": "Les événements sont précisément datés : ils servent d’exemples institutionnels, sans prétendre décrire l’ensemble de l’actualité politique de 2026.",
+      "image": "",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/519",
+      "table": {
+        "headers": [
+          "Événement du 4 décembre 2024",
+          "Nombre de voix"
+        ],
+        "rows": [
+          [
+            "Majorité requise",
+            "288"
+          ],
+          [
+            "Votes pour la censure",
+            "331"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Les mêmes voix deux règles de répartition",
+      "text": "Simulation pédagogique : 20 circonscriptions élisent chacune un représentant. Dans chaque circonscription, 100 suffrages sont exprimés : A en reçoit 40, B 35 et C 25. Au scrutin uninominal majoritaire à un tour, le candidat arrivé en tête obtient l’unique siège. Comparez avec une représentation proportionnelle intégrale sur l’ensemble des 20 sièges, sans seuil ni problème d’arrondi. Les électeurs et leurs votes restent exactement les mêmes.\n\nMode d’emploi : part des voix = voix du groupe / total des suffrages × 100 ; part des sièges = sièges du groupe / total des sièges × 100 ; un écart entre deux pourcentages se mesure en points de pourcentage.",
+      "source": "Exemple construit CAPSES, 2026 ; règles volontairement simplifiées pour isoler l’effet du mode de scrutin.",
+      "origin": "Complément pédagogique construit",
+      "page": "sans objet",
+      "note": "Ce modèle à un tour n’est pas le mode d’élection des députés français. Pour la proportionnelle, les seuils, les circonscriptions et les règles d’arrondi peuvent modifier les résultats réels.",
+      "image": "",
+      "url": "",
+      "table": {
+        "headers": [
+          "Groupe",
+          "Voix dans chaque circonscription",
+          "Total des voix dans les 20 circonscriptions"
+        ],
+        "rows": [
+          [
+            "A",
+            "40",
+            "800"
+          ],
+          [
+            "B",
+            "35",
+            "700"
+          ],
+          [
+            "C",
+            "25",
+            "500"
+          ],
+          [
+            "Total",
+            "100",
+            "2 000"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Un débat ancien sur la proportionnelle",
+      "text": "Promesse du candidat Emmanuel Macron, déjà portée, auparavant, par Nicolas Sarkozy et François Hollande, l’introduction d’une dose de proportionnelle aux élections législatives se précise. Jeudi soir, lors de sa conférence de presse post-grand débat national, le chef de l’État a proposé 20% de députés élus selon ce mode de scrutin : ceux-ci obtiendraient une part des sièges proportionnelle à leur score. L’objectif est de mieux représenter les différentes sensibilités, notamment La France insoumise (LFI), le Rassemblement national (RN) ou le MoDem. Cette mesure serait couplée avec une baisse de 30% du nombre de députés (et de sénateurs), une autre promesse de campagne : de 577, le nombre d’élus à l’Assemblée passerait à environ 380. (…) [Le mode de scrutin actuel, majoritaire à 2 tours], accorde un siège au candidat ayant obtenu au premier tour plus de 50 % des voix, ou arrivé en tête au second. Objectif : dégager une majorité parlementaire stable capable d’épauler l’action du pouvoir exécutif. En revanche, c’est le pire des systèmes électoraux pour des partis qui ne tissent pas d’alliances en vue du second tour et peinent à rassembler une majorité absolue d’électeurs. Avec 20% de députés élus à la proportionnelle, (…) les équilibres politiques ne seraient pas chamboulés, selon nos estimations.  [Par contre] si l’intégralité des députés avaient été élus à la proportionnelle [intégrale] au premier tour - une revendication historique du RN, exclue par l’exécutif -, la représentation nationale serait trop morcelée. Elle rendrait le pays ingouvernable : l’exécutif serait à la solde des accords d’appareils et ne pourrait pas s’appuyer sur une majorité solide, avec une majorité LREM- MoDem de seulement 123 élus.",
+      "source": "Loris Boichot, Le Figaro, 26 avril 2019, extrait fourni portant sur une réforme envisagée et des simulations à partir de 2017.",
+      "origin": "Cours P. Savoye fourni",
+      "page": "5–6",
+      "note": "Les 20 % de proportionnelle et la réduction du nombre d’élus sont des propositions décrites en 2019, pas les règles actuelles. « Ingouvernable » est une appréciation de l’article. Un mode majoritaire ne garantit pas automatiquement une majorité absolue ; une proportionnelle ne produit pas automatiquement l’instabilité. Les législatives françaises utilisent le scrutin uninominal majoritaire à deux tours, avec des conditions précises au premier tour.",
+      "image": "",
+      "url": "https://www.elections.interieur.gouv.fr/comprendre-elections/pour-qui-je-vote/deputes",
+      "table": null
+    },
+    {
+      "id": 11,
+      "title": "Les partis organisent la compétition électorale",
+      "text": "Les partis politiques ont un rôle central dans le fonctionnement de la démocratie représentative. Leur importance est d’ailleurs reconnue par la Constitution française qui leur consacre l’article 4 : « Les partis et groupements politiques concourent à l’expression du suffrage. […] La loi garantit les expressions pluralistes des opinions et la participation équitable des partis et groupements politiques à la vie démocratique de la Nation ». Les partis concourent à l’expression du suffrage de multiples manières : ils participent, en amont, à la sélection des candidats (Georges Lavau parlait d’une fonction de relève politique) ; ils proposent des programmes et des politiques pour un éventuel gouvernement ; par les idées dont ils sont porteurs, ils participent à structurer l’opinion. En outre, en exprimant les mécontentements d’une partie des citoyens (on parle de fonction tribunicienne), les partis politiques évitent que ces mécontentements ne débouchent sur une violence incontrôlée. Pour avoir des élus, les partis se livrent à un important travail de mobilisation électorale. On peut définir ce travail comme l’ensemble des actions mises en œuvre par des acteurs divers pour diffuser une offre politique et persuader les électeurs de s’y rallier en apportant leur soutien et leur vote. Les campagnes jouent un rôle central dans la mobilisation électorale. Elles peuvent être analysées comme l’aboutissement du processus de la rationalisation du travail de sollicitation des électeurs, ce qui suppose l’émergence de savoir-faire spécifiques à l’élection. Les campagnes électorales sont aussi un temps important dans le processus de politisation des électeurs.",
+      "source": "Éduscol, Comment s’organise la vie politique ?, juin 2019, p. 6 ; Constitution, article 4 cité dans le passage.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 6,
+      "note": "Une fonction décrite n’est pas une garantie de résultat. Un parti peut concourir au pouvoir sans l’exercer. Un parti et un groupe parlementaire sont deux organisations différentes ; éviter les listes anciennes de dirigeants.",
+      "image": "",
+      "url": "https://www.legifrance.gouv.fr/loda/texte_lc/LEGITEXT000006071194/",
+      "table": null
+    },
+    {
+      "id": 12,
+      "title": "La presse peut rendre l’action collective possible",
+      "text": "Un journal n’a pas seulement pour effet de suggérer à un grand nombre d’hommes un même dessein ; il leur fournit les moyens d’exécuter en commun les desseins qu’ils auraient conçus d’eux-mêmes.\n\nLes principaux citoyens qui habitent un pays aristocratique s’aperçoivent de loin ; et s’ils veulent réunir leurs forces, ils marchent les uns vers les autres, entraînant une multitude à leur suite.\n\nIl arrive souvent, au contraire, dans les pays démocratiques, qu’un grand nombre d’hommes qui ont le désir ou le besoin de s’associer ne peuvent le faire, parce qu’étant tous fort petits et perdus dans la foule, ils ne se voient point et ne savent où se trouver. Survient un journal qui expose aux regards le sentiment ou l’idée qui s’était présentée simultanément, mais séparément, à chacun d’entre eux.\n\nTous se dirigent aussitôt vers cette lumière, et ces esprits errants, qui se cherchaient depuis longtemps dans les ténèbres, se rencontrent enfin et s’unissent.\n\nLe journal les a rapprochés, et il continue à leur être nécessaire pour les tenir ensemble.",
+      "source": "Alexis de Tocqueville, De la démocratie en Amérique, seconde publication 1840, deuxième partie, chapitre VI, « Du rapport des associations et des journaux » ; édition Pagnerre 1848, tome 3, p. 223–229, transcription Wikisource.",
+      "origin": "Complément auteur du domaine public",
+      "page": "chap. VI",
+      "note": "Passage continu, sans coupe interne. Les « hommes » désignent les individus dans le vocabulaire de l’époque. Le texte porte sur la presse du XIXe siècle ; il n’étudie pas les réseaux sociaux.",
+      "image": "",
+      "url": "https://fr.wikisource.org/wiki/De_la_démocratie_en_Amérique/Édition_1848/Tome_3/Deuxième_partie/Chapitre_6",
+      "table": null
+    },
+    {
+      "id": 13,
+      "title": "Une association utilise la protestation",
+      "text": "La police britannique a arrêté le 20 mai 2019 les dix militants de Greenpeace qui avaient bloqué l'entrée du siège de BP à Londres pour réclamer au géant pétrolier l'arrêt de l'exploration pétrolière et gazière […]. Dans la journée, des militants de l'organisation écologiste avaient pris place dans cinq conteneurs, installés au cours de la nuit et équipés de nourriture, boissons, toilettes, lumière, livres et jeux pour permettre à leurs occupants de tenir au moins quelques jours. Des lettres formant les mots « Urgence climatique » ont également été accrochées sur les fenêtres par des militants descendus en rappel le long de l'immeuble de la major britannique, situé sur la très chic place St. James […]. Cette action est intervenue à la veille de l'assemblée générale annuelle de BP à Aberdeen, en Écosse, le 21 mai. Greenpeace souhaite que le groupe passe à des énergies purement renouvelables, ou cesse ses activités : « Nous bloquons le siège de BP parce qu'il n'est tout simplement pas possible de faire comme si de rien n'était », a déclaré Paul Morozzo, un militant qui avait pris place à l'intérieur d'un conteneur, cité dans un communiqué. « BP nourrit une urgence climatique qui menace des millions de vies et l'avenir du monde vivant. C'est scientifiquement prouvé : nous devons cesser de chercher de nouveaux gisements de pétrole et de gaz si nous voulons une planète vivable. BP doit faire le ménage ou dégager », a-t-il ajouté […].",
+      "source": "« 10 militants de Greenpeace arrêtés lors d’une action contre le siège BP à Londres », Sciences et Avenir, 21 mai 2019, extrait fourni.",
+      "origin": "NOTION PDF.pdf",
+      "page": 4,
+      "note": "Les paroles militantes sont attribuées à leur auteur et ne constituent pas la position du cours. Distinguer description des actions, objectifs affichés et effets effectivement démontrés.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 14,
+      "title": "Une association peut aussi saisir la justice",
+      "text": "Quatre associations, Notre Affaire à Tous , la Fondation pour la Nature et l'Homme, Greenpeace France et Oxfam France ont décidé, au nom de l'intérêt général, d'attaquer l'État français en justice pour qu'il respecte ses engagements climatiques et protège nos vies, nos territoires et nos droits. C'est « l’Affaire du siècle ». [...] Nous aussi, nous pouvons gagner. Nous pouvons changer les choses, si nous sommes ensemble ! Alors agissons pour la justice sociale et climatique, saisissons la justice pour que la France respecte enfin ses engagements sur le climat.",
+      "source": "L’Affaire du siècle, appel militant reproduit dans le cours P. Savoye fourni, p. 6 ; date de publication non précisée dans l’extrait.",
+      "origin": "Cours P. Savoye fourni",
+      "page": 6,
+      "note": "Document historique de mobilisation : il annonce un objectif et une démarche. Il ne prouve ni l’issue du procès ni l’état actuel des organisations. Distinguer influencer une décision publique et détenir le pouvoir de voter une loi.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 15,
+      "title": "Informer débattre et exercer un contre-pouvoir",
+      "text": "Les médias sont devenus des espaces centraux de la vie politique et sont tiraillés entre la volonté des acteurs politiques de les contrôler et leur propre volonté de jouer un rôle de contre-pouvoir. Le fait que les médias soient devenus des lieux de production de l’information politique et du débat politique, renforce l’importance des stratégies de communication déployées par les partis et leurs leaders. Cela s’accompagne, de la part des médias, d’un recours important aux sondages (dont ils sont les principaux commanditaires) pour animer la vie politique notamment au moment des campagnes. Pour échapper à la dépendance aux médias, certains mouvements politiques créent leur propre média ou recourent massivement aux réseaux sociaux.",
+      "source": "Éduscol, Comment s’organise la vie politique ?, juin 2019, p. 6.",
+      "origin": "Fiche Éduscol fournie",
+      "page": 6,
+      "note": "Le texte situe les relations entre médias et acteurs politiques. Il ne prouve pas que les médias imposent le vote des citoyens. Les sondages mesurent des réponses dans un cadre donné : ils ne sont ni un vote ni une prédiction certaine.",
+      "image": "",
+      "url": "",
+      "table": null
+    },
+    {
+      "id": 16,
+      "title": "Relier citoyens institutions et acteurs",
+      "text": "",
+      "source": "Schéma fourni dans séparation des pouvoirs.pdf, p. 3 ; source éditoriale non indiquée dans le support.",
+      "origin": "séparation des pouvoirs.pdf",
+      "page": 3,
+      "note": "Le schéma représente l’exécutif et le Parlement ; il n’épuise pas toutes les institutions. Ajoutez par votre raisonnement les juridictions, le Conseil constitutionnel, les partis, la société civile et les médias. Le collège sénatorial comprend surtout des élus locaux, et pas seulement des maires.",
+      "image": "/cours/seconde-vie-politique/institutions.png",
+      "url": "",
+      "table": null
+    }
+  ],
+  "sessions": [
+    {
+      "hour": 1,
+      "title": "I 1.1 Qu’est-ce qui distingue le pouvoir politique ?",
+      "oa": 1,
+      "rappel": "",
+      "board": "Qu’est-ce qui distingue le pouvoir politique ?",
+      "docs": [
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "doc": 1,
+          "q": "Repérez dans le document 1 qui peut exercer un pouvoir et sur qui.",
+          "a": "Dahl raisonne sur A et B, qui peuvent être des individus ou des groupes. Le pouvoir se lit dans la capacité d’A à obtenir une conduite de B ; il ne se réduit pas à un titre officiel."
+        },
+        {
+          "id": 2,
+          "doc": 1,
+          "q": "Pourquoi le pouvoir est-il une relation et non un simple objet possédé ?",
+          "a": "Il dépend des ressources des acteurs et de leur interaction : une position ne produit un effet que dans une relation avec d’autres. Une compétence peut aussi créer une dépendance."
+        },
+        {
+          "id": 3,
+          "doc": 1,
+          "q": "Distinguez une consigne donnée dans une famille et une décision politique.",
+          "a": "La consigne familiale organise une relation privée. Une décision politique concerne la conduite d’une collectivité et l’organisation de ses règles, dans un cadre territorial et institutionnel."
+        },
+        {
+          "id": 4,
+          "doc": 2,
+          "q": "Qu’ajoute la notion de légitimité à celle de contrainte ?",
+          "a": "La contrainte permet d’imposer une décision ; la légitimité explique la reconnaissance d’une autorité et le consentement à lui obéir. Les deux dimensions ne s’excluent pas."
+        },
+        {
+          "id": 5,
+          "doc": 2,
+          "q": "Dans la citation de Weber, identifiez le territoire et le moyen particulier dont l’État revendique le monopole.",
+          "a": "Le territoire délimite l’espace d’exercice de l’État ; celui-ci revendique le monopole de la violence physique légitime, notamment à travers les institutions autorisées à employer la force dans un cadre légal."
+        },
+        {
+          "id": 6,
+          "doc": 2,
+          "q": "Pourquoi cette définition n’autorise-t-elle pas n’importe quel usage de la force ?",
+          "a": "Décrire une revendication étatique n’accorde pas un droit illimité aux agents. Dans un État de droit, les interventions restent soumises aux règles et aux contrôles ; une violence peut être illégale ou contestée."
+        }
+      ]
+    },
+    {
+      "hour": 2,
+      "title": "II 2.1 Pourquoi limiter la concentration des pouvoirs ?",
+      "oa": 2,
+      "rappel": "Distinguez une relation de pouvoir privée et une décision politique.",
+      "board": "Pourquoi limiter la concentration des pouvoirs ?",
+      "docs": [
+        3,
+        4
+      ],
+      "questions": [
+        {
+          "id": 7,
+          "doc": 3,
+          "q": "Expliquez le risque décrit dans le premier paragraphe de Montesquieu.",
+          "a": "Si la même personne élabore et exécute les lois, elle peut produire des règles à son profit puis les appliquer sans contrepoids. La crainte porte sur la tyrannie et l’arbitraire."
+        },
+        {
+          "id": 8,
+          "doc": 3,
+          "q": "Pourquoi le pouvoir de juger doit-il être distingué des deux autres fonctions ?",
+          "a": "Un juge qui ferait seul les règles ou disposerait aussi de la force exécutive pourrait décider arbitrairement de la vie et de la liberté des citoyens. Des fonctions distinctes limitent cette concentration."
+        },
+        {
+          "id": 9,
+          "doc": 3,
+          "q": "Reliez le principe de séparation à la protection d’une liberté concrète.",
+          "a": "La liberté d’expression ou la sûreté est mieux protégée si l’autorité poursuivant une personne ne peut pas fixer seule la règle et décider seule de sa culpabilité. Accepter tout exemple expliqué."
+        },
+        {
+          "id": 10,
+          "doc": 4,
+          "q": "Selon l’article 16, quelles deux garanties doivent être réunies ?",
+          "a": "La garantie des droits et la détermination de la séparation des pouvoirs. La présence d’un texte nommé Constitution ne suffit pas, à elle seule, à prouver une protection effective."
+        },
+        {
+          "id": 11,
+          "doc": 4,
+          "q": "Expliquez la différence entre juger une infraction et contrôler la constitutionnalité d’une loi.",
+          "a": "Le premier consiste à statuer sur une conduite au regard du droit applicable ; le second vérifie si une disposition législative respecte la Constitution. En France, le Conseil constitutionnel exerce ce dernier contrôle dans les conditions prévues."
+        },
+        {
+          "id": 12,
+          "doc": 4,
+          "q": "Pourquoi une séparation souple n’équivaut-elle pas à l’absence de séparation ?",
+          "a": "Les organes restent distincts, mais coopèrent et se contrôlent selon des procédures. Une participation de l’exécutif à la fabrication de la loi n’implique pas la concentration illimitée de toutes les fonctions."
+        }
+      ]
+    },
+    {
+      "hour": 3,
+      "title": "II 2.2 Qui fait quoi sous la Ve République ?",
+      "oa": 2,
+      "rappel": "Expliquez un risque associé à la concentration des pouvoirs.",
+      "board": "Qui fait quoi sous la Ve République ?",
+      "docs": [
+        5,
+        6
+      ],
+      "questions": [
+        {
+          "id": 13,
+          "doc": 5,
+          "q": "À partir des articles 5 et 6, distinguez le mode de désignation et une fonction du Président.",
+          "a": "Il est élu pour cinq ans au suffrage universel direct ; il veille au respect de la Constitution et assure par son arbitrage le fonctionnement régulier des pouvoirs publics. Désignation et compétence sont deux informations différentes."
+        },
+        {
+          "id": 14,
+          "doc": 5,
+          "q": "Expliquez comment les articles 20 et 21 distinguent Gouvernement et Premier ministre.",
+          "a": "Le Gouvernement détermine et conduit la politique de la Nation. Le Premier ministre dirige son action et assure l’exécution des lois : il est le chef du Gouvernement, sans être toute l’institution."
+        },
+        {
+          "id": 15,
+          "doc": 5,
+          "q": "Le Président peut-il, d’après l’article 8, mettre fin librement aux fonctions du Premier ministre ?",
+          "a": "Le texte prévoit la fin des fonctions sur présentation par le Premier ministre de la démission du Gouvernement. Il ne formule pas un pouvoir général de révocation à volonté ; distinguer le texte et les rapports de force politiques."
+        },
+        {
+          "id": 16,
+          "doc": 6,
+          "q": "Présentez la composition et les trois fonctions du Parlement.",
+          "a": "Le Parlement réunit Assemblée nationale et Sénat. Il vote la loi, contrôle l’action du Gouvernement et évalue les politiques publiques."
+        },
+        {
+          "id": 17,
+          "doc": 6,
+          "q": "Comparez la désignation et la durée normale du mandat des députés et des sénateurs.",
+          "a": "Les députés sont élus directement pour cinq ans, sauf dissolution. Les sénateurs sont élus indirectement pour six ans ; le Sénat est renouvelé par moitié tous les trois ans."
+        },
+        {
+          "id": 18,
+          "doc": 6,
+          "q": "Pourquoi serait-il inexact de dire que seul le Parlement propose les lois ?",
+          "a": "L’article 39 partage l’initiative entre le Premier ministre et les membres du Parlement. On distingue projets de loi d’origine gouvernementale et propositions de loi d’origine parlementaire."
+        }
+      ]
+    },
+    {
+      "hour": 4,
+      "title": "II 2.3 Comment les institutions se contrôlent-elles ?",
+      "oa": 2,
+      "rappel": "Distinguez Président, Gouvernement et Parlement.",
+      "board": "Comment les institutions se contrôlent-elles ?",
+      "docs": [
+        7,
+        8
+      ],
+      "questions": [
+        {
+          "id": 19,
+          "doc": 7,
+          "q": "Identifiez la date et le contexte auxquels renvoie le document 7.",
+          "a": "Il s’agit d’un article de 2018 adapté dans le support pour commenter une motion de 2020. Il ne constitue pas un bilan rédigé en 2026."
+        },
+        {
+          "id": 20,
+          "doc": 7,
+          "q": "Quel contrôle la motion de censure permet-elle à l’Assemblée nationale d’exercer ?",
+          "a": "Elle met en cause la responsabilité du Gouvernement et peut imposer sa démission si elle est adoptée. Elle ne renverse pas automatiquement le Président de la République."
+        },
+        {
+          "id": 21,
+          "doc": 7,
+          "q": "Pourquoi l’affirmation « une seule motion adoptée » doit-elle être replacée dans son époque ?",
+          "a": "Elle décrit l’état antérieur à la censure du 4 décembre 2024. L’événement de 2024 rend faux son emploi comme bilan actuel, sans changer les mots du document historique."
+        },
+        {
+          "id": 22,
+          "doc": 8,
+          "q": "Lisez les 331 voix et les 288 voix du document 8 en précisant ce que mesure chaque nombre.",
+          "a": "331 députés ont voté pour la censure au scrutin du 4 décembre 2024 ; 288 voix étaient nécessaires pour l’adoption. Le premier nombre est un résultat, le second un seuil."
+        },
+        {
+          "id": 23,
+          "doc": 8,
+          "q": "Calculez l’écart entre les votes favorables et le seuil requis puis expliquez la conséquence.",
+          "a": "331 − 288 = 43 voix. Les votes favorables dépassent le seuil ; la motion est adoptée et le Premier ministre doit présenter la démission du Gouvernement en application de l’article 50."
+        },
+        {
+          "id": 24,
+          "doc": 8,
+          "q": "Distinguez la censure d’un Gouvernement de celle d’une disposition législative.",
+          "a": "L’Assemblée nationale peut censurer le Gouvernement au titre de sa responsabilité. Le Conseil constitutionnel peut déclarer une disposition contraire à la Constitution ; cette décision ne renverse pas, par elle-même, le Gouvernement."
+        }
+      ]
+    },
+    {
+      "hour": 5,
+      "title": "III 3.1 Comment les voix deviennent-elles des sièges ?",
+      "oa": 3,
+      "rappel": "Expliquez ce que contrôle une motion de censure.",
+      "board": "Comment les voix deviennent-elles des sièges ?",
+      "docs": [
+        9,
+        10
+      ],
+      "questions": [
+        {
+          "id": 25,
+          "doc": 9,
+          "q": "Calculez la part des voix de A, B et C dans la simulation.",
+          "a": "Le total est de 2 000 suffrages. A : 800/2 000 × 100 = 40 % ; B : 700/2 000 × 100 = 35 % ; C : 500/2 000 × 100 = 25 %."
+        },
+        {
+          "id": 26,
+          "doc": 9,
+          "q": "Attribuez les 20 sièges selon le scrutin majoritaire à un tour puis à la proportionnelle intégrale.",
+          "a": "A arrive en tête dans chacune des 20 circonscriptions : il obtient 20 sièges ; B et C aucun. À la proportionnelle sur 20 sièges : A reçoit 8 sièges, B 7 et C 5."
+        },
+        {
+          "id": 27,
+          "doc": 9,
+          "q": "Calculez pour A l’écart entre part des sièges et part des voix dans le premier système.",
+          "a": "A obtient 100 % des sièges pour 40 % des voix : l’écart vaut 60 points de pourcentage. Ce n’est pas une hausse de 60 % de son nombre de voix."
+        },
+        {
+          "id": 28,
+          "doc": 10,
+          "q": "Le document 10 décrit-il une réforme appliquée ou un projet débattu ? Justifiez.",
+          "a": "L’article parle en 2019 d’une dose envisagée de proportionnelle et d’une réduction proposée du nombre d’élus. Il ne prouve pas une mise en application ; les règles françaises actuelles restent à distinguer de ce projet."
+        },
+        {
+          "id": 29,
+          "doc": 10,
+          "q": "Pourquoi le mot « ingouvernable » ne constitue-t-il pas un résultat certain ?",
+          "a": "C’est une appréciation reposant sur un scénario. La capacité de gouverner dépend aussi des alliances, des partis et des institutions ; la proportionnelle ne produit pas mécaniquement un échec gouvernemental."
+        },
+        {
+          "id": 30,
+          "doc": 10,
+          "q": "Expliquez comment le mode de scrutin peut encourager des alliances sans garantir une majorité absolue.",
+          "a": "Les candidats peuvent s’allier pour arriver en tête ou se retirer entre les tours. Le résultat dépend toutefois des votes et de leur distribution : le mécanisme incite à une stratégie sans imposer son succès."
+        }
+      ]
+    },
+    {
+      "hour": 6,
+      "title": "IV 4.1 Comment les partis et l’information mobilisent-ils ?",
+      "oa": 4,
+      "rappel": "Avec 40 % des voix, obtient-on nécessairement 40 % des sièges ? Justifiez.",
+      "board": "Comment les partis et l’information mobilisent-ils ?",
+      "docs": [
+        11,
+        12
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "doc": 11,
+          "q": "Relevez trois fonctions des partis dans le document 11.",
+          "a": "Sélectionner des candidats, élaborer des programmes, mobiliser les électeurs et structurer l’opinion. Trois fonctions correctement expliquées sont attendues."
+        },
+        {
+          "id": 32,
+          "doc": 11,
+          "q": "Pourquoi présenter des candidats ne suffit-il pas à exercer le pouvoir ?",
+          "a": "Il faut obtenir les voix et les sièges nécessaires, puis accéder aux fonctions dans les conditions institutionnelles. La participation à la compétition se distingue du résultat."
+        },
+        {
+          "id": 33,
+          "doc": 11,
+          "q": "Distinguez un parti politique et un groupe parlementaire.",
+          "a": "Un parti est une organisation de compétition et de mobilisation politique. Un groupe parlementaire réunit des élus dans une assemblée et peut rassembler plusieurs partis ; leurs membres et leurs fonctions ne coïncident pas nécessairement."
+        },
+        {
+          "id": 34,
+          "doc": 12,
+          "q": "Quel obstacle à l’action collective Tocqueville met-il en évidence ?",
+          "a": "Des personnes dispersées peuvent partager une idée sans se connaître ni savoir où se retrouver. L’isolement et l’absence de communication empêchent de coordonner leurs efforts."
+        },
+        {
+          "id": 35,
+          "doc": 12,
+          "q": "Expliquez comment un journal peut contribuer à dépasser cet obstacle.",
+          "a": "Il rend visible une idée commune, permet aux individus de se reconnaître et maintient une communication. La circulation de l’information aide à coordonner des actions."
+        },
+        {
+          "id": 36,
+          "doc": 12,
+          "q": "Quelle précaution faut-il prendre pour utiliser ce texte à propos des médias actuels ?",
+          "a": "Il analyse la presse du XIXe siècle. On peut discuter un mécanisme de mise en relation sans lui attribuer une étude des réseaux sociaux ni supposer que toutes les technologies ont les mêmes effets."
+        }
+      ]
+    },
+    {
+      "hour": 7,
+      "title": "IV 4.2 Comment la société civile agit-elle ?",
+      "oa": 4,
+      "rappel": "Distinguez présenter une candidature et obtenir un mandat.",
+      "board": "Comment la société civile agit-elle ?",
+      "docs": [
+        13,
+        14
+      ],
+      "questions": [
+        {
+          "id": 37,
+          "doc": 13,
+          "q": "Identifiez l’organisation et sa revendication dans le document 13.",
+          "a": "Greenpeace mène une action contre BP et demande l’arrêt de l’exploration pétrolière et gazière dans l’extrait de 2019. Les revendications sont celles des militants cités."
+        },
+        {
+          "id": 38,
+          "doc": 13,
+          "q": "À quelle stratégie rattachez-vous le blocage et pourquoi ?",
+          "a": "À une stratégie de protestation et de mise en visibilité : l’action perturbe le fonctionnement d’un lieu et cherche à attirer l’attention pour exercer une pression."
+        },
+        {
+          "id": 39,
+          "doc": 13,
+          "q": "Pourquoi une action dirigée contre une entreprise peut-elle avoir une dimension politique ?",
+          "a": "Elle porte sur une cause collective, cherche à modifier des décisions et peut peser sur les règles publiques. Un acteur de société civile n’a pas besoin de détenir un mandat pour contribuer au débat politique."
+        },
+        {
+          "id": 40,
+          "doc": 14,
+          "q": "Quel moyen d’action les associations du document 14 annoncent-elles ?",
+          "a": "Elles annoncent un recours en justice contre l’État pour qu’il respecte ses engagements climatiques. Il s’agit d’une démarche juridictionnelle, et pas du dépôt d’une candidature électorale."
+        },
+        {
+          "id": 41,
+          "doc": 14,
+          "q": "Comparez la stratégie du document 14 à celle du document 13.",
+          "a": "Les deux mobilisent une cause collective. Le blocage privilégie la protestation ; le recours saisit une institution juridictionnelle. Les stratégies peuvent se combiner avec information, pétition ou plaidoyer."
+        },
+        {
+          "id": 42,
+          "doc": 14,
+          "q": "Pourquoi un appel militant ne suffit-il pas à prouver le succès d’une action ?",
+          "a": "Il présente l’objectif et invite à participer. Pour connaître l’issue, il faut examiner les décisions rendues, les suites et des sources datées ; une revendication n’est pas un résultat."
+        }
+      ]
+    },
+    {
+      "hour": 8,
+      "title": "IV 4.3 Comment relier médias citoyens et institutions ?",
+      "oa": "1 à 4",
+      "rappel": "Expliquez la différence entre une revendication et un résultat démontré.",
+      "board": "Comment relier médias citoyens et institutions ?",
+      "docs": [
+        15,
+        16
+      ],
+      "questions": [
+        {
+          "id": 43,
+          "doc": 15,
+          "q": "Relevez deux contributions des médias à la vie politique dans le document 15.",
+          "a": "Produire de l’information et organiser le débat ; enquêter et agir comme contre-pouvoir ; rendre visibles des sujets. Deux contributions appuyées sur le texte sont attendues."
+        },
+        {
+          "id": 44,
+          "doc": 15,
+          "q": "Pourquoi des responsables politiques cherchent-ils à maîtriser leur visibilité médiatique ?",
+          "a": "Le choix et la présentation des sujets orientent l’attention publique. Être visible et cadrer un message peut favoriser une cause ou une candidature, sans garantir l’adhésion."
+        },
+        {
+          "id": 45,
+          "doc": 15,
+          "q": "Pourquoi un sondage ou un message médiatique ne détermine-t-il pas automatiquement un vote ?",
+          "a": "Un sondage mesure des réponses dans un cadre donné, à une date donnée. Les citoyens interprètent les messages et peuvent changer d’avis, s’abstenir ou recevoir d’autres influences."
+        },
+        {
+          "id": 46,
+          "doc": 16,
+          "q": "À l’aide du schéma, expliquez la différence entre suffrage direct et indirect.",
+          "a": "Au suffrage direct, les électeurs désignent leurs représentants sans collège intermédiaire ; au suffrage indirect, un collège d’élus procède à l’élection, comme pour les sénateurs."
+        },
+        {
+          "id": 47,
+          "doc": 16,
+          "q": "Complétez oralement le schéma avec un contrôle et une contribution d’un acteur non institutionnel.",
+          "a": "L’Assemblée peut censurer le Gouvernement ; le Président peut dissoudre l’Assemblée. Une association peut mobiliser ou saisir la justice ; un média peut enquêter. Ces actions ne confèrent pas toutes le même pouvoir de décision."
+        },
+        {
+          "id": 48,
+          "doc": 16,
+          "q": "Expliquez pourquoi la vie politique ne se réduit ni au Président ni aux élections.",
+          "a": "Les institutions se partagent des fonctions et se contrôlent ; partis, associations, syndicats et médias agissent aussi entre les élections. La participation et l’organisation du pouvoir concernent plusieurs acteurs et procédures."
+        }
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "hours": "H1–H2",
+      "title": "I et II Le pouvoir et ses limites",
+      "question": "Pourquoi organiser et limiter le pouvoir politique ?",
+      "words": [
+        "pouvoir politique",
+        "État",
+        "légitimité",
+        "séparation des pouvoirs",
+        "liberté"
+      ],
+      "docs": "Documents 1 à 4 ; Q1 à Q12",
+      "text": "Le pouvoir politique organise la vie collective sur un territoire. L’État moderne dispose de moyens de contrainte, mais l’obéissance repose aussi sur la reconnaissance de sa légitimité. Une concentration des fonctions de législation, d’exécution et de jugement expose les citoyens à l’arbitraire. Montesquieu justifie ainsi leur séparation pour protéger la liberté. Dans un État de droit, les procédures, les droits et des institutions distinctes limitent l’exercice du pouvoir."
+    },
+    {
+      "hours": "H3–H4",
+      "title": "II Les institutions et leurs contrôles",
+      "question": "Comment les institutions coopèrent-elles tout en se contrôlant ?",
+      "words": [
+        "Président",
+        "Gouvernement",
+        "Parlement",
+        "motion de censure",
+        "dissolution"
+      ],
+      "docs": "Documents 5 à 8 ; Q13 à Q24",
+      "text": "Le Président et le Gouvernement dirigé par le Premier ministre constituent l’exécutif. Le Parlement comprend l’Assemblée nationale et le Sénat ; il vote la loi et contrôle l’action du Gouvernement. L’initiative des lois est partagée. La séparation souple combine coopération et contrôle : le Président peut dissoudre l’Assemblée dans les conditions prévues ; l’Assemblée peut censurer le Gouvernement. La censure du 4 décembre 2024 illustre ce mécanisme. Le contrôle constitutionnel des lois est une autre procédure."
+    },
+    {
+      "hours": "H5–H6",
+      "title": "III et IV Scrutins et mobilisation",
+      "question": "Pourquoi les règles du scrutin et les organisations comptent-elles dans la représentation ?",
+      "words": [
+        "voix",
+        "sièges",
+        "scrutin majoritaire",
+        "proportionnelle",
+        "parti",
+        "alliance"
+      ],
+      "docs": "Documents 9 à 12 ; Q25 à Q36",
+      "text": "Le mode de scrutin transforme les voix en sièges. Un mode majoritaire peut avantager les groupes arrivés en tête ; une proportionnelle répartit les sièges selon les suffrages, avec des règles précises. Ces mécanismes influencent les alliances et les candidatures sans garantir un résultat unique. Les partis organisent l’offre électorale et mobilisent les citoyens. L’information aide également des individus dispersés à agir ensemble, comme l’explique Tocqueville à propos des journaux."
+    },
+    {
+      "hours": "H7–H8",
+      "title": "IV Une vie politique à plusieurs acteurs",
+      "question": "Pourquoi la vie politique dépasse-t-elle la compétition électorale ?",
+      "words": [
+        "société civile organisée",
+        "protestation",
+        "recours en justice",
+        "médias",
+        "contre-pouvoir"
+      ],
+      "docs": "Documents 13 à 16 ; Q37 à Q48",
+      "text": "Les associations, les syndicats et d’autres organisations défendent des causes et des intérêts. Ils peuvent protester, coopérer, influencer une décision ou saisir la justice. Les médias informent, organisent le débat et peuvent exercer un contre-pouvoir. Ces contributions influencent l’attention et l’action collective sans se confondre avec les compétences des institutions. Une mobilisation ne garantit pas son succès et un message ne détermine pas mécaniquement le vote de chaque citoyen."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Le pouvoir est d’abord…",
+      "options": [
+        "une relation entre acteurs",
+        "un objet matériel",
+        "un mandat toujours électif"
+      ],
+      "correct": 0,
+      "explanation": "Une position ou une ressource agit dans une relation avec autrui."
+    },
+    {
+      "q": "Une spécificité du pouvoir politique est…",
+      "options": [
+        "de ne concerner que la famille",
+        "d’organiser la collectivité sur un territoire",
+        "de ne disposer d’aucune contrainte"
+      ],
+      "correct": 1,
+      "explanation": "Il prend des décisions engageant la vie collective."
+    },
+    {
+      "q": "La légitimité désigne ici…",
+      "options": [
+        "le seul emploi de la force",
+        "la reconnaissance du droit de gouverner",
+        "l’accord unanime avec toutes les décisions"
+      ],
+      "correct": 1,
+      "explanation": "Reconnaître une autorité ne signifie pas approuver chaque décision."
+    },
+    {
+      "q": "Chez Weber, l’État revendique…",
+      "options": [
+        "le monopole de toute activité économique",
+        "l’absence de règles",
+        "le monopole de la violence physique légitime"
+      ],
+      "correct": 2,
+      "explanation": "Cette définition ne donne pas un droit illimité à l’usage de la force."
+    },
+    {
+      "q": "Montesquieu justifie la séparation pour…",
+      "options": [
+        "protéger les libertés contre l’arbitraire",
+        "supprimer les tribunaux",
+        "concentrer toutes les fonctions"
+      ],
+      "correct": 0,
+      "explanation": "La distinction des fonctions limite les risques de tyrannie."
+    },
+    {
+      "q": "Une séparation souple signifie…",
+      "options": [
+        "aucune institution distincte",
+        "des organes distincts avec coopération et contrôle",
+        "un Président qui décide de tout"
+      ],
+      "correct": 1,
+      "explanation": "Les pouvoirs ne sont pas isolés, mais ils restent encadrés."
+    },
+    {
+      "q": "Le Parlement réunit…",
+      "options": [
+        "le Président et les ministres",
+        "les tribunaux",
+        "l’Assemblée nationale et le Sénat"
+      ],
+      "correct": 2,
+      "explanation": "Les deux chambres participent à la législation et au contrôle."
+    },
+    {
+      "q": "Le Gouvernement…",
+      "options": [
+        "détermine et conduit la politique de la Nation",
+        "est identique au Parlement",
+        "est élu par les grands électeurs"
+      ],
+      "correct": 0,
+      "explanation": "Il est dirigé par le Premier ministre."
+    },
+    {
+      "q": "Les sénateurs sont élus…",
+      "options": [
+        "directement pour cinq ans",
+        "indirectement pour six ans",
+        "par le Président"
+      ],
+      "correct": 1,
+      "explanation": "Le Sénat est renouvelé par moitié tous les trois ans."
+    },
+    {
+      "q": "L’initiative des lois appartient…",
+      "options": [
+        "au seul Président",
+        "aux seuls députés",
+        "au Premier ministre et aux membres du Parlement"
+      ],
+      "correct": 2,
+      "explanation": "On distingue projets de loi et propositions de loi."
+    },
+    {
+      "q": "La dissolution concerne…",
+      "options": [
+        "l’Assemblée nationale",
+        "le Sénat",
+        "tous les tribunaux"
+      ],
+      "correct": 0,
+      "explanation": "Elle met fin au mandat de l’Assemblée et entraîne des élections."
+    },
+    {
+      "q": "L’adoption d’une motion de censure entraîne…",
+      "options": [
+        "la démission obligatoire du Président",
+        "la démission du Gouvernement",
+        "la suppression du Sénat"
+      ],
+      "correct": 1,
+      "explanation": "C’est la responsabilité du Gouvernement qui est mise en cause."
+    },
+    {
+      "q": "Pour une censure, le seuil dépend…",
+      "options": [
+        "des seuls votes exprimés",
+        "du nombre de téléspectateurs",
+        "des membres composant l’Assemblée"
+      ],
+      "correct": 2,
+      "explanation": "Seuls les votes favorables sont recensés, mais le seuil ne repose pas sur les seuls votants."
+    },
+    {
+      "q": "Le 4 décembre 2024, 331 voix pour un seuil de 288 donnent un écart de…",
+      "options": [
+        "43 voix",
+        "43 points de pourcentage",
+        "619 voix"
+      ],
+      "correct": 0,
+      "explanation": "331 moins 288 égale 43 voix ; ce n’est pas un écart de pourcentages."
+    },
+    {
+      "q": "Le contrôle de constitutionnalité d’une loi…",
+      "options": [
+        "renverse toujours le Gouvernement",
+        "se distingue de la censure parlementaire",
+        "est une élection législative"
+      ],
+      "correct": 1,
+      "explanation": "Le Conseil constitutionnel contrôle une norme ; l’Assemblée peut censurer le Gouvernement."
+    },
+    {
+      "q": "Un mode de scrutin transforme…",
+      "options": [
+        "les députés en ministres",
+        "les sondages en lois",
+        "les voix en désignation d’élus"
+      ],
+      "correct": 2,
+      "explanation": "Il règle l’attribution des sièges ou la désignation des responsables."
+    },
+    {
+      "q": "Dans la simulation à un tour, A arrive en tête partout avec 40 % des voix et obtient…",
+      "options": [
+        "les 20 sièges",
+        "8 sièges obligatoirement",
+        "aucun siège"
+      ],
+      "correct": 0,
+      "explanation": "Chaque circonscription attribue un siège au premier."
+    },
+    {
+      "q": "À la proportionnelle intégrale sur 20 sièges, 35 % donnent…",
+      "options": [
+        "35 sièges",
+        "7 sièges",
+        "3,5 sièges"
+      ],
+      "correct": 1,
+      "explanation": "20 multiplié par 0,35 égale 7."
+    },
+    {
+      "q": "100 % des sièges contre 40 % des voix représentent un écart de…",
+      "options": [
+        "60 voix",
+        "60 % d’augmentation des suffrages",
+        "60 points de pourcentage"
+      ],
+      "correct": 2,
+      "explanation": "On soustrait deux parts : 100 − 40 = 60 points."
+    },
+    {
+      "q": "Les députés français sont élus…",
+      "options": [
+        "au scrutin majoritaire à deux tours",
+        "à la proportionnelle intégrale nationale",
+        "au tirage au sort"
+      ],
+      "correct": 0,
+      "explanation": "La simulation du cours à un tour ne reproduit pas la règle française."
+    },
+    {
+      "q": "Un mode majoritaire…",
+      "options": [
+        "garantit une majorité absolue",
+        "peut favoriser des majorités sans les garantir",
+        "interdit toutes les alliances"
+      ],
+      "correct": 1,
+      "explanation": "Les effets dépendent aussi des votes et de leur implantation."
+    },
+    {
+      "q": "Une représentation proportionnelle…",
+      "options": [
+        "rend toujours le pays ingouvernable",
+        "supprime les partis",
+        "peut nécessiter des coalitions"
+      ],
+      "correct": 2,
+      "explanation": "Une coalition peut aussi être durable : il ne s’agit pas d’un automatisme."
+    },
+    {
+      "q": "Un parti politique cherche notamment…",
+      "options": [
+        "à présenter des candidats et participer au pouvoir",
+        "à juger des infractions",
+        "à remplacer toutes les associations"
+      ],
+      "correct": 0,
+      "explanation": "Il élabore aussi des programmes et mobilise des électeurs."
+    },
+    {
+      "q": "Une association qui saisit la justice…",
+      "options": [
+        "vote elle-même une loi",
+        "emploie un moyen d’action de société civile",
+        "devient automatiquement un parti"
+      ],
+      "correct": 1,
+      "explanation": "Influencer une décision ne confère pas les compétences du Parlement."
+    },
+    {
+      "q": "Pour Tocqueville, un journal peut…",
+      "options": [
+        "remplacer toutes les institutions",
+        "supprimer tous les désaccords",
+        "rapprocher des personnes dispersées"
+      ],
+      "correct": 2,
+      "explanation": "Il peut rendre visible une idée commune et aider à agir ensemble."
+    },
+    {
+      "q": "Un appel militant prouve…",
+      "options": [
+        "l’objectif affiché de ses auteurs",
+        "automatiquement la victoire de leur cause",
+        "la neutralité de toutes ses formulations"
+      ],
+      "correct": 0,
+      "explanation": "Il faut d’autres sources pour établir l’issue de l’action."
+    },
+    {
+      "q": "Le rôle des médias comprend…",
+      "options": [
+        "le vote des lois",
+        "l’information et la mise en débat",
+        "la nomination obligatoire des ministres"
+      ],
+      "correct": 1,
+      "explanation": "Ils peuvent enquêter et jouer un rôle de contre-pouvoir."
+    },
+    {
+      "q": "Un sondage…",
+      "options": [
+        "est le résultat définitif d’une élection",
+        "fixe obligatoirement le vote de chacun",
+        "mesure des réponses selon une méthode et une date"
+      ],
+      "correct": 2,
+      "explanation": "Ses résultats ne sont ni des votes réels ni une prédiction certaine."
+    }
+  ],
+  "sources": [
+    [
+      "Programme officiel de Seconde",
+      "https://www.education.gouv.fr/bo/19/Special1/MENE1901638A.htm",
+      "Quatre objectifs ; BO spécial du 22 janvier 2019."
+    ],
+    [
+      "Constitution en vigueur",
+      "https://www.legifrance.gouv.fr/loda/texte_lc/LEGITEXT000006071194/",
+      "Version consolidée au 31 octobre 2026 ; distinguer texte de droit et commentaire."
+    ],
+    [
+      "Assemblée nationale — Scrutin 519",
+      "https://www.assemblee-nationale.fr/dyn/17/scrutins/519",
+      "331 voix pour la censure le 4 décembre 2024."
+    ],
+    [
+      "Élection des députés",
+      "https://www.elections.interieur.gouv.fr/comprendre-elections/pour-qui-je-vote/deputes",
+      "Règles du scrutin à deux tours et distinction inscrits / suffrages exprimés."
+    ],
+    [
+      "Sénat — Mode d’élection",
+      "https://www.senat.fr/connaitre-le-senat/role-et-fonctionnement/mode-delection-des-senateurs.html",
+      "Composition, durée et renouvellement."
+    ],
+    [
+      "Melchior — Cours et documents",
+      "https://www.melchior.fr/cours/complet/question-1-comment-s-organise-la-vie-politique",
+      "Cours d’Aude Cavaillé ; source de mise en perspective et prolongements, avec attribution des auteurs."
+    ],
+    [
+      "Tocqueville — Texte du domaine public",
+      "https://fr.wikisource.org/wiki/De_la_démocratie_en_Amérique/Édition_1848/Tome_3/Deuxième_partie/Chapitre_6",
+      "Passage continu de la deuxième partie, chapitre VI."
+    ],
+    [
+      "Contrôle constitutionnel en 2019",
+      "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000038358619",
+      "Article 3 déclaré contraire à la Constitution le 4 avril 2019."
+    ]
+  ]
+}
