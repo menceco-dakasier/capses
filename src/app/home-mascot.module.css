@@ -1,7 +1,9 @@
 .stage{position:relative;display:grid;justify-items:center;width:100%;padding:8px 12px 0}
-.figure{width:min(100%,310px);transform-origin:50% 90%;transition:transform .24s ease-out}
+.figure{position:relative;width:min(100%,310px)}
 .figure img{display:block;width:100%;height:auto}
+.eyes{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.iris{transform:translate(var(--gaze-x,0px),var(--gaze-y,0px));transition:transform .12s ease-out}
 .motionToggle{margin-top:2px;padding:10px 12px;min-height:44px;border:0;background:transparent;color:var(--capses-muted);font:inherit;font-size:12px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .motionToggle:focus-visible{outline:3px solid var(--capses-accent);outline-offset:3px;border-radius:6px}
-@media(max-width:720px){.figure{width:210px}.stage{padding:0}.motionToggle{display:none}}
-@media(prefers-reduced-motion:reduce),(pointer:coarse){.figure{transform:none!important;transition:none}.motionToggle{display:none}}
+@media(max-width:720px){.figure{width:210px}.stage{padding:0}.motionToggle,.eyes{display:none}}
+@media(prefers-reduced-motion:reduce),(pointer:coarse){.eyes,.motionToggle{display:none}.iris{transition:none}}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BrandLogo } from "./brand-logo";
 import { HomeMascot } from "./home-mascot";
+import Image from "next/image";
 import { LevelIllustration } from "./level-illustration";
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { EconomyHeadline, useEconomyFact, LearningIcon, LearningPath, LevelEntries, SESVisual } from "./home-sections";
@@ -863,7 +864,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
 
             <h1 className="hero-title">
               Bienvenue sur{" "}
-              <span>CAPSES</span>
+              <Image className="hero-wordmark" src="/brand/capses-lettering.svg" alt="CAPSES" width={525} height={88} preload />
             </h1>
 
             <p className="hero-subtitle">

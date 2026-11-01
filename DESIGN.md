@@ -53,3 +53,6 @@ Lire ce document avant toute modification d’interface. Appliquer les tokens CS
 
 ## Identité CAPSES — proposition du 1er novembre 2026
 Le nouveau logo associe un C ouvert et une aiguille orientée vers le haut à droite, avec un lettrage capital incliné dessiné en SVG. Le composant BrandLogo partage ce dessin entre les en-têtes. Cette demande de l’enseignante remplace la consigne de préserver l’ancien bateau. Le lapin streetwear porte uniquement l’emblème, sans texte. Il apparaît à l’accueil, hors des cours. Son mouvement de faible amplitude répond au pointeur, sans animation permanente ; il est désactivable, absent au toucher et désactivé avec prefers-reduced-motion. Le fond clair et les parcours pédagogiques sont conservés. La maquette de marque n’est pas une vérification de disponibilité commerciale.
+
+### Ajustement du titre et du regard
+Le nom CAPSES dans le titre d’accueil reprend les tracés vectoriels du lettrage de navigation, en vert pétrole. Sur ordinateur, deux masques de paupières fixes recouvrent les yeux de l’illustration ; les iris texturés issus de la même illustration se déplacent selon la position du pointeur. Aucun mouvement du corps ne simule le regard. Pause, sortie du pointeur, perte de focus et préférence de réduction du mouvement rétablissent le regard au repos. Sur petit écran ou pointeur tactile, l’illustration reste fixe.
