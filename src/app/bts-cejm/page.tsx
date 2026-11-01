@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { HomeMascot } from "../home-mascot";
 import { LevelNavigation } from "../level-navigation";
-import { LevelIllustration } from "../level-illustration";
 
 export default function BTSCEJMPage() {
   return (
@@ -49,9 +48,8 @@ export default function BTSCEJMPage() {
           </p>
 
           </div>
-          <LevelIllustration level="bts" />
-          </div>
           <HomeMascot compact />
+          </div>
           <div style={{
             marginTop:28,display:"grid",
             gridTemplateColumns:"repeat(auto-fit,minmax(190px,1fr))",gap:12

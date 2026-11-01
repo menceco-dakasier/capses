@@ -5,7 +5,6 @@ import { HomeMascot } from "../home-mascot";
 import { useState } from "react";
 import { LevelFilters } from "../level-filters";
 import browserStyles from "../level-browser.module.css";
-import { LevelIllustration } from "../level-illustration";
 import { LevelNavigation } from "../level-navigation";
 
 const programme = [
@@ -55,9 +54,8 @@ export default function Page() {
         <p style={{margin:"0 0 16px",color:"#52617a",fontSize:17,lineHeight:1.7,maxWidth:760}}>Retrouve les objectifs officiels, le cours, les mécanismes et des entraînements progressifs pour comprendre et réviser les SES.</p>
         <p style={{margin:"0 0 32px",color:"#52617a",fontSize:14,lineHeight:1.7}}><strong>12 chapitres au programme · 2 disponibles</strong><br/>Les autres chapitres seront ouverts progressivement. Les numéros ci-dessous suivent l’ordre du programme ; ton professeur peut choisir une autre progression.</p>
         </div>
-        <LevelIllustration level="premiere" />
-        </div>
         <HomeMascot compact />
+        </div>
         <div className={browserStyles.layout}>
           <aside className={browserStyles.sidebar}><LevelFilters level="Première" selected={selected} onSelect={setSelected} options={programme.map(group => ({id:group.domaine,label:group.domaine}))} /></aside>
           <div className={browserStyles.content}>

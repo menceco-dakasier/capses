@@ -62,3 +62,6 @@ La mascotte regarde d’abord le pointeur, puis son corps se déplace et s’inc
 
 ### Correction du compagnon : suivi dans la fenêtre
 La demande suivante remplace la bande horizontale : sur ordinateur, le petit lapin de 90 px suit le pointeur en X et Y, en position fixe dans la fenêtre. Les coordonnées sont bornées avec une marge de 18 px et une zone haute de 88 px ; cette marge absorbe l’inclinaison maximale. Il reste visible pendant le défilement, ne capte aucun clic et dispose d’un bouton de pause fixe. Mobile et réduction du mouvement conservent une illustration fixe dans le flux.
+
+### Présence discrète et curseur CAPSES — décision suivante
+La poursuite du pointeur est abandonnée, jugée fatigante par l’enseignante. Sur les quatre accueils de niveau, une seule petite mascotte immobile remplace l’ancienne illustration du bloc de présentation, dans le flux du document. Aucun compagnon flottant, mouvement de corps ou bouton fixe. L’accueil général conserve uniquement le suivi du regard, désactivable. Le curseur natif prend la forme du petit emblème CAPSES sur les zones neutres, avec un liseré blanc et un point actif à la pointe de l’aiguille. Main sur les commandes et liens, curseur texte sur les textes et champs, curseurs natifs sur mobile et en couleurs forcées.

@@ -1,21 +1,11 @@
 .stage{position:relative;display:grid;justify-items:center;width:100%;padding:8px 12px 0}
-.figure{position:relative;width:min(100%,310px);transform-origin:60% 97%;transform:translate(var(--body-x,0px),var(--body-y,0px)) rotate(var(--body-angle,0deg))}
+.figure{position:relative;width:min(100%,310px)}
 .figure img{display:block;width:100%;height:auto}
 .eyes{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.iris{transform:translate(var(--gaze-x,0px),var(--gaze-y,0px))}
+.iris{transform:translate(var(--gaze-x,0px),var(--gaze-y,0px));transition:transform .12s ease-out}
 .motionToggle{margin-top:2px;padding:10px 12px;min-height:44px;border:0;background:transparent;color:var(--capses-muted);font:inherit;font-size:12px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .motionToggle:focus-visible{outline:3px solid var(--capses-accent);outline-offset:3px;border-radius:6px}
-@media(max-width:720px){.figure{width:210px}.stage{padding:0}.motionToggle,.eyes{display:none}}
+.compact{width:150px;flex:0 1 150px;min-width:110px;margin:0 auto;padding:0;pointer-events:none}
+.compact .figure{width:110px}
+@media(max-width:720px){.figure{width:210px}.stage{padding:0}.motionToggle,.eyes{display:none}.compact{width:100px;flex-basis:100px;min-width:86px}.compact .figure{width:86px}}
 @media(prefers-reduced-motion:reduce),(pointer:coarse){.eyes,.motionToggle{display:none}.iris{transition:none}}
-
-/* At rest on touch/reduced-motion, keep the mascot in the document flow. */
-.compact{display:flex;justify-content:center;min-height:138px;padding:0;margin:8px 0 20px}
-.compact .figure{width:86px;pointer-events:none}
-.compact .motionToggle{display:none}
-@media(prefers-reduced-motion:no-preference) and (pointer:fine) and (min-width:721px){
-  .compact{display:block;min-height:0;padding:0;margin:0;border:0}
-  .compact .figure{position:fixed;top:0;left:0;width:90px;z-index:70;pointer-events:none;--body-x:calc(100vw - 114px);--body-y:calc(100vh - 199px)}
-  .compact .motionToggle{display:block;position:fixed;bottom:12px;right:16px;z-index:90;font-size:11px;min-height:44px;padding:10px 12px;border:1px solid var(--capses-line,#dce3ee);border-radius:8px;background:var(--capses-canvas,#fff)}
-}
-@media(max-width:720px){.figure{transform:none!important}}
-@media(prefers-reduced-motion:reduce),(pointer:coarse){.figure{transform:none!important}}

@@ -643,23 +643,9 @@ export default function SecondePage() {
             </div>
           </div>
 
-          <div className="visual">
-            <div className="float-card one">Économiste<br />Prix · production</div>
-            <div className="float-card two">Sociologue<br />Groupes · normes</div>
-            <div className="float-card three">Politiste<br />Règles · pouvoir</div>
-
-            <div className="phone">
-              <div className="phone-screen">
-                <div className="phone-line" />
-                <div className="phone-line small" />
-                <div className="phone-line" />
-                <div className="phone-line small" />
-              </div>
-            </div>
-          </div>
+          <HomeMascot compact />
         </section>
 
-        <HomeMascot compact />
         <section id="chapitres" className="section">
           <aside className="sidebar">
             <LevelFilters level="Seconde" selected={selected} onSelect={setSelected} options={["Introduction", "Science économique", "Sociologie et science politique", "Regards croisés"].map(label => ({id:label,label}))} />
