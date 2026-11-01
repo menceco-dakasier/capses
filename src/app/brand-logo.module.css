@@ -1,0 +1,4 @@
+.lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;flex-shrink:0;line-height:1;color:#111}
+.lockup .image{display:block;width:190px!important;height:auto!important;max-width:100%;border-radius:0;background:transparent}
+.tagline{font-size:10px;line-height:1.3;letter-spacing:.01em;color:var(--capses-muted,#52617a);font-weight:500;white-space:nowrap}
+@media(max-width:480px){.lockup .image{width:161px!important}.tagline{font-size:9px}}

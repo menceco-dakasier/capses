@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BrandLogo } from "../../brand-logo";
 import { useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
 
@@ -382,8 +383,7 @@ export default function CommerceInternationalPage() {
       <header className={styles.header}>
         <div className={styles.headerInner}>
           <Link href="/" className={styles.brand}>
-            <span className={styles.logo}>C</span>
-            <span>CAPSES</span>
+            <BrandLogo />
           </Link>
           <nav className={styles.nav} aria-label="Navigation principale">
             <Link href="/">Accueil</Link>

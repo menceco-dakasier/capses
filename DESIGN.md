@@ -50,3 +50,6 @@ Tutoiement simple, français naturel, labels orientés action. Conserver cours, 
 
 ## Guide pour les agents et validation
 Lire ce document avant toute modification d’interface. Appliquer les tokens CSS existants plutôt que créer une nouvelle palette par page. Vérifier accueil, niveau, cours et quiz sur ordinateur et téléphone ; vérifier clavier, focus, contraste, feedback, navigation et absence de débordement. Lancer le build. Travailler dans une branche de prévisualisation ; aucune mise en production avant validation explicite de l’enseignante. Ce document ne constitue pas une validation des contenus pédagogiques.
+
+## Identité CAPSES — proposition du 1er novembre 2026
+Le nouveau logo associe un C ouvert et une aiguille orientée vers le haut à droite, avec un lettrage capital incliné dessiné en SVG. Le composant BrandLogo partage ce dessin entre les en-têtes. Cette demande de l’enseignante remplace la consigne de préserver l’ancien bateau. Le lapin streetwear porte uniquement l’emblème, sans texte. Il apparaît à l’accueil, hors des cours. Son mouvement de faible amplitude répond au pointeur, sans animation permanente ; il est désactivable, absent au toucher et désactivé avec prefers-reduced-motion. Le fond clair et les parcours pédagogiques sont conservés. La maquette de marque n’est pas une vérification de disponibilité commerciale.

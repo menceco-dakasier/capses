@@ -120,3 +120,10 @@
 .page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);align-items:center}
 .page[data-taste="home"] .hero-right{padding:0;margin:0;max-height:none;align-self:center}
 @media(max-width:720px){.page[data-taste="home"] .hero-card{grid-template-columns:1fr}.page[data-taste="home"] .hero-right{margin-top:12px}}
+
+/* CAPSES identity, November 2026: the mascot remains on the home page only. */
+.page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1.4fr) minmax(240px,.7fr);gap:36px}
+.page[data-taste="home"] .hero-right{overflow:visible;min-height:0;display:block}
+.home-revision-economy{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:start;margin-top:36px}
+.home-revision-economy>section{margin-top:0}
+@media(max-width:720px){.page[data-taste="home"] .hero-card{grid-template-columns:minmax(0,1fr);gap:8px}.page[data-taste="home"] .hero-right{margin:0}.home-revision-economy{grid-template-columns:minmax(0,1fr);gap:24px}}
