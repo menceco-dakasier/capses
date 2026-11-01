@@ -862,7 +862,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
             <div className="badge">SES du lycée au BTS CEJM</div>
 
             <h1 className="hero-title">
-              Bienvenue sur
+              Bienvenue sur{" "}
               <span>CAPSES</span>
             </h1>
 

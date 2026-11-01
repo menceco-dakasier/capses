@@ -10,7 +10,7 @@ export function HomeMascot() {
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    const media = window.matchMedia("(prefers-reduced-motion: no-preference) and (pointer: fine)");
+    const media = window.matchMedia("(prefers-reduced-motion: no-preference) and (pointer: fine) and (min-width: 721px)");
     let frame = 0;
     const reset = () => {
       cancelAnimationFrame(frame);
