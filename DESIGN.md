@@ -59,3 +59,6 @@ Le nom CAPSES dans le titre d’accueil reprend les tracés vectoriels du lettra
 
 ### Mouvement coordonné et accueils de niveaux
 La mascotte regarde d’abord le pointeur, puis son corps se déplace et s’incline avec un léger retard. Sur l’accueil général, l’amplitude reste réduite. Sur les accueils Seconde, Première, Terminale et BTS CEJM, une version de 110 px se rapproche horizontalement du pointeur à l’intérieur d’une bande réservée ; elle ne passe pas devant les contenus. Le mouvement s’arrête quand la mascotte se stabilise, à la pause et lors du défilement. Sur mobile, la version de 86 px reste immobile. Pas d’ajout dans les pages de cours.
+
+### Correction du compagnon : suivi dans la fenêtre
+La demande suivante remplace la bande horizontale : sur ordinateur, le petit lapin de 90 px suit le pointeur en X et Y, en position fixe dans la fenêtre. Les coordonnées sont bornées avec une marge de 18 px et une zone haute de 88 px ; cette marge absorbe l’inclinaison maximale. Il reste visible pendant le défilement, ne capte aucun clic et dispose d’un bouton de pause fixe. Mobile et réduction du mouvement conservent une illustration fixe dans le flux.

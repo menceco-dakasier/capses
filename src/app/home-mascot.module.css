@@ -8,9 +8,14 @@
 @media(max-width:720px){.figure{width:210px}.stage{padding:0}.motionToggle,.eyes{display:none}}
 @media(prefers-reduced-motion:reduce),(pointer:coarse){.eyes,.motionToggle{display:none}.iris{transition:none}}
 
-/* Level-home companion: movement stays inside this reserved lane. */
-.compact{display:block;min-height:202px;padding:10px 8px 28px;margin:8px 0 24px;overflow:hidden;border-bottom:1px solid var(--capses-line,#dce3ee)}
-.compact .figure{width:110px;pointer-events:none}
-.compact .motionToggle{position:absolute;bottom:0;right:0;font-size:11px;min-height:36px;padding:8px 10px}
-@media(max-width:720px){.compact{min-height:138px;padding:0 0 6px;margin:8px 0 20px;display:flex;justify-content:center}.compact .figure{width:86px}.figure{transform:none!important}}
+/* At rest on touch/reduced-motion, keep the mascot in the document flow. */
+.compact{display:flex;justify-content:center;min-height:138px;padding:0;margin:8px 0 20px}
+.compact .figure{width:86px;pointer-events:none}
+.compact .motionToggle{display:none}
+@media(prefers-reduced-motion:no-preference) and (pointer:fine) and (min-width:721px){
+  .compact{display:block;min-height:0;padding:0;margin:0;border:0}
+  .compact .figure{position:fixed;top:0;left:0;width:90px;z-index:70;pointer-events:none;--body-x:calc(100vw - 114px);--body-y:calc(100vh - 199px)}
+  .compact .motionToggle{display:block;position:fixed;bottom:12px;right:16px;z-index:90;font-size:11px;min-height:44px;padding:10px 12px;border:1px solid var(--capses-line,#dce3ee);border-radius:8px;background:var(--capses-canvas,#fff)}
+}
+@media(max-width:720px){.figure{transform:none!important}}
 @media(prefers-reduced-motion:reduce),(pointer:coarse){.figure{transform:none!important}}
