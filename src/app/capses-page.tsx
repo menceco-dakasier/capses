@@ -921,6 +921,7 @@ export function CAPSESPage({ terminale = false }: { terminale?: boolean }) {
         <LearningPath /></>}
         {terminale && <div style={{paddingTop:24,display:"flex",flexWrap:"wrap",gap:24,alignItems:"center"}}><div style={{flex:"1 1 360px",minWidth:0}}><p>TON ESPACE DE RÉVISION</p><h1>Terminale SES</h1><p>Retrouve tes chapitres, tes notions et ta progression.</p><Link href="/">← Tous les niveaux</Link></div><LevelIllustration level="terminale" /></div>}
 
+        {terminale && <HomeMascot compact />}
         {terminale && <section id="chapitres" className="section">
           <aside className="sidebar">
             <h2>Terminale SES</h2>

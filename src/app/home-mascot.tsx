@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useId, useRef, useState } from "react";
 import styles from "./home-mascot.module.css";
 
-export function HomeMascot() {
+export function HomeMascot({ compact = false }: { compact?: boolean }) {
   const eyeId = useId().replace(/:/g, "");
   const stage = useRef<HTMLDivElement>(null);
   const figure = useRef<HTMLDivElement>(null);
@@ -13,40 +13,86 @@ export function HomeMascot() {
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: no-preference) and (pointer: fine) and (min-width: 721px)");
     let frame = 0;
+    let lastTime = 0;
+    let pointer: { x: number; y: number } | null = null;
+    const pose = { x: 0, y: 0, angle: 0, eyeX: 0, eyeY: 0 };
+    const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
+    const paint = () => {
+      const node = figure.current;
+      if (!node) return;
+      node.style.setProperty("--body-x", `${pose.x}px`);
+      node.style.setProperty("--body-y", `${pose.y}px`);
+      node.style.setProperty("--body-angle", `${pose.angle}deg`);
+      node.style.setProperty("--gaze-x", `${pose.eyeX}px`);
+      node.style.setProperty("--gaze-y", `${pose.eyeY}px`);
+    };
     const reset = () => {
       cancelAnimationFrame(frame);
-      figure.current?.style.setProperty("--gaze-x", "0px");
-      figure.current?.style.setProperty("--gaze-y", "0px");
+      frame = 0;
+      lastTime = 0;
+      pointer = null;
+      pose.x = pose.y = pose.angle = pose.eyeX = pose.eyeY = 0;
+      paint();
+    };
+    const tick = (time: number) => {
+      frame = 0;
+      if (!pointer || paused || !media.matches || !stage.current || !figure.current) return;
+      // Read geometry together, then write transforms without triggering React renders.
+      const bounds = stage.current.getBoundingClientRect();
+      const width = figure.current.offsetWidth;
+      const height = figure.current.offsetHeight;
+      if (bounds.bottom < 0 || bounds.top > window.innerHeight) { reset(); return; }
+      const dt = lastTime ? Math.min(40, time - lastTime) : 16;
+      lastTime = time;
+      const centre = bounds.left + (compact ? pose.x : (bounds.width - width) / 2) + width * .60;
+      const eyeTop = bounds.top + (compact ? 10 : 8) + pose.y + height * .33;
+      const gazeX = clamp((pointer.x - centre) / Math.max(140, window.innerWidth * .30), -1, 1);
+      const gazeY = clamp((pointer.y - eyeTop) / Math.max(120, window.innerHeight * .30), -1, 1);
+      const targetX = compact
+        ? clamp(pointer.x - bounds.left - width * .60, 8, Math.max(8, bounds.width - width - 8))
+        : gazeX * 7;
+      const moving = Math.abs(targetX - pose.x);
+      // Eyes lead; the body catches up slowly and settles on its feet.
+      const targetY = compact ? -Math.min(4, moving * .05) : -Math.abs(gazeY) * 3;
+      const targetAngle = compact ? clamp((targetX - pose.x) * .05, -5, 5) : gazeX * 2.6;
+      const bodyEase = 1 - Math.exp(-dt / (compact ? 230 : 180));
+      const eyeEase = 1 - Math.exp(-dt / 65);
+      pose.x += (targetX - pose.x) * bodyEase;
+      pose.y += (targetY - pose.y) * bodyEase;
+      pose.angle += (targetAngle - pose.angle) * bodyEase;
+      pose.eyeX += (gazeX * 13 - pose.eyeX) * eyeEase;
+      pose.eyeY += (gazeY * 8 - pose.eyeY) * eyeEase;
+      paint();
+      const unsettled = Math.abs(targetX - pose.x) + Math.abs(targetY - pose.y)
+        + Math.abs(targetAngle - pose.angle) + Math.abs(gazeX * 13 - pose.eyeX) + Math.abs(gazeY * 8 - pose.eyeY);
+      if (unsettled > .06) frame = requestAnimationFrame(tick);
+      else lastTime = 0;
     };
     const follow = (event: PointerEvent) => {
-      if (paused || !media.matches || !stage.current) return;
-      const bounds = figure.current?.getBoundingClientRect();
-      if (!bounds) return;
-      if (bounds.bottom < 0 || bounds.top > window.innerHeight) return;
-      const x = Math.max(-1, Math.min(1, (event.clientX - bounds.left - bounds.width * .60) / Math.max(160, window.innerWidth * .35)));
-      const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top - bounds.height * .33) / Math.max(140, window.innerHeight * .35)));
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        figure.current?.style.setProperty("--gaze-x", `${x * 13}px`);
-        figure.current?.style.setProperty("--gaze-y", `${y * 8}px`);
-      });
+      if (paused || !media.matches) return;
+      pointer = { x: event.clientX, y: event.clientY };
+      if (!frame) frame = requestAnimationFrame(tick);
     };
     window.addEventListener("pointermove", follow, { passive: true });
+    window.addEventListener("scroll", reset, { passive: true });
+    window.addEventListener("resize", reset, { passive: true });
     document.documentElement.addEventListener("pointerleave", reset);
     window.addEventListener("blur", reset);
     media.addEventListener("change", reset);
     return () => {
       window.removeEventListener("pointermove", follow);
+      window.removeEventListener("scroll", reset);
+      window.removeEventListener("resize", reset);
       document.documentElement.removeEventListener("pointerleave", reset);
       window.removeEventListener("blur", reset);
       media.removeEventListener("change", reset);
       reset();
     };
-  }, [paused]);
+  }, [paused, compact]);
 
-  return <div className={styles.stage} ref={stage}>
+  return <div className={`${styles.stage} ${compact ? styles.compact : ""}`} ref={stage}>
     <div className={styles.figure} ref={figure}>
-      <Image src="/brand/capses-mascot.webp" alt="Le lapin CAPSES, casquette à l’envers et emblème sur le tee-shirt." width={1024} height={1536} sizes="(max-width: 720px) 210px, 310px" preload />
+      <Image src="/brand/capses-mascot.webp" alt="Le lapin CAPSES, casquette à l’envers et emblème sur le tee-shirt." width={1024} height={1536} sizes={compact ? "110px" : "(max-width: 720px) 210px, 310px"} preload={!compact} />
       {/* The eyelid masks stay still; only the original textured irises move. */}
       <svg className={styles.eyes} viewBox="0 0 1024 1536" aria-hidden="true" focusable="false">
         <defs>
@@ -68,6 +114,6 @@ export function HomeMascot() {
         </g>
       </svg>
     </div>
-    <button className={styles.motionToggle} type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Activer le suivi du regard" : "Mettre en pause le regard"}</button>
+    <button className={styles.motionToggle} type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Activer la mascotte" : "Mettre la mascotte en pause"}</button>
   </div>;
 }

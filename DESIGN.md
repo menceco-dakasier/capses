@@ -56,3 +56,6 @@ Le nouveau logo associe un C ouvert et une aiguille orientée vers le haut à dr
 
 ### Ajustement du titre et du regard
 Le nom CAPSES dans le titre d’accueil reprend les tracés vectoriels du lettrage de navigation, en vert pétrole. Sur ordinateur, deux masques de paupières fixes recouvrent les yeux de l’illustration ; les iris texturés issus de la même illustration se déplacent selon la position du pointeur. Aucun mouvement du corps ne simule le regard. Pause, sortie du pointeur, perte de focus et préférence de réduction du mouvement rétablissent le regard au repos. Sur petit écran ou pointeur tactile, l’illustration reste fixe.
+
+### Mouvement coordonné et accueils de niveaux
+La mascotte regarde d’abord le pointeur, puis son corps se déplace et s’incline avec un léger retard. Sur l’accueil général, l’amplitude reste réduite. Sur les accueils Seconde, Première, Terminale et BTS CEJM, une version de 110 px se rapproche horizontalement du pointeur à l’intérieur d’une bande réservée ; elle ne passe pas devant les contenus. Le mouvement s’arrête quand la mascotte se stabilise, à la pause et lors du défilement. Sur mobile, la version de 86 px reste immobile. Pas d’ajout dans les pages de cours.

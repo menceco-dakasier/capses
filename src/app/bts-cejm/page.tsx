@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { HomeMascot } from "../home-mascot";
+import { LevelNavigation } from "../level-navigation";
 import { LevelIllustration } from "../level-illustration";
 
 export default function BTSCEJMPage() {
@@ -9,6 +11,7 @@ export default function BTSCEJMPage() {
       color:"#10214a",
       fontFamily:"var(--font-geist-sans), Arial, sans-serif"
     }}>
+      <LevelNavigation current="/bts-cejm" />
       <div style={{maxWidth:980,margin:"0 auto",padding:"28px 20px 70px"}}>
         <Link href="/" style={{
           display:"inline-flex",alignItems:"center",gap:8,
@@ -48,6 +51,7 @@ export default function BTSCEJMPage() {
           </div>
           <LevelIllustration level="bts" />
           </div>
+          <HomeMascot compact />
           <div style={{
             marginTop:28,display:"grid",
             gridTemplateColumns:"repeat(auto-fit,minmax(190px,1fr))",gap:12

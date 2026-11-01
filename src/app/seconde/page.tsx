@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { HomeMascot } from "../home-mascot";
+import { BrandLogo } from "../brand-logo";
 import { useState } from "react";
 import { LevelFilters } from "../level-filters";
 import { TasteMobileMenu } from "../taste-mobile-menu";
@@ -599,11 +601,7 @@ export default function SecondePage() {
       <header className="header">
         <nav className="nav">
           <Link href="/" className="brand">
-            <span className="logo">C</span>
-            <span>
-              <span className="brand-title">CAPSES</span>
-              <span className="brand-subtitle">Comprendre les SES</span>
-            </span>
+            <BrandLogo tagline />
           </Link>
 
           <div className="links">
@@ -661,6 +659,7 @@ export default function SecondePage() {
           </div>
         </section>
 
+        <HomeMascot compact />
         <section id="chapitres" className="section">
           <aside className="sidebar">
             <LevelFilters level="Seconde" selected={selected} onSelect={setSelected} options={["Introduction", "Science économique", "Sociologie et science politique", "Regards croisés"].map(label => ({id:label,label}))} />

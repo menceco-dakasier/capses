@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { HomeMascot } from "../home-mascot";
 import { useState } from "react";
 import { LevelFilters } from "../level-filters";
 import browserStyles from "../level-browser.module.css";
@@ -56,6 +57,7 @@ export default function Page() {
         </div>
         <LevelIllustration level="premiere" />
         </div>
+        <HomeMascot compact />
         <div className={browserStyles.layout}>
           <aside className={browserStyles.sidebar}><LevelFilters level="Première" selected={selected} onSelect={setSelected} options={programme.map(group => ({id:group.domaine,label:group.domaine}))} /></aside>
           <div className={browserStyles.content}>
