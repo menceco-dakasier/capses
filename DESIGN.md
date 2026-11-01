@@ -50,3 +50,18 @@ Tutoiement simple, français naturel, labels orientés action. Conserver cours, 
 
 ## Guide pour les agents et validation
 Lire ce document avant toute modification d’interface. Appliquer les tokens CSS existants plutôt que créer une nouvelle palette par page. Vérifier accueil, niveau, cours et quiz sur ordinateur et téléphone ; vérifier clavier, focus, contraste, feedback, navigation et absence de débordement. Lancer le build. Travailler dans une branche de prévisualisation ; aucune mise en production avant validation explicite de l’enseignante. Ce document ne constitue pas une validation des contenus pédagogiques.
+
+## Identité CAPSES — proposition du 1er novembre 2026
+Le nouveau logo associe un C ouvert et une aiguille orientée vers le haut à droite, avec un lettrage capital incliné dessiné en SVG. Le composant BrandLogo partage ce dessin entre les en-têtes. Cette demande de l’enseignante remplace la consigne de préserver l’ancien bateau. Le lapin streetwear porte uniquement l’emblème, sans texte. Il apparaît à l’accueil, hors des cours. Son mouvement de faible amplitude répond au pointeur, sans animation permanente ; il est désactivable, absent au toucher et désactivé avec prefers-reduced-motion. Le fond clair et les parcours pédagogiques sont conservés. La maquette de marque n’est pas une vérification de disponibilité commerciale.
+
+### Ajustement du titre et du regard
+Le nom CAPSES dans le titre d’accueil reprend les tracés vectoriels du lettrage de navigation, en vert pétrole. Sur ordinateur, deux masques de paupières fixes recouvrent les yeux de l’illustration ; les iris texturés issus de la même illustration se déplacent selon la position du pointeur. Aucun mouvement du corps ne simule le regard. Pause, sortie du pointeur, perte de focus et préférence de réduction du mouvement rétablissent le regard au repos. Sur petit écran ou pointeur tactile, l’illustration reste fixe.
+
+### Mouvement coordonné et accueils de niveaux
+La mascotte regarde d’abord le pointeur, puis son corps se déplace et s’incline avec un léger retard. Sur l’accueil général, l’amplitude reste réduite. Sur les accueils Seconde, Première, Terminale et BTS CEJM, une version de 110 px se rapproche horizontalement du pointeur à l’intérieur d’une bande réservée ; elle ne passe pas devant les contenus. Le mouvement s’arrête quand la mascotte se stabilise, à la pause et lors du défilement. Sur mobile, la version de 86 px reste immobile. Pas d’ajout dans les pages de cours.
+
+### Correction du compagnon : suivi dans la fenêtre
+La demande suivante remplace la bande horizontale : sur ordinateur, le petit lapin de 90 px suit le pointeur en X et Y, en position fixe dans la fenêtre. Les coordonnées sont bornées avec une marge de 18 px et une zone haute de 88 px ; cette marge absorbe l’inclinaison maximale. Il reste visible pendant le défilement, ne capte aucun clic et dispose d’un bouton de pause fixe. Mobile et réduction du mouvement conservent une illustration fixe dans le flux.
+
+### Présence discrète et curseur CAPSES — décision suivante
+La poursuite du pointeur est abandonnée, jugée fatigante par l’enseignante. Sur les quatre accueils de niveau, une seule petite mascotte immobile remplace l’ancienne illustration du bloc de présentation, dans le flux du document. Aucun compagnon flottant, mouvement de corps ou bouton fixe. L’accueil général conserve uniquement le suivi du regard, désactivable. Le curseur natif prend la forme du petit emblème CAPSES sur les zones neutres, avec un liseré blanc et un point actif à la pointe de l’aiguille. Main sur les commandes et liens, curseur texte sur les textes et champs, curseurs natifs sur mobile et en couleurs forcées.

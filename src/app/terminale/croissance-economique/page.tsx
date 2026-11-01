@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { BrandLogo } from "../../brand-logo";
 import { useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
 
@@ -185,8 +185,7 @@ export default function CroissanceEconomiquePage() {
       <header className={styles.header}>
         <div className={styles.headerInner}>
           <Link href="/" className={styles.brand}>
-            <Image src="/brand/capses-logo.svg" alt="" width={40} height={40} />
-            <span>CAPSES</span>
+            <BrandLogo />
           </Link>
           <nav className={styles.nav} aria-label="Navigation principale">
             <Link href="/">Accueil</Link>

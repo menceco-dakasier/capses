@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Native CAPSES pointer: no JavaScript follower, no effect on touch devices. */
+@media (hover: hover) and (pointer: fine) {
+  html, body { cursor: url("/brand/capses-cursor.png") 29 2, auto; }
+  a, button, summary, select, input[type="checkbox"], input[type="radio"], input[type="range"], [role="button"] { cursor: pointer; }
+  p, li, h1, h2, h3, h4, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea, [contenteditable="true"] { cursor: text; }
+  a *, button *, summary *, [role="button"] * { cursor: inherit; }
+  :disabled, [aria-disabled="true"] { cursor: not-allowed; }
+}
+@media (forced-colors: active) { html, body { cursor: auto; } }

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BrandLogo } from "../../brand-logo";
 import { useEffect, useMemo, useState } from "react";
 
 type Matiere = "ECO" | "SOCIO" | "RC";
@@ -755,11 +756,7 @@ export default function Home() {
       <header className="header">
         <nav className="nav">
           <Link href="/" className="brand">
-            <span className="logo">C</span>
-            <span>
-              <span className="brand-title">CAPSES</span>
-              <span className="brand-subtitle">Réussir le bac de SES</span>
-            </span>
+            <BrandLogo />
           </Link>
 
           <div className="links">

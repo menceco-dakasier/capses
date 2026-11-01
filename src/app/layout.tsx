@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | CAPSES",
   },
   description: "Cours, notions, mécanismes, méthodes et quiz pour progresser en SES de la Seconde à la Terminale et en BTS CEJM.",
-  icons: { icon: "/brand/capses-logo.svg" },
+  icons: { icon: [{ url: "/brand/capses-logo.svg", type: "image/svg+xml" }], apple: "/brand/apple-touch-icon.png" },
 };
 
 export default function RootLayout({
