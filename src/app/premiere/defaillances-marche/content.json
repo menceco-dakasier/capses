@@ -1,0 +1,601 @@
+{
+  "objectifs": [
+    [
+      "Comprendre que le marché est défaillant en présence d’externalités et être capable de l’illustrer par un exemple (notamment celui de la pollution).",
+      "Le prix payé ne prend pas toujours en compte les effets de la production ou de la consommation sur les autres. Explique pourquoi les décisions privées peuvent alors être mauvaises pour la collectivité.",
+      "Une usine rejette des substances dans une rivière et dégrade l’activité de pêche sans indemniser les pêcheurs."
+    ],
+    [
+      "Comprendre que le marché est défaillant en présence de biens communs et de biens collectifs, et être capable de l’illustrer par des exemples.",
+      "Distingue les ressources que chacun peut épuiser et les services dont chacun peut profiter sans payer. Le premier cas expose à la surexploitation ; le second rend le financement difficile.",
+      "Les poissons en haute mer sont rivaux et difficilement excluables. L’éclairage d’une rue est non rival et non excluable dans les conditions habituelles."
+    ],
+    [
+      "Connaître les deux principales formes d’information asymétrique, la sélection adverse et l’aléa moral, et être capable de les illustrer par des exemples (notamment celui des voitures d’occasion pour la sélection adverse et de l’assurance pour l’aléa moral).",
+      "Demande-toi ce que l’autre sait et ce qu’il peut cacher : une caractéristique avant l’échange ou une action après le contrat.",
+      "Le vendeur connaît mieux l’état de sa voiture ; l’assureur observe difficilement toutes les précautions prises par son assuré."
+    ],
+    [
+      "Comprendre que la sélection adverse peut mener à l’absence d’équilibre.",
+      "Explique comment la méfiance réduit le prix proposé, décourage les vendeurs de bons produits, puis peut rendre impossibles les échanges.",
+      "Si seuls les véhicules de mauvaise qualité restent et que les acheteurs ne veulent même plus payer leur prix de réserve, aucun échange n’a lieu."
+    ],
+    [
+      "Être capable d’illustrer l’intervention des pouvoirs publics face à ces différentes défaillances.",
+      "Pour chaque problème, relie un instrument à son effet : modifier les incitations, financer un service, limiter les prélèvements ou rendre l’information plus fiable.",
+      "Taxer une émission polluante, financer l’éclairage, fixer un quota de pêche ou imposer une information contrôlée sur les véhicules."
+    ]
+  ],
+  "notions": [
+    [
+      "Défaillance du marché",
+      "Situation dans laquelle le marché laissé à lui-même ne conduit pas à une allocation efficace des ressources pour la collectivité.",
+      "Un prix d’équilibre peut exister sans que le résultat soit collectivement efficace."
+    ],
+    [
+      "Externalité",
+      "Effet de l’activité d’un agent sur le bien-être ou les possibilités de production d’un autre, sans compensation monétaire correspondant à cet effet.",
+      "Elle peut venir de la production ou de la consommation, et être positive ou négative."
+    ],
+    [
+      "Coût privé et coût social",
+      "Le coût privé est supporté par le décideur ; le coût social ajoute les dommages externes imposés aux tiers.",
+      "Une pollution non compensée peut créer un écart entre ces coûts. Le coût social n’est pas simplement une dépense de l’État."
+    ],
+    [
+      "Rivalité",
+      "La consommation ou le prélèvement par un agent réduit ce qui reste disponible pour les autres.",
+      "Un poisson prélevé ne peut plus être pêché par quelqu’un d’autre."
+    ],
+    [
+      "Excluabilité",
+      "Possibilité d’empêcher l’accès au bien, notamment aux personnes qui ne paient pas.",
+      "Ce critère dépend des dispositifs techniques et des règles d’accès, pas seulement de la nature physique du bien."
+    ],
+    [
+      "Bien collectif pur",
+      "Bien non rival et non excluable.",
+      "L’éclairage d’une rue bénéficie aux passants sans que l’un prive les autres de lumière ; public ne signifie pas forcément produit par une administration."
+    ],
+    [
+      "Bien commun",
+      "Bien rival et non excluable, ou dont l’exclusion est difficile.",
+      "Un stock de poissons en libre accès risque d’être surexploité. Une gestion collective peut organiser les prélèvements."
+    ],
+    [
+      "Passager clandestin",
+      "Agent qui bénéficie d’un bien ou d’une action collective sans contribuer à son financement ou à sa réalisation.",
+      "Le problème tient aux incitations : l’intérêt collectif ne garantit pas la contribution volontaire de chacun."
+    ],
+    [
+      "Asymétrie d’information",
+      "Situation dans laquelle une partie à l’échange dispose d’une information pertinente dont l’autre ne dispose pas.",
+      "Elle peut porter sur la qualité, le risque ou une action ; elle n’exige pas toujours un mensonge."
+    ],
+    [
+      "Sélection adverse",
+      "Mécanisme par lequel une information cachée avant le contrat conduit à sélectionner davantage les produits de mauvaise qualité ou les risques élevés.",
+      "Sur le marché de l’occasion, une offre de prix fondée sur la qualité moyenne peut faire partir les vendeurs de bonnes voitures."
+    ],
+    [
+      "Aléa moral",
+      "Situation dans laquelle une action difficilement observable après le contrat peut modifier le risque ou le résultat au détriment de l’autre partie.",
+      "Une couverture peut réduire l’incitation à la prudence ; elle ne rend pas tous les assurés imprudents."
+    ],
+    [
+      "Internalisation",
+      "Prise en compte d’un effet externe dans le calcul de l’agent qui en est à l’origine.",
+      "Une taxe sur une émission augmente le coût privé de polluer et encourage sa réduction."
+    ]
+  ],
+  "cours": [
+    {
+      "title": "I. Pourquoi les prix ne prennent-ils pas toujours en compte les effets sur autrui ?",
+      "paragraphs": [
+        "Le marché coordonne les décisions d’acheteurs et de vendeurs à travers les prix. Mais ces prix ne renseignent pas toujours sur toutes les conséquences d’une activité. Un échange peut profiter à ses participants tout en imposant un dommage à des personnes extérieures. À l’inverse, une activité peut apporter à d’autres un bénéfice que son auteur ne reçoit pas. Dans ces situations, les calculs individuels ne coïncident pas avec l’intérêt collectif : le marché est défaillant.",
+        "Lorsqu’une usine pollue une rivière sans compenser les usagers en aval, elle supporte ses dépenses de travail, de machines et de matières premières, mais pas tout le dommage provoqué. Le coût social est supérieur au coût privé. Certaines unités restent rentables pour elle alors que leur coût total pour la collectivité dépasse leur avantage. Sans correction, la production polluante tend à être excessive par rapport au niveau collectivement souhaitable. Cela ne signifie ni que tous les agents perdent, ni que toute production doit disparaître.",
+        "Une externalité positive produit l’écart inverse. Dans l’exemple de l’apiculteur et de l’arboriculteur, les abeilles contribuent à la pollinisation des arbres et les fleurs fournissent des ressources aux abeilles. En l’absence de rémunération de ces services, chaque producteur décide sans recevoir tout le bénéfice collectif de son activité. Certaines actions utiles risquent de ne pas être entreprises : le marché tend alors à en fournir trop peu. Une externalité positive est donc aussi une défaillance, même si son effet est bénéfique."
+      ]
+    },
+    {
+      "title": "I.1. Corriger l’écart entre calcul individuel et intérêt collectif",
+      "paragraphs": [
+        "Les pouvoirs publics peuvent modifier les incitations. Une taxe liée aux émissions fait entrer une partie du dommage dans le calcul du pollueur : polluer devient plus coûteux, ce qui encourage la réduction des rejets quand son coût est inférieur à la taxe évitée. Une subvention peut soutenir une activité à externalités positives en augmentant le gain privé qui lui est associé. Une norme fixe une obligation ou une limite et suppose des contrôles et des sanctions crédibles.",
+        "Un système de quotas échangeables combine une limite globale décidée par les pouvoirs publics et l’échange de droits entre agents concernés. Il ne constitue pas un marché spontané sans intervention : le plafond et les règles sont construits collectivement. Le programme demande surtout de savoir illustrer les instruments et leurs mécanismes. Leur efficacité dépend de leur niveau, de leur champ et du contrôle ; constater une défaillance ne prouve pas que toute intervention soit automatiquement efficace."
+      ]
+    },
+    {
+      "title": "II. Biens collectifs : pourquoi la contribution volontaire peut-elle échouer ?",
+      "paragraphs": [
+        "Pour classer un bien, il faut poser deux questions distinctes. Sa consommation par une personne réduit-elle celle des autres ? Peut-on empêcher son accès à ceux qui ne paient pas ? Un bien collectif pur cumule non-rivalité et non-excluabilité. L’éclairage d’une rue, dans les conditions habituelles, en est un exemple : un passant supplémentaire ne réduit pas la lumière reçue par les autres et il est difficile de réserver cette lumière aux seuls payeurs.",
+        "Chaque habitant peut souhaiter un éclairage tout en préférant laisser ses voisins payer. Il espère bénéficier du service sans contribuer : c’est le comportement de passager clandestin. Si ce raisonnement se généralise, les recettes volontaires deviennent insuffisantes et le service est sous-produit, voire absent, alors que sa réalisation apporterait un avantage collectif supérieur à son coût. Non-rival ne signifie donc pas gratuit à produire.",
+        "Les pouvoirs publics peuvent financer la fourniture par des prélèvements obligatoires et organiser le service. Il faut distinguer financement et production : une collectivité peut payer une entreprise pour installer et entretenir l’éclairage. Le bien collectif n’est pas défini par le statut de son producteur. De même, tout service public n’est pas un bien collectif pur : une place dans un bus peut être rivale lorsque le véhicule est plein."
+      ]
+    },
+    {
+      "title": "II.1. Biens communs : pourquoi les prélèvements peuvent-ils devenir excessifs ?",
+      "paragraphs": [
+        "Un bien commun est rival mais non excluable, ou difficilement excluable. Les poissons en haute mer illustrent cette combinaison : chacun peut chercher à les capturer, mais un poisson prélevé ne reste pas disponible pour les autres. Chaque pêcheur reçoit le bénéfice de sa capture tandis que l’appauvrissement du stock affecte l’ensemble des usagers et les possibilités de pêche futures.",
+        "Si l’accès reste libre et que chacun augmente ses prises sans tenir compte de cet effet, les prélèvements peuvent dépasser la capacité de renouvellement de la ressource. Le problème n’est pas de produire trop de poissons, mais d’en prélever trop. La surexploitation n’est pourtant pas une fatalité : des règles d’accès, des quotas, des périodes de fermeture ou des accords entre usagers peuvent préserver le stock.",
+        "Les travaux d’Elinor Ostrom montrent l’intérêt de règles collectives adaptées, d’une surveillance et de sanctions reconnues par les usagers. L’alternative ne se réduit donc pas à la privatisation ou à la gestion intégrale par l’État. Pour une ressource partagée entre plusieurs territoires, la coopération est déterminante : une limitation locale peut être affaiblie si les prélèvements se déplacent ailleurs."
+      ]
+    },
+    {
+      "title": "III. Sélection adverse : comment les bonnes voitures peuvent-elles disparaître des échanges ?",
+      "paragraphs": [
+        "Le vendeur connaît souvent mieux que l’acheteur l’entretien et les défauts de sa voiture. Si l’acheteur ne peut pas distinguer les qualités, il propose un prix tenant compte de la qualité moyenne attendue et du risque de mauvaise surprise. Ce prix peut sembler acceptable aux vendeurs de mauvaises voitures, mais trop faible aux propriétaires de bonnes voitures. Ces derniers retirent alors leur véhicule de la vente.",
+        "Le retrait des meilleurs produits dégrade la qualité moyenne des véhicules proposés. Les acheteurs révisent leur jugement et diminuent encore leur disposition à payer, ce qui peut provoquer de nouveaux retraits. C’est la sélection adverse : l’information cachée conduit progressivement à retenir les produits les moins recherchés. Le raisonnement d’Akerlof porte sur cette sélection par l’échange, et pas simplement sur le fait d’avoir acheté trop cher une voiture défectueuse.",
+        "Dans certaines conditions, la disposition à payer des acheteurs devient inférieure au prix minimal accepté par les vendeurs encore présents. Aucun prix ne permet alors de réaliser des échanges : la sélection adverse peut conduire à l’absence d’équilibre avec échanges. Cette issue est possible, pas systématique. Des marchés de qualité inférieure peuvent subsister ; une garantie crédible, une expertise indépendante ou une information vérifiable peuvent rétablir la confiance."
+      ]
+    },
+    {
+      "title": "III.1. Aléa moral : pourquoi le comportement peut-il changer après le contrat ?",
+      "paragraphs": [
+        "Une fois assuré, un agent ne supporte plus seul toutes les conséquences financières d’un sinistre. Si l’assureur observe difficilement ses précautions, la couverture peut réduire son incitation à prévenir le risque. Le problème porte cette fois sur une action cachée après le contrat : c’est l’aléa moral. Il peut y avoir moins de prudence sans volonté de fraude. Le terme ne porte pas un jugement sur la moralité de tous les assurés.",
+        "Une franchise laisse une partie du dommage à la charge de l’assuré ; un bonus-malus associe le coût futur de la couverture à la sinistralité selon les règles du contrat. Ces dispositifs cherchent à maintenir les incitations à la prudence. Ils ne suppriment pas tous les accidents et doivent préserver l’utilité de l’assurance. Pour distinguer les deux asymétries, demande-toi ce qui est caché : la caractéristique ou le niveau de risque avant l’accord, ou l’action après sa conclusion."
+      ]
+    },
+    {
+      "title": "IV. Quelle intervention pour quelle défaillance ?",
+      "paragraphs": [
+        "Les pouvoirs publics disposent de réponses différentes selon le problème : une taxe ou une norme pour les émissions ; un financement collectif pour l’éclairage ; des règles de prélèvement pour une ressource commune ; des obligations d’information et des contrôles pour limiter les caractéristiques cachées. Le contrôle technique d’un véhicule renseigne sur les points examinés à un moment donné ; il ne garantit ni l’absence de tout défaut ni la qualité future du véhicule.",
+        "Il faut aussi distinguer les acteurs. Une franchise proposée par un assureur est un mécanisme contractuel privé ; elle ne constitue pas à elle seule une politique fiscale. Un label ne réduit l’asymétrie d’information que si son cahier des charges et son contrôle sont crédibles. L’intervention publique peut encadrer et rendre fiables ces dispositifs. Pour expliquer une réponse, relie toujours le problème initial, la règle mise en place et le changement de comportement attendu."
+      ]
+    }
+  ],
+  "mechanismes": [
+    {
+      "title": "1. Externalité négative : du dommage non payé à la production excessive",
+      "paragraphs": [
+        "Une unité produite rapporte un revenu à l’entreprise. Celle-ci compare ce revenu à son coût privé, sans intégrer tout le dommage imposé aux tiers. Des unités restent donc produites alors que leur coût social dépasse leur bénéfice social. Une taxe ou une norme peut réduire cet écart, à condition d’être adaptée et appliquée."
+      ]
+    },
+    {
+      "title": "2. Externalité positive : un bénéfice qui ne revient pas entièrement au décideur",
+      "paragraphs": [
+        "L’activité profite à un tiers sans rémunération. Le producteur compare ses coûts à son seul avantage privé, inférieur à l’avantage collectif. Il peut renoncer à une activité pourtant utile à la collectivité. Une subvention peut rendre cette activité plus attractive."
+      ]
+    },
+    {
+      "title": "3. Bien collectif : intérêt commun et financement insuffisant",
+      "paragraphs": [
+        "La non-excluabilité permet de profiter du service sans payer. Chacun peut compter sur la contribution des autres. Si les contributions restent trop faibles, le service n’est pas fourni au niveau souhaitable. Le prélèvement obligatoire peut permettre son financement, indépendamment du statut de l’opérateur."
+      ]
+    },
+    {
+      "title": "4. Bien commun : bénéfice privé et coût partagé",
+      "paragraphs": [
+        "Chaque capture profite au pêcheur, mais réduit le stock disponible pour les autres et pour l’avenir. En libre accès, l’incitation à prélever peut entraîner une surexploitation. Des règles acceptées et contrôlées peuvent limiter les prises pour préserver le renouvellement."
+      ]
+    },
+    {
+      "title": "5. Sélection adverse : une qualité moyenne qui se dégrade",
+      "paragraphs": [
+        "Information cachée sur la qualité ; offre de prix fondée sur la qualité attendue ; retrait des vendeurs de qualité ; dégradation de la qualité moyenne ; baisse supplémentaire de la disposition à payer. La boucle peut s’arrêter sur un marché de moindre qualité ou conduire à l’absence d’échanges."
+      ]
+    },
+    {
+      "title": "6. Aléa moral : couverture et action difficilement observable",
+      "paragraphs": [
+        "Le contrat couvre une partie des conséquences du risque ; certaines précautions deviennent moins avantageuses individuellement ; si elles ne sont pas observables, le risque peut augmenter. Une franchise réintroduit une part de coût privé et peut soutenir la prévention."
+      ]
+    }
+  ],
+  "erreurs": [
+    [
+      "Une externalité est forcément une pollution.",
+      "La pollution est un cas négatif ; la pollinisation non rémunérée peut être un cas positif. Les ménages peuvent aussi être à l’origine d’externalités."
+    ],
+    [
+      "Une externalité positive ne pose aucun problème.",
+      "Elle bénéficie aux tiers, mais le décideur ne reçoit pas tout l’avantage collectif : l’activité peut être insuffisante."
+    ],
+    [
+      "Un bien collectif est un bien produit par l’État.",
+      "La catégorie repose sur la non-rivalité et la non-excluabilité. Le financement public et la production privée peuvent être associés."
+    ],
+    [
+      "Un bien commun est non rival.",
+      "Il est rival : un prélèvement réduit la ressource disponible. C’est ce qui distingue le stock de poissons de l’éclairage."
+    ],
+    [
+      "La tragédie des communs est inévitable.",
+      "Des règles de gestion et de surveillance peuvent préserver les ressources. Les conditions d’accès et de coopération comptent."
+    ],
+    [
+      "La sélection adverse vient du goût pour les prix bas.",
+      "Elle vient d’une information cachée et de l’effet du prix sur les qualités offertes. Les acheteurs ne peuvent pas distinguer de manière fiable les bons produits."
+    ],
+    [
+      "La sélection adverse détruit toujours tout le marché.",
+      "Elle peut mener à l’absence d’échanges, mais cette issue dépend des dispositions à payer, des prix de réserve et des dispositifs de confiance."
+    ],
+    [
+      "Un accident prouve un aléa moral.",
+      "Il faut mettre en évidence une action difficilement observable et une modification des incitations après le contrat. Un sinistre seul ne suffit pas."
+    ],
+    [
+      "Le bonus-malus d’assurance est nécessairement un impôt.",
+      "C’est d’abord un mécanisme contractuel de tarification. Il faut le distinguer d’un prélèvement ou d’une subvention publics."
+    ],
+    [
+      "Une défaillance prouve que toute intervention sera efficace.",
+      "Une mesure doit être adaptée, contrôlée et évaluée ; elle mobilise aussi des informations et des ressources."
+    ]
+  ],
+  "exercices": [
+    [
+      "EC1 · Mobiliser un mécanisme",
+      "À l’aide d’un exemple, montrez que le marché est défaillant en présence d’une externalité négative.",
+      "Présente l’effet sur les tiers, distingue coût privé et coût social, puis explique la quantité excessive.",
+      "La pollution d’une rivière impose un dommage aux pêcheurs sans compensation. L’usine décide d’après ses coûts privés, inférieurs au coût social puisqu’ils ne comprennent pas tout le dommage. Certaines unités restent rentables pour elle alors qu’elles coûtent davantage à la collectivité qu’elles ne lui apportent. La production polluante est donc excessive par rapport au niveau collectivement souhaitable. Une taxe liée aux rejets peut modifier ce calcul."
+    ],
+    [
+      "EC1 · Comparer",
+      "Distinguez un bien collectif et un bien commun à l’aide de deux exemples.",
+      "Utilise les deux critères avant d’expliquer le problème de chaque catégorie.",
+      "L’éclairage d’une rue est non rival et non excluable dans les conditions habituelles : un passant ne prive pas les autres de lumière et l’on réserve difficilement le service aux payeurs. Il risque d’être insuffisamment financé en raison des passagers clandestins. Le stock de poissons en haute mer est difficilement excluable mais rival : une capture réduit ce qui reste. Le risque est la surexploitation. Les réponses portent donc sur le financement dans le premier cas et sur les prélèvements dans le second."
+    ],
+    [
+      "EC2 · Exploiter des données",
+      "À partir du tableau des émissions, présentez le poids des transports en France en 2024, puis expliquez pourquoi les émissions peuvent constituer une externalité négative.",
+      "Calcule 124,9 / 369,2 × 100. Sépare la lecture statistique de l’explication par le cours.",
+      "Les transports représentent environ 33,8 % des émissions territoriales françaises hors UTCATF dans cette estimation provisoire de 2024, soit environ un tiers. L’émission de gaz à effet de serre contribue à un dommage climatique subi aussi par des tiers sans compensation correspondant nécessairement au dommage. Les agents peuvent ne pas intégrer ce coût externe dans leurs choix. Le tableau mesure des émissions ; il ne chiffre pas le dommage ni le niveau optimal de taxe."
+    ],
+    [
+      "EC3 · Construire un raisonnement",
+      "Vous montrerez que les pouvoirs publics peuvent intervenir face aux principales défaillances du marché.",
+      "Organise trois paragraphes : externalités ; biens collectifs et communs ; information. Utilise les documents de la rubrique Documents et données, sans les paraphraser.",
+      "Un premier paragraphe explique comment une taxe ou une norme corrige les incitations liées à la pollution, en mobilisant l’écart entre coûts privé et social. Un deuxième distingue financement de l’éclairage et limitation des prélèvements de poissons : la non-excluabilité pose deux problèmes différents selon la rivalité. Un troisième explique comment une information obligatoire et vérifiable peut réduire la sélection adverse sur les véhicules d’occasion. Chaque paragraphe relie la défaillance, le dispositif et son effet attendu. Les textes éclairent les mécanismes ; leur seule citation ne remplace pas l’explication."
+    ]
+  ],
+  "sources": [
+    [
+      "Programme officiel de Première SES",
+      "https://eduscol.education.gouv.fr/5838/programmes-et-ressources-en-sciences-economiques-et-sociales-voie-gt",
+      "BO spécial du 22 janvier 2019, référencé parmi les programmes en vigueur sur Éduscol ; cinq objectifs."
+    ],
+    [
+      "Fiche scientifique Éduscol · Défaillances du marché",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/ra19lyceegspeses1eredefaillancesmarche1172933pdf-82782.pdf",
+      "Ministère de l’Éducation nationale, juin 2019 ; exemplaire fourni par l’enseignante. Références : Akerlof, Meade, Ostrom."
+    ],
+    [
+      "SDES · Chiffres clés du climat, édition 2025",
+      "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-du-climat/fr/10-panorama-francais-des-gaz-a",
+      "Données Citepa, format Secten, 2025. Émissions 2024 provisoires ; publication SDES du 4 novembre 2025."
+    ]
+  ],
+  "documents": [
+    {
+      "title": "Document 1 · Les externalités et le calcul individuel",
+      "author": "Pierre-Noël Giraud, Les globalisations. Émergences et fragmentations, Éditions Sciences Humaines, 2018. Passage continu reproduit du document fourni, p. 2.",
+      "text": "Une des raisons fréquentes pour lesquelles il manque des marchés, c'est qu'il n'existe pas de droits de propriété sur certains biens et services qui sont pourtant utilisés dans l'activité économique, ce qui engendre des « externalités ». Par exemple, un industriel utilise l'eau d'une rivière pour déverser ses déchets. Il ne peut le faire gratuitement que si la rivière n'appartient à personne. Cela engendre un coût pour les acteurs situés en aval de lui au bord de la rivière. Ce coût est une externalité négative. Si l'industriel peut polluer sans contrainte, il polluera beaucoup plus que s'il devait négocier son niveau de pollution avec la collectivité concernée. C'est une imperfection de marché. Un entrepreneur innovant invente un nouveau produit très utile aux consommateurs, mais très facile à copier par ses concurrents. Ces derniers bénéficient gratuitement de l'invention. Ce bénéfice est une externalité positive. S'il en est ainsi, on peut penser que les entrepreneurs potentiellement innovants seront peu incités à innover. C'est une imperfection de marché.",
+      "note": "Le texte insiste sur les droits de propriété. Un droit collectif n’interdit pas automatiquement toute pollution : tout dépend des règles, de la négociation et de leur application. « Imperfection » est ici le terme de l’auteur ; le programme traite ce mécanisme comme une défaillance du marché.",
+      "questions": [
+        [
+          "Quels coûts l’industriel ne paie-t-il pas directement ?",
+          "Le dommage supporté par les usagers en aval ne fait pas nécessairement partie de ses coûts privés. Il faut identifier les tiers lésés, pas seulement relever le mot pollution."
+        ],
+        [
+          "Pourquoi l’innovation peut-elle être insuffisante lorsque les concurrents la copient gratuitement ?",
+          "L’innovateur supporte le coût mais ne récupère pas tout le bénéfice collectif : son intérêt privé peut être trop faible pour qu’il entreprenne une recherche pourtant utile."
+        ]
+      ]
+    },
+    {
+      "title": "Document 2 · Pourquoi l’éclairage peut manquer",
+      "author": "Emmanuel Combe, Précis d’économie, PUF, 2017. Passage reproduit du document fourni, p. 3. Les coupures (…) sont celles de ce document ; aucune coupure supplémentaire.",
+      "text": "[Dans le cas des biens collectifs], chaque individu tente de se comporter en passager clandestin (...). Prenons le cas de deux individus A et B qui habitent dans la même rue et à qui l'on demande s'ils souhaitent bénéficier d'un éclairage public la nuit, en contre-partie d'une contribution volontaire. La meilleure solution pour les deux individus serait qu'il y ait de l'éclairage nocturne, ce qui procure à chacun une utilité de 10. La pire solution pour les deux individus est qu'il n'y ait pas d'éclairage nocturne : bien qu'ils économisent le paiement de la contribution volontaire, leur utilité individuelle diminue à 5 car il n'y a aucun éclairage public. Mais chaque individu préfère bénéficier de l'éclairage public sans avoir à le payer et en laissant son voisin le soin de payer la totalité de la contribution volontaire : dans cas, celui qui « triche » obtient une utilité de 15, tandis que celui qui paie pour les deux voit son utilité réduite à 2. Dans une telle configuration, il est probable que chacun refuse de payer la contribution volontaire : il n'y aura pas d'éclairage public et chaque individu aura une utilité de 5.",
+      "note": "Les nombres sont des utilités conventionnelles d’un jeu : ce ne sont ni des euros ni des données observées. Le tableau numérique récapitulatif est une transcription CAPSES du texte.",
+      "questions": [
+        [
+          "Que choisit A si B paie ? Et si B ne paie pas ?",
+          "Si B paie, A préfère ne pas payer : 15 plutôt que 10. Si B ne paie pas, A préfère encore ne pas payer : 5 plutôt que 2. Le même raisonnement vaut pour B."
+        ],
+        [
+          "Pourquoi le résultat est-il collectivement moins favorable ?",
+          "Les deux refusent et obtiennent chacun 5 alors qu’ils auraient chacun 10 en contribuant ensemble. L’avantage individuel de ne pas contribuer empêche ici une réalisation collectivement préférable."
+        ]
+      ]
+    },
+    {
+      "title": "Document 3 · Caractéristiques cachées et actions cachées",
+      "author": "N. Gregory Mankiw et Mark P. Taylor, Principes de l’économie, De Boeck, 2015. Passage reproduit du document fourni, p. 4, avec ses coupures déjà présentes.",
+      "text": "Une cause possible d'échec de marché réside dans [...] l'information asymétrique. Il est très fréquent qu'un individu, une entreprise, une organisation en sache plus que les autres au sujet de différentes choses. En économie, l'existence d'une différence dans l'accès à une information est appelée asymétrie d'information. [. . .] Les exemples de telles asymétries abondent. Un travailleur connaît mieux l'effort qu'il consacre à son travail que son patron. Le vendeur d'une voiture d'occasion connaît mieux l'état de son véhicule que l'acheteur. Le premier cas est un exemple d'actions cachées alors que le second cas est un exemple de caractéristiques cachées. Dans chacun de ces cas, la partie non informée (l'employeur, l'acheteur de la voiture) voudrait connaître l'information pertinente mais la partie informée (le travailleur, le vendeur de voiture) peut être incitée à la dissimuler.",
+      "note": "Ce passage pose la distinction. Le mécanisme complet de retrait des bons véhicules et l’exemple d’assurance sont expliqués dans le cours CAPSES, sans être présentés comme une citation de ces auteurs.",
+      "questions": [
+        [
+          "Quelle information est cachée dans chacun des deux exemples ?",
+          "Pour la voiture, la qualité du véhicule est une caractéristique cachée avant la vente. Pour le travail, l’effort accompli est une action que l’employeur n’observe pas parfaitement."
+        ],
+        [
+          "Transposez la distinction au marché de l’assurance.",
+          "Avant le contrat, un risque connu de l’assuré mais mal connu de l’assureur peut créer une sélection adverse. Après le contrat, des précautions difficiles à observer peuvent être modifiées par la couverture : c’est l’aléa moral."
+        ]
+      ]
+    }
+  ],
+  "quiz": [
+    [
+      "Une défaillance du marché signifie que…",
+      [
+        "l’allocation des ressources n’est pas collectivement efficace",
+        "aucun prix ne peut jamais exister",
+        "toutes les entreprises font faillite"
+      ],
+      0,
+      "Un équilibre marchand peut exister tout en ignorant certains coûts ou bénéfices collectifs."
+    ],
+    [
+      "Une externalité concerne…",
+      [
+        "uniquement les dépenses d’une entreprise",
+        "un effet sur un tiers sans compensation correspondante",
+        "uniquement un effet climatique"
+      ],
+      1,
+      "L’effet peut être positif ou négatif, lié à la consommation ou à la production."
+    ],
+    [
+      "Si un dommage externe n’est pas payé, le coût social est…",
+      [
+        "toujours nul",
+        "inférieur au coût privé",
+        "supérieur au coût privé"
+      ],
+      2,
+      "Il comprend les coûts privés et les dommages externes."
+    ],
+    [
+      "Une externalité négative non corrigée tend à entraîner…",
+      [
+        "une production excessive par rapport au niveau socialement souhaitable",
+        "une production forcément nulle",
+        "une indemnisation automatique"
+      ],
+      0,
+      "Le décideur ne tient pas compte de tout le coût collectif de ses choix."
+    ],
+    [
+      "Une externalité positive peut conduire à…",
+      [
+        "une activité nécessairement excessive",
+        "une activité insuffisante",
+        "une absence de coût de production"
+      ],
+      1,
+      "Le décideur ne reçoit pas tout le bénéfice collectif et peut renoncer à des actions utiles."
+    ],
+    [
+      "Dans l’exemple abeilles-verger sans paiement, la pollinisation est…",
+      [
+        "un bien privé nécessairement vendu",
+        "un dommage externe",
+        "une externalité positive"
+      ],
+      2,
+      "Elle profite à l’arboriculteur sans rémunération correspondante de l’apiculteur."
+    ],
+    [
+      "Une taxe liée aux émissions vise à…",
+      [
+        "faire entrer un coût de pollution dans le calcul privé",
+        "rendre la pollution gratuite",
+        "garantir automatiquement zéro émission"
+      ],
+      0,
+      "Elle modifie les incitations ; son effet dépend notamment de son niveau et des possibilités de réduction."
+    ],
+    [
+      "Une subvention peut corriger une externalité positive en…",
+      [
+        "supprimant tout coût social",
+        "augmentant l’avantage privé associé à l’activité",
+        "interdisant les bénéficiaires extérieurs"
+      ],
+      1,
+      "Elle peut rapprocher la décision privée du niveau collectivement souhaitable."
+    ],
+    [
+      "Un bien collectif pur est…",
+      [
+        "rival et excluable",
+        "rival et non excluable",
+        "non rival et non excluable"
+      ],
+      2,
+      "Les deux critères sont nécessaires."
+    ],
+    [
+      "Un stock de poissons en libre accès est…",
+      [
+        "un bien commun",
+        "un bien collectif pur",
+        "un bien non rival"
+      ],
+      0,
+      "Chaque capture réduit le stock disponible pour les autres."
+    ],
+    [
+      "La rivalité signifie que…",
+      [
+        "les vendeurs se font concurrence",
+        "l’usage par un agent réduit la disponibilité pour les autres",
+        "l’État produit le bien"
+      ],
+      1,
+      "Le critère concerne la consommation du bien, pas la concurrence entre entreprises."
+    ],
+    [
+      "Un passager clandestin cherche à…",
+      [
+        "payer pour tous les autres",
+        "supprimer toute action collective",
+        "profiter sans contribuer"
+      ],
+      2,
+      "La non-excluabilité peut rendre ce comportement individuellement avantageux."
+    ],
+    [
+      "Le problème principal du bien collectif est ici…",
+      [
+        "un financement volontaire insuffisant",
+        "un prélèvement excessif dans un stock",
+        "une rivalité systématique"
+      ],
+      0,
+      "Chacun peut attendre la contribution des autres."
+    ],
+    [
+      "Le problème d’un bien commun en libre accès est…",
+      [
+        "l’impossibilité de consommer à plusieurs dans le temps",
+        "la surexploitation possible",
+        "l’absence de toute rivalité"
+      ],
+      1,
+      "Chaque agent peut négliger l’effet de son prélèvement sur les autres et sur le stock futur."
+    ],
+    [
+      "Un service financé par la commune peut-il être produit par une entreprise ?",
+      [
+        "non, jamais",
+        "seulement s’il est rival",
+        "oui, financement et production sont distincts"
+      ],
+      2,
+      "La collectivité peut acheter la prestation à un opérateur."
+    ],
+    [
+      "Les travaux d’Ostrom soulignent notamment…",
+      [
+        "la possibilité de règles collectives entre usagers",
+        "la disparition certaine de toute ressource commune",
+        "l’inutilité de toute surveillance"
+      ],
+      0,
+      "Des règles adaptées, une surveillance et des sanctions peuvent soutenir la coopération."
+    ],
+    [
+      "L’asymétrie d’information désigne…",
+      [
+        "une ignorance exactement identique",
+        "une information pertinente inégalement répartie",
+        "un mensonge nécessaire de tous les vendeurs"
+      ],
+      1,
+      "Une partie en sait davantage ; la tromperie n’est pas une condition systématique."
+    ],
+    [
+      "La sélection adverse porte principalement sur…",
+      [
+        "une action cachée après le contrat",
+        "un impôt sur la production",
+        "une caractéristique cachée avant le contrat"
+      ],
+      2,
+      "La qualité ou le risque est mal connu au moment de sélectionner le partenaire ou le produit."
+    ],
+    [
+      "Sur le marché des voitures d’occasion, un prix moyen peut…",
+      [
+        "faire partir les vendeurs de bonnes voitures",
+        "garantir que seules les meilleures restent",
+        "révéler tous les défauts"
+      ],
+      0,
+      "Le prix proposé peut être inférieur à ce que demandent les vendeurs de qualité."
+    ],
+    [
+      "Après le retrait des bonnes voitures, la qualité moyenne…",
+      [
+        "augmente nécessairement",
+        "baisse et peut renforcer la méfiance",
+        "devient observable sans information"
+      ],
+      1,
+      "La boucle de sélection adverse peut se poursuivre."
+    ],
+    [
+      "La sélection adverse mène-t-elle toujours à la disparition des échanges ?",
+      [
+        "oui, sans exception",
+        "non, elle ne réduit jamais les échanges",
+        "non, cette issue est possible sous certaines conditions"
+      ],
+      2,
+      "Un marché de qualité inférieure peut subsister ; une information fiable peut aussi préserver les échanges."
+    ],
+    [
+      "Si les acheteurs paient au maximum 1 000 € et les vendeurs exigent au moins 1 200 €…",
+      [
+        "aucun prix ne permet l’échange dans cet exemple",
+        "un échange se fait forcément à 1 100 €",
+        "la qualité devient parfaite"
+      ],
+      0,
+      "Les deux intervalles de prix acceptables ne se recoupent pas."
+    ],
+    [
+      "L’aléa moral concerne…",
+      [
+        "uniquement une mauvaise qualité avant la vente",
+        "une action difficilement observable après le contrat",
+        "tout accident quelle que soit sa cause"
+      ],
+      1,
+      "Le contrat peut modifier les incitations et donc le comportement."
+    ],
+    [
+      "Une franchise d’assurance cherche notamment à…",
+      [
+        "supprimer toute couverture",
+        "garantir l’absence d’accident",
+        "maintenir une incitation à la prudence"
+      ],
+      2,
+      "L’assuré garde une part des conséquences financières du risque."
+    ],
+    [
+      "Le bonus-malus d’une assurance est d’abord…",
+      [
+        "un mécanisme contractuel de tarification",
+        "un impôt nécessairement versé à l’État",
+        "une preuve de sélection adverse"
+      ],
+      0,
+      "Il peut agir sur les incitations après le contrat ; il ne faut pas le confondre avec une taxe publique."
+    ],
+    [
+      "Une expertise indépendante peut limiter…",
+      [
+        "la rivalité des poissons",
+        "l’incertitude sur la qualité avant l’achat",
+        "toutes les conséquences climatiques"
+      ],
+      1,
+      "Une information vérifiable peut limiter la sélection adverse."
+    ],
+    [
+      "124,9 Mt sur 369,2 Mt représentent environ…",
+      [
+        "2,96 %",
+        "244,3 %",
+        "33,8 %"
+      ],
+      2,
+      "On calcule la partie divisée par le total, puis on multiplie par 100."
+    ],
+    [
+      "Une intervention publique doit être…",
+      [
+        "reliée au problème et à un changement de comportement attendu",
+        "supposée efficace sans examen",
+        "identique pour toutes les défaillances"
+      ],
+      0,
+      "Le dispositif, son contrôle et ses effets doivent être explicités."
+    ]
+  ]
+}
