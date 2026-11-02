@@ -23,6 +23,7 @@ const CHAPTERS: ChapterData[] = [
   { slug: "seconde-diplome", label: "Seconde · Diplôme emploi salaire", color: "#12666B", emoji: "", href: "/seconde/diplome-emploi-salaire" },
   { slug: "seconde-vie-politique", label: "Seconde · Vie politique", color: "#176b64", emoji: "", href: "/seconde/vie-politique" },
   { slug: "seconde-acteurs-sociaux", label: "Seconde · Socialisation", color: "#176b64", emoji: "", href: "/seconde/acteurs-sociaux" },
+  { slug: "premiere-monnaie-creation", label: "Première · Monnaie et création monétaire", color: "#176b64", emoji: "", href: "/premiere/monnaie-creation" },
   { slug: "premiere-financement-agents-economiques", label: "Première · Financement des agents économiques", color: "#176b64", emoji: "", href: "/premiere/financement-agents-economiques" },
   { slug: "premiere-defaillances-marche", label: "Première · Défaillances du marché", color: "#176b64", emoji: "", href: "/premiere/defaillances-marche" },
   { slug: "premiere-marches-imparfaits", label: "Première · Marchés imparfaitement concurrentiels", color: "#176b64", emoji: "", href: "/premiere/marches-imparfaitement-concurrentiels" },

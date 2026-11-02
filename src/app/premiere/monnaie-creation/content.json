@@ -1,0 +1,1339 @@
+{
+  "title": "Qu’est-ce que la monnaie et comment est-elle créée ?",
+  "hours": [
+    {
+      "hour": 1,
+      "title": "1.1.1. Fonctions de la monnaie et confiance",
+      "oa": "OA1 · SOA1 : Pourquoi accepte-t-on de la monnaie en échange d’un bien ?",
+      "board": "Pourquoi accepte-t-on de la monnaie en échange d’un bien ?",
+      "recall": "Proposez un exemple où deux personnes ne peuvent pas échanger directement leurs produits.",
+      "recall_answer": "Accepter tout exemple qui montre une absence de double coïncidence des besoins.",
+      "docs": [
+        {
+          "id": 1,
+          "title": "Comment la monnaie facilite les échanges",
+          "text": "Pourtant, si l’on imagine une économie sans monnaie, le troc devient le seul moyen d’échanger ce que nous produisons contre ce que les autres produisent. Comment échanger des cours de sciences économiques et sociales contre une voiture par exemple ? La double coïncidence des désirs est particulièrement difficile à envisager. Ainsi la monnaie rend possible et facilite l’échange commercial. Elle a permis l’approfondissement de la division des tâches, chacun pouvant se consacrer à des activités très différenciées et complémentaires. Chaque agent économique est donc amené à accepter la monnaie en échange de son activité productive car il est possible de se procurer l’ensemble des richesses produites par les autres agents économiques de sorte à satisfaire ses propres besoins. Une première approche de la définition de la monnaie consiste donc à en cerner les fonctions économiques. Elle est unité de compte, instrument de paiement et réserve de valeur. En tant qu’unité de compte, elle réduit considérablement le nombre de rapports d’échange, c’est-à-dire de prix relatifs (prix d’un bien exprimé en la quantité d’un autre). Pour une économie de troc de 5 biens, il faudrait établir 10 prix mais pour 1000 biens, il faudrait établir 499 500 prix. Dans une économie monétaire, le nombre de prix à déterminer est égal au nombre de biens présents dans ladite économie. En ce sens encore, elle facilite les échanges marchands. Elle rend les comparaisons possibles. En tant qu’intermédiaire des échanges, elle est considérée comme l’ « équivalent général », c’est-à-dire comme le bien échangeable contre tous les autres. Elle peut éteindre une dette instantanément et définitivement. On dit qu’elle a un pouvoir libératoire illimité. Enfin, comme réserve de valeur, elle donne la possibilité de transférer la richesse dans le temps, tout en gardant sa liquidité c’est-à-dire son pouvoir libératoire de toute dette immédiatement.",
+          "source": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée.",
+          "source_full": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée.",
+          "kind": "Texte d’autrice fourni",
+          "analysis": "Le texte fait raisonner sur les fonctions et les coûts du troc. Ne pas en faire une chronologie universelle : la monnaie ne résulte pas partout d’un passage historique simple du troc à la monnaie. « Pouvoir libératoire illimité » est une formulation générale à nuancer : elle ne supprime ni les règles de paiement en espèces ni la possibilité de convenir d’un autre moyen de règlement. Une réserve de valeur conserve de la valeur nominale, sans garantir un pouvoir d’achat constant.",
+          "table": null,
+          "note": "",
+          "source_student": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée."
+        },
+        {
+          "id": 2,
+          "title": "Une marchandise devient monnaie par convention",
+          "text": "On peut également essayer de mieux cerner ce qu’est la monnaie au travers de l’examen des différentes formes qu’elle a pris dans l’histoire. En effet, son existence est très ancienne. Les sociétés ont monétisé c’est-à-dire choisi comme monnaie des marchandises très diverses : Plumes, coquillages (cauris par exemple), bétails, colliers, barres de sel (Baruyas), rochers (Ile de Yap)… mais surtout l’or, l’argent, le cuivre, le bronze… autant d’éléments qui étaient, en eux-mêmes, des marchandises pour ces sociétés, c’est-à-dire des biens ayant une valeur et une utilité autre que celles de monnaie, mais auxquelles ces sociétés avaient choisi de donner un rôle particulier. Ce faisant, elles ont monétisé ces marchandises ; elles les ont donc transformées et légitimées comme monnaie. Ainsi, la monnaie n’existe-t-elle pas à l’état naturel. C’est une création humaine, une convention. Le métal précieux, du fait de ses qualités d’inaltérabilité et de divisibilité, a longtemps été privilégié ; c’est la monnaie métallique. Celle-ci est une monnaie-marchandise en ce que le support monétaire (le métal précieux pour une monnaie métallique) a une valeur équivalente à la valeur des biens et services qu’il est possible d’acquérir. On dit que sa valeur intrinsèque est quasiment égale à sa valeur faciale. C’est tout particulièrement vrai pour les métaux précieux tels que l’or, l’argent, le cuivre ou le bronze. C’est d’ailleurs le fait que le support monétaire ait autant de valeur que la monnaie elle-même qui fonde la confiance que les agents ont dans leur utilisation et leur acceptation de cette monnaie.",
+          "source": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée.",
+          "source_full": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée.",
+          "kind": "Texte d’autrice fourni",
+          "analysis": "Le passage continu associe diversité des supports et acceptation collective. Un objet précieux n’est pas automatiquement monnaie : il doit être accepté comme moyen d’échange. L’exemple des marchandises montre la dimension institutionnelle. La valeur intrinsèque ne garantit pas une stabilité absolue du pouvoir d’achat. Ne pas présenter chaque forme comme ayant partout remplacé la précédente.",
+          "table": null,
+          "note": "",
+          "source_student": "Aurélie Perez-Tellier, Melchior, « Connaître les fonctions et les formes de la monnaie », synthèse élève fournie, p. 1 ; date non indiquée."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "doc": 1,
+          "text": "Expliquez comment la monnaie permet un échange qui échouerait dans le troc.",
+          "answer": "Il n’est plus nécessaire que les deux personnes désirent simultanément le produit de l’autre. On vend à une personne contre de la monnaie, puis on achète à une autre.",
+          "lines": 4
+        },
+        {
+          "id": 2,
+          "doc": 1,
+          "text": "Associez à chaque fonction un exemple différent de votre choix, puis justifiez chaque association.",
+          "answer": "Prix d’un livre en euros : unité de compte. Paiement du livre : intermédiaire des échanges. Somme gardée pour un achat ultérieur : réserve de valeur, exposée à l’inflation.",
+          "lines": 4
+        },
+        {
+          "id": 3,
+          "doc": 1,
+          "text": "Expliquez pourquoi conserver une somme en euros ne garantit pas de conserver le même pouvoir d’achat.",
+          "answer": "Si les prix augmentent, la même somme nominale achète moins de biens et services. La réserve de valeur n’implique pas une stabilité parfaite de sa valeur réelle.",
+          "lines": 4
+        },
+        {
+          "id": 4,
+          "doc": 2,
+          "text": "Montrez qu’une marchandise précieuse ne devient pas automatiquement une monnaie.",
+          "answer": "Elle devient monnaie si un groupe l’accepte pour exprimer des prix et régler des échanges. Sa valeur comme objet ne suffit pas à établir cette acceptation.",
+          "lines": 3
+        },
+        {
+          "id": 5,
+          "doc": 2,
+          "text": "Expliquez ce que la diversité des monnaies du document révèle sur leur dimension sociale.",
+          "answer": "Les supports varient selon les sociétés, qui leur attribuent un rôle monétaire. L’acceptation relève d’une convention et de la confiance collective.",
+          "lines": 4
+        }
+      ],
+      "trace": null,
+      "home": null
+    },
+    {
+      "hour": 2,
+      "title": "1.1.2. Formes monétaires et instruments de paiement",
+      "oa": "OA1 · SOA2 : La carte bancaire est-elle de la monnaie ?",
+      "board": "La carte bancaire est-elle de la monnaie ?",
+      "recall": "Une hausse des prix modifie-t-elle la somme inscrite sur un billet ou son pouvoir d’achat ?",
+      "recall_answer": "Le montant nominal reste le même ; son pouvoir d’achat peut baisser.",
+      "docs": [
+        {
+          "id": 3,
+          "title": "De la monnaie marchandise aux écritures bancaires",
+          "text": "Au fil du temps, la nature de la monnaie a évolué. Dans un premier temps, la monnaie marchandise était habituellement utilisée. Il s’agissait d’un objet fait à partir d’une matière ayant une valeur sur le marché, tel qu’une pièce en or. Plus tard, la monnaie représentative était constituée de billets qui pouvaient être échangés contre une certaine quantité d’or ou d’argent. Les économies modernes, dont la zone euro, sont fondées sur la monnaie fiduciaire. Cette monnaie ayant cours légal est émise par une banque centrale, mais ne peut, contrairement à la monnaie représentative, être convertie, par exemple, en un poids fixe d’or. Elle n’a pas de valeur intrinsèque – le papier utilisé pour la fabrication des billets n’ayant en principe aucune valeur –, mais elle est acceptée en échange de biens et de services, car la population fait confiance à la banque centrale en ce qui concerne le maintien de la stabilité de la monnaie sur la durée. Si les banques centrales échouaient dans cette mission, la monnaie fiduciaire perdrait son « acceptabilité » en tant que moyen d’échange et son attrait comme réserve de valeur. La monnaie actuelle peut également exister indépendamment d’une représentation physique. Elle peut revêtir la forme d’une écriture électronique sur un compte bancaire ou être stockée sous la forme d’un compte d’épargne. […]Les prélèvements automatiques, les paiements sur Internet et les virements par carte sont autant de formes de paiement ne faisant pas appel à des espèces. […]",
+          "source": "Banque centrale européenne, « Qu’est-ce que la monnaie ? », 24 novembre 2015, mise à jour du 20 juin 2017 ; extrait du fichier « Les formes de la monnaie (2/5) » fourni, p. 1.",
+          "source_full": "Banque centrale européenne, « Qu’est-ce que la monnaie ? », 24 novembre 2015, mise à jour du 20 juin 2017 ; extrait du fichier « Les formes de la monnaie (2/5) » fourni, p. 1.",
+          "kind": "Texte institutionnel fourni",
+          "analysis": "La dématérialisation éclaire la dissociation entre la matière du support et sa valeur. « Monnaie fiduciaire » correspond ici au sens large de monnaie de confiance non convertible, pas seulement aux billets. Pour le cours, annoncer la convention : monnaie fiduciaire = pièces et billets ; pièces = monnaie divisionnaire. Un compte d’épargne n’est pas assimilé sans précision à un dépôt à vue : son classement dépend de sa liquidité. Carte, chèque et application sont des instruments ; un virement entre deux comptes ne crée pas, par lui-même, de monnaie.",
+          "table": null,
+          "note": "Dans ce chapitre, « monnaie fiduciaire » désigne les pièces et les billets ; les pièces sont aussi appelées monnaie divisionnaire. La monnaie scripturale correspond aux dépôts à vue. Le texte emploie « fiduciaire » dans un sens plus large.",
+          "source_student": "Banque centrale européenne, « Qu’est-ce que la monnaie ? », 24 novembre 2015, mise à jour du 20 juin 2017 ; extrait du fichier « Les formes de la monnaie (2/5) » fourni, p. 1."
+        },
+        {
+          "id": 4,
+          "title": "Les paiements en France en 2024",
+          "text": "Le tableau sélectionne quatre instruments et le total des paiements scripturaux. Le nombre est en millions d’opérations ; les montants sont en milliards d’euros. Le total inclut aussi les effets de commerce, la monnaie électronique et la transmission de fonds. Les retraits par carte sont exclus : ils sont recensés à part dans la publication. Les paiements par carte concernent les cartes émises en France.",
+          "source": "Banque de France / Observatoire de la sécurité des moyens de paiement, Rapport annuel 2024, septembre 2025, annexe 5, tableau 1, p. 103. https://www.banque-france.fr/system/files/2025-09/OSMP-2024_VF.pdf",
+          "source_full": "Banque de France / Observatoire de la sécurité des moyens de paiement, Rapport annuel 2024, septembre 2025, annexe 5, tableau 1, p. 103. https://www.banque-france.fr/system/files/2025-09/OSMP-2024_VF.pdf",
+          "kind": "Statistiques observées · France · 2024",
+          "analysis": "Le dénominateur choisi est 32 707 millions de paiements hors retraits, pas 33 787 millions de transactions avec retraits. Carte : 20 982 / 32 707 × 100 = 64,15 %, soit 64,2 % ; virement : 31 108 / 34 730 × 100 = 89,57 %, soit 89,6 %. Ne pas reprendre 62,1 % du tableau source qui inclut les retraits dans son dénominateur. Les chiffres 2024 sont datés ; ils ne sont pas présentés comme les derniers disponibles. Le nombre de paiements n’est ni un stock monétaire ni une part de tous les achats, espèces comprises.",
+          "table": [
+            [
+              "Instrument",
+              "Nombre (millions)",
+              "Montant (milliards €)"
+            ],
+            [
+              "Carte",
+              "20 982",
+              "844"
+            ],
+            [
+              "Prélèvement",
+              "4 788",
+              "2 178"
+            ],
+            [
+              "Virement",
+              "5 973",
+              "31 108"
+            ],
+            [
+              "Chèque",
+              "784",
+              "392"
+            ],
+            [
+              "Total hors retraits",
+              "32 707",
+              "34 730"
+            ]
+          ],
+          "note": "",
+          "source_student": "Banque de France / Observatoire de la sécurité des moyens de paiement, Rapport annuel 2024, septembre 2025, annexe 5, tableau 1, p. 103."
+        }
+      ],
+      "questions": [
+        {
+          "id": 6,
+          "doc": 3,
+          "text": "Distinguez un billet de 20 €, un dépôt de 20 € et une carte de paiement.",
+          "answer": "Billet : monnaie fiduciaire. Dépôt à vue : monnaie scripturale. Carte : instrument permettant de transférer un dépôt.",
+          "lines": 3
+        },
+        {
+          "id": 7,
+          "doc": 3,
+          "text": "Expliquez pourquoi un billet de faible valeur matérielle peut régler un achat de valeur élevée.",
+          "answer": "Son acceptation repose sur la confiance et les institutions monétaires, pas sur la valeur du papier. Sa valeur faciale permet le règlement.",
+          "lines": 3
+        },
+        {
+          "id": 8,
+          "doc": 3,
+          "text": "Un client retire 50 € sur un compte approvisionné. Expliquez les changements et ce qui reste constant.",
+          "answer": "Dépôt à vue −50, billets détenus +50. La composition change ; le total de monnaie du public reste constant.",
+          "lines": 4
+        },
+        {
+          "id": 9,
+          "doc": 4,
+          "text": "Calculez la part de la carte dans le nombre total des paiements hors retraits en 2024.",
+          "answer": "20 982 / 32 707 × 100 = 64,15 %, soit environ 64,2 %. Champ : paiements scripturaux hors retraits du tableau.",
+          "lines": 3
+        },
+        {
+          "id": 10,
+          "doc": 4,
+          "text": "Montrez que l’instrument dominant dépend du critère choisi.",
+          "answer": "La carte domine en nombre avec environ 64,2 %. Le virement domine en montant : 31 108 / 34 730 × 100 = 89,6 %. Des virements professionnels peuvent porter sur de très grosses sommes.",
+          "lines": 4
+        }
+      ],
+      "trace": {
+        "subject": "Comment la monnaie remplit-elle ses fonctions sous différentes formes ?",
+        "words": "unité de compte · intermédiaire des échanges · réserve de valeur · confiance · dépôt à vue · instrument de paiement",
+        "text": "La monnaie exprime les prix dans une unité commune, facilite les échanges et permet de reporter des achats. Son acceptation repose sur la confiance, quel que soit son support. Les pièces et les billets constituent la monnaie fiduciaire ; les dépôts à vue sont la monnaie scripturale. Une carte ou un virement permet de transférer cette dernière. Un retrait sur un compte approvisionné échange un dépôt contre des billets sans créer de monnaie supplémentaire."
+      },
+      "home": null
+    },
+    {
+      "hour": 3,
+      "title": "2.1.1. Le crédit et les bilans",
+      "oa": "OA2 · SOA3 : Comment un crédit peut-il faire apparaître un dépôt nouveau ?",
+      "board": "Comment un crédit peut-il faire apparaître un dépôt nouveau ?",
+      "recall": "Un retrait de 20 € sur un compte approvisionné augmente-t-il la masse monétaire ?",
+      "recall_answer": "Non : dépôt −20 et billets +20 ; composition modifiée.",
+      "docs": [
+        {
+          "id": 5,
+          "title": "Les crédits font les dépôts",
+          "text": "Le crédit bancaire est l’opération qui aboutit, en mettant en relation l’emprunteur (le « débiteur », ici les entreprises, les ménages ou l’État) et le prêteur (le « créancier », ici les banques), à la mise en circulation de monnaie scripturale nouvelle. On dit que la monnaie est créée ex nihilo (à partir de rien) c’est-à-dire qu’il n’est pas nécessaire que la somme prêtée préexiste à l’actif du bilan de la banque. C’est pour cette raison que la création monétaire est une opération de monétisation, puisqu’à chaque fois qu’une banque accorde un crédit par un simple jeu d’écritures, elle transforme une dette (c’est-à-dire le crédit accordé du point de vue du débiteur) en moyens de paiement acceptés par tous les autres agents économiques. « Les crédits font les dépôts » est donc le principe central qui permet d’expliquer le processus de création de monnaie scripturale.",
+          "source": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 3.",
+          "source_full": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 3.",
+          "kind": "Texte institutionnel fourni",
+          "analysis": "Le texte explique une création de dépôts, pas de richesse réelle. La créance bancaire et la dette de l’emprunteur apparaissent ensemble. Ex nihilo signifie sans transfert préalable d’un dépôt de même montant ; cela ne dispense pas la banque de financement, de liquidité, de capital, ni d’évaluation du risque. Un prêt entre deux agents non bancaires déplace un dépôt existant. L’actif net de l’emprunteur n’augmente pas de la valeur du crédit.",
+          "table": null,
+          "note": "",
+          "source_student": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 3."
+        },
+        {
+          "id": 6,
+          "title": "Enregistrer le crédit dans deux bilans",
+          "text": "L’entreprise Maroni Bois obtient un crédit bancaire de 60 000 € pour un équipement. On observe uniquement l’octroi du crédit, avant tout achat : la banque inscrit la somme sur le compte de l’entreprise. Les bilans sont présentés en variations, et non comme des bilans complets. Un actif est un bien ou une créance détenu ; le passif indique notamment les dettes et les capitaux propres qui financent l’actif. Une créance donne le droit de recevoir un paiement ; une dette est l’obligation de le verser. Chaque opération doit respecter l’égalité comptable entre actif et passif.",
+          "source": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "source_full": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "kind": "Cas comptable construit",
+          "analysis": "Chez l’entreprise : dépôt +60 000 à l’actif et dette +60 000 au passif. Chez la banque : crédit, créance +60 000 à l’actif et dépôt dû au client +60 000 au passif. Le dépôt est une dette de la banque envers son client. Le crédit est une créance de la banque sur ce client : ne pas placer les deux du même côté. L’opération n’exige pas un débit simultané de 60 000 sur le compte d’un autre client.",
+          "table": [
+            [
+              "Agent",
+              "Actif : variation",
+              "Passif : variation"
+            ],
+            [
+              "Entreprise",
+              "Dépôt à vue : à déterminer",
+              "Dette bancaire : à déterminer"
+            ],
+            [
+              "Banque",
+              "Créance sur l’entreprise : à déterminer",
+              "Dépôt du client : à déterminer"
+            ]
+          ],
+          "note": "",
+          "source_student": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle."
+        }
+      ],
+      "questions": [
+        {
+          "id": 11,
+          "doc": 5,
+          "text": "Expliquez le sens de l’expression « les crédits font les dépôts ».",
+          "answer": "Lorsqu’elle accorde un crédit, la banque crédite le compte de l’emprunteur ; un dépôt nouveau apparaît avec une créance correspondante sur le client.",
+          "lines": 4
+        },
+        {
+          "id": 12,
+          "doc": 5,
+          "text": "Comparez le crédit bancaire à un prêt de 100 € entre deux amis, effectué par virement.",
+          "answer": "Le crédit bancaire crée un dépôt nouveau. Le prêt entre amis transfère un dépôt existant du prêteur à l’emprunteur ; leur total de dépôts n’augmente pas.",
+          "lines": 4
+        },
+        {
+          "id": 13,
+          "doc": 6,
+          "text": "Complétez les quatre cases des bilans en variations, en indiquant le signe et le montant.",
+          "answer": "Entreprise : actif dépôt +60 000, passif dette +60 000. Banque : actif créance +60 000, passif dépôt du client +60 000.",
+          "lines": 4
+        },
+        {
+          "id": 14,
+          "doc": 6,
+          "text": "Expliquez pourquoi le même dépôt est un actif pour l’entreprise et un passif pour la banque.",
+          "answer": "L’entreprise détient une créance disponible sur sa banque. La banque doit fournir les fonds ou exécuter le paiement demandé par le client : c’est un engagement envers lui.",
+          "lines": 3
+        },
+        {
+          "id": 15,
+          "doc": 6,
+          "text": "Montrez que le crédit n’augmente pas de 60 000 € la richesse nette de l’entreprise au moment de son octroi.",
+          "answer": "Son actif augmente de 60 000 mais ses dettes augmentent d’autant. Son actif net ne s’accroît pas de ce montant, même si sa capacité immédiate à dépenser augmente.",
+          "lines": 4
+        }
+      ],
+      "trace": null,
+      "home": null
+    },
+    {
+      "hour": 4,
+      "title": "2.1.2. Circulation, destruction et masse monétaire",
+      "oa": "OA2 · SOA4 : La monnaie créée reste-t-elle toujours en circulation ?",
+      "board": "La monnaie créée reste-t-elle toujours en circulation ?",
+      "recall": "Pourquoi un crédit de 1 000 € n’enrichit-il pas immédiatement son bénéficiaire de 1 000 € ?",
+      "recall_answer": "Le dépôt a une contrepartie : une dette de même montant.",
+      "docs": [
+        {
+          "id": 7,
+          "title": "Un découvert sur le compte de M. Panierpercé",
+          "text": "Le relevé reprend les montants du dossier fourni. On suppose le solde nul avant le salaire du 1er avril, toutes les opérations acceptées et le découvert autorisé. Les frais et intérêts du découvert sont ignorés. Le salaire suivant provient d’un employeur non bancaire, par transfert d’un dépôt existant. Calculez les soldes successifs : un débit diminue le compte et un crédit l’augmente.",
+          "source": "Dossier fourni « Ch4 comment est-elle créée », p. 1, document 5 ; relevé pédagogique transcrit. Auteur et date non indiqués. Hypothèses de solde initial et de découvert précisées par CAPSES.",
+          "source_full": "Dossier fourni « Ch4 comment est-elle créée », p. 1, document 5 ; relevé pédagogique transcrit. Auteur et date non indiqués. Hypothèses de solde initial et de découvert précisées par CAPSES.",
+          "kind": "Relevé pédagogique fourni, transcrit",
+          "analysis": "Le solde devient négatif le 24 avril ; le découvert atteint 309 € en fin de mois. Ce découvert est un crédit bancaire. Le salaire suivant rembourse 309 € de principal. Les retraits antérieurs convertissent des dépôts en billets sans création globale. L’échéance automobile ne distingue pas principal et intérêts : sa destruction monétaire ne peut pas être chiffrée avec ce seul relevé.",
+          "table": [
+            [
+              "Date",
+              "Opération",
+              "Débit (€)",
+              "Crédit (€)"
+            ],
+            [
+              "01/04",
+              "Salaire",
+              "",
+              "2 500"
+            ],
+            [
+              "02/04",
+              "Loyer",
+              "750",
+              ""
+            ],
+            [
+              "04/04",
+              "Téléphone",
+              "50",
+              ""
+            ],
+            [
+              "06/04",
+              "Retrait en billets",
+              "80",
+              ""
+            ],
+            [
+              "07/04",
+              "Électricité",
+              "285",
+              ""
+            ],
+            [
+              "12/04",
+              "Remboursement de soins",
+              "",
+              "30"
+            ],
+            [
+              "14/04",
+              "Pension alimentaire",
+              "450",
+              ""
+            ],
+            [
+              "18/04",
+              "Remboursement automobile",
+              "300",
+              ""
+            ],
+            [
+              "20/04",
+              "Retrait en billets",
+              "210",
+              ""
+            ],
+            [
+              "21/04",
+              "Réservation de vacances",
+              "400",
+              ""
+            ],
+            [
+              "24/04",
+              "Impôts locaux",
+              "80",
+              ""
+            ],
+            [
+              "26/04",
+              "Transport aérien",
+              "154",
+              ""
+            ],
+            [
+              "28/04",
+              "Carburant",
+              "80",
+              ""
+            ]
+          ],
+          "note": "",
+          "source_student": "Dossier fourni « Ch4 comment est-elle créée », p. 1, document 5 ; relevé pédagogique transcrit. Auteur et date non indiqués. Hypothèses de solde initial et de découvert précisées par CAPSES."
+        },
+        {
+          "id": 8,
+          "title": "Une hausse du stock de monnaie entre deux dates",
+          "text": "Le document fourni représente M1, un agrégat monétaire réunissant les pièces et billets détenus par les agents non bancaires et leurs dépôts à vue. Les valeurs suivantes sont celles du graphique historique du dossier, exprimées en indice base 100 en 2015. Un indice mesure une évolution par rapport à une date de référence ; ce n’est pas un montant en euros. Pour isoler le mécanisme, on considère ensuite une économie fictive où seuls les nouveaux crédits bancaires et les remboursements de principal font varier la masse monétaire : durant une période, les nouveaux crédits sont de 80 millions d’euros et les remboursements de 65 millions.",
+          "source": "Graphique historique du dossier « Ch4 comment est-elle créée », p. 1, document 7, source indiquée : data.oecd.org ; valeurs transcrites. Simulation de flux ajoutée par CAPSES.",
+          "source_full": "Graphique historique du dossier « Ch4 comment est-elle créée », p. 1, document 7, source indiquée : data.oecd.org ; valeurs transcrites. Simulation de flux ajoutée par CAPSES.",
+          "kind": "Série historique fournie et simulation distincte",
+          "analysis": "2017 : M1 est supérieur de 18,4 % à son niveau de 2015. De 2010 à 2017 : (118,4−73,5)/73,5 × 100 = 61,09 %, soit 61,1 %, et non 44,9 %. La hausse du stock traduit un solde de flux positifs ; elle ne permet pas d’identifier à elle seule chaque contrepartie ni la cause économique précise. Simulation : +15 millions ; si l’encours initial est 500, le final est 515. Le graphique est conservé comme document historique transmis, sans prétendre vérifier la série OCDE actuelle.",
+          "table": [
+            [
+              "Année",
+              "2010",
+              "2013",
+              "2015",
+              "2016",
+              "2017"
+            ],
+            [
+              "Indice M1",
+              "73,5",
+              "83,3",
+              "100",
+              "109,1",
+              "118,4"
+            ]
+          ],
+          "note": "",
+          "source_student": "Graphique historique du dossier « Ch4 comment est-elle créée », p. 1, document 7, source indiquée : data.oecd.org ; valeurs transcrites. Simulation de flux ajoutée par CAPSES."
+        }
+      ],
+      "questions": [
+        {
+          "id": 16,
+          "doc": 7,
+          "text": "Calculez le solde du compte au soir du 21 avril puis au soir du 28 avril.",
+          "answer": "Au 21 avril : 2 530 de crédits −2 525 de débits = 5 €. Au 28 avril : 5−80−154−80 = −309 €.",
+          "lines": 3
+        },
+        {
+          "id": 17,
+          "doc": 7,
+          "text": "À quelle date le découvert commence-t-il ? Expliquez son lien avec la création monétaire.",
+          "answer": "Le 24 avril, le prélèvement de 80 dépasse le solde de 5 ; le découvert atteint 75 puis 309. La banque accorde un crédit qui finance des paiements au-delà du dépôt disponible.",
+          "lines": 3
+        },
+        {
+          "id": 18,
+          "doc": 7,
+          "text": "Expliquez l’effet du salaire suivant sur la monnaie créée par ce découvert.",
+          "answer": "Le salaire transféré depuis un dépôt existant rembourse d’abord 309 de principal du découvert. La créance bancaire disparaît à hauteur de 309 et cette part de monnaie est détruite.",
+          "lines": 4
+        },
+        {
+          "id": 19,
+          "doc": 8,
+          "text": "Interprétez l’indice de 2017, puis calculez l’évolution de M1 entre 2010 et 2017.",
+          "answer": "118,4 signifie +18,4 % par rapport à 2015. Entre 2010 et 2017 : (118,4−73,5)/73,5 × 100 = environ +61,1 %.",
+          "lines": 3
+        },
+        {
+          "id": 20,
+          "doc": 8,
+          "text": "Dans la simulation, calculez la variation du stock de monnaie et expliquez pourquoi les seuls nouveaux crédits ne suffisent pas à la mesurer.",
+          "answer": "80−65 = +15 millions. Il faut retrancher les destructions par remboursement du principal. Un stock est une résultante de flux ; dans la réalité, d’autres opérations peuvent aussi le faire varier.",
+          "lines": 4
+        }
+      ],
+      "trace": {
+        "subject": "Comment le crédit modifie-t-il la monnaie en circulation ?",
+        "words": "crédit · dépôt · créance · dette · remboursement du principal · stock · flux",
+        "text": "L’octroi d’un crédit bancaire crée simultanément une créance de la banque et un dépôt au nom de l’emprunteur. Dans le bilan de l’entreprise, le dépôt apparaît à l’actif et la dette au passif : cette création ne constitue pas un enrichissement net. Les paiements font circuler les dépôts ; le remboursement du principal détruit la monnaie correspondante. Le stock de monnaie résulte de flux de création et de destruction. Dans la simulation étudiée, 80 millions de nouveaux crédits et 65 millions de remboursements donnent une hausse nette de 15 millions."
+      },
+      "home": {
+        "subject": "Montrez qu’un paiement n’entraîne pas nécessairement une création monétaire.",
+        "answer": "Un paiement peut transférer un dépôt existant entre deux personnes ; un retrait peut convertir un dépôt en billets. La création a lieu lors d’une opération spécifique, notamment l’octroi d’un crédit. Dans le cas de Maroni Bois, 60 000 sont créés lors du crédit ; le paiement du fournisseur ne crée pas une seconde fois la somme."
+      }
+    },
+    {
+      "hour": 5,
+      "title": "2.2.1. Les limites de la création monétaire",
+      "oa": "OA2 · SOA5 : Pourquoi une banque ne peut-elle pas prêter sans limite ?",
+      "board": "Pourquoi une banque ne peut-elle pas prêter sans limite ?",
+      "recall": "Un paiement par virement crée-t-il nécessairement de la monnaie ?",
+      "recall_answer": "Non : le dépôt change de titulaire. Reprise prioritaire de la validation H4.",
+      "docs": [
+        {
+          "id": 9,
+          "title": "Créer des dépôts ne dispense pas de se financer",
+          "text": "Une banque peut inscrire un nouveau dépôt lorsqu’elle accorde un crédit. Mais elle doit ensuite assurer les paiements de ses clients, notamment lorsque les bénéficiaires sont dans une autre banque ou demandent des billets. Ces règlements mobilisent une monnaie qu’elle n’émet pas : la monnaie centrale. Le refinancement a un coût et suppose un accès effectif aux liquidités.\nL’octroi du crédit dépend aussi de la capacité de l’emprunteur à rembourser et de la rentabilité attendue. La réglementation oblige les banques à disposer de fonds propres et de liquidités suffisants au regard de leurs risques. Un défaut de remboursement réduit leurs résultats et peut entamer leurs fonds propres. Des demandes de crédit existent donc sans être nécessairement satisfaites. La création monétaire par le crédit est un pouvoir encadré.",
+          "source": "Présentation CAPSES d’après Banque de France, « Comment est créée la monnaie ? », fiche ABC de l’économie, octobre 2023, mise en ligne le 2 octobre 2024. https://www.banque-france.fr/fr/publications-et-statistiques/publications/comment-est-creee-la-monnaie",
+          "source_full": "Présentation CAPSES d’après Banque de France, « Comment est créée la monnaie ? », fiche ABC de l’économie, octobre 2023, mise en ligne le 2 octobre 2024. https://www.banque-france.fr/fr/publications-et-statistiques/publications/comment-est-creee-la-monnaie",
+          "kind": "Complément institutionnel reformulé",
+          "analysis": "Distinguer liquidité et solvabilité : la première permet de régler à temps, la seconde renvoie à la capacité de faire face aux engagements et d’absorber les pertes. Un besoin de réserves n’est pas une simple multiplication mécanique des dépôts : les paiements entrants et sortants, le refinancement, les billets et les règles prudentielles comptent. Les banques peuvent aussi acheter certains actifs à des non-banques en créant des dépôts ; le crédit n’est pas l’unique contrepartie possible.",
+          "table": null,
+          "note": "",
+          "source_student": "Présentation CAPSES d’après Banque de France, « Comment est créée la monnaie ? », fiche ABC de l’économie, octobre 2023, mise en ligne le 2 octobre 2024."
+        },
+        {
+          "id": 10,
+          "title": "Régler un paiement entre deux banques",
+          "text": "Maroni Bois verse 45 000 € à son fournisseur, client de la banque B. L’entreprise est cliente de la banque A, qui a accordé le crédit. Avant ce paiement, A possède 30 000 € de réserves en monnaie centrale. Au même moment, des clients de B paient 18 000 € à des clients de A. On raisonne sur le règlement net de ces seuls flux et on ignore les autres obligations de réserves. Si A doit ensuite fournir 5 000 € de billets à ses clients, elle échange ses réserves disponibles contre ces billets. Le compte de l’entreprise, les comptes des clients et les réserves des banques sont des comptes distincts.",
+          "source": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "source_full": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "kind": "Cas interbancaire construit",
+          "analysis": "Flux net de A vers B = 45 000−18 000 = 27 000. Réserves de A après règlement = 3 000. Besoin additionnel pour obtenir 5 000 de billets = 2 000. Le dépôt du payeur diminue et celui du bénéficiaire augmente ; la masse monétaire des agents non bancaires ne change pas à cause de ce virement. Le règlement déplace des réserves entre banques, sans transformer celles-ci en dépôts de ménages. Le schéma fourni d’après Jézabel Couppey-Soubeyran (Alternatives économiques, HS 105, avril 2015, dossier p. 2) inspire ce problème de règlement ; son dessin à trous n’est pas réutilisé.",
+          "table": [
+            [
+              "Mouvement",
+              "A vers B",
+              "B vers A"
+            ],
+            [
+              "Paiements des clients",
+              "45 000 €",
+              "18 000 €"
+            ],
+            [
+              "Réserves initiales de A",
+              "30 000 €",
+              "—"
+            ]
+          ],
+          "note": "",
+          "source_student": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle."
+        }
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "doc": 9,
+          "text": "Expliquez pourquoi la capacité à créer un dépôt n’implique pas une capacité illimitée à accorder des crédits.",
+          "answer": "La banque doit trouver des emprunteurs solvables, couvrir ses risques, respecter les règles prudentielles et assurer les règlements nécessitant de la monnaie centrale.",
+          "lines": 4
+        },
+        {
+          "id": 22,
+          "doc": 9,
+          "text": "Distinguez le risque de non-remboursement d’un besoin de liquidité.",
+          "answer": "Le risque de non-remboursement concerne la perte sur la créance et la solvabilité. Le besoin de liquidité concerne les moyens disponibles pour régler une échéance à temps.",
+          "lines": 4
+        },
+        {
+          "id": 23,
+          "doc": 10,
+          "text": "Calculez le règlement net de A à B et les réserves de A après ce règlement.",
+          "answer": "45 000−18 000 = 27 000 € vers B ; réserves restantes = 30 000−27 000 = 3 000 €.",
+          "lines": 3
+        },
+        {
+          "id": 24,
+          "doc": 10,
+          "text": "Calculez le besoin supplémentaire de monnaie centrale lié au retrait en billets.",
+          "answer": "Il faut 5 000 de billets, mais il ne reste que 3 000 de réserves. Besoin supplémentaire : 2 000 €, sous les hypothèses du cas.",
+          "lines": 3
+        },
+        {
+          "id": 25,
+          "doc": 10,
+          "text": "Expliquez pourquoi le virement de 45 000 € ne crée pas une seconde fois cette somme.",
+          "answer": "Le dépôt du payeur diminue de 45 000 et celui du fournisseur augmente de 45 000. La monnaie créée lors du crédit circule ; le règlement entre banques déplace des réserves.",
+          "lines": 4
+        }
+      ],
+      "trace": null,
+      "home": null
+    },
+    {
+      "hour": 6,
+      "title": "3.1.1. Monnaie centrale et taux de court terme",
+      "oa": "OA3 · SOA6 : Comment la banque centrale influence-t-elle les taux ?",
+      "board": "Comment la banque centrale influence-t-elle les taux ?",
+      "recall": "Une banque peut-elle fabriquer elle-même les réserves nécessaires pour régler une autre banque ?",
+      "recall_answer": "Non. Elle émet des dépôts, pas la monnaie centrale.",
+      "docs": [
+        {
+          "id": 11,
+          "title": "La banque centrale et le marché monétaire",
+          "text": "Les banques commerciales règlent entre elles leurs dettes en monnaie centrale. Une banque qui dispose d’un excédent de réserves peut le prêter à une autre banque sur le marché interbancaire, compartiment du marché monétaire consacré aux échanges entre banques. Le taux d’intérêt rémunère ce prêt de courte durée. La banque centrale fournit également des liquidités dans le cadre de ses opérations. Elle oriente les taux de court terme au moyen de ses taux directeurs.\nDans la zone euro, la politique monétaire unique est décidée par la BCE et mise en œuvre par l’Eurosystème, qui réunit la BCE et les banques centrales nationales des pays ayant adopté l’euro. Il faut distinguer cet ensemble du SEBC, qui inclut les banques centrales de tous les pays de l’Union européenne.",
+          "source": "Présentation CAPSES d’après Aurélie Perez-Tellier, Melchior, question 3, paragraphes sur le marché interbancaire ; et Éduscol, ressource fournie, p. 4. https://www.melchior.fr/cours/question-3-comprendre-le-role-de-la-banque-centrale-dans-le-processus-de-creation-monetaire",
+          "source_full": "Présentation CAPSES d’après Aurélie Perez-Tellier, Melchior, question 3, paragraphes sur le marché interbancaire ; et Éduscol, ressource fournie, p. 4. https://www.melchior.fr/cours/question-3-comprendre-le-role-de-la-banque-centrale-dans-le-processus-de-creation-monetaire",
+          "kind": "Complément documentaire reformulé",
+          "analysis": "La monnaie centrale est une créance sur la banque centrale ; les réserves des banques ne sont pas un moyen de paiement directement détenu par les ménages. Le dossier original parle de comptes à la BCE : les comptes sont en pratique ouverts dans l’Eurosystème auprès des banques centrales nationales compétentes. La désignation ancienne EONIA du cours Melchior ne doit pas être enseignée comme un taux actuel. Le détail des taux n’est pas nécessaire pour l’OA : privilégier la distinction taux directeurs / taux de marché / taux clientèle.",
+          "table": null,
+          "note": "",
+          "source_student": "Présentation CAPSES d’après Aurélie Perez-Tellier, Melchior, question 3, paragraphes sur le marché interbancaire ; et Éduscol, ressource fournie, p. 4."
+        },
+        {
+          "id": 12,
+          "title": "Un changement du coût du refinancement",
+          "text": "Une banque emprunte 2 millions d’euros de monnaie centrale pendant une année dans un modèle simplifié. Le taux annuel de cet emprunt passe de 2 % à 3 %. On suppose un capital constant, sans frais. La banque peut modifier ses taux de crédit pour préserver sa marge, mais elle tient aussi compte de la concurrence, du risque de défaut et de la demande de ses clients. Le taux directeur, le taux du prêt interbancaire et le taux d’un crédit immobilier sont trois prix distincts : leurs variations peuvent être liées sans être identiques ni simultanées. Les valeurs sont fictives et ne décrivent pas les taux pratiqués aujourd’hui.",
+          "source": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "source_full": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "kind": "Calcul construit",
+          "analysis": "Coût initial 40 000 ; coût final 60 000 ; écart 20 000 €, soit +1 point de taux et +50 % de coût. Le refinancement ici est un prêt de monnaie centrale, pas un prêt à une entreprise. La hausse peut être répercutée sur les taux proposés, avec une ampleur dépendant de la concurrence, des ressources de la banque et du risque. Elle n’oblige pas à modifier instantanément les anciens contrats à taux fixe.",
+          "table": [
+            [
+              "Capital constant",
+              "Taux initial",
+              "Taux final",
+              "Durée"
+            ],
+            [
+              "2 000 000 €",
+              "2 %",
+              "3 %",
+              "1 an"
+            ]
+          ],
+          "note": "",
+          "source_student": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle."
+        }
+      ],
+      "questions": [
+        {
+          "id": 26,
+          "doc": 11,
+          "text": "Distinguez la monnaie utilisée par un ménage pour payer un achat et celle qui règle une dette entre banques.",
+          "answer": "Le ménage utilise des billets ou un dépôt bancaire. Entre banques, le règlement s’effectue en monnaie centrale, par transfert de réserves ; les réserves ne sont pas directement utilisables sur le compte du ménage.",
+          "lines": 4
+        },
+        {
+          "id": 27,
+          "doc": 11,
+          "text": "Expliquez comment une banque excédentaire et une banque déficitaire peuvent échanger sur le marché interbancaire.",
+          "answer": "La première prête temporairement des réserves à la seconde contre intérêt ; les comptes en monnaie centrale sont ajustés. Ce prêt crée une créance et une dette entre banques.",
+          "lines": 4
+        },
+        {
+          "id": 28,
+          "doc": 12,
+          "text": "Calculez les deux coûts annuels du refinancement et leur écart en euros.",
+          "answer": "2 000 000 × 2 % = 40 000 € ; à 3 % = 60 000 € ; écart = 20 000 €.",
+          "lines": 3
+        },
+        {
+          "id": 29,
+          "doc": 12,
+          "text": "Exprimez la variation du taux en points puis celle du coût en pourcentage.",
+          "answer": "Le taux augmente de 1 point. Le coût augmente de (60 000−40 000)/40 000 × 100 = 50 %.",
+          "lines": 3
+        },
+        {
+          "id": 30,
+          "doc": 12,
+          "text": "Expliquez pourquoi le taux d’un crédit aux ménages peut réagir sans varier exactement comme le taux directeur.",
+          "answer": "Le coût de financement intervient, mais la concurrence, les autres ressources de la banque, le risque et les conditions contractuelles comptent aussi. La répercussion peut être partielle ou différée.",
+          "lines": 4
+        }
+      ],
+      "trace": {
+        "subject": "Pourquoi la monnaie centrale encadre-t-elle la création des dépôts ?",
+        "words": "réserves · règlement interbancaire · refinancement · risque · taux directeur · taux de marché",
+        "text": "Les banques commerciales émettent des dépôts mais règlent leurs dettes mutuelles en monnaie centrale. Des paiements sortants ou des demandes de billets peuvent créer un besoin de liquidité. La banque cherche alors des réserves sur le marché interbancaire ou dans les opérations de l’Eurosystème. Le refinancement a un coût, influencé par les taux directeurs. La solvabilité des emprunteurs et les règles prudentielles limitent aussi le crédit. Créer un dépôt n’autorise donc pas une banque à prêter sans limite."
+      },
+      "home": null
+    },
+    {
+      "hour": 7,
+      "title": "3.2.1. Du crédit aux dépenses et à la production",
+      "oa": "OA3 · SOA7 : Pourquoi un changement de taux peut-il modifier la production ?",
+      "board": "Pourquoi un changement de taux peut-il modifier la production ?",
+      "recall": "Le taux directeur est-il identique au taux d’un crédit immobilier ?",
+      "recall_answer": "Non. Le premier influence le second avec d’autres déterminants.",
+      "docs": [
+        {
+          "id": 13,
+          "title": "Des taux directeurs au crédit et à l’activité",
+          "text": "La Banque centrale est donc en charge du pilotage du taux d’intérêt à court terme sur le marché monétaire : elle influence donc à la hausse ou à la baisse les taux d’intérêt, selon l’orientation qu’elle veut donner à sa politique monétaire. • Une politique monétaire expansionniste consiste à influencer à la baisse les taux du marché monétaire, de façon à ce que les banques de second rang répercutent cette baisse sur les taux d’intérêt imposés à leurs clients. En principe, avec des taux d’intérêt plus bas, la demande de crédit émanant des ménages et des entreprises augmente, ce qui a pour effet une hausse de la création monétaire et un soutien à l’activité économique. • A l’inverse, une politique monétaire restrictive consiste pour la Banque centrale à agir dans le sens d’une hausse des taux du marché monétaire. Cette hausse a pour effet une augmentation des taux d’intérêt pratiqués par les banques de second rang, une moindre demande de crédit, et par conséquent, une moindre création monétaire de nature à freiner l’inflation.",
+          "source": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 5.",
+          "source_full": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 5.",
+          "kind": "Texte institutionnel fourni",
+          "analysis": "Le passage continu expose les deux orientations, avec « en principe ». Faire reconstruire les étapes : taux de court terme, taux bancaires, offre et demande de crédit, dépenses financées, production et prix. Ne pas transformer la relation en automatisme. La création monétaire est endogène aux besoins et décisions de crédit ; la BCE n’alloue pas à chaque banque un montant de crédit à distribuer aux ménages. Une hausse des taux ne réduit pas directement la quantité de pétrole disponible.",
+          "table": null,
+          "note": "",
+          "source_student": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 5."
+        },
+        {
+          "id": 14,
+          "title": "Le coût du crédit et un projet d’équipement",
+          "text": "Une entreprise envisage d’emprunter 50 000 € pour un équipement. Le gain monétaire supplémentaire attendu, avant intérêts, est de 2 500 € sur une année. Pour isoler le coût du crédit, on suppose que le capital de 50 000 € reste dû jusqu’à la fin de l’année et qu’il est remboursé grâce à la revente de l’équipement pour 50 000 €. Il n’y a ni frais ni impôt. L’entreprise ne retient le projet que si le gain après intérêts est strictement positif. Comparez un taux de crédit de 3 % et un taux de 6 %. Ces hypothèses simplifient un choix qui, dans la réalité, dépend aussi des débouchés attendus, du risque et de la durée du projet.",
+          "source": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "source_full": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "kind": "Simulation de choix d’investissement",
+          "analysis": "À 3 % : intérêts 1 500, gain net 1 000 ; projet retenu. À 6 % : intérêts 3 000, gain net −500 ; projet rejeté dans les hypothèses posées. La revente finance le remboursement du capital : ne pas le retrancher une seconde fois du gain annuel. Le taux de crédit est un prix bancaire, pas nécessairement un taux directeur. Une baisse du taux ne garantit pas le projet si la prévision de ventes se dégrade.",
+          "table": [
+            [
+              "Taux du crédit",
+              "Intérêts annuels",
+              "Gain après intérêts",
+              "Décision justifiée"
+            ],
+            [
+              "3 %",
+              "À calculer",
+              "À calculer",
+              "À déterminer"
+            ],
+            [
+              "6 %",
+              "À calculer",
+              "À calculer",
+              "À déterminer"
+            ]
+          ],
+          "note": "",
+          "source_student": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle."
+        }
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "doc": 13,
+          "text": "Reconstituez les étapes par lesquelles une hausse des taux directeurs peut freiner l’activité.",
+          "answer": "Taux de court terme puis taux bancaires plus élevés ; crédit moins attractif ou offre plus restrictive ; recul de certaines dépenses financées à crédit ; moindre demande et ralentissement possible de production et d’emploi.",
+          "lines": 4
+        },
+        {
+          "id": 32,
+          "doc": 13,
+          "text": "Expliquez pourquoi une baisse des taux ne garantit pas davantage de crédits.",
+          "answer": "Les entreprises peuvent manquer de débouchés, les ménages reporter leurs achats ou les banques juger les emprunteurs trop risqués. L’offre et la demande de crédit doivent réagir.",
+          "lines": 4
+        },
+        {
+          "id": 33,
+          "doc": 14,
+          "text": "Complétez le tableau pour les deux taux.",
+          "answer": "À 3 % : 1 500 € d’intérêts, gain net 1 000 €, projet retenu. À 6 % : 3 000 €, gain net −500 €, projet rejeté.",
+          "lines": 3
+        },
+        {
+          "id": 34,
+          "doc": 14,
+          "text": "Montrez comment une hausse du taux peut affecter les fournisseurs de cette entreprise.",
+          "answer": "Si le projet est abandonné, le fournisseur perd une commande. Sa production et ses besoins de travail peuvent être plus faibles, avec des effets sur d’autres revenus et dépenses.",
+          "lines": 4
+        },
+        {
+          "id": 35,
+          "doc": 14,
+          "text": "Si le gain attendu tombe à 1 000 €, le taux de 3 % suffit-il à rendre le projet intéressant ? Justifiez.",
+          "answer": "Non : 1 000−1 500 = −500 €. Le taux n’est qu’un déterminant ; les débouchés et la rentabilité anticipée jouent aussi.",
+          "lines": 3
+        }
+      ],
+      "trace": null,
+      "home": null
+    },
+    {
+      "hour": 8,
+      "title": "3.2.2. Les effets sur les prix et leurs limites",
+      "oa": "OA3 · SOA8 : Créer davantage de monnaie fait-il toujours augmenter les prix ?",
+      "board": "Créer davantage de monnaie fait-il toujours augmenter les prix ?",
+      "recall": "Une baisse du taux suffit-elle si l’entreprise ne prévoit aucune commande supplémentaire ?",
+      "recall_answer": "Non. La rentabilité anticipée dépend aussi des ventes.",
+      "docs": [
+        {
+          "id": 15,
+          "title": "Pourquoi les effets dépendent de la conjoncture",
+          "text": "En période de bonne conjoncture, quand on s’approche du plein emploi et que l’activité économique est soutenue, les banques n’ont aucune raison de ralentir spontanément leur offre de crédit. Si l’économie se trouve très proche de la saturation des capacités de production, les entreprises ne sont pas capables de répondre par une augmentation de la production au supplément de la demande engendrée par la création monétaire et le crédit, et elles peuvent réagir en augmentant les prix, ce qui risque alors d’accélérer l’inflation. Dès lors, c’est à la Banque centrale d’intervenir afin d’inciter les banques commerciales à freiner la création monétaire pour juguler l’inflation et la détérioration du pouvoir d’achat de la monnaie. À l’inverse, en période d’activité économique ralentie, quand l’économie s’éloigne du plein emploi, que la croissance économique est faible, les banques deviennent généralement plus prudentes et peuvent freiner brutalement la création monétaire. Le rationnement du crédit peut aggraver la récession et conduire même à une situation de déflation, soit la baisse du niveau général des prix. Pour éviter cette situation dangereuse, en période de chômage et de sous-utilisation des capacités de production, la Banque centrale doit alors intervenir sur le marché monétaire pour inciter les banques commerciales à une création monétaire plus dynamique pour soutenir la demande globale et la production. La Banque centrale est donc confrontée à un dilemme : mobiliser les instruments de la politique monétaire pour inciter les banques à une création monétaire suffisante pour soutenir la demande globale, mais aussi veiller à préserver le pouvoir d’achat de la monnaie en réagissant si le risque d’une accélération de l’inflation se présente.",
+          "source": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 6.",
+          "source_full": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 6.",
+          "kind": "Texte institutionnel fourni",
+          "analysis": "Le texte articule activité, capacités de production et prix. La dernière phrase expose une tension, mais les objectifs ne sont pas toujours en conflit : une inflation d’origine demande peut être freinée par un ralentissement de cette demande. La stabilité des prix est l’objectif prioritaire de la BCE ; le soutien aux autres politiques ne doit pas lui porter préjudice. Les chocs d’offre rendent l’arbitrage plus délicat. Une désinflation est un ralentissement de la hausse des prix, pas nécessairement une baisse du niveau général des prix.",
+          "table": null,
+          "note": "",
+          "source_student": "Éduscol, « Qu’est-ce que la monnaie et comment est-elle créée ? », ressource d’accompagnement SES Première, juin 2019, PDF fourni. p. 6."
+        },
+        {
+          "id": 16,
+          "title": "Deux économies face à une baisse des taux",
+          "text": "Dans l’économie A, des ateliers sont inutilisés, des salariés cherchent un emploi et les entreprises anticipent des commandes. Dans l’économie B, les usines fonctionnent déjà à pleine capacité et une pénurie d’énergie réduit l’offre. Dans les deux cas, une baisse des taux bancaires facilite certains projets financés à crédit, mais elle ne supprime pas les contraintes de production.\nLe tableau ci-dessous décrit séparément un indice fictif du niveau général des prix. Chaque année, le taux d’inflation compare le nouvel indice à celui de l’année précédente. Il ne permet pas, à lui seul, d’identifier les effets d’une décision de la banque centrale : d’autres facteurs interviennent.",
+          "source": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "source_full": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle.",
+          "kind": "Comparaison de situations et indice construits",
+          "analysis": "A : davantage de production et d’emploi est possible si demande et offre de crédit suivent ; B : l’augmentation de demande risque davantage de rencontrer une offre rigide et de renforcer les prix. Année 1 à 2 : +6 % ; année 2 à 3 : +2 %, car (108,12−106)/106 × 100 = 2. Le niveau final est supérieur de 8,12 % à la base ; désinflation, pas retour à 100 ni déflation. Ni cette série construite ni une simple corrélation ne mesurent l’effet causal d’une politique.",
+          "table": [
+            [
+              "Année",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "Indice des prix",
+              "100",
+              "106",
+              "108,12"
+            ]
+          ],
+          "note": "",
+          "source_student": "CAPSES, situation pédagogique construite ; montants conventionnels, sans observation d’une banque réelle."
+        }
+      ],
+      "questions": [
+        {
+          "id": 36,
+          "doc": 15,
+          "text": "Expliquez pourquoi une hausse de la demande peut surtout augmenter les prix lorsque les capacités sont saturées.",
+          "answer": "Les entreprises ne peuvent pas augmenter rapidement leur production ; la demande supplémentaire rencontre une offre limitée, ce qui favorise les hausses de prix.",
+          "lines": 4
+        },
+        {
+          "id": 37,
+          "doc": 15,
+          "text": "Expliquez une difficulté d’une hausse des taux lorsque l’inflation vient d’une pénurie d’énergie.",
+          "answer": "Elle freine la demande et peut ralentir l’activité, mais ne produit pas directement l’énergie manquante. La réduction de l’inflation peut donc avoir un coût sur la production et l’emploi.",
+          "lines": 4
+        },
+        {
+          "id": 38,
+          "doc": 16,
+          "text": "Comparez les effets probables d’une baisse des taux dans les économies A et B.",
+          "answer": "A peut produire davantage avec ses moyens inutilisés, si le crédit et les commandes suivent. B risque davantage de subir une hausse des prix ; l’effet dépend de l’offre, des anticipations et de la réponse du crédit.",
+          "lines": 4
+        },
+        {
+          "id": 39,
+          "doc": 16,
+          "text": "Calculez l’inflation entre les années 1 et 2 puis entre 2 et 3. Les prix reviennent-ils à leur niveau initial ?",
+          "answer": "+6 %, puis +2 %. Les prix restent 8,12 % au-dessus de l’année 1 ; c’est une désinflation, pas une déflation.",
+          "lines": 3
+        },
+        {
+          "id": 40,
+          "doc": 16,
+          "text": "Un élève attribue toute désinflation à la banque centrale. Discutez cette conclusion avec le cours et les documents.",
+          "answer": "La politique monétaire peut freiner la demande et les pressions sur les prix avec des délais. Mais coûts de l’énergie, offre, anticipations et autres politiques interviennent ; la seule observation d’une baisse du taux d’inflation ne prouve pas une cause unique.",
+          "lines": 4
+        }
+      ],
+      "trace": {
+        "subject": "Comment la politique monétaire agit-elle sur l’activité et les prix ?",
+        "words": "taux directeur · taux bancaire · crédit · demande · production · inflation · capacités de production",
+        "text": "Une hausse des taux directeurs tend à relever les taux de court terme, puis les taux bancaires. Certains crédits et projets deviennent moins attractifs, ce qui freine la demande et peut ralentir production et emploi. Cette moindre pression de la demande peut réduire l’inflation. À l’inverse, une baisse des taux peut soutenir les dépenses et l’activité, surtout si des capacités sont inutilisées. Les effets dépendent de la confiance, du risque et de l’origine de l’inflation ; ils ne sont ni automatiques ni immédiats. Une désinflation signifie que les prix augmentent moins vite, pas qu’ils retrouvent leur niveau antérieur."
+      },
+      "home": {
+        "subject": "Expliquez pourquoi une baisse des taux directeurs peut ne pas suffire à relancer l’investissement.",
+        "answer": "Elle peut réduire le coût du crédit et rendre certains projets plus rentables. Mais des entreprises sans débouchés attendus peuvent renoncer à investir ; des banques peuvent refuser les demandes trop risquées. Les capacités de production et les délais de transmission comptent aussi. Une baisse des taux facilite une décision sans la garantir."
+      }
+    }
+  ],
+  "objectifs": [
+    [
+      "Connaître les fonctions de la monnaie et les formes de la monnaie.",
+      "Expliquer les trois fonctions et distinguer la monnaie des instruments qui la font circuler.",
+      "Une carte permet de transférer un dépôt bancaire ; elle n’est pas une nouvelle forme de monnaie."
+    ],
+    [
+      "Comprendre comment le crédit bancaire contribue à la création monétaire, à partir du bilan simplifié d’une entreprise et de celui d’une banque.",
+      "Montrer les écritures simultanées d’un crédit, puis distinguer création, circulation et destruction.",
+      "Un crédit de 60 000 € crée un dépôt et une dette de même montant pour l’entreprise."
+    ],
+    [
+      "Comprendre le rôle de la banque centrale dans le processus de création monétaire, en particulier à travers le pilotage du taux d’intérêt à court terme sur le marché monétaire, et comprendre les effets que ces interventions peuvent produire sur le niveau des prix et sur l’activité économique.",
+      "Relier taux directeurs, crédit, dépenses, activité et prix, en précisant les conditions.",
+      "Une hausse des taux peut freiner les crédits et l’investissement, puis atténuer les pressions sur les prix."
+    ]
+  ],
+  "cours": [
+    {
+      "title": "1.1.1. Fonctions de la monnaie et confiance",
+      "paragraphs": [
+        "La monnaie est un ensemble de moyens de paiement acceptés dans une communauté. Elle repose sur des institutions et sur la confiance dans son acceptation future. Une marchandise précieuse ne devient pas automatiquement monnaie : les membres de la société doivent lui reconnaître ce rôle. Les exemples de coquillages, de sel ou de métaux montrent la diversité des supports. Ils ne prouvent pas une évolution historique universelle et linéaire du troc vers les formes actuelles.",
+        "Les économistes distinguent trois fonctions. Comme unité de compte, la monnaie permet d’exprimer les prix dans une même unité et de comparer les valeurs. Comme intermédiaire des échanges, elle évite la double coïncidence des besoins : on peut vendre à une personne et acheter à une autre. Comme réserve de valeur, elle reporte du pouvoir d’achat dans le temps. Elle reste immédiatement utilisable pour payer, mais l’inflation peut réduire ce qu’une même somme permet d’acheter.",
+        "Ces fonctions sont liées. Un commerçant accepte un paiement en euros parce qu’il pense pouvoir utiliser ces euros à son tour. La confiance porte sur les autres utilisateurs, sur le système bancaire et sur la stabilité de l’unité monétaire. L’importance du métal ou du papier ne suffit donc pas à expliquer la valeur d’une monnaie. Dans le texte d’Aurélie Perez-Tellier fourni sur Melchior, la convention sociale transforme un objet en moyen d’échange reconnu."
+      ]
+    },
+    {
+      "title": "1.1.2. Formes monétaires et instruments de paiement",
+      "paragraphs": [
+        "Dans ce chapitre, la monnaie fiduciaire réunit les pièces et les billets. Les pièces sont également appelées monnaie divisionnaire. Certains documents anciens ou scolaires réservent le terme fiduciaire aux seuls billets, tandis que d’autres l’utilisent au sens large de monnaie fondée sur la confiance. Il faut annoncer la convention retenue et comprendre la distinction, plutôt que confondre deux classements terminologiques. Dans la zone euro, les pièces sont émises par les États et les billets dans le cadre de l’Eurosystème.",
+        "La monnaie scripturale correspond aux dépôts à vue, immédiatement utilisables par les titulaires des comptes bancaires. Elle circule au moyen d’instruments : carte, chèque, virement, prélèvement. La carte et l’application bancaire ne sont donc pas de nouvelles formes de monnaie. Elles donnent accès à des dépôts et transmettent des ordres de paiement. Un compte d’épargne ne doit pas être assimilé sans précision à un compte courant : les agrégats plus larges retiennent certains placements en fonction de leur liquidité.",
+        "Un retrait de 50 € sur un compte approvisionné diminue le dépôt de 50 € et augmente les billets détenus de 50 €. Le total de monnaie du public reste inchangé ; sa composition évolue. Un virement entre deux agents non bancaires modifie les titulaires des dépôts sans augmenter leur total. Pour identifier une création monétaire, il faut observer une opération qui fait apparaître un moyen de paiement nouveau, et non simplement un changement de support ou de propriétaire.",
+        "Les données sur les paiements décrivent des flux, pas le stock de monnaie. En France en 2024, le tableau de l’OSMP recense 32 707 millions de paiements scripturaux hors retraits. Les cartes émises en France représentent environ 64,2 % de ce nombre. Les virements représentent environ 89,6 % du montant total correspondant. Le classement dépend du critère : de nombreux petits achats par carte peuvent représenter moins d’euros qu’un nombre limité de virements professionnels. Ces parts ne mesurent pas tous les achats, espèces comprises."
+      ]
+    },
+    {
+      "title": "2.1.1. Le crédit et les bilans",
+      "paragraphs": [
+        "Lorsqu’une banque commerciale accorde un crédit de 60 000 € à une entreprise, elle inscrit un dépôt de 60 000 € sur le compte du client. Dans le bilan de la banque, la créance de crédit augmente de 60 000 € à l’actif ; le dépôt dû au client augmente du même montant au passif. Dans celui de l’entreprise, le dépôt augmente à l’actif et la dette envers la banque augmente au passif. Les deux bilans restent équilibrés : les mêmes engagements sont vus depuis deux agents différents.",
+        "Le dépôt est un actif pour le client car il représente une créance disponible sur la banque. C’est un passif pour celle-ci car elle doit exécuter les paiements ou fournir les fonds selon les règles du compte. À l’inverse, le crédit constitue une créance de la banque et une dette de l’emprunteur. Le bilan décrit le patrimoine à une date donnée ; il ne constitue pas un compte de résultat et ne se confond pas avec une liste des recettes et dépenses de l’année.",
+        "L’expression « les crédits font les dépôts » signifie que l’octroi du crédit fait apparaître un dépôt nouveau. La banque n’a pas à débiter au même instant le compte d’un épargnant d’un montant identique pour créditer celui de l’emprunteur. Cette écriture ne constitue cependant pas une création gratuite de richesse : l’entreprise doit rembourser sa dette et la banque supporte un risque. L’actif net de l’emprunteur n’augmente pas de 60 000 € lors de l’opération.",
+        "Un prêt de 100 € entre deux amis, effectué par virement, a un effet différent. Le dépôt du prêteur baisse de 100 € et celui de l’emprunteur augmente de 100 €. Leur total de dépôts ne change pas : une ressource monétaire existante est transférée. Le financement externe ne crée donc pas toujours de monnaie. Il faut identifier les agents et les écritures. La banque peut aussi créer des dépôts dans certaines acquisitions d’actifs à des agents non bancaires ; le crédit est le mécanisme principal étudié dans ce chapitre, pas l’unique opération possible."
+      ]
+    },
+    {
+      "title": "2.1.2. Circulation, destruction et masse monétaire",
+      "paragraphs": [
+        "Après l’octroi du crédit, les paiements font circuler la monnaie. Si l’entreprise règle un fournisseur, son dépôt diminue et celui du fournisseur augmente. La monnaie peut changer plusieurs fois de titulaire : elle n’est pas créée à nouveau à chaque transaction. Il ne faut donc pas additionner les montants des paiements successifs pour mesurer la création. Un même euro peut servir à plusieurs paiements au cours d’une période.",
+        "Le remboursement du principal d’un crédit bancaire détruit la monnaie correspondante : la créance inscrite à l’actif de la banque et le dépôt utilisé pour la rembourser diminuent simultanément. Les intérêts constituent une rémunération de la banque, distincte de ce remboursement du principal. Lorsqu’une échéance comprend les deux, on ne peut pas assimiler toute l’échéance à une destruction monétaire liée au principal. Une créance non remboursée entraîne une perte pour la banque ; elle ne fait pas disparaître automatiquement les dépôts déjà transférés à d’autres agents.",
+        "Un découvert accepté est aussi un crédit. Dans le relevé de M. Panierpercé, avec un solde initial nul, il reste 5 € au soir du 21 avril. Le prélèvement du 24 rend le compte négatif ; le découvert atteint 309 € en fin de mois. Lorsque le salaire suivant provient d’un dépôt existant, une partie de ce virement rembourse le découvert et détruit la monnaie correspondante. Les retraits en billets du relevé sont à distinguer de cette opération.",
+        "La masse monétaire est un stock mesuré à une date. Son évolution résulte des flux de création et de destruction. Dans le modèle simplifié du livret, 80 millions de nouveaux crédits et 65 millions de remboursements de principal produisent une hausse nette de 15 millions. Une croissance du crédit nouveau ne suffit donc pas à déterminer la hausse du stock. L’agrégat M1 réunit les espèces du public et les dépôts à vue ; les réserves des banques à la banque centrale n’en font pas partie.",
+        "Un indice permet de comparer un stock à sa valeur de référence. Dans le graphique historique fourni, l’indice M1 vaut 100 en 2015 et 118,4 en 2017 : le stock a progressé de 18,4 % entre ces dates. Entre 2010, indice 73,5, et 2017, la hausse est d’environ 61,1 %. Une différence d’indices n’est pas automatiquement un taux de variation. Le graphique décrit une évolution ; il n’établit pas, à lui seul, la cause précise de cette évolution."
+      ]
+    },
+    {
+      "title": "2.2.1. Les limites de la création monétaire",
+      "paragraphs": [
+        "Une banque commerciale émet des dépôts, mais ne peut pas créer les réserves en monnaie centrale qui règlent ses dettes envers les autres banques. Les paiements sortants peuvent donc produire un besoin de liquidité. Les paiements entrants en apportent. Dans le cas du livret, 45 000 € de paiements de A vers B et 18 000 € en sens inverse donnent un règlement net de 27 000 €. Avec 30 000 € de réserves initiales, A ne conserve que 3 000 € après ce règlement.",
+        "Le refinancement permet d’obtenir de la monnaie centrale auprès d’une autre banque ou dans le cadre des opérations de l’Eurosystème. Il a un coût et suppose le respect des conditions d’accès, notamment les garanties requises. Une banque doit aussi fournir les billets demandés par ses clients et respecter les exigences de liquidité. Les réserves ne sont pas une caisse librement transférable sur les comptes des ménages : ce sont des avoirs détenus par les banques à la banque centrale.",
+        "Le risque de crédit limite également l’octroi. Une banque apprécie la probabilité de remboursement et la rentabilité attendue. Elle doit disposer de fonds propres suffisants pour absorber ses pertes et respecter la réglementation prudentielle. Liquidité et solvabilité se distinguent : disposer des moyens de paiement au bon moment ne signifie pas que l’on peut durablement faire face à toutes ses dettes. Une banque ayant des liquidités peut supporter des pertes ; une banque disposant d’actifs de valeur peut manquer temporairement de moyens de règlement."
+      ]
+    },
+    {
+      "title": "3.1.1. Monnaie centrale et taux de court terme",
+      "paragraphs": [
+        "Dans la zone euro, la BCE et les banques centrales nationales des pays ayant adopté l’euro forment l’Eurosystème. La politique monétaire unique vise en priorité la stabilité des prix. Le SEBC est plus large puisqu’il inclut aussi les banques centrales des pays de l’Union européenne n’ayant pas adopté l’euro. Les banques commerciales détiennent des comptes en monnaie centrale auprès des banques centrales nationales compétentes ; c’est à ce niveau que se dénouent leurs règlements.",
+        "Le marché monétaire organise des financements à court terme. Son compartiment interbancaire permet aux banques de se prêter temporairement des réserves contre intérêt. Les taux directeurs fixés par la banque centrale influencent les taux de marché de court terme, notamment par les conditions de fourniture et de rémunération de la liquidité. Le détail du cadre opérationnel peut évoluer : l’essentiel est de distinguer la décision de la banque centrale, les échanges de marché et les taux proposés aux clients.",
+        "Une banque qui emprunte 2 millions d’euros pendant un an à 2 % paie 40 000 € d’intérêts ; à 3 %, elle paie 60 000 €. Le taux augmente de 1 point et le coût de 50 %. Cette hausse peut modifier ses choix et ses taux de crédit. Elle n’est cependant pas transmise à l’identique à tous les clients : la concurrence, les risques, les autres ressources et les contrats en cours interviennent. Un ancien prêt à taux fixe n’est pas automatiquement révisé.",
+        "En période de tensions, la banque centrale peut aussi fournir une liquidité d’urgence dans les conditions applicables. Le rôle de prêteur en dernier ressort cherche à empêcher qu’un manque de liquidité ne se propage au système de paiement. Il ne garantit pas toutes les pertes et ne se confond pas avec une recapitalisation : une injection de liquidité ne rend pas, par elle-même, une banque insolvable suffisamment capitalisée."
+      ]
+    },
+    {
+      "title": "3.2.1. Du crédit aux dépenses et à la production",
+      "paragraphs": [
+        "La politique monétaire agit par une chaîne de décisions. Une hausse des taux directeurs tend à relever les taux de court terme et le coût de certains financements bancaires. Les banques peuvent augmenter les taux de crédit ou être plus sélectives. Pour les ménages et les entreprises, certains projets deviennent moins attractifs. Une partie de la consommation et de l’investissement financée par emprunt peut alors ralentir, ce qui freine les commandes adressées aux producteurs.",
+        "Dans la simulation du livret, un équipement financé par 50 000 € de crédit rapporte un gain annuel de 2 500 € avant intérêts. À 3 %, les intérêts valent 1 500 € et il reste un gain de 1 000 €. À 6 %, ils valent 3 000 € et le gain devient négatif de 500 € : le projet est abandonné sous les hypothèses données. Le fournisseur perd alors une commande. Si de nombreux projets sont affectés, la production et l’emploi peuvent ralentir.",
+        "Le raisonnement inverse explique comment une baisse des taux peut soutenir l’activité. Elle peut rendre le crédit moins coûteux et certains investissements rentables. Mais elle ne force ni les banques à prêter ni les entreprises à investir. Une prévision de ventes trop faible, un risque de défaut élevé ou une incertitude persistante peuvent limiter la réaction. Dans le cas étudié, un gain attendu de seulement 1 000 € rend le projet non rentable même au taux de 3 %. Le coût du crédit n’est qu’un déterminant de l’investissement.",
+        "La transmission demande du temps. Les contrats se renouvellent progressivement, les projets sont préparés avant d’être réalisés et les dépenses se diffusent entre agents. Les ménages déjà endettés à taux fixe ne réagissent pas comme ceux qui souhaitent souscrire un nouveau prêt. Une bonne réponse explique ces étapes et précise les conditions : elle ne passe pas directement d’une annonce de la banque centrale à un résultat certain sur l’emploi ou sur les prix."
+      ]
+    },
+    {
+      "title": "3.2.2. Les effets sur les prix et leurs limites",
+      "paragraphs": [
+        "Les effets sur les prix dépendent notamment des capacités de production. Lorsque des machines et du travail sont disponibles, une demande supplémentaire peut accroître la production et l’emploi. Si les capacités sont saturées ou si une pénurie d’énergie limite l’offre, les entreprises peuvent répondre davantage par une hausse des prix. Une création monétaire ne provoque donc pas mécaniquement une hausse proportionnelle des prix dans chaque situation et à chaque horizon.",
+        "Une hausse des taux peut réduire les pressions inflationnistes en freinant la demande et en influençant les anticipations. Mais elle ne produit pas directement l’énergie ou les matières premières manquantes. Face à un choc d’offre, le ralentissement de la demande peut donc avoir un coût sur l’activité. Les banques centrales doivent tenir compte de l’origine des tensions et des délais. L’objectif prioritaire de stabilité des prix de la BCE n’implique pas une garantie immédiate de résultat.",
+        "Il faut distinguer le niveau des prix et son taux de variation. Si un indice passe de 100 à 106 puis à 108,12, l’inflation est de 6 % puis de 2 %. Les prix continuent d’augmenter, mais moins vite : c’est une désinflation. Ils ne reviennent pas au niveau initial. Une déflation serait une baisse du niveau général des prix. Observer une désinflation ne suffit pas à l’attribuer intégralement à la banque centrale : coûts de production, offre et autres décisions économiques peuvent également intervenir.",
+        "Pour discuter une intervention monétaire, identifiez l’instrument, les décisions bancaires et celles des emprunteurs, puis les effets possibles sur les dépenses, la production et les prix. Appuyez chaque étape sur un mécanisme ou un exemple. Distinguez ce qui est une observation datée, une simulation sous hypothèses et une relation causale à établir. C’est cette précision qui permet d’éviter les conclusions trop générales sur la création monétaire."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Programme officiel de Première",
+      "https://eduscol.education.gouv.fr/5838/programmes-et-ressources-en-sciences-economiques-et-sociales-voie-gt",
+      "BO spécial du 22 janvier 2019 ; trois objectifs d’apprentissage."
+    ],
+    [
+      "Éduscol et dossier fourni",
+      "https://eduscol.education.gouv.fr/sites/default/files/document/ra19lyceegspeses1eremonnaie-ses1172965pdf-82788.pdf",
+      "Ressource de juin 2019 ; extraits fournis et référencés dans le livret."
+    ],
+    [
+      "Paiements en France en 2024",
+      "https://www.banque-france.fr/system/files/2025-09/OSMP-2024_VF.pdf",
+      "OSMP, rapport annuel 2024 publié en septembre 2025 ; tableau 1 p. 103, hors retraits pour les calculs."
+    ],
+    [
+      "Création monétaire",
+      "https://www.banque-france.fr/fr/publications-et-statistiques/publications/comment-est-creee-la-monnaie",
+      "Banque de France ; crédit, monnaie centrale et limites prudentielles."
+    ],
+    [
+      "Fonctions et formes de la monnaie",
+      "https://www.melchior.fr/cours/question-1-connaitre-les-fonctions-et-les-formes-de-la-monnaie",
+      "Aurélie Perez-Tellier, Melchior ; synthèse élève également fournie en PDF."
+    ],
+    [
+      "Crédit et bilans",
+      "https://www.melchior.fr/cours/question-2-comprendre-comment-le-credit-bancaire-contribue-la-creation-monetaire-partir-du",
+      "Complément pour travailler les bilans et les circuits bancaires."
+    ],
+    [
+      "Rôle de la banque centrale",
+      "https://www.melchior.fr/cours/question-3-comprendre-le-role-de-la-banque-centrale-dans-le-processus-de-creation-monetaire",
+      "Complément sur le marché interbancaire ; les désignations anciennes des taux ne sont pas reprises comme actuelles."
+    ]
+  ],
+  "erreurs": [
+    [
+      "La monnaie vient partout du troc.",
+      "Ne pas transformer une comparaison analytique avec le troc en histoire universelle. La monnaie repose sur des conventions et des institutions."
+    ],
+    [
+      "La carte est une forme de monnaie.",
+      "La carte, le chèque et le téléphone sont des instruments. Le dépôt transféré constitue la monnaie scripturale."
+    ],
+    [
+      "Le crédit enrichit immédiatement son bénéficiaire.",
+      "Un dépôt apparaît avec une dette de même montant. La capacité à dépenser augmente sans enrichissement net égal au crédit."
+    ],
+    [
+      "Chaque paiement crée de la monnaie.",
+      "Un virement transfère un dépôt ; le remboursement du principal détruit de la monnaie. Un retrait sur compte approvisionné modifie sa forme."
+    ],
+    [
+      "Une banque peut prêter sans limite.",
+      "Il faut assurer les règlements, obtenir des liquidités, couvrir les risques et respecter les exigences prudentielles."
+    ],
+    [
+      "Les réserves sont les dépôts des ménages.",
+      "Les réserves sont les avoirs des banques à la banque centrale. Les ménages détiennent leurs dépôts auprès des banques commerciales."
+    ],
+    [
+      "Le taux directeur détermine seul l’investissement.",
+      "Les taux bancaires, les perspectives de ventes et le risque influencent aussi la décision. La transmission n’est ni immédiate ni uniforme."
+    ],
+    [
+      "Une inflation plus faible signifie des prix plus bas.",
+      "Une désinflation ralentit la hausse des prix ; la déflation est une baisse du niveau général des prix."
+    ]
+  ],
+  "notions": [
+    [
+      "Monnaie",
+      "Moyens de paiement acceptés dans une communauté.",
+      "Elle remplit trois fonctions et repose sur la confiance."
+    ],
+    [
+      "Unité de compte",
+      "Fonction qui permet d’exprimer et de comparer les valeurs dans une même unité.",
+      "Un livre à 12 € et un repas à 9 € ont des prix comparables."
+    ],
+    [
+      "Intermédiaire des échanges",
+      "Fonction qui permet de vendre à un agent puis d’acheter à un autre.",
+      "Évite la double coïncidence des besoins."
+    ],
+    [
+      "Réserve de valeur",
+      "Fonction qui permet de reporter du pouvoir d’achat dans le temps.",
+      "L’inflation peut réduire le pouvoir d’achat d’une somme conservée."
+    ],
+    [
+      "Monnaie fiduciaire",
+      "Pièces et billets, selon la convention retenue dans ce chapitre.",
+      "Les pièces sont aussi appelées monnaie divisionnaire."
+    ],
+    [
+      "Monnaie scripturale",
+      "Dépôts à vue détenus sur les comptes bancaires.",
+      "Carte, chèque et virement sont les instruments de sa circulation."
+    ],
+    [
+      "Créance et dette",
+      "Droit de recevoir un paiement pour le créancier ; obligation de payer pour le débiteur.",
+      "Le crédit bancaire est une créance de la banque et une dette de l’emprunteur."
+    ],
+    [
+      "Création monétaire",
+      "Apparition de moyens de paiement nouveaux.",
+      "Le crédit bancaire crée simultanément un dépôt et une créance de crédit."
+    ],
+    [
+      "Destruction monétaire",
+      "Disparition de monnaie, notamment lors du remboursement du principal d’un crédit bancaire.",
+      "Distinguer le principal des intérêts."
+    ],
+    [
+      "Masse monétaire",
+      "Stock de monnaie détenu par les agents non bancaires dans un périmètre donné.",
+      "M1 comprend les espèces du public et les dépôts à vue ; un flux de paiements n’est pas ce stock."
+    ],
+    [
+      "Monnaie centrale",
+      "Monnaie émise par la banque centrale : billets et avoirs des banques auprès d’elle.",
+      "Les réserves servent notamment aux règlements entre banques."
+    ],
+    [
+      "Refinancement",
+      "Obtention de monnaie centrale par une banque, notamment auprès d’une autre banque ou de l’Eurosystème.",
+      "Créer un dépôt ne dispense pas de régler les paiements sortants."
+    ],
+    [
+      "Taux directeurs",
+      "Taux fixés par la banque centrale pour orienter les taux de court terme.",
+      "Ils influencent les taux bancaires sans se confondre avec eux."
+    ],
+    [
+      "Inflation et désinflation",
+      "Inflation : hausse du niveau général des prix. Désinflation : ralentissement de cette hausse.",
+      "Des prix qui augmentent de 2 % après 6 % continuent de monter."
+    ]
+  ],
+  "mechanismes": [
+    {
+      "title": "Le crédit fait apparaître un dépôt",
+      "paragraphs": [
+        "La banque accorde un crédit. Elle inscrit une créance à l’actif de son bilan et un dépôt au passif. L’entreprise inscrit le dépôt à son actif et la dette à son passif. Un moyen de paiement nouveau apparaît, avec une dette de même montant.",
+        "Le simulateur ci-dessous suit ensuite le paiement à un fournisseur et le remboursement d’une partie du principal. Toutes les opérations ont lieu dans une même banque, sans intérêts ni autres opérations."
+      ]
+    },
+    {
+      "title": "Le règlement entre banques nécessite des réserves",
+      "paragraphs": [
+        "Le paiement débite un client et crédite le bénéficiaire. S’ils sont dans deux banques différentes, celles-ci règlent leur dette en monnaie centrale. Les paiements entrants peuvent compenser les paiements sortants.",
+        "Une banque qui manque de réserves doit en obtenir. Le coût du refinancement, les risques et les exigences prudentielles limitent le crédit."
+      ]
+    },
+    {
+      "title": "Des taux aux dépenses et aux prix",
+      "paragraphs": [
+        "Une hausse des taux directeurs influence les taux de court terme, puis les taux bancaires. Certains crédits et projets deviennent moins attractifs : des dépenses ralentissent, puis les commandes et la production peuvent être affectées.",
+        "Une demande moins soutenue peut atténuer les pressions sur les prix. Les capacités disponibles, l’origine de l’inflation, la confiance et les délais conditionnent le résultat."
+      ]
+    }
+  ],
+  "quiz": [
+    [
+      "Quel exemple illustre l’unité de compte ?",
+      [
+        "Conserver un billet pour demain",
+        "Afficher le prix d’un livre en euros",
+        "Retirer des billets"
+      ],
+      1,
+      "Le prix exprimé dans une unité commune permet de comparer les valeurs."
+    ],
+    [
+      "La monnaie facilite les échanges parce que…",
+      [
+        "elle supprime tous les risques",
+        "elle évite la double coïncidence des besoins",
+        "elle garantit des prix constants"
+      ],
+      1,
+      "On peut vendre à une personne puis acheter à une autre."
+    ],
+    [
+      "Conserver 100 € pendant une période d’inflation…",
+      [
+        "garantit le même pouvoir d’achat",
+        "fait disparaître les euros",
+        "peut réduire leur pouvoir d’achat"
+      ],
+      2,
+      "La somme nominale reste 100 €, mais les biens peuvent coûter davantage."
+    ],
+    [
+      "Une carte bancaire est…",
+      [
+        "un instrument de paiement",
+        "une réserve en monnaie centrale",
+        "un dépôt à vue"
+      ],
+      0,
+      "Elle permet d’utiliser un dépôt ; elle ne constitue pas elle-même la monnaie transférée."
+    ],
+    [
+      "Un dépôt à vue est…",
+      [
+        "une monnaie scripturale",
+        "un billet",
+        "un taux directeur"
+      ],
+      0,
+      "C’est une créance immédiatement disponible du client sur sa banque."
+    ],
+    [
+      "Un retrait de 50 € sur un compte approvisionné…",
+      [
+        "crée 50 € supplémentaires",
+        "change la composition de la monnaie détenue",
+        "détruit toute la somme"
+      ],
+      1,
+      "Le dépôt baisse de 50 et les billets détenus augmentent de 50."
+    ],
+    [
+      "À l’octroi d’un crédit, la banque inscrit…",
+      [
+        "une créance à l’actif et un dépôt au passif",
+        "deux actifs sans passif",
+        "uniquement une baisse des réserves"
+      ],
+      0,
+      "La créance sur l’emprunteur est la contrepartie du dépôt nouveau."
+    ],
+    [
+      "L’entreprise qui obtient 40 000 € de crédit inscrit…",
+      [
+        "un dépôt et une dette de 40 000 €",
+        "un bénéfice de 40 000 €",
+        "seulement une dette"
+      ],
+      0,
+      "L’actif et le passif augmentent simultanément ; la richesse nette n’augmente pas d’autant."
+    ],
+    [
+      "Le dépôt d’un client figure au passif de la banque car…",
+      [
+        "c’est une dépense déjà consommée",
+        "la banque doit les fonds au client",
+        "il appartient à la banque centrale"
+      ],
+      1,
+      "Le client détient une créance sur sa banque ; pour elle, c’est un engagement."
+    ],
+    [
+      "Un prêt par virement entre deux amis…",
+      [
+        "crée toujours de la monnaie",
+        "transfère un dépôt existant",
+        "est un refinancement bancaire"
+      ],
+      1,
+      "Le dépôt de l’un baisse et celui de l’autre augmente du même montant."
+    ],
+    [
+      "Le remboursement du principal à une banque…",
+      [
+        "détruit la monnaie correspondante",
+        "crée le même montant",
+        "n’a jamais d’effet monétaire"
+      ],
+      0,
+      "Le dépôt utilisé et la créance de crédit diminuent ensemble."
+    ],
+    [
+      "Les intérêts d’un prêt sont…",
+      [
+        "toujours identiques au principal",
+        "une rémunération distincte du principal",
+        "une nouvelle monnaie fiduciaire"
+      ],
+      1,
+      "Il faut décomposer l’échéance pour identifier le principal remboursé."
+    ],
+    [
+      "80 millions de crédits nouveaux et 65 millions de remboursements donnent, seuls…",
+      [
+        "une hausse de 145 millions",
+        "une hausse de 80 millions",
+        "une hausse nette de 15 millions"
+      ],
+      2,
+      "Dans ce modèle, on retranche les destructions des créations : 80−65."
+    ],
+    [
+      "Un indice passe de 100 à 118,4. L’évolution est…",
+      [
+        "+18,4 %",
+        "+118,4 %",
+        "+18,4 euros"
+      ],
+      0,
+      "La base 100 correspond au niveau initial ; l’indice n’est pas un montant en euros."
+    ],
+    [
+      "La masse monétaire est…",
+      [
+        "un stock à une date donnée",
+        "le nombre des paiements de l’année",
+        "uniquement le capital des banques"
+      ],
+      0,
+      "Les paiements sont des flux ; la masse monétaire mesure des avoirs monétaires."
+    ],
+    [
+      "Les banques règlent leurs dettes mutuelles en…",
+      [
+        "monnaie centrale",
+        "cartes bancaires",
+        "actions de l’entreprise"
+      ],
+      0,
+      "Les comptes de réserves à la banque centrale permettent ces règlements."
+    ],
+    [
+      "A verse 45 000 € à B et reçoit 18 000 €. Son règlement net est…",
+      [
+        "63 000 € vers B",
+        "27 000 € vers B",
+        "27 000 € reçus de B"
+      ],
+      1,
+      "On compense les deux flux : 45 000−18 000 = 27 000."
+    ],
+    [
+      "La création de dépôts est limitée notamment par…",
+      [
+        "la seule quantité de papier disponible",
+        "le risque, la liquidité et les règles prudentielles",
+        "l’obligation de prêter toute demande"
+      ],
+      1,
+      "Les banques doivent assurer les règlements et absorber leurs pertes éventuelles."
+    ],
+    [
+      "Le taux directeur et le taux immobilier sont…",
+      [
+        "toujours identiques",
+        "deux taux distincts, dont les variations peuvent être liées",
+        "sans aucun lien possible"
+      ],
+      1,
+      "La banque tient aussi compte du risque, de la concurrence et des contrats."
+    ],
+    [
+      "Un capital constant de 2 millions à 3 % coûte sur un an…",
+      [
+        "6 000 €",
+        "60 000 €",
+        "600 000 €"
+      ],
+      1,
+      "2 000 000 × 0,03 = 60 000 €, hors frais."
+    ],
+    [
+      "Une hausse des taux peut freiner l’investissement car…",
+      [
+        "certains projets deviennent moins rentables",
+        "les gains attendus augmentent toujours",
+        "les dettes déjà souscrites disparaissent"
+      ],
+      0,
+      "Le coût du financement peut dépasser les gains attendus."
+    ],
+    [
+      "Une baisse des taux garantit-elle une relance ?",
+      [
+        "Oui, immédiatement",
+        "Non, la demande et l’offre de crédit doivent réagir",
+        "Oui, même sans aucun débouché"
+      ],
+      1,
+      "Les anticipations de ventes et le risque peuvent limiter les nouveaux projets."
+    ],
+    [
+      "Si les capacités de production sont saturées, une hausse de demande…",
+      [
+        "ne peut jamais agir sur les prix",
+        "risque davantage de faire monter les prix",
+        "garantit une hausse égale de la production"
+      ],
+      1,
+      "L’offre ne peut pas toujours répondre rapidement par davantage de biens."
+    ],
+    [
+      "Une inflation qui passe de 6 % à 2 % est…",
+      [
+        "une déflation",
+        "une désinflation",
+        "un retour des prix au niveau initial"
+      ],
+      1,
+      "Les prix continuent d’augmenter, mais moins vite."
+    ]
+  ],
+  "exercices": [
+    [
+      "Mobilisation des connaissances",
+      "Montrez qu’un paiement ne crée pas nécessairement de monnaie.",
+      "Compare un virement, un retrait et l’octroi d’un crédit.",
+      "Un virement transfère un dépôt ; un retrait sur compte approvisionné convertit un dépôt en billets. Le crédit bancaire crée un dépôt nouveau avec une créance correspondante."
+    ],
+    [
+      "Calcul et bilans",
+      "Une banque accorde 25 000 € à une entreprise. Décrivez les écritures, puis un remboursement de 5 000 € de principal.",
+      "Place créance, dépôt et dette dans les deux bilans.",
+      "Banque : créance +25 000 à l’actif, dépôt +25 000 au passif. Entreprise : dépôt +25 000 à l’actif, dette +25 000 au passif. Le remboursement réduit ces postes de 5 000 ; le principal restant est 20 000."
+    ],
+    [
+      "Raisonnement sur la politique monétaire",
+      "Expliquez pourquoi une baisse des taux peut avoir des effets différents selon la conjoncture.",
+      "Identifie les étapes de la transmission puis compare capacités disponibles et offre contrainte.",
+      "Le crédit moins cher peut soutenir dépenses et production si des moyens sont disponibles. Une offre saturée ou une pénurie peut favoriser une hausse des prix. Des débouchés faibles ou un risque élevé peuvent empêcher la reprise du crédit."
+    ]
+  ]
+}
