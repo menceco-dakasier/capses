@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { HomeMascot } from "../../home-mascot";
 import { LevelNavigation } from "../../level-navigation";
 import { useEffect, useRef, useState } from "react";
 import data from "./content.json";
@@ -58,10 +59,10 @@ export default function FinancementPage() {
     <LevelNavigation current="/premiere" />
     <div className={styles.shell}>
       <div className={styles.breadcrumb}><Link href="/">Accueil</Link> / <Link href="/premiere">Première</Link> / Financement des agents économiques</div>
-      <section className={styles.chapterHero}><span className={styles.eyebrow}>Première SES · Science économique</span>
+      <section className={styles.chapterHero} style={{display:"flex",flexWrap:"wrap",alignItems:"center",gap:24}}><div style={{flex:"1 1 420px",minWidth:0}}><span className={styles.eyebrow}>Première SES · Science économique</span>
         <h1>Comment les agents économiques se financent-ils ?</h1>
         <p>Revenus, épargne, crédit et titres : comprendre comment les ménages, les entreprises et l’État réunissent les ressources nécessaires à leurs projets.</p>
-        <p className={styles.meta}>5 objectifs · 28 questions dans la banque du quiz · Cours de P. Mence</p>
+        <p className={styles.meta}>5 objectifs · 28 questions dans la banque du quiz · Cours de P. Mence</p></div><HomeMascot compact />
       </section>
       <div className={styles.layout}>
         <aside className={styles.sidebar} aria-label="Parcours de révision">
