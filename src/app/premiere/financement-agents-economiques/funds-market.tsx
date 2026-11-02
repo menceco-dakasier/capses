@@ -5,14 +5,14 @@ export function FundsMarket() {
   const [publicDemand, setPublicDemand] = useState(false);
   return <section className={styles.lessonBlock}>
     <h3>Tester une hausse de la demande de fonds</h3>
-    <p>Modèle construit : mêmes risques et durées, offre inchangée. La demande publique ajoute 80 unités à chaque taux. Les unités sont conventionnelles.</p>
+    <p>Modèle construit : inflation nulle, mêmes risques et durées, offre inchangée. La demande publique ajoute 80 unités à chaque taux. Les unités sont conventionnelles.</p>
     <button type="button" className={styles.primaryButton} aria-pressed={publicDemand} onClick={()=>setPublicDemand(!publicDemand)}>{publicDemand ? "Revenir à la situation initiale" : "Ajouter la demande publique"}</button>
     <figure className={styles.figure}>
       <svg viewBox="0 0 640 370" role="img" aria-labelledby="funds-title funds-desc">
         <title id="funds-title">Marché des fonds prêtables</title>
         <desc id="funds-desc">Offre croissante, demande privée décroissante. {publicDemand ? "Après ajout de la demande publique, équilibre à 6 % et 140 unités. La demande privée est de 60 unités." : "Équilibre initial à 4 % et 100 unités."}</desc>
         <path d="M60 30V300H590" stroke="#142343" strokeWidth="2" fill="none"/>
-        <text x="65" y="20">Taux annuel (%)</text><text x="330" y="352">Quantité de fonds (unités)</text>
+        <text x="65" y="20">Taux réel (%)</text><text x="330" y="352">Quantité de fonds (unités)</text>
         {[2,4,6,8].map(r=><g key={r}><path d={`M56 ${300-r*30}H60`} stroke="#142343"/><text x="35" y={305-r*30}>{r}</text></g>)}
         {[0,60,100,140,180,220,260].map(v=><text key={v} x={60+v*1.8} y="322" textAnchor="middle">{v}</text>)}
         <path d="M96 300L384 60" stroke="#176b64" strokeWidth="3" fill="none"/><text x="390" y="62">Offre</text>

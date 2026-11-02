@@ -38,19 +38,21 @@
         {
           "id": 1,
           "title": "Mettre en relation des ressources et des projets",
-          "text": "Le financement de l'économie désigne à la fois celui des entreprises qui cherchent à financer leurs investissements productifs, celui des administrations publiques qui, le plus souvent, doivent financer leur déficit et celui des ménages qui ont à financer leurs achats de logement. Si chacun de ces agents pouvait financer totalement son investissement par son épargne, il n'y aurait pas besoin de système financier bien développé. [...] Mais seuls les ménages présentent une capacité de financement régulièrement positive, ce qui fait de leur épargne la variable stratégique du système financier. [...] Les entreprises sont des agents structurellement en situation de besoin de financement, car leurs projets d'investissement excèdent en général leurs propres ressources. Depuis la fin des années 1970, les administration s publiques sont aussi structurellement emprunteuses. [...] En réalité, il peut exister des entreprises ayant une capacité de financement (investissement, épargne) mais, globalement, les ménages sont en capacité, alors que les entreprises et les administrations publiques sont en besoin. Le système financier va donc permettre l'ajustement entre capacité et besoin de financement. Il désigne « l'ensemble des institutions (marchés des titres (financiers) et intermédiaires financiers, des règles et des pratiques) qui, au sein d'un espace donné [...] rendent possibles des échanges de monnaie ». Ces échanges se font entre ceux qui ont accumulé de l'argent en épargnant chaque année une fraction de leur revenu et ceux qui n'ont pas suffisamment épargné pour financer une dépense d'investissement. [...] En son absence, certains agents devraient renoncer à des investissements rentables faute de fonds, alors que d'autres disposeraient d'une épargne oisive. Cette mauvaise allocation des ressources freinerait alors la croissance.",
+          "text": "Le financement de l'économie désigne à la fois celui des entreprises qui cherchent à financer leurs investissements productifs, celui des administrations publiques qui, le plus souvent, doivent financer leur déficit et celui des ménages qui ont à financer leurs achats de logement. Si chacun de ces agents pouvait financer totalement son investissement par son épargne, il n'y aurait pas besoin de système financier bien développé. [...] Mais seuls les ménages présentent une capacité de financement régulièrement positive, ce qui fait de leur épargne la variable stratégique du système financier. [...] Les entreprises sont des agents structurellement en situation de besoin de financement, car leurs projets d'investissement excèdent en général leurs propres ressources. Depuis la fin des années 1970, les administrations publiques sont aussi structurellement emprunteuses. [...] En réalité, il peut exister des entreprises ayant une capacité de financement (investissement, épargne) mais, globalement, les ménages sont en capacité, alors que les entreprises et les administrations publiques sont en besoin. Le système financier va donc permettre l'ajustement entre capacité et besoin de financement. Il désigne « l'ensemble des institutions (marchés des titres (financiers) et intermédiaires financiers, des règles et des pratiques) qui, au sein d'un espace donné [...] rendent possibles des échanges de monnaie ». Ces échanges se font entre ceux qui ont accumulé de l'argent en épargnant chaque année une fraction de leur revenu et ceux qui n'ont pas suffisamment épargné pour financer une dépense d'investissement. [...] En son absence, certains agents devraient renoncer à des investissements rentables faute de fonds, alors que d'autres disposeraient d'une épargne oisive. Cette mauvaise allocation des ressources freinerait alors la croissance.",
           "source": "Jean-Pierre Biasutti et Laurent Braquet, Comprendre le système financier, Bréal, 2010 ; passage du dossier fourni Ch5, p. 1, avec ses coupures initiales.",
-          "analysis": "Texte structurant : partir du décalage entre épargne et investissement. Les tendances de secteurs ne sont pas des lois. La généralisation sur les entreprises doit être discutée avec le document 2. Le financement bancaire ne se réduit pas au transfert mécanique d’une épargne déjà déposée.",
+          "analysis": "Texte structurant : partir du décalage entre épargne et investissement. Les tendances de secteurs ne sont pas des lois. La généralisation sur les entreprises doit être discutée avec le document 2. Le financement bancaire ne se réduit pas au transfert mécanique d’une épargne déjà déposée. La parenthèse « investissement, épargne » est déjà incomplète dans le PDF fourni : aucun symbole mathématique ne peut être rétabli comme une citation certaine. Le critère économique attendu est investissement inférieur à épargne.",
           "kind": "Texte d’auteur fourni",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Jean-Pierre Biasutti et Laurent Braquet, Comprendre le système financier, Bréal, 2010 ; passage du dossier fourni Ch5, p. 1, avec ses coupures initiales.",
+          "source_student": "Jean-Pierre Biasutti et Laurent Braquet, Comprendre le système financier, Bréal, 2010. Extrait avec les coupures déjà présentes dans le support."
         },
         {
           "id": 2,
           "title": "Un secteur peut changer de situation",
-          "text": "Le solde indique une capacité s’il est positif et un besoin s’il est négatif. Ces soldes portent sur une année ; ils ne mesurent pas les dettes accumulées. Les sociétés non financières produisent des biens et des services marchands non financiers. La Nation regroupe les secteurs résidents et peut recevoir des financements du reste du monde.",
+          "text": "Solde de financement des sociétés non financières françaises : comptes annuels, en milliards d’euros. Les deux années proviennent de la même publication des comptes nationaux.",
           "source": "Janine Eguienta, Jean-Cyprien Héam et Pauline Meinzel, Insee Première n° 2105, Les comptes de la Nation en 2025, 29 mai 2026, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855",
-          "analysis": "Les SNF passent d’une capacité à un besoin. Cette observation contredit une affirmation universelle « les entreprises sont toujours en besoin ». La Nation est en besoin les deux années. Le chiffre national n’est pas la dette publique.",
+          "analysis": "Le secteur passe d’une capacité de 17,5 milliards à un besoin de 3,9 milliards. Cela n’établit pas la situation de chaque entreprise. Le solde annuel ne mesure pas la dette accumulée.",
           "kind": "Données observées · France · milliards d’euros",
           "table": [
             [
@@ -62,14 +64,11 @@
               "Sociétés non financières",
               "+17,5",
               "−3,9"
-            ],
-            [
-              "Nation",
-              "−4,7",
-              "−8,0"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Janine Eguienta, Jean-Cyprien Héam et Pauline Meinzel, Insee Première n° 2105, Les comptes de la Nation en 2025, 29 mai 2026, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855",
+          "source_student": "Janine Eguienta, Jean-Cyprien Héam et Pauline Meinzel, Insee Première n° 2105, Les comptes de la Nation en 2025, 29 mai 2026, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855"
         }
       ],
       "questions": [
@@ -127,14 +126,16 @@
           "analysis": "Le texte associe anticipation de revenus, renoncement à l’usage immédiat et risque. La relation durée–taux est une tendance conditionnelle, non une règle sans exception. Distinguer taux en pourcentage et intérêts en euros.",
           "kind": "Texte fourni · éducation financière",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Institut pour l’éducation financière du public, « Le prix de l’argent… et du temps », La finance pour tous, 9 novembre 2016 ; dossier fourni Ch5, p. 3.",
+          "source_student": "Institut pour l’éducation financière du public, « Le prix de l’argent… et du temps », La finance pour tous, 9 novembre 2016."
         },
         {
           "id": 4,
           "title": "Trouver le taux qui égalise offre et demande",
-          "text": "Modèle pédagogique à une période. Les fonds sont comparables par leur risque et leur durée. Les agents offrent davantage de fonds lorsque leur rémunération augmente ; des projets deviennent moins avantageux lorsque le coût du financement augmente. Le tableau représente des quantités de fonds, non un nombre de personnes. Pour un prêt de 10 000 € remboursé intégralement après un an, hors frais et assurance, les intérêts valent capital × taux. Le remboursement total comprend le capital et les intérêts.",
+          "text": "Modèle de fonds prêtables : les fonds sont comparables par leur risque et leur durée. L’inflation est supposée nulle ; les taux réels du tableau sont alors égaux aux taux nominaux. Une hausse du taux rémunère davantage les fonds proposés et renchérit le financement des projets. Pour un prêt de 10 000 € remboursé intégralement après un an, hors frais et assurance, les intérêts sont calculés sur le capital prêté.\nLe taux nominal sert à calculer les intérêts monétaires. Le taux réel corrige l’effet de l’inflation ; on l’approche par taux nominal moins taux d’inflation. Le calcul exact du taux réel est (1 + taux nominal) / (1 + inflation) − 1.",
           "source": "Modèle et valeurs construits pour CAPSES ; cadrage du marché des fonds prêtables : Éduscol, fiche Financement, juin 2019, p. 2–3.",
-          "analysis": "Équilibre à 4 % et 100 unités. À 2 %, pénurie de fonds de 80 ; à 6 %, excédent de 80. Si la demande augmente de 80 à chaque taux, nouvel équilibre à 6 % et 140. Le modèle ne décrit pas à lui seul la création monétaire bancaire, abordée dans le chapitre suivant.",
+          "analysis": "Équilibre initial à 4 % et 100 unités ; à 2 %, excès de demande de 80. Pour la hausse d’offre de 80, nouvel équilibre à 2 % et 140. Distinguer le déplacement de l’offre en H2 et celui de la demande en H8. Pour le prêt monétaire à 4 % avec inflation de 2 %, le gain réel approché est de 2 %, soit 1,96 % exactement.",
           "kind": "Complément pédagogique CAPSES",
           "table": [
             [
@@ -158,7 +159,9 @@
               "60"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Modèle et valeurs construits pour CAPSES ; cadrage du marché des fonds prêtables : Éduscol, fiche Financement, juin 2019, p. 2–3.",
+          "source_student": "Modèle et valeurs construits pour CAPSES ; cadrage du marché des fonds prêtables : Éduscol, fiche Financement, juin 2019, p. 2–3."
         }
       ],
       "questions": [
@@ -186,22 +189,29 @@
         {
           "id": 9,
           "doc": 4,
-          "text": "Repérez l’équilibre et expliquez pourquoi 2 % ne convient pas dans ce modèle.",
-          "answer": "À 4 %, offre et demande sont égales à 100. À 2 %, la demande 140 excède l’offre 60 de 80 ; le taux tend à augmenter.",
+          "text": "Un prêt rapporte 4 % en euros sur un an tandis que les prix augmentent de 2 %. Quel est le gain réel approché du prêteur ? Expliquez.",
+          "answer": "Le gain réel approché est 4 − 2 = 2 %. Le capital remboursé permet d’acheter davantage qu’au départ, mais le gain de pouvoir d’achat est inférieur au gain monétaire. Le taux exact est environ 1,96 %.",
           "lines": 3
         },
         {
           "id": 10,
           "doc": 4,
-          "text": "Si la demande augmente de 80 unités à chaque taux, trouvez le nouvel équilibre.",
-          "answer": "La demande devient 220,180,140 ; à 6 %, elle égale l’offre 140. Le taux et la quantité échangée augmentent, offre inchangée.",
+          "text": "Repérez l’équilibre et expliquez pourquoi 2 % ne convient pas dans ce modèle.",
+          "answer": "À 4 %, offre et demande sont égales à 100. À 2 %, la demande 140 excède l’offre 60 de 80 ; le taux tend à augmenter.",
+          "lines": 3
+        },
+        {
+          "id": 11,
+          "doc": 4,
+          "text": "Une mesure incite à offrir 80 unités supplémentaires à chaque taux. Trouvez le nouvel équilibre, à demande inchangée.",
+          "answer": "L’offre devient 140, 180 et 220 aux taux de 2 %, 4 % et 6 %. Elle égale la demande de 140 à 2 %. Le taux baisse de 4 % à 2 % et la quantité augmente de 100 à 140.",
           "lines": 3
         }
       ],
       "trace": {
         "subject": "Expliquez comment le taux d’intérêt relie les décisions de prêt et d’emprunt.",
-        "words": "capacité · besoin · offre · demande · rémunération · coût · équilibre",
-        "text": "Le financement met en relation des agents qui disposent de ressources et d’autres qui recherchent des fonds. Le taux d’intérêt est la rémunération du prêteur et le coût du crédit pour l’emprunteur. Dans le modèle des fonds prêtables, l’offre croît avec le taux et la demande décroît. Leur confrontation détermine un taux d’équilibre. Dans le tableau, ce taux est 4 % pour 100 unités. Une hausse de la demande, à offre inchangée, porte le taux à 6 %."
+        "words": "capacité · besoin · offre · demande · rémunération · coût · équilibre · taux nominal · taux réel",
+        "text": "Le taux d’intérêt rémunère le prêteur et représente un coût pour l’emprunteur. Son niveau réel tient compte de l’inflation. À 4 % nominal et 2 % d’inflation, le gain réel est d’environ 2 %. Dans le modèle des fonds prêtables, offre croissante et demande décroissante se rencontrent à l’équilibre : 4 % et 100 unités dans le tableau initial. Une hausse de l’offre de 80 unités porte l’équilibre à 2 % et 140 unités, à demande inchangée. Le résultat dépend du déplacement étudié."
       },
       "home": null
     },
@@ -217,7 +227,7 @@
           "title": "Du revenu à l’épargne d’un ménage",
           "text": "Un ménage reçoit des revenus primaires tirés de son activité et de son patrimoine. La redistribution modifie ces ressources : les prestations sociales en espèces s’ajoutent ; les impôts directs et les cotisations sociales se retranchent. Le revenu disponible permet de consommer et d’épargner. Les revenus d’activité du tableau sont présentés avant les cotisations indiquées : il ne faut pas les retrancher deux fois. Tous les montants portent sur la même année.",
           "source": "Exemple annuel construit pour CAPSES ; notions de revenu disponible et d’épargne : programme SES Première et définitions Insee.",
-          "analysis": "Revenu disponible = 42 000 + 2 000 + 4 000 − 6 000 − 2 000 = 40 000 ; épargne = 6 000 ; taux = 15 %. Ne pas enlever la TVA une seconde fois. Une épargne positive ne suffit pas à établir une capacité après investissement.",
+          "analysis": "Revenu disponible = 42 000 + 2 000 + 4 000 − 6 000 − 2 000 = 40 000 ; épargne = 6 000 ; taux = 15 %. Ne pas retrancher deux fois des cotisations déjà déduites d’un salaire net. Une épargne positive ne suffit pas à établir une capacité après investissement.",
           "kind": "Complément pédagogique CAPSES",
           "table": [
             [
@@ -253,12 +263,14 @@
               "10 000"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Exemple annuel construit pour CAPSES ; notions de revenu disponible et d’épargne : programme SES Première et définitions Insee.",
+          "source_student": "Exemple annuel construit pour CAPSES ; notions de revenu disponible et d’épargne : programme SES Première et définitions Insee."
         },
         {
           "id": 6,
           "title": "L’épargne ne se confond pas avec la capacité de financement",
-          "text": "Le taux d’épargne rapporte la part non consommée du revenu au revenu disponible brut. Le taux d’épargne financière rapporte la capacité de financement à ce même revenu. Les ménages peuvent utiliser leur épargne pour investir, notamment dans le logement. Un résultat pour l’ensemble du secteur ne décrit pas chaque ménage.",
+          "text": "Le taux d’épargne rapporte la part non consommée du revenu au revenu disponible brut. Le taux d’épargne financière rapporte la capacité de financement à ce même revenu. Les ménages peuvent utiliser leur épargne pour investir, notamment dans le logement.",
           "source": "Insee Première n° 2105, 29 mai 2026, figure 5 ; France, ménages, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855",
           "analysis": "La différence 18,5 à 17,9 représente −0,6 point. Le taux financier 2025 est 9,0 %. Ne pas soustraire mécaniquement les deux taux pour reconstituer toute la FBCF : le compte de capital comprend d’autres opérations. Le cas simplifié du document 5 donne un besoin de 4 000 malgré 6 000 d’épargne.",
           "kind": "Données observées · France · pourcentage du RDB",
@@ -282,40 +294,42 @@
               "9,0"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Insee Première n° 2105, 29 mai 2026, figure 5 ; France, ménages, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855",
+          "source_student": "Insee Première n° 2105, 29 mai 2026, figure 5 ; France, ménages, comptes nationaux base 2020. https://www.insee.fr/fr/statistiques/8996855"
         }
       ],
       "questions": [
         {
-          "id": 11,
+          "id": 12,
           "doc": 5,
           "text": "Calculez le revenu disponible du ménage du document 5.",
           "answer": "42 000 + 2 000 + 4 000 − 6 000 − 2 000 = 40 000 € sur l’année.",
           "lines": 3
         },
         {
-          "id": 12,
+          "id": 13,
           "doc": 5,
           "text": "Calculez son épargne et son taux d’épargne.",
           "answer": "Épargne : 40 000−34 000=6 000 €. Taux : 6 000/40 000×100=15 %.",
           "lines": 3
         },
         {
-          "id": 13,
+          "id": 14,
           "doc": 5,
           "text": "Après l’investissement logement, quel est son besoin dans ce compte simplifié ?",
           "answer": "L’épargne 6 000 ne couvre pas l’investissement 10 000 : il manque 4 000 €. Le ménage épargne et présente pourtant un besoin de financement.",
           "lines": 4
         },
         {
-          "id": 14,
+          "id": 15,
           "doc": 6,
           "text": "Comparez le taux d’épargne des ménages en 2024 et 2025, en points.",
           "answer": "Il passe de 18,5 % à 17,9 % du RDB, soit une baisse de 0,6 point. Ce n’est pas une baisse de 0,6 % du montant de l’épargne.",
           "lines": 3
         },
         {
-          "id": 15,
+          "id": 16,
           "doc": 6,
           "text": "Expliquez pourquoi le résultat de l’ensemble des ménages n’empêche pas certains d’emprunter.",
           "answer": "Le résultat agrège des situations différentes. Des ménages peuvent avoir un investissement supérieur à leur épargne alors que d’autres dégagent une capacité ; une dette ancienne peut aussi subsister.",
@@ -340,12 +354,14 @@
           "analysis": "VA = 120 000 ; EBE = 120 000 − 70 000 − 5 000 + 2 000 = 47 000. L’EBE est brut : ne pas y ajouter à nouveau les amortissements pour calculer une épargne. Il n’est ni le chiffre d’affaires ni le bénéfice net.",
           "kind": "Complément pédagogique CAPSES",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Compte simplifié construit pour CAPSES ; formule conforme à la définition de l’EBE de l’Insee.",
+          "source_student": "Compte simplifié construit pour CAPSES ; formule conforme à la définition de l’EBE de l’Insee."
         },
         {
           "id": 8,
           "title": "Ce qui peut rester pour investir",
-          "text": "Après les autres opérations de répartition, une entreprise conserve une épargne brute de 30 000 €. Elle prévoit un investissement de 50 000 €. Dans ce compte simplifié, sans autres opérations en capital, elle peut financer une partie du projet par ses ressources internes et chercher le complément à l’extérieur. Le taux d’autofinancement est le rapport de l’épargne brute à la formation brute de capital fixe, multiplié par 100. Un taux sectoriel ne signifie pas que chaque entreprise se trouve dans la même situation.",
+          "text": "Après les autres opérations de répartition, une entreprise conserve une épargne brute de 30 000 €. Elle prévoit un investissement de 50 000 €. Dans ce compte simplifié, sans autres opérations en capital, elle peut financer une partie du projet par ses ressources internes et chercher le complément à l’extérieur. Le taux d’autofinancement est le rapport de l’épargne brute à la formation brute de capital fixe, multiplié par 100.",
           "source": "Exemple construit pour CAPSES ; données du tableau : Insee Première n° 2105, 29 mai 2026, figure 5, sociétés non financières, France, base 2020.",
           "analysis": "Cas : taux 60 %, complément 20 000. Les taux observés 90,8 et 88,8 % baissent de 2 points ; ils n’indiquent pas la part exacte de chaque projet réellement payée en interne. L’EBE intervient en amont de l’épargne brute : absence d’identité EBE = autofinancement.",
           "kind": "Exemple construit et données observées distingués",
@@ -361,40 +377,42 @@
               "88,8 %"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Exemple construit pour CAPSES ; données du tableau : Insee Première n° 2105, 29 mai 2026, figure 5, sociétés non financières, France, base 2020.",
+          "source_student": "Exemple construit pour CAPSES ; données du tableau : Insee Première n° 2105, 29 mai 2026, figure 5, sociétés non financières, France, base 2020."
         }
       ],
       "questions": [
         {
-          "id": 16,
+          "id": 17,
           "doc": 7,
           "text": "Calculez la valeur ajoutée de l’entreprise puis son EBE.",
           "answer": "VA=200 000−80 000=120 000 €. EBE=120 000−70 000−5 000+2 000=47 000 €.",
           "lines": 3
         },
         {
-          "id": 17,
+          "id": 18,
           "doc": 7,
-          "text": "Pourquoi ne peut-on pas présenter l’EBE comme le bénéfice net ?",
-          "answer": "Des opérations restent à prendre en compte : intérêts, impôt sur les bénéfices, consommation de capital fixe notamment. L’EBE est un solde brut d’exploitation.",
+          "text": "Dans un compte simplifié, l’entreprise paie ensuite 8 000 € d’intérêts, 4 000 € d’impôt sur les bénéfices et 10 000 € d’amortissements. Les autres opérations sont nulles. Quel résultat net obtient-elle ?",
+          "answer": "À partir de l’EBE de 47 000 €, le résultat net simplifié est 47 000 − 8 000 − 4 000 − 10 000 = 25 000 €. Ce calcul distingue concrètement l’EBE du résultat net ; il ne constitue pas une formule exhaustive de comptabilité.",
           "lines": 4
         },
         {
-          "id": 18,
+          "id": 19,
           "doc": 8,
           "text": "Calculez le taux d’autofinancement du cas et le financement extérieur nécessaire.",
           "answer": "30 000/50 000×100=60 %. Complément : 50 000−30 000=20 000 €, en l’absence d’autres opérations.",
           "lines": 3
         },
         {
-          "id": 19,
+          "id": 20,
           "doc": 8,
           "text": "Comparez les taux d’autofinancement des SNF en 2024 et 2025.",
           "answer": "Le taux passe de 90,8 à 88,8 %, soit−2 points. L’épargne brute peut couvrir une part plus faible de la FBCF au niveau sectoriel.",
           "lines": 3
         },
         {
-          "id": 20,
+          "id": 21,
           "doc": 8,
           "text": "Pourquoi un taux sectoriel élevé n’assure-t-il pas l’autofinancement de chaque entreprise ?",
           "answer": "Les ressources et les projets sont répartis inégalement. Une entreprise peut manquer de ressources internes alors que d’autres ont une épargne abondante.",
@@ -421,58 +439,62 @@
         {
           "id": 9,
           "title": "Crédit, action ou obligation",
-          "text": "Pour financer une machine de 100 000 €, une entreprise retient 40 000 € de ressources internes et recherche 60 000 € de financement externe. Trois solutions sont comparées, sans frais pour simplifier : emprunter à une banque à 5 % sur un an ; émettre 60 obligations de 1 000 € portant un intérêt annuel fixe de 4 % ; émettre 600 actions nouvelles à 100 €. L’emprunt et les obligations créent une dette. L’action donne une part du capital : le dividende dépend notamment des bénéfices et de la décision de distribution ; il n’est pas garanti.",
+          "text": "Pour financer une machine de 100 000 €, une entreprise retient 40 000 € de ressources internes. Trois solutions sont comparées, sans frais pour simplifier : emprunter à une banque à 5 % sur un an ; émettre 60 obligations de 1 000 € portant un intérêt annuel fixe de 4 % ; émettre 600 actions nouvelles à 100 €. L’emprunt et les obligations créent une dette. L’action donne une part du capital : le dividende dépend notamment des bénéfices et de la décision de distribution ; il n’est pas garanti.",
           "source": "Cas construit pour CAPSES. Les taux sont des hypothèses, pas des offres de marché.",
           "analysis": "Crédit : 3 000 d’intérêts ; obligations : 2 400 ; émission d’actions : 60 000 de capitaux propres, sans remboursement contractuel analogue à une dette. Ne pas conclure que les actions sont gratuites : dilution et rendement attendu. L’accès aux modes dépend de taille, risque, coût, garanties et marché.",
           "kind": "Complément pédagogique CAPSES",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Cas construit pour CAPSES. Les taux sont des hypothèses, pas des offres de marché.",
+          "source_student": "Cas construit pour CAPSES. Les taux sont des hypothèses, pas des offres de marché."
         },
         {
           "id": 10,
           "title": "Pourquoi distinguer marché primaire et marché secondaire ?",
-          "text": "Lors de l’émission de titres nouveaux, l’émetteur reçoit des fonds des souscripteurs : c’est le marché primaire. Lorsque des détenteurs revendent des titres déjà émis à d’autres investisseurs, l’argent est versé au vendeur du titre : c’est le marché secondaire. Ces transactions ne procurent pas directement de nouveaux fonds à l’entreprise émettrice, mais elles rendent le placement plus liquide et peuvent faciliter de futures émissions. Une banque peut aussi aider une entreprise à émettre des titres sans transformer l’opération en prêt bancaire.",
+          "text": "Le financement externe peut être intermédié : une banque accorde un crédit et porte une créance sur l’emprunteur. Il peut aussi passer par l’émission de titres sur un marché, ce qu’on appelle financement direct ; une banque peut aider à organiser l’émission sans accorder elle-même le prêt.\nUne société émet 1 000 actions nouvelles à 20 €. Six mois plus tard, Léa revend à Marc 100 de ces actions à 24 €. Léa achète ensuite 30 obligations nouvellement émises de 1 000 € chacune. Le marché primaire accueille les titres nouveaux ; le marché secondaire permet de revendre des titres existants.",
           "source": "Présentation CAPSES, en appui sur la distinction proposée dans les dossiers de Mme Rabhi et A. Pilippossian, corrigée sur le lieu de souscription des titres nouveaux.",
           "analysis": "Les titres nouveaux sont souscrits sur le primaire. Une revente secondaire ne fait pas entrer une nouvelle somme dans la trésorerie de l’émetteur. Le financement direct n’implique pas l’absence de tout intermédiaire de service. Éviter une opposition simpliste entre banques et marchés.",
           "kind": "Complément pédagogique CAPSES",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Présentation CAPSES, en appui sur la distinction proposée dans les dossiers de Mme Rabhi et A. Pilippossian, corrigée sur le lieu de souscription des titres nouveaux.",
+          "source_student": "Cas construit pour CAPSES ; distinctions intermédié/direct et primaire/secondaire."
         }
       ],
       "questions": [
         {
-          "id": 21,
+          "id": 22,
           "doc": 9,
-          "text": "Calculez le montant à financer à l’extérieur dans le document 9.",
-          "answer": "100 000−40 000=60 000 €. Les 40 000 de ressources internes complètent le financement externe.",
+          "text": "Calculez le montant du financement externe puis sa part dans le coût de la machine.",
+          "answer": "Montant : 100 000 − 40 000 = 60 000 €. Part : 60 000 / 100 000 × 100 = 60 %.",
           "lines": 3
         },
         {
-          "id": 22,
+          "id": 23,
           "doc": 9,
           "text": "Comparez les intérêts annuels du prêt et des obligations dans ce cas.",
           "answer": "Prêt : 60 000×5 %=3 000 €. Obligations : 60 000×4 %=2 400 €. Ces taux construits ne prouvent pas qu’une émission obligataire est toujours moins coûteuse.",
           "lines": 4
         },
         {
-          "id": 23,
+          "id": 24,
           "doc": 9,
           "text": "Expliquez ce que change une émission d’actions pour l’entreprise et les souscripteurs.",
           "answer": "L’entreprise augmente ses capitaux propres de 60 000 €. Les nouveaux actionnaires deviennent copropriétaires, avec des droits et des risques ; ils ne deviennent pas ses créanciers et le dividende n’est pas garanti.",
           "lines": 4
         },
         {
-          "id": 24,
+          "id": 25,
           "doc": 10,
-          "text": "Qui reçoit l’argent lors d’une émission nouvelle puis d’une revente du même titre ?",
-          "answer": "L’émetteur reçoit les fonds sur le marché primaire. Lors de la revente sur le secondaire, le vendeur du titre reçoit le prix, non l’entreprise émettrice.",
+          "text": "Qui reçoit les fonds dans chacune des trois transactions et pour quel montant ?",
+          "answer": "La société reçoit 20 000 € lors de l’émission d’actions. Léa reçoit 2 400 € lors de la revente à Marc ; la société ne reçoit rien de nouveau à cette étape. L’émetteur des nouvelles obligations reçoit 30 000 € de Léa.",
           "lines": 4
         },
         {
-          "id": 25,
+          "id": 26,
           "doc": 10,
-          "text": "Pourquoi le marché secondaire peut-il néanmoins faciliter le financement ?",
-          "answer": "La possibilité de revendre améliore la liquidité du placement. Elle peut encourager les investisseurs à souscrire de nouvelles émissions, sans que chaque revente finance directement l’entreprise.",
+          "text": "Léa accepterait-elle aussi facilement d’acheter les actions si elle ne pouvait jamais les revendre ? Expliquez le lien avec le financement primaire.",
+          "answer": "L’impossibilité de revendre rend le placement moins liquide et peut décourager Léa. Un marché secondaire peut donc faciliter la souscription primaire, même si chaque revente ne finance pas directement l’entreprise.",
           "lines": 4
         }
       ],
@@ -491,56 +513,67 @@
           "title": "Déficit et dette sont deux grandeurs différentes",
           "text": "Le déficit budgétaire est la situation dans laquelle les recettes du budget de l'État sont inférieures aux dépenses. Il s'agit donc d'un solde négatif. Pour financer son déficit, l'État est obligé d'emprunter. La dette de l'État se définit alors comme l'ensemble des emprunts effectués par l'État, dont l'encours (montant total des emprunts) résulte de l'accumulation des déficits de l'État. Le déficit budgétaire est un flux, c'est-à-dire une grandeur économique mesurée au cours d'une période donnée (ex.: un an), alors que la dette est un stock, à savoir une grandeur économique mesurée à un moment donné. Ces deux données, bien que différentes, sont liées : le flux du déficit budgétaire vient alimenter l'encours de dette, qui en retour agit sur le niveau de déficit par l'augmentation des intérêts versés, qui sont une charge (dépense) budgétaire. La succession des déficits favorise l'apparition de nouveaux déficits. En effet, en gonflant la dette, elle peut provoquer un effet \"boule de neige\". La dette des administrations publiques s'accroît ainsi selon un processus auto-entretenu, la charge d'intérêt qu'elle produit conduisant à augmenter le déficit et donc à accroître encore l'endettement de l'État, et la charge des intérêts.",
           "source": "Vie-publique.fr, DILA, « Quelles sont les différences entre le déficit budgétaire et la dette de l’État ? », 31 octobre 2017, passage reproduit dans le dossier A. Pilippossian, p. 10.",
-          "analysis": "Le texte pose correctement flux et stock. Son « processus auto-entretenu » décrit un risque, pas une nécessité : la dynamique dépend des soldes primaires, des taux et de la croissance. Refinancer un principal arrivé à échéance ne constitue pas une dépense budgétaire ; les intérêts, eux, en sont une.",
+          "analysis": "Le texte pose correctement flux et stock. Son « processus auto-entretenu » décrit un risque, pas une nécessité : la dynamique dépend des soldes primaires, des taux et de la croissance. Refinancer un principal arrivé à échéance ne constitue pas une dépense budgétaire ; les intérêts, eux, en sont une. La mise en garde sur le caractère non inévitable de la dynamique est réservée à la régulation du professeur, après la recherche des élèves.",
           "kind": "Texte institutionnel fourni",
           "table": null,
-          "note": "Le texte étudie le risque d’une accumulation de déficits. Un mécanisme possible ne constitue pas une évolution inévitable."
+          "note": "",
+          "source_full": "Vie-publique.fr, DILA, « Quelles sont les différences entre le déficit budgétaire et la dette de l’État ? », 31 octobre 2017, passage reproduit dans le dossier A. Pilippossian, p. 10.",
+          "source_student": "Vie-publique.fr, DILA, « Quelles sont les différences entre le déficit budgétaire et la dette de l’État ? », 31 octobre 2017."
         },
         {
           "id": 12,
           "title": "Calculer un solde et un besoin d’emprunt",
-          "text": "Budget fictif de l’État pour une année, en milliards d’euros : recettes fiscales 300 ; recettes non fiscales 20 ; dépenses budgétaires 360, intérêts compris. Les emprunts ne sont pas inscrits parmi ces recettes budgétaires. En plus du déficit à couvrir, 40 milliards de dette ancienne arrivent à échéance. On suppose la trésorerie inchangée et aucune autre opération financière. Le périmètre est l’État : les comptes des collectivités territoriales et de la Sécurité sociale n’y sont pas inclus.",
+          "text": "Budget fictif de l’État pour une année, en milliards d’euros : recettes fiscales 300 ; recettes non fiscales 20 ; dépenses budgétaires 360, intérêts compris. Les recettes non fiscales proviennent par exemple des dividendes de l’État actionnaire, des revenus de son domaine ou des amendes. Les emprunts ne sont pas des recettes budgétaires. En plus du déficit à couvrir, 40 milliards de dette ancienne arrivent à échéance. La trésorerie est supposée inchangée, sans autre opération financière. Périmètre : État.",
           "source": "Simulation CAPSES, à distinguer des données budgétaires françaises observées.",
           "analysis": "Recettes 320 ; solde−40 ; emprunt brut 80 (déficit 40 + principal 40). La dette nette de ces remboursements augmente de 40 dans ce cas. Dire « emprunt 80 donc déficit 80 » est faux. Les dividendes de l’État sont une recette non fiscale ; les impôts sont fiscaux.",
           "kind": "Complément pédagogique CAPSES",
           "table": null,
-          "note": ""
+          "note": "",
+          "extra": [
+            {
+              "title": "Repère réel · financement de l’État en 2025",
+              "text": "En 2025, le déficit budgétaire de l’État est de 124,2 milliards d’euros ; l’amortissement de la dette à moyen et long termes est de 168,0 milliards. Le besoin total de financement atteint 290,5 milliards, en tenant compte également de 1,1 milliard d’amortissement SNCF Réseau et de −2,8 milliards d’autres besoins de trésorerie. Il ne s’agit pas du déficit de l’ensemble des administrations publiques.",
+              "source": "Ministère chargé du Budget, projet de loi relatif aux résultats de la gestion et portant approbation des comptes de 2025, article 2, exécution 2025, publié en avril 2026. https://www.budget.gouv.fr/documentation/file-download/33241"
+            }
+          ],
+          "source_full": "Simulation CAPSES, à distinguer des données budgétaires françaises observées.",
+          "source_student": "Simulation CAPSES, à distinguer des données budgétaires françaises observées."
         }
       ],
       "questions": [
         {
-          "id": 26,
+          "id": 27,
           "doc": 11,
           "text": "Expliquez la différence entre déficit et dette avec les notions de flux et de stock.",
           "answer": "Le déficit est un solde annuel négatif de recettes moins dépenses ; la dette est un encours mesuré à une date. Plusieurs déficits peuvent l’alimenter.",
           "lines": 4
         },
         {
-          "id": 27,
+          "id": 28,
           "doc": 11,
           "text": "Comment les intérêts peuvent-ils peser sur le budget sans rendre l’endettement inévitable ?",
           "answer": "Les intérêts sont une dépense et peuvent creuser le solde. Mais les autres recettes et dépenses, la croissance et les conditions de financement influencent la trajectoire.",
           "lines": 4
         },
         {
-          "id": 28,
+          "id": 29,
           "doc": 12,
           "text": "Calculez les recettes puis le solde du budget fictif.",
           "answer": "Recettes : 300+20=320 milliards. Solde : 320−360=−40 milliards ; déficit 40.",
           "lines": 3
         },
         {
-          "id": 29,
+          "id": 30,
           "doc": 12,
           "text": "Pourquoi le besoin d’emprunt brut atteint-il 80 dans cette simulation ?",
           "answer": "Il faut financer 40 de déficit et refinancer 40 de principal arrivé à échéance, soit 80. Le remboursement de ce principal n’est pas une dépense budgétaire.",
           "lines": 4
         },
         {
-          "id": 30,
+          "id": 31,
           "doc": 12,
-          "text": "Pourquoi ce solde ne peut-il pas être appelé le déficit de toutes les administrations publiques ?",
-          "answer": "Le budget fictif porte uniquement sur l’État. Le déficit public prend en compte aussi les collectivités et les administrations de Sécurité sociale.",
+          "text": "À partir du repère réel, expliquez pourquoi le besoin de financement de l’État en 2025 ne se réduit pas à son déficit.",
+          "answer": "Le besoin total de 290,5 milliards comprend le déficit de 124,2 milliards mais aussi le refinancement de dettes arrivant à échéance, notamment 168,0 milliards à moyen et long termes, ainsi que d’autres opérations. Le déficit ne mesure pas ces remboursements de principal.",
           "lines": 4
         }
       ],
@@ -561,55 +594,59 @@
         {
           "id": 13,
           "title": "Les plans de relance face à la crise de 2008",
-          "text": "Des plans de relance ont été mis en place dans la quasi-totalité des pays touchés par la crise. Aux Etats-Unis, un plan de relance massif de plus de 800 milliards de dollars est annoncé, tandis que les gouvernements européens adoptent des mesures chiffrées à 200 milliards d'euros, avec de fortes divergences entre les pays, à la fois en termes de montants concernés et de modalités. Ainsi, le plan britannique est principalement orienté vers le soutien au pouvoir d'achat des ménages (75 % du montant des mesures), alors que la France privilégie le soutien aux entreprises. Au total, ces différents plans ont soutenu l’activité et l'emploi ; la Commission européenne estime ainsi que les plans de relance européens ont permis à la zone euro de bénéficier de 0,75 point de PIB en plus en 2009 et d'environ 0,4 point en 2010. De même, aux États-Unis, environ 3 millions d'emplois ont été sauvés grâce au plan de soutien à l’activité.",
+          "text": "Des plans de relance ont été mis en place dans la quasi-totalité des pays touchés par la crise. Aux États-Unis, un plan de relance massif de plus de 800 milliards de dollars est annoncé, tandis que les gouvernements européens adoptent des mesures chiffrées à 200 milliards d'euros, avec de fortes divergences entre les pays, à la fois en termes de montants concernés et de modalités. Ainsi, le plan britannique est principalement orienté vers le soutien au pouvoir d'achat des ménages (75 % du montant des mesures), alors que la France privilégie le soutien aux entreprises. Au total, ces différents plans ont soutenu l’activité et l'emploi ; la Commission européenne estime ainsi que les plans de relance européens ont permis à la zone euro de bénéficier de 0,75 point de PIB en plus en 2009 et d'environ 0,4 point en 2010. De même, aux États-Unis, environ 3 millions d'emplois ont été sauvés grâce au plan de soutien à l’activité.",
           "source": "« D’une crise à l’autre : des subprimes à la crise mondiale », Cahiers français n° 359, Les politiques à l’épreuve de la crise, La Documentation française, 2010 ; dossier Ch5, p. 5. Auteur individuel non indiqué dans le dossier.",
           "analysis": "Exemple historique, non actualité. Les gains de PIB cités sont des estimations par rapport à un scénario sans plan, non la croissance totale observée ni une preuve indépendante de toute hypothèse. Faire expliquer demande, commandes, production et emploi.",
           "kind": "Texte fourni · exemple historique",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "« D’une crise à l’autre : des subprimes à la crise mondiale », Cahiers français n° 359, Les politiques à l’épreuve de la crise, La Documentation française, 2010 ; dossier Ch5, p. 5. Auteur individuel non indiqué dans le dossier.",
+          "source_student": "« D’une crise à l’autre : des subprimes à la crise mondiale », Cahiers français n° 359, Les politiques à l’épreuve de la crise, La Documentation française, 2010."
         },
         {
           "id": 14,
           "title": "Une dépense peut en entraîner d’autres",
-          "text": "Une administration commande 100 unités de travaux à des entreprises locales qui disposent de capacités de production inutilisées. Dans une simulation fermée sans impôts supplémentaires ni importations, chaque revenu nouveau donne lieu à 80 % de consommation et 20 % d’épargne. Les entreprises répondent aux commandes en produisant davantage aux prix inchangés. Le premier revenu supplémentaire est 100 ; la dépense de consommation suivante est 80, puis 64. Dans l’économie réelle, les importations, l’épargne, la fiscalité, les délais et les capacités de production modifient cette transmission.",
+          "text": "Une administration commande 100 unités de travaux à des entreprises locales disposant de capacités de production inutilisées. Dans une simulation fermée, sans impôts supplémentaires ni importations, chaque revenu nouveau donne lieu à 80 % de consommation et 20 % d’épargne. Les entreprises répondent aux commandes aux prix inchangés. Le premier revenu supplémentaire est de 100 unités.\nPour éprouver le modèle, on envisage ensuite une économie où une partie des achats porte sur des produits fabriqués à l’étranger et où certaines entreprises travaillent déjà au maximum de leurs capacités.",
           "source": "Simulation pédagogique CAPSES. Les unités sont conventionnelles ; ce n’est pas une estimation de multiplicateur pour la France.",
-          "analysis": "Les trois premières vagues valent 244. Ne pas exiger la somme infinie 500, hors objectif. L’épargne réduit la dépense induite immédiate dans ce modèle ; elle peut alimenter d’autres financements. Sans capacités disponibles, hausse des prix ou importations peuvent limiter l’effet sur la production.",
+          "analysis": "La recherche porte désormais sur la quatrième vague, non donnée dans le document. Total des quatre premières vagues : 295,2. Les importations réduisent les débouchés domestiques induits ; avec des capacités saturées, la demande peut augmenter les prix plutôt que les quantités.",
           "kind": "Complément pédagogique CAPSES",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Simulation pédagogique CAPSES. Les unités sont conventionnelles ; ce n’est pas une estimation de multiplicateur pour la France.",
+          "source_student": "Simulation pédagogique CAPSES. Les unités sont conventionnelles ; ce n’est pas une estimation de multiplicateur pour la France."
         }
       ],
       "questions": [
         {
-          "id": 31,
+          "id": 32,
           "doc": 13,
-          "text": "Pourquoi les plans du texte sont-ils des décisions de relance et non seulement des mécanismes automatiques ?",
-          "answer": "Les gouvernements décident des mesures nouvelles de soutien. Les stabilisateurs automatiques correspondent aux variations spontanées des recettes et dépenses liées à l’activité.",
+          "text": "Classez les mesures du texte selon qu’elles soutiennent d’abord les ménages ou les entreprises, puis justifiez un exemple.",
+          "answer": "Le plan britannique soutient d’abord le pouvoir d’achat des ménages ; le plan français privilégie les entreprises. Une aide au revenu peut accroître la consommation ; une aide aux entreprises peut soutenir investissement ou activité. Le texte décrit des mesures décidées par les gouvernements.",
           "lines": 4
         },
         {
-          "id": 32,
+          "id": 33,
           "doc": 13,
           "text": "Expliquez comment un soutien au revenu peut soutenir la production.",
           "answer": "Une part du revenu supplémentaire est consommée. Les entreprises reçoivent des commandes et, si elles disposent de capacités disponibles, peuvent augmenter production et emploi.",
           "lines": 4
         },
         {
-          "id": 33,
+          "id": 34,
           "doc": 13,
           "text": "Le gain estimé de 0,75 point de PIB donne-t-il la croissance totale de 2009 ?",
           "answer": "Non. Il mesure dans l’estimation citée l’effet du plan par rapport à un scénario sans ce plan, non l’évolution totale du PIB.",
           "lines": 3
         },
         {
-          "id": 34,
+          "id": 35,
           "doc": 14,
-          "text": "Calculez la consommation induite par le revenu de 80 puis le total des trois premiers revenus.",
-          "answer": "80×0,8=64. Total des trois premiers revenus : 100+80+64=244 unités.",
+          "text": "Calculez les revenus des deuxième, troisième et quatrième vagues, puis leur total avec les 100 unités initiales.",
+          "answer": "Deuxième vague : 100 × 0,8 = 80. Troisième : 80 × 0,8 = 64. Quatrième : 64 × 0,8 = 51,2. Total des quatre premières vagues : 100 + 80 + 64 + 51,2 = 295,2 unités. Il ne s’agit pas de la somme de toutes les vagues possibles.",
           "lines": 3
         },
         {
-          "id": 35,
+          "id": 36,
           "doc": 14,
           "text": "Présentez deux conditions qui limitent la transposition de cette simulation au réel.",
           "answer": "Une part des dépenses peut se porter sur les importations ou être épargnée ; des contraintes de capacité peuvent faire monter les prix plutôt que les quantités. Les délais et la fiscalité interviennent aussi.",
@@ -634,12 +671,15 @@
           "analysis": "Le texte énonce « toutes choses égales par ailleurs ». Il faut préciser offre de fonds et comportement monétaire. Son « investissement global » s’interprète ici dans la chaîne sur les entreprises ; distinguer la baisse possible de leur investissement de la hausse initiale de dépense publique. Ne pas en faire un résultat automatique.",
           "kind": "Texte d’auteurs fourni",
           "table": null,
-          "note": ""
+          "note": "",
+          "source_full": "Paul Krugman et Robin Wells, Macroéconomie, De Boeck, 2009 ; passage du document 16 du dossier de Mme Rabhi, p. 12, transcrit depuis l’image. Coupures du dossier conservées.",
+          "source_student": "Paul Krugman et Robin Wells, Macroéconomie, De Boeck, 2009. Extrait avec les coupures du support.",
+          "figure": "eviction.png"
         },
         {
           "id": 16,
           "title": "Comparer deux situations de financement",
-          "text": "On reprend le marché du document 4. L’offre de fonds reste la même. Un État ajoute une demande de 80 unités à chaque taux ; la demande privée reste inchangée à taux donné. Dans ce modèle, les taux possibles permettent de trouver le nouvel équilibre. Dans une autre situation, les capacités de production sont sous-utilisées, l’offre de financement est plus souple et une commande publique améliore les débouchés des entreprises. Ces hypothèses différentes doivent être prises en compte pour apprécier le résultat d’une politique.",
+          "text": "On reprend le marché des fonds prêtables, à inflation nulle, du document 4. L’offre reste inchangée ; l’État ajoute une demande de 80 unités à chaque taux. La demande privée garde sa relation initiale avec le taux. Le tableau permet de chercher le nouvel équilibre.\nDeux situations sont ensuite examinées : A, les entreprises utilisent déjà tout leur équipement et les prêteurs n’offrent pas davantage de fonds ; B, des équipements sont inutilisés, les banques peuvent financer davantage de projets et les entreprises constatent des commandes supplémentaires.",
           "source": "Comparaison de modèles construite pour CAPSES, en appui sur le document 15 et le cadrage Éduscol, juin 2019.",
           "analysis": "Demande totale 220,180,140 aux taux 2,4,6 ; équilibre 6%,140 ; demande privée 60 contre 100 au départ : éviction 40. Le second scénario peut soutenir l’investissement privé via les débouchés. Un effet net ne se déduit pas du seul montant du déficit.",
           "kind": "Complément pédagogique CAPSES",
@@ -669,40 +709,42 @@
               "80"
             ]
           ],
-          "note": ""
+          "note": "",
+          "source_full": "Comparaison de modèles construite pour CAPSES, en appui sur le document 15 et le cadrage Éduscol, juin 2019.",
+          "source_student": "Comparaison de modèles construite pour CAPSES, en appui sur le document 15 et le cadrage Éduscol, juin 2019."
         }
       ],
       "questions": [
         {
-          "id": 36,
+          "id": 37,
           "doc": 15,
           "text": "Reconstituez la chaîne causale de l’effet d’éviction décrit par les auteurs.",
           "answer": "Déficit financé par emprunt, hausse de demande de fonds, hausse du taux si l’offre ne s’ajuste pas assez, coût plus élevé, réduction de projets privés.",
           "lines": 4
         },
         {
-          "id": 37,
+          "id": 38,
           "doc": 15,
           "text": "Pourquoi l’expression « toutes choses égales par ailleurs » est-elle essentielle ?",
           "answer": "Elle maintient notamment les autres déterminants du financement. Si l’offre de fonds, la politique monétaire ou les débouchés changent, le résultat peut être différent.",
           "lines": 4
         },
         {
-          "id": 38,
+          "id": 39,
           "doc": 16,
           "text": "Trouvez le nouvel équilibre du document 16 après ajout de la demande publique.",
           "answer": "La demande totale vaut 220,180,140. À6 %, offre 140=demande 140. L’équilibre initial était 4 % et 100.",
           "lines": 3
         },
         {
-          "id": 39,
+          "id": 40,
           "doc": 16,
           "text": "Comparez la demande privée au nouvel équilibre et à l’équilibre initial.",
           "answer": "La demande privée passe de 100 à 60, soit 40 unités de moins ; les 80 publics ne s’ajoutent donc pas entièrement au financement privé initial.",
           "lines": 4
         },
         {
-          "id": 40,
+          "id": 41,
           "doc": 16,
           "text": "Expliquez pourquoi on ne peut conclure à un effet net identique dans les deux situations décrites.",
           "answer": "La demande publique peut soutenir les débouchés et la production quand des capacités sont inutilisées ; des tensions de financement peuvent freiner l’investissement. L’effet net dépend de ces conditions, pas du seul déficit.",
@@ -726,7 +768,7 @@
       "paragraphs": [
         "Un agent doit financer des dépenses avant de percevoir toutes les recettes qu’elles permettront d’obtenir. Une entreprise peut ainsi disposer d’un projet de machine utile et rentable sans avoir aujourd’hui les ressources pour le payer. Le financement permet de réunir ces ressources. Dans le compte simplifié du chapitre, on compare l’épargne de la période aux investissements : si l’épargne les dépasse, l’agent dégage une capacité de financement ; si elle est insuffisante, il présente un besoin. Dans les comptes nationaux complets, d’autres opérations en capital interviennent aussi.",
         "Le système financier rend possible la rencontre entre ces situations. Des agents obtiennent des fonds en contractant une dette ou en donnant des droits de propriété sur leur entreprise. Des épargnants acquièrent des créances ou des titres. Les banques participent au financement ; les marchés permettent l’émission et l’échange de titres. Le marché des fonds prêtables est un modèle qui représente les relations de financement. Il ne signifie pas que chaque crédit bancaire exige une épargne déposée au préalable : les mécanismes de création monétaire seront étudiés séparément.",
-        "Les résultats sectoriels sont des agrégats. Le secteur des ménages peut dégager une capacité alors que de nombreux ménages empruntent. De même, les sociétés non financières ne sont pas toujours en besoin : les comptes Insee publiés en mai 2026 indiquent une capacité de 17,5 milliards d’euros en 2024 puis un besoin de 3,9 milliards en 2025. Une évolution de solde annuel ne mesure pas une dette accumulée."
+        "Les résultats sectoriels sont des agrégats. Le secteur des ménages peut dégager une capacité alors que de nombreux ménages empruntent. De même, les sociétés non financières ne sont pas toujours en besoin : les comptes Insee publiés en mai 2026 indiquent une capacité de 17, 5 milliards d’euros en 2024 puis un besoin de 3, 9 milliards en 2025. Une évolution de solde annuel ne mesure pas une dette accumulée."
       ]
     },
     {
@@ -734,16 +776,16 @@
       "paragraphs": [
         "Le taux d’intérêt exprime le prix d’un prêt relativement au capital pour une durée donnée. Pour l’emprunteur, les intérêts sont un coût ; pour le prêteur, ils constituent une rémunération. Le prêteur renonce pendant un temps à l’usage immédiat de ses fonds et supporte un risque de non-remboursement. La durée, le risque, la liquidité et l’inflation attendue contribuent à expliquer pourquoi tous les taux ne sont pas identiques.",
         "Pour 10 000 € prêtés un an à 4 %, remboursés en une fois à l’échéance, les intérêts sont 400 € et le remboursement 10 400 €, hors frais et assurance. Le taux n’est donc pas le montant des intérêts. Le remboursement du capital n’est pas une rémunération du prêteur. Pour un crédit amorti par mensualités, les intérêts portent sur le capital restant dû : multiplier systématiquement le capital initial par le taux et par le nombre d’années serait incorrect.",
-        "Dans le modèle des fonds prêtables, l’offre augmente avec le taux et la demande diminue : certains projets ne sont plus avantageux lorsque leur financement devient plus coûteux. L’intersection détermine le taux d’équilibre. Une hausse de la demande, à offre inchangée, élève le taux. Une hausse de l’offre, à demande inchangée, tend à le réduire. Ce sont des résultats conditionnels du modèle, non une description exhaustive des taux bancaires.",
-        "Le taux nominal fixe les intérêts monétaires. Le taux réel tient compte de l’inflation : on l’approche par taux nominal moins inflation. À4 % nominal et 2 % d’inflation, le taux réel est approximativement 2 %. Le calcul exact est(1,04/1,02−1)×100, soit environ 1,96 %. Au moment de décider, l’inflation future est inconnue : on raisonne avec une anticipation."
+        "Dans le modèle des fonds prêtables, l’offre augmente avec le taux et la demande diminue : certains projets ne sont plus avantageux lorsque leur financement devient plus coûteux. L’intersection détermine le taux d’équilibre. Une hausse de la demande, à offre inchangée, élève le taux. Une hausse de l’offre, à demande inchangée, tend à le réduire. Ce sont des résultats conditionnels du modèle, non une description exhaustive des taux bancaires. Avec 80 unités offertes en plus à chaque taux dans le tableau du livret, le nouvel équilibre est 2 % pour 140 unités ; H8 étudie au contraire une hausse de demande publique.",
+        "Le taux nominal fixe les intérêts monétaires. Le taux réel tient compte de l’inflation : on l’approche par taux nominal moins inflation. À 4 % nominal et 2 % d’inflation, le taux réel est approximativement 2 %. Le calcul exact est (1, 04/1, 02−1)× 100, soit environ 1, 96 %. Au moment de décider, l’inflation future est inconnue : on raisonne avec une anticipation."
       ]
     },
     {
       "title": "2.1.1. Le revenu disponible et le financement des ménages",
       "paragraphs": [
         "Les ménages perçoivent des revenus primaires liés au travail, au patrimoine et à l’activité des indépendants. Après redistribution, le revenu disponible inclut les prestations sociales en espèces et retranche les impôts directs et cotisations sociales. Pour un calcul, il faut connaître le montant présenté : un salaire déjà net de cotisations ne doit pas les subir une seconde fois. Les prestations ne proviennent pas uniquement du budget de l’État : elles sont notamment versées par des organismes de protection sociale.",
-        "Le revenu disponible est soit consommé, soit épargné. L’épargne est la part non consommée d’un revenu pendant la période, et non la totalité du patrimoine détenu. Son taux est épargne/revenu disponible×100. Dans le cas étudié,40 000 € de revenu et 34 000 € de consommation donnent 6 000 € d’épargne, soit 15 %. La capacité de financement ne se confond pas avec cette épargne : avec 10 000 € d’investissement logement, ce même ménage présente un besoin de 4 000 € dans le compte simplifié.",
-        "Les motifs d’épargne comprennent la précaution, la préparation d’un achat ou d’un investissement, la retraite et la transmission. Les ressources et les contraintes sont très différentes selon les ménages. En 2025, le taux d’épargne des ménages français atteint 17,9 % du RDB dans les comptes annuels publiés en mai 2026, contre 18,5 % en 2024. Cette moyenne ne signifie pas que chaque ménage épargne 17,9 % ni qu’aucun ménage n’est endetté.",
+        "Le revenu disponible est soit consommé, soit épargné. L’épargne est la part non consommée d’un revenu pendant la période, et non la totalité du patrimoine détenu. Son taux est épargne/revenu disponible× 100. Dans le cas étudié, 40 000 € de revenu et 34 000 € de consommation donnent 6 000 € d’épargne, soit 15 %. La capacité de financement ne se confond pas avec cette épargne : avec 10 000 € d’investissement logement, ce même ménage présente un besoin de 4 000 € dans le compte simplifié.",
+        "Les motifs d’épargne comprennent la précaution, la préparation d’un achat ou d’un investissement, la retraite et la transmission. Les ressources et les contraintes sont très différentes selon les ménages. En 2025, le taux d’épargne des ménages français atteint 17, 9 % du RDB dans les comptes annuels publiés en mai 2026, contre 18, 5 % en 2024. Cette moyenne ne signifie pas que chaque ménage épargne 17, 9 % ni qu’aucun ménage n’est endetté.",
         "Le taux d’épargne financière rapporte la capacité de financement au revenu disponible ; il se distingue donc du taux d’épargne. Un agent peut à la fois détenir des actifs financiers et une dette ancienne, ou emprunter pour un projet pendant que d’autres agents prêtent. Il faut toujours préciser la période, le périmètre et l’opération mesurée."
       ]
     },
@@ -751,8 +793,8 @@
       "title": "2.2.1. De l’EBE à l’autofinancement des entreprises",
       "paragraphs": [
         "Le chiffre d’affaires correspond aux ventes ; la valeur ajoutée est la valeur de la production diminuée des consommations intermédiaires. Les consommations intermédiaires comprennent les biens et services détruits ou transformés dans la production. La valeur ajoutée rémunère plusieurs contributeurs : elle n’est pas le bénéfice de l’entreprise.",
-        "L’excédent brut d’exploitation est obtenu après retrait de la rémunération des salariés et des impôts nets des subventions sur la production. Ainsi,120 000 € de valeur ajoutée,70 000 € de rémunération,5 000 € d’impôts de production et 2 000 € de subventions donnent 47 000 € d’EBE. Il est calculé avant les intérêts, l’impôt sur les bénéfices et la consommation de capital fixe. Il ne faut donc pas le présenter comme un bénéfice net, ni ajouter à nouveau les amortissements à un solde déjà brut.",
-        "Après les autres opérations de répartition, l’entreprise conserve une épargne brute qu’elle peut mobiliser pour investir : c’est l’autofinancement. Son taux compare l’épargne brute à la FBCF. Dans le cas du livret,30 000 € face à 50 000 € donnent 60 % et laissent 20 000 € à financer autrement. Le recours à des ressources internes peut se combiner avec un emprunt ou une émission de titres ; ce ne sont pas des choix forcément exclusifs.",
+        "L’excédent brut d’exploitation est obtenu après retrait de la rémunération des salariés et des impôts nets des subventions sur la production. Ainsi, 120 000 € de valeur ajoutée, 70 000 € de rémunération, 5 000 € d’impôts de production et 2 000 € de subventions donnent 47 000 € d’EBE. Il est calculé avant les intérêts, l’impôt sur les bénéfices et la consommation de capital fixe. Il ne faut donc pas le présenter comme un bénéfice net, ni ajouter à nouveau les amortissements à un solde déjà brut.",
+        "Après les autres opérations de répartition, l’entreprise conserve une épargne brute qu’elle peut mobiliser pour investir : c’est l’autofinancement. Son taux compare l’épargne brute à la FBCF. Dans le cas du livret, 30 000 € face à 50 000 € donnent 60 % et laissent 20 000 € à financer autrement. Le recours à des ressources internes peut se combiner avec un emprunt ou une émission de titres ; ce ne sont pas des choix forcément exclusifs.",
         "Un taux d’autofinancement supérieur à 100 % indique une épargne brute supérieure à la FBCF dans le rapport considéré. Cela ne veut pas dire que toutes les entreprises ont investi autant ni qu’aucune n’a emprunté. Les résultats sectoriels dépendent de la répartition des ressources, des projets et d’autres opérations comptables."
       ]
     },
@@ -769,7 +811,7 @@
       "title": "3.1.1. Le solde budgétaire et son financement",
       "paragraphs": [
         "Le budget de l’État prévoit les dépenses et les recettes autorisées pour une année. Les recettes fiscales proviennent des impôts ; les recettes non fiscales comprennent notamment des dividendes reçus ou les revenus de certains actifs. Le solde budgétaire est recettes moins dépenses. Un solde négatif correspond à un déficit ; un solde positif à un excédent. L’emprunt finance un déficit mais n’est pas une recette budgétaire fiscale ou non fiscale.",
-        "Le déficit est un flux mesuré pendant une période ; la dette est un stock mesuré à une date. L’État émet des titres pour couvrir son déficit et refinancer les emprunts arrivés à échéance. Dans la simulation,320 de recettes et 360 de dépenses donnent un déficit 40. Si 40 de dette ancienne doivent aussi être remboursés et si la trésorerie est stable, les emprunts bruts nécessaires sont 80. Le remboursement du principal est une opération de financement ; les intérêts sont une dépense budgétaire.",
+        "Le déficit est un flux mesuré pendant une période ; la dette est un stock mesuré à une date. L’État émet des titres pour couvrir son déficit et refinancer les emprunts arrivés à échéance. Dans la simulation, 320 de recettes et 360 de dépenses donnent un déficit 40. Si 40 de dette ancienne doivent aussi être remboursés et si la trésorerie est stable, les emprunts bruts nécessaires sont 80. Le remboursement du principal est une opération de financement ; les intérêts sont une dépense budgétaire.",
         "Le périmètre doit être explicite : le budget de l’État ne regroupe pas l’ensemble des administrations publiques. Le déficit et la dette publics incluent aussi les collectivités territoriales et les administrations de Sécurité sociale. Une hausse de la dette n’est pas toujours exactement égale au déficit : d’autres opérations financières peuvent intervenir. La charge d’intérêts peut peser sur le solde, sans rendre une crise ou un endettement croissant inévitables."
       ]
     },
@@ -777,7 +819,7 @@
       "title": "3.2.1. Dépenses publiques et relance de la demande",
       "paragraphs": [
         "Une politique de dépenses publiques peut soutenir l’activité. Une commande de travaux ou l’achat de services accroît la demande adressée aux entreprises. Elles peuvent augmenter production, heures travaillées et emploi si elles disposent de capacités inutilisées. Les revenus supplémentaires sont en partie consommés et génèrent de nouvelles commandes. Le mécanisme dépasse donc le seul paiement initial.",
-        "Dans la simulation,100 unités de commande produisent 100 de revenu, puis 80 de consommation, puis 64. La somme des trois premières vagues est 244 ; il s’agit d’un modèle construit, non d’une estimation pour la France. Dans le réel, une part du revenu est épargnée, prélevée par les impôts ou dépensée en importations. Des délais et des capacités limitées modifient l’effet sur la production et les prix.",
+        "Dans la simulation, 100 unités de commande produisent 100 de revenu, puis 80 de consommation, puis 64 et 51,2. La somme des quatre premières vagues est 295,2 ; il s’agit d’un modèle construit, non d’une estimation pour la France. Dans le réel, une part du revenu est épargnée, prélevée par les impôts ou dépensée en importations. Des délais et des capacités limitées modifient l’effet sur la production et les prix.",
         "Les plans de 2008-2009 constituent un exemple historique de décisions nouvelles de soutien. Ils se distinguent des stabilisateurs automatiques : en ralentissement, certaines recettes baissent et certaines dépenses augmentent sans mesure nouvelle. Une estimation de gain de PIB lié à un plan compare avec une situation sans ce plan ; elle ne donne pas la croissance totale observée."
       ]
     },
@@ -805,6 +847,11 @@
       "Comptes de la Nation2025",
       "https://www.insee.fr/fr/statistiques/8996855",
       "Insee Première2105,29 mai2026, base2020. Tableaux2024 et2025 de la même publication."
+    ],
+    [
+      "Financement de l’État en 2025",
+      "https://www.budget.gouv.fr/documentation/file-download/33241",
+      "Exécution 2025, article 2 du projet de loi relatif aux résultats de la gestion, avril 2026."
     ]
   ],
   "notions": [
@@ -889,7 +936,14 @@
       "title": "Comparer deux flux avant de conclure",
       "paragraphs": [
         "Dans un compte simplifié, pars de l’épargne puis retranche l’investissement. Le résultat positif est une capacité, le résultat négatif un besoin. Une dette ancienne ne se déduit pas de ce seul solde annuel.",
-        "Exemple : 6 000 € d’épargne et 10 000 € d’investissement logement produisent un besoin de 4 000 €. L’épargne est positive ; elle ne suffit pourtant pas à financer tout le projet."
+        "Exemple : 6 000 € d’épargne et 10 000 € d’investissement logement produisent un besoin de 4 000 €. Une épargne positive ne suffit pas à financer tout projet."
+      ]
+    },
+    {
+      "title": "Distinguer taux nominal et taux réel",
+      "paragraphs": [
+        "Le taux nominal sert au calcul des intérêts en euros. Le taux réel corrige l’inflation : à 4 % nominal et 2 % de hausse des prix, le gain réel approché est de 2 %. Le calcul exact donne environ 1,96 %.",
+        "Dans le modèle du livret, l’inflation est nulle : taux réel et taux nominal coïncident. Une hausse de 80 unités de l’offre à chaque taux porte l’équilibre initial de 4 % et 100 unités à 2 % et 140 unités. Le graphique ci-dessous étudie une autre modification, la hausse de la demande publique."
       ]
     },
     {
